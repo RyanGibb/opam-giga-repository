@@ -13,19 +13,71 @@ def sanitize_package_name(name):
     return "cargo-" + name.replace("/", "-").replace(":", "-").replace(".", "-")
 
 def sanitize_version(version):
-    return version.replace(":", "-")
+    return version.replace(":", "-").strip()
+
+def convert_cargo_version_to_opam(version):
+    def parse_version(ver):
+        if ver.startswith('^'):
+            ver = ver[1:]
+            parts = ver.split('.')
+            major = parts[0]
+            minor = parts[1] if len(parts) > 1 else '0'
+            patch_parts = parts[2].split('-') if len(parts) > 2 else ['0']
+            patch = patch_parts[0]
+            pre_release = f"-{sanitize_version(patch_parts[1])}" if len(patch_parts) > 1 else ""
+
+            if major.isdigit() and int(major) > 0:
+                return f'>= "{sanitize_version(ver)}" & < "{int(major) + 1}.0.0{pre_release}"'
+            elif minor.isdigit() and int(minor) > 0:
+                return f'>= "{sanitize_version(ver)}" & < "0.{int(minor) + 1}.0{pre_release}"'
+            elif patch.isdigit():
+                return f'>= "{sanitize_version(ver)}" & < "0.0.{int(patch) + 1}{pre_release}"'
+            else:
+                return f'>= "{sanitize_version(ver)}"'
+        elif ver.startswith('~'):
+            ver = ver[1:]
+            parts = ver.split('.')
+            major = parts[0]
+            minor = parts[1] if len(parts) > 1 else '0'
+
+            if major.isdigit() and int(major) > 0:
+                return f'>= "{sanitize_version(ver)}" & < "{int(major) + 1}.0.0"'
+            elif minor.isdigit():
+                return f'>= "{sanitize_version(ver)}" & < "0.{int(minor) + 1}.0"'
+            else:
+                return f'>= "{sanitize_version(ver)}"'
+        elif ver.startswith('='):
+            return f'= "{sanitize_version(ver[1:])}"'
+        elif ver.startswith('>='):
+            return f'>= "{sanitize_version(ver[2:])}"'
+        elif ver.startswith('<='):
+            return f'<= "{sanitize_version(ver[2:])}"'
+        elif ver.startswith('>'):
+            return f'> "{sanitize_version(ver[1:])}"'
+        elif ver.startswith('<'):
+            return f'< "{sanitize_version(ver[1:])}"'
+        else:
+            return f'"{sanitize_version(ver)}"'
+
+    parts = version.split(', ')
+    opam_versions = [parse_version(part) for part in parts]
+    return "& ".join(opam_versions)
 
 def convert_dep_to_opam(dep):
     pkg, ver = dep['name'], dep.get('req', '*')
-    if ver == '*':
+    #print(pkg, ver)
+    opam_version = convert_cargo_version_to_opam(ver)
+    #print(opam_version)
+    if opam_version == '*':
         return f'"{sanitize_package_name(pkg)}"'
     else:
-        return f'"{sanitize_package_name(pkg)}" {{= "{sanitize_version(ver)}"}}'
+        return f'"{sanitize_package_name(pkg)}" {{{opam_version}}}'
 
 def process_crate(crate_path):
     with open(crate_path, 'r') as f:
         crate_lines = f.readlines()
     
+    print(f"Generating Opam files for {crate_path}")
     for line in crate_lines:
         version = json.loads(line)
         
@@ -72,8 +124,6 @@ remove: [
         opam_file_path = os.path.join(opam_version_dir, 'opam')
         with open(opam_file_path, 'w') as opam_file:
             opam_file.write(opam_content)
-        
-        print(f"Generated Opam file for {pkg_name} version {version_num}")
 
 for crate_path in glob.glob(os.path.join(index_dir, '**/*'), recursive=True):
     if os.path.isfile(crate_path) and os.path.basename(crate_path) not in ['config.json', 'README.md']:
