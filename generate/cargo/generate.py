@@ -76,6 +76,8 @@ def process_crate(crate_path):
         pkg_name = version['name']
         version_num = version['vers']
         dependencies = version['deps']
+        if version['yanked']:
+            continue
         
         package_depends = []
         package_depopts = []
