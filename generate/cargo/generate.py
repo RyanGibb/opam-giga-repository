@@ -21,17 +21,8 @@ def convert_cargo_version_to_opam(version):
             ver = ver[1:]
             parts = ver.split('.')
             major = parts[0]
-            minor = parts[1] if len(parts) > 1 else '0'
-            patch_parts = parts[2].split('-') if len(parts) > 2 else ['0']
-            patch = patch_parts[0]
-            pre_release = f"-{sanitize_version(patch_parts[1])}" if len(patch_parts) > 1 else ""
-
-            if major.isdigit() and int(major) > 0:
-                return f'>= "{sanitize_version(ver)}" & < "{int(major) + 1}.0.0{pre_release}"'
-            elif minor.isdigit() and int(minor) > 0:
-                return f'>= "{sanitize_version(ver)}" & < "0.{int(minor) + 1}.0{pre_release}"'
-            elif patch.isdigit():
-                return f'>= "{sanitize_version(ver)}" & < "0.0.{int(patch) + 1}{pre_release}"'
+            if major.isdigit():
+                return f'>= "{sanitize_version(ver)}" & < "{int(major) + 1}.0.0"'
             else:
                 return f'>= "{sanitize_version(ver)}"'
         elif ver.startswith('~'):
