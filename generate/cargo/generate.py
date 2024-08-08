@@ -64,7 +64,8 @@ def convert_cargo_version_to_opam(version):
     return "& ".join(opam_versions)
 
 def convert_dep_to_opam(dep):
-    pkg, ver = dep['name'], dep.get('req', '*')
+    pkg = dep.get('package', dep['name'])
+    ver = dep.get('req', '*')
     #print(pkg, ver)
     opam_version = convert_cargo_version_to_opam(ver)
     #print(opam_version)
