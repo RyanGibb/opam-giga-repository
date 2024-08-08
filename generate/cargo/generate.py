@@ -87,19 +87,26 @@ def process_crate(crate_path):
         dependencies = version['deps']
         
         package_depends = []
+        package_depopts = []
         package_conflicts = []
         
         for dep in dependencies:
-            if dep['kind'] == 'normal' or dep['kind'] is None:
-                package_depends.append(convert_dep_to_opam(dep))
+            dep_entry = convert_dep_to_opam(dep)
+            if dep['optional']:
+                package_depopts.append(dep_entry)
+            elif dep['kind'] == 'normal' or dep['kind'] is None:
+                package_depends.append(dep_entry)
             elif dep['kind'] == 'conflict':
                 package_conflicts.append(convert_dep_to_opam(dep))
         
         package_depends = sorted(set(package_depends))
+        package_depopts = sorted(set(package_depopts))
         package_conflicts = sorted(set(package_conflicts))
         formatted_depends = '\n  '.join(package_depends) if package_depends else ''
+        formatted_depopts = '\n  '.join(package_depopts) if package_depopts else ''
         formatted_conflicts = '\n  '.join(package_conflicts) if package_conflicts else ''
         opam_depends = f'\ndepends: [\n  {formatted_depends}\n]' if formatted_depends else ''
+        opam_depopts = f'\ndepopts: [\n  {formatted_depopts}\n]' if formatted_depopts else ''
         opam_conflicts = f'\nconflicts: [\n  {formatted_conflicts}\n]' if formatted_conflicts else ''
         
         opam_template = """opam-version: "2.0"
@@ -108,13 +115,14 @@ build: [
 ]
 remove: [
   ["sh" "-c" "cargo uninstall {pkg_name}"]
-]{depends}{conflicts}
+]{depends}{depopts}{conflicts}
 """
         
         opam_content = opam_template.format(
             version_num=version_num,
             pkg_name=pkg_name,
             depends=opam_depends,
+            depopts=opam_depopts,
             conflicts=opam_conflicts
         )
         
