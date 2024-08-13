@@ -1,0 +1,4 @@
+(executable
+ (public_name opam_translation)
+ (name main)
+ (libraries opam-format str))

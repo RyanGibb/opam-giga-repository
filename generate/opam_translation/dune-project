@@ -1,0 +1,6 @@
+(lang dune 3.16)
+
+(name opam_translation)
+
+(generate_opam_files true)
+
