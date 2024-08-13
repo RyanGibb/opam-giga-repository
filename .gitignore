@@ -1,3 +1,5 @@
 packages
 repo
 _build
+cached/opam-repository
+cached/cargo
