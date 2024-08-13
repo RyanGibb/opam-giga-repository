@@ -1,4 +1,4 @@
-.PHONY: all clean debian alpine cargo opam
+.PHONY: all clean debian alpine cargo opam test
 
 all: debian alpine cargo opam repo
 
@@ -33,8 +33,12 @@ repo:
 	@echo "Generating repo file"
 	echo 'opam-version: "2.0"' > repo
 
+test:
+	test/test_all_packages.sh
+
 clean:
 	@echo "Cleaning..."
 	rm -rf packages
 	rm repo
+	rm test/log
 

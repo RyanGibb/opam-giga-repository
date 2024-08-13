@@ -3,3 +3,4 @@ repo
 _build
 cached/opam-repository
 cached/cargo
+test/log
