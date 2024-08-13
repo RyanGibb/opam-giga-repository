@@ -16,8 +16,6 @@ def parse_provides_entry(entry):
         return name.strip(), version
 
 def sanitize_package_name(name):
-    if name == "opam":
-        return "opam-deb"
     return "deb-" + name.replace("/", "-").replace(":", "-").replace(".", "-")
 
 def sanitize_version(version):
