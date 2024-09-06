@@ -109,6 +109,7 @@ build: [
 remove: [
   ["sh" "-c" "cargo uninstall {pkg_name}"]
 ]{depends}{depopts}{conflicts}
+x-multiple-versions: true
 """
         
         opam_content = opam_template.format(
