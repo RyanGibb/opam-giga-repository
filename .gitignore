@@ -4,3 +4,7 @@ _build
 cached/opam-repository
 cached/cargo
 test/log
+generate/cabal/cabal2opam.hi
+generate/cabal/cabal2opam.hs
+generate/cabal/cabal2opam.o
+cached/cabal

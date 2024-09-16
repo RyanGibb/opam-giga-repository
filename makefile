@@ -29,6 +29,21 @@ opam:
 	# requires opam_translation to be built
 	cd generate/opam_translation; dune exec ./main.exe ../../cached/opam-repository/packages ../../packages
 
+cabal:
+	@if [ ! -f cached/cabal/01-index.tar ]; then \
+		mkdir -p cached/cabal; \
+		curl https://hackage.haskell.org/01-index.tar --output cached/cabal/01-index.tar; \
+	else \
+		echo "cached/cabal/01-index.tar already exists, skipping."; \
+	fi
+	@if [ ! -d cached/cabal/repo ]; then \
+		mkdir -p cached/cabal/repo; \
+		tar -xvf cached/cabal/01-index.tar -C cached/cabal/repo/; \
+	else \
+		echo "cached/cabal/repo already exists, skipping."; \
+	fi
+	generate/cabal/generate.sh
+
 repo:
 	@echo "Generating repo file"
 	echo 'opam-version: "2.0"' > repo

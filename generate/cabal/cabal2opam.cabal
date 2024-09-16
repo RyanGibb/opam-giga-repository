@@ -1,0 +1,8 @@
+name: cabal2opam
+version: 1.0.0.0
+build-type: Simple
+cabal-version: >= 1.8
+executable cabal2opam
+  main-is: cabal2opam.hs
+  build-depends: base >=4.7 && <5,
+                 Cabal >=3.0 && <3.9
