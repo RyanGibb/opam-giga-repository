@@ -37,6 +37,7 @@ def convert_cargo_version_to_opam(version):
                 return f'>= "{sanitize_version(ver)}" & < "0.{int(minor) + 1}.0"'
             else:
                 return f'>= "{sanitize_version(ver)}"'
+        # TODO we might need to translate this into a range if the minor versions are ommitted
         elif ver.startswith('='):
             return f'= "{sanitize_version(ver[1:])}"'
         elif ver.startswith('>='):

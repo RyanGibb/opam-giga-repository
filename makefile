@@ -1,6 +1,6 @@
 .PHONY: all clean debian alpine cargo opam test
 
-all: debian alpine cargo opam repo
+all: debian alpine cargo opam cabal repo
 
 debian:
 	@echo "Generating Debian packages..."
