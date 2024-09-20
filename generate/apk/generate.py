@@ -19,24 +19,30 @@ def parse_provides_entry(entry):
 def sanitize_package_name(name):
     return "apk-" + name.replace("/", "-").replace(":", "-").replace(".", "-")
 
-def convert_dep_to_opam(dep, version=None):
+def convert_dep_to_opam(dep, alpine_version, version=None):
     if '>=' in dep:
         pkg, ver = dep.split('>=')
+        ver = ver + f"+apk{alpine_version}"
         return f'"{sanitize_package_name(pkg).strip()}" {{>= "{ver.strip()}"}}'
     elif '<=' in dep:
         pkg, ver = dep.split('<=')
+        ver = ver + f"+apk{alpine_version}"
         return f'"{sanitize_package_name(pkg).strip()}" {{<= "{ver.strip()}"}}'
     elif '>' in dep:
         pkg, ver = dep.split('>')
+        ver = ver + f"+apk{alpine_version}"
         return f'"{sanitize_package_name(pkg).strip()}" {{> "{ver.strip()}"}}'
     elif '<' in dep:
         pkg, ver = dep.split('<')
+        ver = ver + f"+apk{alpine_version}"
         return f'"{sanitize_package_name(pkg).strip()}" {{< "{ver.strip()}"}}'
     elif '=' in dep:
         pkg, ver = dep.split('=')
+        ver = ver + f"+apk{alpine_version}"
         return f'"{sanitize_package_name(pkg).strip()}" {{= "{ver.strip()}"}}'
     elif '~' in dep:
         pkg, ver = dep.split('~')
+        ver = ver + f"+apk{alpine_version}"
         return f'"{sanitize_package_name(pkg).strip()}" {{>= "{ver.strip()}"}}'
     else:
         if version == None:
@@ -59,7 +65,6 @@ def process_index(alpine_version):
             exit(1)
 
     pkg = None
-    # if two versions of alpine provide the same package version, we will use the later one
     packages = {}
     for line in index_content.splitlines():
         if line.startswith('P:'):
@@ -69,7 +74,7 @@ def process_index(alpine_version):
             packages[pkg]["dependencies"] = []
             packages[pkg]["provides"] = []
         if line.startswith('V:') and pkg:
-            packages[pkg]["version"] = line[2:].strip()
+            packages[pkg]["version"] = line[2:].strip() + f"+apk{alpine_version[1:]}"
         elif line.startswith('D:') and pkg:
             dependencies = line[2:].strip().split()
             packages[pkg]["dependencies"] = dependencies
@@ -102,14 +107,14 @@ def process_index(alpine_version):
             else:
                 dep_name = dep.split('=')[0].split('>=')[0].split('<=')[0].split('<')[0].split('>')[0].split('~')[0]
                 if dep_name in packages:
-                    package_depends.append(convert_dep_to_opam(dep, version=packages[dep_name]["version"]))
+                    package_depends.append(convert_dep_to_opam(dep, alpine_version, version=packages[dep_name]["version"]))
                 elif dep_name in package_provides:
                     providers = package_provides[dep_name]
                     if len(providers) == 1:
                         dep = providers[0]
-                        package_depends.append(convert_dep_to_opam(providers[0], version=packages[dep]["version"]))
+                        package_depends.append(convert_dep_to_opam(providers[0], alpine_version, version=packages[dep]["version"]))
                     else:
-                        package_depends.append(f"({' | '.join(convert_dep_to_opam(p, version=packages[p]['version']) for p in providers)})")
+                        package_depends.append(f"({' | '.join(convert_dep_to_opam(p, alpine_version, version=packages[p]['version']) for p in providers)})")
                 else:
                     print(f"Couldn't find dep {dep} for package {apk_name}")
 
