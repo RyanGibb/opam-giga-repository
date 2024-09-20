@@ -54,8 +54,8 @@ def handle_conflicts(dep):
     return f'"{dep[1:].strip()}"'
 
 def process_index(alpine_version):
-    apkindex_path = os.path.join(cache_dir, f"{alpine_version}-APKINDEX.tar.gz")
-    repo_url = f"https://dl-cdn.alpinelinux.org/alpine/{alpine_version}/main/x86_64/"
+    apkindex_path = os.path.join(cache_dir, f"v{alpine_version}-APKINDEX.tar.gz")
+    repo_url = f"https://dl-cdn.alpinelinux.org/alpine/v{alpine_version}/main/x86_64/"
     with tarfile.open(apkindex_path, 'r:gz') as index_tar:
         index_file = index_tar.extractfile('APKINDEX')
         if index_file:
@@ -74,7 +74,7 @@ def process_index(alpine_version):
             packages[pkg]["dependencies"] = []
             packages[pkg]["provides"] = []
         if line.startswith('V:') and pkg:
-            packages[pkg]["version"] = line[2:].strip() + f"+apk{alpine_version[1:]}"
+            packages[pkg]["version"] = line[2:].strip() + f"+apk{alpine_version}"
         elif line.startswith('D:') and pkg:
             dependencies = line[2:].strip().split()
             packages[pkg]["dependencies"] = dependencies
@@ -98,7 +98,7 @@ def process_index(alpine_version):
         apk_url = os.path.join(repo_url, f"{apk_name}.apk")
         deps = packages[pkg]["dependencies"]
 
-        package_depends = []
+        package_depends = [ f'"apk" {{= "{alpine_version}"}}' ]
         package_conflicts = []
 
         for dep in deps:
@@ -156,4 +156,15 @@ with open(versions_file, 'r') as vf:
     for version in vf:
         version = version.strip()
         print(version)
+
+        # make apk package to restrict solving to a single version
+        opam_content = """opam-version: "2.0"
+"""
+        pkg_name = "apk"
+        opam_dir = os.path.join(base_dir, pkg_name, f"{pkg_name}.{version}")
+        os.makedirs(opam_dir, exist_ok=True)
+        opam_file_path = os.path.join(opam_dir, 'opam')
+        with open(opam_file_path, 'w') as opam_file:
+            opam_file.write(opam_content)
+
         process_index(version)

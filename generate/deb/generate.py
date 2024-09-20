@@ -91,7 +91,7 @@ def process_packages_file(debian_version):
         deps = packages[pkg]["dependencies"]
         confs = packages[pkg]["conflicts"]
 
-        package_depends = []
+        package_depends = [ f'"deb" {{= "{debian_version}"}}' ]
         package_conflicts = []
 
         for dep in deps:
@@ -158,4 +158,15 @@ with open(versions_file, 'r') as vf:
     for version in vf:
         version = version.strip()
         print(version)
+
+        # make apk package to restrict solving to a single version
+        opam_content = """opam-version: "2.0"
+"""
+        pkg_name = "deb"
+        opam_dir = os.path.join(base_dir, pkg_name, f"{pkg_name}.{version}")
+        os.makedirs(opam_dir, exist_ok=True)
+        opam_file_path = os.path.join(opam_dir, 'opam')
+        with open(opam_file_path, 'w') as opam_file:
+            opam_file.write(opam_content)
+
         process_packages_file(version)
