@@ -1,0 +1,3 @@
+(executable
+ (public_name pacman2opam)
+ (name main))
