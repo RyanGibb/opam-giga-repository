@@ -44,6 +44,16 @@ cabal:
 	fi
 	generate/cabal/generate.sh
 
+pacman:
+	@echo "Generating Pacman packages..."
+	@if [ ! -d cached/pacman ]; then \
+		./generate/pacman/download_index.sh \
+	else \
+		echo "cached/pacman already exists, skipping download."; \
+	fi
+	# requires pacman to be built
+	cd generate/pacman; dune exec ./main.exe ../../cached/pacman/ ../../packages
+
 repo:
 	@echo "Generating repo file"
 	echo 'opam-version: "2.0"' > repo

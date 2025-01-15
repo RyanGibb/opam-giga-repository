@@ -1,9 +1,15 @@
 let mirror = "https://mirror.rackspace.com/archlinux"
 let arch = "x86_64"
-let repos = [ "core"; "extra"; "multilib" ]
-let tmp_dir = "archlinux.tmp"
-let out_dir = "archlinux"
 let path = String.concat "/"
+
+let () =
+  if Array.length Sys.argv < 3 then (
+    Printf.eprintf "Usage: %s <input repository directory> <output repository directory>\n" Sys.argv.(0);
+    exit 1)
+
+let repo_dir = Sys.argv.(1)
+let out_dir = Sys.argv.(2)
+let repos = Sys.readdir repo_dir
 
 let mkdir_p s =
   String.split_on_char '/' s
@@ -13,20 +19,6 @@ let mkdir_p s =
          let () = if not (Sys.file_exists p) then Sys.mkdir p 0o755 in
          p)
        ""
-
-let () =
-  List.iter
-    (fun repo ->
-      let dest = mkdir_p (path [ tmp_dir; repo ]) in
-      let () = Printf.printf "%s\n" dest in
-      let file = repo ^ ".tar.gz" in
-      let _ =
-        if Sys.file_exists file then 0
-        else Sys.command (Filename.quote_command "curl" [ "-L"; path [ mirror; repo; "os"; arch; repo ^ ".db.tar.gz" ]; "-o"; file ])
-      in
-      if Sys.command (Filename.quote_command "tar" [ "-xzf"; file; "-C"; dest ]) <> 0 then assert false)
-    repos
-
 let read_input file =
   let ic = open_in file in
   let rec loop input lines =
@@ -97,7 +89,7 @@ let entry_of_string s =
         else (name, cons))
       (None, None) [ ">="; "<="; "<"; ">"; "=" ]
   in
-  let name = normalise [ '.' ] (Option.value ~default:s name) in
+  let name = "pacman-" ^ normalise [ '.' ] (Option.value ~default:s name) in
   { name; con }
 
 let quoted_string lst = List.map (fun x -> "\"" ^ x ^ "\"") lst |> String.concat " "
@@ -133,14 +125,15 @@ let () =
 let pkgs = Hashtbl.create 100_000
 
 let () =
-  List.iter
+  Array.iter
     (fun repo ->
-      Sys.readdir (path [ tmp_dir; repo ])
+      Sys.readdir (path [ repo_dir; repo ])
       |> Array.to_list
       |> List.iter (fun folder ->
-             let desc = path [ tmp_dir; repo; folder; "desc" ] in
+             let desc = path [ repo_dir; repo; folder; "desc" ] in
              let content = if Sys.is_regular_file desc then read_input desc else [] in
              let p = process { filename = ""; name = ""; repo; version = ""; sha256 = ""; deps = []; provides = []; conflicts = [] } content in
+             let p = { p with name = "pacman-" ^ p.name } in
              Hashtbl.add pkgs p.name p))
     repos
 
@@ -198,7 +191,7 @@ let () =
   Hashtbl.iter
     (fun _ d ->
       if d.name <> "opam" then
-        let opam = mkdir_p (path [ out_dir; "packages"; d.name; d.name ^ "." ^ d.version ]) in
+        let opam = mkdir_p (path [ out_dir; d.name; d.name ^ "." ^ d.version ]) in
         let () = Printf.printf "Creating %s/opam\n" opam in
         let oc = open_out (path [ opam; "opam" ]) in
         let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
@@ -235,7 +228,7 @@ let () =
         List.iter
           (fun p ->
             let c = Option.value ~default:{ equality = "="; version = "1" } p.con in
-            let opam = mkdir_p (path [ out_dir; "packages"; p.name; p.name ^ "." ^ c.version ]) in
+            let opam = mkdir_p (path [ out_dir; p.name; p.name ^ "." ^ c.version ]) in
             let opam_file = path [ opam; "opam" ] in
             if not (Sys.file_exists opam_file) then
               let oc = open_out (path [ opam; "opam" ]) in
