@@ -1,0 +1,115 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "High-level, dynamically typed programming language"
+description: """
+High-level, dynamically typed programming language"""
+extra-source "b2d126ecdef34e7c5378f20ad74d5152897e93ffb8bde4dd366442231ebd31af--neko--2.4.0_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:6b49445459efe4047cdb5699d9ae8f73bb05941dbaf3eb4ccd910ca9aca754d4"
+  checksum: [
+    "sha256=6b49445459efe4047cdb5699d9ae8f73bb05941dbaf3eb4ccd910ca9aca754d4"
+  ]
+}
+extra-source "af06af264429726df8c9286e23c87ce033d083c5e8cae9dc6632c60eec64fb77--neko-2.4.0_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/manifests/2.4.0_1"
+}
+extra-source "8b7f1ca2a826e23d79734ae1ca2335093b2a47920ae8f9b33df682e9121cc113--neko--2.4.0_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:15e070b6148e6bc15387ee1958c6f815d3bbacbf67438e073e8fd21f6b9deb3f"
+  checksum: [
+    "sha256=15e070b6148e6bc15387ee1958c6f815d3bbacbf67438e073e8fd21f6b9deb3f"
+  ]
+}
+extra-source "54e0e63fd67b8cc0db90807bef193bae99ce5526e1525687ee2f0b4a6f05aaf2--neko--2.4.0_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:fdad9a6dc773dffe3b1e55971758cfda775e8b473c7d135319c9c65528167b22"
+  checksum: [
+    "sha256=fdad9a6dc773dffe3b1e55971758cfda775e8b473c7d135319c9c65528167b22"
+  ]
+}
+extra-source "1042f8d96dbf68b8a07b4a034836b96b4350d30f03d752e059a2fdad05d35be1--neko--2.4.0_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:4f19f161bbf2c088fe1e06b08082ac555999f4102d3c6f6a281aeda79e318572"
+  checksum: [
+    "sha256=4f19f161bbf2c088fe1e06b08082ac555999f4102d3c6f6a281aeda79e318572"
+  ]
+}
+extra-source "12c993da9884dd3ced50456ef1eb138f1273e83ef7955de21beb99631c613134--neko--2.4.0_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:9b40ecbae0b6a62cd9d32d19fecfb3a429e90660e194a0b2cc12ea5052f50976"
+  checksum: [
+    "sha256=9b40ecbae0b6a62cd9d32d19fecfb3a429e90660e194a0b2cc12ea5052f50976"
+  ]
+}
+extra-source "43e0001d8b5f713b4a9c7f61444802bf2cc31d4308f35d94a3bb105307777000--neko--2.4.0_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:9615b73250454cf485ffc61a3190f0e5cd8a9769847d3ba914322266d3463d15"
+  checksum: [
+    "sha256=9615b73250454cf485ffc61a3190f0e5cd8a9769847d3ba914322266d3463d15"
+  ]
+}
+extra-source "c6304f58bbc647c4ec9b646421ec0e03651139e73a17dc3d3a0b24cfdd642bb2--neko--2.4.0_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:71589dcf0a4ec18650f32439cff9caefdfdae7179b666d883acb9fa96b38cee7"
+  checksum: [
+    "sha256=71589dcf0a4ec18650f32439cff9caefdfdae7179b666d883acb9fa96b38cee7"
+  ]
+}
+extra-source "cd17ee349955dc793dafd02037ada3cf31a13413eb2f2ac374973393f64e2e18--neko--2.4.0_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:50db5d00af036fd2803c42b1739c3038382a7f68cc3f75f785444564f6764f9b"
+  checksum: [
+    "sha256=50db5d00af036fd2803c42b1739c3038382a7f68cc3f75f785444564f6764f9b"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-bdw-gc" {= "8.2.8"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-mbedtls" {= "3.6.1"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libcbor" {= "0.11.0"}
+  "brew-mandoc" {= "1.14.6"}
+  "brew-libfido2" {= "1.15.0"}
+  "brew-zlib" {= "1.3.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-bison" {= "3.8.2"}
+  "brew-mysql-client" {= "9.0.1"}
+  "brew-pcre2" {= "10.44"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "af06af264429726df8c9286e23c87ce033d083c5e8cae9dc6632c60eec64fb77--neko-2.4.0_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "b2d126ecdef34e7c5378f20ad74d5152897e93ffb8bde4dd366442231ebd31af--neko--2.4.0_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8b7f1ca2a826e23d79734ae1ca2335093b2a47920ae8f9b33df682e9121cc113--neko--2.4.0_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "54e0e63fd67b8cc0db90807bef193bae99ce5526e1525687ee2f0b4a6f05aaf2--neko--2.4.0_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1042f8d96dbf68b8a07b4a034836b96b4350d30f03d752e059a2fdad05d35be1--neko--2.4.0_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "12c993da9884dd3ced50456ef1eb138f1273e83ef7955de21beb99631c613134--neko--2.4.0_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "43e0001d8b5f713b4a9c7f61444802bf2cc31d4308f35d94a3bb105307777000--neko--2.4.0_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c6304f58bbc647c4ec9b646421ec0e03651139e73a17dc3d3a0b24cfdd642bb2--neko--2.4.0_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cd17ee349955dc793dafd02037ada3cf31a13413eb2f2ac374973393f64e2e18--neko--2.4.0_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "neko" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "neko" ]
+]

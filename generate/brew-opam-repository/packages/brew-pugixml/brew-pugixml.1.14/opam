@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Light-weight C++ XML processing library"
+description: """
+Light-weight C++ XML processing library"""
+extra-source "f1a50e9c48665b927eae802a36eec9d50acec26488afd093746eb1641515d480--pugixml--1.14.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/blobs/sha256:0f41be0efe77882d6d0b65ca703a788027b71142b89ddbe434ac39eb8a5c2366"
+  checksum: [
+    "sha256=0f41be0efe77882d6d0b65ca703a788027b71142b89ddbe434ac39eb8a5c2366"
+  ]
+}
+extra-source "43be16538eeab0d748dff7a738daff3f5989049a83c9f64fda9c2cdbe86f5087--pugixml-1.14.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/manifests/1.14"
+}
+extra-source "c4668378763350433079641e51ef97a69a90c93724327c18a93f15f5c54bc974--pugixml--1.14.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/blobs/sha256:2b7b7969056aeda0acd1fbe6499c6552f40dd58bbddfbbeddfcdb6fd27a96ce9"
+  checksum: [
+    "sha256=2b7b7969056aeda0acd1fbe6499c6552f40dd58bbddfbbeddfcdb6fd27a96ce9"
+  ]
+}
+extra-source "9889f9328e03732edd5adbf13546e3d13901607ae29d98f7fd4aaa401a711ef1--pugixml--1.14.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/blobs/sha256:84389a39deb0147cc58ace55574299b2bc0099a405c637aa19d8dd4c511527f8"
+  checksum: [
+    "sha256=84389a39deb0147cc58ace55574299b2bc0099a405c637aa19d8dd4c511527f8"
+  ]
+}
+extra-source "1c00246a4617406aae9992b1301ec6ec72a076ca9966ce84ef6fd0897f423286--pugixml--1.14.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/blobs/sha256:c66d3487911d7ad924b9fd13fbadf4eba2b1e94e723b2cde4275393d20ab97cd"
+  checksum: [
+    "sha256=c66d3487911d7ad924b9fd13fbadf4eba2b1e94e723b2cde4275393d20ab97cd"
+  ]
+}
+extra-source "09ff6444f0f228e50ee83d65dec858100bc16752eb7e095c5f487ce6fc45db80--pugixml--1.14.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/blobs/sha256:3e5ca11c38b02bc82571af1765c645852d73947047b40b4bba62d3cc64e26367"
+  checksum: [
+    "sha256=3e5ca11c38b02bc82571af1765c645852d73947047b40b4bba62d3cc64e26367"
+  ]
+}
+extra-source "e9a5899676b238621f8393fc6eabcec02d839001d0230078447cfc7abfdd666f--pugixml--1.14.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/blobs/sha256:462e7ae6c93f462a714329abbf4b90256afa45601fad0783fdffb55706a05a7b"
+  checksum: [
+    "sha256=462e7ae6c93f462a714329abbf4b90256afa45601fad0783fdffb55706a05a7b"
+  ]
+}
+extra-source "2a0b4a7c08b2b5ebcac0824023ee4c59628f74550912edfea05cd892eb8767e5--pugixml--1.14.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/blobs/sha256:d0508642948a557dfe8b0ea0c764d350175e43730b3012ca1996ef3764aa4c4f"
+  checksum: [
+    "sha256=d0508642948a557dfe8b0ea0c764d350175e43730b3012ca1996ef3764aa4c4f"
+  ]
+}
+extra-source "14a2ffd68dde79c4cbb61298170a9b3fd6b8f16f7d69669071777a7cd8534fbc--pugixml--1.14.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pugixml/blobs/sha256:9816719d30fbd99d13f8bb883699ac4e3b640572e55bf57b9ce04b45ebda7629"
+  checksum: [
+    "sha256=9816719d30fbd99d13f8bb883699ac4e3b640572e55bf57b9ce04b45ebda7629"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "43be16538eeab0d748dff7a738daff3f5989049a83c9f64fda9c2cdbe86f5087--pugixml-1.14.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f1a50e9c48665b927eae802a36eec9d50acec26488afd093746eb1641515d480--pugixml--1.14.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c4668378763350433079641e51ef97a69a90c93724327c18a93f15f5c54bc974--pugixml--1.14.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9889f9328e03732edd5adbf13546e3d13901607ae29d98f7fd4aaa401a711ef1--pugixml--1.14.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1c00246a4617406aae9992b1301ec6ec72a076ca9966ce84ef6fd0897f423286--pugixml--1.14.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "09ff6444f0f228e50ee83d65dec858100bc16752eb7e095c5f487ce6fc45db80--pugixml--1.14.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e9a5899676b238621f8393fc6eabcec02d839001d0230078447cfc7abfdd666f--pugixml--1.14.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2a0b4a7c08b2b5ebcac0824023ee4c59628f74550912edfea05cd892eb8767e5--pugixml--1.14.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "14a2ffd68dde79c4cbb61298170a9b3fd6b8f16f7d69669071777a7cd8534fbc--pugixml--1.14.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pugixml" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pugixml" ]
+]

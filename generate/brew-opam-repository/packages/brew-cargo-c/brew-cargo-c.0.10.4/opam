@@ -1,0 +1,114 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Helper program to build and install c-like libraries"
+description: """
+Helper program to build and install c-like libraries"""
+extra-source "dfac2d3cbf2b1f782ac1cd8906f43af3863a7ae3ebf395896dfac601329ce94c--cargo-c--0.10.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/blobs/sha256:172ec9cfe729bbb51b75faf784dac0747fd4a43de01de4a95cb12a3e084af37a"
+  checksum: [
+    "sha256=172ec9cfe729bbb51b75faf784dac0747fd4a43de01de4a95cb12a3e084af37a"
+  ]
+}
+extra-source "b5fdaaf59356a2c8d762d852a42dec96f9ddb6049cfd2f2a32653559b3d7e033--cargo-c-0.10.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/manifests/0.10.4"
+}
+extra-source "2f37627a4a9be4be577a3af0438ba57d4eb382cc120dc41d5db2d2a62fd60a04--cargo-c--0.10.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/blobs/sha256:6714b6ad00bd4d393d6fd5b2dac6179cc50f8d025939c261b7547f59f856b64c"
+  checksum: [
+    "sha256=6714b6ad00bd4d393d6fd5b2dac6179cc50f8d025939c261b7547f59f856b64c"
+  ]
+}
+extra-source "dbadfed11bb74c4d49f924f9348ee3a5b0a1fe2cc028ea37d0fc4128e2390207--cargo-c--0.10.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/blobs/sha256:12ea428e0307c68840de2f48e93dead7cc0dc64d3ce7232733049710bb6156a8"
+  checksum: [
+    "sha256=12ea428e0307c68840de2f48e93dead7cc0dc64d3ce7232733049710bb6156a8"
+  ]
+}
+extra-source "927a0503896dedce74e36617cd2059021bbed8e79858b1a66210748d0109c2ba--cargo-c--0.10.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/blobs/sha256:15ef259844d5b8d47f7f6ea6d1afc3c0f9057f938c1b8b8f0eb7416ada2e1141"
+  checksum: [
+    "sha256=15ef259844d5b8d47f7f6ea6d1afc3c0f9057f938c1b8b8f0eb7416ada2e1141"
+  ]
+}
+extra-source "8039c0239e804551fe4f0b1c71c126609ff50811b100aad4786252802c976942--cargo-c--0.10.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/blobs/sha256:0e87dee5ea183f76360d4c8bbc511926e7ce256c4d59966897a67cf88113bc01"
+  checksum: [
+    "sha256=0e87dee5ea183f76360d4c8bbc511926e7ce256c4d59966897a67cf88113bc01"
+  ]
+}
+extra-source "4b84b0e30606b46da31f2ebebb441fa64959eaab83ce22af5aefe251ff5f6276--cargo-c--0.10.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/blobs/sha256:3af3da222efafdebc1df3ae960f16ae379ce715aaa53af0453ea514328b4e824"
+  checksum: [
+    "sha256=3af3da222efafdebc1df3ae960f16ae379ce715aaa53af0453ea514328b4e824"
+  ]
+}
+extra-source "8f2d9dde12431fb56ca924be73cceaaf58d9d56744993133d7c98ebfe47d9f17--cargo-c--0.10.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/blobs/sha256:5d1f2858d8ce6b55c88cee5baa9ac9f5b060c88639b999418c5835b3a2c00a20"
+  checksum: [
+    "sha256=5d1f2858d8ce6b55c88cee5baa9ac9f5b060c88639b999418c5835b3a2c00a20"
+  ]
+}
+extra-source "24b6ed0d0b469231629a9f18e346de19b0ab9071faec7e26469da693bf796db9--cargo-c--0.10.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cargo-c/blobs/sha256:d61baee354fd6c7484812b3b5b6d4b1fef2b09885a8ad1328535bc6695387ccb"
+  checksum: [
+    "sha256=d61baee354fd6c7484812b3b5b6d4b1fef2b09885a8ad1328535bc6695387ccb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b5fdaaf59356a2c8d762d852a42dec96f9ddb6049cfd2f2a32653559b3d7e033--cargo-c-0.10.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "dfac2d3cbf2b1f782ac1cd8906f43af3863a7ae3ebf395896dfac601329ce94c--cargo-c--0.10.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2f37627a4a9be4be577a3af0438ba57d4eb382cc120dc41d5db2d2a62fd60a04--cargo-c--0.10.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dbadfed11bb74c4d49f924f9348ee3a5b0a1fe2cc028ea37d0fc4128e2390207--cargo-c--0.10.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "927a0503896dedce74e36617cd2059021bbed8e79858b1a66210748d0109c2ba--cargo-c--0.10.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8039c0239e804551fe4f0b1c71c126609ff50811b100aad4786252802c976942--cargo-c--0.10.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4b84b0e30606b46da31f2ebebb441fa64959eaab83ce22af5aefe251ff5f6276--cargo-c--0.10.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8f2d9dde12431fb56ca924be73cceaaf58d9d56744993133d7c98ebfe47d9f17--cargo-c--0.10.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "24b6ed0d0b469231629a9f18e346de19b0ab9071faec7e26469da693bf796db9--cargo-c--0.10.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "cargo-c" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "cargo-c" ]
+]

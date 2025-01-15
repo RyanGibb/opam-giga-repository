@@ -1,0 +1,114 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "High performance key/value database"
+description: """
+High performance key/value database"""
+extra-source "b2131db45aa0a52c83579f4f2d839a1ae780753df51d51f797deeb615bcf88d2--berkeley-db@5--5.3.28_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:ac64ff01e9897372c22dd2f9c90a2e5ffc5b66876c243d20d1e107b7c3785fba"
+  checksum: [
+    "sha256=ac64ff01e9897372c22dd2f9c90a2e5ffc5b66876c243d20d1e107b7c3785fba"
+  ]
+}
+extra-source "17e4e0def00184b561c8a490b5c0813a7c4f5e1365eb2e927570786eb4e05e09--berkeley-db@5-5.3.28_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/manifests/5.3.28_1"
+}
+extra-source "98d929a7b2d687ca99474202093cbfc3cb735ca225ff3aea3d405101a59c71ed--berkeley-db@5--5.3.28_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:db128eb3926e9941b0db4aaf52df8848c74194128712f153f46df7810395ff5e"
+  checksum: [
+    "sha256=db128eb3926e9941b0db4aaf52df8848c74194128712f153f46df7810395ff5e"
+  ]
+}
+extra-source "020291e1db948dbc69f0cc618fafe9cc40ba1b20198cfb0f36fecdbb4f18a57f--berkeley-db@5--5.3.28_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:7e1f6f67ce491e8636f9095fa45854e7b5720745b909e3b84cad8400b28418fd"
+  checksum: [
+    "sha256=7e1f6f67ce491e8636f9095fa45854e7b5720745b909e3b84cad8400b28418fd"
+  ]
+}
+extra-source "6237574e996b394b285fa9f3012a6aa50ebbfbaeddf1f0eb649eed0bed184e0c--berkeley-db@5--5.3.28_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:7fdd38c90e7bfcb57b4a061423d38602471f568e37393820889ee56d1c9fd003"
+  checksum: [
+    "sha256=7fdd38c90e7bfcb57b4a061423d38602471f568e37393820889ee56d1c9fd003"
+  ]
+}
+extra-source "9d2e66e0756418b4ea7ef0e3285daf6c55f24bc8fb47f306b501944444849004--berkeley-db@5--5.3.28_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:65a70e28dcf089e0ec6d247c32df257c8bc2532ece6f4c447200a48e7ad17a8d"
+  checksum: [
+    "sha256=65a70e28dcf089e0ec6d247c32df257c8bc2532ece6f4c447200a48e7ad17a8d"
+  ]
+}
+extra-source "a9e041f6ea01446062575567454e888fb5ba85e016a675b3d1c503f15ef404c0--berkeley-db@5--5.3.28_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:36aaa79c9fc3eb2b7690c24bdf74be3d0f7e1752983a63a17538945e2bce7452"
+  checksum: [
+    "sha256=36aaa79c9fc3eb2b7690c24bdf74be3d0f7e1752983a63a17538945e2bce7452"
+  ]
+}
+extra-source "080395478daa65ffdbb02aabb37d845c8611ef4e01a6d59a13ffe3ffb2fcd90d--berkeley-db@5--5.3.28_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:8c9ea685725256b2b50e856c23d20af734f20bc69fc92383e1819e4f867c8ac3"
+  checksum: [
+    "sha256=8c9ea685725256b2b50e856c23d20af734f20bc69fc92383e1819e4f867c8ac3"
+  ]
+}
+extra-source "99026d9e862be77f13f4bbddd447c80f03998188c27b448808712018405bfd51--berkeley-db@5--5.3.28_1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:5aa0875cdd7bd504abf8f7365e47f5ac4b0e1b9e4ca004d6eb58e2f1564a9621"
+  checksum: [
+    "sha256=5aa0875cdd7bd504abf8f7365e47f5ac4b0e1b9e4ca004d6eb58e2f1564a9621"
+  ]
+}
+extra-source "755a6351254a76464450ed3cac4dc342505dc9af5d804aa522c68f0f8da6b90b--berkeley-db@5--5.3.28_1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:9ef4df0db041470e7eba4335524ea0348f0061bd4e10ab7a7f6051841f7a7e11"
+  checksum: [
+    "sha256=9ef4df0db041470e7eba4335524ea0348f0061bd4e10ab7a7f6051841f7a7e11"
+  ]
+}
+extra-source "1bfd7f60ce3de3f8dc82e199da7ef31f0a40597f899f5531801dd22ab777d55f--berkeley-db@5--5.3.28_1.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:944b439dd5dcb02c5219b307d6ed739b9808a4eced27f6605a977e550e47c8bd"
+  checksum: [
+    "sha256=944b439dd5dcb02c5219b307d6ed739b9808a4eced27f6605a977e550e47c8bd"
+  ]
+}
+extra-source "8b5fb485cdbb78c808921aeee52f32eadf4dc239fa5c03df690e316a1f9f4021--berkeley-db@5--5.3.28_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:c0e2906cc6657dc497fec75629560b0a404b81cebadf5e10c1f70616a14fa886"
+  checksum: [
+    "sha256=c0e2906cc6657dc497fec75629560b0a404b81cebadf5e10c1f70616a14fa886"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "17e4e0def00184b561c8a490b5c0813a7c4f5e1365eb2e927570786eb4e05e09--berkeley-db@5-5.3.28_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "b2131db45aa0a52c83579f4f2d839a1ae780753df51d51f797deeb615bcf88d2--berkeley-db@5--5.3.28_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "98d929a7b2d687ca99474202093cbfc3cb735ca225ff3aea3d405101a59c71ed--berkeley-db@5--5.3.28_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "020291e1db948dbc69f0cc618fafe9cc40ba1b20198cfb0f36fecdbb4f18a57f--berkeley-db@5--5.3.28_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6237574e996b394b285fa9f3012a6aa50ebbfbaeddf1f0eb649eed0bed184e0c--berkeley-db@5--5.3.28_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9d2e66e0756418b4ea7ef0e3285daf6c55f24bc8fb47f306b501944444849004--berkeley-db@5--5.3.28_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a9e041f6ea01446062575567454e888fb5ba85e016a675b3d1c503f15ef404c0--berkeley-db@5--5.3.28_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "080395478daa65ffdbb02aabb37d845c8611ef4e01a6d59a13ffe3ffb2fcd90d--berkeley-db@5--5.3.28_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "99026d9e862be77f13f4bbddd447c80f03998188c27b448808712018405bfd51--berkeley-db@5--5.3.28_1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "755a6351254a76464450ed3cac4dc342505dc9af5d804aa522c68f0f8da6b90b--berkeley-db@5--5.3.28_1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1bfd7f60ce3de3f8dc82e199da7ef31f0a40597f899f5531801dd22ab777d55f--berkeley-db@5--5.3.28_1.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8b5fb485cdbb78c808921aeee52f32eadf4dc239fa5c03df690e316a1f9f4021--berkeley-db@5--5.3.28_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "berkeley-db" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "berkeley-db" ]
+]

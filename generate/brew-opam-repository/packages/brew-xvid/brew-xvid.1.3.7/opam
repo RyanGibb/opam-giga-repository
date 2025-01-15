@@ -1,0 +1,130 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "High-performance, high-quality MPEG-4 video library"
+description: """
+High-performance, high-quality MPEG-4 video library"""
+extra-source "82169182dbc27736776f7ce4e264ffa5dfdf3c7d2f3309c2a2154fc65189d239--xvid--1.3.7.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:c3bf171815c62e62be978f5d1913e7ce2e045cdb3e33012499e06197775ff4bd"
+  checksum: [
+    "sha256=c3bf171815c62e62be978f5d1913e7ce2e045cdb3e33012499e06197775ff4bd"
+  ]
+}
+extra-source "b5121b85b4f5dfe07f78abbcbe520ae4926d781af3342e318e588b62aba59fe0--xvid-1.3.7.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/manifests/1.3.7"
+}
+extra-source "431d7c26eb86ab51c2c5b5255e3cd1c161865aeb50915e1f73ce1f768ec249af--xvid--1.3.7.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:1ed739249685549c93ef3f8b4ed04c065ea69d814e5c7404487e113776bcee9f"
+  checksum: [
+    "sha256=1ed739249685549c93ef3f8b4ed04c065ea69d814e5c7404487e113776bcee9f"
+  ]
+}
+extra-source "05bfbb26b0598e2066c377c95a2f0742253796fc7272d848001299f2fa279630--xvid--1.3.7.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:8062840ad8e79ae9c733f5d8f4b822e70d962c243e7c9eceee95bb100e016743"
+  checksum: [
+    "sha256=8062840ad8e79ae9c733f5d8f4b822e70d962c243e7c9eceee95bb100e016743"
+  ]
+}
+extra-source "d859f4cd10a2f304e0ccaeed247e625aeed56e694bcb285de5a3225fe092ff6b--xvid--1.3.7.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:4726e597ea39861c53660614ebba7270095f12e99d76085f4bf0956408e91e38"
+  checksum: [
+    "sha256=4726e597ea39861c53660614ebba7270095f12e99d76085f4bf0956408e91e38"
+  ]
+}
+extra-source "5b97337010e2860369b5d2af4ac7ac1169cc936d3cd64da215d9a72c5350831a--xvid--1.3.7.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:58aa3f757ca260fb922ee623240b710ef7e1cc75dea00c314d6d5ecd98289cbf"
+  checksum: [
+    "sha256=58aa3f757ca260fb922ee623240b710ef7e1cc75dea00c314d6d5ecd98289cbf"
+  ]
+}
+extra-source "bb589c390db4c73a60928bd82ff65a5ccf750ad54d2fbaaf90190cc6a63e9db3--xvid--1.3.7.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:57aae7b7565705fdd83b0c2996cf0d2e3569546e9691197d175431b89a9599b9"
+  checksum: [
+    "sha256=57aae7b7565705fdd83b0c2996cf0d2e3569546e9691197d175431b89a9599b9"
+  ]
+}
+extra-source "6834e9727a95ec9454172d49b8f79384bb6bb1aa035549b11b1170b573b97cfb--xvid--1.3.7.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:ccf0c5b732d140dce8c595ff6bad287ed5be49a2c6a05912a1dbfdedfcb232bf"
+  checksum: [
+    "sha256=ccf0c5b732d140dce8c595ff6bad287ed5be49a2c6a05912a1dbfdedfcb232bf"
+  ]
+}
+extra-source "7577300dc775fb6b5a239597f04fa576d11abad8d1521c6276f50c52b3a4a468--xvid--1.3.7.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:feabfa1a3df3b916654ba5eef30193b65cdba70a7a49cca6406ec0c214b50338"
+  checksum: [
+    "sha256=feabfa1a3df3b916654ba5eef30193b65cdba70a7a49cca6406ec0c214b50338"
+  ]
+}
+extra-source "6fb1fea15219976fcd144f4ecfcbddafab302af9637f8d32e3c88c7756f7f47d--xvid--1.3.7.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:8974d7b8f816f7d5e8d9ae967b94922e0ed212f22f6475b7fa4c80c7a95d6582"
+  checksum: [
+    "sha256=8974d7b8f816f7d5e8d9ae967b94922e0ed212f22f6475b7fa4c80c7a95d6582"
+  ]
+}
+extra-source "5cf8495f3de9225a4c1411e6efe611fa45dcb5f98886d2cce111adf8fe61e238--xvid--1.3.7.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:ace5fea6272f3594b5c8fca6f1fe03c41c50a14af8599751571c5e44a49a5a53"
+  checksum: [
+    "sha256=ace5fea6272f3594b5c8fca6f1fe03c41c50a14af8599751571c5e44a49a5a53"
+  ]
+}
+extra-source "d9740172387ec7ea960bb10f6580fbe993aafbccc2432066ad2ac1fd586b3896--xvid--1.3.7.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:4e119534a1351c85799944eb35f6f5675192e67e077fb3452f73f210a57eabe3"
+  checksum: [
+    "sha256=4e119534a1351c85799944eb35f6f5675192e67e077fb3452f73f210a57eabe3"
+  ]
+}
+extra-source "50a32147fec5f2614d8bc56577c7cd951b56b2c0f75e43dab0d8146ed7c76579--xvid--1.3.7.high_sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:79ea46af3061561427ab0af36b09d61e057084c76f655ec21074fba375a36b01"
+  checksum: [
+    "sha256=79ea46af3061561427ab0af36b09d61e057084c76f655ec21074fba375a36b01"
+  ]
+}
+extra-source "2249dd88be44eb4e8a1f7cc8a5fb9521b53d0e72afabff2d08649de2bfb638ae--xvid--1.3.7.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xvid/blobs/sha256:93bd40f313f5a6656ce1ca70cfeacf67deacd647beaf204ab3fd610a2d92c5a7"
+  checksum: [
+    "sha256=93bd40f313f5a6656ce1ca70cfeacf67deacd647beaf204ab3fd610a2d92c5a7"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b5121b85b4f5dfe07f78abbcbe520ae4926d781af3342e318e588b62aba59fe0--xvid-1.3.7.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "82169182dbc27736776f7ce4e264ffa5dfdf3c7d2f3309c2a2154fc65189d239--xvid--1.3.7.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "431d7c26eb86ab51c2c5b5255e3cd1c161865aeb50915e1f73ce1f768ec249af--xvid--1.3.7.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "05bfbb26b0598e2066c377c95a2f0742253796fc7272d848001299f2fa279630--xvid--1.3.7.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d859f4cd10a2f304e0ccaeed247e625aeed56e694bcb285de5a3225fe092ff6b--xvid--1.3.7.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5b97337010e2860369b5d2af4ac7ac1169cc936d3cd64da215d9a72c5350831a--xvid--1.3.7.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bb589c390db4c73a60928bd82ff65a5ccf750ad54d2fbaaf90190cc6a63e9db3--xvid--1.3.7.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6834e9727a95ec9454172d49b8f79384bb6bb1aa035549b11b1170b573b97cfb--xvid--1.3.7.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7577300dc775fb6b5a239597f04fa576d11abad8d1521c6276f50c52b3a4a468--xvid--1.3.7.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6fb1fea15219976fcd144f4ecfcbddafab302af9637f8d32e3c88c7756f7f47d--xvid--1.3.7.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5cf8495f3de9225a4c1411e6efe611fa45dcb5f98886d2cce111adf8fe61e238--xvid--1.3.7.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d9740172387ec7ea960bb10f6580fbe993aafbccc2432066ad2ac1fd586b3896--xvid--1.3.7.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "50a32147fec5f2614d8bc56577c7cd951b56b2c0f75e43dab0d8146ed7c76579--xvid--1.3.7.high_sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2249dd88be44eb4e8a1f7cc8a5fb9521b53d0e72afabff2d08649de2bfb638ae--xvid--1.3.7.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "xvid" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "xvid" ]
+]

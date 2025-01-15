@@ -1,0 +1,109 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Safe, concurrent, practical language"
+description: """
+Safe, concurrent, practical language"""
+extra-source "17239279afb0d200ff51c331d148412808fb9353afdbadb6c4a6b64d96e04820--rust--1.81.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/blobs/sha256:976612b55f2634f28d7ecd00253fab4cd179b352ed5e998c862de2d193690a34"
+  checksum: [
+    "sha256=976612b55f2634f28d7ecd00253fab4cd179b352ed5e998c862de2d193690a34"
+  ]
+}
+extra-source "90056b7dfcf2c0c054545596c07c95ce214b87c5316d3c5b34d4a9d653c13788--rust-1.81.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/manifests/1.81.0"
+}
+extra-source "0398cbccfb19a53ca418bac49111f289f395071d9989d26c08f20b803fa25a9a--rust--1.81.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/blobs/sha256:62353b21e9ffd4ff946fbaedc91b796985172379b8eaf77eebe39859b0dea31d"
+  checksum: [
+    "sha256=62353b21e9ffd4ff946fbaedc91b796985172379b8eaf77eebe39859b0dea31d"
+  ]
+}
+extra-source "73cf8779be98e4e0443e0dee5cb2d01812ea607cdbd1a1cc0ff0b532adc4ae00--rust--1.81.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/blobs/sha256:e435ab78fdd28d1d422cfb2fc053e56fd4d529b284ff2546e8fe30aacc183712"
+  checksum: [
+    "sha256=e435ab78fdd28d1d422cfb2fc053e56fd4d529b284ff2546e8fe30aacc183712"
+  ]
+}
+extra-source "8ddba1e0487ac3ed2f46a55bc6c16f4407ec5022a0e0dfff3b0edc28dade527a--rust--1.81.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/blobs/sha256:3ac85eed3480bd7d2da271e68013f30b1e44376e9cd468ac86f3fb90e6b0cbf2"
+  checksum: [
+    "sha256=3ac85eed3480bd7d2da271e68013f30b1e44376e9cd468ac86f3fb90e6b0cbf2"
+  ]
+}
+extra-source "3d4d65cc210c9004df1c760a14888567bb54d0e4ca4a44fca73cb3a7e76ee67f--rust--1.81.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/blobs/sha256:567f85fc6853432ce4bcbd3a336067a2544b59c2b9a17272a1afa8aecd8fa873"
+  checksum: [
+    "sha256=567f85fc6853432ce4bcbd3a336067a2544b59c2b9a17272a1afa8aecd8fa873"
+  ]
+}
+extra-source "2688402fbfcc46b791fdaf7f6076a7063568bcb28aa2556b3bcdb6a517de3e2e--rust--1.81.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/blobs/sha256:1768b11223edc7a14d22fdbe07365422112dd7af21a4b520df2a92068425cd87"
+  checksum: [
+    "sha256=1768b11223edc7a14d22fdbe07365422112dd7af21a4b520df2a92068425cd87"
+  ]
+}
+extra-source "92f67a3cff5e9639573582e79851c618c9e3ec9e139e35a464391c62bf748d45--rust--1.81.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/blobs/sha256:00cd15f19928821fbb8fa658f6bc54118e8b8871eaeee8245dcc1d87d8cc0e27"
+  checksum: [
+    "sha256=00cd15f19928821fbb8fa658f6bc54118e8b8871eaeee8245dcc1d87d8cc0e27"
+  ]
+}
+extra-source "0960e75f36a94dc6606faa0f3c5e11eac08e5950a8ebf8eaa586876f2d43b345--rust--1.81.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rust/blobs/sha256:01f58715374b8362b17d665beb02f74a2f9ec40e4451eae91a88b04776ae3511"
+  checksum: [
+    "sha256=01f58715374b8362b17d665beb02f74a2f9ec40e4451eae91a88b04776ae3511"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "90056b7dfcf2c0c054545596c07c95ce214b87c5316d3c5b34d4a9d653c13788--rust-1.81.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "17239279afb0d200ff51c331d148412808fb9353afdbadb6c4a6b64d96e04820--rust--1.81.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0398cbccfb19a53ca418bac49111f289f395071d9989d26c08f20b803fa25a9a--rust--1.81.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "73cf8779be98e4e0443e0dee5cb2d01812ea607cdbd1a1cc0ff0b532adc4ae00--rust--1.81.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8ddba1e0487ac3ed2f46a55bc6c16f4407ec5022a0e0dfff3b0edc28dade527a--rust--1.81.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3d4d65cc210c9004df1c760a14888567bb54d0e4ca4a44fca73cb3a7e76ee67f--rust--1.81.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2688402fbfcc46b791fdaf7f6076a7063568bcb28aa2556b3bcdb6a517de3e2e--rust--1.81.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "92f67a3cff5e9639573582e79851c618c9e3ec9e139e35a464391c62bf748d45--rust--1.81.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0960e75f36a94dc6606faa0f3c5e11eac08e5950a8ebf8eaa586876f2d43b345--rust--1.81.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "rust" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "rust" ]
+]

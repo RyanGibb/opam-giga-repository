@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Tool for downloading RTMP streaming media"
+description: """
+Tool for downloading RTMP streaming media"""
+extra-source "09702a95628df5b4d229e00f81d84d5dc7c252e31854ce0b8af27269e3c8ed84--rtmpdump--2.4-20151223_3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:4d88c286ea074e6dc9612679d33f1e25910dce5cd4c4a3f9f2dcdec8ad950516"
+  checksum: [
+    "sha256=4d88c286ea074e6dc9612679d33f1e25910dce5cd4c4a3f9f2dcdec8ad950516"
+  ]
+}
+extra-source "b40cb4d6b301aad8ce26f9deb74a74c0d98d1868d19881f9bff55b81d6f11e50--rtmpdump-2.4-20151223_3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/manifests/2.4-20151223_3"
+}
+extra-source "3a980f46986f7f4efd1b31aee2abf79e75dacb40afcfeab393c1a5127afff72e--rtmpdump--2.4-20151223_3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:5d019561203c8b1c1c1e69c48b3987d531c55fa806bd83f0a462b6b7da732f48"
+  checksum: [
+    "sha256=5d019561203c8b1c1c1e69c48b3987d531c55fa806bd83f0a462b6b7da732f48"
+  ]
+}
+extra-source "29a8b94b6f773b8a95202fd7e8c6f0ddbb98973233725e67691f3a939d449587--rtmpdump--2.4-20151223_3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:fc5748b95d47c39bb4d633090cc0a7b5fe90bda5ef163fa5b8809272c9bf4618"
+  checksum: [
+    "sha256=fc5748b95d47c39bb4d633090cc0a7b5fe90bda5ef163fa5b8809272c9bf4618"
+  ]
+}
+extra-source "2a10337185c4104cc58c01b8a263a02ebc0b88fdd40da5ee8416cd8964ad48a8--rtmpdump--2.4-20151223_3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:b27c24194ded10a47b93a379efae8ead4b04a6d3e8e34bc3a70942380b1ed68b"
+  checksum: [
+    "sha256=b27c24194ded10a47b93a379efae8ead4b04a6d3e8e34bc3a70942380b1ed68b"
+  ]
+}
+extra-source "5d6e89f981d09c1d88c1a45657d488b8e5f01a83005c72ca23ffe05c7f0e07ea--rtmpdump--2.4-20151223_3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:1dec5a57d0173f54cb1f38efb6bfbd0bc416bdb298289ebaac1dce3a41bdd6fb"
+  checksum: [
+    "sha256=1dec5a57d0173f54cb1f38efb6bfbd0bc416bdb298289ebaac1dce3a41bdd6fb"
+  ]
+}
+extra-source "5608a3bc153fd5e1b1f0c8daaf4e15a532f68aba0f94bf04f268f97dc28cffc5--rtmpdump--2.4-20151223_3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:b942d0dee2c95a00b3fd080c50d1f0d715448ae3147bbb18cf5adb758cb63798"
+  checksum: [
+    "sha256=b942d0dee2c95a00b3fd080c50d1f0d715448ae3147bbb18cf5adb758cb63798"
+  ]
+}
+extra-source "2ce60f8d66a8abb8f32def5a7e0d385386a2db7f8236e06b513dd80f2f5e75c6--rtmpdump--2.4-20151223_3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:5151b4682fa17d931e6383dd06b584d822df647fd454b22ddf498525606cff39"
+  checksum: [
+    "sha256=5151b4682fa17d931e6383dd06b584d822df647fd454b22ddf498525606cff39"
+  ]
+}
+extra-source "11b51e84390f68f94e15efcfebc875e7769f1119c9da7102db5928f5c8edd727--rtmpdump--2.4-20151223_3.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:794073edbf7402af7750b21fbcb44c5df038d6d3606450bd6a453dc92b6b3b09"
+  checksum: [
+    "sha256=794073edbf7402af7750b21fbcb44c5df038d6d3606450bd6a453dc92b6b3b09"
+  ]
+}
+extra-source "4c49e9fd05fc852d79bc9c3d03ab23be9a0a7b51588d72255c353e27daeb2194--rtmpdump--2.4-20151223_3.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:b548e2d6b53bc0d03bdc73fb01a175c8ef2338f80a3ca0c1963af625f0baa523"
+  checksum: [
+    "sha256=b548e2d6b53bc0d03bdc73fb01a175c8ef2338f80a3ca0c1963af625f0baa523"
+  ]
+}
+extra-source "19a63fc0d9f6ef24ca879778a51d39f258b7ce8af8098bb946b53643637ba1d7--rtmpdump--2.4-20151223_3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:0ab7f054fd0b01975be1893437235c61e2761ed9fb54e7880a854ca37809d57e"
+  checksum: [
+    "sha256=0ab7f054fd0b01975be1893437235c61e2761ed9fb54e7880a854ca37809d57e"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b40cb4d6b301aad8ce26f9deb74a74c0d98d1868d19881f9bff55b81d6f11e50--rtmpdump-2.4-20151223_3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "09702a95628df5b4d229e00f81d84d5dc7c252e31854ce0b8af27269e3c8ed84--rtmpdump--2.4-20151223_3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3a980f46986f7f4efd1b31aee2abf79e75dacb40afcfeab393c1a5127afff72e--rtmpdump--2.4-20151223_3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "29a8b94b6f773b8a95202fd7e8c6f0ddbb98973233725e67691f3a939d449587--rtmpdump--2.4-20151223_3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2a10337185c4104cc58c01b8a263a02ebc0b88fdd40da5ee8416cd8964ad48a8--rtmpdump--2.4-20151223_3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5d6e89f981d09c1d88c1a45657d488b8e5f01a83005c72ca23ffe05c7f0e07ea--rtmpdump--2.4-20151223_3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5608a3bc153fd5e1b1f0c8daaf4e15a532f68aba0f94bf04f268f97dc28cffc5--rtmpdump--2.4-20151223_3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2ce60f8d66a8abb8f32def5a7e0d385386a2db7f8236e06b513dd80f2f5e75c6--rtmpdump--2.4-20151223_3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "11b51e84390f68f94e15efcfebc875e7769f1119c9da7102db5928f5c8edd727--rtmpdump--2.4-20151223_3.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4c49e9fd05fc852d79bc9c3d03ab23be9a0a7b51588d72255c353e27daeb2194--rtmpdump--2.4-20151223_3.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "19a63fc0d9f6ef24ca879778a51d39f258b7ce8af8098bb946b53643637ba1d7--rtmpdump--2.4-20151223_3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "rtmpdump" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "rtmpdump" ]
+]

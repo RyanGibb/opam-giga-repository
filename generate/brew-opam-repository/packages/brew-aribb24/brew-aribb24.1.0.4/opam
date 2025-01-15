@@ -1,0 +1,120 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for ARIB STD-B24, decoding JIS 8 bit characters and parsing MPEG-TS"
+description: """
+Library for ARIB STD-B24, decoding JIS 8 bit characters and parsing MPEG-TS"""
+extra-source "25684bb36aeb3656c5b48cceda15bac4daabe480018a2c733c9b4db533f0daed--aribb24--1.0.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:4f5a5fb9f91e28f11bbf33dda14a54b36510cecc834a29f0ba28d980a57760fc"
+  checksum: [
+    "sha256=4f5a5fb9f91e28f11bbf33dda14a54b36510cecc834a29f0ba28d980a57760fc"
+  ]
+}
+extra-source "60185994f1623d662ea1959234838b47c2b4b891760a6b2af42d1cd3b36f2c0f--aribb24-1.0.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/manifests/1.0.4"
+}
+extra-source "d1fc53a03969c14622fdde0a73194b35294acefb097295a69c0916de7c8d313a--aribb24--1.0.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:1b3810c428e97ddad8cbefff6c59bfa6b6ac5e00903c73cc72a985a23b87dbce"
+  checksum: [
+    "sha256=1b3810c428e97ddad8cbefff6c59bfa6b6ac5e00903c73cc72a985a23b87dbce"
+  ]
+}
+extra-source "6d55bdb8ed837eb69e256dc3b8df5f079d05224be5b9ab8d2f59a97d5eef3239--aribb24--1.0.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:00fe805d46c08342ec5d62c3eaddfb272513ce55e5eeba324317f43f0783a6d8"
+  checksum: [
+    "sha256=00fe805d46c08342ec5d62c3eaddfb272513ce55e5eeba324317f43f0783a6d8"
+  ]
+}
+extra-source "6613d6d323a1d2e2eb93a3caf4cb67d6b88e14474222d0b7afd6a70fc98f70f1--aribb24--1.0.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:4d5f10b9965e29ae0ec8983ee370eb6e797eca7b00f00e3e1dc578c47ca3f5a2"
+  checksum: [
+    "sha256=4d5f10b9965e29ae0ec8983ee370eb6e797eca7b00f00e3e1dc578c47ca3f5a2"
+  ]
+}
+extra-source "bcc5aaa2f1f17d62e022058e34a7021fe0cddcdca7a9ac5f366c5d8967f0ddac--aribb24--1.0.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:60ea5e1c7b35cde769b03c6172b4ff78dec340a91f8ae2e1c6b490fdce65c34a"
+  checksum: [
+    "sha256=60ea5e1c7b35cde769b03c6172b4ff78dec340a91f8ae2e1c6b490fdce65c34a"
+  ]
+}
+extra-source "5b4d41420843563fafccaebff65a534ec4fee6d3455b6a5a23538304388b0178--aribb24--1.0.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:58a30ff5299bfc9311c30ae8ff571f156eb336add5b25d35d36c6e2a8e8d5534"
+  checksum: [
+    "sha256=58a30ff5299bfc9311c30ae8ff571f156eb336add5b25d35d36c6e2a8e8d5534"
+  ]
+}
+extra-source "71669180f7883700ca607e3c23091beaa6b3692c29f967a22891ce374663c6e7--aribb24--1.0.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:9e6741b85e4276c01c4ee9a9a304f816a2bbc7c848bf3f2607308af48c2464b0"
+  checksum: [
+    "sha256=9e6741b85e4276c01c4ee9a9a304f816a2bbc7c848bf3f2607308af48c2464b0"
+  ]
+}
+extra-source "972f084a5b1279592b58d7f20f449b5bceb68300f99522babd1acbbc74517747--aribb24--1.0.4.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:fe1e9015a5c0791019bcdf64b980730d8736c85ea6cf306beef8e06ce8ebfaf9"
+  checksum: [
+    "sha256=fe1e9015a5c0791019bcdf64b980730d8736c85ea6cf306beef8e06ce8ebfaf9"
+  ]
+}
+extra-source "3197ecb0c8324177dd1957ee3407fd7b4f00e9c6e9b3621de5ca91fcfebdab2d--aribb24--1.0.4.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:14ac368a22499dc0de526a744fd69ba07c64a01de95e5f9fbf16df2a90c38a6e"
+  checksum: [
+    "sha256=14ac368a22499dc0de526a744fd69ba07c64a01de95e5f9fbf16df2a90c38a6e"
+  ]
+}
+extra-source "2d3661ddebcb2f7657c11cdf6a1df5064d43f32c547471fcb91ad4e5f3776323--aribb24--1.0.4.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:31520472d7d33c860fff359b7ca6cd3e724bf504d9926c601a4db798d21df600"
+  checksum: [
+    "sha256=31520472d7d33c860fff359b7ca6cd3e724bf504d9926c601a4db798d21df600"
+  ]
+}
+extra-source "3a0a3cdcada51f5d4f46583e9a064ee1f4cfdc2eb36c0cc2615262179661c20a--aribb24--1.0.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aribb24/blobs/sha256:5a53b1584bef9b5d6aead4cc62266c67a9e642ea7234479516f4c083d0316f34"
+  checksum: [
+    "sha256=5a53b1584bef9b5d6aead4cc62266c67a9e642ea7234479516f4c083d0316f34"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "60185994f1623d662ea1959234838b47c2b4b891760a6b2af42d1cd3b36f2c0f--aribb24-1.0.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "25684bb36aeb3656c5b48cceda15bac4daabe480018a2c733c9b4db533f0daed--aribb24--1.0.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d1fc53a03969c14622fdde0a73194b35294acefb097295a69c0916de7c8d313a--aribb24--1.0.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6d55bdb8ed837eb69e256dc3b8df5f079d05224be5b9ab8d2f59a97d5eef3239--aribb24--1.0.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6613d6d323a1d2e2eb93a3caf4cb67d6b88e14474222d0b7afd6a70fc98f70f1--aribb24--1.0.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bcc5aaa2f1f17d62e022058e34a7021fe0cddcdca7a9ac5f366c5d8967f0ddac--aribb24--1.0.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5b4d41420843563fafccaebff65a534ec4fee6d3455b6a5a23538304388b0178--aribb24--1.0.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "71669180f7883700ca607e3c23091beaa6b3692c29f967a22891ce374663c6e7--aribb24--1.0.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "972f084a5b1279592b58d7f20f449b5bceb68300f99522babd1acbbc74517747--aribb24--1.0.4.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3197ecb0c8324177dd1957ee3407fd7b4f00e9c6e9b3621de5ca91fcfebdab2d--aribb24--1.0.4.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2d3661ddebcb2f7657c11cdf6a1df5064d43f32c547471fcb91ad4e5f3776323--aribb24--1.0.4.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3a0a3cdcada51f5d4f46583e9a064ee1f4cfdc2eb36c0cc2615262179661c20a--aribb24--1.0.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "aribb24" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "aribb24" ]
+]

@@ -1,0 +1,122 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C library for encoding, decoding, and manipulating JSON"
+description: """
+C library for encoding, decoding, and manipulating JSON"""
+extra-source "b27cb3f7b980c39601cd7efb4f62c56ecc6ac9e40567b27b905693eca9e9588f--jansson--2.14.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:c7e5911f2c6584585017a58c9bd62094473f13843803e1778d78cb5a3f1d6cf8"
+  checksum: [
+    "sha256=c7e5911f2c6584585017a58c9bd62094473f13843803e1778d78cb5a3f1d6cf8"
+  ]
+}
+extra-source "dcf5fb966d90746cd91204b1e9c96d935d2541ea00ccc8209f6017f684e838cd--jansson-2.14.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/manifests/2.14"
+}
+extra-source "81126948e8ae21452097fa293c4987537958024657ea180cb4382ddda404d856--jansson--2.14.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:cdac3d9d6f635983a33734c1eb3e159dfdf1fcf7adad6522cc5a2a444af41f49"
+  checksum: [
+    "sha256=cdac3d9d6f635983a33734c1eb3e159dfdf1fcf7adad6522cc5a2a444af41f49"
+  ]
+}
+extra-source "4b16cd521384b887cb4ea374aa2cf6ec1612acf83793c8b86c233e00972f98da--jansson--2.14.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:6652690ceed7b1425bc5f3ebb09951f5a77543283d755f54b4a002dc36d21f88"
+  checksum: [
+    "sha256=6652690ceed7b1425bc5f3ebb09951f5a77543283d755f54b4a002dc36d21f88"
+  ]
+}
+extra-source "f06853bf41fcbe25bd5652b4ec672ae86a016b56d63cf8cca53a33092fe7f2bd--jansson--2.14.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:b797c629e53bcc1424ec76f449e807ea82732938b811b2826a124e29448caad5"
+  checksum: [
+    "sha256=b797c629e53bcc1424ec76f449e807ea82732938b811b2826a124e29448caad5"
+  ]
+}
+extra-source "8e2723623c673fa3379872ef3bf5658adef21ae59f8c35adc3aa30e889f06ae0--jansson--2.14.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:81cb5066da1551e9a2d250c63b64393f7ba61d4a50d2132efa311757206e884b"
+  checksum: [
+    "sha256=81cb5066da1551e9a2d250c63b64393f7ba61d4a50d2132efa311757206e884b"
+  ]
+}
+extra-source "558a5dbaf3e4bfcb149dce8ab4be0c59f48d40a192df568b937876ba91bbea1a--jansson--2.14.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:b17770854e930d4302809dd4549142205f99a153a231492a9740f0c18d8e3258"
+  checksum: [
+    "sha256=b17770854e930d4302809dd4549142205f99a153a231492a9740f0c18d8e3258"
+  ]
+}
+extra-source "b472db6cb26f1ff162baec74e908a965d09695b69261e2c3e69b7c502d78287a--jansson--2.14.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:f8a132e116364ead3e428b1ad39768791f7a11ad26c07f5040c41d3514b7dea2"
+  checksum: [
+    "sha256=f8a132e116364ead3e428b1ad39768791f7a11ad26c07f5040c41d3514b7dea2"
+  ]
+}
+extra-source "195a948e3d4e8bd0843e9e2a9739eb1a1996f3dba1738767c7b58c53e3bb52a5--jansson--2.14.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:bb129dc922c0610c35a7b161429033a9123f03c4171df35717ff086b9cb52922"
+  checksum: [
+    "sha256=bb129dc922c0610c35a7b161429033a9123f03c4171df35717ff086b9cb52922"
+  ]
+}
+extra-source "45eb4c2f01dd19eb32435a9367f3805cdb91bd3e24bfa3c4dfb48c11a40ebabb--jansson--2.14.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:08a95c23eb5aa8cfe0af9dc360b4bb3ecab89cfb42db9d5e68bc6490b571321c"
+  checksum: [
+    "sha256=08a95c23eb5aa8cfe0af9dc360b4bb3ecab89cfb42db9d5e68bc6490b571321c"
+  ]
+}
+extra-source "dcf3f811d93e2ef7f27a78281af56d2e6eeba5e329668163cb0a8fb7cba1d69c--jansson--2.14.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:ddf25d83863396b864697529e837b869220ce86b8bb7b2cc03b77bdf1129563c"
+  checksum: [
+    "sha256=ddf25d83863396b864697529e837b869220ce86b8bb7b2cc03b77bdf1129563c"
+  ]
+}
+extra-source "2646b2e4440bca461eedb65494022cd36d3b9c36150493c100ed6b6d57cb5ec5--jansson--2.14.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:e219fa24f9fa034654592f6626c4a09d01fdeb888343a259a08ab4b1d08ac4ec"
+  checksum: [
+    "sha256=e219fa24f9fa034654592f6626c4a09d01fdeb888343a259a08ab4b1d08ac4ec"
+  ]
+}
+extra-source "d12e1466188eec4f777713228cc0cf48a70d860c3f5dba3d02fb4b8c1a9dfa60--jansson--2.14.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jansson/blobs/sha256:4f29060c36272b9dd76c5215e4118c04c0ef9235565281f87c34f8e8029cc3cb"
+  checksum: [
+    "sha256=4f29060c36272b9dd76c5215e4118c04c0ef9235565281f87c34f8e8029cc3cb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "dcf5fb966d90746cd91204b1e9c96d935d2541ea00ccc8209f6017f684e838cd--jansson-2.14.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "b27cb3f7b980c39601cd7efb4f62c56ecc6ac9e40567b27b905693eca9e9588f--jansson--2.14.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "81126948e8ae21452097fa293c4987537958024657ea180cb4382ddda404d856--jansson--2.14.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4b16cd521384b887cb4ea374aa2cf6ec1612acf83793c8b86c233e00972f98da--jansson--2.14.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f06853bf41fcbe25bd5652b4ec672ae86a016b56d63cf8cca53a33092fe7f2bd--jansson--2.14.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8e2723623c673fa3379872ef3bf5658adef21ae59f8c35adc3aa30e889f06ae0--jansson--2.14.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "558a5dbaf3e4bfcb149dce8ab4be0c59f48d40a192df568b937876ba91bbea1a--jansson--2.14.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b472db6cb26f1ff162baec74e908a965d09695b69261e2c3e69b7c502d78287a--jansson--2.14.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "195a948e3d4e8bd0843e9e2a9739eb1a1996f3dba1738767c7b58c53e3bb52a5--jansson--2.14.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "45eb4c2f01dd19eb32435a9367f3805cdb91bd3e24bfa3c4dfb48c11a40ebabb--jansson--2.14.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dcf3f811d93e2ef7f27a78281af56d2e6eeba5e329668163cb0a8fb7cba1d69c--jansson--2.14.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2646b2e4440bca461eedb65494022cd36d3b9c36150493c100ed6b6d57cb5ec5--jansson--2.14.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d12e1466188eec4f777713228cc0cf48a70d860c3f5dba3d02fb4b8c1a9dfa60--jansson--2.14.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "jansson" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "jansson" ]
+]

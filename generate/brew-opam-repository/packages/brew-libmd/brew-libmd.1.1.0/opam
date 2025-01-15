@@ -1,0 +1,106 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "BSD Message Digest library"
+description: """
+BSD Message Digest library"""
+extra-source "8418f1552855ff0166e9b79005842607b23d792a07938bf97abe6d0fa3891a9b--libmd--1.1.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:bbca49fa49f17de525e710aa6e8ae6cca1da2253e6b9eab21dc655389a5a81db"
+  checksum: [
+    "sha256=bbca49fa49f17de525e710aa6e8ae6cca1da2253e6b9eab21dc655389a5a81db"
+  ]
+}
+extra-source "eb60810b010acc3925d5bb89e30aaec898979502ae81de325303652efd9f6c99--libmd-1.1.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/manifests/1.1.0"
+}
+extra-source "b1f72491d98f5f997876a086d3ad1847ad4affafb7f53a886abac1bcf3490f21--libmd--1.1.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:92750c60e0d59b9f5e9fd48f80031c957ae8d2f833dca196f1dfa9a36504cf05"
+  checksum: [
+    "sha256=92750c60e0d59b9f5e9fd48f80031c957ae8d2f833dca196f1dfa9a36504cf05"
+  ]
+}
+extra-source "983720e239635b8657814e6f95240b3b3ce573e1459bf531f5dd1fa88ddf4280--libmd--1.1.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:98337df7be937bfe745b53b62522cf81160032f945d744d879713a729acc8ab6"
+  checksum: [
+    "sha256=98337df7be937bfe745b53b62522cf81160032f945d744d879713a729acc8ab6"
+  ]
+}
+extra-source "f0e05a6e07ad4036ae5c94edb5e461d0841eeae6ae0d1301aad32a34418ea74f--libmd--1.1.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:e81790c66cb480c6b411fca1e2adfded0e5c20ab12ec02e57e450bdb589539c3"
+  checksum: [
+    "sha256=e81790c66cb480c6b411fca1e2adfded0e5c20ab12ec02e57e450bdb589539c3"
+  ]
+}
+extra-source "0fa2085d7a545bbb879bd7d16fd245f4dfbbed13cb8db1775dd72fc3f71ac863--libmd--1.1.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:02f452242f49ca67f98dff20e769e290db1d99c6d5874c067dafd8be7bfa0a92"
+  checksum: [
+    "sha256=02f452242f49ca67f98dff20e769e290db1d99c6d5874c067dafd8be7bfa0a92"
+  ]
+}
+extra-source "5b2f49adeaf790ea0c8c2db365f892549a589278479d364f99ff1b5fb86647b3--libmd--1.1.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:36a5e1ef679b99d090814f2fde15e9fb45d73afa26fc5ef75618c4ff85bf48dd"
+  checksum: [
+    "sha256=36a5e1ef679b99d090814f2fde15e9fb45d73afa26fc5ef75618c4ff85bf48dd"
+  ]
+}
+extra-source "d91326b0cf0916f52c67100cc9ad6489ede631c2f1c58c96763218845536c0b1--libmd--1.1.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:fc0d8c70408cacab6b3b1f2567582ab2281fd308d7e2ce704042705dabe40241"
+  checksum: [
+    "sha256=fc0d8c70408cacab6b3b1f2567582ab2281fd308d7e2ce704042705dabe40241"
+  ]
+}
+extra-source "414ae8a9fe3dacba2591123902a488b79d351eb6c489037322b640348acddb32--libmd--1.1.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:603212a43a289d57d2b541a3775d9a2c036b3813f2ca68640651b659f8dda490"
+  checksum: [
+    "sha256=603212a43a289d57d2b541a3775d9a2c036b3813f2ca68640651b659f8dda490"
+  ]
+}
+extra-source "1d7a6b85f7ad39fc399bbc314f60771340f806d1f71d35ac717f3120ff717945--libmd--1.1.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:bfd3a5595f509f3ebb3970c0c2a0e3b08569573ca1f406a8047565d26fb652dd"
+  checksum: [
+    "sha256=bfd3a5595f509f3ebb3970c0c2a0e3b08569573ca1f406a8047565d26fb652dd"
+  ]
+}
+extra-source "8f960ef3f2e3f7d23d1d2910f68250693122ffbea38c30b590e091fe00c5e570--libmd--1.1.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmd/blobs/sha256:c07679b6d5141498eaaab977d8501cf12219feb13a7ae040044561d5abece9af"
+  checksum: [
+    "sha256=c07679b6d5141498eaaab977d8501cf12219feb13a7ae040044561d5abece9af"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "eb60810b010acc3925d5bb89e30aaec898979502ae81de325303652efd9f6c99--libmd-1.1.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "8418f1552855ff0166e9b79005842607b23d792a07938bf97abe6d0fa3891a9b--libmd--1.1.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b1f72491d98f5f997876a086d3ad1847ad4affafb7f53a886abac1bcf3490f21--libmd--1.1.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "983720e239635b8657814e6f95240b3b3ce573e1459bf531f5dd1fa88ddf4280--libmd--1.1.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f0e05a6e07ad4036ae5c94edb5e461d0841eeae6ae0d1301aad32a34418ea74f--libmd--1.1.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0fa2085d7a545bbb879bd7d16fd245f4dfbbed13cb8db1775dd72fc3f71ac863--libmd--1.1.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5b2f49adeaf790ea0c8c2db365f892549a589278479d364f99ff1b5fb86647b3--libmd--1.1.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d91326b0cf0916f52c67100cc9ad6489ede631c2f1c58c96763218845536c0b1--libmd--1.1.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "414ae8a9fe3dacba2591123902a488b79d351eb6c489037322b640348acddb32--libmd--1.1.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1d7a6b85f7ad39fc399bbc314f60771340f806d1f71d35ac717f3120ff717945--libmd--1.1.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8f960ef3f2e3f7d23d1d2910f68250693122ffbea38c30b590e091fe00c5e570--libmd--1.1.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libmd" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libmd" ]
+]

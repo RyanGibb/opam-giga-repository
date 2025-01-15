@@ -1,0 +1,93 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for manipulating JPEG-2000 images"
+description: """
+Library for manipulating JPEG-2000 images"""
+extra-source "8e379d1dbb8cc58c4a60710cd7a73ea1bf00841d5857e8e93ee14186912be367--jasper--4.2.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:6d7a00cd2f4286a4d90f1674cdc5a152632211cabf335c65106d6e24a2ca2b89"
+  checksum: [
+    "sha256=6d7a00cd2f4286a4d90f1674cdc5a152632211cabf335c65106d6e24a2ca2b89"
+  ]
+}
+extra-source "0edc7047fdbd9e0fd88f4c5ceed204b57e9b4d4f42c1b1b21c502d68fce31118--jasper-4.2.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/manifests/4.2.4"
+}
+extra-source "1772de2be5d4c36d06a65518b2a3f022419198f1fc5e7d4cfb34c8dcb0b207c5--jasper--4.2.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:ccc68dcf709d995ef9f91ab109a2dcabbc9aba82c475a9d32309545df18f155e"
+  checksum: [
+    "sha256=ccc68dcf709d995ef9f91ab109a2dcabbc9aba82c475a9d32309545df18f155e"
+  ]
+}
+extra-source "47f74d5bbb161e2a1f9ce3ae55de47d4a350c267edb59f426f5646b0f6635b81--jasper--4.2.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:a9c32c908bdf797743a22d851efd4c28b6abf6ad132bcececfb83de354383f72"
+  checksum: [
+    "sha256=a9c32c908bdf797743a22d851efd4c28b6abf6ad132bcececfb83de354383f72"
+  ]
+}
+extra-source "6510cd0b2bd6d7df8cde7ec7707a04d18a4762da5f6fa65268a8fb6d316283ee--jasper--4.2.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:18d3d583cb960f8e4872ffc5b2181b6282f95d2c1ebd3a659d0e0b3edf55bc10"
+  checksum: [
+    "sha256=18d3d583cb960f8e4872ffc5b2181b6282f95d2c1ebd3a659d0e0b3edf55bc10"
+  ]
+}
+extra-source "870270bb9528cafd973b714096d4bd6c7f082d6324d8d12d5d52ec41fd1bd1ff--jasper--4.2.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:c3215fa4215361e882b4701ac82da30bf175d3f13e9e34ebc375c1406f6ab1b4"
+  checksum: [
+    "sha256=c3215fa4215361e882b4701ac82da30bf175d3f13e9e34ebc375c1406f6ab1b4"
+  ]
+}
+extra-source "1c4311adacd8c225cf960455b046c4d3ab42f00591237a23770e872dc06963ea--jasper--4.2.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:09c601a2f468798fe0746f56a47a9ba3d3642c9da9b08a3cc57a4b99ab7105bf"
+  checksum: [
+    "sha256=09c601a2f468798fe0746f56a47a9ba3d3642c9da9b08a3cc57a4b99ab7105bf"
+  ]
+}
+extra-source "7ebc55facca7de33db79b288a0a864ffbf4aa8dfa0c8b261f6275893816b4370--jasper--4.2.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:180626f41ecce9cec96f869ac6efc0106cd7442eb887a00809f3fedf82db4a89"
+  checksum: [
+    "sha256=180626f41ecce9cec96f869ac6efc0106cd7442eb887a00809f3fedf82db4a89"
+  ]
+}
+extra-source "4db93e3a13118ab5c8c62456fb9ec17867f298f809b5be95ebec07133ba70878--jasper--4.2.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:e8a209bbc3755e5ae06cf4c7ab8040e079b0202635555ea4c75e8e36d8137c74"
+  checksum: [
+    "sha256=e8a209bbc3755e5ae06cf4c7ab8040e079b0202635555ea4c75e8e36d8137c74"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0edc7047fdbd9e0fd88f4c5ceed204b57e9b4d4f42c1b1b21c502d68fce31118--jasper-4.2.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "8e379d1dbb8cc58c4a60710cd7a73ea1bf00841d5857e8e93ee14186912be367--jasper--4.2.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1772de2be5d4c36d06a65518b2a3f022419198f1fc5e7d4cfb34c8dcb0b207c5--jasper--4.2.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "47f74d5bbb161e2a1f9ce3ae55de47d4a350c267edb59f426f5646b0f6635b81--jasper--4.2.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6510cd0b2bd6d7df8cde7ec7707a04d18a4762da5f6fa65268a8fb6d316283ee--jasper--4.2.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "870270bb9528cafd973b714096d4bd6c7f082d6324d8d12d5d52ec41fd1bd1ff--jasper--4.2.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1c4311adacd8c225cf960455b046c4d3ab42f00591237a23770e872dc06963ea--jasper--4.2.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7ebc55facca7de33db79b288a0a864ffbf4aa8dfa0c8b261f6275893816b4370--jasper--4.2.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4db93e3a13118ab5c8c62456fb9ec17867f298f809b5be95ebec07133ba70878--jasper--4.2.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "jasper" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "jasper" ]
+]

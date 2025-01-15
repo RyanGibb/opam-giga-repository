@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Set of autoconf macros used to build other xorg packages"
+description: """
+X.Org: Set of autoconf macros used to build other xorg packages"""
+extra-source "33ea8762bceb2cc4f81c6c3fb92c8148d834462af726e15458e0708d707cae7f--util-macros--1.20.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:eb3545f4823ce88d8d452be96d91d6b6ffbdbd7fa3232854ef6b7c4185ee8465"
+  checksum: [
+    "sha256=eb3545f4823ce88d8d452be96d91d6b6ffbdbd7fa3232854ef6b7c4185ee8465"
+  ]
+}
+extra-source "ef5c625ff194d67413ffeebcef101009376c3a7b1b8410e7042e8fc5d452c127--util-macros-1.20.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/manifests/1.20.1"
+}
+extra-source "a187a7a12f0fd84ecc5388055cff737c0cc2e6d7d17897df042e2fc885141b3e--util-macros--1.20.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:696cf4c4a3f599b3572b2626958c668f0188f14af306cc777c4ab878e2f3fb3f"
+  checksum: [
+    "sha256=696cf4c4a3f599b3572b2626958c668f0188f14af306cc777c4ab878e2f3fb3f"
+  ]
+}
+extra-source "ab965522e6c351748f3cdb63fb07fd24035f383fce12177ce5018396389bfc24--util-macros--1.20.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:2b4af09c7a852f609925d9a8ead68653d67f80e2452000ec0e54b372d9b4b0cf"
+  checksum: [
+    "sha256=2b4af09c7a852f609925d9a8ead68653d67f80e2452000ec0e54b372d9b4b0cf"
+  ]
+}
+extra-source "a187a7a12f0fd84ecc5388055cff737c0cc2e6d7d17897df042e2fc885141b3e--util-macros--1.20.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:696cf4c4a3f599b3572b2626958c668f0188f14af306cc777c4ab878e2f3fb3f"
+  checksum: [
+    "sha256=696cf4c4a3f599b3572b2626958c668f0188f14af306cc777c4ab878e2f3fb3f"
+  ]
+}
+extra-source "ab965522e6c351748f3cdb63fb07fd24035f383fce12177ce5018396389bfc24--util-macros--1.20.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:2b4af09c7a852f609925d9a8ead68653d67f80e2452000ec0e54b372d9b4b0cf"
+  checksum: [
+    "sha256=2b4af09c7a852f609925d9a8ead68653d67f80e2452000ec0e54b372d9b4b0cf"
+  ]
+}
+extra-source "a187a7a12f0fd84ecc5388055cff737c0cc2e6d7d17897df042e2fc885141b3e--util-macros--1.20.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:696cf4c4a3f599b3572b2626958c668f0188f14af306cc777c4ab878e2f3fb3f"
+  checksum: [
+    "sha256=696cf4c4a3f599b3572b2626958c668f0188f14af306cc777c4ab878e2f3fb3f"
+  ]
+}
+extra-source "ab965522e6c351748f3cdb63fb07fd24035f383fce12177ce5018396389bfc24--util-macros--1.20.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:2b4af09c7a852f609925d9a8ead68653d67f80e2452000ec0e54b372d9b4b0cf"
+  checksum: [
+    "sha256=2b4af09c7a852f609925d9a8ead68653d67f80e2452000ec0e54b372d9b4b0cf"
+  ]
+}
+extra-source "ab965522e6c351748f3cdb63fb07fd24035f383fce12177ce5018396389bfc24--util-macros--1.20.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:2b4af09c7a852f609925d9a8ead68653d67f80e2452000ec0e54b372d9b4b0cf"
+  checksum: [
+    "sha256=2b4af09c7a852f609925d9a8ead68653d67f80e2452000ec0e54b372d9b4b0cf"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ef5c625ff194d67413ffeebcef101009376c3a7b1b8410e7042e8fc5d452c127--util-macros-1.20.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "33ea8762bceb2cc4f81c6c3fb92c8148d834462af726e15458e0708d707cae7f--util-macros--1.20.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a187a7a12f0fd84ecc5388055cff737c0cc2e6d7d17897df042e2fc885141b3e--util-macros--1.20.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ab965522e6c351748f3cdb63fb07fd24035f383fce12177ce5018396389bfc24--util-macros--1.20.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a187a7a12f0fd84ecc5388055cff737c0cc2e6d7d17897df042e2fc885141b3e--util-macros--1.20.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ab965522e6c351748f3cdb63fb07fd24035f383fce12177ce5018396389bfc24--util-macros--1.20.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a187a7a12f0fd84ecc5388055cff737c0cc2e6d7d17897df042e2fc885141b3e--util-macros--1.20.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ab965522e6c351748f3cdb63fb07fd24035f383fce12177ce5018396389bfc24--util-macros--1.20.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ab965522e6c351748f3cdb63fb07fd24035f383fce12177ce5018396389bfc24--util-macros--1.20.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "util-macros" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "util-macros" ]
+]

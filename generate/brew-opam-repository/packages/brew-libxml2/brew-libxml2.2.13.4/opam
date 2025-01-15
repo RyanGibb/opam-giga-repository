@@ -1,0 +1,85 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GNOME XML library"
+description: """
+GNOME XML library"""
+extra-source "eec1c7aef746b6e8aec260a08868c3a254b5a96d806419a7b57e3d89c40235ad--libxml2--2.13.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:28b2523edb939ceb85216103be88e994a156a4f0157a045ce03bb2418239926a"
+  checksum: [
+    "sha256=28b2523edb939ceb85216103be88e994a156a4f0157a045ce03bb2418239926a"
+  ]
+}
+extra-source "533c9e6ff0196376fd52d1e8e8849ec34c6e7c5a0e40ca4d9843f7b4573d3a78--libxml2-2.13.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxml2/manifests/2.13.4"
+}
+extra-source "1972bbf60b682ccd059f981588fba34a8e7f6e57c87442d4981750b114f00817--libxml2--2.13.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:f2ee23b587e3d0390cae43a9c396f417ecd66ba599ace888983914f8c3ba91ca"
+  checksum: [
+    "sha256=f2ee23b587e3d0390cae43a9c396f417ecd66ba599ace888983914f8c3ba91ca"
+  ]
+}
+extra-source "3e7c53a29aa323f08be89ffce6e78255e69e2d6691eaee2d486b2887da87164c--libxml2--2.13.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:3e95a731b533d2151d0ba3924d38459db34dc1b09142bd5388c38489c690c05b"
+  checksum: [
+    "sha256=3e95a731b533d2151d0ba3924d38459db34dc1b09142bd5388c38489c690c05b"
+  ]
+}
+extra-source "29eb37839aa355a1a9c85f028ea76231b17a0194e03189fd6daeb43e29781ea6--libxml2--2.13.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:6a407f5772c16f7e4faecf439e0df8bbffbd6df53a7214981e45b9a8b9a8f029"
+  checksum: [
+    "sha256=6a407f5772c16f7e4faecf439e0df8bbffbd6df53a7214981e45b9a8b9a8f029"
+  ]
+}
+extra-source "4f6db260215c2a5d09c7b46f440857f8d66bae4d517229a2e1340496611b6b41--libxml2--2.13.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:f9e6108a1f2564a54155cabf79c5b62d1472a3ccf7e3bd87a11667cebd9e149e"
+  checksum: [
+    "sha256=f9e6108a1f2564a54155cabf79c5b62d1472a3ccf7e3bd87a11667cebd9e149e"
+  ]
+}
+extra-source "5365922c08e2b9971adf57729c1961c1d02ebcd88d78ca2f7c1e9b8111a778c0--libxml2--2.13.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:07d2aa6c77733470aee3cfddcd2e9159f1ea4184a297cfc2de33d9e5038ca728"
+  checksum: [
+    "sha256=07d2aa6c77733470aee3cfddcd2e9159f1ea4184a297cfc2de33d9e5038ca728"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-icu4c" {= "74.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-python" {= "3.11.10"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "533c9e6ff0196376fd52d1e8e8849ec34c6e7c5a0e40ca4d9843f7b4573d3a78--libxml2-2.13.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "eec1c7aef746b6e8aec260a08868c3a254b5a96d806419a7b57e3d89c40235ad--libxml2--2.13.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1972bbf60b682ccd059f981588fba34a8e7f6e57c87442d4981750b114f00817--libxml2--2.13.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3e7c53a29aa323f08be89ffce6e78255e69e2d6691eaee2d486b2887da87164c--libxml2--2.13.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "29eb37839aa355a1a9c85f028ea76231b17a0194e03189fd6daeb43e29781ea6--libxml2--2.13.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4f6db260215c2a5d09c7b46f440857f8d66bae4d517229a2e1340496611b6b41--libxml2--2.13.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5365922c08e2b9971adf57729c1961c1d02ebcd88d78ca2f7c1e9b8111a778c0--libxml2--2.13.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxml2" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxml2" ]
+]

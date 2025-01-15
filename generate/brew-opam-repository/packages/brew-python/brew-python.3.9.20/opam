@@ -1,0 +1,98 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Interpreted, interactive, object-oriented programming language"
+description: """
+Interpreted, interactive, object-oriented programming language"""
+extra-source "c072317429bb452ffad432cef6270b4622ae5c71f27b389675096eeb4b9937d8--python@3.9--3.9.20.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:0580cd1e46999a8beccb75f77e0b05f79cfade91fb402ae473d0aacc02be9951"
+  checksum: [
+    "sha256=0580cd1e46999a8beccb75f77e0b05f79cfade91fb402ae473d0aacc02be9951"
+  ]
+}
+extra-source "d503874bec282df1f0fa3790441cdc6517462f6d15fd7e0d7a30a26d4612bdf9--python@3.9-3.9.20.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/manifests/3.9.20"
+}
+extra-source "a60d77d8f695bf24c36b38111a3d210af53573f44d8ead26dbe400feb86b1f12--python@3.9--3.9.20.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:44dcef0a5a81d317ed5fe320030d40e36aabb8416b17fefaa31f7c750b09ec21"
+  checksum: [
+    "sha256=44dcef0a5a81d317ed5fe320030d40e36aabb8416b17fefaa31f7c750b09ec21"
+  ]
+}
+extra-source "4fee17637d3d611d39cb18c678857c88ae1237ee261503c91123d1849cb4fcc9--python@3.9--3.9.20.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:498dedbc032adaf282c20fb5bd67570a05c740352bafde94b4988cd698d4f762"
+  checksum: [
+    "sha256=498dedbc032adaf282c20fb5bd67570a05c740352bafde94b4988cd698d4f762"
+  ]
+}
+extra-source "70619ab753046c95736a99090aead57a09b375379c8c7f1f8c6bd1791c7e87b7--python@3.9--3.9.20.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:b83e9ef8729218438c3f937c4efc59603a8c100d2b0ef83bbcc0163fdc0075e4"
+  checksum: [
+    "sha256=b83e9ef8729218438c3f937c4efc59603a8c100d2b0ef83bbcc0163fdc0075e4"
+  ]
+}
+extra-source "c64c9905cd1cb4881c08666ad650144985a9a0c98de15e4be7ac1957bc17b37f--python@3.9--3.9.20.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:3371da459d79669676fd975e730bf365eeb4658e59cdedfa0b22380bf4cc775c"
+  checksum: [
+    "sha256=3371da459d79669676fd975e730bf365eeb4658e59cdedfa0b22380bf4cc775c"
+  ]
+}
+extra-source "f7b965733947e8fd8741b0a02e05d7f3a7a05b94a246b51e39629ef59345f012--python@3.9--3.9.20.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:aa38dd87edf16ffde32390bd0e1bef2358a9c9beffd37f07cf5531eeb4c074f5"
+  checksum: [
+    "sha256=aa38dd87edf16ffde32390bd0e1bef2358a9c9beffd37f07cf5531eeb4c074f5"
+  ]
+}
+extra-source "483962aba9f0049ff83a965cfe4144c6420c76812f1622e441a02066aa8f0958--python@3.9--3.9.20.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:9d64b062947225b6dc12543ae672c713823e1420220c5d5984a895a0aa47e214"
+  checksum: [
+    "sha256=9d64b062947225b6dc12543ae672c713823e1420220c5d5984a895a0aa47e214"
+  ]
+}
+extra-source "6671b818ed3694a6cbf418fb2df41ac2cfd96964f5e626123ee241e26827b496--python@3.9--3.9.20.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:364db16648d7890e150959da20466065c7a6822cff008e9760c1776f1fed6232"
+  checksum: [
+    "sha256=364db16648d7890e150959da20466065c7a6822cff008e9760c1776f1fed6232"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gdbm" {= "1.24"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d503874bec282df1f0fa3790441cdc6517462f6d15fd7e0d7a30a26d4612bdf9--python@3.9-3.9.20.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c072317429bb452ffad432cef6270b4622ae5c71f27b389675096eeb4b9937d8--python@3.9--3.9.20.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a60d77d8f695bf24c36b38111a3d210af53573f44d8ead26dbe400feb86b1f12--python@3.9--3.9.20.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4fee17637d3d611d39cb18c678857c88ae1237ee261503c91123d1849cb4fcc9--python@3.9--3.9.20.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "70619ab753046c95736a99090aead57a09b375379c8c7f1f8c6bd1791c7e87b7--python@3.9--3.9.20.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c64c9905cd1cb4881c08666ad650144985a9a0c98de15e4be7ac1957bc17b37f--python@3.9--3.9.20.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f7b965733947e8fd8741b0a02e05d7f3a7a05b94a246b51e39629ef59345f012--python@3.9--3.9.20.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "483962aba9f0049ff83a965cfe4144c6420c76812f1622e441a02066aa8f0958--python@3.9--3.9.20.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6671b818ed3694a6cbf418fb2df41ac2cfd96964f5e626123ee241e26827b496--python@3.9--3.9.20.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "python" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "python" ]
+]

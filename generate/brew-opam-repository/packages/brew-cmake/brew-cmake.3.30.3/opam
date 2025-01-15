@@ -1,0 +1,98 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Cross-platform make"
+description: """
+Cross-platform make"""
+extra-source "34dfb1728f7f752deb8b4fbacd9a3f394fbdd472317fdccde37ea6a770f47b77--cmake--3.30.3.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:59bf79f813b7d24fb401d6a77e9ff4618230bc03d053d85ac6073b4db591446d"
+  checksum: [
+    "sha256=59bf79f813b7d24fb401d6a77e9ff4618230bc03d053d85ac6073b4db591446d"
+  ]
+}
+extra-source "1173f026db24f4c17bdb8cc3be2e921656e9270e564c2b94630469741fe86f72--cmake-3.30.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/manifests/3.30.3"
+}
+extra-source "62eaf0f5488f5dfac1127b462506eadf31ccc0206ab1b17d1fd883e88dde2559--cmake--3.30.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:49ea082b4fb43477f9aab332e2d1e1f9c40921d44e994f648f83a69ba33b44bb"
+  checksum: [
+    "sha256=49ea082b4fb43477f9aab332e2d1e1f9c40921d44e994f648f83a69ba33b44bb"
+  ]
+}
+extra-source "10b65e680d4d95197965ec1a2a4216a490d5a09a8fd420f137765c07b1e737cc--cmake--3.30.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:ddd6fc37af08738bb5d9491e73ed37be64510065278425e3726fcd1b9db87180"
+  checksum: [
+    "sha256=ddd6fc37af08738bb5d9491e73ed37be64510065278425e3726fcd1b9db87180"
+  ]
+}
+extra-source "48e2e1831d8d120450003e884abbdb6abaef3c2647e1966412c45b7a0b4ca320--cmake--3.30.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:f1e7c136431f5c38e08f73d118374d69fc8055d8053d7d17fb0399c29a9bf2a9"
+  checksum: [
+    "sha256=f1e7c136431f5c38e08f73d118374d69fc8055d8053d7d17fb0399c29a9bf2a9"
+  ]
+}
+extra-source "97ef58bfa1e7fa690670378a50644c139078fb9fcfb5fb18522c91b6fea19856--cmake--3.30.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:a79c1d64879be94209752ad1ed3a298b954d6ea172202969b44dba977ce2ff82"
+  checksum: [
+    "sha256=a79c1d64879be94209752ad1ed3a298b954d6ea172202969b44dba977ce2ff82"
+  ]
+}
+extra-source "4ec400801de080bbe442ebbb2e4543bc2f1f251cd2a1100149dcec068fba8d5e--cmake--3.30.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:ad9ad76e14c46d5fcc727322002e230bb9fcfe71db1453defdf9875c1fd0a33b"
+  checksum: [
+    "sha256=ad9ad76e14c46d5fcc727322002e230bb9fcfe71db1453defdf9875c1fd0a33b"
+  ]
+}
+extra-source "f3a988a346c80f0b290e8e8a569f2ab2c709175f61da7d9063e75047f1995024--cmake--3.30.3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:9a06bae0043b8ed7c1e5cdacce018521fa3b9d4e07d86d0085b6ad5f9d03df7e"
+  checksum: [
+    "sha256=9a06bae0043b8ed7c1e5cdacce018521fa3b9d4e07d86d0085b6ad5f9d03df7e"
+  ]
+}
+extra-source "6c721658384415a551192e4a0ada4187c46f08fd8e99d20cec2994303c6d94d4--cmake--3.30.3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:b69067a4226484a6a3c9624dadf324987004096b7f44f88bd9b69a09d8395641"
+  checksum: [
+    "sha256=b69067a4226484a6a3c9624dadf324987004096b7f44f88bd9b69a09d8395641"
+  ]
+}
+extra-source "8f47b70a435f5962bbeef0104388bf7d321e634b92fad5ab5ccde5e879dc3166--cmake--3.30.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:44350707fa4af815fc981e274eb3b40eec87db45960daaf0c74a9d34a2ac5624"
+  checksum: [
+    "sha256=44350707fa4af815fc981e274eb3b40eec87db45960daaf0c74a9d34a2ac5624"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1173f026db24f4c17bdb8cc3be2e921656e9270e564c2b94630469741fe86f72--cmake-3.30.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "34dfb1728f7f752deb8b4fbacd9a3f394fbdd472317fdccde37ea6a770f47b77--cmake--3.30.3.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "62eaf0f5488f5dfac1127b462506eadf31ccc0206ab1b17d1fd883e88dde2559--cmake--3.30.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "10b65e680d4d95197965ec1a2a4216a490d5a09a8fd420f137765c07b1e737cc--cmake--3.30.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "48e2e1831d8d120450003e884abbdb6abaef3c2647e1966412c45b7a0b4ca320--cmake--3.30.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "97ef58bfa1e7fa690670378a50644c139078fb9fcfb5fb18522c91b6fea19856--cmake--3.30.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4ec400801de080bbe442ebbb2e4543bc2f1f251cd2a1100149dcec068fba8d5e--cmake--3.30.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f3a988a346c80f0b290e8e8a569f2ab2c709175f61da7d9063e75047f1995024--cmake--3.30.3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6c721658384415a551192e4a0ada4187c46f08fd8e99d20cec2994303c6d94d4--cmake--3.30.3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8f47b70a435f5962bbeef0104388bf7d321e634b92fad5ab5ccde5e879dc3166--cmake--3.30.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "cmake" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "cmake" ]
+]

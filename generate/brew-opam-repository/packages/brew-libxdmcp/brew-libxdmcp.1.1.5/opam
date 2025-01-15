@@ -1,0 +1,93 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: X Display Manager Control Protocol library"
+description: """
+X.Org: X Display Manager Control Protocol library"""
+extra-source "d737bea539a2cb3a0fd03f34e913d2e9e2ae4fcff4e6b700ff48bfe737aaa5e1--libxdmcp--1.1.5.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:b09a915dae5b45371a86f20a4ccce13c16c7a8eadc843b665e91bc5b2d2143ce"
+  checksum: [
+    "sha256=b09a915dae5b45371a86f20a4ccce13c16c7a8eadc843b665e91bc5b2d2143ce"
+  ]
+}
+extra-source "8713e53f73d0be64780dbea522b0ee07027e6cc7828ff1a4fa0a6596f14cfe25--libxdmcp-1.1.5.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/manifests/1.1.5"
+}
+extra-source "19250806e5b71fd875c53f22b8678a0cab1a06ee8c94abb73a97e28f52783f38--libxdmcp--1.1.5.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:b43d28c50f25ee0775a1bd4269e236d00e352ac060522bfc9186b35165095c56"
+  checksum: [
+    "sha256=b43d28c50f25ee0775a1bd4269e236d00e352ac060522bfc9186b35165095c56"
+  ]
+}
+extra-source "ee3e5ab996272cb29ed0fa623c5bc9047aff67df163146559544926ad65f9bd4--libxdmcp--1.1.5.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:789326aa88d1b6dbe5dd565e9e70e5031bf63fac39d22cd30d11c1dfc49ffbfb"
+  checksum: [
+    "sha256=789326aa88d1b6dbe5dd565e9e70e5031bf63fac39d22cd30d11c1dfc49ffbfb"
+  ]
+}
+extra-source "e08277586100c54e7be699a3b214612619b687abf169c7554beab8f39dd886a6--libxdmcp--1.1.5.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:f553988c10f628a28ef1f4d8d3ace5d5ffcc147a3ef6958acd679943a2300668"
+  checksum: [
+    "sha256=f553988c10f628a28ef1f4d8d3ace5d5ffcc147a3ef6958acd679943a2300668"
+  ]
+}
+extra-source "c0a3c8191759e5c8383ca9066ba8642b12fb6162738cceb5f3371a8a08e86b3e--libxdmcp--1.1.5.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:5c459f7ceb9793912b76f6a34019aa429a6963e938e685fc2e0cf2e75a88daf4"
+  checksum: [
+    "sha256=5c459f7ceb9793912b76f6a34019aa429a6963e938e685fc2e0cf2e75a88daf4"
+  ]
+}
+extra-source "4b94e9b23dfc248f3986aec9684284bbd0f46719e5ea1df8bb05ec5cf35cb6ba--libxdmcp--1.1.5.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:3d062d168fde07ebb9b7e7100ca830bdf2ea498fbb1c572f8584e314bb96054b"
+  checksum: [
+    "sha256=3d062d168fde07ebb9b7e7100ca830bdf2ea498fbb1c572f8584e314bb96054b"
+  ]
+}
+extra-source "36f9f1e000d606c1059e592c36f48fc0dbd5fbf8efd8ac51b915e249ccd9e179--libxdmcp--1.1.5.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:5aca31f04706d27335ba40875a3653336f470baa1cdacbad1dbea896ab7a4ace"
+  checksum: [
+    "sha256=5aca31f04706d27335ba40875a3653336f470baa1cdacbad1dbea896ab7a4ace"
+  ]
+}
+extra-source "6a262c11e21ef80bb76232413279b8d09949db96f3d256e5071d3a42f9075e1f--libxdmcp--1.1.5.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:d8b9dc2969e85e26c6d426d8865244e1416d73f7f408c9f5404a2a614a62e7d4"
+  checksum: [
+    "sha256=d8b9dc2969e85e26c6d426d8865244e1416d73f7f408c9f5404a2a614a62e7d4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8713e53f73d0be64780dbea522b0ee07027e6cc7828ff1a4fa0a6596f14cfe25--libxdmcp-1.1.5.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d737bea539a2cb3a0fd03f34e913d2e9e2ae4fcff4e6b700ff48bfe737aaa5e1--libxdmcp--1.1.5.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "19250806e5b71fd875c53f22b8678a0cab1a06ee8c94abb73a97e28f52783f38--libxdmcp--1.1.5.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ee3e5ab996272cb29ed0fa623c5bc9047aff67df163146559544926ad65f9bd4--libxdmcp--1.1.5.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e08277586100c54e7be699a3b214612619b687abf169c7554beab8f39dd886a6--libxdmcp--1.1.5.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c0a3c8191759e5c8383ca9066ba8642b12fb6162738cceb5f3371a8a08e86b3e--libxdmcp--1.1.5.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4b94e9b23dfc248f3986aec9684284bbd0f46719e5ea1df8bb05ec5cf35cb6ba--libxdmcp--1.1.5.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "36f9f1e000d606c1059e592c36f48fc0dbd5fbf8efd8ac51b915e249ccd9e179--libxdmcp--1.1.5.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6a262c11e21ef80bb76232413279b8d09949db96f3d256e5071d3a42f9075e1f--libxdmcp--1.1.5.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxdmcp" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxdmcp" ]
+]

@@ -1,0 +1,127 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Chemical toolbox"
+description: """
+Chemical toolbox"""
+extra-source "731e4faedd78944836b45f6c97c7a88530bf36927d2a3924cb37631e630ce575--open-babel--3.1.1_2.arm64_sequoia.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/blobs/sha256:2c59d7db4305c267949fba8d6aea3ae90a84bc65a649af40d067dab7f9ce1ea7"
+  checksum: [
+    "sha256=2c59d7db4305c267949fba8d6aea3ae90a84bc65a649af40d067dab7f9ce1ea7"
+  ]
+}
+extra-source "46baf5b0fd05e7206379543bf9b436f4039996c469a2a1fa05da431db97a94fb--open-babel-3.1.1_2-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/manifests/3.1.1_2-2"
+}
+extra-source "ea9c200f19eac80ace0fb14b76da9d658e0a18d9c361a4f9af44397cf1aea56b--open-babel--3.1.1_2.sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/blobs/sha256:cbf0992d5a6f648fc362d7c0e6a34ff4f36c4997d6220e8d0c6d2b784e5b4b14"
+  checksum: [
+    "sha256=cbf0992d5a6f648fc362d7c0e6a34ff4f36c4997d6220e8d0c6d2b784e5b4b14"
+  ]
+}
+extra-source "317d44f5ac374e76cbde6558cc3e58c8752051ac3da3990f2b2a308b24bdfc3b--open-babel--3.1.1_2.arm64_sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/blobs/sha256:f419ccc5548f2ef7476cf80f63a9202026a342955ab6636b52defa8ff4a49613"
+  checksum: [
+    "sha256=f419ccc5548f2ef7476cf80f63a9202026a342955ab6636b52defa8ff4a49613"
+  ]
+}
+extra-source "2e9a10d73fbd18ab2ef88a7a2b20483394689a4ca9ff5cc5bde128ccf5e8dcfa--open-babel--3.1.1_2.ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/blobs/sha256:ec8cb56581eaaf3cc1f39b31697ddf23898a9da5716aa6905aeeaca99a30caa1"
+  checksum: [
+    "sha256=ec8cb56581eaaf3cc1f39b31697ddf23898a9da5716aa6905aeeaca99a30caa1"
+  ]
+}
+extra-source "db0b3f7f8d76c811a33709fe3797c128af5a275b8733ae1ec7c75bfd9298ce0c--open-babel--3.1.1_2.arm64_ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/blobs/sha256:3897a0b1768ca3e0037070cb17890ca83ad9e5ac165832c97b5b3b25c4077164"
+  checksum: [
+    "sha256=3897a0b1768ca3e0037070cb17890ca83ad9e5ac165832c97b5b3b25c4077164"
+  ]
+}
+extra-source "04c2c3007fef889a092d79507e412ca6c9a65424e725718f86f35321b4272dc2--open-babel--3.1.1_2.monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/blobs/sha256:dfee32016d8264bdddbceaf883e7997f12e5064ad7596b0dd898b0fd0e76a52d"
+  checksum: [
+    "sha256=dfee32016d8264bdddbceaf883e7997f12e5064ad7596b0dd898b0fd0e76a52d"
+  ]
+}
+extra-source "4ceb79fb734db722147acbd068dcfc8c5d2cceec586644e8fad9d2e1fb1890cf--open-babel--3.1.1_2.arm64_monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/blobs/sha256:145b1a3f4d2d295f35bcec9e8698191caccc1798d478fc76563d7eb5301dd504"
+  checksum: [
+    "sha256=145b1a3f4d2d295f35bcec9e8698191caccc1798d478fc76563d7eb5301dd504"
+  ]
+}
+extra-source "63a276ac9202e3b3421b893668fbf23565a7f71dbee6d1cfb1452c57202e6d4c--open-babel--3.1.1_2.x86_64_linux.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-babel/blobs/sha256:7e950edb7779a9f98d7acee8aab9215fd3fa9fc64ab57b64fe2a2f37940d72bc"
+  checksum: [
+    "sha256=7e950edb7779a9f98d7acee8aab9215fd3fa9fc64ab57b64fe2a2f37940d72bc"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-eigen" {= "3.4.0"}
+  "brew-rapidjson" {= "1.1.0"}
+  "brew-swig" {= "4.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "46baf5b0fd05e7206379543bf9b436f4039996c469a2a1fa05da431db97a94fb--open-babel-3.1.1_2-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "731e4faedd78944836b45f6c97c7a88530bf36927d2a3924cb37631e630ce575--open-babel--3.1.1_2.arm64_sequoia.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ea9c200f19eac80ace0fb14b76da9d658e0a18d9c361a4f9af44397cf1aea56b--open-babel--3.1.1_2.sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "317d44f5ac374e76cbde6558cc3e58c8752051ac3da3990f2b2a308b24bdfc3b--open-babel--3.1.1_2.arm64_sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2e9a10d73fbd18ab2ef88a7a2b20483394689a4ca9ff5cc5bde128ccf5e8dcfa--open-babel--3.1.1_2.ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "db0b3f7f8d76c811a33709fe3797c128af5a275b8733ae1ec7c75bfd9298ce0c--open-babel--3.1.1_2.arm64_ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "04c2c3007fef889a092d79507e412ca6c9a65424e725718f86f35321b4272dc2--open-babel--3.1.1_2.monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4ceb79fb734db722147acbd068dcfc8c5d2cceec586644e8fad9d2e1fb1890cf--open-babel--3.1.1_2.arm64_monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "63a276ac9202e3b3421b893668fbf23565a7f71dbee6d1cfb1452c57202e6d4c--open-babel--3.1.1_2.x86_64_linux.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "open-babel" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "open-babel" ]
+]

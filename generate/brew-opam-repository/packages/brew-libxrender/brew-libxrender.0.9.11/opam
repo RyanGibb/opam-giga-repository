@@ -1,0 +1,122 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Library for the Render Extension to the X11 protocol"
+description: """
+X.Org: Library for the Render Extension to the X11 protocol"""
+extra-source "36700eb2a6fc035a8a1b75709a7401a4543a07bec9719c16321fdfd464faa297--libxrender--0.9.11.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:ae75035fb02f10c04b256a0dcb5b51498e5e99f98baebdcbc9819c35fddbb704"
+  checksum: [
+    "sha256=ae75035fb02f10c04b256a0dcb5b51498e5e99f98baebdcbc9819c35fddbb704"
+  ]
+}
+extra-source "134c11be8346a1b116e04983c2da6366f29c4f4c2abc17604dcdb80d0475ae9d--libxrender-0.9.11.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/manifests/0.9.11"
+}
+extra-source "9d45608ab61cd52463b0663c8e07dae3c86d195a3baea512d1afb4ce37b2c5cb--libxrender--0.9.11.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:f61874ac3d98dfed35aa0a8790a71fa3a802d3d310d2e57e35570219a5864800"
+  checksum: [
+    "sha256=f61874ac3d98dfed35aa0a8790a71fa3a802d3d310d2e57e35570219a5864800"
+  ]
+}
+extra-source "dde77963ea358a0a5c1e0d7c8a4c81db6d3da94e0b4faf00be32f61878395757--libxrender--0.9.11.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:387261107110957df83504ec68c9328d84b3ce5a1f2a8e01f7d8f9112d8372ad"
+  checksum: [
+    "sha256=387261107110957df83504ec68c9328d84b3ce5a1f2a8e01f7d8f9112d8372ad"
+  ]
+}
+extra-source "b604b27ded2aa76c040ef0a636f996439ab5e28b90e3332d237f7f28659b4bdd--libxrender--0.9.11.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:5eb0bb57e683a00176a5702bdf021641fe9290e84e0414d2979823ad0aad1d3a"
+  checksum: [
+    "sha256=5eb0bb57e683a00176a5702bdf021641fe9290e84e0414d2979823ad0aad1d3a"
+  ]
+}
+extra-source "cf4e6f27b41ee48304dfa7f1d20e9d72b3eac55c61bb7ab02360c9b46df078f1--libxrender--0.9.11.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:510d0cd0f72480d716b38cd935e3a334ed1be972210ffac7309d0dd80469c8bb"
+  checksum: [
+    "sha256=510d0cd0f72480d716b38cd935e3a334ed1be972210ffac7309d0dd80469c8bb"
+  ]
+}
+extra-source "2d0beea47a6af4865eab5357a5eb72f43fbf3b4b0a2e8ad417430e9c5b3fe69a--libxrender--0.9.11.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:ab54f6ca9a3dc9c86a16813ebc86456a012dace089f51b2c8d16aea72cd78ec5"
+  checksum: [
+    "sha256=ab54f6ca9a3dc9c86a16813ebc86456a012dace089f51b2c8d16aea72cd78ec5"
+  ]
+}
+extra-source "3c85728732a943cb1afba6882c51adcd507ba42ba8f3e9a652495657c7f4c800--libxrender--0.9.11.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:660b41237f01b7561da61e4abd212f4575e6c97f4c76cc70c550868edbe227e5"
+  checksum: [
+    "sha256=660b41237f01b7561da61e4abd212f4575e6c97f4c76cc70c550868edbe227e5"
+  ]
+}
+extra-source "8771d77e4421464ec59ca51a84e276dadf6bd04e5951ffde526d2340a19b0cf6--libxrender--0.9.11.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:be6b3af9fd07f7a95bf2a70e1673383dca5ba972a6984ba359ea0c36be2dee44"
+  checksum: [
+    "sha256=be6b3af9fd07f7a95bf2a70e1673383dca5ba972a6984ba359ea0c36be2dee44"
+  ]
+}
+extra-source "7eac68838f2fe6c343f12baf12466925403e06b31343c05dc367d9c7993ec1be--libxrender--0.9.11.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:2ed6a16e43342c1a068a59c7f250111d88ef0f7d7e0ae7c935cb979f09542a57"
+  checksum: [
+    "sha256=2ed6a16e43342c1a068a59c7f250111d88ef0f7d7e0ae7c935cb979f09542a57"
+  ]
+}
+extra-source "6a1caf0da3ab041e9478f456c2471ad7a066aa0f723190780f493b5f2d8dc106--libxrender--0.9.11.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:4e83a61cd4894dea2942520f9147fdaa1e92b71089f288f6a1ae2fb1236b79f5"
+  checksum: [
+    "sha256=4e83a61cd4894dea2942520f9147fdaa1e92b71089f288f6a1ae2fb1236b79f5"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "134c11be8346a1b116e04983c2da6366f29c4f4c2abc17604dcdb80d0475ae9d--libxrender-0.9.11.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "36700eb2a6fc035a8a1b75709a7401a4543a07bec9719c16321fdfd464faa297--libxrender--0.9.11.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9d45608ab61cd52463b0663c8e07dae3c86d195a3baea512d1afb4ce37b2c5cb--libxrender--0.9.11.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dde77963ea358a0a5c1e0d7c8a4c81db6d3da94e0b4faf00be32f61878395757--libxrender--0.9.11.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b604b27ded2aa76c040ef0a636f996439ab5e28b90e3332d237f7f28659b4bdd--libxrender--0.9.11.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cf4e6f27b41ee48304dfa7f1d20e9d72b3eac55c61bb7ab02360c9b46df078f1--libxrender--0.9.11.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2d0beea47a6af4865eab5357a5eb72f43fbf3b4b0a2e8ad417430e9c5b3fe69a--libxrender--0.9.11.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3c85728732a943cb1afba6882c51adcd507ba42ba8f3e9a652495657c7f4c800--libxrender--0.9.11.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8771d77e4421464ec59ca51a84e276dadf6bd04e5951ffde526d2340a19b0cf6--libxrender--0.9.11.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7eac68838f2fe6c343f12baf12466925403e06b31343c05dc367d9c7993ec1be--libxrender--0.9.11.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6a1caf0da3ab041e9478f456c2471ad7a066aa0f723190780f493b5f2d8dc106--libxrender--0.9.11.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxrender" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxrender" ]
+]

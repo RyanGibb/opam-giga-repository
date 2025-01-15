@@ -1,0 +1,100 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Oil Runtime Compiler (ORC)"
+description: """
+Oil Runtime Compiler (ORC)"""
+extra-source "5e19117fdf4e62add81defbeb775d203084ea379203978bc70d0743de00e6716--orc--0.4.40.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/blobs/sha256:90d8de016969328e2eb572eb108829b849cda780cefdb98b44704d5c8df456b9"
+  checksum: [
+    "sha256=90d8de016969328e2eb572eb108829b849cda780cefdb98b44704d5c8df456b9"
+  ]
+}
+extra-source "77997393b56ef4a45f7902cdbe9b610a2ab49d8ec66610ca36acecf654f5fc48--orc-0.4.40.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/manifests/0.4.40"
+}
+extra-source "12102e4b51ae9870f2b0d0403f27d3ca981328f5713a4efaeff93269670f9090--orc--0.4.40.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/blobs/sha256:59c5af370c421275f0b6aadf7f9d485593a2444a78bc370a9161e98dc1b8c933"
+  checksum: [
+    "sha256=59c5af370c421275f0b6aadf7f9d485593a2444a78bc370a9161e98dc1b8c933"
+  ]
+}
+extra-source "6ad2ce2b8e91941f08a01c9840a824804ea8b131377e74917d4762b95d03fef8--orc--0.4.40.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/blobs/sha256:1c01024d793b7feae787a50c02e779a2337a82c084c8752cd6d06f8f97d66a6b"
+  checksum: [
+    "sha256=1c01024d793b7feae787a50c02e779a2337a82c084c8752cd6d06f8f97d66a6b"
+  ]
+}
+extra-source "72ffeae2c67e29e47723c63ddf569bbd06c6bef8e8e33dcec3e43af6caf2144c--orc--0.4.40.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/blobs/sha256:017b065a46f040be148fe0f090c429a6b368df32b3f70d71d7504c9bec7df8b0"
+  checksum: [
+    "sha256=017b065a46f040be148fe0f090c429a6b368df32b3f70d71d7504c9bec7df8b0"
+  ]
+}
+extra-source "7f661d13190a6ac299df9051de3742b69d60554c93a0d5663ca996690392dc59--orc--0.4.40.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/blobs/sha256:f1cb98a80bbce3c51266b084be2c0175193486e98eadc0ae2320289e07f86697"
+  checksum: [
+    "sha256=f1cb98a80bbce3c51266b084be2c0175193486e98eadc0ae2320289e07f86697"
+  ]
+}
+extra-source "8500f8b205c692b85431690ec7bb91454d57f32c51c409080a326528158c5dca--orc--0.4.40.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/blobs/sha256:6f514f984e8a37cfdb16c94368bd9a108e42cbeadcdbee3331cce47e8c1ffe32"
+  checksum: [
+    "sha256=6f514f984e8a37cfdb16c94368bd9a108e42cbeadcdbee3331cce47e8c1ffe32"
+  ]
+}
+extra-source "96996ab66faea4dfe31bbf1d8514245df47cc8ba79bf8e46ebeb450ccaea5a79--orc--0.4.40.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/blobs/sha256:6cf3477904bb788dae6bc48425c320c9b5734247842ebe055cb7e625ffb0c73a"
+  checksum: [
+    "sha256=6cf3477904bb788dae6bc48425c320c9b5734247842ebe055cb7e625ffb0c73a"
+  ]
+}
+extra-source "070291372aa14efc97c1b5d24b347cc2d391a00d5ee5b3d90882e6dae9842724--orc--0.4.40.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/orc/blobs/sha256:6b34751604d245a523fe1b243562bb0b5428ca45d1ce6d6101fcf5fdf92d3584"
+  checksum: [
+    "sha256=6b34751604d245a523fe1b243562bb0b5428ca45d1ce6d6101fcf5fdf92d3584"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "77997393b56ef4a45f7902cdbe9b610a2ab49d8ec66610ca36acecf654f5fc48--orc-0.4.40.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "5e19117fdf4e62add81defbeb775d203084ea379203978bc70d0743de00e6716--orc--0.4.40.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "12102e4b51ae9870f2b0d0403f27d3ca981328f5713a4efaeff93269670f9090--orc--0.4.40.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6ad2ce2b8e91941f08a01c9840a824804ea8b131377e74917d4762b95d03fef8--orc--0.4.40.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "72ffeae2c67e29e47723c63ddf569bbd06c6bef8e8e33dcec3e43af6caf2144c--orc--0.4.40.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7f661d13190a6ac299df9051de3742b69d60554c93a0d5663ca996690392dc59--orc--0.4.40.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8500f8b205c692b85431690ec7bb91454d57f32c51c409080a326528158c5dca--orc--0.4.40.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "96996ab66faea4dfe31bbf1d8514245df47cc8ba79bf8e46ebeb450ccaea5a79--orc--0.4.40.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "070291372aa14efc97c1b5d24b347cc2d391a00d5ee5b3d90882e6dae9842724--orc--0.4.40.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "orc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "orc" ]
+]

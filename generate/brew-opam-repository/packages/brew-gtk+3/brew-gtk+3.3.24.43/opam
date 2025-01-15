@@ -1,0 +1,164 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Toolkit for creating graphical user interfaces"
+description: """
+Toolkit for creating graphical user interfaces"""
+extra-source "b902b36e7f67cd4d714e4a2f0d6e9369cb52c775d7f33b676a8ca9e5247a070e--gtk+3--3.24.43.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/blobs/sha256:abbf588f64811f61c3e36cedabbc6d3cbe1187124e15c34362dd73b7fc9fb3ce"
+  checksum: [
+    "sha256=abbf588f64811f61c3e36cedabbc6d3cbe1187124e15c34362dd73b7fc9fb3ce"
+  ]
+}
+extra-source "806942818d9f4f12b0e989c0d352f37480c218075bc2f6e4246a41fb878527d9--gtk+3-3.24.43.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/manifests/3.24.43"
+}
+extra-source "d2b02bf4cd98dc7711b585d70a347c556d0e11d1d932c9e5e2feedb8fbdf3e7a--gtk+3--3.24.43.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/blobs/sha256:29584c089bc640848b755eabac8ece8cbc230e969423f612d87848e40e28d84e"
+  checksum: [
+    "sha256=29584c089bc640848b755eabac8ece8cbc230e969423f612d87848e40e28d84e"
+  ]
+}
+extra-source "d6c57a54fd7ba55e01d67771b0632648f26c12af854c85e1ef9a098f9e6a0ec6--gtk+3--3.24.43.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/blobs/sha256:b3981b071d6b1214820c5be272256d1058a5f7db57fccb70da713516e2bad714"
+  checksum: [
+    "sha256=b3981b071d6b1214820c5be272256d1058a5f7db57fccb70da713516e2bad714"
+  ]
+}
+extra-source "b1343986b4b89cc0ef8b50f2b4489bca3c7759844ea483291c8c554e1f45bc70--gtk+3--3.24.43.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/blobs/sha256:9bf9fe10db6c816825cc6e3f2a139201520f727755e539cf0a62907712571429"
+  checksum: [
+    "sha256=9bf9fe10db6c816825cc6e3f2a139201520f727755e539cf0a62907712571429"
+  ]
+}
+extra-source "bb4167dbe8f095627ba3eab8ca4c20fb7cf86c6e6244a553faefad3d5bd092f9--gtk+3--3.24.43.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/blobs/sha256:b28221d07db5b16ce517acde4a9bdf2527f1c7f95e98a203278655f1149063d4"
+  checksum: [
+    "sha256=b28221d07db5b16ce517acde4a9bdf2527f1c7f95e98a203278655f1149063d4"
+  ]
+}
+extra-source "f7b039eb7a5b0e878f51dbc0168f2112a304277591a5a53136aaccee2e84243b--gtk+3--3.24.43.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/blobs/sha256:3096c62e650b6807fbf37495da07f5113b91f82be3a627ae75c4684167c35d5e"
+  checksum: [
+    "sha256=3096c62e650b6807fbf37495da07f5113b91f82be3a627ae75c4684167c35d5e"
+  ]
+}
+extra-source "b71d4738f79755a760214654e5e29c1a437d70e4cab0e8fbede018c19b1b4c2e--gtk+3--3.24.43.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/blobs/sha256:a026a7b6e8b6004a4090552abfb8eb458571773edcab0f3c71fd2cdb7eca0c3f"
+  checksum: [
+    "sha256=a026a7b6e8b6004a4090552abfb8eb458571773edcab0f3c71fd2cdb7eca0c3f"
+  ]
+}
+extra-source "e7ed8ea4e5b87bb58a375ae24a3b76e92dd4967024acba5817da453af4f17370--gtk+3--3.24.43.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtkx3/blobs/sha256:880cff997f0d940867b79dee4f87f22c8fa03adc377c2f793f85c72818a8cad6"
+  checksum: [
+    "sha256=880cff997f0d940867b79dee4f87f22c8fa03adc377c2f793f85c72818a8cad6"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-dbus" {= "1.14.10"}
+  "brew-python" {= "3.11.10"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-meson" {= "1.5.2"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libxi" {= "1.8.2"}
+  "brew-libxtst" {= "1.2.5"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-at-spi2-core" {= "2.54.0"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-docutils" {= "0.21.2"}
+  "brew-gdk-pixbuf" {= "2.42.12"}
+  "brew-gsettings-desktop-schemas" {= "47.1"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-hicolor-icon-theme" {= "0.18"}
+  "brew-libepoxy" {= "1.5.10"}
+  "brew-pango" {= "1.54.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "806942818d9f4f12b0e989c0d352f37480c218075bc2f6e4246a41fb878527d9--gtk+3-3.24.43.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "b902b36e7f67cd4d714e4a2f0d6e9369cb52c775d7f33b676a8ca9e5247a070e--gtk+3--3.24.43.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d2b02bf4cd98dc7711b585d70a347c556d0e11d1d932c9e5e2feedb8fbdf3e7a--gtk+3--3.24.43.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d6c57a54fd7ba55e01d67771b0632648f26c12af854c85e1ef9a098f9e6a0ec6--gtk+3--3.24.43.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b1343986b4b89cc0ef8b50f2b4489bca3c7759844ea483291c8c554e1f45bc70--gtk+3--3.24.43.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bb4167dbe8f095627ba3eab8ca4c20fb7cf86c6e6244a553faefad3d5bd092f9--gtk+3--3.24.43.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f7b039eb7a5b0e878f51dbc0168f2112a304277591a5a53136aaccee2e84243b--gtk+3--3.24.43.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b71d4738f79755a760214654e5e29c1a437d70e4cab0e8fbede018c19b1b4c2e--gtk+3--3.24.43.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e7ed8ea4e5b87bb58a375ae24a3b76e92dd4967024acba5817da453af4f17370--gtk+3--3.24.43.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gtk+3" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gtk+3" ]
+]

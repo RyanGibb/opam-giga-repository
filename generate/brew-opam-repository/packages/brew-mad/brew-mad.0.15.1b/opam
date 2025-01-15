@@ -1,0 +1,126 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "MPEG audio decoder"
+description: """
+MPEG audio decoder"""
+extra-source "0826134018da7b0e2e263136fd0c1065b448229c66d3f3660bf86548249e1186--mad--0.15.1b.arm64_sequoia.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:1facd8abee7e62bba7c7e445d2cbc5900dfe2dc7903be43a40b128c68f519b02"
+  checksum: [
+    "sha256=1facd8abee7e62bba7c7e445d2cbc5900dfe2dc7903be43a40b128c68f519b02"
+  ]
+}
+extra-source "0a32f260093003c89e095d94ee89520a5c0e6de315c44e54e45959a800846b95--mad-0.15.1b-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/manifests/0.15.1b-2"
+}
+extra-source "0ed932f3d16a914423e9293f840fde75d1482de7244d8ca698396ceef5dc261c--mad--0.15.1b.sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:fd9ab67d8f1b77a62a47b0308eb0b9275f331162079de54b600f7226638c8145"
+  checksum: [
+    "sha256=fd9ab67d8f1b77a62a47b0308eb0b9275f331162079de54b600f7226638c8145"
+  ]
+}
+extra-source "52435f603833f1675637bb2da6d7d014914e186f65ac0035300b933de55360cb--mad--0.15.1b.arm64_sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:ccc2d73926af48cbc320bbe9d029a8d7043c6a8b3375cecc5d9d031cee83b245"
+  checksum: [
+    "sha256=ccc2d73926af48cbc320bbe9d029a8d7043c6a8b3375cecc5d9d031cee83b245"
+  ]
+}
+extra-source "ebc5050fa03617bc74d1625257358bf4d447ed01f9cd51932ed326c846b6a871--mad--0.15.1b.ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:435f04d35968bb228b0f9078190f5895d90d5a46db66d5731b02cf916b1014a3"
+  checksum: [
+    "sha256=435f04d35968bb228b0f9078190f5895d90d5a46db66d5731b02cf916b1014a3"
+  ]
+}
+extra-source "b72f78169d71e2b5de95b352ea3cc7926439e8864c073d329051a7ee5a692d68--mad--0.15.1b.arm64_ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:9d6ef63d6de6de6a1fecf34c3f5be58952ca778829c93df51e4ec491b97b0fa3"
+  checksum: [
+    "sha256=9d6ef63d6de6de6a1fecf34c3f5be58952ca778829c93df51e4ec491b97b0fa3"
+  ]
+}
+extra-source "648c64d2c02f32b4398f77cc5bd35fde2d2bd222ec1ca04938bcaea1c5ac376a--mad--0.15.1b.monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:912da077a9ff47e8e0b19ed160646c8a365e448b81786fbc2f64a2813c8d6b33"
+  checksum: [
+    "sha256=912da077a9ff47e8e0b19ed160646c8a365e448b81786fbc2f64a2813c8d6b33"
+  ]
+}
+extra-source "2a51e744453e0a2e92a7e389bc0859b5b6b364cfb92748b110cdd4a6a0bb96cc--mad--0.15.1b.arm64_monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:e6a54111ab617580c360bfa07c8503cddf52b1df5bda2cd51da086e4e9470223"
+  checksum: [
+    "sha256=e6a54111ab617580c360bfa07c8503cddf52b1df5bda2cd51da086e4e9470223"
+  ]
+}
+extra-source "1e318ff0bf36226cd63f465db5d0990e507787aad6513a0f32e3d0bfdf466b0e--mad--0.15.1b.big_sur.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:0ad06329f73d5dc15cba262feca6e1c582e10ad3b9ca0476e46c37e6d878d0ab"
+  checksum: [
+    "sha256=0ad06329f73d5dc15cba262feca6e1c582e10ad3b9ca0476e46c37e6d878d0ab"
+  ]
+}
+extra-source "be39d1744c5bef3f014da7adbf4190e183359ef847c3b5b2ec4727b0229c8f30--mad--0.15.1b.arm64_big_sur.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:ee9a37f6202a784c1564ac92613821e9bfd0f75fca8ef24262e444e5ec424ca6"
+  checksum: [
+    "sha256=ee9a37f6202a784c1564ac92613821e9bfd0f75fca8ef24262e444e5ec424ca6"
+  ]
+}
+extra-source "c99ab87d5a4f8df4ba4d22c32ef2d948e6581a7cae8478972f3b6992687863fe--mad--0.15.1b.catalina.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:5416172dc7ccd3c5a5065b3f7dc18c00e83a7e20dfc6b09e0586afc4a76c5722"
+  checksum: [
+    "sha256=5416172dc7ccd3c5a5065b3f7dc18c00e83a7e20dfc6b09e0586afc4a76c5722"
+  ]
+}
+extra-source "4466a55d532f62753b75cca9e1f6e693a7ff4f5876e1feed2e5f6ded10c63ddf--mad--0.15.1b.mojave.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:5baadb23763805521d306268861ff82fe2055da1eb7976aaa7c78f83d3c2f43a"
+  checksum: [
+    "sha256=5baadb23763805521d306268861ff82fe2055da1eb7976aaa7c78f83d3c2f43a"
+  ]
+}
+extra-source "df64024f8cdddfc3992dce9af579b7ac0036523f0ddd4e29faa82ae28ffe1d90--mad--0.15.1b.x86_64_linux.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:05670a88d2d0a50d03407a39987c573806c8bf9b7d67f2df4db3d121328123ae"
+  checksum: [
+    "sha256=05670a88d2d0a50d03407a39987c573806c8bf9b7d67f2df4db3d121328123ae"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0a32f260093003c89e095d94ee89520a5c0e6de315c44e54e45959a800846b95--mad-0.15.1b-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "0826134018da7b0e2e263136fd0c1065b448229c66d3f3660bf86548249e1186--mad--0.15.1b.arm64_sequoia.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0ed932f3d16a914423e9293f840fde75d1482de7244d8ca698396ceef5dc261c--mad--0.15.1b.sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "52435f603833f1675637bb2da6d7d014914e186f65ac0035300b933de55360cb--mad--0.15.1b.arm64_sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ebc5050fa03617bc74d1625257358bf4d447ed01f9cd51932ed326c846b6a871--mad--0.15.1b.ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b72f78169d71e2b5de95b352ea3cc7926439e8864c073d329051a7ee5a692d68--mad--0.15.1b.arm64_ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "648c64d2c02f32b4398f77cc5bd35fde2d2bd222ec1ca04938bcaea1c5ac376a--mad--0.15.1b.monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2a51e744453e0a2e92a7e389bc0859b5b6b364cfb92748b110cdd4a6a0bb96cc--mad--0.15.1b.arm64_monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1e318ff0bf36226cd63f465db5d0990e507787aad6513a0f32e3d0bfdf466b0e--mad--0.15.1b.big_sur.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "be39d1744c5bef3f014da7adbf4190e183359ef847c3b5b2ec4727b0229c8f30--mad--0.15.1b.arm64_big_sur.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c99ab87d5a4f8df4ba4d22c32ef2d948e6581a7cae8478972f3b6992687863fe--mad--0.15.1b.catalina.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4466a55d532f62753b75cca9e1f6e693a7ff4f5876e1feed2e5f6ded10c63ddf--mad--0.15.1b.mojave.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "df64024f8cdddfc3992dce9af579b7ac0036523f0ddd4e29faa82ae28ffe1d90--mad--0.15.1b.x86_64_linux.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "mad" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "mad" ]
+]

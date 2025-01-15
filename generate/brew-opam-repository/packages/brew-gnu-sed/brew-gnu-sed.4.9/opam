@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GNU implementation of the famous stream editor"
+description: """
+GNU implementation of the famous stream editor"""
+extra-source "d365971cca5caa0538cd0d6a1bcbdd087aa0e4a6e2b1ad476aef9210506c20b6--gnu-sed--4.9.arm64_sequoia.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/blobs/sha256:7bf9b1bc4e946b0f316cfe1aeacc5fbf418d0045588d381f35439d96dba64f4c"
+  checksum: [
+    "sha256=7bf9b1bc4e946b0f316cfe1aeacc5fbf418d0045588d381f35439d96dba64f4c"
+  ]
+}
+extra-source "76f36ee40de04c6391017f0d87ac55b273e9e870c9b6ca1feb923d95ffc1c0cd--gnu-sed-4.9-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/manifests/4.9-2"
+}
+extra-source "98f9f603e9bc7cf119a2f5602e8124f77a8da5d948a272b99c7af10afe0772f9--gnu-sed--4.9.sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/blobs/sha256:4d10e5703feb75bc37e450178f2c6bdc3a6b2cf9eb72594cfab90f89b270136c"
+  checksum: [
+    "sha256=4d10e5703feb75bc37e450178f2c6bdc3a6b2cf9eb72594cfab90f89b270136c"
+  ]
+}
+extra-source "4211b0fbec5f419f58540339873aa17c6ee3c810788adb8abf2fa379a1a38038--gnu-sed--4.9.arm64_sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/blobs/sha256:5ffd49517ed790e52a088e720de77f1dd4de4e88816fb6a1d244be3f6b01314d"
+  checksum: [
+    "sha256=5ffd49517ed790e52a088e720de77f1dd4de4e88816fb6a1d244be3f6b01314d"
+  ]
+}
+extra-source "89f4c5111e203f5294152a027c2e8992905aad2c6bad61cea3cb964212e894c0--gnu-sed--4.9.ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/blobs/sha256:66f640fbd1291801c04dc8af37378c051aa1ddbb3a620df2b4b85b9f0f6df80e"
+  checksum: [
+    "sha256=66f640fbd1291801c04dc8af37378c051aa1ddbb3a620df2b4b85b9f0f6df80e"
+  ]
+}
+extra-source "77493e7a5ca8428c5dbaa5bd252d9f08a0037266befb571aaf855bfa36664043--gnu-sed--4.9.arm64_ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/blobs/sha256:3770e9098033bc1f32427d3b6502a1ab10082b3945e204286c87060d82d03d19"
+  checksum: [
+    "sha256=3770e9098033bc1f32427d3b6502a1ab10082b3945e204286c87060d82d03d19"
+  ]
+}
+extra-source "e09b4b332dbbd4546ae69f73f8fe883a931b9c384b85572e60feabddeaff9065--gnu-sed--4.9.monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/blobs/sha256:0f63397072520ce4c163974de6f0313a9117d106890c8cb0fb9344c723543674"
+  checksum: [
+    "sha256=0f63397072520ce4c163974de6f0313a9117d106890c8cb0fb9344c723543674"
+  ]
+}
+extra-source "afaba23ce419ca14079ed619869241ffde2a85c009db1e62184965e23e2e45c7--gnu-sed--4.9.arm64_monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/blobs/sha256:e41980dc2d528301c562ed7ec59ee8bcfe43d1f9a4dc734652e9c216ac3fbdf4"
+  checksum: [
+    "sha256=e41980dc2d528301c562ed7ec59ee8bcfe43d1f9a4dc734652e9c216ac3fbdf4"
+  ]
+}
+extra-source "c491a0888f14d6e03aaa17e9a64ddf01e292502dfdc52afeb5a434ab46ab00e3--gnu-sed--4.9.x86_64_linux.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-sed/blobs/sha256:6ecac3ffdd0517ed1516ff18d79d4ea44f761b6fb2a5040c124bb51da35c03e1"
+  checksum: [
+    "sha256=6ecac3ffdd0517ed1516ff18d79d4ea44f761b6fb2a5040c124bb51da35c03e1"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "76f36ee40de04c6391017f0d87ac55b273e9e870c9b6ca1feb923d95ffc1c0cd--gnu-sed-4.9-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d365971cca5caa0538cd0d6a1bcbdd087aa0e4a6e2b1ad476aef9210506c20b6--gnu-sed--4.9.arm64_sequoia.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "98f9f603e9bc7cf119a2f5602e8124f77a8da5d948a272b99c7af10afe0772f9--gnu-sed--4.9.sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4211b0fbec5f419f58540339873aa17c6ee3c810788adb8abf2fa379a1a38038--gnu-sed--4.9.arm64_sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "89f4c5111e203f5294152a027c2e8992905aad2c6bad61cea3cb964212e894c0--gnu-sed--4.9.ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "77493e7a5ca8428c5dbaa5bd252d9f08a0037266befb571aaf855bfa36664043--gnu-sed--4.9.arm64_ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e09b4b332dbbd4546ae69f73f8fe883a931b9c384b85572e60feabddeaff9065--gnu-sed--4.9.monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "afaba23ce419ca14079ed619869241ffde2a85c009db1e62184965e23e2e45c7--gnu-sed--4.9.arm64_monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c491a0888f14d6e03aaa17e9a64ddf01e292502dfdc52afeb5a434ab46ab00e3--gnu-sed--4.9.x86_64_linux.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gnu-sed" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gnu-sed" ]
+]

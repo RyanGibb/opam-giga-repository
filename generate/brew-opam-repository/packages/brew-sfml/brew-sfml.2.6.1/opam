@@ -1,0 +1,109 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Multi-media library with bindings for multiple languages"
+description: """
+Multi-media library with bindings for multiple languages"""
+extra-source "2e604442212178b2cb1d02e44b7770e88d32ecc030edd68ff0fd09caae839f1f--sfml--2.6.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/blobs/sha256:b2598d8176c179d59e5aeee41c3473a7ceedc72dc7543197fe09f2d088f85ed9"
+  checksum: [
+    "sha256=b2598d8176c179d59e5aeee41c3473a7ceedc72dc7543197fe09f2d088f85ed9"
+  ]
+}
+extra-source "d898da36179a2b3863841c487c17ee66d7b128e94cdd7de68064ceac40c97c78--sfml-2.6.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/manifests/2.6.1"
+}
+extra-source "9e663f476f516aa16760996a99f33323433cde288e7d9feb2fcdfcfb10eddfd3--sfml--2.6.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/blobs/sha256:c879bf7e4b5f343a9c821a35f232c0238021b9e97ba6308f86b307cd59836714"
+  checksum: [
+    "sha256=c879bf7e4b5f343a9c821a35f232c0238021b9e97ba6308f86b307cd59836714"
+  ]
+}
+extra-source "7f6305cd113f3d9f6d12e2417fe8b89c0b421db463a5d814fb857cd6d17b41b3--sfml--2.6.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/blobs/sha256:a7975776a6cc79b56b3f24e2b479ebec22de528a0d0ceb39a2661b817e249dd5"
+  checksum: [
+    "sha256=a7975776a6cc79b56b3f24e2b479ebec22de528a0d0ceb39a2661b817e249dd5"
+  ]
+}
+extra-source "f20cf3361390a2e5c927a7c3042b4e6960475a686157a797f263080188e2b7ac--sfml--2.6.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/blobs/sha256:8a65d2d67f7fa763bac2b15c85b3ec7c0c6db3aab2cc2b2a3a9a2891061e532b"
+  checksum: [
+    "sha256=8a65d2d67f7fa763bac2b15c85b3ec7c0c6db3aab2cc2b2a3a9a2891061e532b"
+  ]
+}
+extra-source "eeae62fdddd8f9e892e129d744fb146c2c5e3b2b09c9f0d081d06b0337f41652--sfml--2.6.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/blobs/sha256:dfb67204535360d3addd78d234dfebc885766bca2ca0e16a92225aec0228dcd1"
+  checksum: [
+    "sha256=dfb67204535360d3addd78d234dfebc885766bca2ca0e16a92225aec0228dcd1"
+  ]
+}
+extra-source "03a0739aad4f2119f4712aedca07e722ab3f62e2a3e7aee262b1a1c295b6432d--sfml--2.6.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/blobs/sha256:b81ac4939baef78b092833edf511cb3ee32c303799aed32454f09c206706bb29"
+  checksum: [
+    "sha256=b81ac4939baef78b092833edf511cb3ee32c303799aed32454f09c206706bb29"
+  ]
+}
+extra-source "76e927379efe65c096965ec7cf2c5a7e70fc8e3d7ed8d40ccf73bde2f621c5e5--sfml--2.6.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/blobs/sha256:318fa96aca743fb92d730fd8ddfdd583173f9022e989c0931435035cc25cd3db"
+  checksum: [
+    "sha256=318fa96aca743fb92d730fd8ddfdd583173f9022e989c0931435035cc25cd3db"
+  ]
+}
+extra-source "1d78cf12ecb67d33d41375786db82b9f1c75195c74329d00387b47b09eaa7f67--sfml--2.6.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sfml/blobs/sha256:8d0504ed719b8fefc75d3a8c92a4658e86e648c2f318d7ed994224518ee8f479"
+  checksum: [
+    "sha256=8d0504ed719b8fefc75d3a8c92a4658e86e648c2f318d7ed994224518ee8f479"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-flac" {= "1.4.3"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d898da36179a2b3863841c487c17ee66d7b128e94cdd7de68064ceac40c97c78--sfml-2.6.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2e604442212178b2cb1d02e44b7770e88d32ecc030edd68ff0fd09caae839f1f--sfml--2.6.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9e663f476f516aa16760996a99f33323433cde288e7d9feb2fcdfcfb10eddfd3--sfml--2.6.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7f6305cd113f3d9f6d12e2417fe8b89c0b421db463a5d814fb857cd6d17b41b3--sfml--2.6.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f20cf3361390a2e5c927a7c3042b4e6960475a686157a797f263080188e2b7ac--sfml--2.6.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "eeae62fdddd8f9e892e129d744fb146c2c5e3b2b09c9f0d081d06b0337f41652--sfml--2.6.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "03a0739aad4f2119f4712aedca07e722ab3f62e2a3e7aee262b1a1c295b6432d--sfml--2.6.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "76e927379efe65c096965ec7cf2c5a7e70fc8e3d7ed8d40ccf73bde2f621c5e5--sfml--2.6.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1d78cf12ecb67d33d41375786db82b9f1c75195c74329d00387b47b09eaa7f67--sfml--2.6.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sfml" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sfml" ]
+]

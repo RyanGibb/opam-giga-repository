@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for USB device access"
+description: """
+Library for USB device access"""
+extra-source "4b0008bd4b6431a79897713720b65045e0c9afaafb05aabfae8262d5d7ef29ac--libusb--1.0.27.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:872182eebb566f32d577fa82b126260c383c6a8f8d02e9fc232eadda9184060b"
+  checksum: [
+    "sha256=872182eebb566f32d577fa82b126260c383c6a8f8d02e9fc232eadda9184060b"
+  ]
+}
+extra-source "55f37930c4e678b6d2cd789c12b59fc9ec1784ecd5c034e3ea54721c7f32272b--libusb-1.0.27.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/manifests/1.0.27"
+}
+extra-source "cec38adaa756863992f307f833c8f4bf54856988e548abd2df067a466a462b4b--libusb--1.0.27.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:e49b076581da7311e8a724c409fa12a76a948e1e6805022d4e3cbca6af2c946a"
+  checksum: [
+    "sha256=e49b076581da7311e8a724c409fa12a76a948e1e6805022d4e3cbca6af2c946a"
+  ]
+}
+extra-source "2b5b287294e31ad0dc239e8dbaef81d46b193d28a9e8d51ac89aea966ae0d576--libusb--1.0.27.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:fff3e66328455513a887dd4e8043a13a1213035f7e4a757d4fdf93f9815ffd1d"
+  checksum: [
+    "sha256=fff3e66328455513a887dd4e8043a13a1213035f7e4a757d4fdf93f9815ffd1d"
+  ]
+}
+extra-source "9830201149ef71722fd2aa7534a0493676cbbd419e16c204f1a376d08b4cee3c--libusb--1.0.27.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:4f8f2015115cc18610ff65a9f0f34589ebd9596b929066867bbbcac18977b689"
+  checksum: [
+    "sha256=4f8f2015115cc18610ff65a9f0f34589ebd9596b929066867bbbcac18977b689"
+  ]
+}
+extra-source "e41c9ec2c891617fda556bab4638d6bbf8e4bc309a0f3744d64c10ebfd23d7d1--libusb--1.0.27.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:5d14898869c8bb7d12f6a8091b16c2db76909293b579d10b0ee846248451a765"
+  checksum: [
+    "sha256=5d14898869c8bb7d12f6a8091b16c2db76909293b579d10b0ee846248451a765"
+  ]
+}
+extra-source "9f026067bfd1a9bb0362fdc4161b2313aac887b60ad3a2d44e407be6ca349625--libusb--1.0.27.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:e02e54902348f1918adf758a6b2f4c5d113570f4c98e9f0a38b8d3b24c50c942"
+  checksum: [
+    "sha256=e02e54902348f1918adf758a6b2f4c5d113570f4c98e9f0a38b8d3b24c50c942"
+  ]
+}
+extra-source "1c879f2ee387ddf1b093a68d3d80b58eced6b7f29757bf8d868d9e1cb851f2f4--libusb--1.0.27.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:05c5363ff9f8a4aeaf65eb3f95fba3a4fc7f665d35a627a2d212c43fb7ad5838"
+  checksum: [
+    "sha256=05c5363ff9f8a4aeaf65eb3f95fba3a4fc7f665d35a627a2d212c43fb7ad5838"
+  ]
+}
+extra-source "15cd47aced50668c29f61d50f3a39fefcde2260e219bdc279c9fbdb36dbb01a7--libusb--1.0.27.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:c8a4b5075fbdaf5dca99d33fc5d1f21bf45832dcb3a98267737ebc3cd9e55515"
+  checksum: [
+    "sha256=c8a4b5075fbdaf5dca99d33fc5d1f21bf45832dcb3a98267737ebc3cd9e55515"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "55f37930c4e678b6d2cd789c12b59fc9ec1784ecd5c034e3ea54721c7f32272b--libusb-1.0.27.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "4b0008bd4b6431a79897713720b65045e0c9afaafb05aabfae8262d5d7ef29ac--libusb--1.0.27.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cec38adaa756863992f307f833c8f4bf54856988e548abd2df067a466a462b4b--libusb--1.0.27.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2b5b287294e31ad0dc239e8dbaef81d46b193d28a9e8d51ac89aea966ae0d576--libusb--1.0.27.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9830201149ef71722fd2aa7534a0493676cbbd419e16c204f1a376d08b4cee3c--libusb--1.0.27.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e41c9ec2c891617fda556bab4638d6bbf8e4bc309a0f3744d64c10ebfd23d7d1--libusb--1.0.27.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9f026067bfd1a9bb0362fdc4161b2313aac887b60ad3a2d44e407be6ca349625--libusb--1.0.27.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1c879f2ee387ddf1b093a68d3d80b58eced6b7f29757bf8d868d9e1cb851f2f4--libusb--1.0.27.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "15cd47aced50668c29f61d50f3a39fefcde2260e219bdc279c9fbdb36dbb01a7--libusb--1.0.27.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libusb" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libusb" ]
+]

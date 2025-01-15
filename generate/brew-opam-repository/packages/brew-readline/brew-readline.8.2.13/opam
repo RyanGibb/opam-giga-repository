@@ -1,0 +1,98 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for command-line editing"
+description: """
+Library for command-line editing"""
+extra-source "9e5ce7d7c9e81daddcd40b985afd1e60ed7f69acd6319ff3420c4faca82a8698--readline--8.2.13.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:becf6fdd835be191881959acd788745c1075eeb70cb1fd9ee646a3080597ea6f"
+  checksum: [
+    "sha256=becf6fdd835be191881959acd788745c1075eeb70cb1fd9ee646a3080597ea6f"
+  ]
+}
+extra-source "aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13"
+}
+extra-source "3f7c2d61dcf1d6ef9634ee24657d17ed77098a23dfa4ee015a60bf1cb7f24f85--readline--8.2.13.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:738c27ceee9a8b198f98438477ef7a513a96a965e3a434ac3aa8fb4ed76494b1"
+  checksum: [
+    "sha256=738c27ceee9a8b198f98438477ef7a513a96a965e3a434ac3aa8fb4ed76494b1"
+  ]
+}
+extra-source "446fbf00927bacd971f43f42c3605e00929b283700936241ad8044fe469ccb25--readline--8.2.13.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:0cf2cae0b9bb71bee1f9f9b3ab1e5dfc27b32f474db7f2d38b8b2dffd02da5ff"
+  checksum: [
+    "sha256=0cf2cae0b9bb71bee1f9f9b3ab1e5dfc27b32f474db7f2d38b8b2dffd02da5ff"
+  ]
+}
+extra-source "83111ac86e24adf736d55f6be8bf15929cea064dcb47859cedcad53389ef8478--readline--8.2.13.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:e46d4ff0c800dd35b9d5cef74e61ade54edc0834231f35c695af206bed9e3608"
+  checksum: [
+    "sha256=e46d4ff0c800dd35b9d5cef74e61ade54edc0834231f35c695af206bed9e3608"
+  ]
+}
+extra-source "d6212645def999d8694ab930a75fd533ac85dde1dc318c489ac711a784aa6cc2--readline--8.2.13.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:62d86d4a0c7be5d568eaf5abbb6477e4c95dc1821ef232bcb45b658dbf8f9bc4"
+  checksum: [
+    "sha256=62d86d4a0c7be5d568eaf5abbb6477e4c95dc1821ef232bcb45b658dbf8f9bc4"
+  ]
+}
+extra-source "384124d227978fb140a8b6bf41847ea472d9b3694cdd4dd025e38589125d51a5--readline--8.2.13.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:57580f6ff00c7717c8d791a583f7837944a230c573f1fb8338fd155656be4f04"
+  checksum: [
+    "sha256=57580f6ff00c7717c8d791a583f7837944a230c573f1fb8338fd155656be4f04"
+  ]
+}
+extra-source "9b3ffcf5b21a14f615a1195aa0ccdf6bb3fa45d09ecc58e814ed760499e15f06--readline--8.2.13.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:5e5ae8819679057596a21cfde4f575d33c87db70151386d01579bc2863b948fd"
+  checksum: [
+    "sha256=5e5ae8819679057596a21cfde4f575d33c87db70151386d01579bc2863b948fd"
+  ]
+}
+extra-source "d40e9e519a542193fe704c4e1672744d1ea547c4c0fe5e31b5562a642888862d--readline--8.2.13.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:c3245660eb2d39b76441960dd6c80212debcec51de1ef4d6f86bb13d9a5f1fe3"
+  checksum: [
+    "sha256=c3245660eb2d39b76441960dd6c80212debcec51de1ef4d6f86bb13d9a5f1fe3"
+  ]
+}
+extra-source "dbb5ca9a3349929a62914957807b83c94af3f5f5703b6852ac65be862a743a3b--readline--8.2.13.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:099378b496dd58f6a0fdb09e4c32d2ccae5631c0b423c1df77626d844553a85f"
+  checksum: [
+    "sha256=099378b496dd58f6a0fdb09e4c32d2ccae5631c0b423c1df77626d844553a85f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9e5ce7d7c9e81daddcd40b985afd1e60ed7f69acd6319ff3420c4faca82a8698--readline--8.2.13.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3f7c2d61dcf1d6ef9634ee24657d17ed77098a23dfa4ee015a60bf1cb7f24f85--readline--8.2.13.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "446fbf00927bacd971f43f42c3605e00929b283700936241ad8044fe469ccb25--readline--8.2.13.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "83111ac86e24adf736d55f6be8bf15929cea064dcb47859cedcad53389ef8478--readline--8.2.13.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d6212645def999d8694ab930a75fd533ac85dde1dc318c489ac711a784aa6cc2--readline--8.2.13.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "384124d227978fb140a8b6bf41847ea472d9b3694cdd4dd025e38589125d51a5--readline--8.2.13.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9b3ffcf5b21a14f615a1195aa0ccdf6bb3fa45d09ecc58e814ed760499e15f06--readline--8.2.13.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d40e9e519a542193fe704c4e1672744d1ea547c4c0fe5e31b5562a642888862d--readline--8.2.13.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dbb5ca9a3349929a62914957807b83c94af3f5f5703b6852ac65be862a743a3b--readline--8.2.13.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "readline" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "readline" ]
+]

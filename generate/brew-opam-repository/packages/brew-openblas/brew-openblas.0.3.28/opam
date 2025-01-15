@@ -1,0 +1,105 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Optimized BLAS library"
+description: """
+Optimized BLAS library"""
+extra-source "e206e9b90c7fe11bce3d2d7234f25169182e1992933f4fa608fa377430097d7e--openblas--0.3.28.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:8d319fccf7a06b8f0540d8cb864a1fbdcde99f5b2c57574b8effc52bd5cf2faf"
+  checksum: [
+    "sha256=8d319fccf7a06b8f0540d8cb864a1fbdcde99f5b2c57574b8effc52bd5cf2faf"
+  ]
+}
+extra-source "60a317040c885298623bef2b9693411b082cc4a1e706301e19c41d2b1eef9300--openblas-0.3.28.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/manifests/0.3.28"
+}
+extra-source "734ae5f45c01bafafd9d9992b43a54d319abe3220a1fe4208880398890e684f1--openblas--0.3.28.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:0ff27b7fa21c56961fcf37d0b4690e843b0ce8e5f967a73223e4b247fa462b1c"
+  checksum: [
+    "sha256=0ff27b7fa21c56961fcf37d0b4690e843b0ce8e5f967a73223e4b247fa462b1c"
+  ]
+}
+extra-source "5142c3b0e1a32d0f86d727da1dd794e5e72cf7a15408caab0f6da9b0c91362af--openblas--0.3.28.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:0f31a93b4161cf8a6bb9cda77dd41c5285327920e75ef091e587a6f9ed74446e"
+  checksum: [
+    "sha256=0f31a93b4161cf8a6bb9cda77dd41c5285327920e75ef091e587a6f9ed74446e"
+  ]
+}
+extra-source "664b30f01766541e755b969dd3d9e441890a565a69b112afa3447d62cb90053a--openblas--0.3.28.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:b11f8a96fff66cbdff06a79c5920163185ebc40abf670a90a677156144d3a80a"
+  checksum: [
+    "sha256=b11f8a96fff66cbdff06a79c5920163185ebc40abf670a90a677156144d3a80a"
+  ]
+}
+extra-source "b2aacc4e378621a3c7b91f102e9adefad4848e6d064ca72250fb91db12266acd--openblas--0.3.28.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:542382c256f30f672e9b2006afb65864ae59383ec80432e2b0dcfd0bda797e82"
+  checksum: [
+    "sha256=542382c256f30f672e9b2006afb65864ae59383ec80432e2b0dcfd0bda797e82"
+  ]
+}
+extra-source "112fb668f54238fb196caab137ef680daad52224919d06c8509933c4568bfa8d--openblas--0.3.28.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:569b39c70b716df30d30334d2b5715eba0574a5f28c2316931736e776326aecb"
+  checksum: [
+    "sha256=569b39c70b716df30d30334d2b5715eba0574a5f28c2316931736e776326aecb"
+  ]
+}
+extra-source "9450d8daaee2fb26cba6690ef5feec907a157622b59045f91bdc5b6ba7b82fa7--openblas--0.3.28.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:b0582fc465c1cd001d994b11efd60b54f47bd8d39ace6a53a289c81e7f6f99c5"
+  checksum: [
+    "sha256=b0582fc465c1cd001d994b11efd60b54f47bd8d39ace6a53a289c81e7f6f99c5"
+  ]
+}
+extra-source "611c88fd0371652b2364a388002c9553359280c21ec6a74af00e088ed1dd0411--openblas--0.3.28.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:9ac6e26f577d71f531bd0f268616ad2aa845c3c2843154b6206e7a293f017100"
+  checksum: [
+    "sha256=9ac6e26f577d71f531bd0f268616ad2aa845c3c2843154b6206e7a293f017100"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "60a317040c885298623bef2b9693411b082cc4a1e706301e19c41d2b1eef9300--openblas-0.3.28.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e206e9b90c7fe11bce3d2d7234f25169182e1992933f4fa608fa377430097d7e--openblas--0.3.28.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "734ae5f45c01bafafd9d9992b43a54d319abe3220a1fe4208880398890e684f1--openblas--0.3.28.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5142c3b0e1a32d0f86d727da1dd794e5e72cf7a15408caab0f6da9b0c91362af--openblas--0.3.28.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "664b30f01766541e755b969dd3d9e441890a565a69b112afa3447d62cb90053a--openblas--0.3.28.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b2aacc4e378621a3c7b91f102e9adefad4848e6d064ca72250fb91db12266acd--openblas--0.3.28.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "112fb668f54238fb196caab137ef680daad52224919d06c8509933c4568bfa8d--openblas--0.3.28.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9450d8daaee2fb26cba6690ef5feec907a157622b59045f91bdc5b6ba7b82fa7--openblas--0.3.28.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "611c88fd0371652b2364a388002c9553359280c21ec6a74af00e088ed1dd0411--openblas--0.3.28.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "openblas" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "openblas" ]
+]

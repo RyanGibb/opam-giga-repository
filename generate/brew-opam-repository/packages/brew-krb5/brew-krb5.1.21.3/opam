@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Network authentication protocol"
+description: """
+Network authentication protocol"""
+extra-source "0a2fcb03b84a2d0e6fdf6f7c560096ac94b2f795b3edfd998f2ef27be0276f1a--krb5--1.21.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:75d0ce70b754c159e642f7e9afff27add08203423792f34c240a20ea014bfcec"
+  checksum: [
+    "sha256=75d0ce70b754c159e642f7e9afff27add08203423792f34c240a20ea014bfcec"
+  ]
+}
+extra-source "c5793441ca90aa09420dddd84f19d4aaf86da4f0b3f60c84940d77b1cb4c6863--krb5-1.21.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/manifests/1.21.3"
+}
+extra-source "0d0141a46df71f75250d9eac3defb3257070b2ebaa9d47212bf3d6af4bb91eb7--krb5--1.21.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:2ceff13b1041a0c1fe479069725c95cc0297cb221a616b4e4be107a745660d46"
+  checksum: [
+    "sha256=2ceff13b1041a0c1fe479069725c95cc0297cb221a616b4e4be107a745660d46"
+  ]
+}
+extra-source "b71cfbbd7e24bcdd2339bb44586acf2bf92881b953b4b9fcc7836139ac2a1e97--krb5--1.21.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:c7e8ec4458b77cb3bdc1bea7b6db6f6dfa6bb6c377cc0e6bd48f6d3f89d98f6b"
+  checksum: [
+    "sha256=c7e8ec4458b77cb3bdc1bea7b6db6f6dfa6bb6c377cc0e6bd48f6d3f89d98f6b"
+  ]
+}
+extra-source "913f297e6face7d3d84403e19319b5a2ba8334daa2cbb822840f59480496a5b7--krb5--1.21.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:af7bd61f35af7725018817b4625b664f61efd4370d3fa6e0171bb49b968ab0b9"
+  checksum: [
+    "sha256=af7bd61f35af7725018817b4625b664f61efd4370d3fa6e0171bb49b968ab0b9"
+  ]
+}
+extra-source "1643659226f0b29e7585d9de7a8be7223ff4e6da1e92b09dd19ce181cd574826--krb5--1.21.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:e13b0f482b86a0139a13b482c4203540d1da19e82f29abd11ce155179a847c78"
+  checksum: [
+    "sha256=e13b0f482b86a0139a13b482c4203540d1da19e82f29abd11ce155179a847c78"
+  ]
+}
+extra-source "42390b0e8b9bb5ee6084425b074c40f038b14d37c78e57af9f3a3a4d070bf21e--krb5--1.21.3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:625e89432d8dc4a6571ae3db24cdd793f0bd058cff43c09eb565b41c7012ca9e"
+  checksum: [
+    "sha256=625e89432d8dc4a6571ae3db24cdd793f0bd058cff43c09eb565b41c7012ca9e"
+  ]
+}
+extra-source "b38e58a7ad47b35b19d74ee4c70312a284d670bdbeeafabc8f0d4f37b0f4f438--krb5--1.21.3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:b776903543fdcbf9af790c1ee6a6197b51bd00ad4f67c1f03e1741a352b0a756"
+  checksum: [
+    "sha256=b776903543fdcbf9af790c1ee6a6197b51bd00ad4f67c1f03e1741a352b0a756"
+  ]
+}
+extra-source "72cf7a93be887dfbc1b6d4c62f0bee4601cd25945db0637eed4f9ab7267671f6--krb5--1.21.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:f5b4cafedb315e92a31a0a5d87e33f7826952bcc5c093ba65817c61247799601"
+  checksum: [
+    "sha256=f5b4cafedb315e92a31a0a5d87e33f7826952bcc5c093ba65817c61247799601"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c5793441ca90aa09420dddd84f19d4aaf86da4f0b3f60c84940d77b1cb4c6863--krb5-1.21.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "0a2fcb03b84a2d0e6fdf6f7c560096ac94b2f795b3edfd998f2ef27be0276f1a--krb5--1.21.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0d0141a46df71f75250d9eac3defb3257070b2ebaa9d47212bf3d6af4bb91eb7--krb5--1.21.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b71cfbbd7e24bcdd2339bb44586acf2bf92881b953b4b9fcc7836139ac2a1e97--krb5--1.21.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "913f297e6face7d3d84403e19319b5a2ba8334daa2cbb822840f59480496a5b7--krb5--1.21.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1643659226f0b29e7585d9de7a8be7223ff4e6da1e92b09dd19ce181cd574826--krb5--1.21.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "42390b0e8b9bb5ee6084425b074c40f038b14d37c78e57af9f3a3a4d070bf21e--krb5--1.21.3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b38e58a7ad47b35b19d74ee4c70312a284d670bdbeeafabc8f0d4f37b0f4f438--krb5--1.21.3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "72cf7a93be887dfbc1b6d4c62f0bee4601cd25945db0637eed4f9ab7267671f6--krb5--1.21.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "krb5" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "krb5" ]
+]

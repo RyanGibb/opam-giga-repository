@@ -1,0 +1,125 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GNOME Python bindings (based on GObject Introspection)"
+description: """
+GNOME Python bindings (based on GObject Introspection)"""
+extra-source "99e9264e1872bdb1a126519b1d4d265944f91d25314f5ebb9c362589a7a78ff5--pygobject3--3.50.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/blobs/sha256:795deab77b4e616f164998005f68fed69bbd7a4a737aed2da8962fca78f1998a"
+  checksum: [
+    "sha256=795deab77b4e616f164998005f68fed69bbd7a4a737aed2da8962fca78f1998a"
+  ]
+}
+extra-source "2a4e37a326d6dc2239e6e6fa90bb3e1fca0bce58ccd63aaacfec7a04e9963711--pygobject3-3.50.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/manifests/3.50.0"
+}
+extra-source "4c34f65d3b59d09b616e8136c6e039c35a3ce90c6f7694c3fe77bc4ee2251e98--pygobject3--3.50.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/blobs/sha256:c876cfa95857d59a75d35c7977d20c5625c8a9373bf9fb44baa008e23d182a83"
+  checksum: [
+    "sha256=c876cfa95857d59a75d35c7977d20c5625c8a9373bf9fb44baa008e23d182a83"
+  ]
+}
+extra-source "528fb9344107f9e3cc79574562e733064ae7c21cbaf49165cc41746c2b6f0f3f--pygobject3--3.50.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/blobs/sha256:a05bdf08604e6ff3b46acf5c3fe0b6f4cfa078cf39546cd6707d47dcd5d45444"
+  checksum: [
+    "sha256=a05bdf08604e6ff3b46acf5c3fe0b6f4cfa078cf39546cd6707d47dcd5d45444"
+  ]
+}
+extra-source "42a02405a65b5d0bb720c305af855223a5a92ca91d7f308ddc97dfe3affa9122--pygobject3--3.50.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/blobs/sha256:30c7b2945bb444c020a7b04f16cd4440143a1fdbe1e0473e9c64df1fd8d7784f"
+  checksum: [
+    "sha256=30c7b2945bb444c020a7b04f16cd4440143a1fdbe1e0473e9c64df1fd8d7784f"
+  ]
+}
+extra-source "766a335011fb8e4dca4179430399fd7bfcf3bda68e69db16ee937862fd969b22--pygobject3--3.50.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/blobs/sha256:c836989426c7f07dc41aa74bbe40190f82a3afa3fdda86b9425e6e8c540b90cf"
+  checksum: [
+    "sha256=c836989426c7f07dc41aa74bbe40190f82a3afa3fdda86b9425e6e8c540b90cf"
+  ]
+}
+extra-source "b81df067202747340731053c2f89793c3f23e1ca2dba6d515e0bf3dfea20b358--pygobject3--3.50.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/blobs/sha256:3a66f0a3fc77a0836f9413ede8c2019f586c1ce220f29f888e52a2476914e114"
+  checksum: [
+    "sha256=3a66f0a3fc77a0836f9413ede8c2019f586c1ce220f29f888e52a2476914e114"
+  ]
+}
+extra-source "04ae857507d31ae99027a976c7f7d0ca3e38481d9ba8492d7ed4a9d709728ac6--pygobject3--3.50.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/blobs/sha256:6f31ebad4163c3d6dd8521a530213ab42af7ce1540c8b100be6bc2e1e1537eba"
+  checksum: [
+    "sha256=6f31ebad4163c3d6dd8521a530213ab42af7ce1540c8b100be6bc2e1e1537eba"
+  ]
+}
+extra-source "d0dd2ee66d2a6dee50b558b866d789743f95775afe1c6a77f041936e4b61d0dc--pygobject3--3.50.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pygobject3/blobs/sha256:a9a30f9517916827435fd0728537c556146283271ceeae7bd02cd49c8907c096"
+  checksum: [
+    "sha256=a9a30f9517916827435fd0728537c556146283271ceeae7bd02cd49c8907c096"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2a4e37a326d6dc2239e6e6fa90bb3e1fca0bce58ccd63aaacfec7a04e9963711--pygobject3-3.50.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "99e9264e1872bdb1a126519b1d4d265944f91d25314f5ebb9c362589a7a78ff5--pygobject3--3.50.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4c34f65d3b59d09b616e8136c6e039c35a3ce90c6f7694c3fe77bc4ee2251e98--pygobject3--3.50.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "528fb9344107f9e3cc79574562e733064ae7c21cbaf49165cc41746c2b6f0f3f--pygobject3--3.50.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "42a02405a65b5d0bb720c305af855223a5a92ca91d7f308ddc97dfe3affa9122--pygobject3--3.50.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "766a335011fb8e4dca4179430399fd7bfcf3bda68e69db16ee937862fd969b22--pygobject3--3.50.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b81df067202747340731053c2f89793c3f23e1ca2dba6d515e0bf3dfea20b358--pygobject3--3.50.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "04ae857507d31ae99027a976c7f7d0ca3e38481d9ba8492d7ed4a9d709728ac6--pygobject3--3.50.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d0dd2ee66d2a6dee50b558b866d789743f95775afe1c6a77f041936e4b61d0dc--pygobject3--3.50.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pygobject3" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pygobject3" ]
+]

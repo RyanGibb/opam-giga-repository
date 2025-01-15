@@ -1,0 +1,98 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Small build system for use with gyp or CMake"
+description: """
+Small build system for use with gyp or CMake"""
+extra-source "bfb92dfe6109168d66eec34334a43cb23d14f5745b1a37c777581d61ff4b4339--ninja--1.12.1.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:8b078ad9df50b80bd296614204d1dc0a42e9340edd45d0aa0c6576cd538be50f"
+  checksum: [
+    "sha256=8b078ad9df50b80bd296614204d1dc0a42e9340edd45d0aa0c6576cd538be50f"
+  ]
+}
+extra-source "5df23a5c77b5d94f4b3df4cee2a886d86de68dfef3eec5552ffb192d4944ed3f--ninja-1.12.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/manifests/1.12.1"
+}
+extra-source "6289d42e72f5a6e29776a4121dcadfce501fbcd8240a1989f494c131afc43a81--ninja--1.12.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:4ccb687bdd51f132eb4e87bda877c7ec7fbd565dd567c59e074083977c7e027b"
+  checksum: [
+    "sha256=4ccb687bdd51f132eb4e87bda877c7ec7fbd565dd567c59e074083977c7e027b"
+  ]
+}
+extra-source "6eedccc376a8c52f189ec29f1c661b11232a108ad428b00d505f6007b6994754--ninja--1.12.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:b9e7f5d59c29882398cbf1cf9fcf358db480afa96ad9fb51a87aa0da9b5fabd7"
+  checksum: [
+    "sha256=b9e7f5d59c29882398cbf1cf9fcf358db480afa96ad9fb51a87aa0da9b5fabd7"
+  ]
+}
+extra-source "a5172e3c095b207852f0885bb7b859e208c094af57cc508b8f70a54abe8818a3--ninja--1.12.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:e0137a7ca41103118431134051e264a38dfcfd90a1d23354527dec7ecd4098d0"
+  checksum: [
+    "sha256=e0137a7ca41103118431134051e264a38dfcfd90a1d23354527dec7ecd4098d0"
+  ]
+}
+extra-source "ca5df03f753c34c5955c7499282186f47daa897240f4fedfff5d7b6a86a0df73--ninja--1.12.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:4cda186dde7fff9284bc64d2469faf3a6af148e656f9ee9c27d731d1e02bb637"
+  checksum: [
+    "sha256=4cda186dde7fff9284bc64d2469faf3a6af148e656f9ee9c27d731d1e02bb637"
+  ]
+}
+extra-source "c5de64e93b0d5d65d8b5c1f6b342553cadf9635c5e68f1afef864a7895ea5e27--ninja--1.12.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:ee3cb1d64ad324420cb83866236159703faa91825353d4f2ac70aa8a729d03f7"
+  checksum: [
+    "sha256=ee3cb1d64ad324420cb83866236159703faa91825353d4f2ac70aa8a729d03f7"
+  ]
+}
+extra-source "fc45beae3fae43efb7001f6f54cccd836211be4d3d3da40b4079a7e3363c59ea--ninja--1.12.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:ef5eced95e4a700b49d67acdf1fa25547242ca95e36ed197339dc24f5239c312"
+  checksum: [
+    "sha256=ef5eced95e4a700b49d67acdf1fa25547242ca95e36ed197339dc24f5239c312"
+  ]
+}
+extra-source "0dd66d370699ed1aea1a996522a9a26de1010598200efa4a072f4b9478f21bce--ninja--1.12.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:4853917b940c67e971ecc4575d490080e88ea812b1af2e9f3b383c5f9012f9eb"
+  checksum: [
+    "sha256=4853917b940c67e971ecc4575d490080e88ea812b1af2e9f3b383c5f9012f9eb"
+  ]
+}
+extra-source "49068e01143becfe08d8167591caeb4708f2dd6524231aedc9d3ebb0907e9c12--ninja--1.12.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:bb1fdec103d46cf08a086a70f0c4bda35927cfdfcef35bad0da2b0b4430c8801"
+  checksum: [
+    "sha256=bb1fdec103d46cf08a086a70f0c4bda35927cfdfcef35bad0da2b0b4430c8801"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "5df23a5c77b5d94f4b3df4cee2a886d86de68dfef3eec5552ffb192d4944ed3f--ninja-1.12.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "bfb92dfe6109168d66eec34334a43cb23d14f5745b1a37c777581d61ff4b4339--ninja--1.12.1.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6289d42e72f5a6e29776a4121dcadfce501fbcd8240a1989f494c131afc43a81--ninja--1.12.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6eedccc376a8c52f189ec29f1c661b11232a108ad428b00d505f6007b6994754--ninja--1.12.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a5172e3c095b207852f0885bb7b859e208c094af57cc508b8f70a54abe8818a3--ninja--1.12.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ca5df03f753c34c5955c7499282186f47daa897240f4fedfff5d7b6a86a0df73--ninja--1.12.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c5de64e93b0d5d65d8b5c1f6b342553cadf9635c5e68f1afef864a7895ea5e27--ninja--1.12.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fc45beae3fae43efb7001f6f54cccd836211be4d3d3da40b4079a7e3363c59ea--ninja--1.12.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0dd66d370699ed1aea1a996522a9a26de1010598200efa4a072f4b9478f21bce--ninja--1.12.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "49068e01143becfe08d8167591caeb4708f2dd6524231aedc9d3ebb0907e9c12--ninja--1.12.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "ninja" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "ninja" ]
+]

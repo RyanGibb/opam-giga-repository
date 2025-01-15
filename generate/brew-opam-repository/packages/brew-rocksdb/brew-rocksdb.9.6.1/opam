@@ -1,0 +1,97 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Embeddable, persistent key-value store for fast storage"
+description: """
+Embeddable, persistent key-value store for fast storage"""
+extra-source "0b04259a206b4d4b7d93256fe06c3e00d56e930046a02c5cf601333e856fc812--rocksdb--9.6.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/blobs/sha256:93326eb41e19aefbbc7c20f2340b7cb55effd4bb5725263861a85febd0370da2"
+  checksum: [
+    "sha256=93326eb41e19aefbbc7c20f2340b7cb55effd4bb5725263861a85febd0370da2"
+  ]
+}
+extra-source "aedeedc070b20b9a962212ad6b12be5b6f8887520221e40d8ee77ffa4a270e72--rocksdb-9.6.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/manifests/9.6.1"
+}
+extra-source "ca2b1e293e3cfa8fc3f3ea9067ad3b4712f53419573bc5b59fd53d71f9f32817--rocksdb--9.6.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/blobs/sha256:e87a7203b08fecd512671534394a93e340fdbd08e67111d7d4fe67ca7b3fd1e3"
+  checksum: [
+    "sha256=e87a7203b08fecd512671534394a93e340fdbd08e67111d7d4fe67ca7b3fd1e3"
+  ]
+}
+extra-source "912b625404e8955ce361279c22845edb538c47b50130e4ba59c6950b3ff4d722--rocksdb--9.6.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/blobs/sha256:ace1c792e3c35134fc351fdd67aaab5b5bcb72958e44c31008c860d9babc9205"
+  checksum: [
+    "sha256=ace1c792e3c35134fc351fdd67aaab5b5bcb72958e44c31008c860d9babc9205"
+  ]
+}
+extra-source "32adf4ae5bc0972d01cee2af29516fe9992a8311edcf3062f53ddde7ada4642e--rocksdb--9.6.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/blobs/sha256:fbe20a7b87ed1dc99fd307404640d1beac03c5e18e3a6d6939f839f583519c65"
+  checksum: [
+    "sha256=fbe20a7b87ed1dc99fd307404640d1beac03c5e18e3a6d6939f839f583519c65"
+  ]
+}
+extra-source "dc67f2f2906adf563818dbdea7df961d822c9a23eb256da85385e05d320abad5--rocksdb--9.6.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/blobs/sha256:8f00359fe3af160cdd9eec4afa442b7d1b023362db59902595b2643ed5685540"
+  checksum: [
+    "sha256=8f00359fe3af160cdd9eec4afa442b7d1b023362db59902595b2643ed5685540"
+  ]
+}
+extra-source "b85ed4c51dd8431fe7f4baf722cce10d6c2c11211945b8965bf4ef2e4e923006--rocksdb--9.6.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/blobs/sha256:505359f6b38b29ec48fc4a2cda7c2872c2ff70dbffc6869e7e633ba21392ba14"
+  checksum: [
+    "sha256=505359f6b38b29ec48fc4a2cda7c2872c2ff70dbffc6869e7e633ba21392ba14"
+  ]
+}
+extra-source "80c6c20e4561104de2278e28797e6517096df342cd382d5699d7d6b5b33d1cdc--rocksdb--9.6.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/blobs/sha256:51d0f63ea16738ab391f605cd61266e6ed857a4ff65d3472c18a3ecd73e0ff1a"
+  checksum: [
+    "sha256=51d0f63ea16738ab391f605cd61266e6ed857a4ff65d3472c18a3ecd73e0ff1a"
+  ]
+}
+extra-source "f4d6f27c5bffbd11fa523c77f406ae4ab35a7256b3313dbed0fb6019451eaa35--rocksdb--9.6.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rocksdb/blobs/sha256:7059698ed7838ba0ac1538510e460df327fd38c525ab240b25b1b4e67d6bd87f"
+  checksum: [
+    "sha256=7059698ed7838ba0ac1538510e460df327fd38c525ab240b25b1b4e67d6bd87f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-gflags" {= "2.2.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-snappy" {= "1.2.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "aedeedc070b20b9a962212ad6b12be5b6f8887520221e40d8ee77ffa4a270e72--rocksdb-9.6.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "0b04259a206b4d4b7d93256fe06c3e00d56e930046a02c5cf601333e856fc812--rocksdb--9.6.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ca2b1e293e3cfa8fc3f3ea9067ad3b4712f53419573bc5b59fd53d71f9f32817--rocksdb--9.6.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "912b625404e8955ce361279c22845edb538c47b50130e4ba59c6950b3ff4d722--rocksdb--9.6.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "32adf4ae5bc0972d01cee2af29516fe9992a8311edcf3062f53ddde7ada4642e--rocksdb--9.6.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dc67f2f2906adf563818dbdea7df961d822c9a23eb256da85385e05d320abad5--rocksdb--9.6.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b85ed4c51dd8431fe7f4baf722cce10d6c2c11211945b8965bf4ef2e4e923006--rocksdb--9.6.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "80c6c20e4561104de2278e28797e6517096df342cd382d5699d7d6b5b33d1cdc--rocksdb--9.6.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f4d6f27c5bffbd11fa523c77f406ae4ab35a7256b3313dbed0fb6019451eaa35--rocksdb--9.6.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "rocksdb" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "rocksdb" ]
+]

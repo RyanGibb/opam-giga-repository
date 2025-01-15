@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Command-line interface for SQLite"
+description: """
+Command-line interface for SQLite"""
+extra-source "3a9be0aa9b542ef239f676d0c9202197427ffd8194e0d19ac44446e56378a243--sqlite--3.46.1.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:79aa45908a8b30d2df1281e07ff3b74e518ee0499dffd171833d43f34029bc0d"
+  checksum: [
+    "sha256=79aa45908a8b30d2df1281e07ff3b74e518ee0499dffd171833d43f34029bc0d"
+  ]
+}
+extra-source "b34f1b968c8d3adc8763b7151754bc4f348c94372d89d1ae23cd11b643b7bdb2--sqlite-3.46.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.46.1"
+}
+extra-source "13179b7f22db5a8775f3c319801f262c28dc328158644ee5076c4c09741f66ab--sqlite--3.46.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:7bd90d0910ec7b1dd2be0421a5a76fff773e26eb6e9416ab885b05bd498e35fa"
+  checksum: [
+    "sha256=7bd90d0910ec7b1dd2be0421a5a76fff773e26eb6e9416ab885b05bd498e35fa"
+  ]
+}
+extra-source "2c9cb0d6b2f61e7f6f63209c424079ceeed915faadb6fbd76d4303d49d8d74b7--sqlite--3.46.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:4bfe3c42a2ba2924b898410e70846b46ca7bcf82916c0ff15a92d81d69bb6394"
+  checksum: [
+    "sha256=4bfe3c42a2ba2924b898410e70846b46ca7bcf82916c0ff15a92d81d69bb6394"
+  ]
+}
+extra-source "50fde49df540c0fd3a3f2487d3c7d62b89055bcc4c0bbd2c6d5c8846753f9b13--sqlite--3.46.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:ea8ee59ee1cf5599778ed5ce03f118dfc96cc814f0a8aefa059502101ee45c7c"
+  checksum: [
+    "sha256=ea8ee59ee1cf5599778ed5ce03f118dfc96cc814f0a8aefa059502101ee45c7c"
+  ]
+}
+extra-source "f7f55c0ea4e15f32455c88366e4a374ee89cf61987be8cac45f700325c78176c--sqlite--3.46.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:388f362cadde5c691e84a66635ebf101ff21e6e13f4b10981d2632e2aff3bd3f"
+  checksum: [
+    "sha256=388f362cadde5c691e84a66635ebf101ff21e6e13f4b10981d2632e2aff3bd3f"
+  ]
+}
+extra-source "7631c1fe27e19b4892affb6e5df8dc2c208c7de01d0f4c1c6c28637ac5dff046--sqlite--3.46.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:0b50035ff0b93300155a67a6c42a1fa2c88e39fc4d4daba4471eda9ac9b3224c"
+  checksum: [
+    "sha256=0b50035ff0b93300155a67a6c42a1fa2c88e39fc4d4daba4471eda9ac9b3224c"
+  ]
+}
+extra-source "3bb597b19c6e688e02996d4e774ba45a205289eab276e0f9c6f0702893163e3f--sqlite--3.46.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:0f6e20de908628b8b8b761b2c1231650757a508368860a4055fcc4ad8240ba72"
+  checksum: [
+    "sha256=0f6e20de908628b8b8b761b2c1231650757a508368860a4055fcc4ad8240ba72"
+  ]
+}
+extra-source "de601494c8e0c7350e7a9166dec05c22af24081796ac8d0918346f1052a4c80d--sqlite--3.46.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:b04e7f909acd9753598e0d00ea3eb5f409d219c8efd48888725812e7ca68bfa1"
+  checksum: [
+    "sha256=b04e7f909acd9753598e0d00ea3eb5f409d219c8efd48888725812e7ca68bfa1"
+  ]
+}
+extra-source "f51d604dc46eb9369c5861f65049df7c9c0d39d327773c4e55c44ae10a5c37d9--sqlite--3.46.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:108cff91d8599c1d25f3097655c539c914cce311f19cbef2dd667a56fd2fed40"
+  checksum: [
+    "sha256=108cff91d8599c1d25f3097655c539c914cce311f19cbef2dd667a56fd2fed40"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-readline" {= "8.2.13"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b34f1b968c8d3adc8763b7151754bc4f348c94372d89d1ae23cd11b643b7bdb2--sqlite-3.46.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "3a9be0aa9b542ef239f676d0c9202197427ffd8194e0d19ac44446e56378a243--sqlite--3.46.1.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "13179b7f22db5a8775f3c319801f262c28dc328158644ee5076c4c09741f66ab--sqlite--3.46.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2c9cb0d6b2f61e7f6f63209c424079ceeed915faadb6fbd76d4303d49d8d74b7--sqlite--3.46.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "50fde49df540c0fd3a3f2487d3c7d62b89055bcc4c0bbd2c6d5c8846753f9b13--sqlite--3.46.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f7f55c0ea4e15f32455c88366e4a374ee89cf61987be8cac45f700325c78176c--sqlite--3.46.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7631c1fe27e19b4892affb6e5df8dc2c208c7de01d0f4c1c6c28637ac5dff046--sqlite--3.46.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3bb597b19c6e688e02996d4e774ba45a205289eab276e0f9c6f0702893163e3f--sqlite--3.46.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "de601494c8e0c7350e7a9166dec05c22af24081796ac8d0918346f1052a4c80d--sqlite--3.46.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f51d604dc46eb9369c5861f65049df7c9c0d39d327773c4e55c44ae10a5c37d9--sqlite--3.46.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sqlite" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sqlite" ]
+]

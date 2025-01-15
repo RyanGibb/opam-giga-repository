@@ -1,0 +1,94 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Font encoding library"
+description: """
+X.Org: Font encoding library"""
+extra-source "fa4ca8253bf5932fd6b08c99ffeef3aff0bc291769c95d9282bfc9e82fe35631--libfontenc--1.1.8.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/blobs/sha256:5e4228d360d809601a62a880d67db005d4a9d3a92ddfbf47e6c6d0154f258bcd"
+  checksum: [
+    "sha256=5e4228d360d809601a62a880d67db005d4a9d3a92ddfbf47e6c6d0154f258bcd"
+  ]
+}
+extra-source "3c62002aaf0580b0d46a44b1ba5ca588d67d5586701e55a0f15378ac13c5a4fb--libfontenc-1.1.8.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/manifests/1.1.8"
+}
+extra-source "bd33f122f903cc1ba85599038a094f6a5e201924ab74c0dba43be216c7692875--libfontenc--1.1.8.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/blobs/sha256:bddef82fa135b48fa58485df06f80aeda327ac2e77a4fdb05d3543135c123692"
+  checksum: [
+    "sha256=bddef82fa135b48fa58485df06f80aeda327ac2e77a4fdb05d3543135c123692"
+  ]
+}
+extra-source "792a34cee42d1594d786637bc68d3982af93b09da5560ee5bb371a4a368c62c6--libfontenc--1.1.8.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/blobs/sha256:67887ebe92518e43424e8b468b310fde9ab42d9791d387d59519cdbfb4a2f43c"
+  checksum: [
+    "sha256=67887ebe92518e43424e8b468b310fde9ab42d9791d387d59519cdbfb4a2f43c"
+  ]
+}
+extra-source "b3d83ecb4d18952f6c5758635e1f5ee1ca5202a290dfd08335c664ed9c0e60b5--libfontenc--1.1.8.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/blobs/sha256:ce1f99b92616293e816e6d04918e1570ff18ed052ba6cdcb66115ceee37d9240"
+  checksum: [
+    "sha256=ce1f99b92616293e816e6d04918e1570ff18ed052ba6cdcb66115ceee37d9240"
+  ]
+}
+extra-source "cea8f3ad3423b419979271a5fa165e88bf2182a3368c8d530a716e97ca1b3dd3--libfontenc--1.1.8.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/blobs/sha256:15cec1b1e8ca8856aa59de28068cd187831281b1376597d7bb87c5f79b80e10c"
+  checksum: [
+    "sha256=15cec1b1e8ca8856aa59de28068cd187831281b1376597d7bb87c5f79b80e10c"
+  ]
+}
+extra-source "364e6f18188b204ed45b02e9f62da8583e17b3e9e84d6150c0a1a698db7244df--libfontenc--1.1.8.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/blobs/sha256:4f2d62d14136a1c6ca9e4f01d1b1bf454c9e90bc6eb3f50e6bff76a631ac0621"
+  checksum: [
+    "sha256=4f2d62d14136a1c6ca9e4f01d1b1bf454c9e90bc6eb3f50e6bff76a631ac0621"
+  ]
+}
+extra-source "b8071a828e746e78b228b379e828fa57ee5ff159f956b833efb488b61e6a81fa--libfontenc--1.1.8.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/blobs/sha256:129b929cf9305162d58922cce06530c4c1da2968adc292503240105c454bae67"
+  checksum: [
+    "sha256=129b929cf9305162d58922cce06530c4c1da2968adc292503240105c454bae67"
+  ]
+}
+extra-source "aad821e572a2d5c3f5714b2c47581da54f75beb72cbeafadd345f719d10bb96f--libfontenc--1.1.8.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfontenc/blobs/sha256:8f29d93ac7c98c61ac6e50b6d057bac244b13eb52046af1634ee623f452b1c5e"
+  checksum: [
+    "sha256=8f29d93ac7c98c61ac6e50b6d057bac244b13eb52046af1634ee623f452b1c5e"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-font-util" {= "1.4.1"}
+  "brew-xorgproto" {= "2024.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3c62002aaf0580b0d46a44b1ba5ca588d67d5586701e55a0f15378ac13c5a4fb--libfontenc-1.1.8.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "fa4ca8253bf5932fd6b08c99ffeef3aff0bc291769c95d9282bfc9e82fe35631--libfontenc--1.1.8.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bd33f122f903cc1ba85599038a094f6a5e201924ab74c0dba43be216c7692875--libfontenc--1.1.8.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "792a34cee42d1594d786637bc68d3982af93b09da5560ee5bb371a4a368c62c6--libfontenc--1.1.8.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b3d83ecb4d18952f6c5758635e1f5ee1ca5202a290dfd08335c664ed9c0e60b5--libfontenc--1.1.8.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cea8f3ad3423b419979271a5fa165e88bf2182a3368c8d530a716e97ca1b3dd3--libfontenc--1.1.8.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "364e6f18188b204ed45b02e9f62da8583e17b3e9e84d6150c0a1a698db7244df--libfontenc--1.1.8.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b8071a828e746e78b228b379e828fa57ee5ff159f956b833efb488b61e6a81fa--libfontenc--1.1.8.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "aad821e572a2d5c3f5714b2c47581da54f75beb72cbeafadd345f719d10bb96f--libfontenc--1.1.8.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libfontenc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libfontenc" ]
+]

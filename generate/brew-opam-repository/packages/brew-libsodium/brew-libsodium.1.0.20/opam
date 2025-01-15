@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "NaCl networking and cryptography library"
+description: """
+NaCl networking and cryptography library"""
+extra-source "25447fdaac716a5e5ae52ccde85b880074cf6611f554010608d35f4a7c98ef5c--libsodium--1.0.20.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:e8ba0aafe8fe7266d68630ff7ab11d7357af35dbf5113bb648a1e02bed397970"
+  checksum: [
+    "sha256=e8ba0aafe8fe7266d68630ff7ab11d7357af35dbf5113bb648a1e02bed397970"
+  ]
+}
+extra-source "a9a9a2e1207e214070682a14f6470fb686cbb6ba7c24c2c747c0ca0663f42557--libsodium-1.0.20.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/manifests/1.0.20"
+}
+extra-source "84bc5ea241eca20f89fb1dd2ab549330a7cf9ddb7ece203f25e4b4ffdc88df28--libsodium--1.0.20.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:ebc452002391195287aef3819c1285ba597bbfe55cb926f18dae5990202afa12"
+  checksum: [
+    "sha256=ebc452002391195287aef3819c1285ba597bbfe55cb926f18dae5990202afa12"
+  ]
+}
+extra-source "45dd1c3ecf0e5a83b0b7e15d6f2c8688d036d28582aa3828b02bb797efb9673e--libsodium--1.0.20.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:66835fcd7e4dd8dde5be4e8d34c5314481c1d724e8dd82d4e97059d9fdaf1a45"
+  checksum: [
+    "sha256=66835fcd7e4dd8dde5be4e8d34c5314481c1d724e8dd82d4e97059d9fdaf1a45"
+  ]
+}
+extra-source "3816598adf8bb59c08902126f8a0ba7ddb2009b83040eecee912da31ebac191b--libsodium--1.0.20.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:5de3b5180b73678d93c4c69a77d662afd6aac0bfd71246be6e78cfacf97cc3d7"
+  checksum: [
+    "sha256=5de3b5180b73678d93c4c69a77d662afd6aac0bfd71246be6e78cfacf97cc3d7"
+  ]
+}
+extra-source "c8b2ac137a8d32b826d105cbf45f98aa004ac7bd1988f703ce16e1417e133e7d--libsodium--1.0.20.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:21b83b95eef039b914d712f4ac5d235d85e1f1143383dfa9c5359f0cc88fa08d"
+  checksum: [
+    "sha256=21b83b95eef039b914d712f4ac5d235d85e1f1143383dfa9c5359f0cc88fa08d"
+  ]
+}
+extra-source "74b5966f79621e923dd06583929067f59a7173a25bb467d130e68973ff55a69b--libsodium--1.0.20.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:0556f27feb8d4b5f31edf42e392eb4901daa5b9dbb8510499aa196c9e77134c6"
+  checksum: [
+    "sha256=0556f27feb8d4b5f31edf42e392eb4901daa5b9dbb8510499aa196c9e77134c6"
+  ]
+}
+extra-source "1ecbad8220d99da54117c86ce90d7b1c0ef851ca36bee70dc9896bfbd55b818f--libsodium--1.0.20.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:25377f9e16747b9af732be608a966b580287d0854c2d530f23eea1235bca1ff7"
+  checksum: [
+    "sha256=25377f9e16747b9af732be608a966b580287d0854c2d530f23eea1235bca1ff7"
+  ]
+}
+extra-source "4968d0168a36c147f418b0e4c7f34d0decd2d1be36e6856dfb06bea19333c99e--libsodium--1.0.20.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:94394d217dc5a833492a702a8a9e914573a945da13f3b4f42b59f2513835f439"
+  checksum: [
+    "sha256=94394d217dc5a833492a702a8a9e914573a945da13f3b4f42b59f2513835f439"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "a9a9a2e1207e214070682a14f6470fb686cbb6ba7c24c2c747c0ca0663f42557--libsodium-1.0.20.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "25447fdaac716a5e5ae52ccde85b880074cf6611f554010608d35f4a7c98ef5c--libsodium--1.0.20.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "84bc5ea241eca20f89fb1dd2ab549330a7cf9ddb7ece203f25e4b4ffdc88df28--libsodium--1.0.20.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "45dd1c3ecf0e5a83b0b7e15d6f2c8688d036d28582aa3828b02bb797efb9673e--libsodium--1.0.20.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3816598adf8bb59c08902126f8a0ba7ddb2009b83040eecee912da31ebac191b--libsodium--1.0.20.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c8b2ac137a8d32b826d105cbf45f98aa004ac7bd1988f703ce16e1417e133e7d--libsodium--1.0.20.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "74b5966f79621e923dd06583929067f59a7173a25bb467d130e68973ff55a69b--libsodium--1.0.20.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1ecbad8220d99da54117c86ce90d7b1c0ef851ca36bee70dc9896bfbd55b818f--libsodium--1.0.20.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4968d0168a36c147f418b0e4c7f34d0decd2d1be36e6856dfb06bea19333c99e--libsodium--1.0.20.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libsodium" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libsodium" ]
+]

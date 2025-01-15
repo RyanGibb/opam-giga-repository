@@ -1,0 +1,97 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Color management engine supporting ICC profiles"
+description: """
+Color management engine supporting ICC profiles"""
+extra-source "ae94e35fd614180a5d3a9fe0c4b513e6de51cd3e9d3f3fd1c073acc08314e0aa--little-cms2--2.16.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:cbd8af49cc4b8454636a2cdcfae87b7005f11cbb7466994f0bf419968f33ea5d"
+  checksum: [
+    "sha256=cbd8af49cc4b8454636a2cdcfae87b7005f11cbb7466994f0bf419968f33ea5d"
+  ]
+}
+extra-source "c4e2b31b0daade62da1f3c2e57d69f74987bac35310011b87220145fa60b3558--little-cms2-2.16.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/manifests/2.16"
+}
+extra-source "a154fac3e422690b623e4bda6555caed00133adc500465b214dfae983fb7cb6c--little-cms2--2.16.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:46dd0d6ba9293999feaeb701a4c614440250a51daf0949478fbd486650a637bc"
+  checksum: [
+    "sha256=46dd0d6ba9293999feaeb701a4c614440250a51daf0949478fbd486650a637bc"
+  ]
+}
+extra-source "32d96523150087261321a183cf82c08345e6b31655d50c04489cd382a18194ca--little-cms2--2.16.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:d1ed5796de3f00d4b1301e9062cb54b2337c8e8dcf2ae9be8e03f3ed7af791e0"
+  checksum: [
+    "sha256=d1ed5796de3f00d4b1301e9062cb54b2337c8e8dcf2ae9be8e03f3ed7af791e0"
+  ]
+}
+extra-source "2e38014a1aa0b66c5601dc62ca7e25fb9a11466abbed95d416a6f66f56ef9551--little-cms2--2.16.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:1c2e7ed787c6ff05b52bf3d1f6e27047e390f609af8a2dcfbb5904cdee8a0fff"
+  checksum: [
+    "sha256=1c2e7ed787c6ff05b52bf3d1f6e27047e390f609af8a2dcfbb5904cdee8a0fff"
+  ]
+}
+extra-source "113789f719866bd7ef17403a98ac6a3d701033cc28d2c9145f6b92460c4527ab--little-cms2--2.16.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:c7eee75a83a2be3f19aa53ad043da4a316af7bc7f57e6aaf8f311f9e6e354be8"
+  checksum: [
+    "sha256=c7eee75a83a2be3f19aa53ad043da4a316af7bc7f57e6aaf8f311f9e6e354be8"
+  ]
+}
+extra-source "c7d1730388cbf713a43c671daa3245d6b5e5f313028125c7190ce658fdf7ba83--little-cms2--2.16.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:c3add26aa2b85ad6bda455cb9ad2f14a3e0055f458722757162dcfe91a992044"
+  checksum: [
+    "sha256=c3add26aa2b85ad6bda455cb9ad2f14a3e0055f458722757162dcfe91a992044"
+  ]
+}
+extra-source "2a7c227abde4d8d5ead94c5f0e7e8da7c2d1c01b42eaa561122ae530b4e49146--little-cms2--2.16.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:2f155dd797f8d008616c61677d7b7ebc49b349feb06a1c86239d49e1b9a5118d"
+  checksum: [
+    "sha256=2f155dd797f8d008616c61677d7b7ebc49b349feb06a1c86239d49e1b9a5118d"
+  ]
+}
+extra-source "b3e5b255fcb8dfb59f326705c527bf50c3f41f87246aed91d607818cd8051a68--little-cms2--2.16.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:79268ac2afeaaa7bce8af516f329f808443c3bbad64e705f8a39e4f0ccc112e2"
+  checksum: [
+    "sha256=79268ac2afeaaa7bce8af516f329f808443c3bbad64e705f8a39e4f0ccc112e2"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c4e2b31b0daade62da1f3c2e57d69f74987bac35310011b87220145fa60b3558--little-cms2-2.16.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ae94e35fd614180a5d3a9fe0c4b513e6de51cd3e9d3f3fd1c073acc08314e0aa--little-cms2--2.16.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a154fac3e422690b623e4bda6555caed00133adc500465b214dfae983fb7cb6c--little-cms2--2.16.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "32d96523150087261321a183cf82c08345e6b31655d50c04489cd382a18194ca--little-cms2--2.16.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2e38014a1aa0b66c5601dc62ca7e25fb9a11466abbed95d416a6f66f56ef9551--little-cms2--2.16.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "113789f719866bd7ef17403a98ac6a3d701033cc28d2c9145f6b92460c4527ab--little-cms2--2.16.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c7d1730388cbf713a43c671daa3245d6b5e5f313028125c7190ce658fdf7ba83--little-cms2--2.16.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2a7c227abde4d8d5ead94c5f0e7e8da7c2d1c01b42eaa561122ae530b4e49146--little-cms2--2.16.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b3e5b255fcb8dfb59f326705c527bf50c3f41f87246aed91d607818cd8051a68--little-cms2--2.16.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "little-cms2" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "little-cms2" ]
+]

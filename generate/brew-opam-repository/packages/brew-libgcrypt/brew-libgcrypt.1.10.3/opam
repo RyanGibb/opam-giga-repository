@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Cryptographic library based on the code from GnuPG"
+description: """
+Cryptographic library based on the code from GnuPG"""
+extra-source "64c1eac4b2449779267147f45f7e59bfa6624475b07dd8ae72069633084eb375--libgcrypt--1.10.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:170e800538f420a2e11b58cc8561b592b4cda07d5e6b76bd0edded6ef8d33192"
+  checksum: [
+    "sha256=170e800538f420a2e11b58cc8561b592b4cda07d5e6b76bd0edded6ef8d33192"
+  ]
+}
+extra-source "51a9d782e7010eccf6d60ff8e69c811398480eb544aec8866787a22cda36fccd--libgcrypt-1.10.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/manifests/1.10.3"
+}
+extra-source "1a1836bd15d44631f3b12e299c426a5a6add32622290ade4e0a04e56548d04ef--libgcrypt--1.10.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:b76b7d12d56c2db70d895c3babc24d909a39cd1e5af742ebb746b8485a0a9440"
+  checksum: [
+    "sha256=b76b7d12d56c2db70d895c3babc24d909a39cd1e5af742ebb746b8485a0a9440"
+  ]
+}
+extra-source "4d7cf708400a52d72326a65303f6a8e4075e8997e728f9d9194c2cc530080e9a--libgcrypt--1.10.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:4cb7e27bd6c2531421aff6abe9a232ec6b6b074d70661ae2b2131992bea42845"
+  checksum: [
+    "sha256=4cb7e27bd6c2531421aff6abe9a232ec6b6b074d70661ae2b2131992bea42845"
+  ]
+}
+extra-source "385b2d106204c0903b00aa61109b7799af8689167db17164cd7ed8ace952e4cd--libgcrypt--1.10.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:a632f697a152448256ec30b27cc46722ff734c8fbbb6e5d8976f1375e9f8fdfc"
+  checksum: [
+    "sha256=a632f697a152448256ec30b27cc46722ff734c8fbbb6e5d8976f1375e9f8fdfc"
+  ]
+}
+extra-source "788743b82ba4ede5adde53b995860bf16ae60b032e8bb868a873ad31a1c0d3d4--libgcrypt--1.10.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:7ed0f3acffe52376da207b2257249c899ebc5bf601f9d503e43092400a991e16"
+  checksum: [
+    "sha256=7ed0f3acffe52376da207b2257249c899ebc5bf601f9d503e43092400a991e16"
+  ]
+}
+extra-source "c5f689667899b8e77c1d95bd41d66e4a6430806edecc26f1391c061950e9f31a--libgcrypt--1.10.3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:fca7474127331adde4cb1d4b1ca2d1e796a222941a166c9ed905dd6e85f0f571"
+  checksum: [
+    "sha256=fca7474127331adde4cb1d4b1ca2d1e796a222941a166c9ed905dd6e85f0f571"
+  ]
+}
+extra-source "13d53029f09b6f9ca7965b75de659d20791810afbe555dca4829cb7013cecd7c--libgcrypt--1.10.3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:ea034d81eb942145882668557e02d7d18460628af5c272d065dabd5a762dccf7"
+  checksum: [
+    "sha256=ea034d81eb942145882668557e02d7d18460628af5c272d065dabd5a762dccf7"
+  ]
+}
+extra-source "232628ebb171b7e71ed21c0aa3555d5d78d16b2c72135cf07e360c248dba5fa3--libgcrypt--1.10.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgcrypt/blobs/sha256:a3e3d7d971a9b062d191e91488455eab709c6435c171b9642fd839c5c6303250"
+  checksum: [
+    "sha256=a3e3d7d971a9b062d191e91488455eab709c6435c171b9642fd839c5c6303250"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+  "brew-libgpg-error" {= "1.50"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "51a9d782e7010eccf6d60ff8e69c811398480eb544aec8866787a22cda36fccd--libgcrypt-1.10.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "64c1eac4b2449779267147f45f7e59bfa6624475b07dd8ae72069633084eb375--libgcrypt--1.10.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1a1836bd15d44631f3b12e299c426a5a6add32622290ade4e0a04e56548d04ef--libgcrypt--1.10.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4d7cf708400a52d72326a65303f6a8e4075e8997e728f9d9194c2cc530080e9a--libgcrypt--1.10.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "385b2d106204c0903b00aa61109b7799af8689167db17164cd7ed8ace952e4cd--libgcrypt--1.10.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "788743b82ba4ede5adde53b995860bf16ae60b032e8bb868a873ad31a1c0d3d4--libgcrypt--1.10.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c5f689667899b8e77c1d95bd41d66e4a6430806edecc26f1391c061950e9f31a--libgcrypt--1.10.3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "13d53029f09b6f9ca7965b75de659d20791810afbe555dca4829cb7013cecd7c--libgcrypt--1.10.3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "232628ebb171b7e71ed21c0aa3555d5d78d16b2c72135cf07e360c248dba5fa3--libgcrypt--1.10.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libgcrypt" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libgcrypt" ]
+]

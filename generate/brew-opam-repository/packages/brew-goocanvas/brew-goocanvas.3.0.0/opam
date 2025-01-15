@@ -1,0 +1,165 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Canvas widget for GTK+ using the Cairo 2D library for drawing"
+description: """
+Canvas widget for GTK+ using the Cairo 2D library for drawing"""
+extra-source "e3dc3199413b8932765df17d221fbcf002c82304de30cec09d2c457eafaa0c74--goocanvas--3.0.0_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/blobs/sha256:8bd21a150d98f2abed5d68ac690487f1d2311e509bc54087d8b577a294bd6711"
+  checksum: [
+    "sha256=8bd21a150d98f2abed5d68ac690487f1d2311e509bc54087d8b577a294bd6711"
+  ]
+}
+extra-source "154c4bb3d1f1999b122dce49517a01992d794946ed78f2a23b44f7b4496fa856--goocanvas-3.0.0_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/manifests/3.0.0_1"
+}
+extra-source "8573f0c8a7ef67bca36d37c321b75c91f5d044c712f67b9a51584bfb77239839--goocanvas--3.0.0_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/blobs/sha256:6994404c6b91d235eda6a3a10b5a3a1a6b268d1fbbcdbc81ea3d538b19c71db0"
+  checksum: [
+    "sha256=6994404c6b91d235eda6a3a10b5a3a1a6b268d1fbbcdbc81ea3d538b19c71db0"
+  ]
+}
+extra-source "9e25e0f133246b9e2976298548e80a4a40cd394743bcf7808788389bcc9af67a--goocanvas--3.0.0_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/blobs/sha256:e700e5fb6f0f6454c9cc42975dae876c53f62ec1e6f5db3acadfea35232b72c5"
+  checksum: [
+    "sha256=e700e5fb6f0f6454c9cc42975dae876c53f62ec1e6f5db3acadfea35232b72c5"
+  ]
+}
+extra-source "ce9a56ca351767f2450deaf4f06518c7d29985e1e7f7b17b413e374be7c8154c--goocanvas--3.0.0_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/blobs/sha256:555e4e209cfcb7476df00bba6e4c23e99c3dddf938bdee7389f454cfc3dc7aba"
+  checksum: [
+    "sha256=555e4e209cfcb7476df00bba6e4c23e99c3dddf938bdee7389f454cfc3dc7aba"
+  ]
+}
+extra-source "eac172003d9b77e9a83186e1b10e452cba79978dcf47530f2f93e58e297168be--goocanvas--3.0.0_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/blobs/sha256:337609cd9eec8d0ca6502b73524cb5f86bc07ce6527438266a61ed253de5dcea"
+  checksum: [
+    "sha256=337609cd9eec8d0ca6502b73524cb5f86bc07ce6527438266a61ed253de5dcea"
+  ]
+}
+extra-source "8160ed1331d2be1733e47cd4ace159eca0afb48e15092f78bc70b4670f131093--goocanvas--3.0.0_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/blobs/sha256:142e227274383dbc2c9e492f4cd84b9d12299fbb1a59813ce0d67eba5455e305"
+  checksum: [
+    "sha256=142e227274383dbc2c9e492f4cd84b9d12299fbb1a59813ce0d67eba5455e305"
+  ]
+}
+extra-source "37e54470a9baa0395a008a42eb53d8a8f2ffcd237be2681c578b1a5c7dabffc4--goocanvas--3.0.0_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/blobs/sha256:c5e356f708724c16f6594833df9ecca148f0e24862edbd3e8cb7632780cef5ea"
+  checksum: [
+    "sha256=c5e356f708724c16f6594833df9ecca148f0e24862edbd3e8cb7632780cef5ea"
+  ]
+}
+extra-source "7d6fd2cc96e6c48c7db75936f953bd1910379618441b87c33320168bf9a72c7b--goocanvas--3.0.0_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/goocanvas/blobs/sha256:33355d4dbdef036db01c5948d764d8202047838d08a68c1de6d323e5f18bc6ef"
+  checksum: [
+    "sha256=33355d4dbdef036db01c5948d764d8202047838d08a68c1de6d323e5f18bc6ef"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-dbus" {= "1.14.10"}
+  "brew-python" {= "3.11.10"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-meson" {= "1.5.2"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libxi" {= "1.8.2"}
+  "brew-libxtst" {= "1.2.5"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-at-spi2-core" {= "2.54.0"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-docutils" {= "0.21.2"}
+  "brew-gdk-pixbuf" {= "2.42.12"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-gsettings-desktop-schemas" {= "47.1"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-hicolor-icon-theme" {= "0.18"}
+  "brew-libepoxy" {= "1.5.10"}
+  "brew-pango" {= "1.54.0"}
+  "brew-gtk+3" {= "3.24.43"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "154c4bb3d1f1999b122dce49517a01992d794946ed78f2a23b44f7b4496fa856--goocanvas-3.0.0_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e3dc3199413b8932765df17d221fbcf002c82304de30cec09d2c457eafaa0c74--goocanvas--3.0.0_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8573f0c8a7ef67bca36d37c321b75c91f5d044c712f67b9a51584bfb77239839--goocanvas--3.0.0_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9e25e0f133246b9e2976298548e80a4a40cd394743bcf7808788389bcc9af67a--goocanvas--3.0.0_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ce9a56ca351767f2450deaf4f06518c7d29985e1e7f7b17b413e374be7c8154c--goocanvas--3.0.0_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "eac172003d9b77e9a83186e1b10e452cba79978dcf47530f2f93e58e297168be--goocanvas--3.0.0_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8160ed1331d2be1733e47cd4ace159eca0afb48e15092f78bc70b4670f131093--goocanvas--3.0.0_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "37e54470a9baa0395a008a42eb53d8a8f2ffcd237be2681c578b1a5c7dabffc4--goocanvas--3.0.0_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7d6fd2cc96e6c48c7db75936f953bd1910379618441b87c33320168bf9a72c7b--goocanvas--3.0.0_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "goocanvas" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "goocanvas" ]
+]

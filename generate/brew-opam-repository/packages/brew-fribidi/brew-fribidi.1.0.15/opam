@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Implementation of the Unicode BiDi algorithm"
+description: """
+Implementation of the Unicode BiDi algorithm"""
+extra-source "832a3386b9a00f2025d461e5cdf5598800735e79ee4f8ace3afad7597edb95f0--fribidi--1.0.15.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:bb08a9211122888aae9f879a6078ac1dfb22e2c8d99f49caa55e4d6cda336d88"
+  checksum: [
+    "sha256=bb08a9211122888aae9f879a6078ac1dfb22e2c8d99f49caa55e4d6cda336d88"
+  ]
+}
+extra-source "c743b3178050604a607c1ebc433b1b187bb5250afa047857b62467fb9f62249a--fribidi-1.0.15.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/manifests/1.0.15"
+}
+extra-source "560db4e9f4d520608ffe9517e22e59cee54c85d039090d6213f2d21238e99657--fribidi--1.0.15.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:8fe7124ecc6586a136b380d73edf070c9dc16a122127139d2f15247bb9751143"
+  checksum: [
+    "sha256=8fe7124ecc6586a136b380d73edf070c9dc16a122127139d2f15247bb9751143"
+  ]
+}
+extra-source "b35552cb32afefd7422c8e24220151ece6d9c00a7ed3c6070cd2a4a7a5e6d6e1--fribidi--1.0.15.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:b952c91e6ee4e12897cf70898359a4d60bf232339b3f4977bf37d427327764b2"
+  checksum: [
+    "sha256=b952c91e6ee4e12897cf70898359a4d60bf232339b3f4977bf37d427327764b2"
+  ]
+}
+extra-source "0f96e3c2244558f4e813343020d3ed03d9fdb16df4b741511161f0c29502ffc2--fribidi--1.0.15.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:664ed32cf6eb7682b3ff7e86bd4fb3df5f86eb97ebfecf136c6312479c5b15bd"
+  checksum: [
+    "sha256=664ed32cf6eb7682b3ff7e86bd4fb3df5f86eb97ebfecf136c6312479c5b15bd"
+  ]
+}
+extra-source "7447c5496723c6331cd50756163d2d9b198b8740ba964eb7cf64b2f26db79603--fribidi--1.0.15.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:89815cfe07145e78cb6f9ac9df621f200d28a9aaf00c8da074d5c8202664e3bc"
+  checksum: [
+    "sha256=89815cfe07145e78cb6f9ac9df621f200d28a9aaf00c8da074d5c8202664e3bc"
+  ]
+}
+extra-source "8c10207dbafa73b05db528fca77ac0fc05377b2c02d5b9c778cd22ad4177115a--fribidi--1.0.15.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:7b5e17ea92b11e12f2d73faf9b61b829b42e95f656a57d9c61333177188d5824"
+  checksum: [
+    "sha256=7b5e17ea92b11e12f2d73faf9b61b829b42e95f656a57d9c61333177188d5824"
+  ]
+}
+extra-source "e7c451f3d181a4c042618600f397749fc4d7d227ab31f10e14357ce5d125f89d--fribidi--1.0.15.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:cb3fb68e4c5c4ad8c007209db9ad7276d52252e849f6596d5348acc4eac54574"
+  checksum: [
+    "sha256=cb3fb68e4c5c4ad8c007209db9ad7276d52252e849f6596d5348acc4eac54574"
+  ]
+}
+extra-source "d00174e9b640c65dcee91af6ec6eb946c013eba583d610b65fee09e7a09a0dba--fribidi--1.0.15.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:f03a729ae535ac53791205a6be4e929e981fbd431c04eb2acb21ef132306629b"
+  checksum: [
+    "sha256=f03a729ae535ac53791205a6be4e929e981fbd431c04eb2acb21ef132306629b"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c743b3178050604a607c1ebc433b1b187bb5250afa047857b62467fb9f62249a--fribidi-1.0.15.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "832a3386b9a00f2025d461e5cdf5598800735e79ee4f8ace3afad7597edb95f0--fribidi--1.0.15.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "560db4e9f4d520608ffe9517e22e59cee54c85d039090d6213f2d21238e99657--fribidi--1.0.15.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b35552cb32afefd7422c8e24220151ece6d9c00a7ed3c6070cd2a4a7a5e6d6e1--fribidi--1.0.15.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0f96e3c2244558f4e813343020d3ed03d9fdb16df4b741511161f0c29502ffc2--fribidi--1.0.15.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7447c5496723c6331cd50756163d2d9b198b8740ba964eb7cf64b2f26db79603--fribidi--1.0.15.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8c10207dbafa73b05db528fca77ac0fc05377b2c02d5b9c778cd22ad4177115a--fribidi--1.0.15.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e7c451f3d181a4c042618600f397749fc4d7d227ab31f10e14357ce5d125f89d--fribidi--1.0.15.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d00174e9b640c65dcee91af6ec6eb946c013eba583d610b65fee09e7a09a0dba--fribidi--1.0.15.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "fribidi" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "fribidi" ]
+]

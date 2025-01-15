@@ -1,0 +1,142 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X Window System display server"
+description: """
+X Window System display server"""
+extra-source "dcb49dbd079e9a88079cf27c024516d8e228f60124e750f3f41a284c8b1216f6--xorg-server--21.1.13.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/blobs/sha256:f83ac9c1a871b36b6fd2a571f1aba3eba6ad2770d19c38bb0736b9d3c4c26fcb"
+  checksum: [
+    "sha256=f83ac9c1a871b36b6fd2a571f1aba3eba6ad2770d19c38bb0736b9d3c4c26fcb"
+  ]
+}
+extra-source "c3a8fb041e2024d36aad020e85d947dd43ec2b6c21dd7186ee16efd1ffc23b5f--xorg-server-21.1.13.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/manifests/21.1.13"
+}
+extra-source "11d5707fe350aef00ee1538062363f2a75489a7e7c06a3e8bb538a6f0ea903ff--xorg-server--21.1.13.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/blobs/sha256:efae9ba3ae6c19571025af4fcfd52fa00a7d2c98fa6a990f221aa11f22f7a524"
+  checksum: [
+    "sha256=efae9ba3ae6c19571025af4fcfd52fa00a7d2c98fa6a990f221aa11f22f7a524"
+  ]
+}
+extra-source "bbb06ccc8359a2b51107cc41c794968b4d9a2e29cd99739c0d5fad1d32193ea7--xorg-server--21.1.13.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/blobs/sha256:7addc20a2fb8c6957edb2f16112eaddc23f8c01c7250c53ff3a34bef1645c587"
+  checksum: [
+    "sha256=7addc20a2fb8c6957edb2f16112eaddc23f8c01c7250c53ff3a34bef1645c587"
+  ]
+}
+extra-source "57bf89ac464be396f18c4249600554489297552d582fc77d0b296119d3d553e2--xorg-server--21.1.13.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/blobs/sha256:9e098a4297c4893dd808200df0cbbb29d8914512ae687afe2ce0465d0c8737f0"
+  checksum: [
+    "sha256=9e098a4297c4893dd808200df0cbbb29d8914512ae687afe2ce0465d0c8737f0"
+  ]
+}
+extra-source "eeafac2fe7450f3b636b7131503b1e4e2a635fe3f2c0f7f645391acf6f6cb295--xorg-server--21.1.13.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/blobs/sha256:a740be8e7bbbd889c072b8e21241a5713a90fee2a7fc1b2ce6fe7980689bee83"
+  checksum: [
+    "sha256=a740be8e7bbbd889c072b8e21241a5713a90fee2a7fc1b2ce6fe7980689bee83"
+  ]
+}
+extra-source "ec3b93be202e433b25043f163bccb3d5b6ef738f9be9e9c355ce896238fcfcd5--xorg-server--21.1.13.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/blobs/sha256:7dfbafe73a8c5236d065fd00f293f6c9262e71c2f7a7bbf209c724099d0953a9"
+  checksum: [
+    "sha256=7dfbafe73a8c5236d065fd00f293f6c9262e71c2f7a7bbf209c724099d0953a9"
+  ]
+}
+extra-source "ea87340bcef0a9b050308d906c44c2c4b67de6a6ebc85d31c9344a89635c9b53--xorg-server--21.1.13.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/blobs/sha256:5058f086397aed7f1f60cf9e3d8f2e6fd325ea91b68d30aad7a41e62e67e00c2"
+  checksum: [
+    "sha256=5058f086397aed7f1f60cf9e3d8f2e6fd325ea91b68d30aad7a41e62e67e00c2"
+  ]
+}
+extra-source "78b474a283856bd5f9c2e905469fbffd7f0bbd10d43920c2300ccf32ca0c279e--xorg-server--21.1.13.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorg-server/blobs/sha256:5aa175f5d2e02c026a21b721339f05c1928d6260dd6dac76aa46b501be696099"
+  checksum: [
+    "sha256=5aa175f5d2e02c026a21b721339f05c1928d6260dd6dac76aa46b501be696099"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-font-util" {= "1.4.1"}
+  "brew-libfontenc" {= "1.1.8"}
+  "brew-libxfont2" {= "2.0.7"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-expat" {= "2.6.3"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-libxrandr" {= "1.5.4"}
+  "brew-bison" {= "3.8.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-mesa" {= "24.2.2"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-libice" {= "1.1.1"}
+  "brew-libsm" {= "1.2.4"}
+  "brew-libxt" {= "1.3.0"}
+  "brew-libxmu" {= "1.2.1"}
+  "brew-xauth" {= "1.1.3"}
+  "brew-xcb-util" {= "0.4.1"}
+  "brew-xcb-util-image" {= "0.4.1"}
+  "brew-xcb-util-keysyms" {= "0.4.1"}
+  "brew-xcb-util-renderutil" {= "0.3.10"}
+  "brew-xcb-util-wm" {= "0.4.2"}
+  "brew-libxkbfile" {= "1.1.3"}
+  "brew-xkbcomp" {= "1.4.7"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-xkeyboardconfig" {= "2.42"}
+  "brew-libapplewm" {= "1.4.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c3a8fb041e2024d36aad020e85d947dd43ec2b6c21dd7186ee16efd1ffc23b5f--xorg-server-21.1.13.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "dcb49dbd079e9a88079cf27c024516d8e228f60124e750f3f41a284c8b1216f6--xorg-server--21.1.13.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "11d5707fe350aef00ee1538062363f2a75489a7e7c06a3e8bb538a6f0ea903ff--xorg-server--21.1.13.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bbb06ccc8359a2b51107cc41c794968b4d9a2e29cd99739c0d5fad1d32193ea7--xorg-server--21.1.13.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "57bf89ac464be396f18c4249600554489297552d582fc77d0b296119d3d553e2--xorg-server--21.1.13.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "eeafac2fe7450f3b636b7131503b1e4e2a635fe3f2c0f7f645391acf6f6cb295--xorg-server--21.1.13.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ec3b93be202e433b25043f163bccb3d5b6ef738f9be9e9c355ce896238fcfcd5--xorg-server--21.1.13.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ea87340bcef0a9b050308d906c44c2c4b67de6a6ebc85d31c9344a89635c9b53--xorg-server--21.1.13.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "78b474a283856bd5f9c2e905469fbffd7f0bbd10d43920c2300ccf32ca0c279e--xorg-server--21.1.13.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "xorg-server" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "xorg-server" ]
+]

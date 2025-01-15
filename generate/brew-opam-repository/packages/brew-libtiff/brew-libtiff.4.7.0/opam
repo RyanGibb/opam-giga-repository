@@ -1,0 +1,80 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "TIFF library and utilities"
+description: """
+TIFF library and utilities"""
+extra-source "9405debc261cc903a1686293dbfa681946946da838802cf07866a30f85ab5d62--libtiff--4.7.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:8562d5a43bac7a9e4e615d0ba4bb72b8d1cebdf52a1b92f924f7358b587d139d"
+  checksum: [
+    "sha256=8562d5a43bac7a9e4e615d0ba4bb72b8d1cebdf52a1b92f924f7358b587d139d"
+  ]
+}
+extra-source "fcbf8df89b7dff054d1f02a8da056c581561fd44a924ae82139fd48a14b994b5--libtiff-4.7.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtiff/manifests/4.7.0"
+}
+extra-source "d224e1b419ff594451ccd97ceea239bde4b0bad8174fcc6b2a06e56432d9cac1--libtiff--4.7.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:746c2b4389ee7163e708c081ee1b967c60bb28a7d46fe8883f4798f137e897a0"
+  checksum: [
+    "sha256=746c2b4389ee7163e708c081ee1b967c60bb28a7d46fe8883f4798f137e897a0"
+  ]
+}
+extra-source "444d5ef14225728eb86cef7c17778652b99836274c06ace0e256e87cbd231d2e--libtiff--4.7.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:90bc1ab8734f27d41ceaeadc9e999de4c18766cf4b62e8fed1449dc828ea2395"
+  checksum: [
+    "sha256=90bc1ab8734f27d41ceaeadc9e999de4c18766cf4b62e8fed1449dc828ea2395"
+  ]
+}
+extra-source "bf62f4a05db439b3e2710e8d0fed6d2f1674d14665472528debb26071d004cf4--libtiff--4.7.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:84ecc0430f40983d58c2c8cb2107846b2a20d99d9f089c27464b97260e3091d6"
+  checksum: [
+    "sha256=84ecc0430f40983d58c2c8cb2107846b2a20d99d9f089c27464b97260e3091d6"
+  ]
+}
+extra-source "bbe81e0c435ed807a0f1a50edea607a9c541ce0c60dd2a6c06bbddf1cfc9510b--libtiff--4.7.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:7276c94db8b9a550cb79d37a97fd0d3a64765399640d9d37b791b4aa3b3a2341"
+  checksum: [
+    "sha256=7276c94db8b9a550cb79d37a97fd0d3a64765399640d9d37b791b4aa3b3a2341"
+  ]
+}
+extra-source "8b5d1c6dcc51e8bac86605a44b873515d215e48a1248cff828b34fe4de2db8a1--libtiff--4.7.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:95966f571ddb04072257468f8545c9204a1aee180015a9f6c44db8113e57f060"
+  checksum: [
+    "sha256=95966f571ddb04072257468f8545c9204a1aee180015a9f6c44db8113e57f060"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "fcbf8df89b7dff054d1f02a8da056c581561fd44a924ae82139fd48a14b994b5--libtiff-4.7.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9405debc261cc903a1686293dbfa681946946da838802cf07866a30f85ab5d62--libtiff--4.7.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d224e1b419ff594451ccd97ceea239bde4b0bad8174fcc6b2a06e56432d9cac1--libtiff--4.7.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "444d5ef14225728eb86cef7c17778652b99836274c06ace0e256e87cbd231d2e--libtiff--4.7.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bf62f4a05db439b3e2710e8d0fed6d2f1674d14665472528debb26071d004cf4--libtiff--4.7.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bbe81e0c435ed807a0f1a50edea607a9c541ce0c60dd2a6c06bbddf1cfc9510b--libtiff--4.7.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8b5d1c6dcc51e8bac86605a44b873515d215e48a1248cff828b34fe4de2db8a1--libtiff--4.7.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libtiff" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libtiff" ]
+]

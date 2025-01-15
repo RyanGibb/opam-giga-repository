@@ -1,0 +1,115 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "OpenGL Extension Wrangler Library"
+description: """
+OpenGL Extension Wrangler Library"""
+extra-source "ea5690250e0d6cc166446777dca0687cafbf1b1beab3ac95ba57b9eead79cc70--glew--2.2.0_1.arm64_sequoia.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:4ac8264612c4af3b6864eed07564e14ddf81c25a050aa2bc91953966d12e73e4"
+  checksum: [
+    "sha256=4ac8264612c4af3b6864eed07564e14ddf81c25a050aa2bc91953966d12e73e4"
+  ]
+}
+extra-source "d3faa1969e645740e19fefdadc3a23e1a007cdf40bf4bed6a7c43285a5a28fe7--glew-2.2.0_1-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/manifests/2.2.0_1-2"
+}
+extra-source "d03c79953c07d9e710c55e0f2d76492f125058db6b98ed3f60172e21ba15a76b--glew--2.2.0_1.sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:b09c9df6478e5d9c3337bffd756f78c2cf6bf5e5de0bf7db8066e8683c2bb3a1"
+  checksum: [
+    "sha256=b09c9df6478e5d9c3337bffd756f78c2cf6bf5e5de0bf7db8066e8683c2bb3a1"
+  ]
+}
+extra-source "305c1bb512b27f40fbbe5eb0adc644f20fcf3a2900ab98b2b5a90c48efe14ca1--glew--2.2.0_1.arm64_sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:05aa1fad57b8dd0d68045a54b66ad9d61c494584560a55512a2123d22849e467"
+  checksum: [
+    "sha256=05aa1fad57b8dd0d68045a54b66ad9d61c494584560a55512a2123d22849e467"
+  ]
+}
+extra-source "2bb14090e11e3c2ff0f744841e423c7a74a117cff8b8b089e1df47ab4c398bac--glew--2.2.0_1.ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:a9850b75eb81c4b3d5f81209fe7a9b3cd848444df83c6a391ff9d77096ba6e58"
+  checksum: [
+    "sha256=a9850b75eb81c4b3d5f81209fe7a9b3cd848444df83c6a391ff9d77096ba6e58"
+  ]
+}
+extra-source "2ac33bece7138f47d5c7e3dc85afc14041b6634c84e6b18022f0db786f84edd6--glew--2.2.0_1.arm64_ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:33b1499e0219c3980310dee9e6b115af3ef0324723af7c3a0ff9a68ac7b3e841"
+  checksum: [
+    "sha256=33b1499e0219c3980310dee9e6b115af3ef0324723af7c3a0ff9a68ac7b3e841"
+  ]
+}
+extra-source "2fcc70e11add76f5e1971502e9f2bf5d5bd46ede69086deffb954bc5745a78fc--glew--2.2.0_1.monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:9d8d8c93eec4287a9231cd0378b45ee3b9735afca387fc1f5def7e2c68533097"
+  checksum: [
+    "sha256=9d8d8c93eec4287a9231cd0378b45ee3b9735afca387fc1f5def7e2c68533097"
+  ]
+}
+extra-source "7e1963a3560611f40a35dfede80b393a5eec11ce4223fc5451bdb629e69cb2fd--glew--2.2.0_1.arm64_monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:a116faecf407ee2a00cb775a3b668fe0f5753ceecd73678d20b3656e6c56d163"
+  checksum: [
+    "sha256=a116faecf407ee2a00cb775a3b668fe0f5753ceecd73678d20b3656e6c56d163"
+  ]
+}
+extra-source "9b616e618f1538c46652f1e283a4930bf9a48a3782681a6d0906c4fec3de3917--glew--2.2.0_1.big_sur.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:728e40242af0b9a53ae837de3d2658f205e121a04285de29f3964c2dd7512a9d"
+  checksum: [
+    "sha256=728e40242af0b9a53ae837de3d2658f205e121a04285de29f3964c2dd7512a9d"
+  ]
+}
+extra-source "7404afb50bfe32f44315280ba3164b9d10075fa44fc466d74a8f04266883740b--glew--2.2.0_1.arm64_big_sur.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:088dedfcd45fe37b0d027b52bb1c730e01aeacda4d7b00ce14f67a19d1961bce"
+  checksum: [
+    "sha256=088dedfcd45fe37b0d027b52bb1c730e01aeacda4d7b00ce14f67a19d1961bce"
+  ]
+}
+extra-source "b7741b6ecd97178947583cd8b233c092056a35e874ed3d242b3fb3ad9c63678b--glew--2.2.0_1.catalina.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:ee50985ccbbcd0ec1980960b7fb31fce80e99450f14ae02a751a731056182d34"
+  checksum: [
+    "sha256=ee50985ccbbcd0ec1980960b7fb31fce80e99450f14ae02a751a731056182d34"
+  ]
+}
+extra-source "326887ae2986a39e18b4b1a41513340d0aa8b3c383627ecbca82266365e485df--glew--2.2.0_1.x86_64_linux.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glew/blobs/sha256:7bc36f86706af951931a2c4c905b8b680cf67606406d238fbfd8923f6109e626"
+  checksum: [
+    "sha256=7bc36f86706af951931a2c4c905b8b680cf67606406d238fbfd8923f6109e626"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d3faa1969e645740e19fefdadc3a23e1a007cdf40bf4bed6a7c43285a5a28fe7--glew-2.2.0_1-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ea5690250e0d6cc166446777dca0687cafbf1b1beab3ac95ba57b9eead79cc70--glew--2.2.0_1.arm64_sequoia.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d03c79953c07d9e710c55e0f2d76492f125058db6b98ed3f60172e21ba15a76b--glew--2.2.0_1.sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "305c1bb512b27f40fbbe5eb0adc644f20fcf3a2900ab98b2b5a90c48efe14ca1--glew--2.2.0_1.arm64_sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2bb14090e11e3c2ff0f744841e423c7a74a117cff8b8b089e1df47ab4c398bac--glew--2.2.0_1.ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2ac33bece7138f47d5c7e3dc85afc14041b6634c84e6b18022f0db786f84edd6--glew--2.2.0_1.arm64_ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2fcc70e11add76f5e1971502e9f2bf5d5bd46ede69086deffb954bc5745a78fc--glew--2.2.0_1.monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e1963a3560611f40a35dfede80b393a5eec11ce4223fc5451bdb629e69cb2fd--glew--2.2.0_1.arm64_monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9b616e618f1538c46652f1e283a4930bf9a48a3782681a6d0906c4fec3de3917--glew--2.2.0_1.big_sur.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7404afb50bfe32f44315280ba3164b9d10075fa44fc466d74a8f04266883740b--glew--2.2.0_1.arm64_big_sur.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b7741b6ecd97178947583cd8b233c092056a35e874ed3d242b3fb3ad9c63678b--glew--2.2.0_1.catalina.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "326887ae2986a39e18b4b1a41513340d0aa8b3c383627ecbca82266365e485df--glew--2.2.0_1.x86_64_linux.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "glew" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "glew" ]
+]

@@ -1,0 +1,50 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C++ template library for linear algebra"
+description: """
+C++ template library for linear algebra"""
+extra-source "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/eigen/blobs/sha256:b7d3fc4023e664e69392994530a88aa0b6f2a81067da6d64727cf983db2c1bd1"
+  checksum: [
+    "sha256=b7d3fc4023e664e69392994530a88aa0b6f2a81067da6d64727cf983db2c1bd1"
+  ]
+}
+extra-source "cf791aa7be6a72b0f65fc9b78ea4727ad6848b633fa7c5dcbafa8afcfb5c3e00--eigen-3.4.0_1-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/eigen/manifests/3.4.0_1-2"
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "cf791aa7be6a72b0f65fc9b78ea4727ad6848b633fa7c5dcbafa8afcfb5c3e00--eigen-3.4.0_1-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "278449864634871e033aca1d4e0fbd115941884737d994581a031e153f021b9f--eigen--3.4.0_1.all.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "eigen" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "eigen" ]
+]

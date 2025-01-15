@@ -1,0 +1,130 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Modular BSD reimplementation of NASM"
+description: """
+Modular BSD reimplementation of NASM"""
+extra-source "bc4618fb92fc0581778a2b35e43e798ad24bc6e04acbfd704df0f4811538d301--yasm--1.3.0_2.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:45b7744e4f66670c270ac4aa64836625a1806db9ac97920476620d340cbbdd96"
+  checksum: [
+    "sha256=45b7744e4f66670c270ac4aa64836625a1806db9ac97920476620d340cbbdd96"
+  ]
+}
+extra-source "9b737a173ca28f62fe02ec418f8e1048b429aee489e88930f54705c225e6a746--yasm-1.3.0_2-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/manifests/1.3.0_2-1"
+}
+extra-source "fc5315b5abfe2581841081a2acb9e20f5df30d9701f500a988ba334ea896dae8--yasm--1.3.0_2.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:8a459b8a128c82d79a253c164b213a4483c81ded729a4958be000da17b64b893"
+  checksum: [
+    "sha256=8a459b8a128c82d79a253c164b213a4483c81ded729a4958be000da17b64b893"
+  ]
+}
+extra-source "ac685b987a83637b123fce6ba66fe64d49bd8e126f24ab1e329328929d8654ce--yasm--1.3.0_2.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:8201d94c49a9f010d7b7fa185eb2658484ed9d063b0334baff12659bebb22246"
+  checksum: [
+    "sha256=8201d94c49a9f010d7b7fa185eb2658484ed9d063b0334baff12659bebb22246"
+  ]
+}
+extra-source "2a8820f3e7622d33d6913f65ddea903e6e57bdd7291e91045cab0b21368aaf0c--yasm--1.3.0_2.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:2cfb5f1ab641c6537a73570eef6ec14bf9f5bbd31d8c1dcc3f8a7233b880df09"
+  checksum: [
+    "sha256=2cfb5f1ab641c6537a73570eef6ec14bf9f5bbd31d8c1dcc3f8a7233b880df09"
+  ]
+}
+extra-source "620ec82d83c61b69ce4172898ec87c917b16af56ff92cabb4da2adf991a68aba--yasm--1.3.0_2.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:b59763588b57923ad20c8090a7382aa361efc2503ad788dae648c95f24f410a4"
+  checksum: [
+    "sha256=b59763588b57923ad20c8090a7382aa361efc2503ad788dae648c95f24f410a4"
+  ]
+}
+extra-source "0c28b638f9d1ba675901b5c31a773b78b70f1d00d2086b29d60653836c3f6b41--yasm--1.3.0_2.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:8348a13c38c499aa114f71e4d46f311105b68dbafbf0e92f6c19d5b492eed569"
+  checksum: [
+    "sha256=8348a13c38c499aa114f71e4d46f311105b68dbafbf0e92f6c19d5b492eed569"
+  ]
+}
+extra-source "947119fd51822d199900250b8c13add79583a3d2323ecd4f2d3a3c6f752c0560--yasm--1.3.0_2.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:6d1a844ce9a26db6d2a5c72dbced52b7fbfc8491bfde95a2f026eaa1e46433be"
+  checksum: [
+    "sha256=6d1a844ce9a26db6d2a5c72dbced52b7fbfc8491bfde95a2f026eaa1e46433be"
+  ]
+}
+extra-source "4aa9027e0d91bb1bad8d22a31844440859b6df5a46a154d6b526714569bccdb3--yasm--1.3.0_2.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:ca95cb3c02508796ff4e60d54146b03016b93e80837916359912ebf737a37562"
+  checksum: [
+    "sha256=ca95cb3c02508796ff4e60d54146b03016b93e80837916359912ebf737a37562"
+  ]
+}
+extra-source "f3a34896f13b883221abf8bfbf182eeb494926d06c7ad2ea37996b13972ae491--yasm--1.3.0_2.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:398b7f3d8a22e43b5af2335fe2d39448a3e9cc7a769ef1faf60c25fda0873d50"
+  checksum: [
+    "sha256=398b7f3d8a22e43b5af2335fe2d39448a3e9cc7a769ef1faf60c25fda0873d50"
+  ]
+}
+extra-source "07745b1b1c852202d0cf4d5354674c72173b6965c9d0f550bb0432bc669e39e1--yasm--1.3.0_2.catalina.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:9aa61930f25fe305dc5364e72f539b0a225702b5f1dc222a9dde1216e901f7ab"
+  checksum: [
+    "sha256=9aa61930f25fe305dc5364e72f539b0a225702b5f1dc222a9dde1216e901f7ab"
+  ]
+}
+extra-source "ec59c83049e7a1e05ca70fb8802dac6930e62b072e730943c28c82d7772fb300--yasm--1.3.0_2.mojave.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:0dc797b72ee3bad9c6a52276c871ac745207b5626722e805fa642d7a872847fc"
+  checksum: [
+    "sha256=0dc797b72ee3bad9c6a52276c871ac745207b5626722e805fa642d7a872847fc"
+  ]
+}
+extra-source "49dbbc671d92f4cc5d22c0269c59796fbf098c7e1e7362babbfb58c81d73400d--yasm--1.3.0_2.high_sierra.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:7f31deeff91c5929f2cd52eca6b636669f9c8966f6d4777e89fa4b04e541ad85"
+  checksum: [
+    "sha256=7f31deeff91c5929f2cd52eca6b636669f9c8966f6d4777e89fa4b04e541ad85"
+  ]
+}
+extra-source "e63b962f2c4cb974b9a32c3fe044a52e7971bd07718f28896b5bc10cdc772252--yasm--1.3.0_2.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yasm/blobs/sha256:d6d46adb6213bba936b7d62ef9564f752cc5b4268e19e91f0b67e136408ab30e"
+  checksum: [
+    "sha256=d6d46adb6213bba936b7d62ef9564f752cc5b4268e19e91f0b67e136408ab30e"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "9b737a173ca28f62fe02ec418f8e1048b429aee489e88930f54705c225e6a746--yasm-1.3.0_2-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "bc4618fb92fc0581778a2b35e43e798ad24bc6e04acbfd704df0f4811538d301--yasm--1.3.0_2.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fc5315b5abfe2581841081a2acb9e20f5df30d9701f500a988ba334ea896dae8--yasm--1.3.0_2.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ac685b987a83637b123fce6ba66fe64d49bd8e126f24ab1e329328929d8654ce--yasm--1.3.0_2.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2a8820f3e7622d33d6913f65ddea903e6e57bdd7291e91045cab0b21368aaf0c--yasm--1.3.0_2.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "620ec82d83c61b69ce4172898ec87c917b16af56ff92cabb4da2adf991a68aba--yasm--1.3.0_2.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0c28b638f9d1ba675901b5c31a773b78b70f1d00d2086b29d60653836c3f6b41--yasm--1.3.0_2.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "947119fd51822d199900250b8c13add79583a3d2323ecd4f2d3a3c6f752c0560--yasm--1.3.0_2.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4aa9027e0d91bb1bad8d22a31844440859b6df5a46a154d6b526714569bccdb3--yasm--1.3.0_2.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f3a34896f13b883221abf8bfbf182eeb494926d06c7ad2ea37996b13972ae491--yasm--1.3.0_2.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "07745b1b1c852202d0cf4d5354674c72173b6965c9d0f550bb0432bc669e39e1--yasm--1.3.0_2.catalina.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ec59c83049e7a1e05ca70fb8802dac6930e62b072e730943c28c82d7772fb300--yasm--1.3.0_2.mojave.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "49dbbc671d92f4cc5d22c0269c59796fbf098c7e1e7362babbfb58c81d73400d--yasm--1.3.0_2.high_sierra.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e63b962f2c4cb974b9a32c3fe044a52e7971bd07718f28896b5bc10cdc772252--yasm--1.3.0_2.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "yasm" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "yasm" ]
+]

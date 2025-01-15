@@ -1,0 +1,102 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Make XML documents translatable through PO files"
+description: """
+Make XML documents translatable through PO files"""
+extra-source "d3f0cd3f96d8057a3b5fd38f69c2e03f82a4783b2a92f7ba04a4013f56271138--itstool--2.0.7_1.arm64_sequoia.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/blobs/sha256:90e1e9d99c5a31ea0ba1c10156fcaf66a36f03e63292644a2835f85c0f44fad5"
+  checksum: [
+    "sha256=90e1e9d99c5a31ea0ba1c10156fcaf66a36f03e63292644a2835f85c0f44fad5"
+  ]
+}
+extra-source "ac5d72e727f878e2768290e77b34d6eb1036c573d32cbfbb3d2e332734a28cf3--itstool-2.0.7_1-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/manifests/2.0.7_1-2"
+}
+extra-source "67d13eda963f4c9249eecb80cd509409effc106f00f1c946603cd79a68b19eaa--itstool--2.0.7_1.sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/blobs/sha256:74c85e558123ab5ff7b98d87b40909c1455785ad91a8b25d56090be6a8e36ddc"
+  checksum: [
+    "sha256=74c85e558123ab5ff7b98d87b40909c1455785ad91a8b25d56090be6a8e36ddc"
+  ]
+}
+extra-source "f1c757b34409c209e61b02e07d5ad67abf53b3edcf6e50ab686708885fee80f7--itstool--2.0.7_1.arm64_sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/blobs/sha256:ca64b6795a975cff894c9f7a7d83f350155b69b361fb8992468faddde193ad5d"
+  checksum: [
+    "sha256=ca64b6795a975cff894c9f7a7d83f350155b69b361fb8992468faddde193ad5d"
+  ]
+}
+extra-source "67d13eda963f4c9249eecb80cd509409effc106f00f1c946603cd79a68b19eaa--itstool--2.0.7_1.ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/blobs/sha256:74c85e558123ab5ff7b98d87b40909c1455785ad91a8b25d56090be6a8e36ddc"
+  checksum: [
+    "sha256=74c85e558123ab5ff7b98d87b40909c1455785ad91a8b25d56090be6a8e36ddc"
+  ]
+}
+extra-source "f1c757b34409c209e61b02e07d5ad67abf53b3edcf6e50ab686708885fee80f7--itstool--2.0.7_1.arm64_ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/blobs/sha256:ca64b6795a975cff894c9f7a7d83f350155b69b361fb8992468faddde193ad5d"
+  checksum: [
+    "sha256=ca64b6795a975cff894c9f7a7d83f350155b69b361fb8992468faddde193ad5d"
+  ]
+}
+extra-source "67d13eda963f4c9249eecb80cd509409effc106f00f1c946603cd79a68b19eaa--itstool--2.0.7_1.monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/blobs/sha256:74c85e558123ab5ff7b98d87b40909c1455785ad91a8b25d56090be6a8e36ddc"
+  checksum: [
+    "sha256=74c85e558123ab5ff7b98d87b40909c1455785ad91a8b25d56090be6a8e36ddc"
+  ]
+}
+extra-source "f1c757b34409c209e61b02e07d5ad67abf53b3edcf6e50ab686708885fee80f7--itstool--2.0.7_1.arm64_monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/blobs/sha256:ca64b6795a975cff894c9f7a7d83f350155b69b361fb8992468faddde193ad5d"
+  checksum: [
+    "sha256=ca64b6795a975cff894c9f7a7d83f350155b69b361fb8992468faddde193ad5d"
+  ]
+}
+extra-source "f1c757b34409c209e61b02e07d5ad67abf53b3edcf6e50ab686708885fee80f7--itstool--2.0.7_1.x86_64_linux.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/itstool/blobs/sha256:ca64b6795a975cff894c9f7a7d83f350155b69b361fb8992468faddde193ad5d"
+  checksum: [
+    "sha256=ca64b6795a975cff894c9f7a7d83f350155b69b361fb8992468faddde193ad5d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-icu4c" {= "74.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-python" {= "3.11.10"}
+  "brew-libxml2" {= "2.13.4"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ac5d72e727f878e2768290e77b34d6eb1036c573d32cbfbb3d2e332734a28cf3--itstool-2.0.7_1-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d3f0cd3f96d8057a3b5fd38f69c2e03f82a4783b2a92f7ba04a4013f56271138--itstool--2.0.7_1.arm64_sequoia.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "67d13eda963f4c9249eecb80cd509409effc106f00f1c946603cd79a68b19eaa--itstool--2.0.7_1.sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f1c757b34409c209e61b02e07d5ad67abf53b3edcf6e50ab686708885fee80f7--itstool--2.0.7_1.arm64_sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "67d13eda963f4c9249eecb80cd509409effc106f00f1c946603cd79a68b19eaa--itstool--2.0.7_1.ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f1c757b34409c209e61b02e07d5ad67abf53b3edcf6e50ab686708885fee80f7--itstool--2.0.7_1.arm64_ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "67d13eda963f4c9249eecb80cd509409effc106f00f1c946603cd79a68b19eaa--itstool--2.0.7_1.monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f1c757b34409c209e61b02e07d5ad67abf53b3edcf6e50ab686708885fee80f7--itstool--2.0.7_1.arm64_monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f1c757b34409c209e61b02e07d5ad67abf53b3edcf6e50ab686708885fee80f7--itstool--2.0.7_1.x86_64_linux.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "itstool" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "itstool" ]
+]

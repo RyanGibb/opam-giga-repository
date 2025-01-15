@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Garbage collector for C and C++"
+description: """
+Garbage collector for C and C++"""
+extra-source "1e02dfc16652c8cc3e1f9e6bfa889eb3430fdee25d2e024881712baa6ffed900--bdw-gc--8.2.8.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:58c2b5cf58c6ea30fc56a34aacfe36f774bed4cee1dca9808ef58d154a5ec965"
+  checksum: [
+    "sha256=58c2b5cf58c6ea30fc56a34aacfe36f774bed4cee1dca9808ef58d154a5ec965"
+  ]
+}
+extra-source "89bb7c10cfa3482949e74e3e7687110dada74da8f2f584bd385aa97c1cb30c96--bdw-gc-8.2.8.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/manifests/8.2.8"
+}
+extra-source "7232985eea8f3dcfd4874e8aa83c060ec2cc745cfa4186002638b7b35987b2eb--bdw-gc--8.2.8.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:54cd5df410fb01fc0f7a9b212b5ef40e8160e360e597b5d20e6e489df306ce37"
+  checksum: [
+    "sha256=54cd5df410fb01fc0f7a9b212b5ef40e8160e360e597b5d20e6e489df306ce37"
+  ]
+}
+extra-source "912457014ac64534de9025ea621b4fc3f582cb87482148a334bb415355b17a00--bdw-gc--8.2.8.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:26862c04a22c24bbbe25d7fd1a2fa4d499d5a7216101625115be645123ea0445"
+  checksum: [
+    "sha256=26862c04a22c24bbbe25d7fd1a2fa4d499d5a7216101625115be645123ea0445"
+  ]
+}
+extra-source "43747bc2f3abe5d07892d7e1b4c75ef0702804e589ee1e14c623898bad47551d--bdw-gc--8.2.8.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:71c1beb334094059de83c81be4f1239e4ece22a1f7baf5c98d9682a2243b13bb"
+  checksum: [
+    "sha256=71c1beb334094059de83c81be4f1239e4ece22a1f7baf5c98d9682a2243b13bb"
+  ]
+}
+extra-source "37d20a444b16c4a25a1582b4dd25eb4165ac5d320e5ba669f53d024969408d8b--bdw-gc--8.2.8.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:55890248e3f2624e882660e38695e9090a8be1bff6c9a829ef35b0a30a890fee"
+  checksum: [
+    "sha256=55890248e3f2624e882660e38695e9090a8be1bff6c9a829ef35b0a30a890fee"
+  ]
+}
+extra-source "7edf40442c2fb0394992898900396e69ce7495795c5ca8351bd912ce2ef29754--bdw-gc--8.2.8.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:33e2046794356d765327d03b638c8449e38a69055f801542ee4abd2ea6329f49"
+  checksum: [
+    "sha256=33e2046794356d765327d03b638c8449e38a69055f801542ee4abd2ea6329f49"
+  ]
+}
+extra-source "9da205b4e0a5308ea13bba27606cb8577415b7aeafa2899f45a87f68e9bdc05f--bdw-gc--8.2.8.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:013ffdfc107f8ec5d5382af87412bdfd4cb3503e866555fbe3252c3d7dcdcc10"
+  checksum: [
+    "sha256=013ffdfc107f8ec5d5382af87412bdfd4cb3503e866555fbe3252c3d7dcdcc10"
+  ]
+}
+extra-source "2907a2f12384ffe1c173a64df04ad762fe0b7f90c6e1e1410be1443bdb294953--bdw-gc--8.2.8.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:f666fdf55ce3b41704f5869120ddfd3e973051d1fc0dc32a80733f20ba15ea0c"
+  checksum: [
+    "sha256=f666fdf55ce3b41704f5869120ddfd3e973051d1fc0dc32a80733f20ba15ea0c"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "89bb7c10cfa3482949e74e3e7687110dada74da8f2f584bd385aa97c1cb30c96--bdw-gc-8.2.8.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "1e02dfc16652c8cc3e1f9e6bfa889eb3430fdee25d2e024881712baa6ffed900--bdw-gc--8.2.8.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7232985eea8f3dcfd4874e8aa83c060ec2cc745cfa4186002638b7b35987b2eb--bdw-gc--8.2.8.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "912457014ac64534de9025ea621b4fc3f582cb87482148a334bb415355b17a00--bdw-gc--8.2.8.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "43747bc2f3abe5d07892d7e1b4c75ef0702804e589ee1e14c623898bad47551d--bdw-gc--8.2.8.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "37d20a444b16c4a25a1582b4dd25eb4165ac5d320e5ba669f53d024969408d8b--bdw-gc--8.2.8.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7edf40442c2fb0394992898900396e69ce7495795c5ca8351bd912ce2ef29754--bdw-gc--8.2.8.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9da205b4e0a5308ea13bba27606cb8577415b7aeafa2899f45a87f68e9bdc05f--bdw-gc--8.2.8.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2907a2f12384ffe1c173a64df04ad762fe0b7f90c6e1e1410be1443bdb294953--bdw-gc--8.2.8.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "bdw-gc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "bdw-gc" ]
+]

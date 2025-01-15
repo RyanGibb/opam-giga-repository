@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Portable abstraction of the hierarchical topology of modern architectures"
+description: """
+Portable abstraction of the hierarchical topology of modern architectures"""
+extra-source "52efe38744f617872f5e72b404ba14c5e396be0d6928092672a28ea7bd20b1df--hwloc--2.11.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:e614b30db449d7da99dd81523ef55b20939dcacee931ca2364179a44800cc7a1"
+  checksum: [
+    "sha256=e614b30db449d7da99dd81523ef55b20939dcacee931ca2364179a44800cc7a1"
+  ]
+}
+extra-source "17ab51bed192843a69aa1c78de370e585c1b9a1e5b854baf85e8b664eb0d7331--hwloc-2.11.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/manifests/2.11.1"
+}
+extra-source "cb8c5deaaa02aac9859f51eedda1565d0516315dc84a9a07492205653480a713--hwloc--2.11.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:f5d085652f70ed70430331b371f691de80822c892077e6421cf0423051f60eba"
+  checksum: [
+    "sha256=f5d085652f70ed70430331b371f691de80822c892077e6421cf0423051f60eba"
+  ]
+}
+extra-source "f134933d3067898e362090594367bd737c357d5092051724d2d948e9d54dd5f5--hwloc--2.11.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:dd30eda9f9e36bce8c9499e455d4b59661a27fbc677c83b9c9f9cf47517f2667"
+  checksum: [
+    "sha256=dd30eda9f9e36bce8c9499e455d4b59661a27fbc677c83b9c9f9cf47517f2667"
+  ]
+}
+extra-source "7b51fd3c7fe6fd9495b100d7974d4b05c14d66023bd4fe9461c0294ba493f683--hwloc--2.11.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:c1919e3cd770b89517da6834913b145298a08ef316b4feb326d2e53459b62bf3"
+  checksum: [
+    "sha256=c1919e3cd770b89517da6834913b145298a08ef316b4feb326d2e53459b62bf3"
+  ]
+}
+extra-source "3687725cabe18fe27d11330782ef0c89bea0eeded6d01312b38d2f153c3daf68--hwloc--2.11.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:4a03a0c478558d2b1a7395e4c18d6e168300ee737f8787394eda2aaec65a2cbc"
+  checksum: [
+    "sha256=4a03a0c478558d2b1a7395e4c18d6e168300ee737f8787394eda2aaec65a2cbc"
+  ]
+}
+extra-source "c8efb0254931a1eeaaea70bdf055cb4cc42fb79c5d99f91fc17f76f2f8dc1148--hwloc--2.11.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:fab9e144be850b7d45915b9a1ab172db0bb1c6360053fb156b9d77624b71e8fe"
+  checksum: [
+    "sha256=fab9e144be850b7d45915b9a1ab172db0bb1c6360053fb156b9d77624b71e8fe"
+  ]
+}
+extra-source "f504cb091e2698c1663ab74cd65309db96eea372696429777b2ad71311b3c53c--hwloc--2.11.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:6648c1390e447f0df8e90bcfeecde4f4aec3b51cc94c094b6fca054f633c1cbb"
+  checksum: [
+    "sha256=6648c1390e447f0df8e90bcfeecde4f4aec3b51cc94c094b6fca054f633c1cbb"
+  ]
+}
+extra-source "e3bd6c7112dbdbf12cd64575ff30854f7de00a8c9db5d9b5e474830314d2afe9--hwloc--2.11.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:b4584b0e82512d2cf63bf9f473d479b144b4a586249efedab3e7fd9fc3dccba3"
+  checksum: [
+    "sha256=b4584b0e82512d2cf63bf9f473d479b144b4a586249efedab3e7fd9fc3dccba3"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "17ab51bed192843a69aa1c78de370e585c1b9a1e5b854baf85e8b664eb0d7331--hwloc-2.11.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "52efe38744f617872f5e72b404ba14c5e396be0d6928092672a28ea7bd20b1df--hwloc--2.11.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cb8c5deaaa02aac9859f51eedda1565d0516315dc84a9a07492205653480a713--hwloc--2.11.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f134933d3067898e362090594367bd737c357d5092051724d2d948e9d54dd5f5--hwloc--2.11.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b51fd3c7fe6fd9495b100d7974d4b05c14d66023bd4fe9461c0294ba493f683--hwloc--2.11.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3687725cabe18fe27d11330782ef0c89bea0eeded6d01312b38d2f153c3daf68--hwloc--2.11.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c8efb0254931a1eeaaea70bdf055cb4cc42fb79c5d99f91fc17f76f2f8dc1148--hwloc--2.11.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f504cb091e2698c1663ab74cd65309db96eea372696429777b2ad71311b3c53c--hwloc--2.11.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e3bd6c7112dbdbf12cd64575ff30854f7de00a8c9db5d9b5e474830314d2afe9--hwloc--2.11.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "hwloc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "hwloc" ]
+]

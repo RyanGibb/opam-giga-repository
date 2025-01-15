@@ -1,0 +1,147 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Audio encoder which generates ATSC A/52 compressed audio streams"
+description: """
+Audio encoder which generates ATSC A/52 compressed audio streams"""
+extra-source "d7d5e3e4207d97f5e4127f61f22f522cac8be14568404ebb949c75039eded200--aften--0.0.8.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:c158dd1b9124db377e0119b6d4dc34ce9ecb14e458379ab023165ce6b83715fb"
+  checksum: [
+    "sha256=c158dd1b9124db377e0119b6d4dc34ce9ecb14e458379ab023165ce6b83715fb"
+  ]
+}
+extra-source "9f6040ffa4fae573892453fa9501c088b687e3bcc0c6fcc5219e38e79cb48b67--aften-0.0.8.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/manifests/0.0.8"
+}
+extra-source "8ea74128f469db3d09a8ec9815a87695dda3ab714cc3301d3f7f177b10d0458b--aften--0.0.8.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:05e65496042ea60735223e9cfa06b97ee8ae136531aafe8d7550f40051ecc33e"
+  checksum: [
+    "sha256=05e65496042ea60735223e9cfa06b97ee8ae136531aafe8d7550f40051ecc33e"
+  ]
+}
+extra-source "e6d86137af1aa1418e21599e16e54aef660cf33a857409ce8a5c10b2563bbcbf--aften--0.0.8.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:918b76d55d51e34cd63b83041517d0a06dd9b10f24a2d35ec8b68fc97a04f589"
+  checksum: [
+    "sha256=918b76d55d51e34cd63b83041517d0a06dd9b10f24a2d35ec8b68fc97a04f589"
+  ]
+}
+extra-source "3df23036624c0301595c4b9cfc3b5b8fbcadfba764471333fe662ca91107de9d--aften--0.0.8.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:0ac6b5c31292bc1fea37415cf9f76010633c6c4a2bf3cc8770c4f9cd3b79cbbb"
+  checksum: [
+    "sha256=0ac6b5c31292bc1fea37415cf9f76010633c6c4a2bf3cc8770c4f9cd3b79cbbb"
+  ]
+}
+extra-source "0cfac71c2d40fe904b8718741dbbfcc9d215ba529b11dec5b91789a615729eac--aften--0.0.8.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:b210014aa83271ec35261c51fc2d32914b33090deb3fda59993e30aba4b324de"
+  checksum: [
+    "sha256=b210014aa83271ec35261c51fc2d32914b33090deb3fda59993e30aba4b324de"
+  ]
+}
+extra-source "fcb8110a2eac9ddd6a0f580b153af75cf2373b371698d30a7a2f3ff8d7c00f21--aften--0.0.8.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:f4632d08d823d8bda73e319dd6bf3f27651c9df4a61a2e0bfec30a116ed8745f"
+  checksum: [
+    "sha256=f4632d08d823d8bda73e319dd6bf3f27651c9df4a61a2e0bfec30a116ed8745f"
+  ]
+}
+extra-source "76651b6164a5efc67588620c6d74b9b98791e94e3452f4fdb0edb21fb2cb9ca2--aften--0.0.8.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:a1a669de1fd73431993f57c52603cb68d5794590bb175084de3ffac408d50c13"
+  checksum: [
+    "sha256=a1a669de1fd73431993f57c52603cb68d5794590bb175084de3ffac408d50c13"
+  ]
+}
+extra-source "c2faa67eb1eb4464da7d2c688227e883339f13a35041ac25cad57a0f7d3f3327--aften--0.0.8.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:86e6506319cdf2eb030d2084663acbabd75dc3ce5f3a6e60fbd9af27c60bad1b"
+  checksum: [
+    "sha256=86e6506319cdf2eb030d2084663acbabd75dc3ce5f3a6e60fbd9af27c60bad1b"
+  ]
+}
+extra-source "91acc39d1eecda506ade3fb0abb2dc4044dd3f4c2f6537386103a367b2ee95a9--aften--0.0.8.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:6f4cfa96fbcc6616017d696852e0738796471c24b2bcbd4ee38ce9cd2c01575c"
+  checksum: [
+    "sha256=6f4cfa96fbcc6616017d696852e0738796471c24b2bcbd4ee38ce9cd2c01575c"
+  ]
+}
+extra-source "7fbcc692084dbf629c3e51cc3b7c836e6a88d0bd3b6f14969c26370aa17f9d7a--aften--0.0.8.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:c1f3497bae95d7cd92f28b1a22d2dcfc06c0c7342c6c2993b6f564110f6e8f99"
+  checksum: [
+    "sha256=c1f3497bae95d7cd92f28b1a22d2dcfc06c0c7342c6c2993b6f564110f6e8f99"
+  ]
+}
+extra-source "f0b86e5ec39112e730364c7453672a46e14be0c4f6ebe50889f002d2075bd9b6--aften--0.0.8.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:07e80303cd84483b9e86b880feb3885814644b115f161ad10582c6ce99cf192d"
+  checksum: [
+    "sha256=07e80303cd84483b9e86b880feb3885814644b115f161ad10582c6ce99cf192d"
+  ]
+}
+extra-source "ec4ea8ba65d8dc9e22cc0e8856cac6ebefe91b6a97974c10c0436449719912f7--aften--0.0.8.high_sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:b1b8facf243da3872f4ddf2fbefb4879228cb5b390f883794b8b115d06e4c6a6"
+  checksum: [
+    "sha256=b1b8facf243da3872f4ddf2fbefb4879228cb5b390f883794b8b115d06e4c6a6"
+  ]
+}
+extra-source "a8e7dfa0e424d822b15a549a96ce444efcf19c2d1b1ea73a65ec29c234f94ed6--aften--0.0.8.sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:535ef47b08163c8d1d7a66ffda7d3f280c0569a74d9feedbcfc93cd3c55194ca"
+  checksum: [
+    "sha256=535ef47b08163c8d1d7a66ffda7d3f280c0569a74d9feedbcfc93cd3c55194ca"
+  ]
+}
+extra-source "c544998e417a2e2693b646db479468362fa1463df3e1e1fb1d0a96c9e4ab56ce--aften--0.0.8.el_capitan.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:68b4983cc843e2d57854a263038a965a2dd6c473c98111f482ec1c69d09ace83"
+  checksum: [
+    "sha256=68b4983cc843e2d57854a263038a965a2dd6c473c98111f482ec1c69d09ace83"
+  ]
+}
+extra-source "0b371eaa98e66e9c10cf49a43413302135009e034c8ab3324596072e5aa2501f--aften--0.0.8.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:f9e42d32fbd1c37b67e5beb729fba09eed1378d0f44c89b0b313231d478320d7"
+  checksum: [
+    "sha256=f9e42d32fbd1c37b67e5beb729fba09eed1378d0f44c89b0b313231d478320d7"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "9f6040ffa4fae573892453fa9501c088b687e3bcc0c6fcc5219e38e79cb48b67--aften-0.0.8.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d7d5e3e4207d97f5e4127f61f22f522cac8be14568404ebb949c75039eded200--aften--0.0.8.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8ea74128f469db3d09a8ec9815a87695dda3ab714cc3301d3f7f177b10d0458b--aften--0.0.8.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6d86137af1aa1418e21599e16e54aef660cf33a857409ce8a5c10b2563bbcbf--aften--0.0.8.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3df23036624c0301595c4b9cfc3b5b8fbcadfba764471333fe662ca91107de9d--aften--0.0.8.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0cfac71c2d40fe904b8718741dbbfcc9d215ba529b11dec5b91789a615729eac--aften--0.0.8.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fcb8110a2eac9ddd6a0f580b153af75cf2373b371698d30a7a2f3ff8d7c00f21--aften--0.0.8.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "76651b6164a5efc67588620c6d74b9b98791e94e3452f4fdb0edb21fb2cb9ca2--aften--0.0.8.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c2faa67eb1eb4464da7d2c688227e883339f13a35041ac25cad57a0f7d3f3327--aften--0.0.8.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "91acc39d1eecda506ade3fb0abb2dc4044dd3f4c2f6537386103a367b2ee95a9--aften--0.0.8.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7fbcc692084dbf629c3e51cc3b7c836e6a88d0bd3b6f14969c26370aa17f9d7a--aften--0.0.8.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f0b86e5ec39112e730364c7453672a46e14be0c4f6ebe50889f002d2075bd9b6--aften--0.0.8.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ec4ea8ba65d8dc9e22cc0e8856cac6ebefe91b6a97974c10c0436449719912f7--aften--0.0.8.high_sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a8e7dfa0e424d822b15a549a96ce444efcf19c2d1b1ea73a65ec29c234f94ed6--aften--0.0.8.sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c544998e417a2e2693b646db479468362fa1463df3e1e1fb1d0a96c9e4ab56ce--aften--0.0.8.el_capitan.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0b371eaa98e66e9c10cf49a43413302135009e034c8ab3324596072e5aa2501f--aften--0.0.8.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "aften" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "aften" ]
+]

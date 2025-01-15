@@ -1,0 +1,83 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Implementation of the Vulkan graphics and compute API on top of Metal"
+description: """
+Implementation of the Vulkan graphics and compute API on top of Metal"""
+extra-source "90c90e016aff8651bdde6bf6d078ee96445215f219c1abcf88fece61adaf97d6--molten-vk--1.2.10.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/molten-vk/blobs/sha256:59b4dd145cf7f5807460cecbcee7a97c4fd2906013412e25968cdf431f6988c6"
+  checksum: [
+    "sha256=59b4dd145cf7f5807460cecbcee7a97c4fd2906013412e25968cdf431f6988c6"
+  ]
+}
+extra-source "481afaadbaec98d953f7b0e9e1418cfd1ec0e27717789e6019e3465326fe7be5--molten-vk-1.2.10.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/molten-vk/manifests/1.2.10"
+}
+extra-source "3b049c442bbde95dca6d9177b1adc59dd0d0ace7a8ff5d400acd61de0e66c171--molten-vk--1.2.10.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/molten-vk/blobs/sha256:1b064d8edaf38568f00197e8a6245216d633ee818adf9d589d5c71c4b0dbdfe9"
+  checksum: [
+    "sha256=1b064d8edaf38568f00197e8a6245216d633ee818adf9d589d5c71c4b0dbdfe9"
+  ]
+}
+extra-source "f7fdd08d534f2610b491ce8d249dccd6aca265b666c50dd79a6de97b3655f719--molten-vk--1.2.10.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/molten-vk/blobs/sha256:25a56ad433bb2d345a836eda1cc7063b7cac29e09f147e55cd3e1a04d45999ec"
+  checksum: [
+    "sha256=25a56ad433bb2d345a836eda1cc7063b7cac29e09f147e55cd3e1a04d45999ec"
+  ]
+}
+extra-source "1cb72436839b1c4e2576bad37bb1a9ee1dc1ea03ef08435749efbde134a449a7--molten-vk--1.2.10.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/molten-vk/blobs/sha256:967bdf7e10ad32783d9a61efc94f109fcee621270a47f9c9f3717489d02cdaf9"
+  checksum: [
+    "sha256=967bdf7e10ad32783d9a61efc94f109fcee621270a47f9c9f3717489d02cdaf9"
+  ]
+}
+extra-source "b7bcbe2451dd58dbb6865631ad1e0c2d405917354df668d47e57ff2fa62b4677--molten-vk--1.2.10.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/molten-vk/blobs/sha256:521089ebcb007b928c6fe5dc73ae9f81d3f50c1bb02765ba49d23feca8beb3ba"
+  checksum: [
+    "sha256=521089ebcb007b928c6fe5dc73ae9f81d3f50c1bb02765ba49d23feca8beb3ba"
+  ]
+}
+extra-source "d43b2eccb8ef814b7cd7587a1f4d226255da590c19f0e2ac86d79e813571a7e3--molten-vk--1.2.10.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/molten-vk/blobs/sha256:f6c81b510db91bc3ee5f68281a803b1913596b7c40db24d8e472af0aa988070a"
+  checksum: [
+    "sha256=f6c81b510db91bc3ee5f68281a803b1913596b7c40db24d8e472af0aa988070a"
+  ]
+}
+extra-source "82edc4e160680c05180e357b1313081c6c760f557ca20e60fac8dab4773d9a4c--molten-vk--1.2.10.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/molten-vk/blobs/sha256:698a475e905947cb6664e91cf763fe0ced69429fd4a1608a0b0cd119d6370405"
+  checksum: [
+    "sha256=698a475e905947cb6664e91cf763fe0ced69429fd4a1608a0b0cd119d6370405"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "481afaadbaec98d953f7b0e9e1418cfd1ec0e27717789e6019e3465326fe7be5--molten-vk-1.2.10.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "90c90e016aff8651bdde6bf6d078ee96445215f219c1abcf88fece61adaf97d6--molten-vk--1.2.10.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3b049c442bbde95dca6d9177b1adc59dd0d0ace7a8ff5d400acd61de0e66c171--molten-vk--1.2.10.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f7fdd08d534f2610b491ce8d249dccd6aca265b666c50dd79a6de97b3655f719--molten-vk--1.2.10.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1cb72436839b1c4e2576bad37bb1a9ee1dc1ea03ef08435749efbde134a449a7--molten-vk--1.2.10.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b7bcbe2451dd58dbb6865631ad1e0c2d405917354df668d47e57ff2fa62b4677--molten-vk--1.2.10.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d43b2eccb8ef814b7cd7587a1f4d226255da590c19f0e2ac86d79e813571a7e3--molten-vk--1.2.10.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "82edc4e160680c05180e357b1313081c6c760f557ca20e60fac8dab4773d9a4c--molten-vk--1.2.10.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "molten-vk" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "molten-vk" ]
+]

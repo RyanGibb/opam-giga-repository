@@ -1,0 +1,172 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Text view with syntax, undo/redo, and text marks"
+description: """
+Text view with syntax, undo/redo, and text marks"""
+extra-source "aa7de4e221a7906f2b4d8d7ca7c9050cf9ea1399be7e06b1374f70ec27c0492d--gtksourceview--2.10.5_7.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:bbb1d79f8e083d650711d273bb3cb342e17f780e17acbf1cccde1f14d7a0c5a2"
+  checksum: [
+    "sha256=bbb1d79f8e083d650711d273bb3cb342e17f780e17acbf1cccde1f14d7a0c5a2"
+  ]
+}
+extra-source "a7c282e9b50fb667a4fc68051ed652ed258c21166714c84bd6bf0b9d5a7733be--gtksourceview-2.10.5_7.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/manifests/2.10.5_7"
+}
+extra-source "1fe14f1ed10bb74fac2de0ff8de842386c2b1f8cd7d7d4b9a55203503f8d69a8--gtksourceview--2.10.5_7.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:eb0553b93b8b0e505d18bbd52bb38418d63c983ea3a9b659c6672796c04972a1"
+  checksum: [
+    "sha256=eb0553b93b8b0e505d18bbd52bb38418d63c983ea3a9b659c6672796c04972a1"
+  ]
+}
+extra-source "61792ec41f7fb3f45988e444a2d8c33cd1150a497566902753bc64a4999acbbb--gtksourceview--2.10.5_7.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:c8b1bfcf2f675036284557c4bdaaff0916fa07cb09126893fb7b719120e10476"
+  checksum: [
+    "sha256=c8b1bfcf2f675036284557c4bdaaff0916fa07cb09126893fb7b719120e10476"
+  ]
+}
+extra-source "e8c51c54828698281dfbd1a09ddc40d6f0512911124ac7bbf2c3b93e4ee5d72b--gtksourceview--2.10.5_7.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:72c810e4c8bec98a46a3cb998149c1f5866818b1bfdfc18ed895cfae3eb07da0"
+  checksum: [
+    "sha256=72c810e4c8bec98a46a3cb998149c1f5866818b1bfdfc18ed895cfae3eb07da0"
+  ]
+}
+extra-source "dc7f6c1cad7733b7f100a26f31f2ca930784200606a2d815fa2718b672f011a8--gtksourceview--2.10.5_7.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:08668cd19c9c124cc636678f0503dbfe80afb61d42d9113fdd681c74eecb73ef"
+  checksum: [
+    "sha256=08668cd19c9c124cc636678f0503dbfe80afb61d42d9113fdd681c74eecb73ef"
+  ]
+}
+extra-source "2c8c59159e26f395d2089dfdd32bbedd0bb0d856fc4c993d8ff09b1705f0b03d--gtksourceview--2.10.5_7.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:4751be60ebb27600b1c3e3a5cc1130a8b30fd0c560ccbc9b869c57a41136b894"
+  checksum: [
+    "sha256=4751be60ebb27600b1c3e3a5cc1130a8b30fd0c560ccbc9b869c57a41136b894"
+  ]
+}
+extra-source "72590c738979cbd366e4a794fddcd3aa569678c95c4b5712e1da3f00ff61baab--gtksourceview--2.10.5_7.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:a64b1b82ecad5a2c291245237e253ee85f1c6887726b97380e60be733459db1d"
+  checksum: [
+    "sha256=a64b1b82ecad5a2c291245237e253ee85f1c6887726b97380e60be733459db1d"
+  ]
+}
+extra-source "6598f2afe440479b12bf373474276fe3c561076fb42ddcdf4ded711b308ecc7a--gtksourceview--2.10.5_7.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:95cfffbde61e36b9212d7f4d0caa87f523567888d2f2a6304b1a17e67d26338d"
+  checksum: [
+    "sha256=95cfffbde61e36b9212d7f4d0caa87f523567888d2f2a6304b1a17e67d26338d"
+  ]
+}
+extra-source "042cdf4d5e81931ba79ed47605771fa22d5637ed43801d112975505fba1ed41d--gtksourceview--2.10.5_7.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtksourceview/blobs/sha256:138535f8db7f04bd9beb9d9dea5762b006b0425662d93397fad10cd88647d0f7"
+  checksum: [
+    "sha256=138535f8db7f04bd9beb9d9dea5762b006b0425662d93397fad10cd88647d0f7"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-dbus" {= "1.14.10"}
+  "brew-python" {= "3.11.10"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-bison" {= "3.8.2"}
+  "brew-meson" {= "1.5.2"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libxi" {= "1.8.2"}
+  "brew-libxtst" {= "1.2.5"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-at-spi2-core" {= "2.54.0"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-docutils" {= "0.21.2"}
+  "brew-gdk-pixbuf" {= "2.42.12"}
+  "brew-hicolor-icon-theme" {= "0.18"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-pango" {= "1.54.0"}
+  "brew-gtk+" {= "2.24.33"}
+  "brew-intltool" {= "0.51.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "a7c282e9b50fb667a4fc68051ed652ed258c21166714c84bd6bf0b9d5a7733be--gtksourceview-2.10.5_7.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "aa7de4e221a7906f2b4d8d7ca7c9050cf9ea1399be7e06b1374f70ec27c0492d--gtksourceview--2.10.5_7.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1fe14f1ed10bb74fac2de0ff8de842386c2b1f8cd7d7d4b9a55203503f8d69a8--gtksourceview--2.10.5_7.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "61792ec41f7fb3f45988e444a2d8c33cd1150a497566902753bc64a4999acbbb--gtksourceview--2.10.5_7.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e8c51c54828698281dfbd1a09ddc40d6f0512911124ac7bbf2c3b93e4ee5d72b--gtksourceview--2.10.5_7.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dc7f6c1cad7733b7f100a26f31f2ca930784200606a2d815fa2718b672f011a8--gtksourceview--2.10.5_7.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2c8c59159e26f395d2089dfdd32bbedd0bb0d856fc4c993d8ff09b1705f0b03d--gtksourceview--2.10.5_7.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "72590c738979cbd366e4a794fddcd3aa569678c95c4b5712e1da3f00ff61baab--gtksourceview--2.10.5_7.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6598f2afe440479b12bf373474276fe3c561076fb42ddcdf4ded711b308ecc7a--gtksourceview--2.10.5_7.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "042cdf4d5e81931ba79ed47605771fa22d5637ed43801d112975505fba1ed41d--gtksourceview--2.10.5_7.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gtksourceview" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gtksourceview" ]
+]

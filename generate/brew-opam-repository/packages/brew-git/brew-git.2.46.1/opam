@@ -1,0 +1,76 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Distributed revision control system"
+description: """
+Distributed revision control system"""
+extra-source "d6dcb619edaab4b949c7cd905e2a29f058e187046304c05a19c2817c77f2d462--git--2.46.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/git/blobs/sha256:98fd71e5baeaab408b580bcd765b18299d97935b55d1437cd85d4576020819fd"
+  checksum: [
+    "sha256=98fd71e5baeaab408b580bcd765b18299d97935b55d1437cd85d4576020819fd"
+  ]
+}
+extra-source "f9827694160eac02305489744f5b8625b8f227428757f81075c03e8261dec167--git-2.46.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/git/manifests/2.46.1"
+}
+extra-source "1705991ffc62820203725c35aa1417fd1eb8e03e576c87a6a57edb8760adaf8d--git--2.46.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/git/blobs/sha256:54b10f3d16b8a468894cfa162e09ba015faa5f6422ba37b35c7f53773877c0e5"
+  checksum: [
+    "sha256=54b10f3d16b8a468894cfa162e09ba015faa5f6422ba37b35c7f53773877c0e5"
+  ]
+}
+extra-source "313017f3c0448d908235ef669091d8b539c3b2bfbffc1386bd9cc84e4ee88637--git--2.46.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/git/blobs/sha256:18874888f0d79b49befe12ccc1c7bd57e7d9e0c5527716ce12212d780755223a"
+  checksum: [
+    "sha256=18874888f0d79b49befe12ccc1c7bd57e7d9e0c5527716ce12212d780755223a"
+  ]
+}
+extra-source "bcc12f179d35e9b306619c630a31ef47e521c77a23bb76a6362e2d39c8a83198--git--2.46.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/git/blobs/sha256:db7bc15e0419cd59a01abd9b80fb2d578cf1f9b121f7d81f29c42356619d609e"
+  checksum: [
+    "sha256=db7bc15e0419cd59a01abd9b80fb2d578cf1f9b121f7d81f29c42356619d609e"
+  ]
+}
+extra-source "2826956cce1787af914d732b89b52dce536a05b718c570d9e8a3d58bedb44304--git--2.46.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/git/blobs/sha256:70ccbdc52815dfb31ebd0dda1184b223cda10f3ab81ea9292d2867fae36e575b"
+  checksum: [
+    "sha256=70ccbdc52815dfb31ebd0dda1184b223cda10f3ab81ea9292d2867fae36e575b"
+  ]
+}
+extra-source "4ed3cac87c8ec91b3665ca938511fff6a1f0bf9f380774dbbbc4b5217377ec72--git--2.46.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/git/blobs/sha256:5dd424f323934a60c6e012db56709ae19f185b6e42ecebb29c816b811502c188"
+  checksum: [
+    "sha256=5dd424f323934a60c6e012db56709ae19f185b6e42ecebb29c816b811502c188"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+  "brew-pcre2" {= "10.44"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f9827694160eac02305489744f5b8625b8f227428757f81075c03e8261dec167--git-2.46.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d6dcb619edaab4b949c7cd905e2a29f058e187046304c05a19c2817c77f2d462--git--2.46.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1705991ffc62820203725c35aa1417fd1eb8e03e576c87a6a57edb8760adaf8d--git--2.46.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "313017f3c0448d908235ef669091d8b539c3b2bfbffc1386bd9cc84e4ee88637--git--2.46.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bcc12f179d35e9b306619c630a31ef47e521c77a23bb76a6362e2d39c8a83198--git--2.46.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2826956cce1787af914d732b89b52dce536a05b718c570d9e8a3d58bedb44304--git--2.46.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4ed3cac87c8ec91b3665ca938511fff6a1f0bf9f380774dbbbc4b5217377ec72--git--2.46.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "git" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "git" ]
+]

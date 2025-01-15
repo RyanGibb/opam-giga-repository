@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Generate introspection data for GObject libraries"
+description: """
+Generate introspection data for GObject libraries"""
+extra-source "abc086d7ef5d91ecca37548e64725000e313217d1ba0fc93b7a767c39dda7554--gobject-introspection--1.82.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gobject-introspection/blobs/sha256:8d74abd27df2b62211a8e14c6d8900f258d5b3590956d801dae80ea4f6f1f4df"
+  checksum: [
+    "sha256=8d74abd27df2b62211a8e14c6d8900f258d5b3590956d801dae80ea4f6f1f4df"
+  ]
+}
+extra-source "ea8ae4137bf255cf21155ecf054d4ac8498aeaa93ee229cbdbc4546eecd1f2f0--gobject-introspection-1.82.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gobject-introspection/manifests/1.82.0"
+}
+extra-source "fb6ab11e2da4874bfc5d33d12fa7fc720d75636703da300ab69a9d422271f30b--gobject-introspection--1.82.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gobject-introspection/blobs/sha256:0065754b9e716fe32e180e8a130cd83f16797704b8a310fa300fa2511c42b12b"
+  checksum: [
+    "sha256=0065754b9e716fe32e180e8a130cd83f16797704b8a310fa300fa2511c42b12b"
+  ]
+}
+extra-source "b2c11b61bbf66341c8664b6f2022a000d212582d2a275a2ddd3558b6c67095f8--gobject-introspection--1.82.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gobject-introspection/blobs/sha256:140e00fb8669877b8af6cbb7b0d3e3b88385e3b1478a6cf0a82aa5d78affaf62"
+  checksum: [
+    "sha256=140e00fb8669877b8af6cbb7b0d3e3b88385e3b1478a6cf0a82aa5d78affaf62"
+  ]
+}
+extra-source "494481ad95c317e860b68dae09dc47005ad6a13c23e771a9595b06e3b3cb9ad5--gobject-introspection--1.82.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gobject-introspection/blobs/sha256:7c874e6c4e301f867f7825084975240d3dc23311c92f460f48af59378409c1c4"
+  checksum: [
+    "sha256=7c874e6c4e301f867f7825084975240d3dc23311c92f460f48af59378409c1c4"
+  ]
+}
+extra-source "0131b8725e7cdd0349e8147756dcd6743dd330b09470a51507b3042ad5413032--gobject-introspection--1.82.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gobject-introspection/blobs/sha256:72b7d5b987719b01b2d1a55b8401eea731299b6ae636a15e5ff1ddbbd4650f78"
+  checksum: [
+    "sha256=72b7d5b987719b01b2d1a55b8401eea731299b6ae636a15e5ff1ddbbd4650f78"
+  ]
+}
+extra-source "4ac433dd656a03c4601f03e5fd00cae854cc8d6494cab75b395dda8015e6dac2--gobject-introspection--1.82.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gobject-introspection/blobs/sha256:c69de82d45cb1788871624ed192f58955055696ed0ea1f714e1cd178184bb283"
+  checksum: [
+    "sha256=c69de82d45cb1788871624ed192f58955055696ed0ea1f714e1cd178184bb283"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ea8ae4137bf255cf21155ecf054d4ac8498aeaa93ee229cbdbc4546eecd1f2f0--gobject-introspection-1.82.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "abc086d7ef5d91ecca37548e64725000e313217d1ba0fc93b7a767c39dda7554--gobject-introspection--1.82.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fb6ab11e2da4874bfc5d33d12fa7fc720d75636703da300ab69a9d422271f30b--gobject-introspection--1.82.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b2c11b61bbf66341c8664b6f2022a000d212582d2a275a2ddd3558b6c67095f8--gobject-introspection--1.82.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "494481ad95c317e860b68dae09dc47005ad6a13c23e771a9595b06e3b3cb9ad5--gobject-introspection--1.82.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0131b8725e7cdd0349e8147756dcd6743dd330b09470a51507b3042ad5413032--gobject-introspection--1.82.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4ac433dd656a03c4601f03e5fd00cae854cc8d6494cab75b395dda8015e6dac2--gobject-introspection--1.82.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gobject-introspection" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gobject-introspection" ]
+]

@@ -1,0 +1,111 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "High performance message passing library"
+description: """
+High performance message passing library"""
+extra-source "cd34e8a1978e4092c089839f0352d2029ce4eb536578ff009758325696c99fc9--open-mpi--5.0.3_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:8fc089be34f447968039f7408a51e65ace25124ba417de52e950facce7e47475"
+  checksum: [
+    "sha256=8fc089be34f447968039f7408a51e65ace25124ba417de52e950facce7e47475"
+  ]
+}
+extra-source "ed327de2f757e61812e688362b7b253d45699d75268c1b31e7899d8a6303b9ff--open-mpi-5.0.3_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/manifests/5.0.3_1"
+}
+extra-source "baf42547ecd922d0f902494bab1134c6ad10d938d102fa96687d62fb31f72eba--open-mpi--5.0.3_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:963cccb887f66a3da95feb19098e65309c46219491cb080d0bf864ea45e7fcdc"
+  checksum: [
+    "sha256=963cccb887f66a3da95feb19098e65309c46219491cb080d0bf864ea45e7fcdc"
+  ]
+}
+extra-source "01b3937fddc8189e8104db65154a94b0b9e90c94dde4353950d21fbe939f117e--open-mpi--5.0.3_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:2eb8af01260123ac14e6c47dc0c2d6533ae846b93805e95940fd991af286b228"
+  checksum: [
+    "sha256=2eb8af01260123ac14e6c47dc0c2d6533ae846b93805e95940fd991af286b228"
+  ]
+}
+extra-source "b6e44bdb99ca2aca3674c3fa1119983fa2e5c929a6a75212c8819fab816d4973--open-mpi--5.0.3_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:ee9132e624c3e74d153362aedac38bc327937ca8c99e45aea4e19a7c188aade1"
+  checksum: [
+    "sha256=ee9132e624c3e74d153362aedac38bc327937ca8c99e45aea4e19a7c188aade1"
+  ]
+}
+extra-source "ef9612a770a285ee2b57ed932daf687e78842e57fe3657bc1976898094cdc9a0--open-mpi--5.0.3_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:41fbd96be69b9cd6f06f29acb9e29d7f182af84ee9a35ccb2b60b3fea526cbea"
+  checksum: [
+    "sha256=41fbd96be69b9cd6f06f29acb9e29d7f182af84ee9a35ccb2b60b3fea526cbea"
+  ]
+}
+extra-source "efff38bd6e17e2f3fc2e417c007dcf8ed6cf32cbaf3c7f4ae469549c69a28c20--open-mpi--5.0.3_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:d3e7aa52538f37cfae1da06cdf23d04bdfe29fc9e3c9c6ad7c8c4cf2c2f6523e"
+  checksum: [
+    "sha256=d3e7aa52538f37cfae1da06cdf23d04bdfe29fc9e3c9c6ad7c8c4cf2c2f6523e"
+  ]
+}
+extra-source "c9ed574e7ec881e7dd283b7f72c7ab8c6e5c06b273d0c6a28c8029b3b4fa86ee--open-mpi--5.0.3_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:e62156754013d4acf586032f28da661f0ff0275a664347a77a616ac76dede707"
+  checksum: [
+    "sha256=e62156754013d4acf586032f28da661f0ff0275a664347a77a616ac76dede707"
+  ]
+}
+extra-source "970154dff0e819c83f1b65d47a5c98c18610ccbf9157e3a3c3acc36470b29b74--open-mpi--5.0.3_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:96f0736d212d804309eebd055632619b99242e895e195013be2b01ba742fa798"
+  checksum: [
+    "sha256=96f0736d212d804309eebd055632619b99242e895e195013be2b01ba742fa798"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-hwloc" {= "2.11.1"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-pmix" {= "5.0.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ed327de2f757e61812e688362b7b253d45699d75268c1b31e7899d8a6303b9ff--open-mpi-5.0.3_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "cd34e8a1978e4092c089839f0352d2029ce4eb536578ff009758325696c99fc9--open-mpi--5.0.3_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "baf42547ecd922d0f902494bab1134c6ad10d938d102fa96687d62fb31f72eba--open-mpi--5.0.3_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "01b3937fddc8189e8104db65154a94b0b9e90c94dde4353950d21fbe939f117e--open-mpi--5.0.3_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b6e44bdb99ca2aca3674c3fa1119983fa2e5c929a6a75212c8819fab816d4973--open-mpi--5.0.3_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ef9612a770a285ee2b57ed932daf687e78842e57fe3657bc1976898094cdc9a0--open-mpi--5.0.3_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "efff38bd6e17e2f3fc2e417c007dcf8ed6cf32cbaf3c7f4ae469549c69a28c20--open-mpi--5.0.3_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c9ed574e7ec881e7dd283b7f72c7ab8c6e5c06b273d0c6a28c8029b3b4fa86ee--open-mpi--5.0.3_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "970154dff0e819c83f1b65d47a5c98c18610ccbf9157e3a3c3acc36470b29b74--open-mpi--5.0.3_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "open-mpi" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "open-mpi" ]
+]

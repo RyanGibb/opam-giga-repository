@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Numeric library for complex error functions"
+description: """
+Numeric library for complex error functions"""
+extra-source "c56ba79e45aea6b905fe922050bb00660db15aa48c6d081490b25e8811b9ad20--libcerf--2.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:f98b11354a3acc473bd2697aa55845991c99f4e94577882a63a2511c00f6c703"
+  checksum: [
+    "sha256=f98b11354a3acc473bd2697aa55845991c99f4e94577882a63a2511c00f6c703"
+  ]
+}
+extra-source "5d416a32d97e948acea22045d51b05e6781990b51c6961b745707fbd08668343--libcerf-2.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/manifests/2.4"
+}
+extra-source "5a36f8002bb505c018ce8918416d83d524d436d0e46050e9b9402c02e21ba3d9--libcerf--2.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:449f2996aa67026fab6fd8e70068d78d507f3855c844274b01757015de16d364"
+  checksum: [
+    "sha256=449f2996aa67026fab6fd8e70068d78d507f3855c844274b01757015de16d364"
+  ]
+}
+extra-source "3d658fe9175c9c634526537e54c85090d3235792531455f14f025bead5d87efb--libcerf--2.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:34b1ea071894550defd96682761ad9a6e9b9df19ac66ce5e0541bc5f82267946"
+  checksum: [
+    "sha256=34b1ea071894550defd96682761ad9a6e9b9df19ac66ce5e0541bc5f82267946"
+  ]
+}
+extra-source "cd5c040cce185f8bb6786d1b47a0ff49cc37dbeb1466ebd5877ecd64be2fc8cf--libcerf--2.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:24d10b02769be590e55fca864a080e13fd0def7f2b655a5e0f0861393d036f22"
+  checksum: [
+    "sha256=24d10b02769be590e55fca864a080e13fd0def7f2b655a5e0f0861393d036f22"
+  ]
+}
+extra-source "a55ecbbff393592f07f452e934710f9afa6397dc000460c327d11a53a4ecd935--libcerf--2.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:b3b61822329b217da59ae7255dda43a504ac83256f6fa0ac8420317a2d73c339"
+  checksum: [
+    "sha256=b3b61822329b217da59ae7255dda43a504ac83256f6fa0ac8420317a2d73c339"
+  ]
+}
+extra-source "513288c148dd8d075beed43fc741d68a8cf6fb55f382878bd48650e877e0cde9--libcerf--2.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:5338caa2b9422debd382f920fef79a1f0acaedd843ab3924905cf332df708144"
+  checksum: [
+    "sha256=5338caa2b9422debd382f920fef79a1f0acaedd843ab3924905cf332df708144"
+  ]
+}
+extra-source "c78f6fc1829ab930d06c7a35cc10a50a90508915fb28d1ce65b388f5c9f097c3--libcerf--2.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:ded6d40e220e6e5258f589f36172ad6e0ddd110b1a38134dca1676b7db43f089"
+  checksum: [
+    "sha256=ded6d40e220e6e5258f589f36172ad6e0ddd110b1a38134dca1676b7db43f089"
+  ]
+}
+extra-source "59bba2511a26ff5b4a43d3200f8f387e46fa4b5e0b337c583107f48c7a16d741--libcerf--2.4.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:237d8d549c7bfc15d7d770eff70cfe3df04fe264b156f63bc156ac1a9ddf52a7"
+  checksum: [
+    "sha256=237d8d549c7bfc15d7d770eff70cfe3df04fe264b156f63bc156ac1a9ddf52a7"
+  ]
+}
+extra-source "20010fee641ac8aca11b3c94313e38123ac971bc23aaecc5b43caeb513ef47c6--libcerf--2.4.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:939d2020151a7061a1615ff87b841121662d6be8d6441eb5e41beac6586b9625"
+  checksum: [
+    "sha256=939d2020151a7061a1615ff87b841121662d6be8d6441eb5e41beac6586b9625"
+  ]
+}
+extra-source "138ee862d8853341bdb3e0318676da80afe7b5153c23be216575f9c6b1fae2a2--libcerf--2.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcerf/blobs/sha256:24d01493cf36431018586ecbef6ad3d7a14837e257188d0f78d18f4c0f77113f"
+  checksum: [
+    "sha256=24d01493cf36431018586ecbef6ad3d7a14837e257188d0f78d18f4c0f77113f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "5d416a32d97e948acea22045d51b05e6781990b51c6961b745707fbd08668343--libcerf-2.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c56ba79e45aea6b905fe922050bb00660db15aa48c6d081490b25e8811b9ad20--libcerf--2.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5a36f8002bb505c018ce8918416d83d524d436d0e46050e9b9402c02e21ba3d9--libcerf--2.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3d658fe9175c9c634526537e54c85090d3235792531455f14f025bead5d87efb--libcerf--2.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cd5c040cce185f8bb6786d1b47a0ff49cc37dbeb1466ebd5877ecd64be2fc8cf--libcerf--2.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a55ecbbff393592f07f452e934710f9afa6397dc000460c327d11a53a4ecd935--libcerf--2.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "513288c148dd8d075beed43fc741d68a8cf6fb55f382878bd48650e877e0cde9--libcerf--2.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c78f6fc1829ab930d06c7a35cc10a50a90508915fb28d1ce65b388f5c9f097c3--libcerf--2.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "59bba2511a26ff5b4a43d3200f8f387e46fa4b5e0b337c583107f48c7a16d741--libcerf--2.4.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "20010fee641ac8aca11b3c94313e38123ac971bc23aaecc5b43caeb513ef47c6--libcerf--2.4.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "138ee862d8853341bdb3e0318676da80afe7b5153c23be216575f9c6b1fae2a2--libcerf--2.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libcerf" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libcerf" ]
+]

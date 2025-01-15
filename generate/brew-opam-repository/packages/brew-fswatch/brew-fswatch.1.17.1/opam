@@ -1,0 +1,114 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Monitor a directory for changes and run a shell command"
+description: """
+Monitor a directory for changes and run a shell command"""
+extra-source "f92c6903616d67df7cc5582b2970aff348fbd5566c21fe9599533fbdab24bb06--fswatch--1.17.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:6ebeea97a2aa8390f8eeffd811f0b9b86f4e231e36345df4a0a4c06c148d50d3"
+  checksum: [
+    "sha256=6ebeea97a2aa8390f8eeffd811f0b9b86f4e231e36345df4a0a4c06c148d50d3"
+  ]
+}
+extra-source "52b95e8e52270e7899137a45a47814618f0c776031e706be6419767d4f2d4656--fswatch-1.17.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/manifests/1.17.1"
+}
+extra-source "d1a069e914796ca119bea15cd56b6a073902058fd03c1dfc841265643e67893e--fswatch--1.17.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:46597af58009af46050cb5885477777234020038ce3554aaad42c4e5bb337e0d"
+  checksum: [
+    "sha256=46597af58009af46050cb5885477777234020038ce3554aaad42c4e5bb337e0d"
+  ]
+}
+extra-source "6d04a1170e02da82d05914fe1ab963bf5786f915d1f01a3b34339d2d5cc88f1f--fswatch--1.17.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:0a46b04e0ff340c1de3f55e46cb7785cd12de3bba2235d463e6d462672a2a102"
+  checksum: [
+    "sha256=0a46b04e0ff340c1de3f55e46cb7785cd12de3bba2235d463e6d462672a2a102"
+  ]
+}
+extra-source "1036bdb3c8c0f00f48d6a0c2b09f9a0e76033fa670b99a28aa2d01f682a84665--fswatch--1.17.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:570223c980f22c296e4d6fa6e6058e778bb0e74d0dd9745ec49ec3940aeb5863"
+  checksum: [
+    "sha256=570223c980f22c296e4d6fa6e6058e778bb0e74d0dd9745ec49ec3940aeb5863"
+  ]
+}
+extra-source "375b632e3aeaf1852f0c9768b91da2932f3318fdaa0c44f5c3f9631fb78b215e--fswatch--1.17.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:96cea06f4891e9af44abcd6f30a250c8efebe660104893b7fd80c8f22b2ab569"
+  checksum: [
+    "sha256=96cea06f4891e9af44abcd6f30a250c8efebe660104893b7fd80c8f22b2ab569"
+  ]
+}
+extra-source "5145e27e9dc9adcafa43158b1260ad246bc89ec6e27b0d81570377baa6a5c69f--fswatch--1.17.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:6c57d2ea9ff9e425069580bba25c74f5890f454b807f4a94810271909d47283e"
+  checksum: [
+    "sha256=6c57d2ea9ff9e425069580bba25c74f5890f454b807f4a94810271909d47283e"
+  ]
+}
+extra-source "e8126d4dc228bd278bffe15bb1f4cb0dc394208f37b2de3de45d2925677b0d18--fswatch--1.17.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:b7f5facb15c82b5dc9eb94e8cfaa4857e562609be24fdd716051c35bd2e85e8b"
+  checksum: [
+    "sha256=b7f5facb15c82b5dc9eb94e8cfaa4857e562609be24fdd716051c35bd2e85e8b"
+  ]
+}
+extra-source "ce4900146c80ef38b5fe6899680e39b97f970f9d5a817c2fe1a082e322927b20--fswatch--1.17.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:1da6e45f4051477e02acbf2f3d13a7917b8a80a38ca35d6ac8cbaff780df4651"
+  checksum: [
+    "sha256=1da6e45f4051477e02acbf2f3d13a7917b8a80a38ca35d6ac8cbaff780df4651"
+  ]
+}
+extra-source "5931a3445427b7cfb01d6a28fe6a030da70fc551165c2b2779f95ad0613177e2--fswatch--1.17.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:ec08b3bf8f659a864d0c54f022939b45ea647c25769a8ab908f60f28ffbd803c"
+  checksum: [
+    "sha256=ec08b3bf8f659a864d0c54f022939b45ea647c25769a8ab908f60f28ffbd803c"
+  ]
+}
+extra-source "e585d43246cd0bc5a6331050c485d12d1ad754e7a1caeb6549fcb2dd490ba2e5--fswatch--1.17.1.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:c97ee3973b847257ad99f6ffff3c6ba3d33dbf2a333e0bbe289832b7e490f051"
+  checksum: [
+    "sha256=c97ee3973b847257ad99f6ffff3c6ba3d33dbf2a333e0bbe289832b7e490f051"
+  ]
+}
+extra-source "233bc9a5bde26656076dc836b7063e1a7a661f7bb12259acc029716c49f205ed--fswatch--1.17.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fswatch/blobs/sha256:60e3f628f00ace185e22523a1850f0521184e7477263ef69a1a0fcebd8b0f077"
+  checksum: [
+    "sha256=60e3f628f00ace185e22523a1850f0521184e7477263ef69a1a0fcebd8b0f077"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "52b95e8e52270e7899137a45a47814618f0c776031e706be6419767d4f2d4656--fswatch-1.17.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f92c6903616d67df7cc5582b2970aff348fbd5566c21fe9599533fbdab24bb06--fswatch--1.17.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d1a069e914796ca119bea15cd56b6a073902058fd03c1dfc841265643e67893e--fswatch--1.17.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6d04a1170e02da82d05914fe1ab963bf5786f915d1f01a3b34339d2d5cc88f1f--fswatch--1.17.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1036bdb3c8c0f00f48d6a0c2b09f9a0e76033fa670b99a28aa2d01f682a84665--fswatch--1.17.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "375b632e3aeaf1852f0c9768b91da2932f3318fdaa0c44f5c3f9631fb78b215e--fswatch--1.17.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5145e27e9dc9adcafa43158b1260ad246bc89ec6e27b0d81570377baa6a5c69f--fswatch--1.17.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e8126d4dc228bd278bffe15bb1f4cb0dc394208f37b2de3de45d2925677b0d18--fswatch--1.17.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ce4900146c80ef38b5fe6899680e39b97f970f9d5a817c2fe1a082e322927b20--fswatch--1.17.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5931a3445427b7cfb01d6a28fe6a030da70fc551165c2b2779f95ad0613177e2--fswatch--1.17.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e585d43246cd0bc5a6331050c485d12d1ad754e7a1caeb6549fcb2dd490ba2e5--fswatch--1.17.1.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "233bc9a5bde26656076dc836b7063e1a7a661f7bb12259acc029716c49f205ed--fswatch--1.17.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "fswatch" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "fswatch" ]
+]

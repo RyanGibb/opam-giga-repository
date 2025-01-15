@@ -1,0 +1,95 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Platform built on V8 to build network applications"
+description: """
+Platform built on V8 to build network applications"""
+extra-source "7101d2497b47c18e8188f93c9efbae79e914f8112f701f86dd1f2fda16207c52--node--22.9.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/node/blobs/sha256:0bfb1ebbf304458e9ff7c2cd0a1c410c06f51aa0fb8d458200cc274e2c66e16c"
+  checksum: [
+    "sha256=0bfb1ebbf304458e9ff7c2cd0a1c410c06f51aa0fb8d458200cc274e2c66e16c"
+  ]
+}
+extra-source "1b789766b485a66915d56ec40ecbb3e22d4075fd40af4ed57377bc23d5503242--node-22.9.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/node/manifests/22.9.0"
+}
+extra-source "fd1703790d90f18c32f99169d7be169b262659074f9a767a020f2c9ef44ca9f3--node--22.9.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/node/blobs/sha256:dfca05a3068ac014f25fe1a21c2c771d2a44cc7d04dfed556d6ca04b01033887"
+  checksum: [
+    "sha256=dfca05a3068ac014f25fe1a21c2c771d2a44cc7d04dfed556d6ca04b01033887"
+  ]
+}
+extra-source "cd47974f0e1d8e56f1735a8d81dbb49d5ac548416bd1e0bf4f39da7a1fb695a3--node--22.9.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/node/blobs/sha256:05299315937716d7646a7bcf911fbfd2dbafc0be73e42a126203b00b565ab657"
+  checksum: [
+    "sha256=05299315937716d7646a7bcf911fbfd2dbafc0be73e42a126203b00b565ab657"
+  ]
+}
+extra-source "83925aada49ef0917656c40f36ad12fb82a59ac07b1a534434daf88471be46a3--node--22.9.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/node/blobs/sha256:538d42997595a59d7c242dc78fd4412121ae6e3ab475223a6f1b89ec3a8cad85"
+  checksum: [
+    "sha256=538d42997595a59d7c242dc78fd4412121ae6e3ab475223a6f1b89ec3a8cad85"
+  ]
+}
+extra-source "9797ae5195abc9775d039f8d677129cb411f1b2386a11638639994a247c7039b--node--22.9.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/node/blobs/sha256:c3eaf571f4e12eea25b74bbff5b82bd85c2117ecfc09af9bedaef238fdb94cc8"
+  checksum: [
+    "sha256=c3eaf571f4e12eea25b74bbff5b82bd85c2117ecfc09af9bedaef238fdb94cc8"
+  ]
+}
+extra-source "e215b8948c78974baa3265cea3dfb3cb96247c8c0041ef59baa91b26f1edf609--node--22.9.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/node/blobs/sha256:ca407a117cf667d560a24f8db3de0f7675cea6f43f3832e7fbe5460501059e92"
+  checksum: [
+    "sha256=ca407a117cf667d560a24f8db3de0f7675cea6f43f3832e7fbe5460501059e92"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-c-ares" {= "1.33.1"}
+  "brew-icu4c" {= "74.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-libuv" {= "1.48.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1b789766b485a66915d56ec40ecbb3e22d4075fd40af4ed57377bc23d5503242--node-22.9.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7101d2497b47c18e8188f93c9efbae79e914f8112f701f86dd1f2fda16207c52--node--22.9.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fd1703790d90f18c32f99169d7be169b262659074f9a767a020f2c9ef44ca9f3--node--22.9.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cd47974f0e1d8e56f1735a8d81dbb49d5ac548416bd1e0bf4f39da7a1fb695a3--node--22.9.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "83925aada49ef0917656c40f36ad12fb82a59ac07b1a534434daf88471be46a3--node--22.9.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9797ae5195abc9775d039f8d677129cb411f1b2386a11638639994a247c7039b--node--22.9.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e215b8948c78974baa3265cea3dfb3cb96247c8c0041ef59baa91b26f1edf609--node--22.9.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "node" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "node" ]
+]

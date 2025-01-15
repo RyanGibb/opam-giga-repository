@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Generate scripting interfaces to C/C++ code"
+description: """
+Generate scripting interfaces to C/C++ code"""
+extra-source "aeb486e2cce1ab93ea0f0bec090709a490634bb7047b6edb243c7b64641c1bf5--swig--4.2.1.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:97588fadee83883fa4fa1a79a3ab4c1f1d6239a86fe5b9d4d8bceb7d4d8b5fdf"
+  checksum: [
+    "sha256=97588fadee83883fa4fa1a79a3ab4c1f1d6239a86fe5b9d4d8bceb7d4d8b5fdf"
+  ]
+}
+extra-source "85c972e5ee820382598e830ab3f785897d8715c1b67f0273fea51383a7ec6b34--swig-4.2.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/manifests/4.2.1"
+}
+extra-source "e10e3b84ebc535562746eb467d50e1a386277795cf42ad847030e2eea161ccb0--swig--4.2.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:95bf38d7a0ccac04b3fb52c7f19be5d57f03f27a777cc9e0415ec1aa09b02d1e"
+  checksum: [
+    "sha256=95bf38d7a0ccac04b3fb52c7f19be5d57f03f27a777cc9e0415ec1aa09b02d1e"
+  ]
+}
+extra-source "eb8cdb0b373828c69c2e8c15bfd046edc97ba6fb7d31641fac1707f4bdd85bd6--swig--4.2.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:81c8657b9bc70c7a18615e011fb5a1dfd65a0d8ff34b11993194d0c820c439cb"
+  checksum: [
+    "sha256=81c8657b9bc70c7a18615e011fb5a1dfd65a0d8ff34b11993194d0c820c439cb"
+  ]
+}
+extra-source "ba04048270a5d0c146f17ea685dec19aeb9ffb55266c02b0b2ce5a5b46d4d24e--swig--4.2.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:183268434604fe51bf67ca63c6bb3adb0327b698be2214d1eb43c0d5d2ebb231"
+  checksum: [
+    "sha256=183268434604fe51bf67ca63c6bb3adb0327b698be2214d1eb43c0d5d2ebb231"
+  ]
+}
+extra-source "913ed90341cfb4d7d39cac04ccd9b3f29c3f6e50ddd87dace3162ec0c21ed3fe--swig--4.2.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:50ec50d91f2abf91deded716fe9f7b1abe144851b79ec59f2ecd7e9f6004c665"
+  checksum: [
+    "sha256=50ec50d91f2abf91deded716fe9f7b1abe144851b79ec59f2ecd7e9f6004c665"
+  ]
+}
+extra-source "ab27c642281c08caef8f0daeed6064f44868155592a66ea5aa56b7e17ce5f265--swig--4.2.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:0bc1f80fdf13d7aa62a5940fa739162a00b4ae25d6d978d9f7021d08799a08ef"
+  checksum: [
+    "sha256=0bc1f80fdf13d7aa62a5940fa739162a00b4ae25d6d978d9f7021d08799a08ef"
+  ]
+}
+extra-source "436d26431b1f559edadf6d20b5385ee5b0debdd9f50eb54abfdc12bdcb3192b1--swig--4.2.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:eb3bb9b187414f8e0a095c89373cc85559b9e84cbb8ae77e90fcc0ccdde8ed71"
+  checksum: [
+    "sha256=eb3bb9b187414f8e0a095c89373cc85559b9e84cbb8ae77e90fcc0ccdde8ed71"
+  ]
+}
+extra-source "800fe7b6e704f651e65e8385c044935520add25cb54f34859d26d73c98c7d4cb--swig--4.2.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:0db87779d83c4f22f94ded633d6c3cc6edfc90be6a3c0b78899cd97f0519316d"
+  checksum: [
+    "sha256=0db87779d83c4f22f94ded633d6c3cc6edfc90be6a3c0b78899cd97f0519316d"
+  ]
+}
+extra-source "4cac14ddb4ae8e4b587937ff75e7de33aebad732344518eaeed5decad0a12be0--swig--4.2.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swig/blobs/sha256:fc7a4fc21a0adda671084c1d85730a5f94bd1528442e15c6579055a485c80300"
+  checksum: [
+    "sha256=fc7a4fc21a0adda671084c1d85730a5f94bd1528442e15c6579055a485c80300"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-setuptools" {= "75.1.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "85c972e5ee820382598e830ab3f785897d8715c1b67f0273fea51383a7ec6b34--swig-4.2.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "aeb486e2cce1ab93ea0f0bec090709a490634bb7047b6edb243c7b64641c1bf5--swig--4.2.1.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e10e3b84ebc535562746eb467d50e1a386277795cf42ad847030e2eea161ccb0--swig--4.2.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "eb8cdb0b373828c69c2e8c15bfd046edc97ba6fb7d31641fac1707f4bdd85bd6--swig--4.2.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ba04048270a5d0c146f17ea685dec19aeb9ffb55266c02b0b2ce5a5b46d4d24e--swig--4.2.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "913ed90341cfb4d7d39cac04ccd9b3f29c3f6e50ddd87dace3162ec0c21ed3fe--swig--4.2.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ab27c642281c08caef8f0daeed6064f44868155592a66ea5aa56b7e17ce5f265--swig--4.2.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "436d26431b1f559edadf6d20b5385ee5b0debdd9f50eb54abfdc12bdcb3192b1--swig--4.2.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "800fe7b6e704f651e65e8385c044935520add25cb54f34859d26d73c98c7d4cb--swig--4.2.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4cac14ddb4ae8e4b587937ff75e7de33aebad732344518eaeed5decad0a12be0--swig--4.2.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "swig" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "swig" ]
+]

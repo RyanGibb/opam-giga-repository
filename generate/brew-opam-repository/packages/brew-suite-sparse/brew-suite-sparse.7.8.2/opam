@@ -1,0 +1,121 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Suite of Sparse Matrix Software"
+description: """
+Suite of Sparse Matrix Software"""
+extra-source "7877fcd22f9e05b0bed67a7197af8b9a5b2b79d85bb7bdcb3dc0ca35ccd51ef2--suite-sparse--7.8.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/blobs/sha256:8ec27332cf3d94f7ccd5d7b01281b5dc9398f62348ab3af29bd670339c06651b"
+  checksum: [
+    "sha256=8ec27332cf3d94f7ccd5d7b01281b5dc9398f62348ab3af29bd670339c06651b"
+  ]
+}
+extra-source "9b3e1862ba476ef844b2bf9e551e39c400620341fa999b882728fab9854b8f69--suite-sparse-7.8.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/manifests/7.8.2"
+}
+extra-source "d64022edfbb77ba0a523612ac1ea0b4797604c602f7134ddc0c12ab5227d6528--suite-sparse--7.8.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/blobs/sha256:f4d12773156e3db86538c5187d9297728ced5a07f2ffc30f87dee8eb892cdd04"
+  checksum: [
+    "sha256=f4d12773156e3db86538c5187d9297728ced5a07f2ffc30f87dee8eb892cdd04"
+  ]
+}
+extra-source "b9da145cb15ef97a75e465b3a9e836320b481b7f11acf516895ce6c93c42fcf2--suite-sparse--7.8.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/blobs/sha256:101c0d93d13fb9779565f3b02eb13089af399dfbc6a4d01a4e12e596a78c1e92"
+  checksum: [
+    "sha256=101c0d93d13fb9779565f3b02eb13089af399dfbc6a4d01a4e12e596a78c1e92"
+  ]
+}
+extra-source "b44ebc70a162d66dc4b279efc1162b2ffae41b38258feceb76a506a4c4ab85f6--suite-sparse--7.8.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/blobs/sha256:45e042e8e1d97e4f8da55939a078b964dc90004ceed67a5841c205a8aab3368b"
+  checksum: [
+    "sha256=45e042e8e1d97e4f8da55939a078b964dc90004ceed67a5841c205a8aab3368b"
+  ]
+}
+extra-source "42fb9acc70b55e2dd1097490571eedf3b0ea217f3c6271cd84868eaf3fb687e2--suite-sparse--7.8.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/blobs/sha256:4227902ef74ebd8f3251d05a1ddce2237be3a3fed21979029294c35c96807565"
+  checksum: [
+    "sha256=4227902ef74ebd8f3251d05a1ddce2237be3a3fed21979029294c35c96807565"
+  ]
+}
+extra-source "e20b3ea8c1b8fac57a2348035b5bd75b8fd83a595e9859ce2b96e9df651a777e--suite-sparse--7.8.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/blobs/sha256:d953801a4d4ceac93cf02900a2c5bb880874990a165509d632079ff4b77d5e5a"
+  checksum: [
+    "sha256=d953801a4d4ceac93cf02900a2c5bb880874990a165509d632079ff4b77d5e5a"
+  ]
+}
+extra-source "85926ff2fe03950db11ee4e3e5929ec3c5852904efd80d56f28ae44f8edf0432--suite-sparse--7.8.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/blobs/sha256:f95bbc949b8a8e956b17dad87e1fcb580cc85a66d8ee48f0cd9fd44d466288cd"
+  checksum: [
+    "sha256=f95bbc949b8a8e956b17dad87e1fcb580cc85a66d8ee48f0cd9fd44d466288cd"
+  ]
+}
+extra-source "266e94ee5a411a4cb404d29936be617762220259916ec5b9de10e25a7205138f--suite-sparse--7.8.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/suite-sparse/blobs/sha256:0ebd77d25fde68e00e37510b56cb6bf6b67dd895d8775a648a19f54e059a51d9"
+  checksum: [
+    "sha256=0ebd77d25fde68e00e37510b56cb6bf6b67dd895d8775a648a19f54e059a51d9"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+  "brew-metis" {= "5.1.0"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-lit" {= "18.1.8"}
+  "brew-libomp" {= "19.1.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "9b3e1862ba476ef844b2bf9e551e39c400620341fa999b882728fab9854b8f69--suite-sparse-7.8.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7877fcd22f9e05b0bed67a7197af8b9a5b2b79d85bb7bdcb3dc0ca35ccd51ef2--suite-sparse--7.8.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d64022edfbb77ba0a523612ac1ea0b4797604c602f7134ddc0c12ab5227d6528--suite-sparse--7.8.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b9da145cb15ef97a75e465b3a9e836320b481b7f11acf516895ce6c93c42fcf2--suite-sparse--7.8.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b44ebc70a162d66dc4b279efc1162b2ffae41b38258feceb76a506a4c4ab85f6--suite-sparse--7.8.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "42fb9acc70b55e2dd1097490571eedf3b0ea217f3c6271cd84868eaf3fb687e2--suite-sparse--7.8.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e20b3ea8c1b8fac57a2348035b5bd75b8fd83a595e9859ce2b96e9df651a777e--suite-sparse--7.8.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "85926ff2fe03950db11ee4e3e5929ec3c5852904efd80d56f28ae44f8edf0432--suite-sparse--7.8.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "266e94ee5a411a4cb404d29936be617762220259916ec5b9de10e25a7205138f--suite-sparse--7.8.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "suite-sparse" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "suite-sparse" ]
+]

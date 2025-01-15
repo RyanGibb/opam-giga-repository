@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C library for files containing sampled sound"
+description: """
+C library for files containing sampled sound"""
+extra-source "c0578e1d6936f100ac5f6619ecc293c085a5ad5f2afa1a3f6a939802ba66c85d--libsndfile--1.2.2.arm64_sequoia.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/blobs/sha256:10ef77f1b249abb5012c6bfa498aae3786894e4c4c475dfd4ac14a14562fe1dd"
+  checksum: [
+    "sha256=10ef77f1b249abb5012c6bfa498aae3786894e4c4c475dfd4ac14a14562fe1dd"
+  ]
+}
+extra-source "58af9df59ce6134e60a9cb6b90004acc85bb003e6ac643b7a299100bbb8272a3--libsndfile-1.2.2-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/manifests/1.2.2-2"
+}
+extra-source "2029b6137bca0859c198d27a280deb0819fbfd8884fa52347c892a94209f84e3--libsndfile--1.2.2.sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/blobs/sha256:95febe4d68e594a59a1b2d12e835263dd71bcd62cef9ba822ebc7c38c9142f28"
+  checksum: [
+    "sha256=95febe4d68e594a59a1b2d12e835263dd71bcd62cef9ba822ebc7c38c9142f28"
+  ]
+}
+extra-source "8ff1cc796c19140b1b6df5cfbdbdf156911812e4021707f851e0ecafa521aa73--libsndfile--1.2.2.arm64_sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/blobs/sha256:0e8ccf402d37e1be344af315c4b06c5faf3fb1307bce6d4a79d198ffbb9d2ad0"
+  checksum: [
+    "sha256=0e8ccf402d37e1be344af315c4b06c5faf3fb1307bce6d4a79d198ffbb9d2ad0"
+  ]
+}
+extra-source "916f1cb74432139a68a66ad2d4609b495fb41634cf0f2e3f57ef7ef27f3cce68--libsndfile--1.2.2.ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/blobs/sha256:0e4063508906f9adbd3cbae4abb6e20aba8b529631300a663d6ab9ef3e3095af"
+  checksum: [
+    "sha256=0e4063508906f9adbd3cbae4abb6e20aba8b529631300a663d6ab9ef3e3095af"
+  ]
+}
+extra-source "dc2098d1f4d3dd87850f649128e302c1f02dbe9becfb6bb030fa4797a6f7d488--libsndfile--1.2.2.arm64_ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/blobs/sha256:a78c706387bf29a9df4ac87f6642334d92191fd641d868a15058e98ebc5d62cf"
+  checksum: [
+    "sha256=a78c706387bf29a9df4ac87f6642334d92191fd641d868a15058e98ebc5d62cf"
+  ]
+}
+extra-source "047430d3167063c86cd0a9341248922341c307ce1aacaa63729187d3c99570b7--libsndfile--1.2.2.monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/blobs/sha256:608f24002de2227bbc10e170cc4d4d47d077981530185db47a98c25ad9f1bd99"
+  checksum: [
+    "sha256=608f24002de2227bbc10e170cc4d4d47d077981530185db47a98c25ad9f1bd99"
+  ]
+}
+extra-source "c3722cf50872349c9a752a8b355d7391be7937881ce1d77d4f2691d100a7ee38--libsndfile--1.2.2.arm64_monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/blobs/sha256:ff1229550d6d68c6de3258942addae073a9a6ffcfbd350716ada06a2573fb9c0"
+  checksum: [
+    "sha256=ff1229550d6d68c6de3258942addae073a9a6ffcfbd350716ada06a2573fb9c0"
+  ]
+}
+extra-source "48236f662818d63f890637aeb94cb9785722d9c008858f27a7c7ccd71e0877e0--libsndfile--1.2.2.x86_64_linux.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsndfile/blobs/sha256:208e7c63412df3a225c37c7305acf39a1eddac9e0983950051f937ed74960fbc"
+  checksum: [
+    "sha256=208e7c63412df3a225c37c7305acf39a1eddac9e0983950051f937ed74960fbc"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-flac" {= "1.4.3"}
+  "brew-lame" {= "3.100"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-mpg123" {= "1.32.7"}
+  "brew-opus" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "58af9df59ce6134e60a9cb6b90004acc85bb003e6ac643b7a299100bbb8272a3--libsndfile-1.2.2-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c0578e1d6936f100ac5f6619ecc293c085a5ad5f2afa1a3f6a939802ba66c85d--libsndfile--1.2.2.arm64_sequoia.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2029b6137bca0859c198d27a280deb0819fbfd8884fa52347c892a94209f84e3--libsndfile--1.2.2.sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8ff1cc796c19140b1b6df5cfbdbdf156911812e4021707f851e0ecafa521aa73--libsndfile--1.2.2.arm64_sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "916f1cb74432139a68a66ad2d4609b495fb41634cf0f2e3f57ef7ef27f3cce68--libsndfile--1.2.2.ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dc2098d1f4d3dd87850f649128e302c1f02dbe9becfb6bb030fa4797a6f7d488--libsndfile--1.2.2.arm64_ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "047430d3167063c86cd0a9341248922341c307ce1aacaa63729187d3c99570b7--libsndfile--1.2.2.monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c3722cf50872349c9a752a8b355d7391be7937881ce1d77d4f2691d100a7ee38--libsndfile--1.2.2.arm64_monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "48236f662818d63f890637aeb94cb9785722d9c008858f27a7c7ccd71e0877e0--libsndfile--1.2.2.x86_64_linux.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libsndfile" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libsndfile" ]
+]

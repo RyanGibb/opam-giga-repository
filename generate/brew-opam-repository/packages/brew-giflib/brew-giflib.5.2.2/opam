@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library and utilities for processing GIFs"
+description: """
+Library and utilities for processing GIFs"""
+extra-source "07f35b8e293a6ce36d7409b89b3ff0a17be62faca083c6c129091398e5c2e518--giflib--5.2.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:bf188a3d3e386e0b100831ca92173118c74645b033b56b4a7c148a91c2cfecb5"
+  checksum: [
+    "sha256=bf188a3d3e386e0b100831ca92173118c74645b033b56b4a7c148a91c2cfecb5"
+  ]
+}
+extra-source "283773c4d2db4fe867419d7eea6811a6417889d78fad8871041c07f49b22d2a1--giflib-5.2.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/manifests/5.2.2"
+}
+extra-source "af17051980333f84d67178c67cabbfa3d6db192c7ddb523e71a2f3ec6da59f44--giflib--5.2.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:40d390aab5bc396eb3efa0ae00987efd8c9eb8049239f709f486a879577a41ef"
+  checksum: [
+    "sha256=40d390aab5bc396eb3efa0ae00987efd8c9eb8049239f709f486a879577a41ef"
+  ]
+}
+extra-source "61fceb894824b3f4fea0b2743a7a12dc86c8e2fba947ec622ed665147b0f4835--giflib--5.2.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:c6b05aecad00588daf749dbde717fb6a03ce83fb9723b15f5786e7b974ef4c02"
+  checksum: [
+    "sha256=c6b05aecad00588daf749dbde717fb6a03ce83fb9723b15f5786e7b974ef4c02"
+  ]
+}
+extra-source "cc10e76af0975b29fda8d021b29ef10003507a3d514af4e670846f834cfd6a4f--giflib--5.2.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:b3d5cfa490fb61890dceb4b49510171783ab0e4dfc6f64f2f5f8ee1cecc08013"
+  checksum: [
+    "sha256=b3d5cfa490fb61890dceb4b49510171783ab0e4dfc6f64f2f5f8ee1cecc08013"
+  ]
+}
+extra-source "59e40aaf243561ac6bc684703e4a46ecf1a77ee258014486b9c47485f8625af3--giflib--5.2.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:f0c469da58fa4384fb67b249b4869f3daced90a8326e520aeb2a030af54ccc48"
+  checksum: [
+    "sha256=f0c469da58fa4384fb67b249b4869f3daced90a8326e520aeb2a030af54ccc48"
+  ]
+}
+extra-source "e33dd4b61504492877d62343af42a211284185d5265fc77a8d46cc5008054490--giflib--5.2.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:1b8828d26eeaccc1f3cefdbc41bd55551045d1ae55a18a1c96f4d27bd214df17"
+  checksum: [
+    "sha256=1b8828d26eeaccc1f3cefdbc41bd55551045d1ae55a18a1c96f4d27bd214df17"
+  ]
+}
+extra-source "12d11afcc31dc6a47578851292d5dd02c0c4a3f4420fb598bf5aef72f66a87ed--giflib--5.2.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:3089db3525957dedba2e0297997fe5bc6f3add879464102e48257ac12775cff7"
+  checksum: [
+    "sha256=3089db3525957dedba2e0297997fe5bc6f3add879464102e48257ac12775cff7"
+  ]
+}
+extra-source "a42532d35b570b521fd2730f2c3479b87734dc5fa8370ed40bdd6a5f94bc1dcd--giflib--5.2.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:db5d2754722a81e5a842a66236aeebe889ebae26b08329dbd506007b9e63339c"
+  checksum: [
+    "sha256=db5d2754722a81e5a842a66236aeebe889ebae26b08329dbd506007b9e63339c"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "283773c4d2db4fe867419d7eea6811a6417889d78fad8871041c07f49b22d2a1--giflib-5.2.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "07f35b8e293a6ce36d7409b89b3ff0a17be62faca083c6c129091398e5c2e518--giflib--5.2.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "af17051980333f84d67178c67cabbfa3d6db192c7ddb523e71a2f3ec6da59f44--giflib--5.2.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "61fceb894824b3f4fea0b2743a7a12dc86c8e2fba947ec622ed665147b0f4835--giflib--5.2.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cc10e76af0975b29fda8d021b29ef10003507a3d514af4e670846f834cfd6a4f--giflib--5.2.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "59e40aaf243561ac6bc684703e4a46ecf1a77ee258014486b9c47485f8625af3--giflib--5.2.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e33dd4b61504492877d62343af42a211284185d5265fc77a8d46cc5008054490--giflib--5.2.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "12d11afcc31dc6a47578851292d5dd02c0c4a3f4420fb598bf5aef72f66a87ed--giflib--5.2.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a42532d35b570b521fd2730f2c3479b87734dc5fa8370ed40bdd6a5f94bc1dcd--giflib--5.2.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "giflib" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "giflib" ]
+]

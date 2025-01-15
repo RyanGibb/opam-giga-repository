@@ -1,0 +1,94 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Audio processing library"
+description: """
+Audio processing library"""
+extra-source "25c66c5acc41684ed9f37a450762e56b7130416e59f2a6e6d95594fa37531e51--sound-touch--2.3.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/blobs/sha256:13611f86407c3a9c7f4504580c7827389c56000fda7a9fadd930ce7e88be445d"
+  checksum: [
+    "sha256=13611f86407c3a9c7f4504580c7827389c56000fda7a9fadd930ce7e88be445d"
+  ]
+}
+extra-source "c91f358fa52d6aee43698bf6d5c73244d651d978c0cc715db8efe89552f058da--sound-touch-2.3.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/manifests/2.3.3"
+}
+extra-source "b870da967c1a006d911c2dcc02ee5fbefe90b75474f566b4cfa0fd2f8ffd22f4--sound-touch--2.3.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/blobs/sha256:8c25300640bb261c7b370b5f285d3f296f57c76a71bc04bc4d055f0eae982124"
+  checksum: [
+    "sha256=8c25300640bb261c7b370b5f285d3f296f57c76a71bc04bc4d055f0eae982124"
+  ]
+}
+extra-source "eaaf16257de6af28dfb986f41c5a64c53dae2a74418aa2d8c46d27d9d5ec359e--sound-touch--2.3.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/blobs/sha256:1fe2f2065c864e1da3bac986c5222e9a55b131fadc53275de39f5361c6fd00fe"
+  checksum: [
+    "sha256=1fe2f2065c864e1da3bac986c5222e9a55b131fadc53275de39f5361c6fd00fe"
+  ]
+}
+extra-source "77a65a253f4ff9517988d63ebf592c412d57d933a58375f8f98ae8277092286e--sound-touch--2.3.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/blobs/sha256:7c5bdb94f9c5321743ac2db0f520ba0c8c97389729ae96ffbf428cd4fc1f69ad"
+  checksum: [
+    "sha256=7c5bdb94f9c5321743ac2db0f520ba0c8c97389729ae96ffbf428cd4fc1f69ad"
+  ]
+}
+extra-source "0d69f15b7057774e406bd34daa9c3a7f505c140229191f789577dc5915222188--sound-touch--2.3.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/blobs/sha256:8165de105d4da09709ace4e9bbe43767e9f7151f4cb69455cac3ccd6379cf480"
+  checksum: [
+    "sha256=8165de105d4da09709ace4e9bbe43767e9f7151f4cb69455cac3ccd6379cf480"
+  ]
+}
+extra-source "8881bf52898845136304074a53746f85770acdb9f11ce96cfa5ada8ec8bc4589--sound-touch--2.3.3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/blobs/sha256:c2f6ca0d546e6c96f0eb39cda31822667930c26f06df1eac5ad03119a188ed1e"
+  checksum: [
+    "sha256=c2f6ca0d546e6c96f0eb39cda31822667930c26f06df1eac5ad03119a188ed1e"
+  ]
+}
+extra-source "12afee839d37cb639e31ef44393eba365b194cd91f62f56e2bc16205b02e7a73--sound-touch--2.3.3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/blobs/sha256:5736ffb517df2c516cc9d46120888664e3707a797618e20e614bdff935866cc6"
+  checksum: [
+    "sha256=5736ffb517df2c516cc9d46120888664e3707a797618e20e614bdff935866cc6"
+  ]
+}
+extra-source "212013c5696ff3aa29cb919a2085bad87a2c068de74b327ff1ffd5bfdd3cf79e--sound-touch--2.3.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sound-touch/blobs/sha256:3162dd6ee8f3c0f99ec51c370328e92c4920b3ed4f1d4502d4c79d7733593ed8"
+  checksum: [
+    "sha256=3162dd6ee8f3c0f99ec51c370328e92c4920b3ed4f1d4502d4c79d7733593ed8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c91f358fa52d6aee43698bf6d5c73244d651d978c0cc715db8efe89552f058da--sound-touch-2.3.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "25c66c5acc41684ed9f37a450762e56b7130416e59f2a6e6d95594fa37531e51--sound-touch--2.3.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b870da967c1a006d911c2dcc02ee5fbefe90b75474f566b4cfa0fd2f8ffd22f4--sound-touch--2.3.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "eaaf16257de6af28dfb986f41c5a64c53dae2a74418aa2d8c46d27d9d5ec359e--sound-touch--2.3.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "77a65a253f4ff9517988d63ebf592c412d57d933a58375f8f98ae8277092286e--sound-touch--2.3.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0d69f15b7057774e406bd34daa9c3a7f505c140229191f789577dc5915222188--sound-touch--2.3.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8881bf52898845136304074a53746f85770acdb9f11ce96cfa5ada8ec8bc4589--sound-touch--2.3.3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "12afee839d37cb639e31ef44393eba365b194cd91f62f56e2bc16205b02e7a73--sound-touch--2.3.3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "212013c5696ff3aa29cb919a2085bad87a2c068de74b327ff1ffd5bfdd3cf79e--sound-touch--2.3.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sound-touch" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sound-touch" ]
+]

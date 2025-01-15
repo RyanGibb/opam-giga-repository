@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C websockets server library"
+description: """
+C websockets server library"""
+extra-source "aeab52eb048262442560196f69a65759033d09f0de0b7c8628701b1846f4c2e2--libwebsockets--4.3.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/blobs/sha256:62d77884d8a09ddd1d79f74aa1a82103c85953c2b90ee08299a5343ca1d8833c"
+  checksum: [
+    "sha256=62d77884d8a09ddd1d79f74aa1a82103c85953c2b90ee08299a5343ca1d8833c"
+  ]
+}
+extra-source "b7100874d1eb7b298c27624bee3b9cdd06f1deeae3011ff8148da30c42188769--libwebsockets-4.3.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/manifests/4.3.3"
+}
+extra-source "da45dfd4679af1691bf331b4bf1a5558a00bd967f9e606b41e93937ef55c3a66--libwebsockets--4.3.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/blobs/sha256:cef5f2e6af340223c19a5e59ee1469a8f5ffb677a7dce8201b23b554ff08bf1d"
+  checksum: [
+    "sha256=cef5f2e6af340223c19a5e59ee1469a8f5ffb677a7dce8201b23b554ff08bf1d"
+  ]
+}
+extra-source "ae63801209634559415c6ca1c9b86f5daa735f4aca1a8282eed984e79103645b--libwebsockets--4.3.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/blobs/sha256:72f689227f1633f1b5e71cf03c85375ec946fd88de6f11a5f9801e7b141a869e"
+  checksum: [
+    "sha256=72f689227f1633f1b5e71cf03c85375ec946fd88de6f11a5f9801e7b141a869e"
+  ]
+}
+extra-source "dc6a767cb0fbd78838d874113c8e720752a046276eaefffba945e273d40a31d0--libwebsockets--4.3.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/blobs/sha256:ad87e6e2c204feb0b8cd809660c0febaca9d7fc69e14dc095fe587960af13b9d"
+  checksum: [
+    "sha256=ad87e6e2c204feb0b8cd809660c0febaca9d7fc69e14dc095fe587960af13b9d"
+  ]
+}
+extra-source "4d92b73e45bf98a008d7233f818b151fa5e718a8e0d5eb083005f1024ff9ba7e--libwebsockets--4.3.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/blobs/sha256:577e551d2c2546b15a06ea63da365f64f9498d8087556b92bd2bf6571e198a8e"
+  checksum: [
+    "sha256=577e551d2c2546b15a06ea63da365f64f9498d8087556b92bd2bf6571e198a8e"
+  ]
+}
+extra-source "d14632b32c79ab0d3cff3fc116b484589584ef1012bef748f3faf7af9d3d4b3e--libwebsockets--4.3.3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/blobs/sha256:684e36d44f18efccb524ad8202740e465ece1a24e5d654954434c1caa0ccdb58"
+  checksum: [
+    "sha256=684e36d44f18efccb524ad8202740e465ece1a24e5d654954434c1caa0ccdb58"
+  ]
+}
+extra-source "ddf873b1268d0bec26e89bf0d006419acbcaad5499311e69269b72136e88677b--libwebsockets--4.3.3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/blobs/sha256:da25e134a7c8bf8d9c9c87f4cc6c264fc1f387bd7f8518735c07d337c6890fae"
+  checksum: [
+    "sha256=da25e134a7c8bf8d9c9c87f4cc6c264fc1f387bd7f8518735c07d337c6890fae"
+  ]
+}
+extra-source "c04b7c4f8208f3e9293aeea81065cd0b22dc2f266fdd11a8a35471d1617df9b0--libwebsockets--4.3.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libwebsockets/blobs/sha256:e8cbe679ed2c4a909afd481b3de3c779669b91fe4f57ee0cdd6c9614a9b02e58"
+  checksum: [
+    "sha256=e8cbe679ed2c4a909afd481b3de3c779669b91fe4f57ee0cdd6c9614a9b02e58"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-libuv" {= "1.48.0"}
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b7100874d1eb7b298c27624bee3b9cdd06f1deeae3011ff8148da30c42188769--libwebsockets-4.3.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "aeab52eb048262442560196f69a65759033d09f0de0b7c8628701b1846f4c2e2--libwebsockets--4.3.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "da45dfd4679af1691bf331b4bf1a5558a00bd967f9e606b41e93937ef55c3a66--libwebsockets--4.3.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ae63801209634559415c6ca1c9b86f5daa735f4aca1a8282eed984e79103645b--libwebsockets--4.3.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dc6a767cb0fbd78838d874113c8e720752a046276eaefffba945e273d40a31d0--libwebsockets--4.3.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4d92b73e45bf98a008d7233f818b151fa5e718a8e0d5eb083005f1024ff9ba7e--libwebsockets--4.3.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d14632b32c79ab0d3cff3fc116b484589584ef1012bef748f3faf7af9d3d4b3e--libwebsockets--4.3.3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ddf873b1268d0bec26e89bf0d006419acbcaad5499311e69269b72136e88677b--libwebsockets--4.3.3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c04b7c4f8208f3e9293aeea81065cd0b22dc2f266fdd11a8a35471d1617df9b0--libwebsockets--4.3.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libwebsockets" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libwebsockets" ]
+]

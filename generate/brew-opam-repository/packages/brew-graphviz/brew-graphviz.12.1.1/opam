@@ -1,0 +1,179 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Graph visualization software from AT&T and Bell Labs"
+description: """
+Graph visualization software from AT&T and Bell Labs"""
+extra-source "73e04e3f43a8a4e666bb692af7969c6cad31465c6e80dfbcafd48b0351a69cfe--graphviz--12.1.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:9ccd668bdff612a554d3c7e44c599f143e640479a98d1b03ef63c205d05f648b"
+  checksum: [
+    "sha256=9ccd668bdff612a554d3c7e44c599f143e640479a98d1b03ef63c205d05f648b"
+  ]
+}
+extra-source "05d8ae11e7831beef2310adc0b61ea58336733d99210b873290315578721fc49--graphviz-12.1.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/manifests/12.1.1"
+}
+extra-source "2df800ae9eda101d965ed30dc0c06a22812c2ca046204607d5708b2b6dddb633--graphviz--12.1.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:32045b867d4fba1e3fbfb64cf9b5f001aa5014e0987d7a9a9b0d4a589d4b6e7f"
+  checksum: [
+    "sha256=32045b867d4fba1e3fbfb64cf9b5f001aa5014e0987d7a9a9b0d4a589d4b6e7f"
+  ]
+}
+extra-source "6dc9f5793c984e29b1f7308d3c3613213a96c8f6613cb8e1b6fd32328ef65063--graphviz--12.1.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:dd45b9ea58f4baa6813c807ea0416f302faa5e1069f8a8143044d5bd89a3aa83"
+  checksum: [
+    "sha256=dd45b9ea58f4baa6813c807ea0416f302faa5e1069f8a8143044d5bd89a3aa83"
+  ]
+}
+extra-source "41cb36051e939a7cecd74150b35a1360269753495c0b2838946a7bed18260db7--graphviz--12.1.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:11d1e6b2726cf8283a30abdcb5540c5d08709d6b8dfed8ba61d7584b3373a41d"
+  checksum: [
+    "sha256=11d1e6b2726cf8283a30abdcb5540c5d08709d6b8dfed8ba61d7584b3373a41d"
+  ]
+}
+extra-source "102f18f611c8405f5d9b0f91cb03f215dd42415c58f837a966904b3b15ad7c4c--graphviz--12.1.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:94de859a11b2f236133b2f541c00a6bed2a730c81a4bc6d729930480009881a9"
+  checksum: [
+    "sha256=94de859a11b2f236133b2f541c00a6bed2a730c81a4bc6d729930480009881a9"
+  ]
+}
+extra-source "77f50286744e78933ad453d5a78cd5a5749f4a89c97d21360ce2d9205fc61250--graphviz--12.1.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:c32bfeb0330478975e6507829b92ea13adba64e644681451d3d8b7556c7adbf0"
+  checksum: [
+    "sha256=c32bfeb0330478975e6507829b92ea13adba64e644681451d3d8b7556c7adbf0"
+  ]
+}
+extra-source "6baf5a6b43ebf8cb741541ddd958ffa7f57f3ec9795e2ad2878fdffe3b305985--graphviz--12.1.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:5557ee94735171a98bb962f0f0a2026eab01f770a05572cdd7a0d75bb68e6c86"
+  checksum: [
+    "sha256=5557ee94735171a98bb962f0f0a2026eab01f770a05572cdd7a0d75bb68e6c86"
+  ]
+}
+extra-source "fbfcbb7cf08421ad094e24ecbe3040709d3a8209dc15f5e7923ff416444ebe61--graphviz--12.1.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:52d08a6c684768e83853e1210eef6b7404cc42487eae026146a9b00342505cec"
+  checksum: [
+    "sha256=52d08a6c684768e83853e1210eef6b7404cc42487eae026146a9b00342505cec"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-icu4c" {= "74.2"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+  "brew-aom" {= "3.10.0"}
+  "brew-libavif" {= "1.1.1"}
+  "brew-gd" {= "2.3.3"}
+  "brew-apr" {= "1.7.5"}
+  "brew-apr-util" {= "1.6.3"}
+  "brew-utf8proc" {= "2.9.0"}
+  "brew-scons" {= "4.8.1"}
+  "brew-swig" {= "4.2.1"}
+  "brew-subversion" {= "1.14.3"}
+  "brew-jasper" {= "4.2.4"}
+  "brew-netpbm" {= "11.02.10"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gts" {= "0.7.6"}
+  "brew-docutils" {= "0.21.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-gdk-pixbuf" {= "2.42.12"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-pango" {= "1.54.0"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-librsvg" {= "2.58.4"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "05d8ae11e7831beef2310adc0b61ea58336733d99210b873290315578721fc49--graphviz-12.1.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "73e04e3f43a8a4e666bb692af7969c6cad31465c6e80dfbcafd48b0351a69cfe--graphviz--12.1.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2df800ae9eda101d965ed30dc0c06a22812c2ca046204607d5708b2b6dddb633--graphviz--12.1.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6dc9f5793c984e29b1f7308d3c3613213a96c8f6613cb8e1b6fd32328ef65063--graphviz--12.1.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "41cb36051e939a7cecd74150b35a1360269753495c0b2838946a7bed18260db7--graphviz--12.1.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "102f18f611c8405f5d9b0f91cb03f215dd42415c58f837a966904b3b15ad7c4c--graphviz--12.1.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "77f50286744e78933ad453d5a78cd5a5749f4a89c97d21360ce2d9205fc61250--graphviz--12.1.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6baf5a6b43ebf8cb741541ddd958ffa7f57f3ec9795e2ad2878fdffe3b305985--graphviz--12.1.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fbfcbb7cf08421ad094e24ecbe3040709d3a8209dc15f5e7923ff416444ebe61--graphviz--12.1.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "graphviz" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "graphviz" ]
+]

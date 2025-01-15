@@ -1,0 +1,124 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for handling OpenGL function pointer management"
+description: """
+Library for handling OpenGL function pointer management"""
+extra-source "e33183d801a2f73dc5d5658f275d736a34b670c680ae3b67f0b32ffc89995ec5--libepoxy--1.5.10.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:8567ad4e5598374741b4762cbbff1a2aa57cf97947b4742304c49613b0abd419"
+  checksum: [
+    "sha256=8567ad4e5598374741b4762cbbff1a2aa57cf97947b4742304c49613b0abd419"
+  ]
+}
+extra-source "fd91321dc6032305294ad3c7c3851bc80f1505f18512e4753036c509ba4b4e2c--libepoxy-1.5.10.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/manifests/1.5.10"
+}
+extra-source "a185a39106b4e04bd6998b6d8b519084a51ee7c9fb0d9be890f9774d18c98d07--libepoxy--1.5.10.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:f0a692baa102940ea9ab31daef2dacb0ad2017d6049b4b58080417f900b0aeb9"
+  checksum: [
+    "sha256=f0a692baa102940ea9ab31daef2dacb0ad2017d6049b4b58080417f900b0aeb9"
+  ]
+}
+extra-source "1950ebf4c1d6a471c7e6ac6104db61f5af399b5fde2e147181e5ae866c925fd0--libepoxy--1.5.10.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:512616ae9cffdb0a7055c058775769b7bdb72c09bf6a31120db83db9b2937b8f"
+  checksum: [
+    "sha256=512616ae9cffdb0a7055c058775769b7bdb72c09bf6a31120db83db9b2937b8f"
+  ]
+}
+extra-source "65c3e6f8c304491477aea9c4e5f845b969ece8d965daee91df822676011ba081--libepoxy--1.5.10.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:91cca5d118a350e7105a303fd873915fc5f36c0a83be02101f3c742a52d0059c"
+  checksum: [
+    "sha256=91cca5d118a350e7105a303fd873915fc5f36c0a83be02101f3c742a52d0059c"
+  ]
+}
+extra-source "cd079721540335bf9f1b69753ecd37d7aa7da8fc8eca6893e39871fcea6ad6ce--libepoxy--1.5.10.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:52aeeb179036343d54c93b30413f41e7dfd524d2aeb8b7f590ef31bbb07bd657"
+  checksum: [
+    "sha256=52aeeb179036343d54c93b30413f41e7dfd524d2aeb8b7f590ef31bbb07bd657"
+  ]
+}
+extra-source "6939605bd2d9b4ddc028f75d485b5ff17264e9745f705412cc1b815c441e8a9a--libepoxy--1.5.10.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:9ec0246218c3d31cfce70e1a492f7cdc03884f638d9986be28bec0b769d6648b"
+  checksum: [
+    "sha256=9ec0246218c3d31cfce70e1a492f7cdc03884f638d9986be28bec0b769d6648b"
+  ]
+}
+extra-source "eba651834e32829c3b9ef943f9a8f46db1866c31cf47223c8b9cbae18ef02588--libepoxy--1.5.10.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:a5164efc11c9f11adaba87595c6a12cadf12671e860e9b38d11fa3081c7b2c1c"
+  checksum: [
+    "sha256=a5164efc11c9f11adaba87595c6a12cadf12671e860e9b38d11fa3081c7b2c1c"
+  ]
+}
+extra-source "9fc33a8bb70e3cda5858dc7d80de1853d2611dd47b9e56a7afba728654ca099c--libepoxy--1.5.10.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:c398ece0b10339f409d48d3b06866285f7a58294a3dca6d9c88e798a35af6b36"
+  checksum: [
+    "sha256=c398ece0b10339f409d48d3b06866285f7a58294a3dca6d9c88e798a35af6b36"
+  ]
+}
+extra-source "d7d70875ea2cc95d2456563cbc0f9305c9bc38e06f4c349c0b5266fbc6025248--libepoxy--1.5.10.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:839cc3388516586debdc98d72a3fb4b8237ee432a5be7262e8c835367093f29d"
+  checksum: [
+    "sha256=839cc3388516586debdc98d72a3fb4b8237ee432a5be7262e8c835367093f29d"
+  ]
+}
+extra-source "cc5c0641833579cd6201eed3758ad9db59f71424c38f23c0427b7390748109f8--libepoxy--1.5.10.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:2b5537e288b18b6545d0cf78229d5c2b695d0d2e51b627e21e77573c88217b42"
+  checksum: [
+    "sha256=2b5537e288b18b6545d0cf78229d5c2b695d0d2e51b627e21e77573c88217b42"
+  ]
+}
+extra-source "cc4e0578eb067464d195adb339a0704ffa9996663994537006c2ade96468b63d--libepoxy--1.5.10.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libepoxy/blobs/sha256:8798e1682f355df0c5009b8b968ecb2b9bd447f32683ad21f10e68ea60320819"
+  checksum: [
+    "sha256=8798e1682f355df0c5009b8b968ecb2b9bd447f32683ad21f10e68ea60320819"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "fd91321dc6032305294ad3c7c3851bc80f1505f18512e4753036c509ba4b4e2c--libepoxy-1.5.10.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e33183d801a2f73dc5d5658f275d736a34b670c680ae3b67f0b32ffc89995ec5--libepoxy--1.5.10.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a185a39106b4e04bd6998b6d8b519084a51ee7c9fb0d9be890f9774d18c98d07--libepoxy--1.5.10.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1950ebf4c1d6a471c7e6ac6104db61f5af399b5fde2e147181e5ae866c925fd0--libepoxy--1.5.10.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "65c3e6f8c304491477aea9c4e5f845b969ece8d965daee91df822676011ba081--libepoxy--1.5.10.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cd079721540335bf9f1b69753ecd37d7aa7da8fc8eca6893e39871fcea6ad6ce--libepoxy--1.5.10.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6939605bd2d9b4ddc028f75d485b5ff17264e9745f705412cc1b815c441e8a9a--libepoxy--1.5.10.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "eba651834e32829c3b9ef943f9a8f46db1866c31cf47223c8b9cbae18ef02588--libepoxy--1.5.10.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9fc33a8bb70e3cda5858dc7d80de1853d2611dd47b9e56a7afba728654ca099c--libepoxy--1.5.10.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d7d70875ea2cc95d2456563cbc0f9305c9bc38e06f4c349c0b5266fbc6025248--libepoxy--1.5.10.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cc5c0641833579cd6201eed3758ad9db59f71424c38f23c0427b7390748109f8--libepoxy--1.5.10.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cc4e0578eb067464d195adb339a0704ffa9996663994537006c2ade96468b63d--libepoxy--1.5.10.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libepoxy" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libepoxy" ]
+]

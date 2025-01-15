@@ -1,0 +1,131 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Smart font renderer for non-Roman scripts"
+description: """
+Smart font renderer for non-Roman scripts"""
+extra-source "10c582fbc90a73ea6ab3c38cc4617bf203d5e91eaebca97199b5f3be0b77e851--graphite2--1.3.14.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:150b286ab4cfc8696fcd3fa4e7fa24c9825f024ef991899850b850e6f334100f"
+  checksum: [
+    "sha256=150b286ab4cfc8696fcd3fa4e7fa24c9825f024ef991899850b850e6f334100f"
+  ]
+}
+extra-source "bbb4dd2ef1846301d1eb08053e19e11ca9c780f93f4d3b2d638fd94a9bf54a0c--graphite2-1.3.14.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/manifests/1.3.14"
+}
+extra-source "f1bd59181d3c8186b52b744bbe8bf9f851ba71f66a1fb83e45241c48dc973ede--graphite2--1.3.14.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:afd3067ded2f8fb2ae3400d908a271825c5f7013f089312949ac9576b2a26d96"
+  checksum: [
+    "sha256=afd3067ded2f8fb2ae3400d908a271825c5f7013f089312949ac9576b2a26d96"
+  ]
+}
+extra-source "5d39f668b08c6fec5f362a00b9172cdb2612b9b50945e236bbff93abda225564--graphite2--1.3.14.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:4cdee055db9958e12662c53661fab627057d3553974d15b289e2955b439f4a9d"
+  checksum: [
+    "sha256=4cdee055db9958e12662c53661fab627057d3553974d15b289e2955b439f4a9d"
+  ]
+}
+extra-source "c725d86366abee2ec29698d4bccebcfe81f7ebc42b3f45063a992af311c7903b--graphite2--1.3.14.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:db73b7ef0318611d6dcf795cd4e43c5b62c5798190bc634dc94c6530e35afc46"
+  checksum: [
+    "sha256=db73b7ef0318611d6dcf795cd4e43c5b62c5798190bc634dc94c6530e35afc46"
+  ]
+}
+extra-source "9f2bba1173f565d3d7ef1ab53da317f9a8b737a7f47f0a71d58c0ddec1e7f899--graphite2--1.3.14.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:3ec770419ed60d211670f73bf078512824151b460c5c37740ee8b83e3dbb8357"
+  checksum: [
+    "sha256=3ec770419ed60d211670f73bf078512824151b460c5c37740ee8b83e3dbb8357"
+  ]
+}
+extra-source "7abcc1dbf9b082540b8aed251a2f64ab70524440a409aaa0f108c92922aadf2f--graphite2--1.3.14.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:3469eaae77f6c9cb802730d060f26fd0bd56d390674490dc8b17c4624705df0e"
+  checksum: [
+    "sha256=3469eaae77f6c9cb802730d060f26fd0bd56d390674490dc8b17c4624705df0e"
+  ]
+}
+extra-source "4cd6ad842f6a368e94a572707bb2e9e74934aee2a325cf2e28c0b81cd5f0b474--graphite2--1.3.14.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:2254ea02844280605c79ab735ce1c5eb4a943fe897c3119611de54169130a88e"
+  checksum: [
+    "sha256=2254ea02844280605c79ab735ce1c5eb4a943fe897c3119611de54169130a88e"
+  ]
+}
+extra-source "b1aacf8b3d392768d5366f12c5a1bc18577d8d3574c7f73c80e2819de6f0bc9c--graphite2--1.3.14.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:ddc468a1eec491aed5d5b05b22d0cffa38b6059d87eab747301011507fcf6366"
+  checksum: [
+    "sha256=ddc468a1eec491aed5d5b05b22d0cffa38b6059d87eab747301011507fcf6366"
+  ]
+}
+extra-source "a8b3ab5336902ba107565060130e47e930e1f4a1f50f3133a9e7a9d4363cc311--graphite2--1.3.14.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:544e2c344f6c0a7c2c3cb6541150f0d0d91cd1100460dac9c6a08578823f91c3"
+  checksum: [
+    "sha256=544e2c344f6c0a7c2c3cb6541150f0d0d91cd1100460dac9c6a08578823f91c3"
+  ]
+}
+extra-source "e2465564fd695adac5a8e1c01edfd644443b72a0f8b08531a1422be6c4d31b5f--graphite2--1.3.14.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:0831f474c920b66bbeab3f93a91fa019b82bfffcdd40e369fdab76372700e980"
+  checksum: [
+    "sha256=0831f474c920b66bbeab3f93a91fa019b82bfffcdd40e369fdab76372700e980"
+  ]
+}
+extra-source "b3bbeea96897077e66890c74086510d4aa8bb979710ca08edefdaf10d1c9ee04--graphite2--1.3.14.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:2f3abb971be03141e9eea54b87c6861d72865bd76fde73ae3161d64c40d51cd9"
+  checksum: [
+    "sha256=2f3abb971be03141e9eea54b87c6861d72865bd76fde73ae3161d64c40d51cd9"
+  ]
+}
+extra-source "664e86a77e8680a6e8efeaa26ad2661406e526a8fa893530f719500e5cee5c0e--graphite2--1.3.14.high_sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:62e39dce0ae0440ac164edaab6e1351520bc5414ad509fc0b8d5c890500785bd"
+  checksum: [
+    "sha256=62e39dce0ae0440ac164edaab6e1351520bc5414ad509fc0b8d5c890500785bd"
+  ]
+}
+extra-source "989209ff4e3184ca932b34747ddb2be2667405f91883affec53952d73590a99c--graphite2--1.3.14.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphite2/blobs/sha256:0e811b079268bc99d1b6253fc0c979e76325e91e294fd0596349dd0285e847b9"
+  checksum: [
+    "sha256=0e811b079268bc99d1b6253fc0c979e76325e91e294fd0596349dd0285e847b9"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "bbb4dd2ef1846301d1eb08053e19e11ca9c780f93f4d3b2d638fd94a9bf54a0c--graphite2-1.3.14.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "10c582fbc90a73ea6ab3c38cc4617bf203d5e91eaebca97199b5f3be0b77e851--graphite2--1.3.14.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f1bd59181d3c8186b52b744bbe8bf9f851ba71f66a1fb83e45241c48dc973ede--graphite2--1.3.14.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5d39f668b08c6fec5f362a00b9172cdb2612b9b50945e236bbff93abda225564--graphite2--1.3.14.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c725d86366abee2ec29698d4bccebcfe81f7ebc42b3f45063a992af311c7903b--graphite2--1.3.14.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9f2bba1173f565d3d7ef1ab53da317f9a8b737a7f47f0a71d58c0ddec1e7f899--graphite2--1.3.14.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7abcc1dbf9b082540b8aed251a2f64ab70524440a409aaa0f108c92922aadf2f--graphite2--1.3.14.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4cd6ad842f6a368e94a572707bb2e9e74934aee2a325cf2e28c0b81cd5f0b474--graphite2--1.3.14.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b1aacf8b3d392768d5366f12c5a1bc18577d8d3574c7f73c80e2819de6f0bc9c--graphite2--1.3.14.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a8b3ab5336902ba107565060130e47e930e1f4a1f50f3133a9e7a9d4363cc311--graphite2--1.3.14.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e2465564fd695adac5a8e1c01edfd644443b72a0f8b08531a1422be6c4d31b5f--graphite2--1.3.14.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b3bbeea96897077e66890c74086510d4aa8bb979710ca08edefdaf10d1c9ee04--graphite2--1.3.14.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "664e86a77e8680a6e8efeaa26ad2661406e526a8fa893530f719500e5cee5c0e--graphite2--1.3.14.high_sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "989209ff4e3184ca932b34747ddb2be2667405f91883affec53952d73590a99c--graphite2--1.3.14.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "graphite2" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "graphite2" ]
+]

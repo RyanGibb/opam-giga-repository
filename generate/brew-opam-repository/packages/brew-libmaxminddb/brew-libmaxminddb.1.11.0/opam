@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C library for the MaxMind DB file format"
+description: """
+C library for the MaxMind DB file format"""
+extra-source "f66df7a83a978570d65b5bbe801293c3772cc5330de35976c938c6cf72a0568a--libmaxminddb--1.11.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/blobs/sha256:43bb8e8a6415a6a8c876e862b172600de6aebf567d2b93679ea4c9635717a241"
+  checksum: [
+    "sha256=43bb8e8a6415a6a8c876e862b172600de6aebf567d2b93679ea4c9635717a241"
+  ]
+}
+extra-source "548ea3b55a870407633c6086fc278dbf44685895214d2e366c3cbfc8b10a6704--libmaxminddb-1.11.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/manifests/1.11.0"
+}
+extra-source "35efbab4f9378547cf50bc2dede5c84f02abdb52eae9a80dd501917a1bd06cb2--libmaxminddb--1.11.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/blobs/sha256:584958143478cff5e55608958b26e823dfa193b2c0c896539a7ea35fdeb7e379"
+  checksum: [
+    "sha256=584958143478cff5e55608958b26e823dfa193b2c0c896539a7ea35fdeb7e379"
+  ]
+}
+extra-source "01671070f770e85b0913f7fc0f2b446b3a67067a46419338a6880a8e8136008b--libmaxminddb--1.11.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/blobs/sha256:a7c74a9f9e34cc8b67250f02c5d022f214cb87e7dc0546913f5673140058c98a"
+  checksum: [
+    "sha256=a7c74a9f9e34cc8b67250f02c5d022f214cb87e7dc0546913f5673140058c98a"
+  ]
+}
+extra-source "b723b735d1f3878e61e9e00fdb7d97d5759b3debe9feac5c425372041aeed5b1--libmaxminddb--1.11.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/blobs/sha256:a879b5eded505525e03c0f9bb267828969219e1bc30f989d3017bbaa85593830"
+  checksum: [
+    "sha256=a879b5eded505525e03c0f9bb267828969219e1bc30f989d3017bbaa85593830"
+  ]
+}
+extra-source "5bdf74880580aec6f46c55ac3442b3dcb12edad1ebd065440cfee81b0771f2a6--libmaxminddb--1.11.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/blobs/sha256:2bd3e2fc92434f37e9aafb939980db58958ff77e279fb61778ef3998a97b721a"
+  checksum: [
+    "sha256=2bd3e2fc92434f37e9aafb939980db58958ff77e279fb61778ef3998a97b721a"
+  ]
+}
+extra-source "855e04f22ac77ed0a60cefc170cb68f6fbd191f795ba05cdf202099a6cfd22db--libmaxminddb--1.11.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/blobs/sha256:ac9b42405f8bd7453b7ed914fdf183db3d98bcf8f7ff333a380cbb3c1dbd177b"
+  checksum: [
+    "sha256=ac9b42405f8bd7453b7ed914fdf183db3d98bcf8f7ff333a380cbb3c1dbd177b"
+  ]
+}
+extra-source "f1d41019747cc162e16dbab06dd104f7925c34735dddc5f3ee1579e7066cb6d7--libmaxminddb--1.11.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/blobs/sha256:04eccd27e4c727935582e41dc01b773c98d39cedd5210ff9be8d85938e10f7ef"
+  checksum: [
+    "sha256=04eccd27e4c727935582e41dc01b773c98d39cedd5210ff9be8d85938e10f7ef"
+  ]
+}
+extra-source "4700ee619938919b67b5dfa7c62cebc1fa97bbc61559fa5abe8efcc13c50ca35--libmaxminddb--1.11.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmaxminddb/blobs/sha256:d267f70b18104171e39c55d8d08a6ebdd3e0e74205eff1b80611507e14f9880a"
+  checksum: [
+    "sha256=d267f70b18104171e39c55d8d08a6ebdd3e0e74205eff1b80611507e14f9880a"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "548ea3b55a870407633c6086fc278dbf44685895214d2e366c3cbfc8b10a6704--libmaxminddb-1.11.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f66df7a83a978570d65b5bbe801293c3772cc5330de35976c938c6cf72a0568a--libmaxminddb--1.11.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "35efbab4f9378547cf50bc2dede5c84f02abdb52eae9a80dd501917a1bd06cb2--libmaxminddb--1.11.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "01671070f770e85b0913f7fc0f2b446b3a67067a46419338a6880a8e8136008b--libmaxminddb--1.11.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b723b735d1f3878e61e9e00fdb7d97d5759b3debe9feac5c425372041aeed5b1--libmaxminddb--1.11.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5bdf74880580aec6f46c55ac3442b3dcb12edad1ebd065440cfee81b0771f2a6--libmaxminddb--1.11.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "855e04f22ac77ed0a60cefc170cb68f6fbd191f795ba05cdf202099a6cfd22db--libmaxminddb--1.11.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f1d41019747cc162e16dbab06dd104f7925c34735dddc5f3ee1579e7066cb6d7--libmaxminddb--1.11.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4700ee619938919b67b5dfa7c62cebc1fa97bbc61559fa5abe8efcc13c50ca35--libmaxminddb--1.11.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libmaxminddb" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libmaxminddb" ]
+]

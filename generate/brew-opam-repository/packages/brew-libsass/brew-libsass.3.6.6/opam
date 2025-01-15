@@ -1,0 +1,94 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C implementation of a Sass compiler"
+description: """
+C implementation of a Sass compiler"""
+extra-source "291f0c182e67a09654ba350d32409ca64159b787e12db88996a11f7c0116f2d9--libsass--3.6.6.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/blobs/sha256:d5f0835bddfab893cf537c1cb10f42a6abbaa04100954223de905a7f3879a581"
+  checksum: [
+    "sha256=d5f0835bddfab893cf537c1cb10f42a6abbaa04100954223de905a7f3879a581"
+  ]
+}
+extra-source "3510d542cca39ff08b35dcff894ca7285c09babaa0e272275d4cfb456a82b577--libsass-3.6.6.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/manifests/3.6.6"
+}
+extra-source "94000642650b84c1b2b2a50a26c566600b36f725aea7961f98305b1effab7548--libsass--3.6.6.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/blobs/sha256:cf3dc9646ee1c1de9fbb48df62623c02267d77ca3fda6c78a9acc7b893387ec9"
+  checksum: [
+    "sha256=cf3dc9646ee1c1de9fbb48df62623c02267d77ca3fda6c78a9acc7b893387ec9"
+  ]
+}
+extra-source "d9a477d4dd624b1b468e8c60b9b20f2eebaca0bd70b2a21b78d3f104cb783d1c--libsass--3.6.6.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/blobs/sha256:a5262b92c5ef6c48e579002e9705e33a4e69c47ba9004ac9b13843506f314e8f"
+  checksum: [
+    "sha256=a5262b92c5ef6c48e579002e9705e33a4e69c47ba9004ac9b13843506f314e8f"
+  ]
+}
+extra-source "9ef7c6b29cfc79189923729c7a136962058ad03b02100d71f3d300e35c632393--libsass--3.6.6.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/blobs/sha256:aa2acc65e1a7804b8df89f73a9c649b30487a4c0a42e08b45a184a4f727c9c86"
+  checksum: [
+    "sha256=aa2acc65e1a7804b8df89f73a9c649b30487a4c0a42e08b45a184a4f727c9c86"
+  ]
+}
+extra-source "790698593f88a2366ebee5f620e225d49fad8d30baa405766617f4d4806d8d64--libsass--3.6.6.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/blobs/sha256:f16e4b941d9f7b15af8126904348ff2c82a486a08c358827518a35a341b9954e"
+  checksum: [
+    "sha256=f16e4b941d9f7b15af8126904348ff2c82a486a08c358827518a35a341b9954e"
+  ]
+}
+extra-source "25e707c5d1d904b394e5c944942c1528e3de89b4ffce58f29e3eb34f1193da03--libsass--3.6.6.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/blobs/sha256:ed5dd1003cce5b3d47138cb192f4018482e381e6b18d4b63a980fb2400bf737c"
+  checksum: [
+    "sha256=ed5dd1003cce5b3d47138cb192f4018482e381e6b18d4b63a980fb2400bf737c"
+  ]
+}
+extra-source "027fdea383647c1472b88729d95126f015e88a1b5f313b5c216be85ad7ee2976--libsass--3.6.6.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/blobs/sha256:0a025c9fa92be85ae22f55df1e2c0cdd4536ef648fd4343a5c20077557276241"
+  checksum: [
+    "sha256=0a025c9fa92be85ae22f55df1e2c0cdd4536ef648fd4343a5c20077557276241"
+  ]
+}
+extra-source "a2eecc897e32913ae3263cdac3473ff221e7443c70d2ff74e2472f23d04177df--libsass--3.6.6.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsass/blobs/sha256:091841d5a1c742f6574ef14d6bb952d54409c7fcbc2085222a11b18eee0e38ba"
+  checksum: [
+    "sha256=091841d5a1c742f6574ef14d6bb952d54409c7fcbc2085222a11b18eee0e38ba"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3510d542cca39ff08b35dcff894ca7285c09babaa0e272275d4cfb456a82b577--libsass-3.6.6.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "291f0c182e67a09654ba350d32409ca64159b787e12db88996a11f7c0116f2d9--libsass--3.6.6.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "94000642650b84c1b2b2a50a26c566600b36f725aea7961f98305b1effab7548--libsass--3.6.6.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d9a477d4dd624b1b468e8c60b9b20f2eebaca0bd70b2a21b78d3f104cb783d1c--libsass--3.6.6.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9ef7c6b29cfc79189923729c7a136962058ad03b02100d71f3d300e35c632393--libsass--3.6.6.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "790698593f88a2366ebee5f620e225d49fad8d30baa405766617f4d4806d8d64--libsass--3.6.6.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "25e707c5d1d904b394e5c944942c1528e3de89b4ffce58f29e3eb34f1193da03--libsass--3.6.6.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "027fdea383647c1472b88729d95126f015e88a1b5f313b5c216be85ad7ee2976--libsass--3.6.6.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a2eecc897e32913ae3263cdac3473ff221e7443c70d2ff74e2472f23d04177df--libsass--3.6.6.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libsass" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libsass" ]
+]

@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Common error values for all GnuPG components"
+description: """
+Common error values for all GnuPG components"""
+extra-source "56768a3969ae41795d8ea7f6689c1b2dec08492e10d25088134e1a3002757271--libgpg-error--1.50.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:bd6a0df1e2dc2a571fd5b6301bc52b60c0406fbb6eec9a819ff191c0c8873c5b"
+  checksum: [
+    "sha256=bd6a0df1e2dc2a571fd5b6301bc52b60c0406fbb6eec9a819ff191c0c8873c5b"
+  ]
+}
+extra-source "2499440d84f2d844a3ae097440629f300c8a15628353ff1332eb0d1376b1f8bf--libgpg-error-1.50.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/manifests/1.50"
+}
+extra-source "a2c6b93268a9162a024b086654382a83d52319328d6134dd5649a65c60329cef--libgpg-error--1.50.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:842bb37e5e6354e8c9b9a023abcd7f81c3d752adaccc74e5f8e393290c321cc9"
+  checksum: [
+    "sha256=842bb37e5e6354e8c9b9a023abcd7f81c3d752adaccc74e5f8e393290c321cc9"
+  ]
+}
+extra-source "2481585fad28e27a625e06485d50598567ccfdd50d155d1d497d71e1a7cd05d6--libgpg-error--1.50.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:ca69e2f2ede55c1ec6ca0775514d8fcf1325929c2075cba5ce6f13c7beb48ee6"
+  checksum: [
+    "sha256=ca69e2f2ede55c1ec6ca0775514d8fcf1325929c2075cba5ce6f13c7beb48ee6"
+  ]
+}
+extra-source "93809001a5a1caa1e881cacea7bf25c17912f6073ba7f562df2cff6237c1bbcb--libgpg-error--1.50.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:3539b7806b7dbcadaf1fbbce13601766ef509c53a8efbbfc09ab7ff4d8b9fb49"
+  checksum: [
+    "sha256=3539b7806b7dbcadaf1fbbce13601766ef509c53a8efbbfc09ab7ff4d8b9fb49"
+  ]
+}
+extra-source "51deaa8900856cb30d2ca54fee674bb04a0f57b96636550061346168ab308565--libgpg-error--1.50.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:39a574d760ce7edb87090cd0d40496dbdb44c54937e92aabdca28dacff160034"
+  checksum: [
+    "sha256=39a574d760ce7edb87090cd0d40496dbdb44c54937e92aabdca28dacff160034"
+  ]
+}
+extra-source "74e8e3ff13178a9e9fa590a92914ababb2a31c02c72da49d65cd630c869cfd75--libgpg-error--1.50.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:91e502d42e3f42a5c3c5bf8d5dbb326bea645fce31113805a45a6f84491d1758"
+  checksum: [
+    "sha256=91e502d42e3f42a5c3c5bf8d5dbb326bea645fce31113805a45a6f84491d1758"
+  ]
+}
+extra-source "71282cae0ba2a84fa02d0dd40c859351633c9f029de9de650124aaf158a76408--libgpg-error--1.50.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:6669e9645a1d9469e2b9e51905d8294e6fab2aca452f00044da8d226146f58f2"
+  checksum: [
+    "sha256=6669e9645a1d9469e2b9e51905d8294e6fab2aca452f00044da8d226146f58f2"
+  ]
+}
+extra-source "1048bd045d3ffd4831a4d1d0058d97a64fd550faf80732f31ed4f48605870efa--libgpg-error--1.50.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libgpg-error/blobs/sha256:c242b00ecb9d4d2e98604bfba093161f6f275322cb015d83c5b28d51caf0a26d"
+  checksum: [
+    "sha256=c242b00ecb9d4d2e98604bfba093161f6f275322cb015d83c5b28d51caf0a26d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2499440d84f2d844a3ae097440629f300c8a15628353ff1332eb0d1376b1f8bf--libgpg-error-1.50.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "56768a3969ae41795d8ea7f6689c1b2dec08492e10d25088134e1a3002757271--libgpg-error--1.50.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a2c6b93268a9162a024b086654382a83d52319328d6134dd5649a65c60329cef--libgpg-error--1.50.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2481585fad28e27a625e06485d50598567ccfdd50d155d1d497d71e1a7cd05d6--libgpg-error--1.50.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "93809001a5a1caa1e881cacea7bf25c17912f6073ba7f562df2cff6237c1bbcb--libgpg-error--1.50.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "51deaa8900856cb30d2ca54fee674bb04a0f57b96636550061346168ab308565--libgpg-error--1.50.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "74e8e3ff13178a9e9fa590a92914ababb2a31c02c72da49d65cd630c869cfd75--libgpg-error--1.50.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "71282cae0ba2a84fa02d0dd40c859351633c9f029de9de650124aaf158a76408--libgpg-error--1.50.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1048bd045d3ffd4831a4d1d0058d97a64fd550faf80732f31ed4f48605870efa--libgpg-error--1.50.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libgpg-error" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libgpg-error" ]
+]

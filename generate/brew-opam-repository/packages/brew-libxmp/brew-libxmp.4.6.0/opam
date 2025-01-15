@@ -1,0 +1,106 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C library for playback of module music (MOD, S3M, IT, etc)"
+description: """
+C library for playback of module music (MOD, S3M, IT, etc)"""
+extra-source "a64938b25ae5fceed7653d9a5c033c749ced6c2bf93b5c8baa4bbbe6028f6d37--libxmp--4.6.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:ba1d5d911bfaed579ca8145659fba1c8c42ba0c398cfd2cd606188ade06a00c7"
+  checksum: [
+    "sha256=ba1d5d911bfaed579ca8145659fba1c8c42ba0c398cfd2cd606188ade06a00c7"
+  ]
+}
+extra-source "9c63a7020f9282bd970de5d51f2bd92889c5db2932584eb7469f84d048b984ad--libxmp-4.6.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/manifests/4.6.0"
+}
+extra-source "e8c7f8686d2fd9afa1cf6973ba6831f3e7a528739e17390bd77953b8151e3b5b--libxmp--4.6.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:93ba8ff0aad9a3eb3593c800a5b5f035c6ae88345226a455f7eb0bf8e509d1aa"
+  checksum: [
+    "sha256=93ba8ff0aad9a3eb3593c800a5b5f035c6ae88345226a455f7eb0bf8e509d1aa"
+  ]
+}
+extra-source "f0e2b89d7447400289dec541421ee7ff9fac6e4364ecb76f280bf359bea5c0d0--libxmp--4.6.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:94c26999911fa5ebc6f479d16379a978991b4e9d27a32ae32ffe1009204e5bbd"
+  checksum: [
+    "sha256=94c26999911fa5ebc6f479d16379a978991b4e9d27a32ae32ffe1009204e5bbd"
+  ]
+}
+extra-source "70d97f2c2ede16a48e9d7eb2d7fbf125919acc31636eb4d1ead899e8139cad46--libxmp--4.6.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:a91c6641aeb8c38f4ad918552e2d800b11a71c079547e5fa4aaa191b2c90cb1b"
+  checksum: [
+    "sha256=a91c6641aeb8c38f4ad918552e2d800b11a71c079547e5fa4aaa191b2c90cb1b"
+  ]
+}
+extra-source "311db615a8f3cb4868f9d77e06f00fcfb34f9ece35af98f7b3a674704d8c4fa7--libxmp--4.6.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:029903dce869ca4f3f82fb7b01a8b0212e295cd196492054e91406f33854a2e6"
+  checksum: [
+    "sha256=029903dce869ca4f3f82fb7b01a8b0212e295cd196492054e91406f33854a2e6"
+  ]
+}
+extra-source "21a21577dbe0edb9d036103925cb53a278aa5ed5042aa61356d861f82c41b91f--libxmp--4.6.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:86f47ba5a880837e146fcceff8f84e871f036819c113b37bfee14030c4f14705"
+  checksum: [
+    "sha256=86f47ba5a880837e146fcceff8f84e871f036819c113b37bfee14030c4f14705"
+  ]
+}
+extra-source "2c3a6f0daac9586afc776ec2b534a2701db20dd4d939c5548ec2d41a91ece46e--libxmp--4.6.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:9c57ab8f4034df4437ab073dcee4620619ec871bafef40056211040cf4a5b39e"
+  checksum: [
+    "sha256=9c57ab8f4034df4437ab073dcee4620619ec871bafef40056211040cf4a5b39e"
+  ]
+}
+extra-source "b1eac9c21ec9fe91f0a1287b9aa2fa2529faf0dfc8251d1353766d0c7ccd319d--libxmp--4.6.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:2f5fbbafd7ab69435770417e3f4a8733278a9c1c5ffef54917ac0959e12b244a"
+  checksum: [
+    "sha256=2f5fbbafd7ab69435770417e3f4a8733278a9c1c5ffef54917ac0959e12b244a"
+  ]
+}
+extra-source "dae89cd7227631428a241d29e7f2176c03509674a8db8decaa4566c211e36a9a--libxmp--4.6.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:dae1b586020c2313cb250cbae91dcf6d1c7460ba41140651a6adbcf36c4d5b5b"
+  checksum: [
+    "sha256=dae1b586020c2313cb250cbae91dcf6d1c7460ba41140651a6adbcf36c4d5b5b"
+  ]
+}
+extra-source "6c823cb8e156d93bbf8de2e578c1d1f0f64381c0a38639159e9cdc75df0efac1--libxmp--4.6.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxmp/blobs/sha256:aeaed38946aed912b19cbd140270eeea27f60e5735b7840b64a6e51d836463b6"
+  checksum: [
+    "sha256=aeaed38946aed912b19cbd140270eeea27f60e5735b7840b64a6e51d836463b6"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "9c63a7020f9282bd970de5d51f2bd92889c5db2932584eb7469f84d048b984ad--libxmp-4.6.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "a64938b25ae5fceed7653d9a5c033c749ced6c2bf93b5c8baa4bbbe6028f6d37--libxmp--4.6.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e8c7f8686d2fd9afa1cf6973ba6831f3e7a528739e17390bd77953b8151e3b5b--libxmp--4.6.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f0e2b89d7447400289dec541421ee7ff9fac6e4364ecb76f280bf359bea5c0d0--libxmp--4.6.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "70d97f2c2ede16a48e9d7eb2d7fbf125919acc31636eb4d1ead899e8139cad46--libxmp--4.6.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "311db615a8f3cb4868f9d77e06f00fcfb34f9ece35af98f7b3a674704d8c4fa7--libxmp--4.6.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "21a21577dbe0edb9d036103925cb53a278aa5ed5042aa61356d861f82c41b91f--libxmp--4.6.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2c3a6f0daac9586afc776ec2b534a2701db20dd4d939c5548ec2d41a91ece46e--libxmp--4.6.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b1eac9c21ec9fe91f0a1287b9aa2fa2529faf0dfc8251d1353766d0c7ccd319d--libxmp--4.6.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dae89cd7227631428a241d29e7f2176c03509674a8db8decaa4566c211e36a9a--libxmp--4.6.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6c823cb8e156d93bbf8de2e578c1d1f0f64381c0a38639159e9cdc75df0efac1--libxmp--4.6.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxmp" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxmp" ]
+]

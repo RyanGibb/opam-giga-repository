@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Validating, recursive, caching DNS resolver"
+description: """
+Validating, recursive, caching DNS resolver"""
+extra-source "4963e2bb8d3bbdd7699d74ca4767cdb9b102fc712ef1f5c04d9f5a4c1ad17eee--unbound--1.21.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:6a94d87593b391a86be0ab3bdf0079897ec185f1e6418c5137dafa87597a5ea7"
+  checksum: [
+    "sha256=6a94d87593b391a86be0ab3bdf0079897ec185f1e6418c5137dafa87597a5ea7"
+  ]
+}
+extra-source "22330ea41f3a660a77910097fecae561e200ec458b58e3f0130d0c08333b1284--unbound-1.21.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/manifests/1.21.0"
+}
+extra-source "67ee5bd0aaed195bcbd5743768e23cb6d7e1580341e5c227c076c390bfe2a366--unbound--1.21.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:46a49b789601d39ead61ee71bd125022adc336888c176e40d8645a7d808a5bdf"
+  checksum: [
+    "sha256=46a49b789601d39ead61ee71bd125022adc336888c176e40d8645a7d808a5bdf"
+  ]
+}
+extra-source "6181ae6223e56dfd0303b4c52f18a318db179b403ad1d99647d0f32d1ea56ea1--unbound--1.21.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:7d736a54f65236d835cb7d8b5c57389fedf36f0d8e73d3d0d2c3571132a36b7b"
+  checksum: [
+    "sha256=7d736a54f65236d835cb7d8b5c57389fedf36f0d8e73d3d0d2c3571132a36b7b"
+  ]
+}
+extra-source "45108310391cf3d617857111d7267fc33359bae106a11174401f02a6a7bb888d--unbound--1.21.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:f8fbc79f1cf3c1660690c4905ad09ab20224ff03238bae6f10a4f9b616f863cf"
+  checksum: [
+    "sha256=f8fbc79f1cf3c1660690c4905ad09ab20224ff03238bae6f10a4f9b616f863cf"
+  ]
+}
+extra-source "4b9bc7af57d2b98081927d95ff8d8f0403db5e6b83163d37083332a19c28c465--unbound--1.21.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:f515fa33570a24ff6859f9949f37f9379606817bb65ea0c518dc8ca337c32c1f"
+  checksum: [
+    "sha256=f515fa33570a24ff6859f9949f37f9379606817bb65ea0c518dc8ca337c32c1f"
+  ]
+}
+extra-source "09a890f197ef3792dd6d817f44d9cf56e362af47fc37edff2baedb630bc790c5--unbound--1.21.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:9b0aa7a9a3191c06d80987e458f91a9b1dd492887d0eaab344786db025029e4b"
+  checksum: [
+    "sha256=9b0aa7a9a3191c06d80987e458f91a9b1dd492887d0eaab344786db025029e4b"
+  ]
+}
+extra-source "96487864e76dc895339ea55efd5ca2aadf4b96150377ef1c749982a0f282a5b2--unbound--1.21.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:d3e32be6d1541200ba20a268bed52a5b886ecea5ca3c306165afea5ba1903da5"
+  checksum: [
+    "sha256=d3e32be6d1541200ba20a268bed52a5b886ecea5ca3c306165afea5ba1903da5"
+  ]
+}
+extra-source "7b5f6cb2f46559e15ebd44efe820deffd793f6443ad2140fc1e880794db89b10--unbound--1.21.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:a478cbac763f0265715231766b1d6e5dd06cf1a02148492ea040b644d16d807a"
+  checksum: [
+    "sha256=a478cbac763f0265715231766b1d6e5dd06cf1a02148492ea040b644d16d807a"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "22330ea41f3a660a77910097fecae561e200ec458b58e3f0130d0c08333b1284--unbound-1.21.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "4963e2bb8d3bbdd7699d74ca4767cdb9b102fc712ef1f5c04d9f5a4c1ad17eee--unbound--1.21.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "67ee5bd0aaed195bcbd5743768e23cb6d7e1580341e5c227c076c390bfe2a366--unbound--1.21.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6181ae6223e56dfd0303b4c52f18a318db179b403ad1d99647d0f32d1ea56ea1--unbound--1.21.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "45108310391cf3d617857111d7267fc33359bae106a11174401f02a6a7bb888d--unbound--1.21.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4b9bc7af57d2b98081927d95ff8d8f0403db5e6b83163d37083332a19c28c465--unbound--1.21.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "09a890f197ef3792dd6d817f44d9cf56e362af47fc37edff2baedb630bc790c5--unbound--1.21.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "96487864e76dc895339ea55efd5ca2aadf4b96150377ef1c749982a0f282a5b2--unbound--1.21.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b5f6cb2f46559e15ebd44efe820deffd793f6443ad2140fc1e880794db89b10--unbound--1.21.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "unbound" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "unbound" ]
+]

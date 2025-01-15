@@ -1,0 +1,105 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Core X11 protocol client library"
+description: """
+X.Org: Core X11 protocol client library"""
+extra-source "fe8c90651caff2515b0cde752647928a65f8b947016eb64e1a8ffd4110f01f25--libx11--1.8.10.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:c6f87c76459254b07fff761beac4092db78f520edc26b0fb489b5f9c6b767fa5"
+  checksum: [
+    "sha256=c6f87c76459254b07fff761beac4092db78f520edc26b0fb489b5f9c6b767fa5"
+  ]
+}
+extra-source "2e75e14e6bb3157688933738ae64e0dc86954ca8ef075737dda6b890d605d566--libx11-1.8.10.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/manifests/1.8.10"
+}
+extra-source "a4fbd25ac5e707724cb75f878da3b55223d549485a4e4ccd2a669dde91d709df--libx11--1.8.10.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:ae4c27d75532011351ec195f21e63640a1df4393a66985bf5078df0a446fee73"
+  checksum: [
+    "sha256=ae4c27d75532011351ec195f21e63640a1df4393a66985bf5078df0a446fee73"
+  ]
+}
+extra-source "d1eac234ab1239a186e3622c8806dcbf656f03dab02d8dcaef8781798d2e0dc7--libx11--1.8.10.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:5467d41501260e483586e9b05ed3137393f7faf7d49901c31bbeb0b25bd7caf5"
+  checksum: [
+    "sha256=5467d41501260e483586e9b05ed3137393f7faf7d49901c31bbeb0b25bd7caf5"
+  ]
+}
+extra-source "cf27ed09f96345edc394c2c2cb110d3517a230cb3a1d3a2c18a86bdf023dacce--libx11--1.8.10.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:220bce8f5d80d6894f7e25d02c32f1a3ec1d4d3f0ecf5f4ba619de7a80986a1a"
+  checksum: [
+    "sha256=220bce8f5d80d6894f7e25d02c32f1a3ec1d4d3f0ecf5f4ba619de7a80986a1a"
+  ]
+}
+extra-source "8072e7b97b60693bee3d68d7577ca0102016c075bba40afe4d9c88e9e22b62f6--libx11--1.8.10.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:144c9ca0fd07301773ec072adf505ba73a2c2561ad211cc7067b98b92034cb72"
+  checksum: [
+    "sha256=144c9ca0fd07301773ec072adf505ba73a2c2561ad211cc7067b98b92034cb72"
+  ]
+}
+extra-source "36648316c3a3c22f0b52aa6aec16e43f5bedf0ceca54393e56b5e620b053d70b--libx11--1.8.10.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:0989016905547b3899a956bbb45a95b6dc50fffab2af5afd6685486bea03281f"
+  checksum: [
+    "sha256=0989016905547b3899a956bbb45a95b6dc50fffab2af5afd6685486bea03281f"
+  ]
+}
+extra-source "fb68521e9c00b65d71abd0ec0de2f36a40c290dcec17f70531a63d8690b74c39--libx11--1.8.10.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:f323202b5650d3114a7215bcf8017cc144140c49baf122501a8bc31d3b24bfa7"
+  checksum: [
+    "sha256=f323202b5650d3114a7215bcf8017cc144140c49baf122501a8bc31d3b24bfa7"
+  ]
+}
+extra-source "c23db918fed0f8b35fe8759446c8a4706c7c8712ad4f486fbc45e5777c8d54d8--libx11--1.8.10.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:12f965d5b1d09327b0040b9e0f385ca5d4db9ceb29f8c89e6fcbe6e98ecf71c6"
+  checksum: [
+    "sha256=12f965d5b1d09327b0040b9e0f385ca5d4db9ceb29f8c89e6fcbe6e98ecf71c6"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2e75e14e6bb3157688933738ae64e0dc86954ca8ef075737dda6b890d605d566--libx11-1.8.10.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "fe8c90651caff2515b0cde752647928a65f8b947016eb64e1a8ffd4110f01f25--libx11--1.8.10.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a4fbd25ac5e707724cb75f878da3b55223d549485a4e4ccd2a669dde91d709df--libx11--1.8.10.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d1eac234ab1239a186e3622c8806dcbf656f03dab02d8dcaef8781798d2e0dc7--libx11--1.8.10.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cf27ed09f96345edc394c2c2cb110d3517a230cb3a1d3a2c18a86bdf023dacce--libx11--1.8.10.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8072e7b97b60693bee3d68d7577ca0102016c075bba40afe4d9c88e9e22b62f6--libx11--1.8.10.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "36648316c3a3c22f0b52aa6aec16e43f5bedf0ceca54393e56b5e620b053d70b--libx11--1.8.10.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fb68521e9c00b65d71abd0ec0de2f36a40c290dcec17f70531a63d8690b74c39--libx11--1.8.10.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c23db918fed0f8b35fe8759446c8a4706c7c8712ad4f486fbc45e5777c8d54d8--libx11--1.8.10.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libx11" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libx11" ]
+]

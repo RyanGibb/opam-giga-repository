@@ -1,0 +1,105 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Command-line interface for Cabal and Hackage"
+description: """
+Command-line interface for Cabal and Hackage"""
+extra-source "c59d4da73934978d6f42172f03010a3addceff2494a303b965e338a7be6a991a--cabal-install--3.12.1.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/blobs/sha256:6d973fbc7b286f613320ff1a359023078ab06aa8e87209c8f785e601d452fbca"
+  checksum: [
+    "sha256=6d973fbc7b286f613320ff1a359023078ab06aa8e87209c8f785e601d452fbca"
+  ]
+}
+extra-source "fbcfa35f2f9af6458e7a3f94e7018d335f953b10841bf515d3581518879a460f--cabal-install-3.12.1.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/manifests/3.12.1.0"
+}
+extra-source "90e51b334814e80cc90a753d0305e3d6ea10c38afca9fc4b1f6e9c51ff28d0bf--cabal-install--3.12.1.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/blobs/sha256:14b2ef3160b714b0f8105f32b35c3f06978b37eb0a9ca05fc1874266938663f3"
+  checksum: [
+    "sha256=14b2ef3160b714b0f8105f32b35c3f06978b37eb0a9ca05fc1874266938663f3"
+  ]
+}
+extra-source "76ace975b685d28773d216b0326d79744ecd74ef11013407d3535706a154dabf--cabal-install--3.12.1.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/blobs/sha256:6f6c8f744e69dc10b3512979588c0730147d0f2ae09c2d990953a3cb87f0cd8a"
+  checksum: [
+    "sha256=6f6c8f744e69dc10b3512979588c0730147d0f2ae09c2d990953a3cb87f0cd8a"
+  ]
+}
+extra-source "b300579fb36117e577df948c17287ca5880adf1843d3fdf9d9b226569c648ce8--cabal-install--3.12.1.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/blobs/sha256:2ee5bc7a0cc5d2e6e758ae8d01b0adfe29073d0e8dd0e96c3a9eed852a064520"
+  checksum: [
+    "sha256=2ee5bc7a0cc5d2e6e758ae8d01b0adfe29073d0e8dd0e96c3a9eed852a064520"
+  ]
+}
+extra-source "846478cd205f97ff3447aabe7665aab10f011ff7a0e98b5e3c5b27034a0f6f96--cabal-install--3.12.1.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/blobs/sha256:d74da35f87ef2ebbed1f38e3bd83661579d822a86f41aa32c0c7d59af3d2e6fc"
+  checksum: [
+    "sha256=d74da35f87ef2ebbed1f38e3bd83661579d822a86f41aa32c0c7d59af3d2e6fc"
+  ]
+}
+extra-source "4aee6dc0f4e47c3b9c59dba6029afb30ea9fee8a161fd5f3e6cd8489dbc600b8--cabal-install--3.12.1.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/blobs/sha256:49b7a075b4dd8c82487206c31f2b8d05084f5a189689d015c0fe2203427ef9e0"
+  checksum: [
+    "sha256=49b7a075b4dd8c82487206c31f2b8d05084f5a189689d015c0fe2203427ef9e0"
+  ]
+}
+extra-source "40fda2db2f2c579b36e68e85a67c46224c0fc54b69871b126bb7ab2fff8110e8--cabal-install--3.12.1.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/blobs/sha256:b38e6149b74b53c25b2493bf6a208ff8093a2cad6003d33ab2a0380611ebb049"
+  checksum: [
+    "sha256=b38e6149b74b53c25b2493bf6a208ff8093a2cad6003d33ab2a0380611ebb049"
+  ]
+}
+extra-source "04e6614735a16b18160ab6288f1c5ef062998b9e2e2d5deafd9f8e3a37b65062--cabal-install--3.12.1.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/cabal-install/blobs/sha256:cb3155168d1f4d92e6277b7af7fcd99e0ff9519d56097030a0cff7d5690a71a8"
+  checksum: [
+    "sha256=cb3155168d1f4d92e6277b7af7fcd99e0ff9519d56097030a0cff7d5690a71a8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-ghc" {= "9.10.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "fbcfa35f2f9af6458e7a3f94e7018d335f953b10841bf515d3581518879a460f--cabal-install-3.12.1.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c59d4da73934978d6f42172f03010a3addceff2494a303b965e338a7be6a991a--cabal-install--3.12.1.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "90e51b334814e80cc90a753d0305e3d6ea10c38afca9fc4b1f6e9c51ff28d0bf--cabal-install--3.12.1.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "76ace975b685d28773d216b0326d79744ecd74ef11013407d3535706a154dabf--cabal-install--3.12.1.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b300579fb36117e577df948c17287ca5880adf1843d3fdf9d9b226569c648ce8--cabal-install--3.12.1.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "846478cd205f97ff3447aabe7665aab10f011ff7a0e98b5e3c5b27034a0f6f96--cabal-install--3.12.1.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4aee6dc0f4e47c3b9c59dba6029afb30ea9fee8a161fd5f3e6cd8489dbc600b8--cabal-install--3.12.1.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "40fda2db2f2c579b36e68e85a67c46224c0fc54b69871b126bb7ab2fff8110e8--cabal-install--3.12.1.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "04e6614735a16b18160ab6288f1c5ef062998b9e2e2d5deafd9f8e3a37b65062--cabal-install--3.12.1.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "cabal-install" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "cabal-install" ]
+]

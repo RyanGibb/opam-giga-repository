@@ -1,0 +1,95 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Next-gen compiler infrastructure"
+description: """
+Next-gen compiler infrastructure"""
+extra-source "ef97a81c8bd82937f0ee4db52c04d9c7ef171f19ffa6e407cea0af316788c515--llvm@11--11.1.0_4.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:b1ad7348bfba7835c9360a7220689304d9be0092558b614fa52c9e5624dd4153"
+  checksum: [
+    "sha256=b1ad7348bfba7835c9360a7220689304d9be0092558b614fa52c9e5624dd4153"
+  ]
+}
+extra-source "8691e3c3987af86b95dc88de01e44a9e66f34aad448b3339f515507d133730a2--llvm@11-11.1.0_4-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/llvm/11/manifests/11.1.0_4-1"
+}
+extra-source "710f575f212513ca76748bed4dcd3a2bdbdb569b56ad82a0ff6a9657ae36934c--llvm@11--11.1.0_4.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:2dd2d2c64d4eaced81c3fd64beea1c8d68fa17b564b2c536a1931e614f18756c"
+  checksum: [
+    "sha256=2dd2d2c64d4eaced81c3fd64beea1c8d68fa17b564b2c536a1931e614f18756c"
+  ]
+}
+extra-source "9ec423559cf76098a82dd4ae487c5920fd9d5e0527ad2909a7e1df733764639f--llvm@11--11.1.0_4.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:ce98c1e1b94155d74a37826764e8b7f58bb9fe827f9c6988e753e53d78a3824f"
+  checksum: [
+    "sha256=ce98c1e1b94155d74a37826764e8b7f58bb9fe827f9c6988e753e53d78a3824f"
+  ]
+}
+extra-source "7f490bb380920ed91c7bea4a926aab13513bf4d9d62f33cefdf8dad2cebe070b--llvm@11--11.1.0_4.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:d0d40b083bab471b93e36a5075802906672cc666ccc242ec316820fc4349f298"
+  checksum: [
+    "sha256=d0d40b083bab471b93e36a5075802906672cc666ccc242ec316820fc4349f298"
+  ]
+}
+extra-source "9c96c3ce8bd5a99af2a24b1aee1d5757822a918c403442938662be0b5d1d67af--llvm@11--11.1.0_4.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:af3a8de67ed789b846b88f0f969026abd53bd4dc06869ac90ee486cda58e1c4c"
+  checksum: [
+    "sha256=af3a8de67ed789b846b88f0f969026abd53bd4dc06869ac90ee486cda58e1c4c"
+  ]
+}
+extra-source "52f6e733e3087a5773f9d5a10caeb202a9768fb6303d19c11cd9f1b1e51c8d3b--llvm@11--11.1.0_4.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:d1732cbc50152aebc30471f942eeec30ca6b150e900a7000940baf3b98c5d5b5"
+  checksum: [
+    "sha256=d1732cbc50152aebc30471f942eeec30ca6b150e900a7000940baf3b98c5d5b5"
+  ]
+}
+extra-source "d29031f0eb981f712fc8b7f316bb6ce34a72ffb56dd930c34b7c67a2b384c861--llvm@11--11.1.0_4.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:0864d39f56bc7998edd70e07f822f4fdc946746959dd73387770b41fe699f608"
+  checksum: [
+    "sha256=0864d39f56bc7998edd70e07f822f4fdc946746959dd73387770b41fe699f608"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8691e3c3987af86b95dc88de01e44a9e66f34aad448b3339f515507d133730a2--llvm@11-11.1.0_4-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ef97a81c8bd82937f0ee4db52c04d9c7ef171f19ffa6e407cea0af316788c515--llvm@11--11.1.0_4.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "710f575f212513ca76748bed4dcd3a2bdbdb569b56ad82a0ff6a9657ae36934c--llvm@11--11.1.0_4.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9ec423559cf76098a82dd4ae487c5920fd9d5e0527ad2909a7e1df733764639f--llvm@11--11.1.0_4.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7f490bb380920ed91c7bea4a926aab13513bf4d9d62f33cefdf8dad2cebe070b--llvm@11--11.1.0_4.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9c96c3ce8bd5a99af2a24b1aee1d5757822a918c403442938662be0b5d1d67af--llvm@11--11.1.0_4.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "52f6e733e3087a5773f9d5a10caeb202a9768fb6303d19c11cd9f1b1e51c8d3b--llvm@11--11.1.0_4.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d29031f0eb981f712fc8b7f316bb6ce34a72ffb56dd930c34b7c67a2b384c861--llvm@11--11.1.0_4.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "llvm" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "llvm" ]
+]

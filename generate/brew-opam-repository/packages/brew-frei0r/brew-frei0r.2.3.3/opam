@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Minimalistic plugin API for video effects"
+description: """
+Minimalistic plugin API for video effects"""
+extra-source "36245c05a5a54c24a2c728ac6d70a522f9139ae91f284848a2088dfe6c781331--frei0r--2.3.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:064f58d291191e9d7264db2992ee79213b3b88927fb953d3cb70dc09eb458d6b"
+  checksum: [
+    "sha256=064f58d291191e9d7264db2992ee79213b3b88927fb953d3cb70dc09eb458d6b"
+  ]
+}
+extra-source "f9266f5e6cb521cdce245d9ea3bf63ef75e12bea0ab3a45f107cbe0d01f58c60--frei0r-2.3.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/manifests/2.3.3"
+}
+extra-source "dd5660fbdc352d2b619237313015b3001fe591ac450f6d506976398f8214efc6--frei0r--2.3.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:7499dc7a7e179e486b641d68d31ee0b7c6f9a16949f58da91e4702ddb970eb32"
+  checksum: [
+    "sha256=7499dc7a7e179e486b641d68d31ee0b7c6f9a16949f58da91e4702ddb970eb32"
+  ]
+}
+extra-source "1e53f6d34a7cb407a50d8ce7b1a2873331e6daa8cf582a271d52584e5e74271b--frei0r--2.3.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:59d88950f340427381e84fd644fbc6672a1255812f6c1bc4bb82aaed76640190"
+  checksum: [
+    "sha256=59d88950f340427381e84fd644fbc6672a1255812f6c1bc4bb82aaed76640190"
+  ]
+}
+extra-source "6b2b3a9b557ceeb459c311fce682fef53491dc947d808334a5b7055475938be1--frei0r--2.3.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:80dd7d731c9bc516931aa77f313eb9a2016e9f0e50adec2e5e8966c0c860584b"
+  checksum: [
+    "sha256=80dd7d731c9bc516931aa77f313eb9a2016e9f0e50adec2e5e8966c0c860584b"
+  ]
+}
+extra-source "4fcab96484ca10e30ad95b6939d2c0066dbcaa313b830d4f5d5555343856cdeb--frei0r--2.3.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:e1432fd9d7d702c1c27f0cf574b337e4191ee454ba439ad0e71be1fecb82f707"
+  checksum: [
+    "sha256=e1432fd9d7d702c1c27f0cf574b337e4191ee454ba439ad0e71be1fecb82f707"
+  ]
+}
+extra-source "6e52a95ab6330f7602fd5a4766b9dc7aa78c36a09f1fc32f07cc5d1d9c9366e2--frei0r--2.3.3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:3d74d9a45e232e70927cdc16f9bb90b839efb979297bf887da998c8b1b479747"
+  checksum: [
+    "sha256=3d74d9a45e232e70927cdc16f9bb90b839efb979297bf887da998c8b1b479747"
+  ]
+}
+extra-source "d534ab48bab45731351d7872552d84fbb13561278146bd782bf3da1ec9981c24--frei0r--2.3.3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:b080ed40975a908e12c9c94829f2b7664382f9fbd5b6083cfe7a289d5841e792"
+  checksum: [
+    "sha256=b080ed40975a908e12c9c94829f2b7664382f9fbd5b6083cfe7a289d5841e792"
+  ]
+}
+extra-source "a38130415270a23a96c254fe9050196d8fc4df1c22e5d556bcdfef3ee6d9ae58--frei0r--2.3.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:f85bc09b930b41d316d408e81c26f99f275a578bad4eeb3a24aa8796ca19835d"
+  checksum: [
+    "sha256=f85bc09b930b41d316d408e81c26f99f275a578bad4eeb3a24aa8796ca19835d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f9266f5e6cb521cdce245d9ea3bf63ef75e12bea0ab3a45f107cbe0d01f58c60--frei0r-2.3.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "36245c05a5a54c24a2c728ac6d70a522f9139ae91f284848a2088dfe6c781331--frei0r--2.3.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dd5660fbdc352d2b619237313015b3001fe591ac450f6d506976398f8214efc6--frei0r--2.3.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1e53f6d34a7cb407a50d8ce7b1a2873331e6daa8cf582a271d52584e5e74271b--frei0r--2.3.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6b2b3a9b557ceeb459c311fce682fef53491dc947d808334a5b7055475938be1--frei0r--2.3.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4fcab96484ca10e30ad95b6939d2c0066dbcaa313b830d4f5d5555343856cdeb--frei0r--2.3.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6e52a95ab6330f7602fd5a4766b9dc7aa78c36a09f1fc32f07cc5d1d9c9366e2--frei0r--2.3.3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d534ab48bab45731351d7872552d84fbb13561278146bd782bf3da1ec9981c24--frei0r--2.3.3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a38130415270a23a96c254fe9050196d8fc4df1c22e5d556bcdfef3ee6d9ae58--frei0r--2.3.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "frei0r" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "frei0r" ]
+]

@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.509 and CMS library"
+description: """
+X.509 and CMS library"""
+extra-source "848c48be1acbdc83f037a9e4f17216952c220816946c1240b47df4052da2394c--libksba--1.6.7.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:4446cbe4b0a27393b01c2627edfad9cfebb8a55fae70750977ec786d4598e64a"
+  checksum: [
+    "sha256=4446cbe4b0a27393b01c2627edfad9cfebb8a55fae70750977ec786d4598e64a"
+  ]
+}
+extra-source "ecb8094d7fe13fc2fed0b4855e73ea116bf776cccef325e58e014fe31d962108--libksba-1.6.7.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/manifests/1.6.7"
+}
+extra-source "f7af81422b91e795af6d92eda0e7cf9a437b8244f27783e6c8b7e5b55b9dc9a6--libksba--1.6.7.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:7fb376fb9a021c347e3ffa9a2b91abf42763bcac15457238b0dfb2dfbf6b309b"
+  checksum: [
+    "sha256=7fb376fb9a021c347e3ffa9a2b91abf42763bcac15457238b0dfb2dfbf6b309b"
+  ]
+}
+extra-source "9534c405124c9b7c683d48beba1ea20da1973141413634e25b9c2fe4a970fa79--libksba--1.6.7.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:0988bac20ad406ec6d0c8ba7f141b320d3752a8c73e20596b0a9dd004769b832"
+  checksum: [
+    "sha256=0988bac20ad406ec6d0c8ba7f141b320d3752a8c73e20596b0a9dd004769b832"
+  ]
+}
+extra-source "1ecb3b3600a36b5afb3a6b18b971c11258cdd990d48ae3cb9fa5a89a43411639--libksba--1.6.7.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:c296bd13b1b83cba89ab5cf481de5d8b00f1396008daf98cb5724924b19627e9"
+  checksum: [
+    "sha256=c296bd13b1b83cba89ab5cf481de5d8b00f1396008daf98cb5724924b19627e9"
+  ]
+}
+extra-source "cd3e84e206feadd0ced720d5c51e5c14174d65524faaeba82c692882ea4de562--libksba--1.6.7.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:5ec4bdc07e17b7a9a853035d6cce36d5f06a02d023b16c42da83eb7d81faeeb4"
+  checksum: [
+    "sha256=5ec4bdc07e17b7a9a853035d6cce36d5f06a02d023b16c42da83eb7d81faeeb4"
+  ]
+}
+extra-source "3655e7b0d65fbe19928b6d05d66d50b6b3e0d747817280a1304dff2cda062f47--libksba--1.6.7.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:926a6f72ba9c7ba6701e93ecc4849f13661e558f82b95f5c86b2786f3b46c4f4"
+  checksum: [
+    "sha256=926a6f72ba9c7ba6701e93ecc4849f13661e558f82b95f5c86b2786f3b46c4f4"
+  ]
+}
+extra-source "a19769d26acc4f18bcc85fca7648ae4ff289e511ec6213af9515e0c667292ef7--libksba--1.6.7.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:7e610a6f976663698f835eedfe4327f92258a0a5faf9ef812b1318aa659e41d0"
+  checksum: [
+    "sha256=7e610a6f976663698f835eedfe4327f92258a0a5faf9ef812b1318aa659e41d0"
+  ]
+}
+extra-source "c245126cd178b808d8d4b82f3bccf11da032e2c21d1776cdd56ba61824ef77a8--libksba--1.6.7.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libksba/blobs/sha256:2110f07bc9d32f299877e050db0b52a138b8c28f8fac2502585dfa5698e783dc"
+  checksum: [
+    "sha256=2110f07bc9d32f299877e050db0b52a138b8c28f8fac2502585dfa5698e783dc"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+  "brew-libgpg-error" {= "1.50"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ecb8094d7fe13fc2fed0b4855e73ea116bf776cccef325e58e014fe31d962108--libksba-1.6.7.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "848c48be1acbdc83f037a9e4f17216952c220816946c1240b47df4052da2394c--libksba--1.6.7.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f7af81422b91e795af6d92eda0e7cf9a437b8244f27783e6c8b7e5b55b9dc9a6--libksba--1.6.7.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9534c405124c9b7c683d48beba1ea20da1973141413634e25b9c2fe4a970fa79--libksba--1.6.7.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1ecb3b3600a36b5afb3a6b18b971c11258cdd990d48ae3cb9fa5a89a43411639--libksba--1.6.7.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cd3e84e206feadd0ced720d5c51e5c14174d65524faaeba82c692882ea4de562--libksba--1.6.7.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3655e7b0d65fbe19928b6d05d66d50b6b3e0d747817280a1304dff2cda062f47--libksba--1.6.7.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a19769d26acc4f18bcc85fca7648ae4ff289e511ec6213af9515e0c667292ef7--libksba--1.6.7.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c245126cd178b808d8d4b82f3bccf11da032e2c21d1776cdd56ba61824ef77a8--libksba--1.6.7.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libksba" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libksba" ]
+]

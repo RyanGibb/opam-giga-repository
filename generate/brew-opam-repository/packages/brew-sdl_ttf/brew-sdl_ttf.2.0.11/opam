@@ -1,0 +1,112 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for using TrueType fonts in SDL applications"
+description: """
+Library for using TrueType fonts in SDL applications"""
+extra-source "bc973043c3e65c4f7d727efd7b5d6543cad3900c42ab5e95e559a49241b431ab--sdl_ttf--2.0.11_2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:b38575e4ad2142750d20628ac3e3df7980e46ac672d288e5551989f2fd946449"
+  checksum: [
+    "sha256=b38575e4ad2142750d20628ac3e3df7980e46ac672d288e5551989f2fd946449"
+  ]
+}
+extra-source "169dcab8bc0002ba7f744cfe20298ebe1637edccd064a2eacf73c72cdb7ce7d5--sdl_ttf-2.0.11_2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/manifests/2.0.11_2"
+}
+extra-source "69b5cfa5692dbe06a9843e8e92a0268af7a3a1b49c16a8e61f6a5f56779c994d--sdl_ttf--2.0.11_2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:0dca869632cf554413ad235b053e25634a1446276eab7ebf80851b9f1980d342"
+  checksum: [
+    "sha256=0dca869632cf554413ad235b053e25634a1446276eab7ebf80851b9f1980d342"
+  ]
+}
+extra-source "fd325406c0c48220d48f2fb9ba45016c10e47a4c09feb088ce642cbdba4c9fc3--sdl_ttf--2.0.11_2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:5660876344b81ae6e0d816f353a358e58980efb8649e3e72e0c13e0ba8a8b91d"
+  checksum: [
+    "sha256=5660876344b81ae6e0d816f353a358e58980efb8649e3e72e0c13e0ba8a8b91d"
+  ]
+}
+extra-source "365ac70dcaf9cfef16636fd12c68ba37bdf45f1da84d892f8d56343278733dfb--sdl_ttf--2.0.11_2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:92fc8bfc2e879eab0c05baac2a75e8423c10a14ba7488a33a6c66c27d9520143"
+  checksum: [
+    "sha256=92fc8bfc2e879eab0c05baac2a75e8423c10a14ba7488a33a6c66c27d9520143"
+  ]
+}
+extra-source "fc21c3636775e1903ee36f495acd227c8cefcb15cc91b0902a5c79145d2e4f01--sdl_ttf--2.0.11_2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:f8515e231b0fd3df331de4e008b01eea709ce67b87d3cdf7e484646be2b0c204"
+  checksum: [
+    "sha256=f8515e231b0fd3df331de4e008b01eea709ce67b87d3cdf7e484646be2b0c204"
+  ]
+}
+extra-source "6cfed587726e0a2a42313ea1e106a4b38ccbc74ce50c884d2242adb6076eef37--sdl_ttf--2.0.11_2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:0e89bd1b3868b572e95b2d3419132baf15d21e28a7580df1eba477a031774267"
+  checksum: [
+    "sha256=0e89bd1b3868b572e95b2d3419132baf15d21e28a7580df1eba477a031774267"
+  ]
+}
+extra-source "2b786ca71f3c2d8339d5c01d6a80f93447909fbceefb155a68e0096dea0e19c3--sdl_ttf--2.0.11_2.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:ac7b776e96763c6f354d8e37dcc885f80d75b8f728e47dda197990c16c43417d"
+  checksum: [
+    "sha256=ac7b776e96763c6f354d8e37dcc885f80d75b8f728e47dda197990c16c43417d"
+  ]
+}
+extra-source "31dad051435d8a418f77691844317eab8b380dbee96138bdc7a42efeab705101--sdl_ttf--2.0.11_2.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:1e70767306907c70b57d7cffe00526f1f006db2590422dc4d68f92ff1a355838"
+  checksum: [
+    "sha256=1e70767306907c70b57d7cffe00526f1f006db2590422dc4d68f92ff1a355838"
+  ]
+}
+extra-source "331bba5c74045339c338aba62932fee8934d2ac3afb9ac38d2b90ffbf92f771a--sdl_ttf--2.0.11_2.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:23c1366db18218ce07c7307125b491c847c9507890f7cdaaa4fedd0c1facce08"
+  checksum: [
+    "sha256=23c1366db18218ce07c7307125b491c847c9507890f7cdaaa4fedd0c1facce08"
+  ]
+}
+extra-source "ba37577417d57e32e5bea3e430d3951722f67108ee006f17a7a46e6d5c7af0d2--sdl_ttf--2.0.11_2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_ttf/blobs/sha256:bf482059e92304181eb73757f15c8652cc567124aef46d7e11893e9eec218113"
+  checksum: [
+    "sha256=bf482059e92304181eb73757f15c8652cc567124aef46d7e11893e9eec218113"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-sdl2" {= "2.30.7"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-sdl12-compat" {= "1.2.68"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "169dcab8bc0002ba7f744cfe20298ebe1637edccd064a2eacf73c72cdb7ce7d5--sdl_ttf-2.0.11_2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "bc973043c3e65c4f7d727efd7b5d6543cad3900c42ab5e95e559a49241b431ab--sdl_ttf--2.0.11_2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "69b5cfa5692dbe06a9843e8e92a0268af7a3a1b49c16a8e61f6a5f56779c994d--sdl_ttf--2.0.11_2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fd325406c0c48220d48f2fb9ba45016c10e47a4c09feb088ce642cbdba4c9fc3--sdl_ttf--2.0.11_2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "365ac70dcaf9cfef16636fd12c68ba37bdf45f1da84d892f8d56343278733dfb--sdl_ttf--2.0.11_2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fc21c3636775e1903ee36f495acd227c8cefcb15cc91b0902a5c79145d2e4f01--sdl_ttf--2.0.11_2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6cfed587726e0a2a42313ea1e106a4b38ccbc74ce50c884d2242adb6076eef37--sdl_ttf--2.0.11_2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2b786ca71f3c2d8339d5c01d6a80f93447909fbceefb155a68e0096dea0e19c3--sdl_ttf--2.0.11_2.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "31dad051435d8a418f77691844317eab8b380dbee96138bdc7a42efeab705101--sdl_ttf--2.0.11_2.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "331bba5c74045339c338aba62932fee8934d2ac3afb9ac38d2b90ffbf92f771a--sdl_ttf--2.0.11_2.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ba37577417d57e32e5bea3e430d3951722f67108ee006f17a7a46e6d5c7af0d2--sdl_ttf--2.0.11_2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sdl_ttf" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sdl_ttf" ]
+]

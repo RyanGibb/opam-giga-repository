@@ -1,0 +1,128 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Client and window-manager helpers for EWMH and ICCCM"
+description: """
+Client and window-manager helpers for EWMH and ICCCM"""
+extra-source "48494954aad703aec33fcf699a1ebea2cb4c09b48317ef8f4cb34c24a67ff197--xcb-util-wm--0.4.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:78b8c05d6a387da472f24f9b4fa8a60eb3c1815a2b013a5cd9c379d54362f058"
+  checksum: [
+    "sha256=78b8c05d6a387da472f24f9b4fa8a60eb3c1815a2b013a5cd9c379d54362f058"
+  ]
+}
+extra-source "c7ba1dfe540dd20323e3b27ee4b5dd59f313db1fe59c47093a5e07ff994baa4c--xcb-util-wm-0.4.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/manifests/0.4.2"
+}
+extra-source "ceb4a6cc7b07a1b21a5c75c7fa1792fc3002c766971dd98151bb898156b713be--xcb-util-wm--0.4.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:b489feeec0cf557cb44928ca8e805b7c25a86754dde295abc9795108b17d800c"
+  checksum: [
+    "sha256=b489feeec0cf557cb44928ca8e805b7c25a86754dde295abc9795108b17d800c"
+  ]
+}
+extra-source "33bb83d74b91c27a9bb83e98d86308de2a9a4d30148d4f007fbca9c51c27b84a--xcb-util-wm--0.4.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:f2e885b4eefb54d3e9b5f2d4a8dbf4fd93141e8b3c12fbcaa99b318a3dfdad1e"
+  checksum: [
+    "sha256=f2e885b4eefb54d3e9b5f2d4a8dbf4fd93141e8b3c12fbcaa99b318a3dfdad1e"
+  ]
+}
+extra-source "688438b4632693656edaedd88d7e2911ac22bcc6fcf897acf9ae1aa6bf954bf8--xcb-util-wm--0.4.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:7526c01904f1a9a658e1ec38f1ecc3d20c14e8a164e5ce891fe9f0b5df5d93d4"
+  checksum: [
+    "sha256=7526c01904f1a9a658e1ec38f1ecc3d20c14e8a164e5ce891fe9f0b5df5d93d4"
+  ]
+}
+extra-source "056ffa994521389c3a5e211c57f0b2ade1e8331d72f1194bb0fa87e86027736b--xcb-util-wm--0.4.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:e8b4f5a806743173240d8259ac7f8ac502e945df8f9269aa40d5f35fc2140291"
+  checksum: [
+    "sha256=e8b4f5a806743173240d8259ac7f8ac502e945df8f9269aa40d5f35fc2140291"
+  ]
+}
+extra-source "fa1a7c2f7bcbc6e6e1c4e2d97563e2a7b9b6e5f0ab0d7eb2bdeab54419b8d1ee--xcb-util-wm--0.4.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:a6cd012acf4ff3199b3866e93c3b930e399f33eea2a5e49220f4214c31e8d15f"
+  checksum: [
+    "sha256=a6cd012acf4ff3199b3866e93c3b930e399f33eea2a5e49220f4214c31e8d15f"
+  ]
+}
+extra-source "d0828df47b0294087d0afbc9695f68386c75589a758a2a88ba5f68c3321c0cfb--xcb-util-wm--0.4.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:1774d0e39c97fc328e73411c8ad083d1bc0592576c427c2f6cea4ae9f1f7ba1b"
+  checksum: [
+    "sha256=1774d0e39c97fc328e73411c8ad083d1bc0592576c427c2f6cea4ae9f1f7ba1b"
+  ]
+}
+extra-source "759da094e40622651c9f5af8713e85ff838ecb6a753dc3fa9693739f7b52e844--xcb-util-wm--0.4.2.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:7bad0c4c7883daaba35df770a5a544d935d6531292c02a6df2c956ef3e8a2b42"
+  checksum: [
+    "sha256=7bad0c4c7883daaba35df770a5a544d935d6531292c02a6df2c956ef3e8a2b42"
+  ]
+}
+extra-source "1f1e5119505097608f123574417a6ed308d96611503eba815e2ed41790938cc5--xcb-util-wm--0.4.2.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:92ea8e6f41fca2b1bf1a4e25783a0c1cf45e93f3ce99e4bffa078f9ef54b81d4"
+  checksum: [
+    "sha256=92ea8e6f41fca2b1bf1a4e25783a0c1cf45e93f3ce99e4bffa078f9ef54b81d4"
+  ]
+}
+extra-source "8a07f9e33faaacef0b5de56e0e9f293d0ff1ed05adf03caa4cebb84a397607ed--xcb-util-wm--0.4.2.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:aa6fc4ef555883fac180c46b4e6d5e03096bd9369640fbe8f6ec8fa9f63c70c0"
+  checksum: [
+    "sha256=aa6fc4ef555883fac180c46b4e6d5e03096bd9369640fbe8f6ec8fa9f63c70c0"
+  ]
+}
+extra-source "991d24a17734de6c50b82a19a2d8a63acb5b6f8a1dd141abd3ab4e6e4ba37444--xcb-util-wm--0.4.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-wm/blobs/sha256:1045d2418ab117484c0645ced40c1c7dfe9751443b56e1fdff639a2591732acb"
+  checksum: [
+    "sha256=1045d2418ab117484c0645ced40c1c7dfe9751443b56e1fdff639a2591732acb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c7ba1dfe540dd20323e3b27ee4b5dd59f313db1fe59c47093a5e07ff994baa4c--xcb-util-wm-0.4.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "48494954aad703aec33fcf699a1ebea2cb4c09b48317ef8f4cb34c24a67ff197--xcb-util-wm--0.4.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ceb4a6cc7b07a1b21a5c75c7fa1792fc3002c766971dd98151bb898156b713be--xcb-util-wm--0.4.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "33bb83d74b91c27a9bb83e98d86308de2a9a4d30148d4f007fbca9c51c27b84a--xcb-util-wm--0.4.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "688438b4632693656edaedd88d7e2911ac22bcc6fcf897acf9ae1aa6bf954bf8--xcb-util-wm--0.4.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "056ffa994521389c3a5e211c57f0b2ade1e8331d72f1194bb0fa87e86027736b--xcb-util-wm--0.4.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fa1a7c2f7bcbc6e6e1c4e2d97563e2a7b9b6e5f0ab0d7eb2bdeab54419b8d1ee--xcb-util-wm--0.4.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d0828df47b0294087d0afbc9695f68386c75589a758a2a88ba5f68c3321c0cfb--xcb-util-wm--0.4.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "759da094e40622651c9f5af8713e85ff838ecb6a753dc3fa9693739f7b52e844--xcb-util-wm--0.4.2.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1f1e5119505097608f123574417a6ed308d96611503eba815e2ed41790938cc5--xcb-util-wm--0.4.2.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8a07f9e33faaacef0b5de56e0e9f293d0ff1ed05adf03caa4cebb84a397607ed--xcb-util-wm--0.4.2.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "991d24a17734de6c50b82a19a2d8a63acb5b6f8a1dd141abd3ab4e6e4ba37444--xcb-util-wm--0.4.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "xcb-util-wm" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "xcb-util-wm" ]
+]

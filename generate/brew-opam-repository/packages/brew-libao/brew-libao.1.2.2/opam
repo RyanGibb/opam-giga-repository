@@ -1,0 +1,138 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Cross-platform Audio Library"
+description: """
+Cross-platform Audio Library"""
+extra-source "6cea4ae37991fca86657ace52add57f6a161706adc69ae32424bafdcde0abf6b--libao--1.2.2.arm64_sequoia.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:18630c73a7d4187e4ed527096e9450a4d26bcc4a5918bf94656fe641be16922a"
+  checksum: [
+    "sha256=18630c73a7d4187e4ed527096e9450a4d26bcc4a5918bf94656fe641be16922a"
+  ]
+}
+extra-source "450d5c91855b7dfca77e1d081bb51eab5cc4528a540585427d7ede0911ea64f1--libao-1.2.2-3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/manifests/1.2.2-3"
+}
+extra-source "687fb0a1434921eba25abe393a5ba6604fb4f857e27c50b8724a7a363adfc91c--libao--1.2.2.sonoma.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:f6cb690857cde255ac71d09df367afc6de502bd9e7f27081e55116d9e174a075"
+  checksum: [
+    "sha256=f6cb690857cde255ac71d09df367afc6de502bd9e7f27081e55116d9e174a075"
+  ]
+}
+extra-source "62001b9fae6ad0bc7ed896ce9b15a14ef70e649d0e9ff5dd42b0a17fc91de5ed--libao--1.2.2.arm64_sonoma.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:c3252aa3672c5a52882ad70a94219a4284b53415d996ebd21b334ea063ff4e58"
+  checksum: [
+    "sha256=c3252aa3672c5a52882ad70a94219a4284b53415d996ebd21b334ea063ff4e58"
+  ]
+}
+extra-source "c8371365650a58bcc6f5220265c372fce6a975512551d6ed78e904feba6e1175--libao--1.2.2.ventura.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:9eda661b1d28f5da8c205660cf2c2b9a4ad71d086c39b186cb12d18ff81f9551"
+  checksum: [
+    "sha256=9eda661b1d28f5da8c205660cf2c2b9a4ad71d086c39b186cb12d18ff81f9551"
+  ]
+}
+extra-source "420714e2cd0bf489c6ef136f643b3fbc6ac5dc3889460c727f1cae088fe32ff1--libao--1.2.2.arm64_ventura.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:cca7befa22b09e8ecfb3746d8c6de3cd1a519cf76ab970c8e78acde4dd92cef3"
+  checksum: [
+    "sha256=cca7befa22b09e8ecfb3746d8c6de3cd1a519cf76ab970c8e78acde4dd92cef3"
+  ]
+}
+extra-source "217a7b43fbfa509b8419b0a949ff0d18cc3e8d4e65f60e28af14689f229c1138--libao--1.2.2.monterey.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:14bc27effce651df160ad5efbb377773479c6ea28b65f585760aa5316c3dc6ad"
+  checksum: [
+    "sha256=14bc27effce651df160ad5efbb377773479c6ea28b65f585760aa5316c3dc6ad"
+  ]
+}
+extra-source "cf14fc4dbae89d5ff7dc2d47fd87cdc89612f5e5c98ce6f983c806a83ef77453--libao--1.2.2.arm64_monterey.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:87276ccd471ed61409cc6b1fc45b33e3b9ae60414695629cb519a2d7f03bb7e4"
+  checksum: [
+    "sha256=87276ccd471ed61409cc6b1fc45b33e3b9ae60414695629cb519a2d7f03bb7e4"
+  ]
+}
+extra-source "60698d00be674ef55a7e6537fa20061255f9fa5a656facca89a92bad3dad794a--libao--1.2.2.big_sur.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:f27a782e33661e2aa75cbfcbe775a2da08f7f781c6e7608e8f1e3a4a354c4cde"
+  checksum: [
+    "sha256=f27a782e33661e2aa75cbfcbe775a2da08f7f781c6e7608e8f1e3a4a354c4cde"
+  ]
+}
+extra-source "e8468436cda6e03c87b9433ef6278d38ffddeb5a3673e6aecf8c728ed3c66c07--libao--1.2.2.arm64_big_sur.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:4ffbc11b951c7c833881d1a60d20d8969e30bfb85e817b660e38a3fc581ccb9c"
+  checksum: [
+    "sha256=4ffbc11b951c7c833881d1a60d20d8969e30bfb85e817b660e38a3fc581ccb9c"
+  ]
+}
+extra-source "36f899ed6ee8ce112bb2606e4fc17cbf8a07dc33d7697699223cf57f0bee92c1--libao--1.2.2.catalina.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:b6ccd4915aa272b58f267995ce3c87ad42388926535fedea0243c9b0b9941089"
+  checksum: [
+    "sha256=b6ccd4915aa272b58f267995ce3c87ad42388926535fedea0243c9b0b9941089"
+  ]
+}
+extra-source "b6494005256d57083706e7fe53a85fe84f886bb4b5ded334252f693f6936336b--libao--1.2.2.mojave.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:cb57d05c66a19dcfac7e45e6a80f195dfd050ca52a9b316133d131c0c8165cf7"
+  checksum: [
+    "sha256=cb57d05c66a19dcfac7e45e6a80f195dfd050ca52a9b316133d131c0c8165cf7"
+  ]
+}
+extra-source "fede3391d04eb14a602432883dc95b68b9bf2683ff5e71353df83ad3dd897baf--libao--1.2.2.x86_64_linux.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libao/blobs/sha256:bdb709d63e9de2e2dc947887fdc3a383b626d24c200cf80ce58eeaffa5ff7eb2"
+  checksum: [
+    "sha256=bdb709d63e9de2e2dc947887fdc3a383b626d24c200cf80ce58eeaffa5ff7eb2"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "450d5c91855b7dfca77e1d081bb51eab5cc4528a540585427d7ede0911ea64f1--libao-1.2.2-3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "6cea4ae37991fca86657ace52add57f6a161706adc69ae32424bafdcde0abf6b--libao--1.2.2.arm64_sequoia.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "687fb0a1434921eba25abe393a5ba6604fb4f857e27c50b8724a7a363adfc91c--libao--1.2.2.sonoma.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "62001b9fae6ad0bc7ed896ce9b15a14ef70e649d0e9ff5dd42b0a17fc91de5ed--libao--1.2.2.arm64_sonoma.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c8371365650a58bcc6f5220265c372fce6a975512551d6ed78e904feba6e1175--libao--1.2.2.ventura.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "420714e2cd0bf489c6ef136f643b3fbc6ac5dc3889460c727f1cae088fe32ff1--libao--1.2.2.arm64_ventura.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "217a7b43fbfa509b8419b0a949ff0d18cc3e8d4e65f60e28af14689f229c1138--libao--1.2.2.monterey.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cf14fc4dbae89d5ff7dc2d47fd87cdc89612f5e5c98ce6f983c806a83ef77453--libao--1.2.2.arm64_monterey.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "60698d00be674ef55a7e6537fa20061255f9fa5a656facca89a92bad3dad794a--libao--1.2.2.big_sur.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e8468436cda6e03c87b9433ef6278d38ffddeb5a3673e6aecf8c728ed3c66c07--libao--1.2.2.arm64_big_sur.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "36f899ed6ee8ce112bb2606e4fc17cbf8a07dc33d7697699223cf57f0bee92c1--libao--1.2.2.catalina.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b6494005256d57083706e7fe53a85fe84f886bb4b5ded334252f693f6936336b--libao--1.2.2.mojave.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fede3391d04eb14a602432883dc95b68b9bf2683ff5e71353df83ad3dd897baf--libao--1.2.2.x86_64_linux.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libao" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libao" ]
+]

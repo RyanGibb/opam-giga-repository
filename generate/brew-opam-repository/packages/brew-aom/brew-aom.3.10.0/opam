@@ -1,0 +1,128 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Codec library for encoding and decoding AV1 video streams"
+description: """
+Codec library for encoding and decoding AV1 video streams"""
+extra-source "fa4999ca536abab724dfd76d373f511c5093af0a75a9290a7285916bc0de22de--aom--3.10.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:8ab0ca54bc4adb96a43fefa315e92c391855b1d9eeaa44f17d4cdb3421aebd08"
+  checksum: [
+    "sha256=8ab0ca54bc4adb96a43fefa315e92c391855b1d9eeaa44f17d4cdb3421aebd08"
+  ]
+}
+extra-source "ffe58ac9efb04f3e766ec87512b3531691610e969746c7db293ecd7c6db7b076--aom-3.10.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/manifests/3.10.0"
+}
+extra-source "81057e7fb80bb0037467e660e233a5223f5c93f39508a27cc33a4f7113b6f581--aom--3.10.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:4afef28e07f9cc1d2699e7ae07c119c4976426319f45ca793cfcee7f4385913e"
+  checksum: [
+    "sha256=4afef28e07f9cc1d2699e7ae07c119c4976426319f45ca793cfcee7f4385913e"
+  ]
+}
+extra-source "c0456f7ed5b9322d78a00b3f8490ccc3e1a29ea3a801b8c4d65d83e6d4f9b27c--aom--3.10.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:64ae34cc94bd038a3c2072757a794b5eb04084a937fba9caf522c8a752454c14"
+  checksum: [
+    "sha256=64ae34cc94bd038a3c2072757a794b5eb04084a937fba9caf522c8a752454c14"
+  ]
+}
+extra-source "adc655be3063521f52ecc3f4d1299c9fe718e320eca190535cedb24775d4293c--aom--3.10.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:50b74c67ec12634418b728d8512319f25faa0a3b1de843493e62dc227ce09f83"
+  checksum: [
+    "sha256=50b74c67ec12634418b728d8512319f25faa0a3b1de843493e62dc227ce09f83"
+  ]
+}
+extra-source "4fb29648c4bc8cf3ed1ac8369c9608ab588ea44640f60de11ad4dae32e3da88b--aom--3.10.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:3c9b27fc4d94f24bde45494301863ee458a04cb8784889b8232b43ae9e56ccde"
+  checksum: [
+    "sha256=3c9b27fc4d94f24bde45494301863ee458a04cb8784889b8232b43ae9e56ccde"
+  ]
+}
+extra-source "cf243221ff0776084f6d37d50673ad5eae018b746426b8f9b7986234805006e8--aom--3.10.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:18d2b34abcb8f422e92b865d9f19a933cf0404ea60de00223764077132a4657f"
+  checksum: [
+    "sha256=18d2b34abcb8f422e92b865d9f19a933cf0404ea60de00223764077132a4657f"
+  ]
+}
+extra-source "6c0e8f98cecf67380a2b0b5be319c3d45719e1bcab4615705fee4261d7d06d18--aom--3.10.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:ab03b82135121d0d4ab152e931756a9d729e0505b4de4c0b05ab0a0c4105d1ed"
+  checksum: [
+    "sha256=ab03b82135121d0d4ab152e931756a9d729e0505b4de4c0b05ab0a0c4105d1ed"
+  ]
+}
+extra-source "a39033d49c4a0e9e8e78b77c2d26870b1c8e349e7a0908cc976477bca4fb2740--aom--3.10.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:9c56432707c34c7e475827872031754611aece7ad575c957e5b96f732580778c"
+  checksum: [
+    "sha256=9c56432707c34c7e475827872031754611aece7ad575c957e5b96f732580778c"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-icu4c" {= "74.2"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ffe58ac9efb04f3e766ec87512b3531691610e969746c7db293ecd7c6db7b076--aom-3.10.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "fa4999ca536abab724dfd76d373f511c5093af0a75a9290a7285916bc0de22de--aom--3.10.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "81057e7fb80bb0037467e660e233a5223f5c93f39508a27cc33a4f7113b6f581--aom--3.10.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c0456f7ed5b9322d78a00b3f8490ccc3e1a29ea3a801b8c4d65d83e6d4f9b27c--aom--3.10.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "adc655be3063521f52ecc3f4d1299c9fe718e320eca190535cedb24775d4293c--aom--3.10.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4fb29648c4bc8cf3ed1ac8369c9608ab588ea44640f60de11ad4dae32e3da88b--aom--3.10.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cf243221ff0776084f6d37d50673ad5eae018b746426b8f9b7986234805006e8--aom--3.10.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6c0e8f98cecf67380a2b0b5be319c3d45719e1bcab4615705fee4261d7d06d18--aom--3.10.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a39033d49c4a0e9e8e78b77c2d26870b1c8e349e7a0908cc976477bca4fb2740--aom--3.10.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "aom" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "aom" ]
+]

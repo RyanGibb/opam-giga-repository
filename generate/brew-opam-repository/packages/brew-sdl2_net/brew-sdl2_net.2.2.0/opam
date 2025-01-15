@@ -1,0 +1,116 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Small sample cross-platform networking library"
+description: """
+Small sample cross-platform networking library"""
+extra-source "4ea713f821abb4f04f58d0e94212e8ac4c16daa0b6375527746c051e1ddeaf59--sdl2_net--2.2.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:3d7c644db9335046fa38cb4ab1f0396572a1cbb1aa748c6458f9a8ac37ac820d"
+  checksum: [
+    "sha256=3d7c644db9335046fa38cb4ab1f0396572a1cbb1aa748c6458f9a8ac37ac820d"
+  ]
+}
+extra-source "cc032d7e06f671b2690e0e7c33b4a0769f05d141f02c7067b5dda84bc3267e12--sdl2_net-2.2.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/manifests/2.2.0"
+}
+extra-source "38b23957ace17f58f732889151c29a08af55feec8335ae12b003ef936fcaef4a--sdl2_net--2.2.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:f433beb9819e47f6f85360f57cb5d925b4bb97e00f24637ab1847549b4d0c6ae"
+  checksum: [
+    "sha256=f433beb9819e47f6f85360f57cb5d925b4bb97e00f24637ab1847549b4d0c6ae"
+  ]
+}
+extra-source "6d9f1bef949eb38cb68ba46902864b8481e5aef94065beb10d9b6f6f7e198a39--sdl2_net--2.2.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:370799a594bbe1c431dac68cf7c6c19a048c15923a659bcb3db36ab7b5d9bf5e"
+  checksum: [
+    "sha256=370799a594bbe1c431dac68cf7c6c19a048c15923a659bcb3db36ab7b5d9bf5e"
+  ]
+}
+extra-source "cff451c6730d059c2c5197f530be30914faad598204620ea2aea6dcece841cda--sdl2_net--2.2.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:7eafd7b1497736d3609709191a7c693c61e0c2e7761bf1901502dca09a585f41"
+  checksum: [
+    "sha256=7eafd7b1497736d3609709191a7c693c61e0c2e7761bf1901502dca09a585f41"
+  ]
+}
+extra-source "9cc4d64efeddb0fca384aff3bdfde64fb464fcaeb67d1f9eaa7ffdbd1dc86163--sdl2_net--2.2.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:9e154cc5085e0f5f8d6c21e3656c1ff871497b1d79136105535f6fefc189aafc"
+  checksum: [
+    "sha256=9e154cc5085e0f5f8d6c21e3656c1ff871497b1d79136105535f6fefc189aafc"
+  ]
+}
+extra-source "4c932540f52d7b8c939a17e0b8d1981d8cca308f907685e44024f981e0c66a37--sdl2_net--2.2.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:abc2a0c0a0098fbf6eff04d1a7ac5270de3f96762e0eb068d84bf8f9c484af7d"
+  checksum: [
+    "sha256=abc2a0c0a0098fbf6eff04d1a7ac5270de3f96762e0eb068d84bf8f9c484af7d"
+  ]
+}
+extra-source "c8791c1c4ccdff1179bd357153e585542927fdf3ede874fa29d081d7c3d9e75f--sdl2_net--2.2.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:293d3240dd1ac9c5aa76317ff632fb216c5a2768632a84400479ba6befcdd6c0"
+  checksum: [
+    "sha256=293d3240dd1ac9c5aa76317ff632fb216c5a2768632a84400479ba6befcdd6c0"
+  ]
+}
+extra-source "ec7a20b4f3ac1a6ad00f1f5819e25d68b9abe40dfa74eeb4270e5522e2933d98--sdl2_net--2.2.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:a08a23acdd6f6733e64f26bd796bc454d6c8bb8edd91657ffb4175957b5b8b56"
+  checksum: [
+    "sha256=a08a23acdd6f6733e64f26bd796bc454d6c8bb8edd91657ffb4175957b5b8b56"
+  ]
+}
+extra-source "19cfb53acfef43feb80b9983f3d49eec8347ae9349ab2c99d7593f89b60c07e0--sdl2_net--2.2.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:218ace24a3d1840ff6b4fd0ae41314a0b69eda326509b2bbf06113c099717d8e"
+  checksum: [
+    "sha256=218ace24a3d1840ff6b4fd0ae41314a0b69eda326509b2bbf06113c099717d8e"
+  ]
+}
+extra-source "983d87f92d22f757c169f1cffad284b8ad2fc8dea6602ab56c2ea41bab417627--sdl2_net--2.2.0.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:d653a5933d4df46a2a4cdf743499821e61e61305cc3eb45d7fa88a8452a0dae1"
+  checksum: [
+    "sha256=d653a5933d4df46a2a4cdf743499821e61e61305cc3eb45d7fa88a8452a0dae1"
+  ]
+}
+extra-source "8a60993fa7a78f1faceaf0a7c4a7d959722c4269b23ae17c6d9a88797c653ece--sdl2_net--2.2.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_net/blobs/sha256:aa5783e335578a64d84051b2fc247b91585a8950f0406fc8b34ad06ea879872f"
+  checksum: [
+    "sha256=aa5783e335578a64d84051b2fc247b91585a8950f0406fc8b34ad06ea879872f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-sdl2" {= "2.30.7"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "cc032d7e06f671b2690e0e7c33b4a0769f05d141f02c7067b5dda84bc3267e12--sdl2_net-2.2.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "4ea713f821abb4f04f58d0e94212e8ac4c16daa0b6375527746c051e1ddeaf59--sdl2_net--2.2.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "38b23957ace17f58f732889151c29a08af55feec8335ae12b003ef936fcaef4a--sdl2_net--2.2.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6d9f1bef949eb38cb68ba46902864b8481e5aef94065beb10d9b6f6f7e198a39--sdl2_net--2.2.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cff451c6730d059c2c5197f530be30914faad598204620ea2aea6dcece841cda--sdl2_net--2.2.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9cc4d64efeddb0fca384aff3bdfde64fb464fcaeb67d1f9eaa7ffdbd1dc86163--sdl2_net--2.2.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4c932540f52d7b8c939a17e0b8d1981d8cca308f907685e44024f981e0c66a37--sdl2_net--2.2.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c8791c1c4ccdff1179bd357153e585542927fdf3ede874fa29d081d7c3d9e75f--sdl2_net--2.2.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ec7a20b4f3ac1a6ad00f1f5819e25d68b9abe40dfa74eeb4270e5522e2933d98--sdl2_net--2.2.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "19cfb53acfef43feb80b9983f3d49eec8347ae9349ab2c99d7593f89b60c07e0--sdl2_net--2.2.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "983d87f92d22f757c169f1cffad284b8ad2fc8dea6602ab56c2ea41bab417627--sdl2_net--2.2.0.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8a60993fa7a78f1faceaf0a7c4a7d959722c4269b23ae17c6d9a88797c653ece--sdl2_net--2.2.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sdl2_net" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sdl2_net" ]
+]

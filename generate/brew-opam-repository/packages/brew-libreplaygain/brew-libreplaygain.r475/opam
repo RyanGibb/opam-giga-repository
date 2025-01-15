@@ -1,0 +1,147 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library to implement ReplayGain standard for audio"
+description: """
+Library to implement ReplayGain standard for audio"""
+extra-source "50f41d30f5ba0e917dbfb3aeca05df60a9148d6645f50503e2aaa336533a483b--libreplaygain--r475.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:72f8e66bd85dbe08e01f9aad98d73a4788a030f34a3f8e40e940c6a62a7fbfc7"
+  checksum: [
+    "sha256=72f8e66bd85dbe08e01f9aad98d73a4788a030f34a3f8e40e940c6a62a7fbfc7"
+  ]
+}
+extra-source "c2a362fb72ade5ac1b1d01f398f0b9cc9a1197d1d40629bbd063e5e49ecb1353--libreplaygain-r475-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/manifests/r475-1"
+}
+extra-source "9e1bb7205458375583b3fccd8f9950b88699d0798097887a027c75685ce7a9b0--libreplaygain--r475.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:29787fd64c241aea0fe1d5199403bf71d3f7bb7436000237a534ec603fffffbc"
+  checksum: [
+    "sha256=29787fd64c241aea0fe1d5199403bf71d3f7bb7436000237a534ec603fffffbc"
+  ]
+}
+extra-source "11cd1729787d2c98466444657d9baf5179bebfa07c474fa515d7b1c11b752a97--libreplaygain--r475.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:ce1c314acee4f01b3ac7c91b703dfa170154fe833df860f608c4d02e4f6d59a4"
+  checksum: [
+    "sha256=ce1c314acee4f01b3ac7c91b703dfa170154fe833df860f608c4d02e4f6d59a4"
+  ]
+}
+extra-source "97e8247a4cf46335a9242bd69ecaa4b2325060d33c169ffd6f1af4a290d3f1b4--libreplaygain--r475.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:35848fd5f3cfbea613b2a2a017e10b7a1ede2cadbaab00da1d9dac1168b2af7e"
+  checksum: [
+    "sha256=35848fd5f3cfbea613b2a2a017e10b7a1ede2cadbaab00da1d9dac1168b2af7e"
+  ]
+}
+extra-source "26e4f37294dcff9d2040616d3812e33e91e495f5d51a74ddc7285bbfd87a4d03--libreplaygain--r475.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:a8c89293c396219851faeecf23be969764bd4c169e66b10fc16b3949f2348d37"
+  checksum: [
+    "sha256=a8c89293c396219851faeecf23be969764bd4c169e66b10fc16b3949f2348d37"
+  ]
+}
+extra-source "1561d42d3fa7a621557c5b2ee1d7240aceb67d84e5ecd537edc2fa6f966ee3a7--libreplaygain--r475.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:ea6a3522033b4b63e6f8786f14036cd2e3f685b8ad57050d9a64fc1adcf24e45"
+  checksum: [
+    "sha256=ea6a3522033b4b63e6f8786f14036cd2e3f685b8ad57050d9a64fc1adcf24e45"
+  ]
+}
+extra-source "904d15ae3e750ff56978b3ad53e70c6f83227755cc7fe3bc7075fced43f873e1--libreplaygain--r475.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:9100ec7606c07112a90c00796c4be0f7ee25e6305f0fbf5baff40fca51eec333"
+  checksum: [
+    "sha256=9100ec7606c07112a90c00796c4be0f7ee25e6305f0fbf5baff40fca51eec333"
+  ]
+}
+extra-source "ef27e934805d8fa6851837f242cd4bd3946bef70ccbe387ab45a9c2988be7a3b--libreplaygain--r475.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:b7a2c4c9ab84445dbe76e5ba32cc84e5f64b4dca4bd0c6ceda202d024a4fcbe6"
+  checksum: [
+    "sha256=b7a2c4c9ab84445dbe76e5ba32cc84e5f64b4dca4bd0c6ceda202d024a4fcbe6"
+  ]
+}
+extra-source "adfcc14c7da99558ab13e056cbe7f7806b632a14c605454bcf4a080b5af9ee65--libreplaygain--r475.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:e1cafa5a3cc922c818b746cea6e697757dfd1450703678dc0f6ba89eb41c94ac"
+  checksum: [
+    "sha256=e1cafa5a3cc922c818b746cea6e697757dfd1450703678dc0f6ba89eb41c94ac"
+  ]
+}
+extra-source "85bf2c9ed833a3978374ddd0c21a5f6a55fe0dc8c523118d8bea70597166573f--libreplaygain--r475.catalina.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:34a785ef56c26e506e4e225ace636163dd3b5dd310448a7b63d1ba1c99a2ea77"
+  checksum: [
+    "sha256=34a785ef56c26e506e4e225ace636163dd3b5dd310448a7b63d1ba1c99a2ea77"
+  ]
+}
+extra-source "324ef5bd77de3fe2b24ca106d2742d1f0e8d1b6fd22d629d20b1bb9077836f1e--libreplaygain--r475.mojave.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:13df0590c2056af8071e5c182bc1b73cfd52b6ad7afb561d16a1ac3ddf0df179"
+  checksum: [
+    "sha256=13df0590c2056af8071e5c182bc1b73cfd52b6ad7afb561d16a1ac3ddf0df179"
+  ]
+}
+extra-source "a4ae235a5eabd6783d8029202e9c0aa3a403213e4a1057b759bd17a070fe4c83--libreplaygain--r475.high_sierra.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:c2d3becfcd2f629fb875b6d6c907505489381e5ea3893b0a882510ebbee9951a"
+  checksum: [
+    "sha256=c2d3becfcd2f629fb875b6d6c907505489381e5ea3893b0a882510ebbee9951a"
+  ]
+}
+extra-source "6fc34e507a71823571ed430daa246f8d29a997fa34d7611e83cd6cccd50c4541--libreplaygain--r475.sierra.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:d8f7cfc1bfad75b97271300a16f5c927849b03ff488141423ecf48b25c6ed8c3"
+  checksum: [
+    "sha256=d8f7cfc1bfad75b97271300a16f5c927849b03ff488141423ecf48b25c6ed8c3"
+  ]
+}
+extra-source "ca2c7133de068e82d81f64a558ab6181ae810b348d6064b10c5defb30d6d0d54--libreplaygain--r475.el_capitan.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:58b52d360c2f37f3ab3a50c4a2fe72b9a370bd951d52939f8853a5ef49fcc322"
+  checksum: [
+    "sha256=58b52d360c2f37f3ab3a50c4a2fe72b9a370bd951d52939f8853a5ef49fcc322"
+  ]
+}
+extra-source "35082f4318fc5bef7e5194f2a046d233c2bc22e07d454a2a8101d62d0b5de967--libreplaygain--r475.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libreplaygain/blobs/sha256:e25a808e70aa00573bcb1f195bb76b774e8060031e8a188d47eda1fb30fc6a4f"
+  checksum: [
+    "sha256=e25a808e70aa00573bcb1f195bb76b774e8060031e8a188d47eda1fb30fc6a4f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c2a362fb72ade5ac1b1d01f398f0b9cc9a1197d1d40629bbd063e5e49ecb1353--libreplaygain-r475-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "50f41d30f5ba0e917dbfb3aeca05df60a9148d6645f50503e2aaa336533a483b--libreplaygain--r475.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9e1bb7205458375583b3fccd8f9950b88699d0798097887a027c75685ce7a9b0--libreplaygain--r475.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "11cd1729787d2c98466444657d9baf5179bebfa07c474fa515d7b1c11b752a97--libreplaygain--r475.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "97e8247a4cf46335a9242bd69ecaa4b2325060d33c169ffd6f1af4a290d3f1b4--libreplaygain--r475.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "26e4f37294dcff9d2040616d3812e33e91e495f5d51a74ddc7285bbfd87a4d03--libreplaygain--r475.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1561d42d3fa7a621557c5b2ee1d7240aceb67d84e5ecd537edc2fa6f966ee3a7--libreplaygain--r475.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "904d15ae3e750ff56978b3ad53e70c6f83227755cc7fe3bc7075fced43f873e1--libreplaygain--r475.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ef27e934805d8fa6851837f242cd4bd3946bef70ccbe387ab45a9c2988be7a3b--libreplaygain--r475.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "adfcc14c7da99558ab13e056cbe7f7806b632a14c605454bcf4a080b5af9ee65--libreplaygain--r475.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "85bf2c9ed833a3978374ddd0c21a5f6a55fe0dc8c523118d8bea70597166573f--libreplaygain--r475.catalina.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "324ef5bd77de3fe2b24ca106d2742d1f0e8d1b6fd22d629d20b1bb9077836f1e--libreplaygain--r475.mojave.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a4ae235a5eabd6783d8029202e9c0aa3a403213e4a1057b759bd17a070fe4c83--libreplaygain--r475.high_sierra.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6fc34e507a71823571ed430daa246f8d29a997fa34d7611e83cd6cccd50c4541--libreplaygain--r475.sierra.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ca2c7133de068e82d81f64a558ab6181ae810b348d6064b10c5defb30d6d0d54--libreplaygain--r475.el_capitan.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "35082f4318fc5bef7e5194f2a046d233c2bc22e07d454a2a8101d62d0b5de967--libreplaygain--r475.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libreplaygain" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libreplaygain" ]
+]

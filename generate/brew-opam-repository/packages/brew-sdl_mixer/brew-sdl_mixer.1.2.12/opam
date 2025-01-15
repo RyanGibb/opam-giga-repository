@@ -1,0 +1,124 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Sample multi-channel audio mixer library"
+description: """
+Sample multi-channel audio mixer library"""
+extra-source "7a6cc535dd8001a7a995594093168ff6dcb725c600987121e6148230caa6dfb6--sdl_mixer--1.2.12_6.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:116bd277b73e3b79fb1668ffd63fdba7afa35b4d7518355496f8bc13fdd90601"
+  checksum: [
+    "sha256=116bd277b73e3b79fb1668ffd63fdba7afa35b4d7518355496f8bc13fdd90601"
+  ]
+}
+extra-source "1f631bbab754e95f7045281a24e9fff947284fca172979ed99e823b311f4c3b3--sdl_mixer-1.2.12_6.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/manifests/1.2.12_6"
+}
+extra-source "1d948513a31cb8e463c70733b6ae635120d5a836bd468601389a9dfe2d9043a3--sdl_mixer--1.2.12_6.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:95a7bad268b68cec8b5c54faf38f7f4ec9ff2f1167940120a388caaddb139182"
+  checksum: [
+    "sha256=95a7bad268b68cec8b5c54faf38f7f4ec9ff2f1167940120a388caaddb139182"
+  ]
+}
+extra-source "86214203e607316952d008cedc810e8ba667be77f1d0b4ab6a3925d366cacf18--sdl_mixer--1.2.12_6.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:9e71b3de0e9c7bef14278104a089eb65ac11d1ff0984629761d498416d0f948a"
+  checksum: [
+    "sha256=9e71b3de0e9c7bef14278104a089eb65ac11d1ff0984629761d498416d0f948a"
+  ]
+}
+extra-source "c6f7c50bf6b9ffb583b7effe2ad3b28d8ede873138b2bbea2b0af13ebb6a6a76--sdl_mixer--1.2.12_6.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:9011aeb2677555c32d4fbed09977e07faf7b9eea1e12f6a5b9802c504ad8dfe0"
+  checksum: [
+    "sha256=9011aeb2677555c32d4fbed09977e07faf7b9eea1e12f6a5b9802c504ad8dfe0"
+  ]
+}
+extra-source "9ba67b142adbafab04b45c396ca5fa44078afd256c62e834efdd195970b75c7e--sdl_mixer--1.2.12_6.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:7c3b42e4f38050ac7534257208ee8fe7cd3660670b8665d5fd88bb09625000f4"
+  checksum: [
+    "sha256=7c3b42e4f38050ac7534257208ee8fe7cd3660670b8665d5fd88bb09625000f4"
+  ]
+}
+extra-source "ec040b07b4bd2453e83bbcbd216091ee152b06d4680e0f1929577a849038d2b1--sdl_mixer--1.2.12_6.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:3a887eb57fef0c55e2b1696f465ab80f449785d3b7708c183a5484d079bd22da"
+  checksum: [
+    "sha256=3a887eb57fef0c55e2b1696f465ab80f449785d3b7708c183a5484d079bd22da"
+  ]
+}
+extra-source "afca73617044e9357c0f8a794f7aff24d7b9ad2fa25a12d7e470dff505c1e77f--sdl_mixer--1.2.12_6.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:3bd79dfc2a50e07eeb6e652f3c3300885af35eb2003f77de50c13aec41c2fbe6"
+  checksum: [
+    "sha256=3bd79dfc2a50e07eeb6e652f3c3300885af35eb2003f77de50c13aec41c2fbe6"
+  ]
+}
+extra-source "fd769e8a61ed3ebc31eca0822fd77f982c3fdaf32fb3f57ff1e68fd27971a492--sdl_mixer--1.2.12_6.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:e8b3fe965cb691647c21d62e06fd2d04f287a03b7a6b91a087c8e869354aef54"
+  checksum: [
+    "sha256=e8b3fe965cb691647c21d62e06fd2d04f287a03b7a6b91a087c8e869354aef54"
+  ]
+}
+extra-source "669b7b8460a613bbd34c39b32447e0455ad411eeca308c013565a895beb1364e--sdl_mixer--1.2.12_6.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:8359f5a56d710ae172c19c6e8567346b5fd6629f787e0168ac88ef571baed992"
+  checksum: [
+    "sha256=8359f5a56d710ae172c19c6e8567346b5fd6629f787e0168ac88ef571baed992"
+  ]
+}
+extra-source "30dfd983adc94a66120788abf8ce0e587f2d5d71e83feaca6fe5efc86496f76c--sdl_mixer--1.2.12_6.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl_mixer/blobs/sha256:8cced855d34a9dd5e40b702e34664507f2dc94ced4d7d09736d491d58a7366e4"
+  checksum: [
+    "sha256=8cced855d34a9dd5e40b702e34664507f2dc94ced4d7d09736d491d58a7366e4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-flac" {= "1.4.3"}
+  "brew-libmikmod" {= "3.3.11.1"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-sdl2" {= "2.30.7"}
+  "brew-sdl12-compat" {= "1.2.68"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1f631bbab754e95f7045281a24e9fff947284fca172979ed99e823b311f4c3b3--sdl_mixer-1.2.12_6.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7a6cc535dd8001a7a995594093168ff6dcb725c600987121e6148230caa6dfb6--sdl_mixer--1.2.12_6.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1d948513a31cb8e463c70733b6ae635120d5a836bd468601389a9dfe2d9043a3--sdl_mixer--1.2.12_6.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "86214203e607316952d008cedc810e8ba667be77f1d0b4ab6a3925d366cacf18--sdl_mixer--1.2.12_6.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c6f7c50bf6b9ffb583b7effe2ad3b28d8ede873138b2bbea2b0af13ebb6a6a76--sdl_mixer--1.2.12_6.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9ba67b142adbafab04b45c396ca5fa44078afd256c62e834efdd195970b75c7e--sdl_mixer--1.2.12_6.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ec040b07b4bd2453e83bbcbd216091ee152b06d4680e0f1929577a849038d2b1--sdl_mixer--1.2.12_6.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "afca73617044e9357c0f8a794f7aff24d7b9ad2fa25a12d7e470dff505c1e77f--sdl_mixer--1.2.12_6.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fd769e8a61ed3ebc31eca0822fd77f982c3fdaf32fb3f57ff1e68fd27971a492--sdl_mixer--1.2.12_6.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "669b7b8460a613bbd34c39b32447e0455ad411eeca308c013565a895beb1364e--sdl_mixer--1.2.12_6.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "30dfd983adc94a66120788abf8ce0e587f2d5d71e83feaca6fe5efc86496f76c--sdl_mixer--1.2.12_6.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sdl_mixer" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sdl_mixer" ]
+]

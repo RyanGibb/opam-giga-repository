@@ -1,0 +1,136 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Interpreter for PostScript and PDF"
+description: """
+Interpreter for PostScript and PDF"""
+extra-source "82ca5108ef79f90664db40e7d548123dd3c1120aaffd37c48ad4702e5b102895--ghostscript--10.04.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghostscript/blobs/sha256:1ec5dc13df46f9336bd39399ba4d0564fcba2f63f0c4ca008f2b86e3172f4d04"
+  checksum: [
+    "sha256=1ec5dc13df46f9336bd39399ba4d0564fcba2f63f0c4ca008f2b86e3172f4d04"
+  ]
+}
+extra-source "6a042be6c903dc6755dd87cf75222785ef5950daad0b8d8423c0adc7e6c34438--ghostscript-10.04.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghostscript/manifests/10.04.0"
+}
+extra-source "71ff1dbe59a1fc9667b07c0b8f0537b37f1d86e2d54cf8d1c1b14e02c5c916cb--ghostscript--10.04.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghostscript/blobs/sha256:0ea2144019a3128a6b1e0b640d491b5d457666be21d0763166ffe94764eab716"
+  checksum: [
+    "sha256=0ea2144019a3128a6b1e0b640d491b5d457666be21d0763166ffe94764eab716"
+  ]
+}
+extra-source "021ad9486c8daa13e5b43ff17e04e0aba9167e0992505259c91e796191c77193--ghostscript--10.04.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghostscript/blobs/sha256:0193b5a6ca5b47a35263cb547d09b438048ff532315d010cd544bf513d2a64ec"
+  checksum: [
+    "sha256=0193b5a6ca5b47a35263cb547d09b438048ff532315d010cd544bf513d2a64ec"
+  ]
+}
+extra-source "a552c43d6fc484587a930b16379065eba7a80d38e1782c44a2d60034d4d4ffa4--ghostscript--10.04.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghostscript/blobs/sha256:6505dca6f56f4af62d12af839ee75b3ad5ef91c880d87982b81567b1f59835e2"
+  checksum: [
+    "sha256=6505dca6f56f4af62d12af839ee75b3ad5ef91c880d87982b81567b1f59835e2"
+  ]
+}
+extra-source "05b2f6b93feb825ac2c9a839fffcf5c76019011f2120cb413a28391456d58ef2--ghostscript--10.04.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghostscript/blobs/sha256:ddc4cba70de0af25125eba0ba9e5b7ced5e2290622f83bba20f20da246637594"
+  checksum: [
+    "sha256=ddc4cba70de0af25125eba0ba9e5b7ced5e2290622f83bba20f20da246637594"
+  ]
+}
+extra-source "5f7dc7f4508d1d9ce83349328276caf4ee999149a4f54d008c94480ed4c82ba5--ghostscript--10.04.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghostscript/blobs/sha256:51882cc46695af1c7e7732ddedfa8e02e41a4c7797981e5c77bd3dc75bdb6950"
+  checksum: [
+    "sha256=51882cc46695af1c7e7732ddedfa8e02e41a4c7797981e5c77bd3dc75bdb6950"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-jbig2dec" {= "0.20"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-webp" {= "1.4.0"}
+  "brew-leptonica" {= "1.84.1"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-libarchive" {= "3.7.5"}
+  "brew-libidn" {= "1.42"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-pango" {= "1.54.0"}
+  "brew-tesseract" {= "5.4.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "6a042be6c903dc6755dd87cf75222785ef5950daad0b8d8423c0adc7e6c34438--ghostscript-10.04.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "82ca5108ef79f90664db40e7d548123dd3c1120aaffd37c48ad4702e5b102895--ghostscript--10.04.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "71ff1dbe59a1fc9667b07c0b8f0537b37f1d86e2d54cf8d1c1b14e02c5c916cb--ghostscript--10.04.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "021ad9486c8daa13e5b43ff17e04e0aba9167e0992505259c91e796191c77193--ghostscript--10.04.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a552c43d6fc484587a930b16379065eba7a80d38e1782c44a2d60034d4d4ffa4--ghostscript--10.04.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "05b2f6b93feb825ac2c9a839fffcf5c76019011f2120cb413a28391456d58ef2--ghostscript--10.04.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5f7dc7f4508d1d9ce83349328276caf4ee999149a4f54d008c94480ed4c82ba5--ghostscript--10.04.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "ghostscript" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "ghostscript" ]
+]

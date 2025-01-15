@@ -1,0 +1,109 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Client API for the XTEST & RECORD extensions"
+description: """
+X.Org: Client API for the XTEST & RECORD extensions"""
+extra-source "5b741f3e316443ec8e0822ad467c8b166ffd6b5d89bfd0d453afbcb2c64ff059--libxtst--1.2.5.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/blobs/sha256:28d4af1505473aed939328ace91056e111623d0c60b817d0b98dc3e00472dc4d"
+  checksum: [
+    "sha256=28d4af1505473aed939328ace91056e111623d0c60b817d0b98dc3e00472dc4d"
+  ]
+}
+extra-source "255b29f533b7064a6e692de37b3d9a41d73033506bec841e9900dbf2eb337a4c--libxtst-1.2.5.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/manifests/1.2.5"
+}
+extra-source "e62efee35cac2cf12bfa190386b8c93f89341d298a56bc62e3a86706da60405e--libxtst--1.2.5.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/blobs/sha256:fac9520eabdd31b4defc300ec39c860da9809c8850415b2c8ba799e1849e5f2f"
+  checksum: [
+    "sha256=fac9520eabdd31b4defc300ec39c860da9809c8850415b2c8ba799e1849e5f2f"
+  ]
+}
+extra-source "9be3addae3ab758be40ed9ce04bd84ffd4e43c4b650895a68e624b4e914eeab5--libxtst--1.2.5.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/blobs/sha256:aaefda085ce2cd52a2fccada770bc3280c75128ecbd66f92ea7afa25c11631c8"
+  checksum: [
+    "sha256=aaefda085ce2cd52a2fccada770bc3280c75128ecbd66f92ea7afa25c11631c8"
+  ]
+}
+extra-source "22b912f71f67eb73b29beb1c6cbb3a87f7ff29436357c2d2b2698c6e1d5dca22--libxtst--1.2.5.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/blobs/sha256:1b29a72e003a2f5b3ea2bf308ed8be1218146051fa941177a1eca49099558362"
+  checksum: [
+    "sha256=1b29a72e003a2f5b3ea2bf308ed8be1218146051fa941177a1eca49099558362"
+  ]
+}
+extra-source "5e70f510acc29b1ab9cc40e6d849f6669a334aadde6e3e99d6fdd0df3e29b638--libxtst--1.2.5.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/blobs/sha256:ee96653ea151d173c107e01ef1945ddca27e4585dc89c1eab34e7dd70a5718fa"
+  checksum: [
+    "sha256=ee96653ea151d173c107e01ef1945ddca27e4585dc89c1eab34e7dd70a5718fa"
+  ]
+}
+extra-source "f6f1ba05ce1784e3297be96370d7798085fc206cb69e6cc6cbb440494d4bbf09--libxtst--1.2.5.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/blobs/sha256:252a0ae6686b4d4f5098360cb7ed9a2f25d8dd122ae79150af3533509da1e102"
+  checksum: [
+    "sha256=252a0ae6686b4d4f5098360cb7ed9a2f25d8dd122ae79150af3533509da1e102"
+  ]
+}
+extra-source "96b07dc960dc4e467e018b143c2a682a36fc2755ff051f5e4e3ec7c56c3ef9a9--libxtst--1.2.5.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/blobs/sha256:618320ced081879132c2a569a2e8843326628423bcc8b1fbca86a0de66cbdc11"
+  checksum: [
+    "sha256=618320ced081879132c2a569a2e8843326628423bcc8b1fbca86a0de66cbdc11"
+  ]
+}
+extra-source "621a3574ff3c98080eeb2a78178f0059cbd286295ebd0dcf5df7838032aa8ed0--libxtst--1.2.5.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxtst/blobs/sha256:51cacd4573d0d4e1cc33c83574cf4838d93de28276a9cd3c69496da8a4466771"
+  checksum: [
+    "sha256=51cacd4573d0d4e1cc33c83574cf4838d93de28276a9cd3c69496da8a4466771"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libxi" {= "1.8.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "255b29f533b7064a6e692de37b3d9a41d73033506bec841e9900dbf2eb337a4c--libxtst-1.2.5.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "5b741f3e316443ec8e0822ad467c8b166ffd6b5d89bfd0d453afbcb2c64ff059--libxtst--1.2.5.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e62efee35cac2cf12bfa190386b8c93f89341d298a56bc62e3a86706da60405e--libxtst--1.2.5.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9be3addae3ab758be40ed9ce04bd84ffd4e43c4b650895a68e624b4e914eeab5--libxtst--1.2.5.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "22b912f71f67eb73b29beb1c6cbb3a87f7ff29436357c2d2b2698c6e1d5dca22--libxtst--1.2.5.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5e70f510acc29b1ab9cc40e6d849f6669a334aadde6e3e99d6fdd0df3e29b638--libxtst--1.2.5.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f6f1ba05ce1784e3297be96370d7798085fc206cb69e6cc6cbb440494d4bbf09--libxtst--1.2.5.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "96b07dc960dc4e467e018b143c2a682a36fc2755ff051f5e4e3ec7c56c3ef9a9--libxtst--1.2.5.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "621a3574ff3c98080eeb2a78178f0059cbd286295ebd0dcf5df7838032aa8ed0--libxtst--1.2.5.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxtst" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxtst" ]
+]

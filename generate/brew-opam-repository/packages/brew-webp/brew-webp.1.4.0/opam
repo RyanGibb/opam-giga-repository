@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Image format providing lossless and lossy compression for web images"
+description: """
+Image format providing lossless and lossy compression for web images"""
+extra-source "f696a29e1e08090505dd79eb3cc2d99c2a151828b45d8ba6b9f539d75f34fd46--webp--1.4.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:31a5101ac333638f0b5ea2a2d3a7a40c0ff9a235a038158461cab52666a8f8f0"
+  checksum: [
+    "sha256=31a5101ac333638f0b5ea2a2d3a7a40c0ff9a235a038158461cab52666a8f8f0"
+  ]
+}
+extra-source "4fd3ea2923bb7885c84ba3eee4738315675acd20fdff772153a63d8087daa4ad--webp-1.4.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/manifests/1.4.0"
+}
+extra-source "86dbdfb1639711c0c2a65fea094145b8a3678511de31c1e3cd1d203eda4c534f--webp--1.4.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:600311045d5469c75d84d6b3aa7161c085bcc3c862c7e7421e7e157efeb3f5bf"
+  checksum: [
+    "sha256=600311045d5469c75d84d6b3aa7161c085bcc3c862c7e7421e7e157efeb3f5bf"
+  ]
+}
+extra-source "6246a021056e5fe5a95bb6261cc181ccce0bae9fadd873e4c42207f1abc9f71d--webp--1.4.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:1ba924051fcd614b0841d704d8302233611aad0e5981657424e0ac16f1cdd6f9"
+  checksum: [
+    "sha256=1ba924051fcd614b0841d704d8302233611aad0e5981657424e0ac16f1cdd6f9"
+  ]
+}
+extra-source "025aaa7b9f395afd33108808e199b94d3e4b22118d164ded18998b017e87b482--webp--1.4.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:a16422ec4d0f554a78e5d8ca08ee7b979770361772bbfd18d8a096d4bed8ad0c"
+  checksum: [
+    "sha256=a16422ec4d0f554a78e5d8ca08ee7b979770361772bbfd18d8a096d4bed8ad0c"
+  ]
+}
+extra-source "e06b37c330bd11625357a2884759a71354488fd7e2fc016a637efae2a88bdd24--webp--1.4.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:56b147b011c79a23b72746d5e8bf186e86e82a13799e473f6c72921b15ef4622"
+  checksum: [
+    "sha256=56b147b011c79a23b72746d5e8bf186e86e82a13799e473f6c72921b15ef4622"
+  ]
+}
+extra-source "44304760c802d034b0810ca2af69addda7f290e5deae2f391be7902e8a3eaff3--webp--1.4.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:dd492a06f46d931a677984e2663a62c70be6bb99b28f4a0bb8d573b3fe8259b0"
+  checksum: [
+    "sha256=dd492a06f46d931a677984e2663a62c70be6bb99b28f4a0bb8d573b3fe8259b0"
+  ]
+}
+extra-source "1b32c47cb52f353f43f1013fdd553d79b7593faff72da6ae9b89d1fd29807e34--webp--1.4.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:c99036e412ed1c672a2be4805edfe156f1446255f7394e61a297bbc1589aff19"
+  checksum: [
+    "sha256=c99036e412ed1c672a2be4805edfe156f1446255f7394e61a297bbc1589aff19"
+  ]
+}
+extra-source "a61a76386fe8b0ebbcff4f7e96c45d80b5202399ee0c09fa53d2285925d156bf--webp--1.4.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:689bc7cdc7b5468f779265c66b4140ad911ea6bac85dc1df33bb64a9b7fd0f26"
+  checksum: [
+    "sha256=689bc7cdc7b5468f779265c66b4140ad911ea6bac85dc1df33bb64a9b7fd0f26"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-giflib" {= "5.2.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "4fd3ea2923bb7885c84ba3eee4738315675acd20fdff772153a63d8087daa4ad--webp-1.4.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f696a29e1e08090505dd79eb3cc2d99c2a151828b45d8ba6b9f539d75f34fd46--webp--1.4.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "86dbdfb1639711c0c2a65fea094145b8a3678511de31c1e3cd1d203eda4c534f--webp--1.4.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6246a021056e5fe5a95bb6261cc181ccce0bae9fadd873e4c42207f1abc9f71d--webp--1.4.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "025aaa7b9f395afd33108808e199b94d3e4b22118d164ded18998b017e87b482--webp--1.4.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e06b37c330bd11625357a2884759a71354488fd7e2fc016a637efae2a88bdd24--webp--1.4.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "44304760c802d034b0810ca2af69addda7f290e5deae2f391be7902e8a3eaff3--webp--1.4.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1b32c47cb52f353f43f1013fdd553d79b7593faff72da6ae9b89d1fd29807e34--webp--1.4.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a61a76386fe8b0ebbcff4f7e96c45d80b5202399ee0c09fa53d2285925d156bf--webp--1.4.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "webp" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "webp" ]
+]

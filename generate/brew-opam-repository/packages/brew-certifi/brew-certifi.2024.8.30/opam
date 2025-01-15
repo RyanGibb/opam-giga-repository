@@ -1,0 +1,85 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Mozilla CA bundle for Python"
+description: """
+Mozilla CA bundle for Python"""
+extra-source "5ed4763c3c6728c5230d861cbbc4c03b1667856179ae8a573e2dcd319ffedc1d--certifi--2024.8.30.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:0d53b46299ad29dfbaeb9c9d642887efb7235ddec1ed39ec144469114970fe6b"
+  checksum: [
+    "sha256=0d53b46299ad29dfbaeb9c9d642887efb7235ddec1ed39ec144469114970fe6b"
+  ]
+}
+extra-source "47b207688319f2d252d26b1fdad04d4775db2234cc512f97238151a8e6849acf--certifi-2024.8.30.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/certifi/manifests/2024.8.30"
+}
+extra-source "515b85eb530cf009104754628910c635c198681beb5192dc66887da672111b0f--certifi--2024.8.30.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:b72c41cf69a1e7317f9994e6f0dbdf1abb3ada5d767db3c10d2b4ac63d1245d4"
+  checksum: [
+    "sha256=b72c41cf69a1e7317f9994e6f0dbdf1abb3ada5d767db3c10d2b4ac63d1245d4"
+  ]
+}
+extra-source "befc49da34f8c2badb6a30c12b5211608871977a502fc522fcfe12947680e9ee--certifi--2024.8.30.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:c109e2f1cbdb2c868d964f8eb4816e865ffacbf9c7d187865ac9e4b729557448"
+  checksum: [
+    "sha256=c109e2f1cbdb2c868d964f8eb4816e865ffacbf9c7d187865ac9e4b729557448"
+  ]
+}
+extra-source "befc49da34f8c2badb6a30c12b5211608871977a502fc522fcfe12947680e9ee--certifi--2024.8.30.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:c109e2f1cbdb2c868d964f8eb4816e865ffacbf9c7d187865ac9e4b729557448"
+  checksum: [
+    "sha256=c109e2f1cbdb2c868d964f8eb4816e865ffacbf9c7d187865ac9e4b729557448"
+  ]
+}
+extra-source "befc49da34f8c2badb6a30c12b5211608871977a502fc522fcfe12947680e9ee--certifi--2024.8.30.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:c109e2f1cbdb2c868d964f8eb4816e865ffacbf9c7d187865ac9e4b729557448"
+  checksum: [
+    "sha256=c109e2f1cbdb2c868d964f8eb4816e865ffacbf9c7d187865ac9e4b729557448"
+  ]
+}
+extra-source "befc49da34f8c2badb6a30c12b5211608871977a502fc522fcfe12947680e9ee--certifi--2024.8.30.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:c109e2f1cbdb2c868d964f8eb4816e865ffacbf9c7d187865ac9e4b729557448"
+  checksum: [
+    "sha256=c109e2f1cbdb2c868d964f8eb4816e865ffacbf9c7d187865ac9e4b729557448"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "47b207688319f2d252d26b1fdad04d4775db2234cc512f97238151a8e6849acf--certifi-2024.8.30.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "5ed4763c3c6728c5230d861cbbc4c03b1667856179ae8a573e2dcd319ffedc1d--certifi--2024.8.30.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "515b85eb530cf009104754628910c635c198681beb5192dc66887da672111b0f--certifi--2024.8.30.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "befc49da34f8c2badb6a30c12b5211608871977a502fc522fcfe12947680e9ee--certifi--2024.8.30.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "515b85eb530cf009104754628910c635c198681beb5192dc66887da672111b0f--certifi--2024.8.30.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "befc49da34f8c2badb6a30c12b5211608871977a502fc522fcfe12947680e9ee--certifi--2024.8.30.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "515b85eb530cf009104754628910c635c198681beb5192dc66887da672111b0f--certifi--2024.8.30.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "befc49da34f8c2badb6a30c12b5211608871977a502fc522fcfe12947680e9ee--certifi--2024.8.30.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "befc49da34f8c2badb6a30c12b5211608871977a502fc522fcfe12947680e9ee--certifi--2024.8.30.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "certifi" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "certifi" ]
+]

@@ -1,0 +1,100 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Vulkan ICD Loader"
+description: """
+Vulkan ICD Loader"""
+extra-source "98972cd729cd0191c7c011efbf1e9a242b1d144a7850c491ec63d1cc21eba237--vulkan-loader--1.3.295.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:4828b867935c6556c0e65eb959636f27bf3f2aeae6542522cf41a2ff56d37e22"
+  checksum: [
+    "sha256=4828b867935c6556c0e65eb959636f27bf3f2aeae6542522cf41a2ff56d37e22"
+  ]
+}
+extra-source "83bb068a094045e083e12763962220d5d164fadafa8eb74f5f03fd64b718540f--vulkan-loader-1.3.295.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/manifests/1.3.295"
+}
+extra-source "f69940f3cfd8de020ba982e39053e57044b63044618547fb22c74a9a1a6aaf63--vulkan-loader--1.3.295.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:357bcf452c59f750ce5ec1acbfa40c098b5826abd483ff65e80a61b5e9702800"
+  checksum: [
+    "sha256=357bcf452c59f750ce5ec1acbfa40c098b5826abd483ff65e80a61b5e9702800"
+  ]
+}
+extra-source "543bac28c8997418b00803f80ce6ba179b72b8e9145369ac9face32a48bff87b--vulkan-loader--1.3.295.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:7dc17e5c77e0faace0ad57032f78d6e37883babd609be3d4888cad9a0eb53cb9"
+  checksum: [
+    "sha256=7dc17e5c77e0faace0ad57032f78d6e37883babd609be3d4888cad9a0eb53cb9"
+  ]
+}
+extra-source "68d738c3407998ee4a6dd91103fc84175e76c8bc763064a1bf16fc73c5fc9278--vulkan-loader--1.3.295.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:56e2e3c3a5fa5afb9a496975841b50202e7b724d6a33582d5820be41c49f8dce"
+  checksum: [
+    "sha256=56e2e3c3a5fa5afb9a496975841b50202e7b724d6a33582d5820be41c49f8dce"
+  ]
+}
+extra-source "ef7bdc9bbe7c6cba0cbc540f23b4cf528c7fc92d6414418cc62915f4c1342a2d--vulkan-loader--1.3.295.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:64e9f848deb14cb38be095c725e8c4cf4b893d5ad3da613dd60d09852eb4a82a"
+  checksum: [
+    "sha256=64e9f848deb14cb38be095c725e8c4cf4b893d5ad3da613dd60d09852eb4a82a"
+  ]
+}
+extra-source "1488486eb4f963807ccf4e35079e3dd2e9f6763f7ae3d79973708cb2a179c95a--vulkan-loader--1.3.295.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:3c3331db342618229e46a55a64a91a8a666f87ee091d94f9c566f3cddcf4f590"
+  checksum: [
+    "sha256=3c3331db342618229e46a55a64a91a8a666f87ee091d94f9c566f3cddcf4f590"
+  ]
+}
+extra-source "0c40988cd359f21b7ce96fc79fb7b4ae7418b47eca17fdd705270c8daad45cc9--vulkan-loader--1.3.295.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:42f16af9881d060ed1d16c5be0a9b96098535d16690bcf1600e6946eacc7f2be"
+  checksum: [
+    "sha256=42f16af9881d060ed1d16c5be0a9b96098535d16690bcf1600e6946eacc7f2be"
+  ]
+}
+extra-source "5ad4b14b6c8942820887f22a1ac11185471c140c620cc26839a8190418c3f659--vulkan-loader--1.3.295.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:d8cd4cb1262a9d3d0963aa2cb25f118a5dfcb844e8154ccdc24161ab31750d6f"
+  checksum: [
+    "sha256=d8cd4cb1262a9d3d0963aa2cb25f118a5dfcb844e8154ccdc24161ab31750d6f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-vulkan-headers" {= "1.3.295"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "83bb068a094045e083e12763962220d5d164fadafa8eb74f5f03fd64b718540f--vulkan-loader-1.3.295.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "98972cd729cd0191c7c011efbf1e9a242b1d144a7850c491ec63d1cc21eba237--vulkan-loader--1.3.295.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f69940f3cfd8de020ba982e39053e57044b63044618547fb22c74a9a1a6aaf63--vulkan-loader--1.3.295.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "543bac28c8997418b00803f80ce6ba179b72b8e9145369ac9face32a48bff87b--vulkan-loader--1.3.295.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "68d738c3407998ee4a6dd91103fc84175e76c8bc763064a1bf16fc73c5fc9278--vulkan-loader--1.3.295.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ef7bdc9bbe7c6cba0cbc540f23b4cf528c7fc92d6414418cc62915f4c1342a2d--vulkan-loader--1.3.295.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1488486eb4f963807ccf4e35079e3dd2e9f6763f7ae3d79973708cb2a179c95a--vulkan-loader--1.3.295.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0c40988cd359f21b7ce96fc79fb7b4ae7418b47eca17fdd705270c8daad45cc9--vulkan-loader--1.3.295.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5ad4b14b6c8942820887f22a1ac11185471c140c620cc26839a8190418c3f659--vulkan-loader--1.3.295.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "vulkan-loader" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "vulkan-loader" ]
+]

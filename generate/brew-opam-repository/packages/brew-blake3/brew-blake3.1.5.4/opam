@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C implementation of the BLAKE3 cryptographic hash function"
+description: """
+C implementation of the BLAKE3 cryptographic hash function"""
+extra-source "62f0ed0fdf99ad4abfd29d21baf79d7f4078f109f71a425fbc40aedd216e1b4e--blake3--1.5.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/blobs/sha256:1572b7c66fd8e1e74db8df0663a0f5f8e8672c6f5617419d3894f1b6d0408188"
+  checksum: [
+    "sha256=1572b7c66fd8e1e74db8df0663a0f5f8e8672c6f5617419d3894f1b6d0408188"
+  ]
+}
+extra-source "62192cc65863b327b5457b75c3212afa16657e6f4da9cbd8a6bdefd2900635b0--blake3-1.5.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/manifests/1.5.4"
+}
+extra-source "83d76fb8c4ff5ad22d2acb9c7e0fbf865b6f1eb72a51dfada6a435118d9eb2e3--blake3--1.5.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/blobs/sha256:c1dbb15d592fc823840875cc5cc0c98314f88ecf5bdbde7933e949964286ba8e"
+  checksum: [
+    "sha256=c1dbb15d592fc823840875cc5cc0c98314f88ecf5bdbde7933e949964286ba8e"
+  ]
+}
+extra-source "f269574bd7f9bc25e93fb9631110cfe829da96d262b76982920e6016f7b0ce91--blake3--1.5.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/blobs/sha256:b98d30812404a382e2e0a4128c9c751359f6f5e416ed8be61de0cd70689c0b26"
+  checksum: [
+    "sha256=b98d30812404a382e2e0a4128c9c751359f6f5e416ed8be61de0cd70689c0b26"
+  ]
+}
+extra-source "3b668e39af09a263bad41cadde65cb44f58940852f02db391d99db5492fc09c3--blake3--1.5.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/blobs/sha256:de367d003e40a75bc3a0649b62e435a6f55ad116f51e79f13c8cf056a34baedf"
+  checksum: [
+    "sha256=de367d003e40a75bc3a0649b62e435a6f55ad116f51e79f13c8cf056a34baedf"
+  ]
+}
+extra-source "f52cb68545838b4e170807acf3925480998e254607de1ee15a2543c7c5ff74d7--blake3--1.5.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/blobs/sha256:fa8e067197369778b60dd612db3310e9b97cea62ad449904372b57795438f0c1"
+  checksum: [
+    "sha256=fa8e067197369778b60dd612db3310e9b97cea62ad449904372b57795438f0c1"
+  ]
+}
+extra-source "fd75a4dea85705cfadee70bdfa304779c97b78df2c93351ca686990fb13bd579--blake3--1.5.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/blobs/sha256:946aa7915986ed4ba1b2442c1a446358d7e429becd25450585c96f14727164fb"
+  checksum: [
+    "sha256=946aa7915986ed4ba1b2442c1a446358d7e429becd25450585c96f14727164fb"
+  ]
+}
+extra-source "f29d65fe1795c7f670d8a73722f51bf4edc01a54180aea96a3d46d23ecb3c541--blake3--1.5.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/blobs/sha256:55fa7bced465117ebf342d11fa2dca0d466bbe66419fe2f119ed68b0278cce14"
+  checksum: [
+    "sha256=55fa7bced465117ebf342d11fa2dca0d466bbe66419fe2f119ed68b0278cce14"
+  ]
+}
+extra-source "f6903375e0dce418df427c568d017dc0ecd17881fea0bd59178bff405cbb80f4--blake3--1.5.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/blake3/blobs/sha256:e1b7ef6252d7f5d1aba488f178a347a90359bb6b759dfc2805e9904784210ffb"
+  checksum: [
+    "sha256=e1b7ef6252d7f5d1aba488f178a347a90359bb6b759dfc2805e9904784210ffb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "62192cc65863b327b5457b75c3212afa16657e6f4da9cbd8a6bdefd2900635b0--blake3-1.5.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "62f0ed0fdf99ad4abfd29d21baf79d7f4078f109f71a425fbc40aedd216e1b4e--blake3--1.5.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "83d76fb8c4ff5ad22d2acb9c7e0fbf865b6f1eb72a51dfada6a435118d9eb2e3--blake3--1.5.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f269574bd7f9bc25e93fb9631110cfe829da96d262b76982920e6016f7b0ce91--blake3--1.5.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3b668e39af09a263bad41cadde65cb44f58940852f02db391d99db5492fc09c3--blake3--1.5.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f52cb68545838b4e170807acf3925480998e254607de1ee15a2543c7c5ff74d7--blake3--1.5.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fd75a4dea85705cfadee70bdfa304779c97b78df2c93351ca686990fb13bd579--blake3--1.5.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f29d65fe1795c7f670d8a73722f51bf4edc01a54180aea96a3d46d23ecb3c541--blake3--1.5.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f6903375e0dce418df427c568d017dc0ecd17881fea0bd59178bff405cbb80f4--blake3--1.5.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "blake3" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "blake3" ]
+]

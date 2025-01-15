@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "VP8/VP9 video codec"
+description: """
+VP8/VP9 video codec"""
+extra-source "38ba794aee06715c98361e0847655956b74e71ff1226b1be818c28b06b5c34d1--libvpx--1.13.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/blobs/sha256:6458bca2101091386e7653910ed3465e35f0d3a83d5595704baec3e8f5b42137"
+  checksum: [
+    "sha256=6458bca2101091386e7653910ed3465e35f0d3a83d5595704baec3e8f5b42137"
+  ]
+}
+extra-source "364b66ab6140cccfc918fb168a803232862da070aac567fbd6f6531c14125399--libvpx-1.13.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/manifests/1.13.1"
+}
+extra-source "e4322fc3a8cfea57da05eeca63a96717e229c4f57b13a187afcb4294f60d2868--libvpx--1.13.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/blobs/sha256:20b5db6c221c97a82f9808bee54a4467f36c761d3c9effa5ee706c81b83da97c"
+  checksum: [
+    "sha256=20b5db6c221c97a82f9808bee54a4467f36c761d3c9effa5ee706c81b83da97c"
+  ]
+}
+extra-source "17a5d6a9dafc93902cdb00843b30d49a863833318bdcce467ffa91271f58cfae--libvpx--1.13.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/blobs/sha256:484698903af5db7c9b7d6b4e5791f702ae99a9167a0119773b30d1c9b34ffdba"
+  checksum: [
+    "sha256=484698903af5db7c9b7d6b4e5791f702ae99a9167a0119773b30d1c9b34ffdba"
+  ]
+}
+extra-source "17007f5ac829830cdb09afbf09caef2b9b7a95992ca8f65772d97f633e5af8b2--libvpx--1.13.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/blobs/sha256:4225649fc700b5974f0fe3b01a6642e93a7669f9d2525b2344b4535d02cd2970"
+  checksum: [
+    "sha256=4225649fc700b5974f0fe3b01a6642e93a7669f9d2525b2344b4535d02cd2970"
+  ]
+}
+extra-source "800a4667012659205acba4e28b5a560ce75329434ad53a220ad855e6ca651189--libvpx--1.13.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/blobs/sha256:6a40c8dea8edfd2ebf1aec9894b91239691651bd92f6d2e61f3ffa0b9e79fe6e"
+  checksum: [
+    "sha256=6a40c8dea8edfd2ebf1aec9894b91239691651bd92f6d2e61f3ffa0b9e79fe6e"
+  ]
+}
+extra-source "04720f55af7f37a327a4b23c13faa49cdbbc9a70607357d3c6695354aa0c4e39--libvpx--1.13.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/blobs/sha256:3ad4e913a0955ebcbb0c5760d9dfbd3add260bd5932e61b9e9f996014e3a2a56"
+  checksum: [
+    "sha256=3ad4e913a0955ebcbb0c5760d9dfbd3add260bd5932e61b9e9f996014e3a2a56"
+  ]
+}
+extra-source "accd26611f214be8b274b3bbb95e6ffb66a89af3a54a1038ff87daeca184567d--libvpx--1.13.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/blobs/sha256:74b80630744e3c8f51c8b40089a2b07529d1a319f03b67cf387e914e52b80d83"
+  checksum: [
+    "sha256=74b80630744e3c8f51c8b40089a2b07529d1a319f03b67cf387e914e52b80d83"
+  ]
+}
+extra-source "891924a02d524c1fdb9c5e0571f232ac879952d6dc0ac351adfc5db567c08916--libvpx--1.13.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvpx/blobs/sha256:9a251c029dbfab1d5545b5b07c80f317b3860cca7ed32a18b91f4e6076348ab1"
+  checksum: [
+    "sha256=9a251c029dbfab1d5545b5b07c80f317b3860cca7ed32a18b91f4e6076348ab1"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-yasm" {= "1.3.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "364b66ab6140cccfc918fb168a803232862da070aac567fbd6f6531c14125399--libvpx-1.13.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "38ba794aee06715c98361e0847655956b74e71ff1226b1be818c28b06b5c34d1--libvpx--1.13.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e4322fc3a8cfea57da05eeca63a96717e229c4f57b13a187afcb4294f60d2868--libvpx--1.13.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "17a5d6a9dafc93902cdb00843b30d49a863833318bdcce467ffa91271f58cfae--libvpx--1.13.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "17007f5ac829830cdb09afbf09caef2b9b7a95992ca8f65772d97f633e5af8b2--libvpx--1.13.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "800a4667012659205acba4e28b5a560ce75329434ad53a220ad855e6ca651189--libvpx--1.13.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "04720f55af7f37a327a4b23c13faa49cdbbc9a70607357d3c6695354aa0c4e39--libvpx--1.13.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "accd26611f214be8b274b3bbb95e6ffb66a89af3a54a1038ff87daeca184567d--libvpx--1.13.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "891924a02d524c1fdb9c5e0571f232ac879952d6dc0ac351adfc5db567c08916--libvpx--1.13.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libvpx" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libvpx" ]
+]

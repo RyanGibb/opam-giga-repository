@@ -1,0 +1,102 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GNU multiple precision arithmetic library"
+description: """
+GNU multiple precision arithmetic library"""
+extra-source "ea83c2ee63250dbc931826078df9b212ba8618ad631319170d4cb55723e4fe0b--gmp--6.3.0.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:d1192da68b2618652f4be0dd9f56b18d2d276481440ae241ce9cc17be0450e07"
+  checksum: [
+    "sha256=d1192da68b2618652f4be0dd9f56b18d2d276481440ae241ce9cc17be0450e07"
+  ]
+}
+extra-source "70a72a71216843d66a953c06ff6337445ce9bc94fae9f0e301e2f59005274a8e--gmp-6.3.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/manifests/6.3.0"
+}
+extra-source "a0c4a56cc56ffac0cb3f0aa5deb1b3a614002dabf65a81e14d87129c89eb7bde--gmp--6.3.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:6683d73d6677d28e1e8d1b92d6ebfbc068c1d33e19b79114a22a648a99ba5991"
+  checksum: [
+    "sha256=6683d73d6677d28e1e8d1b92d6ebfbc068c1d33e19b79114a22a648a99ba5991"
+  ]
+}
+extra-source "8d39e3597db85ea2b4532e0057381937ab6ed92a64a1728c68e57bc6b3aeef95--gmp--6.3.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:e8410d92339535174e9f4a5eccc403301b70c7287f2f9a87f064a9aa2e21b54b"
+  checksum: [
+    "sha256=e8410d92339535174e9f4a5eccc403301b70c7287f2f9a87f064a9aa2e21b54b"
+  ]
+}
+extra-source "96a5c6ba7b30c6f2734be44067ba66ef0de5e0973c913659c7b555a4b063029c--gmp--6.3.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:78e4f40cba6419cf7e2d81e9c945d1e93744511bd5230bdfac1b69ed894914b4"
+  checksum: [
+    "sha256=78e4f40cba6419cf7e2d81e9c945d1e93744511bd5230bdfac1b69ed894914b4"
+  ]
+}
+extra-source "631bd9ec5f73cb2970768735fc2e3ebc0ee4c16cdabaa7fcfc0302dc0fc0ad94--gmp--6.3.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:83ec5443c018c02036d88ae0dc8dc4237b3b38eb76a3cdd82148e7f841ffd39f"
+  checksum: [
+    "sha256=83ec5443c018c02036d88ae0dc8dc4237b3b38eb76a3cdd82148e7f841ffd39f"
+  ]
+}
+extra-source "fad83beb66cf4cdd545d5866af752e1c0ff40bc100fbf7688d4fcb7203bcb33c--gmp--6.3.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:98c163edfbe7bdc0c14f88d7d34fa2764ecb9cab9f749600b861012700603260"
+  checksum: [
+    "sha256=98c163edfbe7bdc0c14f88d7d34fa2764ecb9cab9f749600b861012700603260"
+  ]
+}
+extra-source "6b369e4550006717f23e1b79c653f4edbf461bc475582ea8525174d7e1f6a95a--gmp--6.3.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:b04023f65b8c79c45798a4bfd97fdbeb10f1bf9e8416e22e8eeedbd9b2a8c102"
+  checksum: [
+    "sha256=b04023f65b8c79c45798a4bfd97fdbeb10f1bf9e8416e22e8eeedbd9b2a8c102"
+  ]
+}
+extra-source "e87ae78104370d88b2afdbee5aecb3fd963a9e8dd014e8e186d3c3b568b0f9a7--gmp--6.3.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:2115b33b8b4052f91ffb85e476c7fc0388cf4e614af1ce6453b35e6d25473911"
+  checksum: [
+    "sha256=2115b33b8b4052f91ffb85e476c7fc0388cf4e614af1ce6453b35e6d25473911"
+  ]
+}
+extra-source "c33d6941e09b97b6780d25231108e3ddd11f638829b2c50670223f42e0586657--gmp--6.3.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:3dca3544faca889c7389a5fdbd2b5b00582c34a4e14607033573ad3b06ca7882"
+  checksum: [
+    "sha256=3dca3544faca889c7389a5fdbd2b5b00582c34a4e14607033573ad3b06ca7882"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "70a72a71216843d66a953c06ff6337445ce9bc94fae9f0e301e2f59005274a8e--gmp-6.3.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ea83c2ee63250dbc931826078df9b212ba8618ad631319170d4cb55723e4fe0b--gmp--6.3.0.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a0c4a56cc56ffac0cb3f0aa5deb1b3a614002dabf65a81e14d87129c89eb7bde--gmp--6.3.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8d39e3597db85ea2b4532e0057381937ab6ed92a64a1728c68e57bc6b3aeef95--gmp--6.3.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "96a5c6ba7b30c6f2734be44067ba66ef0de5e0973c913659c7b555a4b063029c--gmp--6.3.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "631bd9ec5f73cb2970768735fc2e3ebc0ee4c16cdabaa7fcfc0302dc0fc0ad94--gmp--6.3.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fad83beb66cf4cdd545d5866af752e1c0ff40bc100fbf7688d4fcb7203bcb33c--gmp--6.3.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6b369e4550006717f23e1b79c653f4edbf461bc475582ea8525174d7e1f6a95a--gmp--6.3.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e87ae78104370d88b2afdbee5aecb3fd963a9e8dd014e8e186d3c3b568b0f9a7--gmp--6.3.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c33d6941e09b97b6780d25231108e3ddd11f638829b2c50670223f42e0586657--gmp--6.3.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gmp" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gmp" ]
+]

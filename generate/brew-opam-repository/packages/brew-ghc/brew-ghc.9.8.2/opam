@@ -1,0 +1,104 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Glorious Glasgow Haskell Compilation System"
+description: """
+Glorious Glasgow Haskell Compilation System"""
+extra-source "739773583cc46cb97ad63f0937984e3f0d513de6c76faca0cc3762296d3a392e--ghc@9.8--9.8.2.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/blobs/sha256:2d815b4bf0d5873313ad00c7bcc2c3a8c3a14892edcb76ae87a8abfcb92bc119"
+  checksum: [
+    "sha256=2d815b4bf0d5873313ad00c7bcc2c3a8c3a14892edcb76ae87a8abfcb92bc119"
+  ]
+}
+extra-source "582aa746d5413590b14f3a3fdc8f4f2885e501fa41dc4f6f357e47e793718849--ghc@9.8-9.8.2-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/manifests/9.8.2-1"
+}
+extra-source "67bee180cccb6428023adf53264c104b0d7e8ef5e5b0b4e08fb3af42a0746dbe--ghc@9.8--9.8.2.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/blobs/sha256:64216a95d4b33e2bde661c2fcadc50dc0bcebf09e4279db09b35b7f71b99c6f6"
+  checksum: [
+    "sha256=64216a95d4b33e2bde661c2fcadc50dc0bcebf09e4279db09b35b7f71b99c6f6"
+  ]
+}
+extra-source "7f3b8015f553d4707f32b841de47269b56add88fb22aafc568a01047567bc92c--ghc@9.8--9.8.2.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/blobs/sha256:abeced6f03bc0d63eaaa0909167c4cda1585c414e718861ec89aa0f13122a6d5"
+  checksum: [
+    "sha256=abeced6f03bc0d63eaaa0909167c4cda1585c414e718861ec89aa0f13122a6d5"
+  ]
+}
+extra-source "b66e37ae6a06ac9b5c4120f23b4e8114329510f2be3b7f658a91ed39a3d39e35--ghc@9.8--9.8.2.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/blobs/sha256:6905add83dbe5b32468bd06c88ba8f34a6d59bffad1b077ea68ddb74507bf1e2"
+  checksum: [
+    "sha256=6905add83dbe5b32468bd06c88ba8f34a6d59bffad1b077ea68ddb74507bf1e2"
+  ]
+}
+extra-source "e474488826d80909ed8b68e422a28328f15e3a5852bd62c44691962234f84bd5--ghc@9.8--9.8.2.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/blobs/sha256:686beedac05e51b8554a6fbdd44ea4a06b5fc5f73cd18ddb5191dee9d8ed1965"
+  checksum: [
+    "sha256=686beedac05e51b8554a6fbdd44ea4a06b5fc5f73cd18ddb5191dee9d8ed1965"
+  ]
+}
+extra-source "f6b0cd34f9fbc014f91ef6937ce77e8c41ac706b878a2d05d5dd28d5aaaab34d--ghc@9.8--9.8.2.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/blobs/sha256:a06fc3f77af7df2c5d37e2b2783bcd3174ad1287a939b38c8d6ba2941ee776a1"
+  checksum: [
+    "sha256=a06fc3f77af7df2c5d37e2b2783bcd3174ad1287a939b38c8d6ba2941ee776a1"
+  ]
+}
+extra-source "282573aea07146a37ad80c857a88e61691eedc33f4343755b96969a9344edd4f--ghc@9.8--9.8.2.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/blobs/sha256:263c6cc8f81369500e6270509468775976987c5557f023126e694c00d7f44ba6"
+  checksum: [
+    "sha256=263c6cc8f81369500e6270509468775976987c5557f023126e694c00d7f44ba6"
+  ]
+}
+extra-source "e6d50b7da2a5a35db6b0151e86ef03678276bbc2c2376b9b14dd8de503258878--ghc@9.8--9.8.2.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/9.8/blobs/sha256:a0427565c4f24eac5d9eb39fb0f2bd9440cd52011f1c2621d70a511efa13d58e"
+  checksum: [
+    "sha256=a0427565c4f24eac5d9eb39fb0f2bd9440cd52011f1c2621d70a511efa13d58e"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "582aa746d5413590b14f3a3fdc8f4f2885e501fa41dc4f6f357e47e793718849--ghc@9.8-9.8.2-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "739773583cc46cb97ad63f0937984e3f0d513de6c76faca0cc3762296d3a392e--ghc@9.8--9.8.2.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "67bee180cccb6428023adf53264c104b0d7e8ef5e5b0b4e08fb3af42a0746dbe--ghc@9.8--9.8.2.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7f3b8015f553d4707f32b841de47269b56add88fb22aafc568a01047567bc92c--ghc@9.8--9.8.2.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b66e37ae6a06ac9b5c4120f23b4e8114329510f2be3b7f658a91ed39a3d39e35--ghc@9.8--9.8.2.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e474488826d80909ed8b68e422a28328f15e3a5852bd62c44691962234f84bd5--ghc@9.8--9.8.2.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f6b0cd34f9fbc014f91ef6937ce77e8c41ac706b878a2d05d5dd28d5aaaab34d--ghc@9.8--9.8.2.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "282573aea07146a37ad80c857a88e61691eedc33f4343755b96969a9344edd4f--ghc@9.8--9.8.2.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e6d50b7da2a5a35db6b0151e86ef03678276bbc2c2376b9b14dd8de503258878--ghc@9.8--9.8.2.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "ghc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "ghc" ]
+]

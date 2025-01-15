@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Audio Connection Kit"
+description: """
+Audio Connection Kit"""
+extra-source "5c7ee4dfb157bf205c69562b5741c8acd3e4709b5ad00e3c78397aa66f0600f9--jack--1.9.22_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/blobs/sha256:e3cd7f8ab3b70baa1766b3a131b16ffe7a62a398f20a3ce7b6d6935c222b5925"
+  checksum: [
+    "sha256=e3cd7f8ab3b70baa1766b3a131b16ffe7a62a398f20a3ce7b6d6935c222b5925"
+  ]
+}
+extra-source "95912204679f1172b97b300112759fa504313d2b70e201694afc78120d49ffc7--jack-1.9.22_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/manifests/1.9.22_1"
+}
+extra-source "1b04c533e20eef78b07ab152ef8bd2258469cf536c672edd30083970ba663078--jack--1.9.22_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/blobs/sha256:15b133b0d5b27e9a1e054fec07cd8c0c3e4972ace51ca2d6ec9b57b8ee4c5c85"
+  checksum: [
+    "sha256=15b133b0d5b27e9a1e054fec07cd8c0c3e4972ace51ca2d6ec9b57b8ee4c5c85"
+  ]
+}
+extra-source "5154a2e591d614ab611b50a2b74266719aa67f0e111b4948b8bc351c4c3a0e7c--jack--1.9.22_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/blobs/sha256:39affd1f135d3745a22bf4907e46509cdb4b1b3a8e654e23179e1a1ad92193bc"
+  checksum: [
+    "sha256=39affd1f135d3745a22bf4907e46509cdb4b1b3a8e654e23179e1a1ad92193bc"
+  ]
+}
+extra-source "9b236a9354e9ad63b6f50c214dc1736cee32f9cd019e24d77b01edd594d21661--jack--1.9.22_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/blobs/sha256:6d6e8934386e7609ad4ab4af7ba321ffc0bf8673f93b2d2deca7fb3bc3207688"
+  checksum: [
+    "sha256=6d6e8934386e7609ad4ab4af7ba321ffc0bf8673f93b2d2deca7fb3bc3207688"
+  ]
+}
+extra-source "a49ca117f7e033c36c798f52677d04e739590fbfdd04ff58248b5e1ade58b97c--jack--1.9.22_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/blobs/sha256:6210ae0eeab831aa965d6d737f22b7476224d1cd1daa1105cee116dd37a3627a"
+  checksum: [
+    "sha256=6210ae0eeab831aa965d6d737f22b7476224d1cd1daa1105cee116dd37a3627a"
+  ]
+}
+extra-source "3fd11010c015a18173180fe9c0165a959a0b48ce3f1728454fdea87c416b2f58--jack--1.9.22_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/blobs/sha256:5079ca572c21ee6acc9574a0db44938e2c6099242d38a3cbd39bc4e4bc643c08"
+  checksum: [
+    "sha256=5079ca572c21ee6acc9574a0db44938e2c6099242d38a3cbd39bc4e4bc643c08"
+  ]
+}
+extra-source "d1aa50b117174142195ee3f096d34da01a974979adfc26e1ae851fb013696b27--jack--1.9.22_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/blobs/sha256:e9ff1f4cef83787cd63bb788cd2c1818b64798d85c7081ed3b2ba42a8f40b149"
+  checksum: [
+    "sha256=e9ff1f4cef83787cd63bb788cd2c1818b64798d85c7081ed3b2ba42a8f40b149"
+  ]
+}
+extra-source "8d9229b603443b4f9bd590294c9c0bd31c5d17bea8e13a6b92d012a8f2bcfcd2--jack--1.9.22_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jack/blobs/sha256:1632a4f4ebdf3e82dd5186dd71dd498a83bf47f4ef610b319d22bb201727e463"
+  checksum: [
+    "sha256=1632a4f4ebdf3e82dd5186dd71dd498a83bf47f4ef610b319d22bb201727e463"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-berkeley-db" {= "5.3.28"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libsamplerate" {= "0.2.2"}
+  "brew-aften" {= "0.0.8"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "95912204679f1172b97b300112759fa504313d2b70e201694afc78120d49ffc7--jack-1.9.22_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "5c7ee4dfb157bf205c69562b5741c8acd3e4709b5ad00e3c78397aa66f0600f9--jack--1.9.22_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1b04c533e20eef78b07ab152ef8bd2258469cf536c672edd30083970ba663078--jack--1.9.22_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5154a2e591d614ab611b50a2b74266719aa67f0e111b4948b8bc351c4c3a0e7c--jack--1.9.22_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9b236a9354e9ad63b6f50c214dc1736cee32f9cd019e24d77b01edd594d21661--jack--1.9.22_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a49ca117f7e033c36c798f52677d04e739590fbfdd04ff58248b5e1ade58b97c--jack--1.9.22_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3fd11010c015a18173180fe9c0165a959a0b48ce3f1728454fdea87c416b2f58--jack--1.9.22_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d1aa50b117174142195ee3f096d34da01a974979adfc26e1ae851fb013696b27--jack--1.9.22_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8d9229b603443b4f9bd590294c9c0bd31c5d17bea8e13a6b92d012a8f2bcfcd2--jack--1.9.22_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "jack" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "jack" ]
+]

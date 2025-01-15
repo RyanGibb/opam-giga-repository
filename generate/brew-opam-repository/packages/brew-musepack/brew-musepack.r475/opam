@@ -1,0 +1,125 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Audio compression format and tools"
+description: """
+Audio compression format and tools"""
+extra-source "ad45ed4b1246a000c0bf490f12958601b08585657269269c668194e6ef866715--musepack--r475.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:d84a9ad759b25d445781d6e1e5af5247431427e00e90bfb0b1014d9c2e6e4bab"
+  checksum: [
+    "sha256=d84a9ad759b25d445781d6e1e5af5247431427e00e90bfb0b1014d9c2e6e4bab"
+  ]
+}
+extra-source "38024792b77872be2f125d871addc33da905cbbd9e388df3b01eec29cd6aa4ae--musepack-r475-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/manifests/r475-1"
+}
+extra-source "1533dfbc238ee9b29b1804cb898caae40f954a15a4392dc81e22d6451605264b--musepack--r475.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:6a7652681b271cbcffdd9ac69f7394ee9c51460bc2efaca5ed684913b1b22199"
+  checksum: [
+    "sha256=6a7652681b271cbcffdd9ac69f7394ee9c51460bc2efaca5ed684913b1b22199"
+  ]
+}
+extra-source "2407a232aa5c74d89f4f4a6ff44bbee39ed6430fdf3950e6305d18752d3a9938--musepack--r475.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:6b1cd3fb3a8b8beb5603ce39e237cd7fb04e71e8e46ac9d63b0904067e57e676"
+  checksum: [
+    "sha256=6b1cd3fb3a8b8beb5603ce39e237cd7fb04e71e8e46ac9d63b0904067e57e676"
+  ]
+}
+extra-source "fed431867399e37cf803e176f3ee3a4bd896964b819943665064b2be1d3af5ba--musepack--r475.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:772444ef289c9324ef9063d4ca8bc4626080f053589bd93b994e410183c9ff2e"
+  checksum: [
+    "sha256=772444ef289c9324ef9063d4ca8bc4626080f053589bd93b994e410183c9ff2e"
+  ]
+}
+extra-source "68227aef6c61721577946d85c2896e14565f6f99a54853b51a3358a23ea76d8a--musepack--r475.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:72634f1bab6447c671827b1586e2161487273e4737b0cc7e47100a8d1f33cc4e"
+  checksum: [
+    "sha256=72634f1bab6447c671827b1586e2161487273e4737b0cc7e47100a8d1f33cc4e"
+  ]
+}
+extra-source "80c611b5d4ca18967a39ec4fdf953164450ecdf5bc8cc762c0bfd1345c5ee5d8--musepack--r475.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:9f74dcc9567656a42082125ce4d758c3318a452dbd940b6db39b72c4981768da"
+  checksum: [
+    "sha256=9f74dcc9567656a42082125ce4d758c3318a452dbd940b6db39b72c4981768da"
+  ]
+}
+extra-source "e144a05cd127e4b2aa2f2178e69a1fb193ac0da1d1181c260056a0ebbaa75511--musepack--r475.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:76db5599c7e47ab4317292c040ef16095f658ee3b524d89c0296a574380a4570"
+  checksum: [
+    "sha256=76db5599c7e47ab4317292c040ef16095f658ee3b524d89c0296a574380a4570"
+  ]
+}
+extra-source "a612f646dc1aead2704dd70ebf826baba075271055e60277f9b69b7e29f39adf--musepack--r475.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:e9221e9612e1c0134554fbf380639cd995a5970ad34702bea371633f121ffb3e"
+  checksum: [
+    "sha256=e9221e9612e1c0134554fbf380639cd995a5970ad34702bea371633f121ffb3e"
+  ]
+}
+extra-source "318e04a6b36f4d10c33bb95a9d77e153b40c66ed092b3a66ca05f4815767e02d--musepack--r475.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:ce4329e0fc5d5d1a1e518e7c1f471ef300ff96ddaea0219e70e4408924f75ff6"
+  checksum: [
+    "sha256=ce4329e0fc5d5d1a1e518e7c1f471ef300ff96ddaea0219e70e4408924f75ff6"
+  ]
+}
+extra-source "44a2e2304c4386e99911b0329a5e09f43b951db7a06b1f0d76171ae86e308b87--musepack--r475.catalina.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:847cacb946b6289a5fbfbfe4e1a38f1ec5b7f1e32d6c12145aaf1044317e4ce0"
+  checksum: [
+    "sha256=847cacb946b6289a5fbfbfe4e1a38f1ec5b7f1e32d6c12145aaf1044317e4ce0"
+  ]
+}
+extra-source "db0ae5693d1e64bea9b21f0df2a0bbdc8f1844ddaf6d02e5867b71c70cb957fb--musepack--r475.mojave.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:5efee306aff13a0c0b8f98371e3cbe3eab6b73b0e92bdd59237d7db608a17708"
+  checksum: [
+    "sha256=5efee306aff13a0c0b8f98371e3cbe3eab6b73b0e92bdd59237d7db608a17708"
+  ]
+}
+extra-source "c91f31cc49d7fe3cc80ca4d64b56230026cab5ab39fb97065cd0be14f98b6dfd--musepack--r475.high_sierra.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/musepack/blobs/sha256:e1b6641d11a5338d395de8f5573464beddb81dc3dce16998e53361b43502844b"
+  checksum: [
+    "sha256=e1b6641d11a5338d395de8f5573464beddb81dc3dce16998e53361b43502844b"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-libcuefile" {= "r475"}
+  "brew-libreplaygain" {= "r475"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "38024792b77872be2f125d871addc33da905cbbd9e388df3b01eec29cd6aa4ae--musepack-r475-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ad45ed4b1246a000c0bf490f12958601b08585657269269c668194e6ef866715--musepack--r475.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1533dfbc238ee9b29b1804cb898caae40f954a15a4392dc81e22d6451605264b--musepack--r475.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2407a232aa5c74d89f4f4a6ff44bbee39ed6430fdf3950e6305d18752d3a9938--musepack--r475.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fed431867399e37cf803e176f3ee3a4bd896964b819943665064b2be1d3af5ba--musepack--r475.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "68227aef6c61721577946d85c2896e14565f6f99a54853b51a3358a23ea76d8a--musepack--r475.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "80c611b5d4ca18967a39ec4fdf953164450ecdf5bc8cc762c0bfd1345c5ee5d8--musepack--r475.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e144a05cd127e4b2aa2f2178e69a1fb193ac0da1d1181c260056a0ebbaa75511--musepack--r475.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a612f646dc1aead2704dd70ebf826baba075271055e60277f9b69b7e29f39adf--musepack--r475.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "318e04a6b36f4d10c33bb95a9d77e153b40c66ed092b3a66ca05f4815767e02d--musepack--r475.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "44a2e2304c4386e99911b0329a5e09f43b951db7a06b1f0d76171ae86e308b87--musepack--r475.catalina.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "db0ae5693d1e64bea9b21f0df2a0bbdc8f1844ddaf6d02e5867b71c70cb957fb--musepack--r475.mojave.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c91f31cc49d7fe3cc80ca4d64b56230026cab5ab39fb97065cd0be14f98b6dfd--musepack--r475.high_sierra.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "musepack" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "musepack" ]
+]

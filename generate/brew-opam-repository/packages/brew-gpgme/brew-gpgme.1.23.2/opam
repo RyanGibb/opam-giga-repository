@@ -1,0 +1,126 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library access to GnuPG"
+description: """
+Library access to GnuPG"""
+extra-source "a6680db45842bd791262d9c0faf06ed07433b9ea21b79d6201c6cd84e8691c1d--gpgme--1.23.2_2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/blobs/sha256:3be0ed36949874bc0c6b0b5936750b498cc6d74ff5949bef213c1bbc252ecc7c"
+  checksum: [
+    "sha256=3be0ed36949874bc0c6b0b5936750b498cc6d74ff5949bef213c1bbc252ecc7c"
+  ]
+}
+extra-source "0769161080912119322573f9d0341c48178cd7ccc9776f2f2bd868303703c63a--gpgme-1.23.2_2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/manifests/1.23.2_2"
+}
+extra-source "04585d56227558e08b0dc383c0e92fc098a328263a798acf268c2244908c01b0--gpgme--1.23.2_2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/blobs/sha256:acb0a393ab4537dd314676d8dbbbf846fc14726cba00c32b027e18f11a603db3"
+  checksum: [
+    "sha256=acb0a393ab4537dd314676d8dbbbf846fc14726cba00c32b027e18f11a603db3"
+  ]
+}
+extra-source "0e33dd959fd7328387dbdcdc686de9888edd391fa1b77cb41e00487d1eb3d72a--gpgme--1.23.2_2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/blobs/sha256:5990f0751f5bce504beaaa9379e0bb082cea842010a6f94f11cfe0c99baba01b"
+  checksum: [
+    "sha256=5990f0751f5bce504beaaa9379e0bb082cea842010a6f94f11cfe0c99baba01b"
+  ]
+}
+extra-source "4f6ef8eb523e2dd6d661e76d4a965bc3351fee6cfa45b700796847f1942a9d0d--gpgme--1.23.2_2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/blobs/sha256:3ffd9fce9f2862c9a35562462356530c4bc46d23e1b23e58e36aede36348fb74"
+  checksum: [
+    "sha256=3ffd9fce9f2862c9a35562462356530c4bc46d23e1b23e58e36aede36348fb74"
+  ]
+}
+extra-source "de13ffebc949765ea43beccf9b67065f4796282114bac37dbf48dac10d1275ec--gpgme--1.23.2_2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/blobs/sha256:4cf824bf4138deda8878af6ad5ea2e6af519a8d7793c0a168f724799d5f97e42"
+  checksum: [
+    "sha256=4cf824bf4138deda8878af6ad5ea2e6af519a8d7793c0a168f724799d5f97e42"
+  ]
+}
+extra-source "5e905515ac56829f5d76dcc48ec0e808005dedaf6bd789107f8e2d795ba89933--gpgme--1.23.2_2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/blobs/sha256:05b1e5854b7a8eef9edb2a45208bfbdacd28bb243fabc60f350cabcd0b26080d"
+  checksum: [
+    "sha256=05b1e5854b7a8eef9edb2a45208bfbdacd28bb243fabc60f350cabcd0b26080d"
+  ]
+}
+extra-source "b0fce23933c7a6a100d5f4822b8bdd85814cf88268c27660ce75e02787b610d3--gpgme--1.23.2_2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/blobs/sha256:5b94224d8226e2e49d3ea30bf5bd3d76672a5fd1fb59cdfbf160c35e6d2a4fa3"
+  checksum: [
+    "sha256=5b94224d8226e2e49d3ea30bf5bd3d76672a5fd1fb59cdfbf160c35e6d2a4fa3"
+  ]
+}
+extra-source "d427edebe804ceaaca23630d9e01deced3b4185bf86b7e8bab31c64c3b4e9789--gpgme--1.23.2_2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpgme/blobs/sha256:691a6fb7cf753251e8feafa30229cbba63a976820b2d33522ef413774788e6c0"
+  checksum: [
+    "sha256=691a6fb7cf753251e8feafa30229cbba63a976820b2d33522ef413774788e6c0"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libunistring" {= "1.2"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+  "brew-libgpg-error" {= "1.50"}
+  "brew-libassuan" {= "3.0.1"}
+  "brew-libgcrypt" {= "1.10.3"}
+  "brew-libksba" {= "1.6.7"}
+  "brew-libusb" {= "1.0.27"}
+  "brew-npth" {= "1.7"}
+  "brew-pinentry" {= "1.3.1"}
+  "brew-gnupg" {= "2.4.5"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-swig" {= "4.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0769161080912119322573f9d0341c48178cd7ccc9776f2f2bd868303703c63a--gpgme-1.23.2_2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "a6680db45842bd791262d9c0faf06ed07433b9ea21b79d6201c6cd84e8691c1d--gpgme--1.23.2_2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "04585d56227558e08b0dc383c0e92fc098a328263a798acf268c2244908c01b0--gpgme--1.23.2_2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0e33dd959fd7328387dbdcdc686de9888edd391fa1b77cb41e00487d1eb3d72a--gpgme--1.23.2_2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4f6ef8eb523e2dd6d661e76d4a965bc3351fee6cfa45b700796847f1942a9d0d--gpgme--1.23.2_2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "de13ffebc949765ea43beccf9b67065f4796282114bac37dbf48dac10d1275ec--gpgme--1.23.2_2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5e905515ac56829f5d76dcc48ec0e808005dedaf6bd789107f8e2d795ba89933--gpgme--1.23.2_2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b0fce23933c7a6a100d5f4822b8bdd85814cf88268c27660ce75e02787b610d3--gpgme--1.23.2_2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d427edebe804ceaaca23630d9e01deced3b4185bf86b7e8bab31c64c3b4e9789--gpgme--1.23.2_2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gpgme" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gpgme" ]
+]

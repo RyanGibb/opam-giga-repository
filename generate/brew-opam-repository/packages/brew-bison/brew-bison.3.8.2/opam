@@ -1,0 +1,122 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Parser generator"
+description: """
+Parser generator"""
+extra-source "c3a79f097ffda8413a62c4d422326bc892132edbc918b416fdf5ff9923d129c0--bison--3.8.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:d45a8c193646a25d281a6d3fd62d6f756d4e392cc2948e605a62f3d88ccbf188"
+  checksum: [
+    "sha256=d45a8c193646a25d281a6d3fd62d6f756d4e392cc2948e605a62f3d88ccbf188"
+  ]
+}
+extra-source "0a84b14c20dfba4609542ea4b14a4eb93d369f7f83f373b568017fc7d76b6505--bison-3.8.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/manifests/3.8.2"
+}
+extra-source "4e2cffc846a8a66eacf6580a37f2d53344d2d7bccc334c2df1d5681b2df9f0f8--bison--3.8.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:cadf52c2fd93ef340f01a36a8468b8725f5218ee6c62773b3838b8c01c862c9b"
+  checksum: [
+    "sha256=cadf52c2fd93ef340f01a36a8468b8725f5218ee6c62773b3838b8c01c862c9b"
+  ]
+}
+extra-source "02a4ba50307599f1cf641443c50be159ecfacf5c7e2e5f4feafbd51f654aac49--bison--3.8.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:d4c06638f63876867e8fc485129ea6683487a249f0b2bc98bfaa6f1dab4ff6a4"
+  checksum: [
+    "sha256=d4c06638f63876867e8fc485129ea6683487a249f0b2bc98bfaa6f1dab4ff6a4"
+  ]
+}
+extra-source "0865a0dc7ef4c841a5650a22e6ce05918c025ca1dbadf91d0e18551aca1f4ac3--bison--3.8.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:fc0224d45c74ee561128eb9df366ccb08698b1d659cfb92ea746e57da0108806"
+  checksum: [
+    "sha256=fc0224d45c74ee561128eb9df366ccb08698b1d659cfb92ea746e57da0108806"
+  ]
+}
+extra-source "2161bdedd23d8f6f0a5a94f3c89d001ca3a5f8ce9560c8300fd89e6d353b481d--bison--3.8.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:f877d389e78b14a070d21c554e39abff55d2fb6d7f0ae58de746f6edd4509ca1"
+  checksum: [
+    "sha256=f877d389e78b14a070d21c554e39abff55d2fb6d7f0ae58de746f6edd4509ca1"
+  ]
+}
+extra-source "01ea8b7346c5e7ab46b47e39d68e5a7b5f74d9060e9774bff11bc8b617a21ede--bison--3.8.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:feb2484898408e8fb2008f4c0ff39042bffb026ea4463d33fd0dfb5952895f1c"
+  checksum: [
+    "sha256=feb2484898408e8fb2008f4c0ff39042bffb026ea4463d33fd0dfb5952895f1c"
+  ]
+}
+extra-source "464e497b0d90e497f2a2626b51e5196f550e1ab9c32c132d67f8de1838c3ebb2--bison--3.8.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:78ce4e93936c37005e944b21e4b4d305725bc66f6c675acf2eb13cf72bac01cc"
+  checksum: [
+    "sha256=78ce4e93936c37005e944b21e4b4d305725bc66f6c675acf2eb13cf72bac01cc"
+  ]
+}
+extra-source "96839926e11a8ea1612145bf63e7eeb8b7862a2379fa1b2f8a3036532cd09f93--bison--3.8.2.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:a4fa1a0bf3245d8ef6a0d24d35df5222269174a02408784d870e4a882434712d"
+  checksum: [
+    "sha256=a4fa1a0bf3245d8ef6a0d24d35df5222269174a02408784d870e4a882434712d"
+  ]
+}
+extra-source "df65de09c59a4771e8c910b35390a48a8bd786e4a8c267decfd34ee6ab1003c3--bison--3.8.2.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:fb649b4e0b071ccfdce51193942366e894fb08be9798109eb718fb323369509e"
+  checksum: [
+    "sha256=fb649b4e0b071ccfdce51193942366e894fb08be9798109eb718fb323369509e"
+  ]
+}
+extra-source "9a12eeb4d6604ad355576c4b4a846430c9776468d2bc17baf43529a672999c8a--bison--3.8.2.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:5a79db63b8a10bc6211ed6a9dcef6df91c26d9fe3420047c285960dede637ea5"
+  checksum: [
+    "sha256=5a79db63b8a10bc6211ed6a9dcef6df91c26d9fe3420047c285960dede637ea5"
+  ]
+}
+extra-source "938ea88edf71b24952163d630c1c73e1df75de18c8c3cacabcbf922221442485--bison--3.8.2.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:4b51739abc4ac54df710147848eb0cd12ff32bc0b86b9112d0de378a74273328"
+  checksum: [
+    "sha256=4b51739abc4ac54df710147848eb0cd12ff32bc0b86b9112d0de378a74273328"
+  ]
+}
+extra-source "84a2b10c789b184dc4b65e3f17e758b5904896ee1f47154dde2ae70c50af584c--bison--3.8.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bison/blobs/sha256:d708c29c7e44f28a4fa77d353ff7adfbe673b31cef6f24c3c384a03ba01b3608"
+  checksum: [
+    "sha256=d708c29c7e44f28a4fa77d353ff7adfbe673b31cef6f24c3c384a03ba01b3608"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0a84b14c20dfba4609542ea4b14a4eb93d369f7f83f373b568017fc7d76b6505--bison-3.8.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c3a79f097ffda8413a62c4d422326bc892132edbc918b416fdf5ff9923d129c0--bison--3.8.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4e2cffc846a8a66eacf6580a37f2d53344d2d7bccc334c2df1d5681b2df9f0f8--bison--3.8.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "02a4ba50307599f1cf641443c50be159ecfacf5c7e2e5f4feafbd51f654aac49--bison--3.8.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0865a0dc7ef4c841a5650a22e6ce05918c025ca1dbadf91d0e18551aca1f4ac3--bison--3.8.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2161bdedd23d8f6f0a5a94f3c89d001ca3a5f8ce9560c8300fd89e6d353b481d--bison--3.8.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "01ea8b7346c5e7ab46b47e39d68e5a7b5f74d9060e9774bff11bc8b617a21ede--bison--3.8.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "464e497b0d90e497f2a2626b51e5196f550e1ab9c32c132d67f8de1838c3ebb2--bison--3.8.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "96839926e11a8ea1612145bf63e7eeb8b7862a2379fa1b2f8a3036532cd09f93--bison--3.8.2.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "df65de09c59a4771e8c910b35390a48a8bd786e4a8c267decfd34ee6ab1003c3--bison--3.8.2.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9a12eeb4d6604ad355576c4b4a846430c9776468d2bc17baf43529a672999c8a--bison--3.8.2.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "938ea88edf71b24952163d630c1c73e1df75de18c8c3cacabcbf922221442485--bison--3.8.2.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "84a2b10c789b184dc4b65e3f17e758b5904896ee1f47154dde2ae70c50af584c--bison--3.8.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "bison" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "bison" ]
+]

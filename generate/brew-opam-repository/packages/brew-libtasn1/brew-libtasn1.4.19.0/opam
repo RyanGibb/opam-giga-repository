@@ -1,0 +1,114 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "ASN.1 structure parser library"
+description: """
+ASN.1 structure parser library"""
+extra-source "23a117157619711dc9b36abec8d6d76b43af9f212e49165340ae88c5d32ccbab--libtasn1--4.19.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:2b31aeda5359ac89f4c670508792233d7970188c64656fad7948bb987edfafa9"
+  checksum: [
+    "sha256=2b31aeda5359ac89f4c670508792233d7970188c64656fad7948bb987edfafa9"
+  ]
+}
+extra-source "8abecce04f40738bc8a6921a6b96d847ea5c9759185d4bd9c7c9b5fb4922c375--libtasn1-4.19.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/manifests/4.19.0"
+}
+extra-source "6ea313db65b49529cacf3b18e75f3199b6432570b6ec2a792c1801dee5511f6d--libtasn1--4.19.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:7218661c69488f1147868d53d6bf50d53ad5eafe3020b07a7846ddcd8743fc50"
+  checksum: [
+    "sha256=7218661c69488f1147868d53d6bf50d53ad5eafe3020b07a7846ddcd8743fc50"
+  ]
+}
+extra-source "6f85f246f2735aa08e8c754cb73b409cdbc47d81f74feae1c88838103eecd288--libtasn1--4.19.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:975eaba8f266020c3c82a667a0e693a1c6b1f76e317a95bb79b6906fd248bcc5"
+  checksum: [
+    "sha256=975eaba8f266020c3c82a667a0e693a1c6b1f76e317a95bb79b6906fd248bcc5"
+  ]
+}
+extra-source "34aee77ebf523af8c056712550592b6054f26970673664087b4dd8492bebc577--libtasn1--4.19.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:ee3b036d7d82561e743131c0ec97d4a425e18a593253830753c519a04db6b200"
+  checksum: [
+    "sha256=ee3b036d7d82561e743131c0ec97d4a425e18a593253830753c519a04db6b200"
+  ]
+}
+extra-source "f3f2fd7d7501d2e2ea3390fcf447452c2b81259b41350b0ce22b1053b43a1577--libtasn1--4.19.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:9fcf93a7992888a29caf2bc3ad37fb27ee8ceef180367797f4a11040fa761eac"
+  checksum: [
+    "sha256=9fcf93a7992888a29caf2bc3ad37fb27ee8ceef180367797f4a11040fa761eac"
+  ]
+}
+extra-source "08713531caed5ec67dea6bbd756d07dad76eb3dc820c4efe73467a5acad58e48--libtasn1--4.19.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:2aa4f8396ba40b05b237d503eb4de02c37175903d3e0f26d7a48a031707a71b5"
+  checksum: [
+    "sha256=2aa4f8396ba40b05b237d503eb4de02c37175903d3e0f26d7a48a031707a71b5"
+  ]
+}
+extra-source "6c90bc68efd11a5e63c9601982478642414fe2027de5ab82558020f76fe70dd4--libtasn1--4.19.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:cf95a18e2fabf1675d77ec8a1abb41fdb091cef689dec3318a420ad2f25beb76"
+  checksum: [
+    "sha256=cf95a18e2fabf1675d77ec8a1abb41fdb091cef689dec3318a420ad2f25beb76"
+  ]
+}
+extra-source "a87f3c0ad354afc9c15ebfbae823ce845e4d6c46a2f0c1144998b887e764c157--libtasn1--4.19.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:45a9352536560b5a69bef3e85ca615bad19d44eab23c6ad797c4305a27bd15d8"
+  checksum: [
+    "sha256=45a9352536560b5a69bef3e85ca615bad19d44eab23c6ad797c4305a27bd15d8"
+  ]
+}
+extra-source "f0d45c7f51e5ddbd6b3af112f4c5b89dfe22bd38f173e0da3c912b5244ac020e--libtasn1--4.19.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:19c6df6badb6b13631670b917595f63a49a06cadd73e2484e5546129cadcf04c"
+  checksum: [
+    "sha256=19c6df6badb6b13631670b917595f63a49a06cadd73e2484e5546129cadcf04c"
+  ]
+}
+extra-source "58b3ac2f4a8b9763c3e3a598f0142e629ce3d71756adef56c62e4fea25f40caa--libtasn1--4.19.0.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:7bf11a4603037c490e83caaddc03fba59dfae11385e2f6bd4555b8ee9aaf1507"
+  checksum: [
+    "sha256=7bf11a4603037c490e83caaddc03fba59dfae11385e2f6bd4555b8ee9aaf1507"
+  ]
+}
+extra-source "49b28588b58b636004d5e547052ec07424e08a68ce8e7672174faaff2dcaee34--libtasn1--4.19.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:e994c7b8c16afb59368d8d09a3f193451c9deab1e4a83f8a94650e27674d9278"
+  checksum: [
+    "sha256=e994c7b8c16afb59368d8d09a3f193451c9deab1e4a83f8a94650e27674d9278"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8abecce04f40738bc8a6921a6b96d847ea5c9759185d4bd9c7c9b5fb4922c375--libtasn1-4.19.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "23a117157619711dc9b36abec8d6d76b43af9f212e49165340ae88c5d32ccbab--libtasn1--4.19.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6ea313db65b49529cacf3b18e75f3199b6432570b6ec2a792c1801dee5511f6d--libtasn1--4.19.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6f85f246f2735aa08e8c754cb73b409cdbc47d81f74feae1c88838103eecd288--libtasn1--4.19.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "34aee77ebf523af8c056712550592b6054f26970673664087b4dd8492bebc577--libtasn1--4.19.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f3f2fd7d7501d2e2ea3390fcf447452c2b81259b41350b0ce22b1053b43a1577--libtasn1--4.19.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "08713531caed5ec67dea6bbd756d07dad76eb3dc820c4efe73467a5acad58e48--libtasn1--4.19.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6c90bc68efd11a5e63c9601982478642414fe2027de5ab82558020f76fe70dd4--libtasn1--4.19.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a87f3c0ad354afc9c15ebfbae823ce845e4d6c46a2f0c1144998b887e764c157--libtasn1--4.19.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f0d45c7f51e5ddbd6b3af112f4c5b89dfe22bd38f173e0da3c912b5244ac020e--libtasn1--4.19.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "58b3ac2f4a8b9763c3e3a598f0142e629ce3d71756adef56c62e4fea25f40caa--libtasn1--4.19.0.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "49b28588b58b636004d5e547052ec07424e08a68ce8e7672174faaff2dcaee34--libtasn1--4.19.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libtasn1" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libtasn1" ]
+]

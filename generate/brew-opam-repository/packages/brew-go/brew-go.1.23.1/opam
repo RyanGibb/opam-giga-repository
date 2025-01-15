@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Open source programming language to build simple/reliable/efficient software"
+description: """
+Open source programming language to build simple/reliable/efficient software"""
+extra-source "9fe85d72a8be5c474a900bdf083509c3f16cc92041e770491dba4b28dfe553c7--go--1.23.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/blobs/sha256:f1d3ecd5e98fd66f0d1a8471b63bfac4508a3b89d2a96c4b2a87243b50866fcd"
+  checksum: [
+    "sha256=f1d3ecd5e98fd66f0d1a8471b63bfac4508a3b89d2a96c4b2a87243b50866fcd"
+  ]
+}
+extra-source "bf6bc8d7da6dd987cd832f8a8ee0c7d90efed8da1cadb9c2270d988af619335a--go-1.23.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/manifests/1.23.1"
+}
+extra-source "ca08a0af1954786a25c542f4e13c0a648c6d54e6d2c265fa562670f90d4f8459--go--1.23.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/blobs/sha256:bae66c6a3b31f38c026f90b1e6eba9636842d2a91de23bdafa13f1214c75d764"
+  checksum: [
+    "sha256=bae66c6a3b31f38c026f90b1e6eba9636842d2a91de23bdafa13f1214c75d764"
+  ]
+}
+extra-source "9fe85d72a8be5c474a900bdf083509c3f16cc92041e770491dba4b28dfe553c7--go--1.23.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/blobs/sha256:f1d3ecd5e98fd66f0d1a8471b63bfac4508a3b89d2a96c4b2a87243b50866fcd"
+  checksum: [
+    "sha256=f1d3ecd5e98fd66f0d1a8471b63bfac4508a3b89d2a96c4b2a87243b50866fcd"
+  ]
+}
+extra-source "ca08a0af1954786a25c542f4e13c0a648c6d54e6d2c265fa562670f90d4f8459--go--1.23.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/blobs/sha256:bae66c6a3b31f38c026f90b1e6eba9636842d2a91de23bdafa13f1214c75d764"
+  checksum: [
+    "sha256=bae66c6a3b31f38c026f90b1e6eba9636842d2a91de23bdafa13f1214c75d764"
+  ]
+}
+extra-source "9fe85d72a8be5c474a900bdf083509c3f16cc92041e770491dba4b28dfe553c7--go--1.23.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/blobs/sha256:f1d3ecd5e98fd66f0d1a8471b63bfac4508a3b89d2a96c4b2a87243b50866fcd"
+  checksum: [
+    "sha256=f1d3ecd5e98fd66f0d1a8471b63bfac4508a3b89d2a96c4b2a87243b50866fcd"
+  ]
+}
+extra-source "ca08a0af1954786a25c542f4e13c0a648c6d54e6d2c265fa562670f90d4f8459--go--1.23.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/blobs/sha256:bae66c6a3b31f38c026f90b1e6eba9636842d2a91de23bdafa13f1214c75d764"
+  checksum: [
+    "sha256=bae66c6a3b31f38c026f90b1e6eba9636842d2a91de23bdafa13f1214c75d764"
+  ]
+}
+extra-source "9fe85d72a8be5c474a900bdf083509c3f16cc92041e770491dba4b28dfe553c7--go--1.23.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/blobs/sha256:f1d3ecd5e98fd66f0d1a8471b63bfac4508a3b89d2a96c4b2a87243b50866fcd"
+  checksum: [
+    "sha256=f1d3ecd5e98fd66f0d1a8471b63bfac4508a3b89d2a96c4b2a87243b50866fcd"
+  ]
+}
+extra-source "9e715aa68bb79a8b8194f8cbc407c4a171b97def3a3c40122583c1dc0a4d61af--go--1.23.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/go/blobs/sha256:25ede0356b19c3966a03ef18bb489a8c1c57f3b3a2090cc6d0980be088bc4127"
+  checksum: [
+    "sha256=25ede0356b19c3966a03ef18bb489a8c1c57f3b3a2090cc6d0980be088bc4127"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "bf6bc8d7da6dd987cd832f8a8ee0c7d90efed8da1cadb9c2270d988af619335a--go-1.23.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9fe85d72a8be5c474a900bdf083509c3f16cc92041e770491dba4b28dfe553c7--go--1.23.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ca08a0af1954786a25c542f4e13c0a648c6d54e6d2c265fa562670f90d4f8459--go--1.23.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9fe85d72a8be5c474a900bdf083509c3f16cc92041e770491dba4b28dfe553c7--go--1.23.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ca08a0af1954786a25c542f4e13c0a648c6d54e6d2c265fa562670f90d4f8459--go--1.23.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9fe85d72a8be5c474a900bdf083509c3f16cc92041e770491dba4b28dfe553c7--go--1.23.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ca08a0af1954786a25c542f4e13c0a648c6d54e6d2c265fa562670f90d4f8459--go--1.23.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9fe85d72a8be5c474a900bdf083509c3f16cc92041e770491dba4b28dfe553c7--go--1.23.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9e715aa68bb79a8b8194f8cbc407c4a171b97def3a3c40122583c1dc0a4d61af--go--1.23.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "go" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "go" ]
+]

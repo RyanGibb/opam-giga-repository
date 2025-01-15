@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "New file format for still image compression"
+description: """
+New file format for still image compression"""
+extra-source "cfa0e27e9480e130fc68ff09352159f918d7d7f9c6bbcbc610b46d10c650ad32--jpeg-xl--0.11.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-xl/blobs/sha256:1b2259f4a8de0738dd4fd7372cde4c27d7b88ffd05b3d4332f0a26f198bdb66d"
+  checksum: [
+    "sha256=1b2259f4a8de0738dd4fd7372cde4c27d7b88ffd05b3d4332f0a26f198bdb66d"
+  ]
+}
+extra-source "4e22457e2358c168a53521ff97f464bba55aecd7abc3cfdbe725840a2631499c--jpeg-xl-0.11.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-xl/manifests/0.11.0"
+}
+extra-source "01fb2a33eb70cc2f11324e885579949ff34185329119f8d491ab22ed381db645--jpeg-xl--0.11.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-xl/blobs/sha256:73232fde73828823576c61b2377b719add934499e2932aefa1b610ed07fe82ca"
+  checksum: [
+    "sha256=73232fde73828823576c61b2377b719add934499e2932aefa1b610ed07fe82ca"
+  ]
+}
+extra-source "837c1ad057ac80551e9502ca3980649d1a14e96522e913490f3cbfa6b769e96e--jpeg-xl--0.11.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-xl/blobs/sha256:d3c74c5e1251537f657139d522c679101aa27ef9adcc502b67a2c65d4e566cd1"
+  checksum: [
+    "sha256=d3c74c5e1251537f657139d522c679101aa27ef9adcc502b67a2c65d4e566cd1"
+  ]
+}
+extra-source "8cb0bdedaa7cdc2affe64c8d13e0518f8be878ed6bb94fc8b290acf61813a0d1--jpeg-xl--0.11.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-xl/blobs/sha256:a44ff4d24ef1c099f979c8f96af5b541f9df54e11ba9db68cd7adbc690729bfb"
+  checksum: [
+    "sha256=a44ff4d24ef1c099f979c8f96af5b541f9df54e11ba9db68cd7adbc690729bfb"
+  ]
+}
+extra-source "7f95a7da1d30408b74a615f6b18cf238c6ca6c351491e163ca978d9f96505799--jpeg-xl--0.11.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-xl/blobs/sha256:acdf147b1d55d1d2a5b70966359a8dc109daa4267e7573bc5f44816e2fd15170"
+  checksum: [
+    "sha256=acdf147b1d55d1d2a5b70966359a8dc109daa4267e7573bc5f44816e2fd15170"
+  ]
+}
+extra-source "8a1c3814300e429378e7cfc37dd0b79e2a92be63e5c29251a96193a3a7e0ba21--jpeg-xl--0.11.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-xl/blobs/sha256:c3010ddddc0ad684240ff63ef3a7e9dc84e2022cdda4f53c63b3c7243334ef67"
+  checksum: [
+    "sha256=c3010ddddc0ad684240ff63ef3a7e9dc84e2022cdda4f53c63b3c7243334ef67"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-icu4c" {= "74.2"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "4e22457e2358c168a53521ff97f464bba55aecd7abc3cfdbe725840a2631499c--jpeg-xl-0.11.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "cfa0e27e9480e130fc68ff09352159f918d7d7f9c6bbcbc610b46d10c650ad32--jpeg-xl--0.11.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "01fb2a33eb70cc2f11324e885579949ff34185329119f8d491ab22ed381db645--jpeg-xl--0.11.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "837c1ad057ac80551e9502ca3980649d1a14e96522e913490f3cbfa6b769e96e--jpeg-xl--0.11.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8cb0bdedaa7cdc2affe64c8d13e0518f8be878ed6bb94fc8b290acf61813a0d1--jpeg-xl--0.11.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7f95a7da1d30408b74a615f6b18cf238c6ca6c351491e163ca978d9f96505799--jpeg-xl--0.11.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8a1c3814300e429378e7cfc37dd0b79e2a92be63e5c29251a96193a3a7e0ba21--jpeg-xl--0.11.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "jpeg-xl" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "jpeg-xl" ]
+]

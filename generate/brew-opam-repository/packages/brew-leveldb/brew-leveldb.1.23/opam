@@ -1,0 +1,94 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Key-value storage library with ordered mapping"
+description: """
+Key-value storage library with ordered mapping"""
+extra-source "d2ecc125aa9d6c1d41590056e9805e76cbe3fe668c96951201e8911cb160d93b--leveldb--1.23_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/blobs/sha256:3dc8137b48b1778b906215646fb3b6d07916ff1fe0ed137ee4a4ed8d739206bf"
+  checksum: [
+    "sha256=3dc8137b48b1778b906215646fb3b6d07916ff1fe0ed137ee4a4ed8d739206bf"
+  ]
+}
+extra-source "95f230a7a330ffc6fb3551726e5fcaab93bbd878c936d2f955726a7a3b0c93f9--leveldb-1.23_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/manifests/1.23_1"
+}
+extra-source "ac5757cd9f2a1c81761186d575ea88eac6dc32327d93df41ae149f026e69b8cf--leveldb--1.23_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/blobs/sha256:98aa66f907f2e279295bb6691302388264f6fc141128703ce4bfd315531815d2"
+  checksum: [
+    "sha256=98aa66f907f2e279295bb6691302388264f6fc141128703ce4bfd315531815d2"
+  ]
+}
+extra-source "0e5afc255e39bb25492497b8f407e6a46c89c5e1bad4020ea2c44c7a6d0a8c15--leveldb--1.23_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/blobs/sha256:8d31999d036ab81506c70b2e446a4fc62457307a610e9af51538cea0e592fd4b"
+  checksum: [
+    "sha256=8d31999d036ab81506c70b2e446a4fc62457307a610e9af51538cea0e592fd4b"
+  ]
+}
+extra-source "545e6a9d9f321bc0062ecf5eb56c606e085717391b99053612ef4a42b899f86b--leveldb--1.23_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/blobs/sha256:48d595e1d25c23f2376ba436b3a89913f9babbd0d715f4029d9eff7174923215"
+  checksum: [
+    "sha256=48d595e1d25c23f2376ba436b3a89913f9babbd0d715f4029d9eff7174923215"
+  ]
+}
+extra-source "3ecb505ee087c1d52de1f88eeefb6f99bf299c171d9aeee350a3475b6b8ae2ca--leveldb--1.23_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/blobs/sha256:b7ca49e08f08c52f9a2c7f67dbcbd1214ca97023d1173f943d8df0a4dda66c55"
+  checksum: [
+    "sha256=b7ca49e08f08c52f9a2c7f67dbcbd1214ca97023d1173f943d8df0a4dda66c55"
+  ]
+}
+extra-source "b26a7023f4d7aabcb075ab1ee1753db77bbf15bdcdc1f1bf4369c18e8061bf1b--leveldb--1.23_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/blobs/sha256:327dd3eac9c6a481c5f7e578f815d6b3f3d912c33e47c4e15dd5ccce85a2bd16"
+  checksum: [
+    "sha256=327dd3eac9c6a481c5f7e578f815d6b3f3d912c33e47c4e15dd5ccce85a2bd16"
+  ]
+}
+extra-source "3b438b6210b4cbe33a82186c48878f7f8b2a279dacb73a25c63067db5808909e--leveldb--1.23_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/blobs/sha256:666c5e8c3f01854847176459ee4fc06d3248dfda68e8249b2186777c09cab373"
+  checksum: [
+    "sha256=666c5e8c3f01854847176459ee4fc06d3248dfda68e8249b2186777c09cab373"
+  ]
+}
+extra-source "0be80a95e536a906e8a1d1d84927c518ea0186779ef855f07829071338b7c6bb--leveldb--1.23_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leveldb/blobs/sha256:240f267390c10b75634da1be1bf04e0878819ef79d6d79fb52a4507adb47908b"
+  checksum: [
+    "sha256=240f267390c10b75634da1be1bf04e0878819ef79d6d79fb52a4507adb47908b"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gperftools" {= "2.15"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-snappy" {= "1.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "95f230a7a330ffc6fb3551726e5fcaab93bbd878c936d2f955726a7a3b0c93f9--leveldb-1.23_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d2ecc125aa9d6c1d41590056e9805e76cbe3fe668c96951201e8911cb160d93b--leveldb--1.23_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ac5757cd9f2a1c81761186d575ea88eac6dc32327d93df41ae149f026e69b8cf--leveldb--1.23_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0e5afc255e39bb25492497b8f407e6a46c89c5e1bad4020ea2c44c7a6d0a8c15--leveldb--1.23_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "545e6a9d9f321bc0062ecf5eb56c606e085717391b99053612ef4a42b899f86b--leveldb--1.23_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3ecb505ee087c1d52de1f88eeefb6f99bf299c171d9aeee350a3475b6b8ae2ca--leveldb--1.23_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b26a7023f4d7aabcb075ab1ee1753db77bbf15bdcdc1f1bf4369c18e8061bf1b--leveldb--1.23_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3b438b6210b4cbe33a82186c48878f7f8b2a279dacb73a25c63067db5808909e--leveldb--1.23_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0be80a95e536a906e8a1d1d84927c518ea0186779ef855f07829071338b7c6bb--leveldb--1.23_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "leveldb" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "leveldb" ]
+]

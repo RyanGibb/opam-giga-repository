@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for sample rate conversion of audio data"
+description: """
+Library for sample rate conversion of audio data"""
+extra-source "5ea2838707187c7e9ea5b4cef31c47101f20d62b2056bf488add01cfbb999c74--libsamplerate--0.2.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:5fc173532c2b6fce115a5e36266da6c2dab4b4508478132790befa5f0342199e"
+  checksum: [
+    "sha256=5fc173532c2b6fce115a5e36266da6c2dab4b4508478132790befa5f0342199e"
+  ]
+}
+extra-source "27dd59fa55dbebeb65e77b8d04f3b390a899a35dad23d3fd7a4f895b3f7fbfed--libsamplerate-0.2.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/manifests/0.2.2"
+}
+extra-source "d2608b094f1692fccb2aafa68fe9e210534a9402ae981f955b29263dbec2e3ad--libsamplerate--0.2.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:701022edab06b57aed672ab9f1c6791f1ee3c7f538215fd4f65ea6e1cabad171"
+  checksum: [
+    "sha256=701022edab06b57aed672ab9f1c6791f1ee3c7f538215fd4f65ea6e1cabad171"
+  ]
+}
+extra-source "cf342452de44e2ef7db03ae7c3dc5af4881bf5b698d1893d002e17450f928f17--libsamplerate--0.2.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:dc278cc14c1b7bfe2530935297bb3ab56d162420387702a38def3aaa26e03181"
+  checksum: [
+    "sha256=dc278cc14c1b7bfe2530935297bb3ab56d162420387702a38def3aaa26e03181"
+  ]
+}
+extra-source "b5121d06ed664cb7176117b5e4c0a339233c19d041444ac49421eba17c2278b9--libsamplerate--0.2.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:85204079adb4d9070ead5ce096f7338a8c921fa108f65560256b23a7311d4a02"
+  checksum: [
+    "sha256=85204079adb4d9070ead5ce096f7338a8c921fa108f65560256b23a7311d4a02"
+  ]
+}
+extra-source "8e2797db46ddd313ef0bf9f4c02a951afa12480f6450d836dfea94f0e3335613--libsamplerate--0.2.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:3e9b241d45526b794f8f2a5873b1377ba909532da1bde00a235c8949edde1366"
+  checksum: [
+    "sha256=3e9b241d45526b794f8f2a5873b1377ba909532da1bde00a235c8949edde1366"
+  ]
+}
+extra-source "eff6de2e70db3e5517a32ba3f9da6d016bf80bf901454f643a7b33241dfabd1c--libsamplerate--0.2.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:de43a6d8b43091b2f76d367409e7bcae60599e13875166c58c50443f0d336e91"
+  checksum: [
+    "sha256=de43a6d8b43091b2f76d367409e7bcae60599e13875166c58c50443f0d336e91"
+  ]
+}
+extra-source "98ff1341db4e9451edd75fc7f93cec0687e4d6fb92b24d155128b374ea6b50bf--libsamplerate--0.2.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:f9e2a83582d3ab964fd92d0aee6acffe5b73ab8981d80d4119beb1b45210f4ce"
+  checksum: [
+    "sha256=f9e2a83582d3ab964fd92d0aee6acffe5b73ab8981d80d4119beb1b45210f4ce"
+  ]
+}
+extra-source "61237b22a839605cdca7e8f930d89a18218569e92cdd5e70f8c62109c299d23d--libsamplerate--0.2.2.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:58ef6e20fc12580743d91e00fb349b1160fff0de49028b7c90903245605c0ae5"
+  checksum: [
+    "sha256=58ef6e20fc12580743d91e00fb349b1160fff0de49028b7c90903245605c0ae5"
+  ]
+}
+extra-source "edb2957884351eb4c123344e9f42007258e6b155c51e2abd3e4093a40a34c96c--libsamplerate--0.2.2.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:3093453ad9b90daa071d033cfaf5e6cafe8963350130ef26741a1c9d1c4b5659"
+  checksum: [
+    "sha256=3093453ad9b90daa071d033cfaf5e6cafe8963350130ef26741a1c9d1c4b5659"
+  ]
+}
+extra-source "90fb71b5b7da449bbf687a86795a34435955dd9feadfe107b745b48141b3a799--libsamplerate--0.2.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsamplerate/blobs/sha256:d9d59c68d8d1f510237381994b7eab99cfc1d99113c5cd5ced3d0bb460faccaf"
+  checksum: [
+    "sha256=d9d59c68d8d1f510237381994b7eab99cfc1d99113c5cd5ced3d0bb460faccaf"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "27dd59fa55dbebeb65e77b8d04f3b390a899a35dad23d3fd7a4f895b3f7fbfed--libsamplerate-0.2.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "5ea2838707187c7e9ea5b4cef31c47101f20d62b2056bf488add01cfbb999c74--libsamplerate--0.2.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d2608b094f1692fccb2aafa68fe9e210534a9402ae981f955b29263dbec2e3ad--libsamplerate--0.2.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cf342452de44e2ef7db03ae7c3dc5af4881bf5b698d1893d002e17450f928f17--libsamplerate--0.2.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b5121d06ed664cb7176117b5e4c0a339233c19d041444ac49421eba17c2278b9--libsamplerate--0.2.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8e2797db46ddd313ef0bf9f4c02a951afa12480f6450d836dfea94f0e3335613--libsamplerate--0.2.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "eff6de2e70db3e5517a32ba3f9da6d016bf80bf901454f643a7b33241dfabd1c--libsamplerate--0.2.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "98ff1341db4e9451edd75fc7f93cec0687e4d6fb92b24d155128b374ea6b50bf--libsamplerate--0.2.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "61237b22a839605cdca7e8f930d89a18218569e92cdd5e70f8c62109c299d23d--libsamplerate--0.2.2.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "edb2957884351eb4c123344e9f42007258e6b155c51e2abd3e4093a40a34c96c--libsamplerate--0.2.2.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "90fb71b5b7da449bbf687a86795a34435955dd9feadfe107b745b48141b3a799--libsamplerate--0.2.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libsamplerate" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libsamplerate" ]
+]

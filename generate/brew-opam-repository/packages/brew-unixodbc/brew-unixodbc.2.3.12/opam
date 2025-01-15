@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "ODBC 3 connectivity for UNIX"
+description: """
+ODBC 3 connectivity for UNIX"""
+extra-source "9dea2b6e052dcdac0ec7ae802f700258d6fb3756075ffd128c5a7162c1b329fe--unixodbc--2.3.12.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:d117e16a10d134bc961f57c345296a7279f40376ab626dfa41777bf4cb4e116a"
+  checksum: [
+    "sha256=d117e16a10d134bc961f57c345296a7279f40376ab626dfa41777bf4cb4e116a"
+  ]
+}
+extra-source "f0a48ea379f8e4acc3dc9d88ec4ce4e354b4437d2104efee3399b892b79d55ac--unixodbc-2.3.12.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/manifests/2.3.12"
+}
+extra-source "53373a2202b844a8c091a32e9e4b1c224d6e6524303584a9af0de978ca56f038--unixodbc--2.3.12.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:626e41606a2ff39516f08affe1c8e2f5396810a15adc7081b574a117e68a3bf1"
+  checksum: [
+    "sha256=626e41606a2ff39516f08affe1c8e2f5396810a15adc7081b574a117e68a3bf1"
+  ]
+}
+extra-source "94e47cf873d0b521f547c75b6a03c8558439d12c33deba691ff47e92385edb73--unixodbc--2.3.12.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:4984c5ec2cd0ddc6393cfd60e42bc5748e3dc173750b74b2113de9b17c864c9a"
+  checksum: [
+    "sha256=4984c5ec2cd0ddc6393cfd60e42bc5748e3dc173750b74b2113de9b17c864c9a"
+  ]
+}
+extra-source "4fa53093b5fe6675e6cd3bebb034b9e09c0f20a471d3ba1ba3414563d1c6ce00--unixodbc--2.3.12.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:362a801fa9dec4ee99daab0d9d6926fee4ca2ad7191677dbee1b564852964ddd"
+  checksum: [
+    "sha256=362a801fa9dec4ee99daab0d9d6926fee4ca2ad7191677dbee1b564852964ddd"
+  ]
+}
+extra-source "5b3dd108b379e358f967d010fee4a9ec94640147f2edf20c3064c13580316736--unixodbc--2.3.12.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:b2d0036483c00d1f3e12b90e288d18b1714ee1b6e95de4d443c0b1101657bfba"
+  checksum: [
+    "sha256=b2d0036483c00d1f3e12b90e288d18b1714ee1b6e95de4d443c0b1101657bfba"
+  ]
+}
+extra-source "f041a678127f96a081c2cc1c28a603212e6e46241010f8c330ca471a08707690--unixodbc--2.3.12.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:947aa88dde2ed452e05e9ef37aca672aea40165cd6d748cc8839609f9d7d4141"
+  checksum: [
+    "sha256=947aa88dde2ed452e05e9ef37aca672aea40165cd6d748cc8839609f9d7d4141"
+  ]
+}
+extra-source "4a0901af005821262a78b907d61db305ef69d42ea2af824d1879087ddbedf4e7--unixodbc--2.3.12.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:42752ba1f8be08b3aad93ab465731441911b0b2b6e3af687bd7cc5de0996de49"
+  checksum: [
+    "sha256=42752ba1f8be08b3aad93ab465731441911b0b2b6e3af687bd7cc5de0996de49"
+  ]
+}
+extra-source "57e2474c3e449858dd8471eaf4ccbec61e427686c81fc12fd2c33dc54a69e674--unixodbc--2.3.12.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:704e008bba860d3baecd0ad178c82b8c59e0eb9b05161d908154723eabbd420d"
+  checksum: [
+    "sha256=704e008bba860d3baecd0ad178c82b8c59e0eb9b05161d908154723eabbd420d"
+  ]
+}
+extra-source "725c6f2bec49ad2b26e2bf7a60831dd7a787f8a222ea9701ddf40b5a2f6a6d3a--unixodbc--2.3.12.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:82de868a1e06efd888aaef1a4b4867aa09f1e8ebb59de5ffe926f70c46f30399"
+  checksum: [
+    "sha256=82de868a1e06efd888aaef1a4b4867aa09f1e8ebb59de5ffe926f70c46f30399"
+  ]
+}
+extra-source "d032671c5eede8a79880b561725c3cfed52842acdf00b902078f051ea635ca14--unixodbc--2.3.12.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:7f8a5881a0827b6381d3619d681849d72471bd8f9ad9e836793d3216bee77fe4"
+  checksum: [
+    "sha256=7f8a5881a0827b6381d3619d681849d72471bd8f9ad9e836793d3216bee77fe4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f0a48ea379f8e4acc3dc9d88ec4ce4e354b4437d2104efee3399b892b79d55ac--unixodbc-2.3.12.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9dea2b6e052dcdac0ec7ae802f700258d6fb3756075ffd128c5a7162c1b329fe--unixodbc--2.3.12.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "53373a2202b844a8c091a32e9e4b1c224d6e6524303584a9af0de978ca56f038--unixodbc--2.3.12.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "94e47cf873d0b521f547c75b6a03c8558439d12c33deba691ff47e92385edb73--unixodbc--2.3.12.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4fa53093b5fe6675e6cd3bebb034b9e09c0f20a471d3ba1ba3414563d1c6ce00--unixodbc--2.3.12.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5b3dd108b379e358f967d010fee4a9ec94640147f2edf20c3064c13580316736--unixodbc--2.3.12.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f041a678127f96a081c2cc1c28a603212e6e46241010f8c330ca471a08707690--unixodbc--2.3.12.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4a0901af005821262a78b907d61db305ef69d42ea2af824d1879087ddbedf4e7--unixodbc--2.3.12.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "57e2474c3e449858dd8471eaf4ccbec61e427686c81fc12fd2c33dc54a69e674--unixodbc--2.3.12.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "725c6f2bec49ad2b26e2bf7a60831dd7a787f8a222ea9701ddf40b5a2f6a6d3a--unixodbc--2.3.12.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d032671c5eede8a79880b561725c3cfed52842acdf00b902078f051ea635ca14--unixodbc--2.3.12.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "unixodbc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "unixodbc" ]
+]

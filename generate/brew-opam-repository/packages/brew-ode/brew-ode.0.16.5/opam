@@ -1,0 +1,97 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Simulating articulated rigid body dynamics"
+description: """
+Simulating articulated rigid body dynamics"""
+extra-source "9c47e5dc3aa37a46e4de1916f1960a626406390fb1cc65891b35f77848df7a77--ode--0.16.5_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/blobs/sha256:58790fb1f2cc52d91f1bcaead540caa03b531dafef534468786e9ac48e1a109d"
+  checksum: [
+    "sha256=58790fb1f2cc52d91f1bcaead540caa03b531dafef534468786e9ac48e1a109d"
+  ]
+}
+extra-source "b9f287e5fad0f394cdfc13b333e7177db42ff60fe3c225d2f6467ea7a18a73e6--ode-0.16.5_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/manifests/0.16.5_1"
+}
+extra-source "f94fa575942077cb6040eeae203b75ef5f1ddca1373752662b023ebffc6027b7--ode--0.16.5_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/blobs/sha256:7a19db0009214d0c78def3ecb8327137603967f5bc65bc7f11debb715dc7022a"
+  checksum: [
+    "sha256=7a19db0009214d0c78def3ecb8327137603967f5bc65bc7f11debb715dc7022a"
+  ]
+}
+extra-source "30f8be30df28b8f0a3c86efbe0fbe18d396e5305a0a7bceb8251397e8c3447bf--ode--0.16.5_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/blobs/sha256:1dfefe85ef027eff13206f91fcfb6e3f5c24f620b15351cbf464d26cab397f05"
+  checksum: [
+    "sha256=1dfefe85ef027eff13206f91fcfb6e3f5c24f620b15351cbf464d26cab397f05"
+  ]
+}
+extra-source "5a64be0ce472d97462e99f4b3772f4ab5ce1aefcd839be9809efacbde1df57ac--ode--0.16.5_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/blobs/sha256:9334eda731f3105d30a93600393140d690e80fb05791d9a63dc99601641a8888"
+  checksum: [
+    "sha256=9334eda731f3105d30a93600393140d690e80fb05791d9a63dc99601641a8888"
+  ]
+}
+extra-source "4194a834eaf580419bdc5f5d796d98849a0af63c17f616e894810a629822816b--ode--0.16.5_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/blobs/sha256:c363d1cfd6ba84dfd8193cf0f35d0692892679c8c11c2ea75ccce157c1af3811"
+  checksum: [
+    "sha256=c363d1cfd6ba84dfd8193cf0f35d0692892679c8c11c2ea75ccce157c1af3811"
+  ]
+}
+extra-source "097c4e35d83927467b20374ee3bd05fee84f400fd79e2504c87d7c07660dd4a3--ode--0.16.5_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/blobs/sha256:7d6ed1dc202b74d76cc339fb17c96626dad0faf626dad2474f957590e0b15165"
+  checksum: [
+    "sha256=7d6ed1dc202b74d76cc339fb17c96626dad0faf626dad2474f957590e0b15165"
+  ]
+}
+extra-source "29496641db6cc6491fd1d638a4f783af9f645aa306f449a414c0f828e6f15294--ode--0.16.5_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/blobs/sha256:947a229707651468f4ec56e1a16508d495b934070413683d2ba73abf6abd8211"
+  checksum: [
+    "sha256=947a229707651468f4ec56e1a16508d495b934070413683d2ba73abf6abd8211"
+  ]
+}
+extra-source "558bc3eb3a5636b714642381f8c60a294625104a2b0cdb3416e6e39a2a567dcc--ode--0.16.5_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ode/blobs/sha256:5158488ea35492840d91d5d4cfd4cff98c4d26003e230be5214dc1320bca74c1"
+  checksum: [
+    "sha256=5158488ea35492840d91d5d4cfd4cff98c4d26003e230be5214dc1320bca74c1"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-libccd" {= "2.1"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b9f287e5fad0f394cdfc13b333e7177db42ff60fe3c225d2f6467ea7a18a73e6--ode-0.16.5_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9c47e5dc3aa37a46e4de1916f1960a626406390fb1cc65891b35f77848df7a77--ode--0.16.5_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f94fa575942077cb6040eeae203b75ef5f1ddca1373752662b023ebffc6027b7--ode--0.16.5_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "30f8be30df28b8f0a3c86efbe0fbe18d396e5305a0a7bceb8251397e8c3447bf--ode--0.16.5_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5a64be0ce472d97462e99f4b3772f4ab5ce1aefcd839be9809efacbde1df57ac--ode--0.16.5_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4194a834eaf580419bdc5f5d796d98849a0af63c17f616e894810a629822816b--ode--0.16.5_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "097c4e35d83927467b20374ee3bd05fee84f400fd79e2504c87d7c07660dd4a3--ode--0.16.5_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "29496641db6cc6491fd1d638a4f783af9f645aa306f449a414c0f828e6f15294--ode--0.16.5_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "558bc3eb3a5636b714642381f8c60a294625104a2b0cdb3416e6e39a2a567dcc--ode--0.16.5_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "ode" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "ode" ]
+]

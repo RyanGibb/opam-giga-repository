@@ -1,0 +1,114 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "UNIX manpage compiler toolset"
+description: """
+UNIX manpage compiler toolset"""
+extra-source "314ce23c9aa2747e99d78215dd651e7a2abd5f77010bb4d19fbc0ccd845006a5--mandoc--1.14.6_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:cc7045b49fb8f8d57fae60c7ddcd9ea21ebb3abbf4f79e8e9a276273a122fd56"
+  checksum: [
+    "sha256=cc7045b49fb8f8d57fae60c7ddcd9ea21ebb3abbf4f79e8e9a276273a122fd56"
+  ]
+}
+extra-source "fe1cd1ffc09917f956ad3e80a475b968c1dd36dae9cc472d31da89b6baa39573--mandoc-1.14.6_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/manifests/1.14.6_1"
+}
+extra-source "908c3711220b2fb214ae4f91d46fed195400de32af60b6eb4788be7eb125830f--mandoc--1.14.6_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:8cf397d08e94ff1666fcb58ebeb06d70e86d9fe243291fd2ebc66b5724bc4af4"
+  checksum: [
+    "sha256=8cf397d08e94ff1666fcb58ebeb06d70e86d9fe243291fd2ebc66b5724bc4af4"
+  ]
+}
+extra-source "ba7b3e85042c8fe8134a54b0b695b0487e088a0949042917c35ca26f32240373--mandoc--1.14.6_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:e52aaa74b6654469741aa21738507e636c4b09576109ff602f78a445a4ce30dc"
+  checksum: [
+    "sha256=e52aaa74b6654469741aa21738507e636c4b09576109ff602f78a445a4ce30dc"
+  ]
+}
+extra-source "9948b394a5b6a49ed628f6a6d6de75237627d87d7735317815379cf646841bb6--mandoc--1.14.6_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:b328a5df78ce08be360ed248be3fa61b83b4a485c9cf0159351b4049735bf2f7"
+  checksum: [
+    "sha256=b328a5df78ce08be360ed248be3fa61b83b4a485c9cf0159351b4049735bf2f7"
+  ]
+}
+extra-source "6819f30d9eef140940421e98893af0a456099320bccb011e36fe375565d0194a--mandoc--1.14.6_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:086aeecdaad50178bb76546745cf350195ed758d02a495e4128c1dc210ec5b5f"
+  checksum: [
+    "sha256=086aeecdaad50178bb76546745cf350195ed758d02a495e4128c1dc210ec5b5f"
+  ]
+}
+extra-source "a80eca042ec61952eeec9ca0ecb31607dcfb212867ddfe3a4492c159269780cc--mandoc--1.14.6_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:6e8f22f43770525c78280535cf293a4500eba441baab688dbe04e4c872a505a7"
+  checksum: [
+    "sha256=6e8f22f43770525c78280535cf293a4500eba441baab688dbe04e4c872a505a7"
+  ]
+}
+extra-source "0aae092a77105c56b3c39dbb1fff0a1b4bea406b82993f08ff4d9a4573cedd03--mandoc--1.14.6_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:86fc7de6ddf02952dd6615916d2a787d0e87954337d7b214c760f3871575a771"
+  checksum: [
+    "sha256=86fc7de6ddf02952dd6615916d2a787d0e87954337d7b214c760f3871575a771"
+  ]
+}
+extra-source "4ef569e815b2ae3568147a8740b588b0c2be9bc8051e0e605b0e9ded5c8b0862--mandoc--1.14.6_1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:a4f63ae6f10fe8912986b92fecc22f7421ed0bad4495811f6159b895d5b42f6d"
+  checksum: [
+    "sha256=a4f63ae6f10fe8912986b92fecc22f7421ed0bad4495811f6159b895d5b42f6d"
+  ]
+}
+extra-source "67350ee8fce9952607fc41b4bb5acd9a27c2232e2197d230f01df988467351ef--mandoc--1.14.6_1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:1a009788bd3b10af69f0563904143dda9a41f0872514ac7e64e8a08a46fcf5fb"
+  checksum: [
+    "sha256=1a009788bd3b10af69f0563904143dda9a41f0872514ac7e64e8a08a46fcf5fb"
+  ]
+}
+extra-source "e19ef09d4e6e3beff13634f473c0c8ff3bfa7ef8221ee02fefb6988d8298ffc6--mandoc--1.14.6_1.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:0190c6cc439cedfb1eb83d60b5be68974e12b993bafc87387ced2b948b526a2c"
+  checksum: [
+    "sha256=0190c6cc439cedfb1eb83d60b5be68974e12b993bafc87387ced2b948b526a2c"
+  ]
+}
+extra-source "05608db3296fafb72a2deb640919f8a766e64c0c1dc9eb0e4e3a811f411567b8--mandoc--1.14.6_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mandoc/blobs/sha256:048e9149279a52292a203c6e6b4fd688b7b32501b8e05d806a5708587526a83c"
+  checksum: [
+    "sha256=048e9149279a52292a203c6e6b4fd688b7b32501b8e05d806a5708587526a83c"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "fe1cd1ffc09917f956ad3e80a475b968c1dd36dae9cc472d31da89b6baa39573--mandoc-1.14.6_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "314ce23c9aa2747e99d78215dd651e7a2abd5f77010bb4d19fbc0ccd845006a5--mandoc--1.14.6_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "908c3711220b2fb214ae4f91d46fed195400de32af60b6eb4788be7eb125830f--mandoc--1.14.6_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ba7b3e85042c8fe8134a54b0b695b0487e088a0949042917c35ca26f32240373--mandoc--1.14.6_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9948b394a5b6a49ed628f6a6d6de75237627d87d7735317815379cf646841bb6--mandoc--1.14.6_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6819f30d9eef140940421e98893af0a456099320bccb011e36fe375565d0194a--mandoc--1.14.6_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a80eca042ec61952eeec9ca0ecb31607dcfb212867ddfe3a4492c159269780cc--mandoc--1.14.6_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0aae092a77105c56b3c39dbb1fff0a1b4bea406b82993f08ff4d9a4573cedd03--mandoc--1.14.6_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4ef569e815b2ae3568147a8740b588b0c2be9bc8051e0e605b0e9ded5c8b0862--mandoc--1.14.6_1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "67350ee8fce9952607fc41b4bb5acd9a27c2232e2197d230f01df988467351ef--mandoc--1.14.6_1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e19ef09d4e6e3beff13634f473c0c8ff3bfa7ef8221ee02fefb6988d8298ffc6--mandoc--1.14.6_1.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "05608db3296fafb72a2deb640919f8a766e64c0c1dc9eb0e4e3a811f411567b8--mandoc--1.14.6_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "mandoc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "mandoc" ]
+]

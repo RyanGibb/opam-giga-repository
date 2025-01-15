@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Cross-platform library for real-time MIDI I/O"
+description: """
+Cross-platform library for real-time MIDI I/O"""
+extra-source "f6af283dd2fdf36ed477fa64772990015791a9845cb47550ca384654af552ada--portmidi--2.0.4_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:a02a8f130081aeda7fd82a826b510f4b2afdcf7af21cffe1d22963fcd3560065"
+  checksum: [
+    "sha256=a02a8f130081aeda7fd82a826b510f4b2afdcf7af21cffe1d22963fcd3560065"
+  ]
+}
+extra-source "c5ec67348d5d8745a053824dbd4ee2ad3b41fa4748dee62182cd115fb1a5988a--portmidi-2.0.4_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/manifests/2.0.4_1"
+}
+extra-source "a950eb015828d0e9df5940833326b6a3b1a8ab82e8e1f3443f6d72802744fffa--portmidi--2.0.4_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:ec2f3c4ed9b0fa14de06bf6802a8a111c7de434beaa0c3f082c99613cf12cc0f"
+  checksum: [
+    "sha256=ec2f3c4ed9b0fa14de06bf6802a8a111c7de434beaa0c3f082c99613cf12cc0f"
+  ]
+}
+extra-source "54dd00cf85654ceac166757f614d4d0b74eb3e7043aa5f72221e80be22bc36fc--portmidi--2.0.4_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:c24a75dda06927ed08b718df274d6eae2f6f8ded0601673ccd4311a210f89681"
+  checksum: [
+    "sha256=c24a75dda06927ed08b718df274d6eae2f6f8ded0601673ccd4311a210f89681"
+  ]
+}
+extra-source "229866bc583303fc37c8c6bfa76610ca5e78c7603655f1e4879ab5f97451b10a--portmidi--2.0.4_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:505796ff7499cb66673b8774af23109d1803cd0ca79e45de041d66985cb553e6"
+  checksum: [
+    "sha256=505796ff7499cb66673b8774af23109d1803cd0ca79e45de041d66985cb553e6"
+  ]
+}
+extra-source "4e07fd0409e8183a1c725345752256f95946c86d2fe59253112c2f9b0bfa0a4d--portmidi--2.0.4_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:2d722c4357f6263f73456060dc5d131eb0b3b34ea54bef1cfe47d15bdc4ed75f"
+  checksum: [
+    "sha256=2d722c4357f6263f73456060dc5d131eb0b3b34ea54bef1cfe47d15bdc4ed75f"
+  ]
+}
+extra-source "d5482ff41f5dd948ca9089852708c059869b029795628f3d49a4c4930e4743d3--portmidi--2.0.4_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:7e348bdf4837001ff61ebad737ee19326a92c11ea2e122874abb39246a15b99e"
+  checksum: [
+    "sha256=7e348bdf4837001ff61ebad737ee19326a92c11ea2e122874abb39246a15b99e"
+  ]
+}
+extra-source "8631c50ece5d6965762e106718bd11a42f6addc174297122a980f64736a6d85e--portmidi--2.0.4_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:94415b613563629ea6425c629dc768e3c9319823870e948c4060742d24401588"
+  checksum: [
+    "sha256=94415b613563629ea6425c629dc768e3c9319823870e948c4060742d24401588"
+  ]
+}
+extra-source "b10c78e4858658a5d3dc4ae1d6ab5efdb08c6480e82dd68f8a54d833baa9226c--portmidi--2.0.4_1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:3025725eb9196f45005ee6305883d78fb98fd6412569fdb2c3685e9f6f117009"
+  checksum: [
+    "sha256=3025725eb9196f45005ee6305883d78fb98fd6412569fdb2c3685e9f6f117009"
+  ]
+}
+extra-source "081971c6a304e6df5d77c01909b2696000f2a83a1e3f1c704dce4f3be589b17a--portmidi--2.0.4_1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:f8ea203ccc085feee9e2e5c8f97ebcd59117f41331ac654dc542cfa8a901e2a9"
+  checksum: [
+    "sha256=f8ea203ccc085feee9e2e5c8f97ebcd59117f41331ac654dc542cfa8a901e2a9"
+  ]
+}
+extra-source "945603c043c60351d59412e13518a2664739848e49f2b4857836847470e55494--portmidi--2.0.4_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/portmidi/blobs/sha256:af653a873aa1e1a5255269323d28c28b97c6860f52687dc4677020aa5bfbf7de"
+  checksum: [
+    "sha256=af653a873aa1e1a5255269323d28c28b97c6860f52687dc4677020aa5bfbf7de"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c5ec67348d5d8745a053824dbd4ee2ad3b41fa4748dee62182cd115fb1a5988a--portmidi-2.0.4_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f6af283dd2fdf36ed477fa64772990015791a9845cb47550ca384654af552ada--portmidi--2.0.4_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a950eb015828d0e9df5940833326b6a3b1a8ab82e8e1f3443f6d72802744fffa--portmidi--2.0.4_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "54dd00cf85654ceac166757f614d4d0b74eb3e7043aa5f72221e80be22bc36fc--portmidi--2.0.4_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "229866bc583303fc37c8c6bfa76610ca5e78c7603655f1e4879ab5f97451b10a--portmidi--2.0.4_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4e07fd0409e8183a1c725345752256f95946c86d2fe59253112c2f9b0bfa0a4d--portmidi--2.0.4_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d5482ff41f5dd948ca9089852708c059869b029795628f3d49a4c4930e4743d3--portmidi--2.0.4_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8631c50ece5d6965762e106718bd11a42f6addc174297122a980f64736a6d85e--portmidi--2.0.4_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b10c78e4858658a5d3dc4ae1d6ab5efdb08c6480e82dd68f8a54d833baa9226c--portmidi--2.0.4_1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "081971c6a304e6df5d77c01909b2696000f2a83a1e3f1c704dce4f3be589b17a--portmidi--2.0.4_1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "945603c043c60351d59412e13518a2664739848e49f2b4857836847470e55494--portmidi--2.0.4_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "portmidi" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "portmidi" ]
+]

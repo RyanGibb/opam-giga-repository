@@ -1,0 +1,129 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "OpenType text shaping engine"
+description: """
+OpenType text shaping engine"""
+extra-source "876e6d0c791cb94f81f60c589c369fafe55c8b30b9f2707cf18f6c62065078fc--harfbuzz--9.0.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:3d5aa379c18b483b88d142f9318d2ca58d4b20935ec3040fa7b4b48a1aeea272"
+  checksum: [
+    "sha256=3d5aa379c18b483b88d142f9318d2ca58d4b20935ec3040fa7b4b48a1aeea272"
+  ]
+}
+extra-source "0219cb6f20bb981be0693962274cb149fe97addca84cbcc09f4cc1251bb3348c--harfbuzz-9.0.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/manifests/9.0.0"
+}
+extra-source "0bc7a8041a8add4bda5cb26b052df0b600d278051d99bb4739ddf78596b3ecd2--harfbuzz--9.0.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:748d0382c160b1501bc1e3020a7963b794d6afed4239f1baa4c01b7bd0f3b760"
+  checksum: [
+    "sha256=748d0382c160b1501bc1e3020a7963b794d6afed4239f1baa4c01b7bd0f3b760"
+  ]
+}
+extra-source "fb5474f67792fbc569fc9fcd5846a126c60b13eaaba657888b850cc3feca3f0d--harfbuzz--9.0.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:9b683aa2fa183d1b26a5a2758663bebc1d45042be4c90cd3a5ab9de9c5d77d42"
+  checksum: [
+    "sha256=9b683aa2fa183d1b26a5a2758663bebc1d45042be4c90cd3a5ab9de9c5d77d42"
+  ]
+}
+extra-source "b2fda928a41f69e08d7d44cefcf8b577c2f93180a9af0556d8ed57c8a5bda91e--harfbuzz--9.0.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:90cd2b6049560e6b719f666bf62c2a2a5ef4ee71717c249792d61ddf5433168e"
+  checksum: [
+    "sha256=90cd2b6049560e6b719f666bf62c2a2a5ef4ee71717c249792d61ddf5433168e"
+  ]
+}
+extra-source "7a4a1f8ff9df27a1175800868b5eb98d9d193783451b3e4c7edc921290122690--harfbuzz--9.0.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:c565c041c5acf667970844755cfb9ed546607a0027fcefce6e2f055201212823"
+  checksum: [
+    "sha256=c565c041c5acf667970844755cfb9ed546607a0027fcefce6e2f055201212823"
+  ]
+}
+extra-source "0bc390e7330898cef5f2cfc2b3dfe093560472d7b09462985e6026d8c01ec0d2--harfbuzz--9.0.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:0ae8564fad4510b9987eb42529b8b550d1b80834648d5a23d4f3b6f164e79d15"
+  checksum: [
+    "sha256=0ae8564fad4510b9987eb42529b8b550d1b80834648d5a23d4f3b6f164e79d15"
+  ]
+}
+extra-source "a483675a9796daf141706ec488ba75a09d739e2f1a9222fd724621faa772d859--harfbuzz--9.0.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:b877274a0347b535bd526fc2b95b9aaabb3758b5bea76344adc71aabfd9e45ba"
+  checksum: [
+    "sha256=b877274a0347b535bd526fc2b95b9aaabb3758b5bea76344adc71aabfd9e45ba"
+  ]
+}
+extra-source "85b9b4b73dc9b7e0fb0363df9f680e694c707939c2b9554573ec3b09f9cbd326--harfbuzz--9.0.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:3e2dc2ca41c19053edbef4c19808943597e6eda7530dd894021e1b3e4178c508"
+  checksum: [
+    "sha256=3e2dc2ca41c19053edbef4c19808943597e6eda7530dd894021e1b3e4178c508"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0219cb6f20bb981be0693962274cb149fe97addca84cbcc09f4cc1251bb3348c--harfbuzz-9.0.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "876e6d0c791cb94f81f60c589c369fafe55c8b30b9f2707cf18f6c62065078fc--harfbuzz--9.0.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0bc7a8041a8add4bda5cb26b052df0b600d278051d99bb4739ddf78596b3ecd2--harfbuzz--9.0.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fb5474f67792fbc569fc9fcd5846a126c60b13eaaba657888b850cc3feca3f0d--harfbuzz--9.0.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b2fda928a41f69e08d7d44cefcf8b577c2f93180a9af0556d8ed57c8a5bda91e--harfbuzz--9.0.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7a4a1f8ff9df27a1175800868b5eb98d9d193783451b3e4c7edc921290122690--harfbuzz--9.0.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0bc390e7330898cef5f2cfc2b3dfe093560472d7b09462985e6026d8c01ec0d2--harfbuzz--9.0.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a483675a9796daf141706ec488ba75a09d739e2f1a9222fd724621faa772d859--harfbuzz--9.0.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "85b9b4b73dc9b7e0fb0363df9f680e694c707939c2b9554573ec3b09f9cbd326--harfbuzz--9.0.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "harfbuzz" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "harfbuzz" ]
+]

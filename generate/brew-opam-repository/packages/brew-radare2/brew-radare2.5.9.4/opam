@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Reverse engineering framework"
+description: """
+Reverse engineering framework"""
+extra-source "c19381fdff1b22446b4d53c362f85a2028eb4052275db863b891f66de143e576--radare2--5.9.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/blobs/sha256:4a323d5bea43f1fc689a930452e1b220e73c6d9f481b62c4fc5e7ac8aaee0fc6"
+  checksum: [
+    "sha256=4a323d5bea43f1fc689a930452e1b220e73c6d9f481b62c4fc5e7ac8aaee0fc6"
+  ]
+}
+extra-source "ced13e7c33d830189b8b51d526995d36ce366a458822633c478b849219fd343a--radare2-5.9.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/manifests/5.9.4"
+}
+extra-source "12b2034644e52cc41b2266384abfb2007082a8a326e5037634a4c0e2245f5fff--radare2--5.9.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/blobs/sha256:b48c10c4382b79427c7aef420b549dac9219868af7b625b001c65c9391946cc0"
+  checksum: [
+    "sha256=b48c10c4382b79427c7aef420b549dac9219868af7b625b001c65c9391946cc0"
+  ]
+}
+extra-source "51e260523f8f113d30d1e45fcaad8fa5e326a79ae64f6e80c527581d319f164c--radare2--5.9.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/blobs/sha256:bca17b5e0bda234525315cfc1864ac91aff981573fea343ff487192db49f76bb"
+  checksum: [
+    "sha256=bca17b5e0bda234525315cfc1864ac91aff981573fea343ff487192db49f76bb"
+  ]
+}
+extra-source "57d5d2e40453ec9f055635aa49f5c6c8ef7d78cd143602855fd8022268f39eb0--radare2--5.9.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/blobs/sha256:7ccd44be7f381dc92c39610e2de8cf8be63c724acb3210593eeb671025a462f2"
+  checksum: [
+    "sha256=7ccd44be7f381dc92c39610e2de8cf8be63c724acb3210593eeb671025a462f2"
+  ]
+}
+extra-source "ab16a292f468f39a450a439e929ec99510b6ce80dcfbee3d5abbb47200a0d0fa--radare2--5.9.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/blobs/sha256:88d901ad50b60f6d05e1d63762757848e3ea3b8f7be23ba718ce771f9f287448"
+  checksum: [
+    "sha256=88d901ad50b60f6d05e1d63762757848e3ea3b8f7be23ba718ce771f9f287448"
+  ]
+}
+extra-source "4dfa7b705c3ae18796dc079c41b9e42700d5f7b70cd5e63092d49389666f43e6--radare2--5.9.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/blobs/sha256:86eae99d268bc12ffb696cf9d7a37232d04932250f76bb7193c4b4ba62947ad6"
+  checksum: [
+    "sha256=86eae99d268bc12ffb696cf9d7a37232d04932250f76bb7193c4b4ba62947ad6"
+  ]
+}
+extra-source "4ff45bfe1f84038e1422517bfd4f5a69e9c0bd960bf7abcdcdf82db855154cd5--radare2--5.9.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/blobs/sha256:1962f702cca5f81a601f9542e11a2b293d904723d73a04d0509d1d39b331e94c"
+  checksum: [
+    "sha256=1962f702cca5f81a601f9542e11a2b293d904723d73a04d0509d1d39b331e94c"
+  ]
+}
+extra-source "701583781cd7368ed9e45e22bb20ffd0b46e9d9019a5815804551501e7702a50--radare2--5.9.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/radare2/blobs/sha256:9fcf8c636062c1cc384215367378842f2742543ea4d2db87bde44516a64f78e3"
+  checksum: [
+    "sha256=9fcf8c636062c1cc384215367378842f2742543ea4d2db87bde44516a64f78e3"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ced13e7c33d830189b8b51d526995d36ce366a458822633c478b849219fd343a--radare2-5.9.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c19381fdff1b22446b4d53c362f85a2028eb4052275db863b891f66de143e576--radare2--5.9.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "12b2034644e52cc41b2266384abfb2007082a8a326e5037634a4c0e2245f5fff--radare2--5.9.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "51e260523f8f113d30d1e45fcaad8fa5e326a79ae64f6e80c527581d319f164c--radare2--5.9.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "57d5d2e40453ec9f055635aa49f5c6c8ef7d78cd143602855fd8022268f39eb0--radare2--5.9.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ab16a292f468f39a450a439e929ec99510b6ce80dcfbee3d5abbb47200a0d0fa--radare2--5.9.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4dfa7b705c3ae18796dc079c41b9e42700d5f7b70cd5e63092d49389666f43e6--radare2--5.9.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4ff45bfe1f84038e1422517bfd4f5a69e9c0bd960bf7abcdcdf82db855154cd5--radare2--5.9.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "701583781cd7368ed9e45e22bb20ffd0b46e9d9019a5815804551501e7702a50--radare2--5.9.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "radare2" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "radare2" ]
+]

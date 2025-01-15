@@ -1,0 +1,131 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Framework for layout and rendering of i18n text"
+description: """
+Framework for layout and rendering of i18n text"""
+extra-source "4ded794b7b047ed789f309c96e180593bcdd27d377e05cc2cf6fcbbce42c85c1--pango--1.54.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:555a0ea1e85a5f5b5d26e4bfdc1f1c19a3d1108ba0801deed64d301a6d912c58"
+  checksum: [
+    "sha256=555a0ea1e85a5f5b5d26e4bfdc1f1c19a3d1108ba0801deed64d301a6d912c58"
+  ]
+}
+extra-source "06c4532b8d175a9098d6a1c5b6b1d2b154b126fef30ddbb5b26791e86b8c9675--pango-1.54.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/manifests/1.54.0"
+}
+extra-source "fb80dab40e59e2635d58b70b8804c292be6eb102f31be356e20d3548fdc69e12--pango--1.54.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:2e8dc6924252fc6df5b73a0eae636f81a9cf872ac654ce08a7866f00f2169e5f"
+  checksum: [
+    "sha256=2e8dc6924252fc6df5b73a0eae636f81a9cf872ac654ce08a7866f00f2169e5f"
+  ]
+}
+extra-source "ac3815918cf462c425043d63211647f03c2399fb86d0eb0cb0e28420ea64fbbd--pango--1.54.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:c47cf2f24449280a2643d958e6f211a2db089f1c2cb3e9f27ef50f35701601ed"
+  checksum: [
+    "sha256=c47cf2f24449280a2643d958e6f211a2db089f1c2cb3e9f27ef50f35701601ed"
+  ]
+}
+extra-source "0e7e1cf834e1eef1ca081f05a57d199b817d686e1560ec674e89009b54f4fad5--pango--1.54.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:11d51f9281cd68d0b8718158df55bc28029e25956f1ad313cae99b31ae130dbb"
+  checksum: [
+    "sha256=11d51f9281cd68d0b8718158df55bc28029e25956f1ad313cae99b31ae130dbb"
+  ]
+}
+extra-source "1a921c961e25395f9384cbb2c363c1b2db73fc3ac485552492e6a084da9ee6a1--pango--1.54.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:1a20935a0a5377fadbb6f02c6b9689d4d5e2a6e6d489e1d9e77b0684876046a6"
+  checksum: [
+    "sha256=1a20935a0a5377fadbb6f02c6b9689d4d5e2a6e6d489e1d9e77b0684876046a6"
+  ]
+}
+extra-source "e9d7044c8a6bb86b8a800fa12c04be44b1e28786c57c0ba934decdfbbbdee3b4--pango--1.54.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:03e0d179c3a4c47cf210c52073a2eee075013ee5617b026abc13aafc45f8ee22"
+  checksum: [
+    "sha256=03e0d179c3a4c47cf210c52073a2eee075013ee5617b026abc13aafc45f8ee22"
+  ]
+}
+extra-source "7be8d359cb97ba98ccaf09c287f0eb72d5efb3dfc6bbf8f3bcc1e22409b6698e--pango--1.54.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:b79420edeeacdb59d0b1a131d3198f6dfcc8ec9dd3e6a4c6136271718e9ad41d"
+  checksum: [
+    "sha256=b79420edeeacdb59d0b1a131d3198f6dfcc8ec9dd3e6a4c6136271718e9ad41d"
+  ]
+}
+extra-source "686d6760f015972f1128920fc47b95277fb1400d8f129a7bab8a08ac5ad6f994--pango--1.54.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:3cdf86a860b1e40093330d83b705cfdc326f2974332d65565e2ce8e15c9213b8"
+  checksum: [
+    "sha256=3cdf86a860b1e40093330d83b705cfdc326f2974332d65565e2ce8e15c9213b8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "06c4532b8d175a9098d6a1c5b6b1d2b154b126fef30ddbb5b26791e86b8c9675--pango-1.54.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "4ded794b7b047ed789f309c96e180593bcdd27d377e05cc2cf6fcbbce42c85c1--pango--1.54.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fb80dab40e59e2635d58b70b8804c292be6eb102f31be356e20d3548fdc69e12--pango--1.54.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ac3815918cf462c425043d63211647f03c2399fb86d0eb0cb0e28420ea64fbbd--pango--1.54.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0e7e1cf834e1eef1ca081f05a57d199b817d686e1560ec674e89009b54f4fad5--pango--1.54.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1a921c961e25395f9384cbb2c363c1b2db73fc3ac485552492e6a084da9ee6a1--pango--1.54.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e9d7044c8a6bb86b8a800fa12c04be44b1e28786c57c0ba934decdfbbbdee3b4--pango--1.54.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7be8d359cb97ba98ccaf09c287f0eb72d5efb3dfc6bbf8f3bcc1e22409b6698e--pango--1.54.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "686d6760f015972f1128920fc47b95277fb1400d8f129a7bab8a08ac5ad6f994--pango--1.54.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pango" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pango" ]
+]

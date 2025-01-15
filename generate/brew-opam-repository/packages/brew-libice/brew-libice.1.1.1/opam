@@ -1,0 +1,122 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Inter-Client Exchange Library"
+description: """
+X.Org: Inter-Client Exchange Library"""
+extra-source "16dd100f0d7f34ec6ccd5ba29e13a149fce8b23477ed469addd6903343ed174d--libice--1.1.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:72719037ab14a8bd8f4acb21d4c2a4562df939621cd115f4eeb9c0fa8a62dbd4"
+  checksum: [
+    "sha256=72719037ab14a8bd8f4acb21d4c2a4562df939621cd115f4eeb9c0fa8a62dbd4"
+  ]
+}
+extra-source "f0546ccd8932952909993034a15cf156df51704645aff321310b69e85e095be6--libice-1.1.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/manifests/1.1.1"
+}
+extra-source "720f0d0498cee0670d74de05aa74d9ba67f941fb97939d2b38b05b1461985ac2--libice--1.1.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:3361ef875d4db4f7d0f98d3880c61e38648f207c7010881dadaef6c9dd68f852"
+  checksum: [
+    "sha256=3361ef875d4db4f7d0f98d3880c61e38648f207c7010881dadaef6c9dd68f852"
+  ]
+}
+extra-source "539e1979bf91be1798631a659538ad2a6a36282d71bc38f1e436e3e2ad7f0e2e--libice--1.1.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:9631199b732614ee51c17bb28c12cac73da2317a4496da042900ef3d80f73b17"
+  checksum: [
+    "sha256=9631199b732614ee51c17bb28c12cac73da2317a4496da042900ef3d80f73b17"
+  ]
+}
+extra-source "7b20582773ffefcf869cd7b376c47407398b6748786e726b6ba4de48997e227b--libice--1.1.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:be08a5e12f40f1f2e5fc780ca8735969a41b5f2f5d5994788721de92120828bd"
+  checksum: [
+    "sha256=be08a5e12f40f1f2e5fc780ca8735969a41b5f2f5d5994788721de92120828bd"
+  ]
+}
+extra-source "944d54a33a9b21b44f044c17545017efcea9b714ac33e059bc95add79a62de96--libice--1.1.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:4b76f982119e65321f62bbb740a549d08f280ab7055496210ac78acf6505a6c4"
+  checksum: [
+    "sha256=4b76f982119e65321f62bbb740a549d08f280ab7055496210ac78acf6505a6c4"
+  ]
+}
+extra-source "9bd093d953f7eb2c50547cb61c549df580e3d4e12dcb3069a7fa1231c27eb318--libice--1.1.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:a6c573ba977c781d5d6c8a5a361ed109b7bdb94f8ba0907a0ff4fc69cd425baa"
+  checksum: [
+    "sha256=a6c573ba977c781d5d6c8a5a361ed109b7bdb94f8ba0907a0ff4fc69cd425baa"
+  ]
+}
+extra-source "30ecdef559b893949195afd2a60a62a3fdb04ba002a4873bf23c4312d0027e9a--libice--1.1.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:2b30372decf9b63bb1c02d6dabe2eb8216eefd7abbb71e902863ceac1633dcaa"
+  checksum: [
+    "sha256=2b30372decf9b63bb1c02d6dabe2eb8216eefd7abbb71e902863ceac1633dcaa"
+  ]
+}
+extra-source "32e251dee5dabfec06f399077274d9eddffc5888e304b71b4c4f00fcd2347101--libice--1.1.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:041d92a0fbdd7f581ac42bf05d63ff8156c52d5ce6218b92aa0929d221ece18c"
+  checksum: [
+    "sha256=041d92a0fbdd7f581ac42bf05d63ff8156c52d5ce6218b92aa0929d221ece18c"
+  ]
+}
+extra-source "0318539b6d7b093c1f22b07c519af441bb9ef8f4f1104980a2a0317e351b987c--libice--1.1.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:34577a485f10e25e38e27606158bd082e460a36874532bbc0e720bd71f5b9db8"
+  checksum: [
+    "sha256=34577a485f10e25e38e27606158bd082e460a36874532bbc0e720bd71f5b9db8"
+  ]
+}
+extra-source "6c1e7eb077b00f23c1b0f1623beac4a0358a2d6c6f6c1c96fa5edb327bc9e359--libice--1.1.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:aed9bb2a55522c29d05b499b235181e2474d34e242991238e8322b3d8222ecb7"
+  checksum: [
+    "sha256=aed9bb2a55522c29d05b499b235181e2474d34e242991238e8322b3d8222ecb7"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-libx11" {= "1.8.10"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f0546ccd8932952909993034a15cf156df51704645aff321310b69e85e095be6--libice-1.1.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "16dd100f0d7f34ec6ccd5ba29e13a149fce8b23477ed469addd6903343ed174d--libice--1.1.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "720f0d0498cee0670d74de05aa74d9ba67f941fb97939d2b38b05b1461985ac2--libice--1.1.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "539e1979bf91be1798631a659538ad2a6a36282d71bc38f1e436e3e2ad7f0e2e--libice--1.1.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b20582773ffefcf869cd7b376c47407398b6748786e726b6ba4de48997e227b--libice--1.1.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "944d54a33a9b21b44f044c17545017efcea9b714ac33e059bc95add79a62de96--libice--1.1.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9bd093d953f7eb2c50547cb61c549df580e3d4e12dcb3069a7fa1231c27eb318--libice--1.1.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "30ecdef559b893949195afd2a60a62a3fdb04ba002a4873bf23c4312d0027e9a--libice--1.1.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "32e251dee5dabfec06f399077274d9eddffc5888e304b71b4c4f00fcd2347101--libice--1.1.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0318539b6d7b093c1f22b07c519af441bb9ef8f4f1104980a2a0317e351b987c--libice--1.1.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6c1e7eb077b00f23c1b0f1623beac4a0358a2d6c6f6c1c96fa5edb327bc9e359--libice--1.1.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libice" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libice" ]
+]

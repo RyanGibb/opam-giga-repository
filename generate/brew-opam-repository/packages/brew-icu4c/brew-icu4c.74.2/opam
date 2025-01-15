@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C/C++ and Java libraries for Unicode and globalization"
+description: """
+C/C++ and Java libraries for Unicode and globalization"""
+extra-source "1593247c7a35f039e8de0002f0035b1d3b1b10ec225603273a8e2a6789379358--icu4c--74.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:ec52c07656afec651345fb9d1ddc4557982de778ad38bdfe584bf910d49286da"
+  checksum: [
+    "sha256=ec52c07656afec651345fb9d1ddc4557982de778ad38bdfe584bf910d49286da"
+  ]
+}
+extra-source "3e5230e726e5548db28bc0cf75710d6405903b742f941113d3dbe7483fad72a4--icu4c-74.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/manifests/74.2"
+}
+extra-source "d1eacc764b633bf1eb6bd8604ae7f901a6c01ec975a93142c2c96bf774bcfee5--icu4c--74.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:ac4fb9cc76372d8ad8dff5c740ff2b5b6287a5303de625dd865e7afccbfd6b70"
+  checksum: [
+    "sha256=ac4fb9cc76372d8ad8dff5c740ff2b5b6287a5303de625dd865e7afccbfd6b70"
+  ]
+}
+extra-source "ce50ca66b48d7c7f36ee7ec0a644bbeaf961faf2b4f333992d9e85c8e051a981--icu4c--74.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:3facc22a7821e01d93a38e371e377f13275299d518929222ed34c77a4f4a65d3"
+  checksum: [
+    "sha256=3facc22a7821e01d93a38e371e377f13275299d518929222ed34c77a4f4a65d3"
+  ]
+}
+extra-source "02bf47eb40227d1ed9ed1cd0bf0db503d0941b6a4fd1df5ed085209eb2ca8c1c--icu4c--74.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:7c966c530b3e01f87be0c46e8969e1801fd7c0d9ad76a0736a6c7767cc87da94"
+  checksum: [
+    "sha256=7c966c530b3e01f87be0c46e8969e1801fd7c0d9ad76a0736a6c7767cc87da94"
+  ]
+}
+extra-source "631a4e88ae277a7dcdbf8bf4c7c0b470106db011f3e363432c7f980a8ba68255--icu4c--74.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:3c707a483df52f58010f3ab48f14e6e875cd99aefbac58ed6abf67f59b0a58d8"
+  checksum: [
+    "sha256=3c707a483df52f58010f3ab48f14e6e875cd99aefbac58ed6abf67f59b0a58d8"
+  ]
+}
+extra-source "7244cafd5fb379096ab9bf4a8b672cd8081f75347adb92774cdf0f73c80b78e0--icu4c--74.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:899c8988186ea890db0be552eea88bd94496cd4b84217febe89c9b84c9acab7a"
+  checksum: [
+    "sha256=899c8988186ea890db0be552eea88bd94496cd4b84217febe89c9b84c9acab7a"
+  ]
+}
+extra-source "f850f228bb1836168182a923d8eeef7f09a16a3cddfdb17189db92799c216c41--icu4c--74.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:014d11c8918c732dc17f4436d1946584ab42a443355f18096e6d6f3280390330"
+  checksum: [
+    "sha256=014d11c8918c732dc17f4436d1946584ab42a443355f18096e6d6f3280390330"
+  ]
+}
+extra-source "c4d323c2eb8995e5b4c6b33bb9d0bbea6ee55aa2008228f2a72b880961a82cff--icu4c--74.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:2b881638861905a1a730cdd618966dfcb548685314d86addd1ad6d110ba88432"
+  checksum: [
+    "sha256=2b881638861905a1a730cdd618966dfcb548685314d86addd1ad6d110ba88432"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3e5230e726e5548db28bc0cf75710d6405903b742f941113d3dbe7483fad72a4--icu4c-74.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "1593247c7a35f039e8de0002f0035b1d3b1b10ec225603273a8e2a6789379358--icu4c--74.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d1eacc764b633bf1eb6bd8604ae7f901a6c01ec975a93142c2c96bf774bcfee5--icu4c--74.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ce50ca66b48d7c7f36ee7ec0a644bbeaf961faf2b4f333992d9e85c8e051a981--icu4c--74.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "02bf47eb40227d1ed9ed1cd0bf0db503d0941b6a4fd1df5ed085209eb2ca8c1c--icu4c--74.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "631a4e88ae277a7dcdbf8bf4c7c0b470106db011f3e363432c7f980a8ba68255--icu4c--74.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7244cafd5fb379096ab9bf4a8b672cd8081f75347adb92774cdf0f73c80b78e0--icu4c--74.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f850f228bb1836168182a923d8eeef7f09a16a3cddfdb17189db92799c216c41--icu4c--74.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c4d323c2eb8995e5b4c6b33bb9d0bbea6ee55aa2008228f2a72b880961a82cff--icu4c--74.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "icu4c" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "icu4c" ]
+]

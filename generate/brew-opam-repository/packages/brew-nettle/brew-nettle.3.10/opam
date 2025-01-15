@@ -1,0 +1,95 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Low-level cryptographic library"
+description: """
+Low-level cryptographic library"""
+extra-source "25f12ca5471584fb1fd25e500ba14de40862564c9582d14784ddfc3e5cb229ff--nettle--3.10.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:8dd077a363c69d5d31968c7cfbc79dd5ec856b58957bc081f6f38632d59029cf"
+  checksum: [
+    "sha256=8dd077a363c69d5d31968c7cfbc79dd5ec856b58957bc081f6f38632d59029cf"
+  ]
+}
+extra-source "8dc57e1a111535116cedad68fea09cf7a5477e6a1e357cdbb65b679768548586--nettle-3.10.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/manifests/3.10"
+}
+extra-source "e0814b8437cd65bc661d5b568a1f9c9223d15975eaa411e5c0fa277a09d1982d--nettle--3.10.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:2638a7bfcca9dbaa6a935f7ae80aed9d3f1064b64189a0f3364f4b20f4a9d341"
+  checksum: [
+    "sha256=2638a7bfcca9dbaa6a935f7ae80aed9d3f1064b64189a0f3364f4b20f4a9d341"
+  ]
+}
+extra-source "08dbc2b4e513264014e7d39ac1c0488a5b0575ef84c9492f30250bf3f5f406f0--nettle--3.10.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:79f26a53dfc0202c437153961d441a8793fb651d1eb61930f1558d139cdfd99a"
+  checksum: [
+    "sha256=79f26a53dfc0202c437153961d441a8793fb651d1eb61930f1558d139cdfd99a"
+  ]
+}
+extra-source "0fd39016e9f090d7dd4710f6b8bc23503dec9e7c20f65d206c9b3c02d0716aad--nettle--3.10.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:372ad197aa7857e6ac863471ae301cdc13f313b34397309b7e1a27ca5b104ba0"
+  checksum: [
+    "sha256=372ad197aa7857e6ac863471ae301cdc13f313b34397309b7e1a27ca5b104ba0"
+  ]
+}
+extra-source "d65279a77ad1826cfa6cc4bc81ad20db8f04147fce895b44ee75ccbe0958f8f3--nettle--3.10.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:cc13fe4481bb5c606b811561da643eace9e0da7f30de62ced74811659b8bb41d"
+  checksum: [
+    "sha256=cc13fe4481bb5c606b811561da643eace9e0da7f30de62ced74811659b8bb41d"
+  ]
+}
+extra-source "2809ec4e17b9b9a31db67132e79a6332b91e0d75f2732afef97ab0d7e834751b--nettle--3.10.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:c04364b7c2beb64a5c7d2ba645749e07e256b7c5d30968cfa2722c289be24542"
+  checksum: [
+    "sha256=c04364b7c2beb64a5c7d2ba645749e07e256b7c5d30968cfa2722c289be24542"
+  ]
+}
+extra-source "893b471a036ba6065b62839bebc04fa9cf3fb574e99822f1c7f8f4baff744886--nettle--3.10.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:8be68cdd3cc9b2df465840fd843b50e6bb10fda11c5711e50f002bb31267cb1f"
+  checksum: [
+    "sha256=8be68cdd3cc9b2df465840fd843b50e6bb10fda11c5711e50f002bb31267cb1f"
+  ]
+}
+extra-source "edd00a65404c7306cccea79013df459bd5790f41230724aca1242a55458daa00--nettle--3.10.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:05101c1f60cf7b267464af60a6814404e32691af7630e4ea23ed5b85ae1257a7"
+  checksum: [
+    "sha256=05101c1f60cf7b267464af60a6814404e32691af7630e4ea23ed5b85ae1257a7"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8dc57e1a111535116cedad68fea09cf7a5477e6a1e357cdbb65b679768548586--nettle-3.10.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "25f12ca5471584fb1fd25e500ba14de40862564c9582d14784ddfc3e5cb229ff--nettle--3.10.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e0814b8437cd65bc661d5b568a1f9c9223d15975eaa411e5c0fa277a09d1982d--nettle--3.10.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "08dbc2b4e513264014e7d39ac1c0488a5b0575ef84c9492f30250bf3f5f406f0--nettle--3.10.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0fd39016e9f090d7dd4710f6b8bc23503dec9e7c20f65d206c9b3c02d0716aad--nettle--3.10.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d65279a77ad1826cfa6cc4bc81ad20db8f04147fce895b44ee75ccbe0958f8f3--nettle--3.10.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2809ec4e17b9b9a31db67132e79a6332b91e0d75f2732afef97ab0d7e834751b--nettle--3.10.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "893b471a036ba6065b62839bebc04fa9cf3fb574e99822f1c7f8f4baff744886--nettle--3.10.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "edd00a65404c7306cccea79013df459bd5790f41230724aca1242a55458daa00--nettle--3.10.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "nettle" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "nettle" ]
+]

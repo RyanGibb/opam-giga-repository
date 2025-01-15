@@ -1,0 +1,76 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Tool Command Language"
+description: """
+Tool Command Language"""
+extra-source "2aa0fffc93c779348262764b874eaac9fa509c5add9a4b8811bdd2799481727e--tcl-tk--8.6.15.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tcl-tk/blobs/sha256:5c86b0e5af8d90d098b67726a67dcc2c6a526c8aac2cea25e8fce43e6f57839f"
+  checksum: [
+    "sha256=5c86b0e5af8d90d098b67726a67dcc2c6a526c8aac2cea25e8fce43e6f57839f"
+  ]
+}
+extra-source "c259b5606036fb26b56d95a48f07db66372bc19fc38fdf8d79d77558c194e048--tcl-tk-8.6.15.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tcl-tk/manifests/8.6.15"
+}
+extra-source "de08828800fbdaf5c6ca700de158af7b3c85cde167e58fe6f4c75a31ca4839bf--tcl-tk--8.6.15.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tcl-tk/blobs/sha256:f72b0c08a6e75d91441f827dde205c772cf0777b9ed9be1a5217e662c40051d5"
+  checksum: [
+    "sha256=f72b0c08a6e75d91441f827dde205c772cf0777b9ed9be1a5217e662c40051d5"
+  ]
+}
+extra-source "01eddec71e0e5658d895e528001e531acea92a6fefd9b33a378fc493965ecfb3--tcl-tk--8.6.15.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tcl-tk/blobs/sha256:2a456668a99adffe53485ceb07961201aac42e582434530ac9e32870a3ac3190"
+  checksum: [
+    "sha256=2a456668a99adffe53485ceb07961201aac42e582434530ac9e32870a3ac3190"
+  ]
+}
+extra-source "acf3e5617d1cf816dde982133447e3f1a54225fe7cdaab618e1b1e40f30ec45c--tcl-tk--8.6.15.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tcl-tk/blobs/sha256:b7981ed65c43e615854eb40afda733fffa641d2f9d65d26f27cc6bfa90387de5"
+  checksum: [
+    "sha256=b7981ed65c43e615854eb40afda733fffa641d2f9d65d26f27cc6bfa90387de5"
+  ]
+}
+extra-source "cc9de7265d01a4ed02c19786defcd109fda21dbffa976bee03c804c4b5dcf405--tcl-tk--8.6.15.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tcl-tk/blobs/sha256:c27c4de6f2e0059d9f8faa87d3f0dbffc5e86d93f4aa472fc2a032596f7e732e"
+  checksum: [
+    "sha256=c27c4de6f2e0059d9f8faa87d3f0dbffc5e86d93f4aa472fc2a032596f7e732e"
+  ]
+}
+extra-source "4a77fe86f825597d5ba15cd3dbabc653d8fc5d5473df31b2287a4a4960ebd99c--tcl-tk--8.6.15.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tcl-tk/blobs/sha256:f3d4fa58e986a465068f64d36c0a98dd37c3ed74da79b796b9fc90b467ce5bce"
+  checksum: [
+    "sha256=f3d4fa58e986a465068f64d36c0a98dd37c3ed74da79b796b9fc90b467ce5bce"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c259b5606036fb26b56d95a48f07db66372bc19fc38fdf8d79d77558c194e048--tcl-tk-8.6.15.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2aa0fffc93c779348262764b874eaac9fa509c5add9a4b8811bdd2799481727e--tcl-tk--8.6.15.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "de08828800fbdaf5c6ca700de158af7b3c85cde167e58fe6f4c75a31ca4839bf--tcl-tk--8.6.15.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "01eddec71e0e5658d895e528001e531acea92a6fefd9b33a378fc493965ecfb3--tcl-tk--8.6.15.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "acf3e5617d1cf816dde982133447e3f1a54225fe7cdaab618e1b1e40f30ec45c--tcl-tk--8.6.15.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cc9de7265d01a4ed02c19786defcd109fda21dbffa976bee03c804c4b5dcf405--tcl-tk--8.6.15.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4a77fe86f825597d5ba15cd3dbabc653d8fc5d5473df31b2287a4a4960ebd99c--tcl-tk--8.6.15.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "tcl-tk" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "tcl-tk" ]
+]

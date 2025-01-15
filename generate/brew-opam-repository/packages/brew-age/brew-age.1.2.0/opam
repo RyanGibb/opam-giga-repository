@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Simple, modern, secure file encryption"
+description: """
+Simple, modern, secure file encryption"""
+extra-source "bd18a6f79c274845b87ed6c15e9650163cd3af03211d123a72dfcc4efbf23820--age--1.2.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/blobs/sha256:6e542c3d7bb343de9e711514736debc8af9cbeb01a26b903ba13ac5b6514bece"
+  checksum: [
+    "sha256=6e542c3d7bb343de9e711514736debc8af9cbeb01a26b903ba13ac5b6514bece"
+  ]
+}
+extra-source "bb40b674a534b5d256981aa47222b2297ddf71a57231b97c6cb95a8f653000cb--age-1.2.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/manifests/1.2.0"
+}
+extra-source "5978b125b6f25556449fc78e54449eb7abb4278309554ddaa5e7b48bca845c6b--age--1.2.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/blobs/sha256:bac09b266d274fef97330251550355444ae86d771aa36ac657da06e04c3c502f"
+  checksum: [
+    "sha256=bac09b266d274fef97330251550355444ae86d771aa36ac657da06e04c3c502f"
+  ]
+}
+extra-source "43bd70922589e43a125b6f5490e50588d3545cedcacbdeb7d088e632f8e41ec0--age--1.2.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/blobs/sha256:41e4ed7ff1849806a4144c68fd6ea0607000b6ab9968e658664e2846764b5acc"
+  checksum: [
+    "sha256=41e4ed7ff1849806a4144c68fd6ea0607000b6ab9968e658664e2846764b5acc"
+  ]
+}
+extra-source "b66c40869ac08e29d4245bbbe329d686783d39ecaa2a06ad8b587408fe4fd92b--age--1.2.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/blobs/sha256:69d5ab672aab414d7f4e7867ac8aedaae24b65bbae275aeecca2ca2a2532c871"
+  checksum: [
+    "sha256=69d5ab672aab414d7f4e7867ac8aedaae24b65bbae275aeecca2ca2a2532c871"
+  ]
+}
+extra-source "b9ec8a5e0b91aa0c91c81798e98589a7e61e809f5024dc7dbdd0d02d3ac1763c--age--1.2.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/blobs/sha256:94cfc2ee8b79c165388e74c3ab53cb824f3ec3043e6d8cecb4016dce0e6d7c31"
+  checksum: [
+    "sha256=94cfc2ee8b79c165388e74c3ab53cb824f3ec3043e6d8cecb4016dce0e6d7c31"
+  ]
+}
+extra-source "25eb41541c8a652c71f5d495f007df57c9b894fc8daec9f9dd10db76d95b9e3e--age--1.2.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/blobs/sha256:50180ad28dff70d139b3577b94b66dac48767bf6b957ba0c7bf0ccecb7f58722"
+  checksum: [
+    "sha256=50180ad28dff70d139b3577b94b66dac48767bf6b957ba0c7bf0ccecb7f58722"
+  ]
+}
+extra-source "1174c14b40971c38614a8561a66a54845d897ea02cfb946d24229f141c0550ff--age--1.2.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/blobs/sha256:365a092bba65b870b2a171fc81f893fa43d8c025c2f257926de0c3431529fa2f"
+  checksum: [
+    "sha256=365a092bba65b870b2a171fc81f893fa43d8c025c2f257926de0c3431529fa2f"
+  ]
+}
+extra-source "3a5683588a8bef688c758643cbc3be96356d80500298d0855092527463e675c1--age--1.2.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/age/blobs/sha256:33f74dae7dff519afbbcf200af30a1953f2707be25d03f8f912d1c43e5556ec8"
+  checksum: [
+    "sha256=33f74dae7dff519afbbcf200af30a1953f2707be25d03f8f912d1c43e5556ec8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-go" {= "1.23.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "bb40b674a534b5d256981aa47222b2297ddf71a57231b97c6cb95a8f653000cb--age-1.2.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "bd18a6f79c274845b87ed6c15e9650163cd3af03211d123a72dfcc4efbf23820--age--1.2.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5978b125b6f25556449fc78e54449eb7abb4278309554ddaa5e7b48bca845c6b--age--1.2.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "43bd70922589e43a125b6f5490e50588d3545cedcacbdeb7d088e632f8e41ec0--age--1.2.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b66c40869ac08e29d4245bbbe329d686783d39ecaa2a06ad8b587408fe4fd92b--age--1.2.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b9ec8a5e0b91aa0c91c81798e98589a7e61e809f5024dc7dbdd0d02d3ac1763c--age--1.2.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "25eb41541c8a652c71f5d495f007df57c9b894fc8daec9f9dd10db76d95b9e3e--age--1.2.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1174c14b40971c38614a8561a66a54845d897ea02cfb946d24229f141c0550ff--age--1.2.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3a5683588a8bef688c758643cbc3be96356d80500298d0855092527463e675c1--age--1.2.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "age" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "age" ]
+]

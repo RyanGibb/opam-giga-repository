@@ -1,0 +1,123 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Granddaddy of HTML tools, with support for modern standards"
+description: """
+Granddaddy of HTML tools, with support for modern standards"""
+extra-source "483b572e76e8b6e9880a31b60d9a055a104020e6c1f02ad92bc683ce0b882051--tidy-html5--5.8.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:570d2482168cd8be11bb433f743f934bf7797a952863cd282230111b5de15a73"
+  checksum: [
+    "sha256=570d2482168cd8be11bb433f743f934bf7797a952863cd282230111b5de15a73"
+  ]
+}
+extra-source "9c3d95eb5772f016b6bafe57a1129f7f2e2304ab934af96410b2c0739128ce48--tidy-html5-5.8.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/manifests/5.8.0"
+}
+extra-source "28befc86f77659ced9eba6c822280586067fec06b1a3466a996c6e3bc6c88285--tidy-html5--5.8.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:dbae8d55a2a35e2245dea6ff6180eac37973514342d4a3895a82a5f43752972a"
+  checksum: [
+    "sha256=dbae8d55a2a35e2245dea6ff6180eac37973514342d4a3895a82a5f43752972a"
+  ]
+}
+extra-source "6be329a3fa2b5b655725f67033fa559c70e1b589df3809141f6f49bc08af4b68--tidy-html5--5.8.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:42f788763482699cc7ead38ace15bce63e075ee20c070bbb74db279002d66af6"
+  checksum: [
+    "sha256=42f788763482699cc7ead38ace15bce63e075ee20c070bbb74db279002d66af6"
+  ]
+}
+extra-source "2e7e7aec4fd32b736fa77bde138a8893e3f3235f5c47c080b6e1b5207088e72b--tidy-html5--5.8.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:254a9044ebeb9ac00b4c45fa1df1513ab9f912acbcd82e2bf5afc31c8bb71245"
+  checksum: [
+    "sha256=254a9044ebeb9ac00b4c45fa1df1513ab9f912acbcd82e2bf5afc31c8bb71245"
+  ]
+}
+extra-source "d334302b8037f45ecbac834b4bdaff0eb3efd078bc4adaad39cb58605ff87cde--tidy-html5--5.8.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:25de41a82adac06447528f20ebe466530708c86a7440c6d9f3dd122df90e5684"
+  checksum: [
+    "sha256=25de41a82adac06447528f20ebe466530708c86a7440c6d9f3dd122df90e5684"
+  ]
+}
+extra-source "6c49adf9a9e835cc91fab167014dab90604f64170e1810f8a70d7dcedceab9a1--tidy-html5--5.8.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:eb97c832fbe63a48464dee4dbef7a9e370906360dc36cd664af6a6abe738faec"
+  checksum: [
+    "sha256=eb97c832fbe63a48464dee4dbef7a9e370906360dc36cd664af6a6abe738faec"
+  ]
+}
+extra-source "238f4a4d1c3d308ab14b65310d840192ad0dd8742e01389f56480840056d21ac--tidy-html5--5.8.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:15f70f84c933bc11475f62c0cda4e1ccc72e5786bdbd64da76249fbfb35be8e5"
+  checksum: [
+    "sha256=15f70f84c933bc11475f62c0cda4e1ccc72e5786bdbd64da76249fbfb35be8e5"
+  ]
+}
+extra-source "199ddfa7f94fdf24218f951099870ade5df91d368aa2b598963e84ccf3a4887a--tidy-html5--5.8.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:9127cf10347816285db70f0ec794a08433e44426f9f4320d5fecedbdcfb15e2b"
+  checksum: [
+    "sha256=9127cf10347816285db70f0ec794a08433e44426f9f4320d5fecedbdcfb15e2b"
+  ]
+}
+extra-source "101a480d6304c02690abe0085784a5d915400d0dfab56e2dd2482483b97dd16b--tidy-html5--5.8.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:de46584bc851655bae8d839b27b4423f8309e0c8de3923deb5be554a57617f45"
+  checksum: [
+    "sha256=de46584bc851655bae8d839b27b4423f8309e0c8de3923deb5be554a57617f45"
+  ]
+}
+extra-source "d1da6a386376529e7f80290fa1c159518e4ed209011731acaa602f2ca812ab21--tidy-html5--5.8.0.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:fe486f6a2455b7c59eac3ba8a5e4b2e1a6ff49bb6440465d9470013a23a5fe0f"
+  checksum: [
+    "sha256=fe486f6a2455b7c59eac3ba8a5e4b2e1a6ff49bb6440465d9470013a23a5fe0f"
+  ]
+}
+extra-source "031e9e3ec16efc2a5cd9e641aa781447f016cfeb33f1ee458debae34bc951259--tidy-html5--5.8.0.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:4ae3afab500044dfd0fb4cf982ce9411859f50548149cc4f99f8720de1bbd754"
+  checksum: [
+    "sha256=4ae3afab500044dfd0fb4cf982ce9411859f50548149cc4f99f8720de1bbd754"
+  ]
+}
+extra-source "34f17c9c8a7fef2842e47bda37690ffece1fd1cd4304893272ace6d6b6e905a4--tidy-html5--5.8.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tidy-html5/blobs/sha256:2f80a0abaed47dfa224213a413fbe6f23d1a538cf4bfeb633296f5e7e465fb2d"
+  checksum: [
+    "sha256=2f80a0abaed47dfa224213a413fbe6f23d1a538cf4bfeb633296f5e7e465fb2d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "9c3d95eb5772f016b6bafe57a1129f7f2e2304ab934af96410b2c0739128ce48--tidy-html5-5.8.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "483b572e76e8b6e9880a31b60d9a055a104020e6c1f02ad92bc683ce0b882051--tidy-html5--5.8.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "28befc86f77659ced9eba6c822280586067fec06b1a3466a996c6e3bc6c88285--tidy-html5--5.8.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6be329a3fa2b5b655725f67033fa559c70e1b589df3809141f6f49bc08af4b68--tidy-html5--5.8.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2e7e7aec4fd32b736fa77bde138a8893e3f3235f5c47c080b6e1b5207088e72b--tidy-html5--5.8.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d334302b8037f45ecbac834b4bdaff0eb3efd078bc4adaad39cb58605ff87cde--tidy-html5--5.8.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6c49adf9a9e835cc91fab167014dab90604f64170e1810f8a70d7dcedceab9a1--tidy-html5--5.8.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "238f4a4d1c3d308ab14b65310d840192ad0dd8742e01389f56480840056d21ac--tidy-html5--5.8.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "199ddfa7f94fdf24218f951099870ade5df91d368aa2b598963e84ccf3a4887a--tidy-html5--5.8.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "101a480d6304c02690abe0085784a5d915400d0dfab56e2dd2482483b97dd16b--tidy-html5--5.8.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d1da6a386376529e7f80290fa1c159518e4ed209011731acaa602f2ca812ab21--tidy-html5--5.8.0.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "031e9e3ec16efc2a5cd9e641aa781447f016cfeb33f1ee458debae34bc951259--tidy-html5--5.8.0.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "34f17c9c8a7fef2842e47bda37690ffece1fd1cd4304893272ace6d6b6e905a4--tidy-html5--5.8.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "tidy-html5" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "tidy-html5" ]
+]

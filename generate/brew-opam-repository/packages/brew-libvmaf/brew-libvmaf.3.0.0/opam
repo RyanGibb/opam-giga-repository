@@ -1,0 +1,101 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Perceptual video quality assessment based on multi-method fusion"
+description: """
+Perceptual video quality assessment based on multi-method fusion"""
+extra-source "f8170040cd6ddd0732e3ed78a35d14cb7b7956fda9086257875b96e4080d7250--libvmaf--3.0.0.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/blobs/sha256:0809635a529d0e53e927cb9834225210096c625b10ab7eb1211cadf63a1016c5"
+  checksum: [
+    "sha256=0809635a529d0e53e927cb9834225210096c625b10ab7eb1211cadf63a1016c5"
+  ]
+}
+extra-source "3e1a82ebf20a6bd20eace7c0c56b52b096c4fa892466fa0a9e7be486389e0974--libvmaf-3.0.0-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/manifests/3.0.0-1"
+}
+extra-source "c51914df0759ee9c83351a0883dea3f3cb8c089e07b2420d32cd69f48dbdc619--libvmaf--3.0.0.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/blobs/sha256:64600bc64ae6dc61c6b9f31c7c4ee35a045b72966ba85d6de1e8f7b0fb575c6f"
+  checksum: [
+    "sha256=64600bc64ae6dc61c6b9f31c7c4ee35a045b72966ba85d6de1e8f7b0fb575c6f"
+  ]
+}
+extra-source "ef37203947a9d5db153ccefbf8f68ea1d90be21a1e6e73c91398f718581b71ea--libvmaf--3.0.0.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/blobs/sha256:56701b888674f0dfe0e67224cf1e851888b6ab044ac696ced31b13c8c7a61d0b"
+  checksum: [
+    "sha256=56701b888674f0dfe0e67224cf1e851888b6ab044ac696ced31b13c8c7a61d0b"
+  ]
+}
+extra-source "bed30d42383c648b43bcb17393f1e173cdc387a6c958657f1268389d2f7e3b54--libvmaf--3.0.0.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/blobs/sha256:a021ade94bade88689b21bcf06e6055a9d700ababafe51200620eda29a1e0951"
+  checksum: [
+    "sha256=a021ade94bade88689b21bcf06e6055a9d700ababafe51200620eda29a1e0951"
+  ]
+}
+extra-source "af7a9035434dc5140e561069f5afffaaf9d34dd36d20d506281a465a59390142--libvmaf--3.0.0.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/blobs/sha256:ca7a55e4abb5861b0bdc2fbb14fe298e466f9910298e043efc2d47d17332d686"
+  checksum: [
+    "sha256=ca7a55e4abb5861b0bdc2fbb14fe298e466f9910298e043efc2d47d17332d686"
+  ]
+}
+extra-source "dd0ab4c07d7b49623ba6fdc002b92633e4f34b7e4a2d1e5364a26d5a7308d5af--libvmaf--3.0.0.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/blobs/sha256:448eaea166d8f6f1c48d72c13fe8d1a46635b54556a6904d1fb351d2fc0d0a80"
+  checksum: [
+    "sha256=448eaea166d8f6f1c48d72c13fe8d1a46635b54556a6904d1fb351d2fc0d0a80"
+  ]
+}
+extra-source "d2fd6c40b5eda249105a7e9758b75c58ae4cb476314a9d982cc923dfbb9ae689--libvmaf--3.0.0.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/blobs/sha256:45a7329171c81b91618e385d2d35fedb8dfe91355d0ef4c1aa2951bb0c436aef"
+  checksum: [
+    "sha256=45a7329171c81b91618e385d2d35fedb8dfe91355d0ef4c1aa2951bb0c436aef"
+  ]
+}
+extra-source "9d1c6b8a4167021cd59f27fab24f5b51c95a5a19fab282a5c0643f5a28f17ef5--libvmaf--3.0.0.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvmaf/blobs/sha256:d48ccc0729c4d04a062bc060518ea1370101fd52e718bc54fad10a9fb996d3cb"
+  checksum: [
+    "sha256=d48ccc0729c4d04a062bc060518ea1370101fd52e718bc54fad10a9fb996d3cb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-nasm" {= "2.16.03"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3e1a82ebf20a6bd20eace7c0c56b52b096c4fa892466fa0a9e7be486389e0974--libvmaf-3.0.0-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f8170040cd6ddd0732e3ed78a35d14cb7b7956fda9086257875b96e4080d7250--libvmaf--3.0.0.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c51914df0759ee9c83351a0883dea3f3cb8c089e07b2420d32cd69f48dbdc619--libvmaf--3.0.0.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ef37203947a9d5db153ccefbf8f68ea1d90be21a1e6e73c91398f718581b71ea--libvmaf--3.0.0.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bed30d42383c648b43bcb17393f1e173cdc387a6c958657f1268389d2f7e3b54--libvmaf--3.0.0.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "af7a9035434dc5140e561069f5afffaaf9d34dd36d20d506281a465a59390142--libvmaf--3.0.0.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dd0ab4c07d7b49623ba6fdc002b92633e4f34b7e4a2d1e5364a26d5a7308d5af--libvmaf--3.0.0.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d2fd6c40b5eda249105a7e9758b75c58ae4cb476314a9d982cc923dfbb9ae689--libvmaf--3.0.0.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9d1c6b8a4167021cd59f27fab24f5b51c95a5a19fab282a5c0643f5a28f17ef5--libvmaf--3.0.0.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libvmaf" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libvmaf" ]
+]

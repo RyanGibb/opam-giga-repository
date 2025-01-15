@@ -1,0 +1,119 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C++ library for C++/Python3 interoperability"
+description: """
+C++ library for C++/Python3 interoperability"""
+extra-source "49ed0ad51654b9cfcdfb10d911b82a1e93369062212fa65760afdbe1172100a8--boost-python3--1.86.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:66e23ad361052f87a6df6b7afaa5724df91f2ffaa482a6795ede1e0832d7b117"
+  checksum: [
+    "sha256=66e23ad361052f87a6df6b7afaa5724df91f2ffaa482a6795ede1e0832d7b117"
+  ]
+}
+extra-source "4bbe3f6afa6b6c78cfec1c1a73ae60e009f48faf25bab7a3bd47c4554728a36e--boost-python3-1.86.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/manifests/1.86.0"
+}
+extra-source "bb634b71b7f6c51bf9cb4420d6701cc9e59ab80738b31fa2f2f303b2b8357a88--boost-python3--1.86.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:37d7b06e4e101373807fa3d55ea0962bd7ca375734e63fcd05a0ded18b27a334"
+  checksum: [
+    "sha256=37d7b06e4e101373807fa3d55ea0962bd7ca375734e63fcd05a0ded18b27a334"
+  ]
+}
+extra-source "38ff2a844a006742d571b500c541a759c3930122f191c4cd43bb4cef39f4460e--boost-python3--1.86.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:f2f55396a7afed649ea03117ac9ac111ed9bcf9d3ce4a0d2bf709e17c41652fc"
+  checksum: [
+    "sha256=f2f55396a7afed649ea03117ac9ac111ed9bcf9d3ce4a0d2bf709e17c41652fc"
+  ]
+}
+extra-source "a064eebf45ee73bbd4962675aa6058b0043f2373939f6fa925a884bcf54d1b66--boost-python3--1.86.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:db5fd6cdd07b5fdc534a420a119dfab593733a25e0af55b6899c149fe63b8910"
+  checksum: [
+    "sha256=db5fd6cdd07b5fdc534a420a119dfab593733a25e0af55b6899c149fe63b8910"
+  ]
+}
+extra-source "351b4f3094e7f768145893fd206916933f8764fc522db5a0fa8ac8308c64d05c--boost-python3--1.86.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:375db655b7ec5f3baa117e2159871434646d150217ab1505bb3e985c4ad66746"
+  checksum: [
+    "sha256=375db655b7ec5f3baa117e2159871434646d150217ab1505bb3e985c4ad66746"
+  ]
+}
+extra-source "a1a556005780feb1666291d896c292ae456d9a7d0b242a1407b40adcd7116e21--boost-python3--1.86.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:a0181c63ba6f93cbc495a6f0664fe7d45db3e1754a20ac8ffda46572866fa19a"
+  checksum: [
+    "sha256=a0181c63ba6f93cbc495a6f0664fe7d45db3e1754a20ac8ffda46572866fa19a"
+  ]
+}
+extra-source "af1a2c90cca4fe64e4fe014d06a6644802862b8ed185d4a6e2a11cd9c7ea6b82--boost-python3--1.86.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:398d0edf6be250a569c26c27f74fefa4582e98df83beabd16565b4fe1d275840"
+  checksum: [
+    "sha256=398d0edf6be250a569c26c27f74fefa4582e98df83beabd16565b4fe1d275840"
+  ]
+}
+extra-source "62a3c74652f9ecb9af19dfb3ac9ea34dcfea96beeddc387e9066c89b342bf666--boost-python3--1.86.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:8d0f76e68afe7ed1f5bfc311afc9a7b260b842081a3c988494ce121cea7fe12d"
+  checksum: [
+    "sha256=8d0f76e68afe7ed1f5bfc311afc9a7b260b842081a3c988494ce121cea7fe12d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-icu4c" {= "74.2"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-boost" {= "1.86.0"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+  "brew-openblas" {= "0.3.28"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-numpy" {= "2.1.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "4bbe3f6afa6b6c78cfec1c1a73ae60e009f48faf25bab7a3bd47c4554728a36e--boost-python3-1.86.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "49ed0ad51654b9cfcdfb10d911b82a1e93369062212fa65760afdbe1172100a8--boost-python3--1.86.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bb634b71b7f6c51bf9cb4420d6701cc9e59ab80738b31fa2f2f303b2b8357a88--boost-python3--1.86.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "38ff2a844a006742d571b500c541a759c3930122f191c4cd43bb4cef39f4460e--boost-python3--1.86.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a064eebf45ee73bbd4962675aa6058b0043f2373939f6fa925a884bcf54d1b66--boost-python3--1.86.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "351b4f3094e7f768145893fd206916933f8764fc522db5a0fa8ac8308c64d05c--boost-python3--1.86.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a1a556005780feb1666291d896c292ae456d9a7d0b242a1407b40adcd7116e21--boost-python3--1.86.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "af1a2c90cca4fe64e4fe014d06a6644802862b8ed185d4a6e2a11cd9c7ea6b82--boost-python3--1.86.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "62a3c74652f9ecb9af19dfb3ac9ea34dcfea96beeddc387e9066c89b342bf666--boost-python3--1.86.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "boost-python3" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "boost-python3" ]
+]

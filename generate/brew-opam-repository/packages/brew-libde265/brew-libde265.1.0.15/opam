@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Open h.265 video codec implementation"
+description: """
+Open h.265 video codec implementation"""
+extra-source "31a7244187d94c2e683d36e869fa905048b63904c618ccca2e69f6d70c59fa1e--libde265--1.0.15.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:1fed239f2b1a5a9e61745084d2c36041218f378970bc89ab84b0d1016ab7e585"
+  checksum: [
+    "sha256=1fed239f2b1a5a9e61745084d2c36041218f378970bc89ab84b0d1016ab7e585"
+  ]
+}
+extra-source "3af80a639454c021cd2bc9d49eb82995ca91a51fbb7f7f7b990dbc8d7781dad9--libde265-1.0.15-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/manifests/1.0.15-1"
+}
+extra-source "d571d5c396b937b1bb021f5203a57e87ebbed8227ae9b770ca6042c011a14695--libde265--1.0.15.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:6b05ac06d5104b99cb0df1ea963c84b10403328f3991d00d5c94ed94a91e3b34"
+  checksum: [
+    "sha256=6b05ac06d5104b99cb0df1ea963c84b10403328f3991d00d5c94ed94a91e3b34"
+  ]
+}
+extra-source "e2346bd6aaf85019c3dc50181db1c5b087d227b191ea0764942fbde09933a439--libde265--1.0.15.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:cb6a409ae8d92ad4c96bf94b14e4987e102faf7ebdf264eeaee2180d091dccaa"
+  checksum: [
+    "sha256=cb6a409ae8d92ad4c96bf94b14e4987e102faf7ebdf264eeaee2180d091dccaa"
+  ]
+}
+extra-source "cb881ca2c7a73ce3ceb9149934bd767c09a6fbcbb7575651b2357fe553a2321b--libde265--1.0.15.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:0725e3968335cb67cc1165ab5eeafed9b6c1cd45d069b3ab0b14e3eb819e3101"
+  checksum: [
+    "sha256=0725e3968335cb67cc1165ab5eeafed9b6c1cd45d069b3ab0b14e3eb819e3101"
+  ]
+}
+extra-source "da822297b6059cfa4cd1a6c2f63520bdcdfb65ce3422fff355b6de8046df1f65--libde265--1.0.15.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:d72d238b5d13f6a9731cf29ace23fcf4f6538059ba1c0b7b9bcf06f49ce3aa52"
+  checksum: [
+    "sha256=d72d238b5d13f6a9731cf29ace23fcf4f6538059ba1c0b7b9bcf06f49ce3aa52"
+  ]
+}
+extra-source "2410d079a87b92ea44693df08b748e61f68040882a474ff799fb1e30ed55e10d--libde265--1.0.15.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:8695ef7abd578bbb838a2f735e178b0f1d30b58e5cc1c17a34a4225b6a7dd672"
+  checksum: [
+    "sha256=8695ef7abd578bbb838a2f735e178b0f1d30b58e5cc1c17a34a4225b6a7dd672"
+  ]
+}
+extra-source "a70d9609daf5ffef170cfe7ec034e8f9537c742f816a9540b0a7192530971e11--libde265--1.0.15.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:29b0a2838055970a932a9f5a2a3c338d13bb9785066b33c745ed8f0b75a6e115"
+  checksum: [
+    "sha256=29b0a2838055970a932a9f5a2a3c338d13bb9785066b33c745ed8f0b75a6e115"
+  ]
+}
+extra-source "29629b1745183000de8228e09662f3a4af892107fea651fe30a32021f2d4bd96--libde265--1.0.15.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:d47718fc2bc23792e71cc2aa7d5cf8c6443d17d6df70e4f34dfe2b506a934cf4"
+  checksum: [
+    "sha256=d47718fc2bc23792e71cc2aa7d5cf8c6443d17d6df70e4f34dfe2b506a934cf4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3af80a639454c021cd2bc9d49eb82995ca91a51fbb7f7f7b990dbc8d7781dad9--libde265-1.0.15-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "31a7244187d94c2e683d36e869fa905048b63904c618ccca2e69f6d70c59fa1e--libde265--1.0.15.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d571d5c396b937b1bb021f5203a57e87ebbed8227ae9b770ca6042c011a14695--libde265--1.0.15.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e2346bd6aaf85019c3dc50181db1c5b087d227b191ea0764942fbde09933a439--libde265--1.0.15.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cb881ca2c7a73ce3ceb9149934bd767c09a6fbcbb7575651b2357fe553a2321b--libde265--1.0.15.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "da822297b6059cfa4cd1a6c2f63520bdcdfb65ce3422fff355b6de8046df1f65--libde265--1.0.15.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2410d079a87b92ea44693df08b748e61f68040882a474ff799fb1e30ed55e10d--libde265--1.0.15.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a70d9609daf5ffef170cfe7ec034e8f9537c742f816a9540b0a7192530971e11--libde265--1.0.15.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "29629b1745183000de8228e09662f3a4af892107fea651fe30a32021f2d4bd96--libde265--1.0.15.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libde265" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libde265" ]
+]

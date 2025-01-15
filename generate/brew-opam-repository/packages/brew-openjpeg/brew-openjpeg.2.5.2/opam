@@ -1,0 +1,101 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for JPEG-2000 image manipulation"
+description: """
+Library for JPEG-2000 image manipulation"""
+extra-source "d5810d7108973ee9da31c11303cfc21c0a63c1950bd3cd6e0d59967ed6f6d346--openjpeg--2.5.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:7eee7407be56d3c1ed9b5ef6b325e36f768797b5436f4f1ff353b6126284ce49"
+  checksum: [
+    "sha256=7eee7407be56d3c1ed9b5ef6b325e36f768797b5436f4f1ff353b6126284ce49"
+  ]
+}
+extra-source "aa191c3580781971a7ecfcc8c109ad1f70e33174c5714ff2640476560c91f532--openjpeg-2.5.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/manifests/2.5.2"
+}
+extra-source "5a49b3dd5eb68b529f363768ed9aff3b9e9274b80dce9a604bd1e001a82b2028--openjpeg--2.5.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:db5e5cb9eac6d4f910b9845d8decbd3eb19ef25570eddaaec235a29c637ba929"
+  checksum: [
+    "sha256=db5e5cb9eac6d4f910b9845d8decbd3eb19ef25570eddaaec235a29c637ba929"
+  ]
+}
+extra-source "3fa8dd0c7c3b35ea89f1c7237bdc734847317cfd4d7ecd91037082f9cbdaa403--openjpeg--2.5.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:eef55952d48f1852f5e95a4f8bf336019ebf3800d5dc0fba79cf85ae1fe475d6"
+  checksum: [
+    "sha256=eef55952d48f1852f5e95a4f8bf336019ebf3800d5dc0fba79cf85ae1fe475d6"
+  ]
+}
+extra-source "91edf94a15c5a41d2ea8262ef9e11ad185c3ced816a255e763fd3f45902ca730--openjpeg--2.5.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:02d67cf70fb174e35ce003e3914b0c867ce8b5f0aafde47eb34d24edd4e5443a"
+  checksum: [
+    "sha256=02d67cf70fb174e35ce003e3914b0c867ce8b5f0aafde47eb34d24edd4e5443a"
+  ]
+}
+extra-source "8022b6946f5ed2f4dd5d719f679b0d9169472e01e66c276560564adb4c2f31f5--openjpeg--2.5.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:23d1814c74d0e84518faa642272a7b88a8b4e2e78e9fe8b3f3313483c180cbbe"
+  checksum: [
+    "sha256=23d1814c74d0e84518faa642272a7b88a8b4e2e78e9fe8b3f3313483c180cbbe"
+  ]
+}
+extra-source "421188fe35fb306f33c94dabad03fa6ebf412ef0d55cbf39257c5197907a30f9--openjpeg--2.5.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:cf986cc726d5f07c6d033653ae19c27cc3cccc7e30dafc7cbb054ffe56fd0f57"
+  checksum: [
+    "sha256=cf986cc726d5f07c6d033653ae19c27cc3cccc7e30dafc7cbb054ffe56fd0f57"
+  ]
+}
+extra-source "c92e5968f3bddaa8fb9a954985b1b9e807f1a6f102e81a2c7ec2b57b0ae48111--openjpeg--2.5.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:f9aa864e7bb14b36df6d7f83f5f5a10a65c9fb6b4227d7e6edcdecb9af2263dc"
+  checksum: [
+    "sha256=f9aa864e7bb14b36df6d7f83f5f5a10a65c9fb6b4227d7e6edcdecb9af2263dc"
+  ]
+}
+extra-source "9a9de8da4e1640420f5c8bb0c8af65a6f9ceb5080fb7e45d8ce3fb0eac70c450--openjpeg--2.5.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:28c920d3a84fbe6254d89f3a2a15db655d700066565701e57ce3e9210a56b343"
+  checksum: [
+    "sha256=28c920d3a84fbe6254d89f3a2a15db655d700066565701e57ce3e9210a56b343"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "aa191c3580781971a7ecfcc8c109ad1f70e33174c5714ff2640476560c91f532--openjpeg-2.5.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d5810d7108973ee9da31c11303cfc21c0a63c1950bd3cd6e0d59967ed6f6d346--openjpeg--2.5.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5a49b3dd5eb68b529f363768ed9aff3b9e9274b80dce9a604bd1e001a82b2028--openjpeg--2.5.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3fa8dd0c7c3b35ea89f1c7237bdc734847317cfd4d7ecd91037082f9cbdaa403--openjpeg--2.5.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "91edf94a15c5a41d2ea8262ef9e11ad185c3ced816a255e763fd3f45902ca730--openjpeg--2.5.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8022b6946f5ed2f4dd5d719f679b0d9169472e01e66c276560564adb4c2f31f5--openjpeg--2.5.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "421188fe35fb306f33c94dabad03fa6ebf412ef0d55cbf39257c5197907a30f9--openjpeg--2.5.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c92e5968f3bddaa8fb9a954985b1b9e807f1a6f102e81a2c7ec2b57b0ae48111--openjpeg--2.5.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9a9de8da4e1640420f5c8bb0c8af65a6f9ceb5080fb7e45d8ce3fb0eac70c450--openjpeg--2.5.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "openjpeg" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "openjpeg" ]
+]

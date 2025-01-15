@@ -1,0 +1,93 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "MariaDB database connector for C applications"
+description: """
+MariaDB database connector for C applications"""
+extra-source "98e4d73d84c0d74135d41db9df8f44a7adacaa46cf733a9eb6ac628b62fb1938--mariadb-connector-c--3.4.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/blobs/sha256:25f4e277c66f07d9a44a9fa1de9bb8ae8e48263990bd15670d7b59c453c02adf"
+  checksum: [
+    "sha256=25f4e277c66f07d9a44a9fa1de9bb8ae8e48263990bd15670d7b59c453c02adf"
+  ]
+}
+extra-source "5f491b67cecddf744d2751bc9f86a6b03e9641919f5b32fc65518e32fd6777e3--mariadb-connector-c-3.4.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/manifests/3.4.1"
+}
+extra-source "47fd515dfceafaeff9e8564e58c9b4823877b01238d5d51f9111635ed5dc548b--mariadb-connector-c--3.4.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/blobs/sha256:ab0d5e5a88633b85c506310c58a6a1708524f6bf193388c1a5908c664b161b19"
+  checksum: [
+    "sha256=ab0d5e5a88633b85c506310c58a6a1708524f6bf193388c1a5908c664b161b19"
+  ]
+}
+extra-source "99eb293f9ccda919368396b7354b17ed614bfafedb503d26209230ccd5ecb561--mariadb-connector-c--3.4.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/blobs/sha256:9ab49eed7ae6ecd45418141b22d8adaa132e34d017f35f271af537a1e25f0107"
+  checksum: [
+    "sha256=9ab49eed7ae6ecd45418141b22d8adaa132e34d017f35f271af537a1e25f0107"
+  ]
+}
+extra-source "1f9ea550b1a85c58e4e71b7437a467c2bf4c457299c70982c9fa51f7361f3a7a--mariadb-connector-c--3.4.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/blobs/sha256:184babcbdf95cfa26185cba6a739b4e2cf8202bab863ece1e64a23346b8cf714"
+  checksum: [
+    "sha256=184babcbdf95cfa26185cba6a739b4e2cf8202bab863ece1e64a23346b8cf714"
+  ]
+}
+extra-source "6df88873a5994455ba61a5be2b9305de07448e0565652a64697e651bb8abb414--mariadb-connector-c--3.4.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/blobs/sha256:9372de968ba5aa44d100641b56f5f83776a1a983f407c6cea0825699b59b9e4e"
+  checksum: [
+    "sha256=9372de968ba5aa44d100641b56f5f83776a1a983f407c6cea0825699b59b9e4e"
+  ]
+}
+extra-source "a4ac873117a0ede7182a59b4b85c3e639886838947e84a626c9503673b843b1c--mariadb-connector-c--3.4.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/blobs/sha256:fa37fe897f387a4ede7236b22e45d1009bb28f35ab373a2fb6c20c3e7a0a4ee1"
+  checksum: [
+    "sha256=fa37fe897f387a4ede7236b22e45d1009bb28f35ab373a2fb6c20c3e7a0a4ee1"
+  ]
+}
+extra-source "57fe21707e712c0c3c01c1c2a4402e49d6d6cdc6c76fe2e4c3b75968a11a79b2--mariadb-connector-c--3.4.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/blobs/sha256:a3af823c47ba2a1bc560cd2baaed6b55b46c1ea6f88bf9e718e78b91495b56a7"
+  checksum: [
+    "sha256=a3af823c47ba2a1bc560cd2baaed6b55b46c1ea6f88bf9e718e78b91495b56a7"
+  ]
+}
+extra-source "7ff72a9b0835238b4fefc48f6f9e8592cd96f7e100b2701f3af0b0d3a67b2eb8--mariadb-connector-c--3.4.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mariadb-connector-c/blobs/sha256:13cdebe984f4f9e6344d552fda0bd4fb304099becaf1e7918140220d87de8b45"
+  checksum: [
+    "sha256=13cdebe984f4f9e6344d552fda0bd4fb304099becaf1e7918140220d87de8b45"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "5f491b67cecddf744d2751bc9f86a6b03e9641919f5b32fc65518e32fd6777e3--mariadb-connector-c-3.4.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "98e4d73d84c0d74135d41db9df8f44a7adacaa46cf733a9eb6ac628b62fb1938--mariadb-connector-c--3.4.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "47fd515dfceafaeff9e8564e58c9b4823877b01238d5d51f9111635ed5dc548b--mariadb-connector-c--3.4.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "99eb293f9ccda919368396b7354b17ed614bfafedb503d26209230ccd5ecb561--mariadb-connector-c--3.4.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1f9ea550b1a85c58e4e71b7437a467c2bf4c457299c70982c9fa51f7361f3a7a--mariadb-connector-c--3.4.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6df88873a5994455ba61a5be2b9305de07448e0565652a64697e651bb8abb414--mariadb-connector-c--3.4.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a4ac873117a0ede7182a59b4b85c3e639886838947e84a626c9503673b843b1c--mariadb-connector-c--3.4.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "57fe21707e712c0c3c01c1c2a4402e49d6d6cdc6c76fe2e4c3b75968a11a79b2--mariadb-connector-c--3.4.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7ff72a9b0835238b4fefc48f6f9e8592cd96f7e100b2701f3af0b0d3a67b2eb8--mariadb-connector-c--3.4.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "mariadb-connector-c" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "mariadb-connector-c" ]
+]

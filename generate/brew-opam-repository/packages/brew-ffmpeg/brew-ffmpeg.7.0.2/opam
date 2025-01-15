@@ -1,0 +1,210 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Play, record, convert, and stream audio and video"
+description: """
+Play, record, convert, and stream audio and video"""
+extra-source "6d0dc5a5efb5b237a3b5d854c568cb1520875e43ab80dc4950804128f275a7e7--ffmpeg--7.0.2_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:f304b6bf3b67183b9b390ce3e62fcb4eb02c8da31456c540f4c8bbe7d2d6a220"
+  checksum: [
+    "sha256=f304b6bf3b67183b9b390ce3e62fcb4eb02c8da31456c540f4c8bbe7d2d6a220"
+  ]
+}
+extra-source "b5c4298c0436efa5cc1858c32a57ef2ad5c33cc6a7958086c3fecf3150cc816b--ffmpeg-7.0.2_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ffmpeg/manifests/7.0.2_1"
+}
+extra-source "cdedb5d059a2a19180407d26385295f1b9fb1422ebdddb63ed8c88521c7c67cf--ffmpeg--7.0.2_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:44e41ccf552d92157f54d337a1b38282c0ea23b5e8fc62cb9792c7a6393453df"
+  checksum: [
+    "sha256=44e41ccf552d92157f54d337a1b38282c0ea23b5e8fc62cb9792c7a6393453df"
+  ]
+}
+extra-source "87e8e2d3701205c03c5c2a65caa5cc051b319c5d4fdb0119696d3cb28c96b8a0--ffmpeg--7.0.2_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:afadd6a7d7698e1bb21bff339c787e8fef3e9678d29b2f4c8e09713527b96b4a"
+  checksum: [
+    "sha256=afadd6a7d7698e1bb21bff339c787e8fef3e9678d29b2f4c8e09713527b96b4a"
+  ]
+}
+extra-source "d155023ce29d300e8339dced167af9a9bf2e03e9e2fe258406ac107c973d26eb--ffmpeg--7.0.2_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:18c1dc237917c54dba4dc22e31bcea3b4f7a97ea5173434f354ea0fb17a88067"
+  checksum: [
+    "sha256=18c1dc237917c54dba4dc22e31bcea3b4f7a97ea5173434f354ea0fb17a88067"
+  ]
+}
+extra-source "0a43de1e668d517e989e85101981321c62a8780b56ac800699155d436fe9916b--ffmpeg--7.0.2_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:5cdfdc7387f2a446a7f9d452b88f87f4f68643432aaf6f742f47164b4236b857"
+  checksum: [
+    "sha256=5cdfdc7387f2a446a7f9d452b88f87f4f68643432aaf6f742f47164b4236b857"
+  ]
+}
+extra-source "7e1268a3faea04326b541c8f256faaac94d877513258ff9894bfffe711231f08--ffmpeg--7.0.2_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:114b2aecc4519f4fc762b2b4e691b9e3beb8da10c4a58148212b1ab84624c92d"
+  checksum: [
+    "sha256=114b2aecc4519f4fc762b2b4e691b9e3beb8da10c4a58148212b1ab84624c92d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-icu4c" {= "74.2"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+  "brew-aom" {= "3.10.0"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-aribb24" {= "1.0.4"}
+  "brew-dav1d" {= "1.4.3"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-frei0r" {= "2.3.3"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libunistring" {= "1.2"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-lame" {= "3.100"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-libunibreak" {= "6.1"}
+  "brew-libass" {= "0.17.3"}
+  "brew-libbluray" {= "1.3.4"}
+  "brew-cjson" {= "1.7.18"}
+  "brew-libmicrohttpd" {= "1.0.1"}
+  "brew-mbedtls" {= "3.6.1"}
+  "brew-librist" {= "0.2.10"}
+  "brew-libsoxr" {= "0.1.3"}
+  "brew-libssh" {= "0.11.1"}
+  "brew-libvidstab" {= "1.1.1"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-libvpx" {= "1.13.1"}
+  "brew-opencore-amr" {= "0.1.6"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-opus" {= "1.5.2"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-cargo-c" {= "0.10.4"}
+  "brew-rav1e" {= "0.7.1"}
+  "brew-libsamplerate" {= "0.2.2"}
+  "brew-flac" {= "1.4.3"}
+  "brew-mpg123" {= "1.32.7"}
+  "brew-libsndfile" {= "1.2.2"}
+  "brew-rubberband" {= "3.3.0"}
+  "brew-sdl2" {= "2.30.7"}
+  "brew-snappy" {= "1.2.1"}
+  "brew-speex" {= "1.2.1"}
+  "brew-srt" {= "1.5.3"}
+  "brew-svt-av1" {= "2.2.1"}
+  "brew-leptonica" {= "1.84.1"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-libarchive" {= "3.7.5"}
+  "brew-pango" {= "1.54.0"}
+  "brew-tesseract" {= "5.4.1"}
+  "brew-theora" {= "1.1.1"}
+  "brew-x264" {= "r3108"}
+  "brew-x265" {= "3.6"}
+  "brew-xvid" {= "1.3.7"}
+  "brew-libsodium" {= "1.0.20"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-zeromq" {= "4.3.5"}
+  "brew-zimg" {= "3.0.5"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b5c4298c0436efa5cc1858c32a57ef2ad5c33cc6a7958086c3fecf3150cc816b--ffmpeg-7.0.2_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "6d0dc5a5efb5b237a3b5d854c568cb1520875e43ab80dc4950804128f275a7e7--ffmpeg--7.0.2_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cdedb5d059a2a19180407d26385295f1b9fb1422ebdddb63ed8c88521c7c67cf--ffmpeg--7.0.2_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "87e8e2d3701205c03c5c2a65caa5cc051b319c5d4fdb0119696d3cb28c96b8a0--ffmpeg--7.0.2_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d155023ce29d300e8339dced167af9a9bf2e03e9e2fe258406ac107c973d26eb--ffmpeg--7.0.2_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0a43de1e668d517e989e85101981321c62a8780b56ac800699155d436fe9916b--ffmpeg--7.0.2_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e1268a3faea04326b541c8f256faaac94d877513258ff9894bfffe711231f08--ffmpeg--7.0.2_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "ffmpeg" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "ffmpeg" ]
+]

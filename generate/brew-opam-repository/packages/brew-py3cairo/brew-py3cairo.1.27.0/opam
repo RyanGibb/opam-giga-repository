@@ -1,0 +1,123 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Python 3 bindings for the Cairo graphics library"
+description: """
+Python 3 bindings for the Cairo graphics library"""
+extra-source "f18d0dfaea13d668befe93fa3792a8b54e9f50ec07d83cb93cf1fb5b425774d5--py3cairo--1.27.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:be4c2db3569519aa7ca3520843c329b7c99d410d01ea1ae1fc2347efe71638df"
+  checksum: [
+    "sha256=be4c2db3569519aa7ca3520843c329b7c99d410d01ea1ae1fc2347efe71638df"
+  ]
+}
+extra-source "3d8c1cde130d9e8b13217d37435e8db1dd9b124b9f7f5a9b8d6a7cbbbc44b579--py3cairo-1.27.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/manifests/1.27.0"
+}
+extra-source "f2740e9932762d4fd776911a05656779f5d51034211fdff0738ed3580eadb21c--py3cairo--1.27.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:0bc26c13732313108821e0d311f72aed1f0c00b4ae12628478c42c10878fa701"
+  checksum: [
+    "sha256=0bc26c13732313108821e0d311f72aed1f0c00b4ae12628478c42c10878fa701"
+  ]
+}
+extra-source "0934f60ffb69ef0d4843a81c135cba8d3e5cc6d979201ebe4b02f026d03b8325--py3cairo--1.27.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:b284138413f9e2b04c52b8fd18bc692fdfe04216658cd6ec310329ff63962331"
+  checksum: [
+    "sha256=b284138413f9e2b04c52b8fd18bc692fdfe04216658cd6ec310329ff63962331"
+  ]
+}
+extra-source "32d8995855d92bf065f85dce664e59325da0493b44e52020605cd3dd67082d37--py3cairo--1.27.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:7fbf1d90015cb8fbd343c560640cfc7eb5b3df75703583e576819125a6017d6b"
+  checksum: [
+    "sha256=7fbf1d90015cb8fbd343c560640cfc7eb5b3df75703583e576819125a6017d6b"
+  ]
+}
+extra-source "b7cd05228d6aac48f96bf205db4ce82d81d11157444bec938e2eaab120308663--py3cairo--1.27.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:01ca0d75478aff40159ac72ed356774ea1a1ad54ca66872e709394b8b8a809af"
+  checksum: [
+    "sha256=01ca0d75478aff40159ac72ed356774ea1a1ad54ca66872e709394b8b8a809af"
+  ]
+}
+extra-source "6351a2a049d9d6a62ccbd2b775c93aa4433ce2af9e098f1391e48c2a0184653f--py3cairo--1.27.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:7398ebaada254c54a241be654cc6d30f84b428b847d26f9ea30f7ef742dc0a1f"
+  checksum: [
+    "sha256=7398ebaada254c54a241be654cc6d30f84b428b847d26f9ea30f7ef742dc0a1f"
+  ]
+}
+extra-source "02e69c282aebeeb3d6028aa94026cd795020926201e24186e9ea217ac98322b1--py3cairo--1.27.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:7e31aa454d6657f749a03618ae068374d00ad072cd31bbc577ecbef0e82aa645"
+  checksum: [
+    "sha256=7e31aa454d6657f749a03618ae068374d00ad072cd31bbc577ecbef0e82aa645"
+  ]
+}
+extra-source "ca102c658830bb99c1a6a67f7754759ab3936cdead02449ae1f4db6364cd31e5--py3cairo--1.27.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:7edf63afb34c7e2289e393891509a701c644b81a396aa77093f263534978564c"
+  checksum: [
+    "sha256=7edf63afb34c7e2289e393891509a701c644b81a396aa77093f263534978564c"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3d8c1cde130d9e8b13217d37435e8db1dd9b124b9f7f5a9b8d6a7cbbbc44b579--py3cairo-1.27.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f18d0dfaea13d668befe93fa3792a8b54e9f50ec07d83cb93cf1fb5b425774d5--py3cairo--1.27.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f2740e9932762d4fd776911a05656779f5d51034211fdff0738ed3580eadb21c--py3cairo--1.27.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0934f60ffb69ef0d4843a81c135cba8d3e5cc6d979201ebe4b02f026d03b8325--py3cairo--1.27.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "32d8995855d92bf065f85dce664e59325da0493b44e52020605cd3dd67082d37--py3cairo--1.27.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b7cd05228d6aac48f96bf205db4ce82d81d11157444bec938e2eaab120308663--py3cairo--1.27.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6351a2a049d9d6a62ccbd2b775c93aa4433ce2af9e098f1391e48c2a0184653f--py3cairo--1.27.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "02e69c282aebeeb3d6028aa94026cd795020926201e24186e9ea217ac98322b1--py3cairo--1.27.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ca102c658830bb99c1a6a67f7754759ab3936cdead02449ae1f4db6364cd31e5--py3cairo--1.27.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "py3cairo" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "py3cairo" ]
+]

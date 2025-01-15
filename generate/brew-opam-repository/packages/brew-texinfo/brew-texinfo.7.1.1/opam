@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Official documentation format of the GNU project"
+description: """
+Official documentation format of the GNU project"""
+extra-source "96b40f505c314e1af4a8da471f8bef5e9a4847a6ff6c8db53f937ba5cd1785c0--texinfo--7.1.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/blobs/sha256:86e1d9c9fadd4254c9041dada352b019d21f55c0d9e322c89aa1c6ee37d98929"
+  checksum: [
+    "sha256=86e1d9c9fadd4254c9041dada352b019d21f55c0d9e322c89aa1c6ee37d98929"
+  ]
+}
+extra-source "91c9f45c38d979d643cc00d03264f54d049dd4098c47b8c6a1d1656d387dbe75--texinfo-7.1.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/manifests/7.1.1"
+}
+extra-source "af82a3ea095da60111662c10eddd04be275b6245b6fd921648fa478620146dec--texinfo--7.1.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/blobs/sha256:b6d2c72b0b1002d1792ee4a77f66f94b768f9ee7db02be49802015eedac0abe8"
+  checksum: [
+    "sha256=b6d2c72b0b1002d1792ee4a77f66f94b768f9ee7db02be49802015eedac0abe8"
+  ]
+}
+extra-source "db82079c358906e7fa30130a268cc124fa7f06e920eeb83ba8d4197dcd2aa104--texinfo--7.1.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/blobs/sha256:6390c0f99e487620c1ab5471117786f8155eef3bc252be0f19a2f85839678466"
+  checksum: [
+    "sha256=6390c0f99e487620c1ab5471117786f8155eef3bc252be0f19a2f85839678466"
+  ]
+}
+extra-source "f85dd4511c65aaad0dcea09144e8f032479a03b81767532ec1193112247dac6f--texinfo--7.1.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/blobs/sha256:a61657f46186aa315cce906490c62518a038c52b8701a0239338fbe52e829025"
+  checksum: [
+    "sha256=a61657f46186aa315cce906490c62518a038c52b8701a0239338fbe52e829025"
+  ]
+}
+extra-source "df22597f883ddd68a0f61e3a7574dbf29d123ba9cf19c3c8e770df36e1ac85ec--texinfo--7.1.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/blobs/sha256:609fbc841b8caa53166976593f38e3b2a180f7a1fd0810eb5a42a3a1c4ed0b31"
+  checksum: [
+    "sha256=609fbc841b8caa53166976593f38e3b2a180f7a1fd0810eb5a42a3a1c4ed0b31"
+  ]
+}
+extra-source "62688dfa1a1c6b992f478209ee353e9f35989b3cb440fa5f90400ca8485d6458--texinfo--7.1.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/blobs/sha256:0bc745d2f4832de01270c41ba136c4f59be478b416342448d61b4b7e5c191fd1"
+  checksum: [
+    "sha256=0bc745d2f4832de01270c41ba136c4f59be478b416342448d61b4b7e5c191fd1"
+  ]
+}
+extra-source "631397b3253247d35be141c9da89e613f0f2cf1c4ac0c14da782cf35f825ffed--texinfo--7.1.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/blobs/sha256:f0595a72efd5e41c0eea39fc5b91dec688dd3ac46139654504f5cde2f168c3db"
+  checksum: [
+    "sha256=f0595a72efd5e41c0eea39fc5b91dec688dd3ac46139654504f5cde2f168c3db"
+  ]
+}
+extra-source "707c5a157cccf9d237cdfda05290a8a799898fd52b7fade748ea13ef7203b5f3--texinfo--7.1.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/texinfo/blobs/sha256:7a870bba36f9be99ca36018004d5ac591818279fd71725e4a3269e965281cace"
+  checksum: [
+    "sha256=7a870bba36f9be99ca36018004d5ac591818279fd71725e4a3269e965281cace"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "91c9f45c38d979d643cc00d03264f54d049dd4098c47b8c6a1d1656d387dbe75--texinfo-7.1.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "96b40f505c314e1af4a8da471f8bef5e9a4847a6ff6c8db53f937ba5cd1785c0--texinfo--7.1.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "af82a3ea095da60111662c10eddd04be275b6245b6fd921648fa478620146dec--texinfo--7.1.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "db82079c358906e7fa30130a268cc124fa7f06e920eeb83ba8d4197dcd2aa104--texinfo--7.1.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f85dd4511c65aaad0dcea09144e8f032479a03b81767532ec1193112247dac6f--texinfo--7.1.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "df22597f883ddd68a0f61e3a7574dbf29d123ba9cf19c3c8e770df36e1ac85ec--texinfo--7.1.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "62688dfa1a1c6b992f478209ee353e9f35989b3cb440fa5f90400ca8485d6458--texinfo--7.1.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "631397b3253247d35be141c9da89e613f0f2cf1c4ac0c14da782cf35f825ffed--texinfo--7.1.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "707c5a157cccf9d237cdfda05290a8a799898fd52b7fade748ea13ef7203b5f3--texinfo--7.1.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "texinfo" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "texinfo" ]
+]

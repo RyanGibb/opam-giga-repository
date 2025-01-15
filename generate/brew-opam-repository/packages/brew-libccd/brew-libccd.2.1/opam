@@ -1,0 +1,123 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Collision detection between two convex shapes"
+description: """
+Collision detection between two convex shapes"""
+extra-source "401d12ebb3834b7bbda543c8152b0cfe78168c4501d64f9cae6d4cf7995df9d2--libccd--2.1_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:69d7221dceabfe62cded58442a541ed7b4e40dc91195ddc1032d9219d6d4eb80"
+  checksum: [
+    "sha256=69d7221dceabfe62cded58442a541ed7b4e40dc91195ddc1032d9219d6d4eb80"
+  ]
+}
+extra-source "c023c74b1e592b8f42f67573df3344b44364145efd0b815fa5e5770de3b5bd60--libccd-2.1_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/manifests/2.1_1"
+}
+extra-source "42df10b37296a940ee04b6fbd25fe06311107047f936b6726c5350ab40780273--libccd--2.1_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:5123a16281a3d428e8ad649027bc6749139b484c1dc6257a9a8e2883a29ee859"
+  checksum: [
+    "sha256=5123a16281a3d428e8ad649027bc6749139b484c1dc6257a9a8e2883a29ee859"
+  ]
+}
+extra-source "f76c419f9eddb105cd6b045f5b8d8bbd864e9cf4dc73149eed771be86b14e3ac--libccd--2.1_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:0a6c12b8b5b369018a4186622359a2b9bc8ce40a4c0fe2452263e2d4ef03d92a"
+  checksum: [
+    "sha256=0a6c12b8b5b369018a4186622359a2b9bc8ce40a4c0fe2452263e2d4ef03d92a"
+  ]
+}
+extra-source "5a425edaa9402b2d2d20f5cbc62fd8ed640144fdd06cab4a6cb76c9e62cad04c--libccd--2.1_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:6c11cd8ecc1c3434badf237f5b2169731ce62698f07e3dea3fe2420c57186deb"
+  checksum: [
+    "sha256=6c11cd8ecc1c3434badf237f5b2169731ce62698f07e3dea3fe2420c57186deb"
+  ]
+}
+extra-source "354d979308a17d3f409f985bc82a825e655b34297fa8ead65fcf552f9c1f3535--libccd--2.1_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:9db2e87ee4c5b69faa9269a54f22046b5c4d18a72a65bc0dd4164c35a23edbe1"
+  checksum: [
+    "sha256=9db2e87ee4c5b69faa9269a54f22046b5c4d18a72a65bc0dd4164c35a23edbe1"
+  ]
+}
+extra-source "1f2d7839e4bd4e884b8ca2445576ea66c993993ba3c0e11bf95fe29659918cc5--libccd--2.1_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:b07fdb5107c0a1e3b912f441d338729ff2d58a50b65f3d6f5d013e26fa1c9dc2"
+  checksum: [
+    "sha256=b07fdb5107c0a1e3b912f441d338729ff2d58a50b65f3d6f5d013e26fa1c9dc2"
+  ]
+}
+extra-source "fd2a81c412db642a28ef3e5978cf2dedaf6269e011dfc6e124126229334970f9--libccd--2.1_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:95bbd2e402b8388a6b348fd755b6997ae765568357115013996efe9e596f982f"
+  checksum: [
+    "sha256=95bbd2e402b8388a6b348fd755b6997ae765568357115013996efe9e596f982f"
+  ]
+}
+extra-source "046866c55f6d1305464fa64b789c0372cd57b7196d16812b5ed37e2cd35d363f--libccd--2.1_1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:8257a7f8ab8f5eca8fced2e881b96a68202c08ce94a4aa169d1d80149b61eb0f"
+  checksum: [
+    "sha256=8257a7f8ab8f5eca8fced2e881b96a68202c08ce94a4aa169d1d80149b61eb0f"
+  ]
+}
+extra-source "9883c44503e8ea388d3822e2db418972c16f596a5ce7f2e5bcd4c902fd1ba9f7--libccd--2.1_1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:69d8c269bc6c5f60d141eaebe6bdff9cf333f789c4d3b72cd69b1e61edff3ea3"
+  checksum: [
+    "sha256=69d8c269bc6c5f60d141eaebe6bdff9cf333f789c4d3b72cd69b1e61edff3ea3"
+  ]
+}
+extra-source "5757c63e7d76f7f60fe9a1f766e7df2d0c8893900d83997070d5099e9ce508ae--libccd--2.1_1.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:caa0aba8d2ba740998b54c73d3ab038747ac984e4d27797b9f768195a487dc4e"
+  checksum: [
+    "sha256=caa0aba8d2ba740998b54c73d3ab038747ac984e4d27797b9f768195a487dc4e"
+  ]
+}
+extra-source "cedd731566ab4a935fe477cad60c8d633f487f6ca13edb1923c5b8f0072b294a--libccd--2.1_1.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:47c19c5f277ecc9016ef1e62a3ce1a0c4aafd1c91e6893fb4f251183ebd505ec"
+  checksum: [
+    "sha256=47c19c5f277ecc9016ef1e62a3ce1a0c4aafd1c91e6893fb4f251183ebd505ec"
+  ]
+}
+extra-source "7424f92b09df66f29049449d6ab27bd2d38927e5d88d5d4801e1f394fa2528c6--libccd--2.1_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libccd/blobs/sha256:6bee053612267522f0eb8c55c24a68dddb787126f46771fc8459d4d3460aa077"
+  checksum: [
+    "sha256=6bee053612267522f0eb8c55c24a68dddb787126f46771fc8459d4d3460aa077"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c023c74b1e592b8f42f67573df3344b44364145efd0b815fa5e5770de3b5bd60--libccd-2.1_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "401d12ebb3834b7bbda543c8152b0cfe78168c4501d64f9cae6d4cf7995df9d2--libccd--2.1_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "42df10b37296a940ee04b6fbd25fe06311107047f936b6726c5350ab40780273--libccd--2.1_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f76c419f9eddb105cd6b045f5b8d8bbd864e9cf4dc73149eed771be86b14e3ac--libccd--2.1_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5a425edaa9402b2d2d20f5cbc62fd8ed640144fdd06cab4a6cb76c9e62cad04c--libccd--2.1_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "354d979308a17d3f409f985bc82a825e655b34297fa8ead65fcf552f9c1f3535--libccd--2.1_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1f2d7839e4bd4e884b8ca2445576ea66c993993ba3c0e11bf95fe29659918cc5--libccd--2.1_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fd2a81c412db642a28ef3e5978cf2dedaf6269e011dfc6e124126229334970f9--libccd--2.1_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "046866c55f6d1305464fa64b789c0372cd57b7196d16812b5ed37e2cd35d363f--libccd--2.1_1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9883c44503e8ea388d3822e2db418972c16f596a5ce7f2e5bcd4c902fd1ba9f7--libccd--2.1_1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5757c63e7d76f7f60fe9a1f766e7df2d0c8893900d83997070d5099e9ce508ae--libccd--2.1_1.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cedd731566ab4a935fe477cad60c8d633f487f6ca13edb1923c5b8f0072b294a--libccd--2.1_1.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7424f92b09df66f29049449d6ab27bd2d38927e5d88d5d4801e1f394fa2528c6--libccd--2.1_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libccd" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libccd" ]
+]

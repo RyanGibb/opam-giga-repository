@@ -1,0 +1,77 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Protocol buffers (Google's data interchange format)"
+description: """
+Protocol buffers (Google's data interchange format)"""
+extra-source "0757772b231207f4d8c456eac3b74b50ac8eacde4b44b15e3b8c286399bcf02b--protobuf--28.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/protobuf/blobs/sha256:b81d8671946f9a70a34b8e7894f272ac5a6dcf56b15de92fb667e83f360da9bb"
+  checksum: [
+    "sha256=b81d8671946f9a70a34b8e7894f272ac5a6dcf56b15de92fb667e83f360da9bb"
+  ]
+}
+extra-source "34694f5179c890aafb0ca5edaaa4c14c363d826ad30998443da78649e8586d32--protobuf-28.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/protobuf/manifests/28.1"
+}
+extra-source "9a9485cb11ee4f14787a8c2994746e3b29e48d407ca4ddfd3e43fc0ac90baa7d--protobuf--28.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/protobuf/blobs/sha256:85f2c7d3d03b09386bf29ce9484bafdbeaa9f4f21992c5672159e0720abd6310"
+  checksum: [
+    "sha256=85f2c7d3d03b09386bf29ce9484bafdbeaa9f4f21992c5672159e0720abd6310"
+  ]
+}
+extra-source "e8374d22adafe599766f14d10bdb869faf4e371b7f14f74c2a24a55573f8992e--protobuf--28.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/protobuf/blobs/sha256:c399dcd8e8246c286b1e744cc7dabe499493eeea67af3720328871da497af5a3"
+  checksum: [
+    "sha256=c399dcd8e8246c286b1e744cc7dabe499493eeea67af3720328871da497af5a3"
+  ]
+}
+extra-source "19d97535e2d103344661d3bbe92740febdc3a592993ce2a3d8c6e5ffe35e0bfb--protobuf--28.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/protobuf/blobs/sha256:738a87bd1330bc27393cf5e7ebab0b9b01a08bb3009b990791237bd8721751b6"
+  checksum: [
+    "sha256=738a87bd1330bc27393cf5e7ebab0b9b01a08bb3009b990791237bd8721751b6"
+  ]
+}
+extra-source "5bbfe14cf854ea3980e769cf6d3736ef5937d03657eebd15d9906ea45e6111d4--protobuf--28.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/protobuf/blobs/sha256:5f5f007500d7adc474a0f515fb07291506e1cf0bd92c538ee75382cf18bd6725"
+  checksum: [
+    "sha256=5f5f007500d7adc474a0f515fb07291506e1cf0bd92c538ee75382cf18bd6725"
+  ]
+}
+extra-source "042ba8450082616b1e60314b68c92fe1ead8ad05b030092850d2d626263fbdef--protobuf--28.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/protobuf/blobs/sha256:e0ef7a5f3b7cd2a18781e5f4a358d6ae5549b150b9baf09b74c5d8f6a95a5a69"
+  checksum: [
+    "sha256=e0ef7a5f3b7cd2a18781e5f4a358d6ae5549b150b9baf09b74c5d8f6a95a5a69"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-googletest" {= "1.15.2"}
+  "brew-abseil" {= "20240722.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "34694f5179c890aafb0ca5edaaa4c14c363d826ad30998443da78649e8586d32--protobuf-28.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "0757772b231207f4d8c456eac3b74b50ac8eacde4b44b15e3b8c286399bcf02b--protobuf--28.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9a9485cb11ee4f14787a8c2994746e3b29e48d407ca4ddfd3e43fc0ac90baa7d--protobuf--28.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e8374d22adafe599766f14d10bdb869faf4e371b7f14f74c2a24a55573f8992e--protobuf--28.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "19d97535e2d103344661d3bbe92740febdc3a592993ce2a3d8c6e5ffe35e0bfb--protobuf--28.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5bbfe14cf854ea3980e769cf6d3736ef5937d03657eebd15d9906ea45e6111d4--protobuf--28.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "042ba8450082616b1e60314b68c92fe1ead8ad05b030092850d2d626263fbdef--protobuf--28.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "protobuf" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "protobuf" ]
+]

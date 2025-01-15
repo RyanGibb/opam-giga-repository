@@ -1,0 +1,75 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript"
+description: """
+Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript"""
+extra-source "3eb07a2b90fdacc466bf7951afa94e6ea53dd6ed11c4d4e41869fd5485efec4f--clang-format--19.1.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/clang-format/blobs/sha256:fd9f55ce1e7070804eedd3714d6bdcc51d603d5a485dc9bae070e8c61a40c7ba"
+  checksum: [
+    "sha256=fd9f55ce1e7070804eedd3714d6bdcc51d603d5a485dc9bae070e8c61a40c7ba"
+  ]
+}
+extra-source "406d98d43744847af8f31c2dc17791f2ff77c3dc29e5bdff9d7e0f0c7be4322c--clang-format-19.1.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/clang-format/manifests/19.1.0"
+}
+extra-source "43cb440dc163ce2f9199c86971de6701645143c5f5b5b8437d1b930f4cca79e6--clang-format--19.1.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/clang-format/blobs/sha256:8db8fe084ab3090cdd83241f325de36549e4404382b4f79f624e41fe5209c136"
+  checksum: [
+    "sha256=8db8fe084ab3090cdd83241f325de36549e4404382b4f79f624e41fe5209c136"
+  ]
+}
+extra-source "11c38e693e18f41aa36f39c6afa7df5885240d8383f919bbc0c2c55103cb7e1e--clang-format--19.1.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/clang-format/blobs/sha256:7430daa8b4ed88ad80c6224a1529d9ca11a192bcc24f9056be4b0797256592ae"
+  checksum: [
+    "sha256=7430daa8b4ed88ad80c6224a1529d9ca11a192bcc24f9056be4b0797256592ae"
+  ]
+}
+extra-source "b6128e58e1dacc64af26553698024be8d4a42d9e66acf167c7f02dc12e2ac4c3--clang-format--19.1.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/clang-format/blobs/sha256:02ddcb526b715cb480296f2d7a930afc092e3fc44f1e966a03683ea5f595a1c2"
+  checksum: [
+    "sha256=02ddcb526b715cb480296f2d7a930afc092e3fc44f1e966a03683ea5f595a1c2"
+  ]
+}
+extra-source "b5ea3ed4e79f0530f7ef0d289e9d268c470b31cb89c212374228386ee0724b40--clang-format--19.1.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/clang-format/blobs/sha256:dd47348ac5d1243cde53a6572bde91b4adde18ddfcc86df8e063d969305ad5ee"
+  checksum: [
+    "sha256=dd47348ac5d1243cde53a6572bde91b4adde18ddfcc86df8e063d969305ad5ee"
+  ]
+}
+extra-source "773f512a6ee365f58f5883056b224a6c1d9edff79bcdb0cbb0eed079c68a76b4--clang-format--19.1.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/clang-format/blobs/sha256:c59a311e84edc3575c055df2e48f95ba4a81709563151979d60786f3da9f40c4"
+  checksum: [
+    "sha256=c59a311e84edc3575c055df2e48f95ba4a81709563151979d60786f3da9f40c4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "406d98d43744847af8f31c2dc17791f2ff77c3dc29e5bdff9d7e0f0c7be4322c--clang-format-19.1.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "3eb07a2b90fdacc466bf7951afa94e6ea53dd6ed11c4d4e41869fd5485efec4f--clang-format--19.1.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "43cb440dc163ce2f9199c86971de6701645143c5f5b5b8437d1b930f4cca79e6--clang-format--19.1.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "11c38e693e18f41aa36f39c6afa7df5885240d8383f919bbc0c2c55103cb7e1e--clang-format--19.1.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b6128e58e1dacc64af26553698024be8d4a42d9e66acf167c7f02dc12e2ac4c3--clang-format--19.1.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b5ea3ed4e79f0530f7ef0d289e9d268c470b31cb89c212374228386ee0724b40--clang-format--19.1.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "773f512a6ee365f58f5883056b224a6c1d9edff79bcdb0cbb0eed079c68a76b4--clang-format--19.1.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "clang-format" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "clang-format" ]
+]

@@ -1,0 +1,102 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Debian package management system"
+description: """
+Debian package management system"""
+extra-source "15b24bd0f5ac6af05eb34ed024116c77bb45915705d578e44bbb9d9acb78df45--dpkg--1.22.11.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/blobs/sha256:f1e77676b025a5421dca15145646afa0b9f790a38701d46d196ef8c7112d3712"
+  checksum: [
+    "sha256=f1e77676b025a5421dca15145646afa0b9f790a38701d46d196ef8c7112d3712"
+  ]
+}
+extra-source "b8b6fb9a2427d517f0be7cc4bfec5af1a1b43fa056591a515cd3e2f20fa8cf63--dpkg-1.22.11.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/manifests/1.22.11"
+}
+extra-source "8da71db0710fbf4af1ec2b68e051814e8b1daa95b1d02be2c6283ddf3a869817--dpkg--1.22.11.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/blobs/sha256:a12b3a07225e4d2942cd167e959229960036d39fe05a3398bac21622e66b2aba"
+  checksum: [
+    "sha256=a12b3a07225e4d2942cd167e959229960036d39fe05a3398bac21622e66b2aba"
+  ]
+}
+extra-source "52079768e44636ca59bb2a46221a9acdd822b662466e588c87bb057cd2276a6b--dpkg--1.22.11.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/blobs/sha256:04254678226ca3ead8f4b54a575cfb9fbb7cdffaaf88b142ca32b20bd50d8f2b"
+  checksum: [
+    "sha256=04254678226ca3ead8f4b54a575cfb9fbb7cdffaaf88b142ca32b20bd50d8f2b"
+  ]
+}
+extra-source "c8257ef31de85e524a069dc3d54e1239d83b3ea05c8c1264f12f47479d7df301--dpkg--1.22.11.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/blobs/sha256:cee1baa5c095a9c2b9caaf3a4dcd286c1395913de390c353d75c0c5119f0b976"
+  checksum: [
+    "sha256=cee1baa5c095a9c2b9caaf3a4dcd286c1395913de390c353d75c0c5119f0b976"
+  ]
+}
+extra-source "eee659b22fbdab239d3931f05cb3f35c512c13271ac080055a6afc9657e6bd52--dpkg--1.22.11.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/blobs/sha256:17e4f6e7ab267206354c7510faef21b95381fcf400896f7210ae7962f11d48f8"
+  checksum: [
+    "sha256=17e4f6e7ab267206354c7510faef21b95381fcf400896f7210ae7962f11d48f8"
+  ]
+}
+extra-source "9c4b86f17ab6e51be9d1059f1581fb23a0f7e54bfa86eb6ba4fc5c6a1880741c--dpkg--1.22.11.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/blobs/sha256:7cdba20b144378fc51930a184f8d36dcd75a874aac59854c0449a1e6633defa5"
+  checksum: [
+    "sha256=7cdba20b144378fc51930a184f8d36dcd75a874aac59854c0449a1e6633defa5"
+  ]
+}
+extra-source "86acb9383462ca4a55bb5547a850361d6b4d93e634a578ef791e0858d509d176--dpkg--1.22.11.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/blobs/sha256:90073e1eb0d904942d72f4345cc26f60cb59131492faa0f48681b9d26223a3b9"
+  checksum: [
+    "sha256=90073e1eb0d904942d72f4345cc26f60cb59131492faa0f48681b9d26223a3b9"
+  ]
+}
+extra-source "ef31c468c4c502da83a2096dd7f97c214f0bdad2f3108f706f55ffedb9a63d29--dpkg--1.22.11.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/dpkg/blobs/sha256:3a16719f2fabf68e87664c86bf8aefc32a3f92abadaea2bb87770b5d01ea7bc0"
+  checksum: [
+    "sha256=3a16719f2fabf68e87664c86bf8aefc32a3f92abadaea2bb87770b5d01ea7bc0"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+  "brew-gnu-tar" {= "1.35"}
+  "brew-gpatch" {= "2.7.6"}
+  "brew-libmd" {= "1.1.0"}
+  "brew-berkeley-db" {= "5.3.28"}
+  "brew-gdbm" {= "1.24"}
+  "brew-perl" {= "5.38.2"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-po4a" {= "0.73"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b8b6fb9a2427d517f0be7cc4bfec5af1a1b43fa056591a515cd3e2f20fa8cf63--dpkg-1.22.11.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "15b24bd0f5ac6af05eb34ed024116c77bb45915705d578e44bbb9d9acb78df45--dpkg--1.22.11.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8da71db0710fbf4af1ec2b68e051814e8b1daa95b1d02be2c6283ddf3a869817--dpkg--1.22.11.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "52079768e44636ca59bb2a46221a9acdd822b662466e588c87bb057cd2276a6b--dpkg--1.22.11.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c8257ef31de85e524a069dc3d54e1239d83b3ea05c8c1264f12f47479d7df301--dpkg--1.22.11.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "eee659b22fbdab239d3931f05cb3f35c512c13271ac080055a6afc9657e6bd52--dpkg--1.22.11.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9c4b86f17ab6e51be9d1059f1581fb23a0f7e54bfa86eb6ba4fc5c6a1880741c--dpkg--1.22.11.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "86acb9383462ca4a55bb5547a850361d6b4d93e634a578ef791e0858d509d176--dpkg--1.22.11.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ef31c468c4c502da83a2096dd7f97c214f0bdad2f3108f706f55ffedb9a63d29--dpkg--1.22.11.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "dpkg" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "dpkg" ]
+]

@@ -1,0 +1,100 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Tool to create intelligent and beautiful documentation"
+description: """
+Tool to create intelligent and beautiful documentation"""
+extra-source "7d48fe9264313fb391c460fde45832e7d39b9d0db5d04a1e249bd7c19927d1c7--sphinx-doc--8.0.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/blobs/sha256:816de3b456310b6fff675f598ac99fe1ebc0eee6c437807ce2039579527e4acf"
+  checksum: [
+    "sha256=816de3b456310b6fff675f598ac99fe1ebc0eee6c437807ce2039579527e4acf"
+  ]
+}
+extra-source "3065c9350191e16997281530e96513f436c2a1676bbe3507b7734c4f39fe5fa4--sphinx-doc-8.0.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/manifests/8.0.2"
+}
+extra-source "3e40fbcfb8c2c38b0b321112026a4ef1b76624172c129ba515d6474d9ac0bde9--sphinx-doc--8.0.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/blobs/sha256:284f504dd7f04262fc97053e0c2c3f3920f976e0174a3b3eefddc1cec7ada3d7"
+  checksum: [
+    "sha256=284f504dd7f04262fc97053e0c2c3f3920f976e0174a3b3eefddc1cec7ada3d7"
+  ]
+}
+extra-source "bc87ab6e3583b67d69547b016f57436892c8b1e8fce377a589e38a09f345aafa--sphinx-doc--8.0.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/blobs/sha256:3b263baa798a9799c4c78286e1174904861cd263eb5a1ec282884b08e6de3cf0"
+  checksum: [
+    "sha256=3b263baa798a9799c4c78286e1174904861cd263eb5a1ec282884b08e6de3cf0"
+  ]
+}
+extra-source "1984f6eecdf3197ac14313742684e648257a4a2fddc3fe7d415751d47eb78bb8--sphinx-doc--8.0.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/blobs/sha256:3daf37becd7a0299a6ef506d8130e11e679a5180f63d718d720287fd85eecdaa"
+  checksum: [
+    "sha256=3daf37becd7a0299a6ef506d8130e11e679a5180f63d718d720287fd85eecdaa"
+  ]
+}
+extra-source "232ef58490c26adf09a0aaa93daf138302c5571b450d41b1c5eede6de8b5e19a--sphinx-doc--8.0.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/blobs/sha256:35c973c30e3218d3450cc786fa9242d17007c8dd62bf0d6ad187fae28f67ae47"
+  checksum: [
+    "sha256=35c973c30e3218d3450cc786fa9242d17007c8dd62bf0d6ad187fae28f67ae47"
+  ]
+}
+extra-source "86866013f7b99ad388061c3e3ccfa9938fb638a74ec2ab024d26202c6498a92e--sphinx-doc--8.0.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/blobs/sha256:50a2305e915b9f05e3679b9c6e0c373f2e0bf625ab385ba375b88996caa29141"
+  checksum: [
+    "sha256=50a2305e915b9f05e3679b9c6e0c373f2e0bf625ab385ba375b88996caa29141"
+  ]
+}
+extra-source "5c22fa49137fcfb8f7239299219f7764d1d25e7c247e7d4a3cde0e6af94757dc--sphinx-doc--8.0.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/blobs/sha256:6b3f66ff32427695f7f25b11da4e6915078510ad1b2deb360f6ce3cd7532f28d"
+  checksum: [
+    "sha256=6b3f66ff32427695f7f25b11da4e6915078510ad1b2deb360f6ce3cd7532f28d"
+  ]
+}
+extra-source "8a997285d8ee44750214d94a70d0642ff4742179e5906ef6f73f3108f5a608dd--sphinx-doc--8.0.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sphinx-doc/blobs/sha256:830571265fb5995769d6a533031221f79ef5afcc4f743a371517f8c238b0f262"
+  checksum: [
+    "sha256=830571265fb5995769d6a533031221f79ef5afcc4f743a371517f8c238b0f262"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-certifi" {= "2024.8.30"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3065c9350191e16997281530e96513f436c2a1676bbe3507b7734c4f39fe5fa4--sphinx-doc-8.0.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7d48fe9264313fb391c460fde45832e7d39b9d0db5d04a1e249bd7c19927d1c7--sphinx-doc--8.0.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3e40fbcfb8c2c38b0b321112026a4ef1b76624172c129ba515d6474d9ac0bde9--sphinx-doc--8.0.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bc87ab6e3583b67d69547b016f57436892c8b1e8fce377a589e38a09f345aafa--sphinx-doc--8.0.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1984f6eecdf3197ac14313742684e648257a4a2fddc3fe7d415751d47eb78bb8--sphinx-doc--8.0.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "232ef58490c26adf09a0aaa93daf138302c5571b450d41b1c5eede6de8b5e19a--sphinx-doc--8.0.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "86866013f7b99ad388061c3e3ccfa9938fb638a74ec2ab024d26202c6498a92e--sphinx-doc--8.0.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5c22fa49137fcfb8f7239299219f7764d1d25e7c247e7d4a3cde0e6af94757dc--sphinx-doc--8.0.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8a997285d8ee44750214d94a70d0642ff4742179e5906ef6f73f3108f5a608dd--sphinx-doc--8.0.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sphinx-doc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sphinx-doc" ]
+]

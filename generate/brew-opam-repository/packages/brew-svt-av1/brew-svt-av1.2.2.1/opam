@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "AV1 encoder"
+description: """
+AV1 encoder"""
+extra-source "68fed9801a6bc6529d9208a349252ed172a2bc78ab83552c7f7f32835b076db9--svt-av1--2.2.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:b4ebfab3d3697247524c182b84ecdd03df646cb646aa922b7b844ddd9454032f"
+  checksum: [
+    "sha256=b4ebfab3d3697247524c182b84ecdd03df646cb646aa922b7b844ddd9454032f"
+  ]
+}
+extra-source "e1f7fa7df6b4356a14476bb12b653142e30f54c6c27bef01cffc75c85234db88--svt-av1-2.2.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/manifests/2.2.1"
+}
+extra-source "4ca50a5fcf36b3744c9c9c013d469204204447ed8076d73bf3e2675e0a773ffe--svt-av1--2.2.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:974fe9df82f74045f99246c1960fd1d2a613a5d5387dc8edc024867a4d64a392"
+  checksum: [
+    "sha256=974fe9df82f74045f99246c1960fd1d2a613a5d5387dc8edc024867a4d64a392"
+  ]
+}
+extra-source "0637e845f08524a5ee7d6ec5e4f94108cbf34e6d660b7f476938ad92d653e062--svt-av1--2.2.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:c6286d14ed2e49b1258acc3c3a5f6eb8139ba6cbd99b72f4a9ee33704a7d3db5"
+  checksum: [
+    "sha256=c6286d14ed2e49b1258acc3c3a5f6eb8139ba6cbd99b72f4a9ee33704a7d3db5"
+  ]
+}
+extra-source "1d2513dac6cc3cac7d1efc7e374f1d3c4e657b66d4af7708a91b58222600136a--svt-av1--2.2.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:478337cfa8ea15ad1cc8f401f8cad22ca4879e7dfb2f8509f52f2a9f9ee8aba2"
+  checksum: [
+    "sha256=478337cfa8ea15ad1cc8f401f8cad22ca4879e7dfb2f8509f52f2a9f9ee8aba2"
+  ]
+}
+extra-source "02c7a480ab84a516d1e376fa4417c32014d3c1f8b70e20b2480e5b823582da11--svt-av1--2.2.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:60999334966012dfcd9697d0c9d5ba1659aa4260e061149d9e94272c37721810"
+  checksum: [
+    "sha256=60999334966012dfcd9697d0c9d5ba1659aa4260e061149d9e94272c37721810"
+  ]
+}
+extra-source "e9834f490d57a9164b3fa9284e455f4dfa8890f8d53aa7a20c4e05cb344e770b--svt-av1--2.2.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:fc42a8ac4e250d8e75dd4633285341dbb228de0bc8710cbacccc0cac6fa0f55b"
+  checksum: [
+    "sha256=fc42a8ac4e250d8e75dd4633285341dbb228de0bc8710cbacccc0cac6fa0f55b"
+  ]
+}
+extra-source "1c87900392a8dc34128f0d240fba948f71cb73bfba7e149ffd75938666aa87bb--svt-av1--2.2.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:37e32b9bd08e1dcb6b1637a2f61fd81723e089f9d8cba24d874396256d9a8ca4"
+  checksum: [
+    "sha256=37e32b9bd08e1dcb6b1637a2f61fd81723e089f9d8cba24d874396256d9a8ca4"
+  ]
+}
+extra-source "2fc04c1c904bb3f32a94a25003c7dda9b3a76e3463f389ef7f0680da88e90788--svt-av1--2.2.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:b5171551831f7bdb18ecd55525efbc1189ab6f772ccb586ff9ba19d5f0ef6575"
+  checksum: [
+    "sha256=b5171551831f7bdb18ecd55525efbc1189ab6f772ccb586ff9ba19d5f0ef6575"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "e1f7fa7df6b4356a14476bb12b653142e30f54c6c27bef01cffc75c85234db88--svt-av1-2.2.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "68fed9801a6bc6529d9208a349252ed172a2bc78ab83552c7f7f32835b076db9--svt-av1--2.2.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4ca50a5fcf36b3744c9c9c013d469204204447ed8076d73bf3e2675e0a773ffe--svt-av1--2.2.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0637e845f08524a5ee7d6ec5e4f94108cbf34e6d660b7f476938ad92d653e062--svt-av1--2.2.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1d2513dac6cc3cac7d1efc7e374f1d3c4e657b66d4af7708a91b58222600136a--svt-av1--2.2.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "02c7a480ab84a516d1e376fa4417c32014d3c1f8b70e20b2480e5b823582da11--svt-av1--2.2.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e9834f490d57a9164b3fa9284e455f4dfa8890f8d53aa7a20c4e05cb344e770b--svt-av1--2.2.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1c87900392a8dc34128f0d240fba948f71cb73bfba7e149ffd75938666aa87bb--svt-av1--2.2.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2fc04c1c904bb3f32a94a25003c7dda9b3a76e3463f389ef7f0680da88e90788--svt-av1--2.2.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "svt-av1" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "svt-av1" ]
+]

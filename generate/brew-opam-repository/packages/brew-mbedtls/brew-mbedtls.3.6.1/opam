@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Cryptographic & SSL/TLS library"
+description: """
+Cryptographic & SSL/TLS library"""
+extra-source "084ecfed417e18c1bea63d270ed436c4e4d053bb9183cac4327265c156054233--mbedtls--3.6.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:19178129a2b03ef21d5ea5d51067bf7a8a734d72c9a779207bc9ea9c5a4c9280"
+  checksum: [
+    "sha256=19178129a2b03ef21d5ea5d51067bf7a8a734d72c9a779207bc9ea9c5a4c9280"
+  ]
+}
+extra-source "d40da23c8d5098a89de939b1183996cd2d04cd22ea893bc18fbf7a75a4e88921--mbedtls-3.6.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/manifests/3.6.1"
+}
+extra-source "d5e5a1573b91d56351ec19a0c837677b024f5715c60f52ddb37c073b16376359--mbedtls--3.6.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:00860dfbfe01e85918c698b95c50a40c1cd7e102ffaa548d17be6d7c1e27ab81"
+  checksum: [
+    "sha256=00860dfbfe01e85918c698b95c50a40c1cd7e102ffaa548d17be6d7c1e27ab81"
+  ]
+}
+extra-source "d8168935e94633003b0d22126c76b84c53f55c68bbb6682a7c7adb3ed2506d45--mbedtls--3.6.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:85ebbef174334a956d09467ae5f96664a80ddff5e4907d29b19f6dba93312323"
+  checksum: [
+    "sha256=85ebbef174334a956d09467ae5f96664a80ddff5e4907d29b19f6dba93312323"
+  ]
+}
+extra-source "527d683db600740e92f097dc90a63e342775ee74688a83698c4f8f2553338709--mbedtls--3.6.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:2d4f92d6cc330d519f999550cb1b2dc3e29bd3d10724bec8a5a5dca4cdff8189"
+  checksum: [
+    "sha256=2d4f92d6cc330d519f999550cb1b2dc3e29bd3d10724bec8a5a5dca4cdff8189"
+  ]
+}
+extra-source "160a1fe0e90c190bbc59d93b0307d55617ef7d57da067b3b5ca70cf7ba78ce98--mbedtls--3.6.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:24958180338112358f8d047c0dacb29d142b9ef7991ecea44c065ce3a31a395c"
+  checksum: [
+    "sha256=24958180338112358f8d047c0dacb29d142b9ef7991ecea44c065ce3a31a395c"
+  ]
+}
+extra-source "01b34a981a4a8c9a71307d967992c8fd1cbbe3bcc1d5e742d912c5f4da26d4ed--mbedtls--3.6.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:8a5d71363939adf144c111501bcfa530e729c6a8d975d141415db895f8c3a182"
+  checksum: [
+    "sha256=8a5d71363939adf144c111501bcfa530e729c6a8d975d141415db895f8c3a182"
+  ]
+}
+extra-source "1cd7b3bc22c19e16bd57feda1c936690381ff20f813760e92cf9ce41af3b0a1b--mbedtls--3.6.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:9da50d1a90d39a1a72b682de00b11f9525f4966dc2274ad3254072360247c6a4"
+  checksum: [
+    "sha256=9da50d1a90d39a1a72b682de00b11f9525f4966dc2274ad3254072360247c6a4"
+  ]
+}
+extra-source "82f4c4179b68071ec5a2b952ca742e8dbc300b2e0167a14c4b820e8832184055--mbedtls--3.6.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:ccbe393ef900a7aa55413c62c8a5e39cdd0b17a3e69edacc213cacb68faf59c5"
+  checksum: [
+    "sha256=ccbe393ef900a7aa55413c62c8a5e39cdd0b17a3e69edacc213cacb68faf59c5"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d40da23c8d5098a89de939b1183996cd2d04cd22ea893bc18fbf7a75a4e88921--mbedtls-3.6.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "084ecfed417e18c1bea63d270ed436c4e4d053bb9183cac4327265c156054233--mbedtls--3.6.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d5e5a1573b91d56351ec19a0c837677b024f5715c60f52ddb37c073b16376359--mbedtls--3.6.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d8168935e94633003b0d22126c76b84c53f55c68bbb6682a7c7adb3ed2506d45--mbedtls--3.6.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "527d683db600740e92f097dc90a63e342775ee74688a83698c4f8f2553338709--mbedtls--3.6.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "160a1fe0e90c190bbc59d93b0307d55617ef7d57da067b3b5ca70cf7ba78ce98--mbedtls--3.6.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "01b34a981a4a8c9a71307d967992c8fd1cbbe3bcc1d5e742d912c5f4da26d4ed--mbedtls--3.6.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1cd7b3bc22c19e16bd57feda1c936690381ff20f813760e92cf9ce41af3b0a1b--mbedtls--3.6.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "82f4c4179b68071ec5a2b952ca742e8dbc300b2e0167a14c4b820e8832184055--mbedtls--3.6.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "mbedtls" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "mbedtls" ]
+]

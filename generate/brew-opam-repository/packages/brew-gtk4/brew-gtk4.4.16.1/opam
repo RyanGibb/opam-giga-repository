@@ -1,0 +1,134 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Toolkit for creating graphical user interfaces"
+description: """
+Toolkit for creating graphical user interfaces"""
+extra-source "9652441b712436539d3a38de55d7c3c5458fd1444b12faf461dbc32b03e862ab--gtk4--4.16.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk4/blobs/sha256:bf1eb22f144c8602dd9257a42714ef21ab673b190e99b6e5ddbda73b3212ee72"
+  checksum: [
+    "sha256=bf1eb22f144c8602dd9257a42714ef21ab673b190e99b6e5ddbda73b3212ee72"
+  ]
+}
+extra-source "aea5f0a12032d2112574e0e130c32bf3897ddc4ae9e27f988311dfe36b8ad911--gtk4-4.16.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk4/manifests/4.16.1"
+}
+extra-source "96158c0544d4cb5719c4dc605dd6eac247323d02b60fda43051f5f436c729d84--gtk4--4.16.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk4/blobs/sha256:b4077c2a45a8815a637c1b1038edc74202b6ed2cd1af077ca93a36cee5009864"
+  checksum: [
+    "sha256=b4077c2a45a8815a637c1b1038edc74202b6ed2cd1af077ca93a36cee5009864"
+  ]
+}
+extra-source "581c8a4d515a8dc8a652cf3997f63487a9fe8a8ce3897463a05a829488f1c780--gtk4--4.16.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk4/blobs/sha256:86b0cfc2ea4ecf29e7b355ae6f7ddb280ac8adb3827630e4fa03df4d762ad98f"
+  checksum: [
+    "sha256=86b0cfc2ea4ecf29e7b355ae6f7ddb280ac8adb3827630e4fa03df4d762ad98f"
+  ]
+}
+extra-source "737dea6a83ad51b2344164cf28ea759a9bf31e40647f18992158f23b7c1c9510--gtk4--4.16.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk4/blobs/sha256:6e651010276d92c91de662e965ef909d9fd16b37525f18537e9d92178f7375c6"
+  checksum: [
+    "sha256=6e651010276d92c91de662e965ef909d9fd16b37525f18537e9d92178f7375c6"
+  ]
+}
+extra-source "a544439cfc3700ac1388ce804e1766f91a4b23fbeb12eac2d7f8c16b92c49449--gtk4--4.16.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk4/blobs/sha256:63540384c74427ec8467236589c443e7a16bab582e4be1ab6d04bf27bb27fbbf"
+  checksum: [
+    "sha256=63540384c74427ec8467236589c443e7a16bab582e4be1ab6d04bf27bb27fbbf"
+  ]
+}
+extra-source "3a587ec56fbfddb9bd5c93e3a10ee7088dba8fd2c92d61e8f409af6bc59b4cea--gtk4--4.16.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk4/blobs/sha256:998168087e5f07555ff529fe0eaecf6a9305484f6044a1f2b70897f0ab6cd373"
+  checksum: [
+    "sha256=998168087e5f07555ff529fe0eaecf6a9305484f6044a1f2b70897f0ab6cd373"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-docutils" {= "0.21.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-gdk-pixbuf" {= "2.42.12"}
+  "brew-graphene" {= "1.10.8"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-hicolor-icon-theme" {= "0.18"}
+  "brew-libepoxy" {= "1.5.10"}
+  "brew-pango" {= "1.54.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libsass" {= "3.6.6"}
+  "brew-sassc" {= "3.6.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "aea5f0a12032d2112574e0e130c32bf3897ddc4ae9e27f988311dfe36b8ad911--gtk4-4.16.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9652441b712436539d3a38de55d7c3c5458fd1444b12faf461dbc32b03e862ab--gtk4--4.16.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "96158c0544d4cb5719c4dc605dd6eac247323d02b60fda43051f5f436c729d84--gtk4--4.16.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "581c8a4d515a8dc8a652cf3997f63487a9fe8a8ce3897463a05a829488f1c780--gtk4--4.16.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "737dea6a83ad51b2344164cf28ea759a9bf31e40647f18992158f23b7c1c9510--gtk4--4.16.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a544439cfc3700ac1388ce804e1766f91a4b23fbeb12eac2d7f8c16b92c49449--gtk4--4.16.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3a587ec56fbfddb9bd5c93e3a10ee7088dba8fd2c92d61e8f409af6bc59b4cea--gtk4--4.16.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gtk4" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gtk4" ]
+]

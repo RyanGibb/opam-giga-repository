@@ -1,0 +1,106 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for large linear classification"
+description: """
+Library for large linear classification"""
+extra-source "d8fc512c2d39b88ab76e89d7b729561bc5f024cf3de46dd32349056a1c5b9558--liblinear--2.47.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:ebbb496439ed5cbd2934fe7204ccad94c56071a10ef3dbccbebb2d205798b000"
+  checksum: [
+    "sha256=ebbb496439ed5cbd2934fe7204ccad94c56071a10ef3dbccbebb2d205798b000"
+  ]
+}
+extra-source "acff6cb78933e8b7ef5ec355c892780319eb4cc82943f3be8207c8e9f843da42--liblinear-2.47.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/manifests/2.47"
+}
+extra-source "7b5958b9d40463533cfb5fd49d9b491a8c2c08a2b0b6eaf2a3748d342cfaf997--liblinear--2.47.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:0fafcc1fcf64b944113137b103a7ff4900ceea6c96672979b79a7a88150869c2"
+  checksum: [
+    "sha256=0fafcc1fcf64b944113137b103a7ff4900ceea6c96672979b79a7a88150869c2"
+  ]
+}
+extra-source "5e350f03e6a10f8d48e6b3687e947e3cff4952d52e8009627177b4f2b9172df2--liblinear--2.47.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:447ba6aa36bec6cb65825dd9d6aad55e07e2eb9cb10537a4ad142546bb015e1f"
+  checksum: [
+    "sha256=447ba6aa36bec6cb65825dd9d6aad55e07e2eb9cb10537a4ad142546bb015e1f"
+  ]
+}
+extra-source "ae2102970850b471cf4b22b8aff6b4279a46338ad7a50c124a57285ee7b72752--liblinear--2.47.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:785f3d2ae8640b9689caa8982f13119ad27b88868a432c9ccaaec6a345e2ac68"
+  checksum: [
+    "sha256=785f3d2ae8640b9689caa8982f13119ad27b88868a432c9ccaaec6a345e2ac68"
+  ]
+}
+extra-source "2dbfa24a597cb705b510f79fc842242406e4355640543791104aeb798915da7d--liblinear--2.47.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:2f7f959e3a537760a29d4f4f4ff949bf5ef8f7206dbbb7f48492e8b733978f78"
+  checksum: [
+    "sha256=2f7f959e3a537760a29d4f4f4ff949bf5ef8f7206dbbb7f48492e8b733978f78"
+  ]
+}
+extra-source "6f83022a0f66d038e62f4bf8abdcec95a07fb0b7b955eb8435774989703c9c7c--liblinear--2.47.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:2b5c4306ba3b88b67d803d0b5ff4562889f1516d5e2a9b479c3c2ee3eb573a53"
+  checksum: [
+    "sha256=2b5c4306ba3b88b67d803d0b5ff4562889f1516d5e2a9b479c3c2ee3eb573a53"
+  ]
+}
+extra-source "0642e32fb86164d361116db90523b9c86f0924fe6c2a2ec7ac9ad0167dc58bff--liblinear--2.47.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:3c2ee17592c9ff78f3b58baf9bdae899be678d7c073b471896314896c854c540"
+  checksum: [
+    "sha256=3c2ee17592c9ff78f3b58baf9bdae899be678d7c073b471896314896c854c540"
+  ]
+}
+extra-source "198838affafc7b261b122d49d03c21d8dcd6781ec7cd7ba137baa3e9f6c82062--liblinear--2.47.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:26e5cca0e853ce2014ccf29cf38513e5a852e4c4a65b4fe1f39220f4a176d6f9"
+  checksum: [
+    "sha256=26e5cca0e853ce2014ccf29cf38513e5a852e4c4a65b4fe1f39220f4a176d6f9"
+  ]
+}
+extra-source "b52df939e80d4f59031f59c68598acc92b016d434676c81c32c06a60895df7d7--liblinear--2.47.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:c0f811408e6e5d5a29d7c8d94b89d92980d1b149b1c909413bae383a0df0cf31"
+  checksum: [
+    "sha256=c0f811408e6e5d5a29d7c8d94b89d92980d1b149b1c909413bae383a0df0cf31"
+  ]
+}
+extra-source "06af1a1ac50d34d30d0d85f456887821d317812609975521e501580844155f59--liblinear--2.47.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblinear/blobs/sha256:ed4f81487889a1f54491aed3e6ce5b492c60a16c8e59d782c94c552fc46311dd"
+  checksum: [
+    "sha256=ed4f81487889a1f54491aed3e6ce5b492c60a16c8e59d782c94c552fc46311dd"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "acff6cb78933e8b7ef5ec355c892780319eb4cc82943f3be8207c8e9f843da42--liblinear-2.47.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d8fc512c2d39b88ab76e89d7b729561bc5f024cf3de46dd32349056a1c5b9558--liblinear--2.47.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b5958b9d40463533cfb5fd49d9b491a8c2c08a2b0b6eaf2a3748d342cfaf997--liblinear--2.47.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5e350f03e6a10f8d48e6b3687e947e3cff4952d52e8009627177b4f2b9172df2--liblinear--2.47.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ae2102970850b471cf4b22b8aff6b4279a46338ad7a50c124a57285ee7b72752--liblinear--2.47.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2dbfa24a597cb705b510f79fc842242406e4355640543791104aeb798915da7d--liblinear--2.47.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6f83022a0f66d038e62f4bf8abdcec95a07fb0b7b955eb8435774989703c9c7c--liblinear--2.47.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0642e32fb86164d361116db90523b9c86f0924fe6c2a2ec7ac9ad0167dc58bff--liblinear--2.47.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "198838affafc7b261b122d49d03c21d8dcd6781ec7cd7ba137baa3e9f6c82062--liblinear--2.47.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b52df939e80d4f59031f59c68598acc92b016d434676c81c32c06a60895df7d7--liblinear--2.47.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "06af1a1ac50d34d30d0d85f456887821d317812609975521e501580844155f59--liblinear--2.47.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "liblinear" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "liblinear" ]
+]

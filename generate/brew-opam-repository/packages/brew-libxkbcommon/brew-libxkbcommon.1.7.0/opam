@@ -1,0 +1,143 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Keyboard handling library"
+description: """
+Keyboard handling library"""
+extra-source "bb7590f77c2df7714a703d96d576b0cd0b05bcfc04df6c3d8b940f3aeb24bb8f--libxkbcommon--1.7.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/blobs/sha256:2d1173708252e2588f86db7f8668590d37e7abf293938dd569c009ffc7b6dab0"
+  checksum: [
+    "sha256=2d1173708252e2588f86db7f8668590d37e7abf293938dd569c009ffc7b6dab0"
+  ]
+}
+extra-source "f35ef9134c856fafaab760c1812feaf3ab59326e4665482468f447b2f8e44126--libxkbcommon-1.7.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/manifests/1.7.0"
+}
+extra-source "0b73a6003fa9c704cc47c90761a7b6f346a31881e3126c0aec8582b6afbbe727--libxkbcommon--1.7.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/blobs/sha256:72b44058453e2b5d75b576a9403647f0dc0d76dfd2b0a6cddd31f2e2fac779c9"
+  checksum: [
+    "sha256=72b44058453e2b5d75b576a9403647f0dc0d76dfd2b0a6cddd31f2e2fac779c9"
+  ]
+}
+extra-source "734307b8aa3dfd95d5de3c1f9e6e899dd70ae4f42811575b3c1e542d6cac398c--libxkbcommon--1.7.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/blobs/sha256:d4dc5666abb07f964a4ea2dcf8bed13d2a1a4ef8035c7001c3f176359d774fae"
+  checksum: [
+    "sha256=d4dc5666abb07f964a4ea2dcf8bed13d2a1a4ef8035c7001c3f176359d774fae"
+  ]
+}
+extra-source "2e7f2e9db83b713033930a32d4ffc5c9494854d6167348d430f900c1306bc5c9--libxkbcommon--1.7.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/blobs/sha256:83381d671ce4b07cf9232d06ec45e6e051d2090f8525a73f528544f3fa5b8e19"
+  checksum: [
+    "sha256=83381d671ce4b07cf9232d06ec45e6e051d2090f8525a73f528544f3fa5b8e19"
+  ]
+}
+extra-source "3e6390234034374872e1cf54127d69d6ca31c414ee9a2f538bd5cb7a842f4ad9--libxkbcommon--1.7.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/blobs/sha256:99e8ee1df3f8a3247bc3904f5f5fe1184067b2cb3a826fabcbaef70cf3249219"
+  checksum: [
+    "sha256=99e8ee1df3f8a3247bc3904f5f5fe1184067b2cb3a826fabcbaef70cf3249219"
+  ]
+}
+extra-source "b9868699a5dd3ea6de597a82c1ccef47cc332c7bc7932432b01ec915bcea39fc--libxkbcommon--1.7.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/blobs/sha256:6958c8a61b2a62205cb3eae70ef088e3d3d2675a74e57bf7c35f23e6b2ee378f"
+  checksum: [
+    "sha256=6958c8a61b2a62205cb3eae70ef088e3d3d2675a74e57bf7c35f23e6b2ee378f"
+  ]
+}
+extra-source "e06218690ffb2f8d61a3217edb06ed16792a60e06317077cf80f7496d360cf09--libxkbcommon--1.7.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/blobs/sha256:bb99be852933c86dfd745e44ac46081140b1f21b9c02ad9fc31f663426384ebd"
+  checksum: [
+    "sha256=bb99be852933c86dfd745e44ac46081140b1f21b9c02ad9fc31f663426384ebd"
+  ]
+}
+extra-source "57544c372555616056589f11aac2d54d7c5e4a6575c136a8545a2b6fd56e1811--libxkbcommon--1.7.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxkbcommon/blobs/sha256:3327f58e3610858e97b5675451c67ec2c7cadf16f34419292b4240186b5fa650"
+  checksum: [
+    "sha256=3327f58e3610858e97b5675451c67ec2c7cadf16f34419292b4240186b5fa650"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-xkeyboardconfig" {= "2.42"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-font-util" {= "1.4.1"}
+  "brew-libfontenc" {= "1.1.8"}
+  "brew-libxfont2" {= "2.0.7"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-expat" {= "2.6.3"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-libxrandr" {= "1.5.4"}
+  "brew-bison" {= "3.8.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-mesa" {= "24.2.2"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-libice" {= "1.1.1"}
+  "brew-libsm" {= "1.2.4"}
+  "brew-libxt" {= "1.3.0"}
+  "brew-libxmu" {= "1.2.1"}
+  "brew-xauth" {= "1.1.3"}
+  "brew-xcb-util" {= "0.4.1"}
+  "brew-xcb-util-image" {= "0.4.1"}
+  "brew-xcb-util-keysyms" {= "0.4.1"}
+  "brew-xcb-util-renderutil" {= "0.3.10"}
+  "brew-xcb-util-wm" {= "0.4.2"}
+  "brew-libxkbfile" {= "1.1.3"}
+  "brew-xkbcomp" {= "1.4.7"}
+  "brew-libapplewm" {= "1.4.1"}
+  "brew-xorg-server" {= "21.1.13"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f35ef9134c856fafaab760c1812feaf3ab59326e4665482468f447b2f8e44126--libxkbcommon-1.7.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "bb7590f77c2df7714a703d96d576b0cd0b05bcfc04df6c3d8b940f3aeb24bb8f--libxkbcommon--1.7.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0b73a6003fa9c704cc47c90761a7b6f346a31881e3126c0aec8582b6afbbe727--libxkbcommon--1.7.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "734307b8aa3dfd95d5de3c1f9e6e899dd70ae4f42811575b3c1e542d6cac398c--libxkbcommon--1.7.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2e7f2e9db83b713033930a32d4ffc5c9494854d6167348d430f900c1306bc5c9--libxkbcommon--1.7.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3e6390234034374872e1cf54127d69d6ca31c414ee9a2f538bd5cb7a842f4ad9--libxkbcommon--1.7.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b9868699a5dd3ea6de597a82c1ccef47cc332c7bc7932432b01ec915bcea39fc--libxkbcommon--1.7.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e06218690ffb2f8d61a3217edb06ed16792a60e06317077cf80f7496d360cf09--libxkbcommon--1.7.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "57544c372555616056589f11aac2d54d7c5e4a6575c136a8545a2b6fd56e1811--libxkbcommon--1.7.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxkbcommon" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxkbcommon" ]
+]

@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Automorphism groups of graphs and digraphs"
+description: """
+Automorphism groups of graphs and digraphs"""
+extra-source "ea76b4b8f22158a971d939131fedc7d10eb9141890f754eabc34ef64a384cebf--nauty--2.8.9.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/blobs/sha256:578e9a6a33dacc5574586019c8a22244879573c241e7a1be9ad7183cd4c91aa4"
+  checksum: [
+    "sha256=578e9a6a33dacc5574586019c8a22244879573c241e7a1be9ad7183cd4c91aa4"
+  ]
+}
+extra-source "d50cfe52420c222be42feab9f6a4cacfd46243fc7b478e385f7b2cfbf124b804--nauty-2.8.9.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/manifests/2.8.9"
+}
+extra-source "5799ef9ce34e1b1447e8a7a768aded70c1c792c1ff5a6cb2781b17fe4c39ed8b--nauty--2.8.9.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/blobs/sha256:f44e77ba13875fdfd450ca378080aa6be8a7e48d6082623846b18a3f525d7d1a"
+  checksum: [
+    "sha256=f44e77ba13875fdfd450ca378080aa6be8a7e48d6082623846b18a3f525d7d1a"
+  ]
+}
+extra-source "6bef9576a72a9e0a5e89d02a2ffac9d55aeac7219475a2d6b29b57724098216e--nauty--2.8.9.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/blobs/sha256:022ba063976e84dd4e0712d6931a0958db497c4f2f4e561ec518172ff26d2eeb"
+  checksum: [
+    "sha256=022ba063976e84dd4e0712d6931a0958db497c4f2f4e561ec518172ff26d2eeb"
+  ]
+}
+extra-source "1598f9a79d26d7293c390715e14edfbab0c2375a6660cc3dc72bbd7e7dd66836--nauty--2.8.9.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/blobs/sha256:4a288706331ed1966319cbe0aced25c694e426c587ed56167a2905cfbf2ba584"
+  checksum: [
+    "sha256=4a288706331ed1966319cbe0aced25c694e426c587ed56167a2905cfbf2ba584"
+  ]
+}
+extra-source "56456bd397ba6f2ed3c8f578739209678e8b0f34799168de9513739e07cf25d7--nauty--2.8.9.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/blobs/sha256:fa1634a9e589d67b2df80daca50f4417d46a26f9c03fe0ac3a9acbe59dacfdd0"
+  checksum: [
+    "sha256=fa1634a9e589d67b2df80daca50f4417d46a26f9c03fe0ac3a9acbe59dacfdd0"
+  ]
+}
+extra-source "1ed49350db8ecb0683c7ce61c8934cb32c854bafd9896f1aa36e5374e8ad1af1--nauty--2.8.9.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/blobs/sha256:129084aaac09aac1e749cf4ed1eb0c716afc2c6c9d7689a877b96bdf12e5c837"
+  checksum: [
+    "sha256=129084aaac09aac1e749cf4ed1eb0c716afc2c6c9d7689a877b96bdf12e5c837"
+  ]
+}
+extra-source "3755b33894c75a1f1090e2a3727eaaa2c07a82b23392d84225b9eff3f7cee565--nauty--2.8.9.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/blobs/sha256:3d521857063e06e2e1bbd12a7fc139b4402288ba388a37606c5df19c885942e5"
+  checksum: [
+    "sha256=3d521857063e06e2e1bbd12a7fc139b4402288ba388a37606c5df19c885942e5"
+  ]
+}
+extra-source "43f88d4aa13aff6196553dfccd76cc9672e0ebabc95d8a09ecc2dfc0fb26819f--nauty--2.8.9.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nauty/blobs/sha256:6858f23478175ad58d2aa59eaa599ab3610476043c9b8062e6ef4d897051d412"
+  checksum: [
+    "sha256=6858f23478175ad58d2aa59eaa599ab3610476043c9b8062e6ef4d897051d412"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d50cfe52420c222be42feab9f6a4cacfd46243fc7b478e385f7b2cfbf124b804--nauty-2.8.9.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ea76b4b8f22158a971d939131fedc7d10eb9141890f754eabc34ef64a384cebf--nauty--2.8.9.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5799ef9ce34e1b1447e8a7a768aded70c1c792c1ff5a6cb2781b17fe4c39ed8b--nauty--2.8.9.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6bef9576a72a9e0a5e89d02a2ffac9d55aeac7219475a2d6b29b57724098216e--nauty--2.8.9.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1598f9a79d26d7293c390715e14edfbab0c2375a6660cc3dc72bbd7e7dd66836--nauty--2.8.9.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "56456bd397ba6f2ed3c8f578739209678e8b0f34799168de9513739e07cf25d7--nauty--2.8.9.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1ed49350db8ecb0683c7ce61c8934cb32c854bafd9896f1aa36e5374e8ad1af1--nauty--2.8.9.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3755b33894c75a1f1090e2a3727eaaa2c07a82b23392d84225b9eff3f7cee565--nauty--2.8.9.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "43f88d4aa13aff6196553dfccd76cc9672e0ebabc95d8a09ecc2dfc0fb26819f--nauty--2.8.9.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "nauty" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "nauty" ]
+]

@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C API for determining the call-chain of a program"
+description: """
+C API for determining the call-chain of a program"""
+extra-source "660f1f98a42adb2a00b94517451ee71fcdbcdcd64697a4e61313004c711514de--libunwind-headers--201.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/blobs/sha256:24ed849a21c0cb1b8eda429fb00a9c9ecdc2483195d84de351f5806071ce19fb"
+  checksum: [
+    "sha256=24ed849a21c0cb1b8eda429fb00a9c9ecdc2483195d84de351f5806071ce19fb"
+  ]
+}
+extra-source "e5273425ef75e784560ec7886e0953429ae2887302972d4f29e3200ab2358e2f--libunwind-headers-201-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/manifests/201-1"
+}
+extra-source "266b185741987f1d96a9eefb65a526a47e3980768351fa212c36275c0602eef9--libunwind-headers--201.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/blobs/sha256:2493e296e5824c2caf88be9f46d111ca2b6691d6e459826f67f29498bb1bc3b2"
+  checksum: [
+    "sha256=2493e296e5824c2caf88be9f46d111ca2b6691d6e459826f67f29498bb1bc3b2"
+  ]
+}
+extra-source "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/blobs/sha256:ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  checksum: [
+    "sha256=ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  ]
+}
+extra-source "266b185741987f1d96a9eefb65a526a47e3980768351fa212c36275c0602eef9--libunwind-headers--201.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/blobs/sha256:2493e296e5824c2caf88be9f46d111ca2b6691d6e459826f67f29498bb1bc3b2"
+  checksum: [
+    "sha256=2493e296e5824c2caf88be9f46d111ca2b6691d6e459826f67f29498bb1bc3b2"
+  ]
+}
+extra-source "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/blobs/sha256:ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  checksum: [
+    "sha256=ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  ]
+}
+extra-source "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/blobs/sha256:ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  checksum: [
+    "sha256=ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  ]
+}
+extra-source "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/blobs/sha256:ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  checksum: [
+    "sha256=ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  ]
+}
+extra-source "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunwind-headers/blobs/sha256:ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  checksum: [
+    "sha256=ddc5b02449351bb8ddc11fea2d25ca79ecf87657dde6c7cd7c15f1b5d6ff17c5"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "e5273425ef75e784560ec7886e0953429ae2887302972d4f29e3200ab2358e2f--libunwind-headers-201-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "660f1f98a42adb2a00b94517451ee71fcdbcdcd64697a4e61313004c711514de--libunwind-headers--201.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "266b185741987f1d96a9eefb65a526a47e3980768351fa212c36275c0602eef9--libunwind-headers--201.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "266b185741987f1d96a9eefb65a526a47e3980768351fa212c36275c0602eef9--libunwind-headers--201.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "365d8ccb2211af823db9509a451c60362a077164c718378fd111b4405880c6c5--libunwind-headers--201.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libunwind-headers" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libunwind-headers" ]
+]

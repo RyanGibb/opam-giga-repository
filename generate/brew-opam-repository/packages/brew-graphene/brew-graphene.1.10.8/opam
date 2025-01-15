@@ -1,0 +1,148 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Thin layer of graphic data types"
+description: """
+Thin layer of graphic data types"""
+extra-source "00671601ec3a9f360c45d2b1536bb2d93c492d235e3805c5d8582c88b4531874--graphene--1.10.8.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:11188e7d35c1a2c58483be14dc3ab2699d1829b8a1f4819abb00cdf566e6ce2f"
+  checksum: [
+    "sha256=11188e7d35c1a2c58483be14dc3ab2699d1829b8a1f4819abb00cdf566e6ce2f"
+  ]
+}
+extra-source "95f4a8d4908c92f35e43a695c0bf8ef50b0f53030c942e4f226e8a79e3530ae6--graphene-1.10.8.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/manifests/1.10.8"
+}
+extra-source "141734ad11c44356dcfa2a3c8665caed40c580487aa1c639e0ec995cd3d842ab--graphene--1.10.8.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:021ca247560b884ece3425e9983b6dea68cc6b87b54ab3cdb2e79e3395597392"
+  checksum: [
+    "sha256=021ca247560b884ece3425e9983b6dea68cc6b87b54ab3cdb2e79e3395597392"
+  ]
+}
+extra-source "5b552ea8f6b19d1a35cfa9188552e2037fb86469f57a58f1366c9367a3f681c8--graphene--1.10.8.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:06b8b2bb6dced02c4ce32a827cc279b301fde81352f64880eef15153d88f071a"
+  checksum: [
+    "sha256=06b8b2bb6dced02c4ce32a827cc279b301fde81352f64880eef15153d88f071a"
+  ]
+}
+extra-source "ce8321308ef642749039971ca3f299853657be7e76b43dc949719cac2a64983a--graphene--1.10.8.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:23b03fa04a05c85a9b8dfcebbbf62461593fd419c8a619de1a2b4c0185f03155"
+  checksum: [
+    "sha256=23b03fa04a05c85a9b8dfcebbbf62461593fd419c8a619de1a2b4c0185f03155"
+  ]
+}
+extra-source "fa2cd04804389f324c00e361e86c02ff3dc73b7804e5350c56a21539b95730ed--graphene--1.10.8.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:49970a5217fa4aaa048e4181172a9170b171531d58a31cfb4ced72a68eda386c"
+  checksum: [
+    "sha256=49970a5217fa4aaa048e4181172a9170b171531d58a31cfb4ced72a68eda386c"
+  ]
+}
+extra-source "d078c1fc3758a0961e3001faedddb31945db2bf61cc5280d83421eb9e136642a--graphene--1.10.8.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:65b24ac035b8b5550dc314648c4cc3b3e2416692efcc44186450e1e76e27e396"
+  checksum: [
+    "sha256=65b24ac035b8b5550dc314648c4cc3b3e2416692efcc44186450e1e76e27e396"
+  ]
+}
+extra-source "0397a734e8869d64dfdd0fb784aaa361ce1f2dcc3e8427f28d6562a8a136ae2a--graphene--1.10.8.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:93468985e1d6a4b6ef69387b400d23ad39da4a154140a759dd3154bcfd19b9ed"
+  checksum: [
+    "sha256=93468985e1d6a4b6ef69387b400d23ad39da4a154140a759dd3154bcfd19b9ed"
+  ]
+}
+extra-source "cdf59d1f5d3aeccba6c1743512886a42d316dbcbe2987e77e216e285d4bdafbd--graphene--1.10.8.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:3452844382013a409b81446e2699d996c8520a33aabdf074ff812086132049db"
+  checksum: [
+    "sha256=3452844382013a409b81446e2699d996c8520a33aabdf074ff812086132049db"
+  ]
+}
+extra-source "016482e2c01b1d9387469cfa992ffad0fd9ed23697cae01b6025aa390f857803--graphene--1.10.8.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:639518b4843e05532985844875c3a9a41c93eb8fee9019c2b8bb589b692a4846"
+  checksum: [
+    "sha256=639518b4843e05532985844875c3a9a41c93eb8fee9019c2b8bb589b692a4846"
+  ]
+}
+extra-source "d3c832c52911816b3fdf8008d37292a558c03cd5c53b4e9b309967c2b318c273--graphene--1.10.8.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:56447899077d278b0fe60d56832082400840e10a6c126575eafa477eb7e168f1"
+  checksum: [
+    "sha256=56447899077d278b0fe60d56832082400840e10a6c126575eafa477eb7e168f1"
+  ]
+}
+extra-source "7afb17ed00737a33e7dd33e4fc5312174998b55b18ce4fd8bf491916ca79bddb--graphene--1.10.8.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/graphene/blobs/sha256:978a8d282c1d1715f11bc6e701441b843a99c8520ac8108016b224932c6c03a5"
+  checksum: [
+    "sha256=978a8d282c1d1715f11bc6e701441b843a99c8520ac8108016b224932c6c03a5"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "95f4a8d4908c92f35e43a695c0bf8ef50b0f53030c942e4f226e8a79e3530ae6--graphene-1.10.8.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "00671601ec3a9f360c45d2b1536bb2d93c492d235e3805c5d8582c88b4531874--graphene--1.10.8.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "141734ad11c44356dcfa2a3c8665caed40c580487aa1c639e0ec995cd3d842ab--graphene--1.10.8.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5b552ea8f6b19d1a35cfa9188552e2037fb86469f57a58f1366c9367a3f681c8--graphene--1.10.8.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ce8321308ef642749039971ca3f299853657be7e76b43dc949719cac2a64983a--graphene--1.10.8.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa2cd04804389f324c00e361e86c02ff3dc73b7804e5350c56a21539b95730ed--graphene--1.10.8.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d078c1fc3758a0961e3001faedddb31945db2bf61cc5280d83421eb9e136642a--graphene--1.10.8.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0397a734e8869d64dfdd0fb784aaa361ce1f2dcc3e8427f28d6562a8a136ae2a--graphene--1.10.8.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cdf59d1f5d3aeccba6c1743512886a42d316dbcbe2987e77e216e285d4bdafbd--graphene--1.10.8.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "016482e2c01b1d9387469cfa992ffad0fd9ed23697cae01b6025aa390f857803--graphene--1.10.8.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d3c832c52911816b3fdf8008d37292a558c03cd5c53b4e9b309967c2b318c273--graphene--1.10.8.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7afb17ed00737a33e7dd33e4fc5312174998b55b18ce4fd8bf491916ca79bddb--graphene--1.10.8.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "graphene" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "graphene" ]
+]

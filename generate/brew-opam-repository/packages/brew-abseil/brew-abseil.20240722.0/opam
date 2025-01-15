@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C++ Common Libraries"
+description: """
+C++ Common Libraries"""
+extra-source "a30e527269a0d60649d77f616e169864c09ee5dfb839bc120c35309b1cc86e8a--abseil--20240722.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:280f470ee5ae12531a5528850dd90010acb872699064ee273598e4bbc46e304b"
+  checksum: [
+    "sha256=280f470ee5ae12531a5528850dd90010acb872699064ee273598e4bbc46e304b"
+  ]
+}
+extra-source "c028788fa2308b8803272259e36d1cb86d0530402d2615f560609775287c09da--abseil-20240722.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/manifests/20240722.0"
+}
+extra-source "dd77fa91d47dcbadd48dbf6466d42713632893ab1b6e7330fc4a4233dc50ef6b--abseil--20240722.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:e669331fc89560e725f40f61ad5ef970eeb3f883586f482ac45d45bc21124b82"
+  checksum: [
+    "sha256=e669331fc89560e725f40f61ad5ef970eeb3f883586f482ac45d45bc21124b82"
+  ]
+}
+extra-source "8449892f58689880fd01872048593bb4c9ccc21f621b8a590a16283a683021c9--abseil--20240722.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:922c5d7b256fed577b3f7c84ec7a8ce67dddfc7670726e417eaed71bb6878fc6"
+  checksum: [
+    "sha256=922c5d7b256fed577b3f7c84ec7a8ce67dddfc7670726e417eaed71bb6878fc6"
+  ]
+}
+extra-source "6b88b0982a16750e1cda40567dd86cb90d43463ba5c58513801c0828e7e71c3b--abseil--20240722.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:5d72497268f8335b3955ea9408e33f6235ae1c13dcfb67b14b6a58a0600e4908"
+  checksum: [
+    "sha256=5d72497268f8335b3955ea9408e33f6235ae1c13dcfb67b14b6a58a0600e4908"
+  ]
+}
+extra-source "c42122c58a4a65f0b8da5e2b24f4f6630670724cc56b8de2e609f324c496e441--abseil--20240722.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:0e81f268b9e514694f0dbe17a2cf6fecf1537ed680206e6ef88671345482f7e9"
+  checksum: [
+    "sha256=0e81f268b9e514694f0dbe17a2cf6fecf1537ed680206e6ef88671345482f7e9"
+  ]
+}
+extra-source "b3196752c07e5b4361903d9070dab4c98f43eeb52e3710e695b7bb74251e0258--abseil--20240722.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:68b478c629ee72fd66bca1b4c3944c29e053d9d85315ffc8cd4fe225daefa9a3"
+  checksum: [
+    "sha256=68b478c629ee72fd66bca1b4c3944c29e053d9d85315ffc8cd4fe225daefa9a3"
+  ]
+}
+extra-source "0f186faab631c2ac1266e26b2e51387656d4f3777b7fb54729f165e27b7446cc--abseil--20240722.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:e10b87de708e6731f27a22e3585884749dbcf967a3bd2486ddcae0f410951c3f"
+  checksum: [
+    "sha256=e10b87de708e6731f27a22e3585884749dbcf967a3bd2486ddcae0f410951c3f"
+  ]
+}
+extra-source "b0e2b61ec2e26d66b3db3cb54a98163b4524f96a98a6d46480e50e832e7e9d58--abseil--20240722.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:847b8ef8ec4bb017c0e43121225b03f742d74d570a560d411db7408d0385e9bd"
+  checksum: [
+    "sha256=847b8ef8ec4bb017c0e43121225b03f742d74d570a560d411db7408d0385e9bd"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-googletest" {= "1.15.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c028788fa2308b8803272259e36d1cb86d0530402d2615f560609775287c09da--abseil-20240722.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "a30e527269a0d60649d77f616e169864c09ee5dfb839bc120c35309b1cc86e8a--abseil--20240722.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dd77fa91d47dcbadd48dbf6466d42713632893ab1b6e7330fc4a4233dc50ef6b--abseil--20240722.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8449892f58689880fd01872048593bb4c9ccc21f621b8a590a16283a683021c9--abseil--20240722.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6b88b0982a16750e1cda40567dd86cb90d43463ba5c58513801c0828e7e71c3b--abseil--20240722.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c42122c58a4a65f0b8da5e2b24f4f6630670724cc56b8de2e609f324c496e441--abseil--20240722.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b3196752c07e5b4361903d9070dab4c98f43eeb52e3710e695b7bb74251e0258--abseil--20240722.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0f186faab631c2ac1266e26b2e51387656d4f3777b7fb54729f165e27b7446cc--abseil--20240722.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b0e2b61ec2e26d66b3db3cb54a98163b4524f96a98a6d46480e50e832e7e9d58--abseil--20240722.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "abseil" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "abseil" ]
+]

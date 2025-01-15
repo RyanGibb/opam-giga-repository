@@ -1,0 +1,147 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Programs that partition graphs and order matrices"
+description: """
+Programs that partition graphs and order matrices"""
+extra-source "2acb1e9c71390624a9fc2d2517d03c47a7ad6b21c026b34f50d28e3233890032--metis--5.1.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:60ef633238eb902353465719c36fb64c5a325f823a203c1079c3e0358f72fd79"
+  checksum: [
+    "sha256=60ef633238eb902353465719c36fb64c5a325f823a203c1079c3e0358f72fd79"
+  ]
+}
+extra-source "f3ed9b4299ad5a23ac4e265012f58bed7574a85759c297dbea217aeb89707128--metis-5.1.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/manifests/5.1.0"
+}
+extra-source "58805b14d150bcc571e88630e333e37b670ee338ae481cf384d3cd494eb312c6--metis--5.1.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:daaf2366f0870fd9cf13446d1dee1a8a9bfebb742748fee2911cfabe1e53407f"
+  checksum: [
+    "sha256=daaf2366f0870fd9cf13446d1dee1a8a9bfebb742748fee2911cfabe1e53407f"
+  ]
+}
+extra-source "aef20e5a1a9ff1dfe6771876d2e9aa689d7ce2e759ce5b66c59398cbf179a280--metis--5.1.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:d1b85dedb77b4a578a06ba705e759768f3ad832fb744669e06f97bd233bf82ff"
+  checksum: [
+    "sha256=d1b85dedb77b4a578a06ba705e759768f3ad832fb744669e06f97bd233bf82ff"
+  ]
+}
+extra-source "87aa6b9b12c17fcd46c2ff3849e1a0533f7f1cf6654e28e27c4f74c4dd60fdcd--metis--5.1.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:19688362378a05d974db2c6552376ef5b952b5c2b5bc27dde34c23ab27f5736b"
+  checksum: [
+    "sha256=19688362378a05d974db2c6552376ef5b952b5c2b5bc27dde34c23ab27f5736b"
+  ]
+}
+extra-source "94ba1b3aa1e2eb9c22051762861bdd2206d468f8a8c933fb31baf45db470392e--metis--5.1.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:5bea2beeae9e3394cc675df14dc30e078b6ed575f0bad4c05717ee3f75ed4aee"
+  checksum: [
+    "sha256=5bea2beeae9e3394cc675df14dc30e078b6ed575f0bad4c05717ee3f75ed4aee"
+  ]
+}
+extra-source "a3a5368691512df4ff5e202aea55cb15fcad6a4d25277f89feaccb2e251766f1--metis--5.1.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:53ceaf6862363106724577ff6568285ba22ff97ef8849eeb7ec0a8e589ef7ff2"
+  checksum: [
+    "sha256=53ceaf6862363106724577ff6568285ba22ff97ef8849eeb7ec0a8e589ef7ff2"
+  ]
+}
+extra-source "aaee475d856217357f2ae2da3d08e2cb15a83b7b2ef289ba07138319902ee499--metis--5.1.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:9924dff9c2995788c3e69a1affb9931035b66af7b2fef57fedbb0b2f14071d9f"
+  checksum: [
+    "sha256=9924dff9c2995788c3e69a1affb9931035b66af7b2fef57fedbb0b2f14071d9f"
+  ]
+}
+extra-source "347582bc5a58bc60070e8ad87e5b0b52e5f0fd068ac43e54cbf88794298971b6--metis--5.1.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:bca0197271b673ba235c37334494b47250c9732e9a0164d8ee79948fc3cd4308"
+  checksum: [
+    "sha256=bca0197271b673ba235c37334494b47250c9732e9a0164d8ee79948fc3cd4308"
+  ]
+}
+extra-source "3b76f7de2aa7dacff1f0bdd64717080179b4bbb18c92123cd227000ba674f5ad--metis--5.1.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:ea93856908a2c1c60023dd2f849339d479b20ab4ae6d51623f9496f64993ca20"
+  checksum: [
+    "sha256=ea93856908a2c1c60023dd2f849339d479b20ab4ae6d51623f9496f64993ca20"
+  ]
+}
+extra-source "f7ed6bcc1a27eaba81dde178892ef85bf19533e84a8b0ff3b0fce41c34aa3926--metis--5.1.0.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:b410b124973bf31beb58806d4050b8dda1fb3dca679fc3443514025200fd4a37"
+  checksum: [
+    "sha256=b410b124973bf31beb58806d4050b8dda1fb3dca679fc3443514025200fd4a37"
+  ]
+}
+extra-source "f2f7c16c68333b1093cefe6d7b9f23f04a127b925ae54d38abc39bce4ff8f6b5--metis--5.1.0.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:f3cdcf0cc5af4ddd27a4550d4a73cffcb34058fe34604b09d453610460d24465"
+  checksum: [
+    "sha256=f3cdcf0cc5af4ddd27a4550d4a73cffcb34058fe34604b09d453610460d24465"
+  ]
+}
+extra-source "f359620a1164f5b7ef8aa12b20e2440e7dcdcf172081733a0ffad7be5858386e--metis--5.1.0.high_sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:88b6965d941a87044150238387971c4bb94ed2ffca327affccaf311d666a2b4b"
+  checksum: [
+    "sha256=88b6965d941a87044150238387971c4bb94ed2ffca327affccaf311d666a2b4b"
+  ]
+}
+extra-source "6d2437e8ee7895db773d282ad516c7eaeabd65f54a57cef58362ccd1a3020eba--metis--5.1.0.sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:9c8deed80ece8c24e7ebccbce8410557b27afe711d3f59fccb7d781254d0cc34"
+  checksum: [
+    "sha256=9c8deed80ece8c24e7ebccbce8410557b27afe711d3f59fccb7d781254d0cc34"
+  ]
+}
+extra-source "6f57acf576405862f31abd082d09daee2bc2127633e3bdbea55076a4b813485f--metis--5.1.0.el_capitan.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:54f75262475744bc6ad3ba66ac801e03c18bbac00a9bcf0ca9d05853f2022498"
+  checksum: [
+    "sha256=54f75262475744bc6ad3ba66ac801e03c18bbac00a9bcf0ca9d05853f2022498"
+  ]
+}
+extra-source "2190ac10bcfa7c92b7d9bd9e16eeda3acbfae7f2d277cdb2bff021bc0c730045--metis--5.1.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/metis/blobs/sha256:d8daac6acbeaad9583ff26d72a8ad440ac41efb8656973213902bdfe66cd61e6"
+  checksum: [
+    "sha256=d8daac6acbeaad9583ff26d72a8ad440ac41efb8656973213902bdfe66cd61e6"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f3ed9b4299ad5a23ac4e265012f58bed7574a85759c297dbea217aeb89707128--metis-5.1.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2acb1e9c71390624a9fc2d2517d03c47a7ad6b21c026b34f50d28e3233890032--metis--5.1.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "58805b14d150bcc571e88630e333e37b670ee338ae481cf384d3cd494eb312c6--metis--5.1.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "aef20e5a1a9ff1dfe6771876d2e9aa689d7ce2e759ce5b66c59398cbf179a280--metis--5.1.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "87aa6b9b12c17fcd46c2ff3849e1a0533f7f1cf6654e28e27c4f74c4dd60fdcd--metis--5.1.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "94ba1b3aa1e2eb9c22051762861bdd2206d468f8a8c933fb31baf45db470392e--metis--5.1.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a3a5368691512df4ff5e202aea55cb15fcad6a4d25277f89feaccb2e251766f1--metis--5.1.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "aaee475d856217357f2ae2da3d08e2cb15a83b7b2ef289ba07138319902ee499--metis--5.1.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "347582bc5a58bc60070e8ad87e5b0b52e5f0fd068ac43e54cbf88794298971b6--metis--5.1.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3b76f7de2aa7dacff1f0bdd64717080179b4bbb18c92123cd227000ba674f5ad--metis--5.1.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f7ed6bcc1a27eaba81dde178892ef85bf19533e84a8b0ff3b0fce41c34aa3926--metis--5.1.0.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f2f7c16c68333b1093cefe6d7b9f23f04a127b925ae54d38abc39bce4ff8f6b5--metis--5.1.0.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f359620a1164f5b7ef8aa12b20e2440e7dcdcf172081733a0ffad7be5858386e--metis--5.1.0.high_sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6d2437e8ee7895db773d282ad516c7eaeabd65f54a57cef58362ccd1a3020eba--metis--5.1.0.sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6f57acf576405862f31abd082d09daee2bc2127633e3bdbea55076a4b813485f--metis--5.1.0.el_capitan.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2190ac10bcfa7c92b7d9bd9e16eeda3acbfae7f2d277cdb2bff021bc0c730045--metis--5.1.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "metis" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "metis" ]
+]

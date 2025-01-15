@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Google Testing and Mocking Framework"
+description: """
+Google Testing and Mocking Framework"""
+extra-source "43da2458d75ebf764f3ae0b6bf737b5327d25ac52e62b8de13792c20eef9f1b8--googletest--1.15.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/blobs/sha256:075aca662eb811a15c54953f21a500c22d445a652ad998d8fcfbf91228d4c6ab"
+  checksum: [
+    "sha256=075aca662eb811a15c54953f21a500c22d445a652ad998d8fcfbf91228d4c6ab"
+  ]
+}
+extra-source "8849ed9230807920f740dd01200da884d4c7a89273481fca7ef223d5bbfe549c--googletest-1.15.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/manifests/1.15.2"
+}
+extra-source "ecaf337e5908d88b1b7ed539f88e18e8f6f74fc4290265545ee05c86e4e4ae2a--googletest--1.15.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/blobs/sha256:f5e7fb287f2630dd9cff6d8b64faa2d802f9a342b43e1869c45329f525ce5cfe"
+  checksum: [
+    "sha256=f5e7fb287f2630dd9cff6d8b64faa2d802f9a342b43e1869c45329f525ce5cfe"
+  ]
+}
+extra-source "12796f5c464842681f9393f75d1bcb9f39cff4410481efde2784a9f0dfce2939--googletest--1.15.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/blobs/sha256:d6ba5c5f2cd22dfcd0e81678c94a7d2b570d5aca9eb0c28c744dffc4f60ed488"
+  checksum: [
+    "sha256=d6ba5c5f2cd22dfcd0e81678c94a7d2b570d5aca9eb0c28c744dffc4f60ed488"
+  ]
+}
+extra-source "41e8d5fe76f93dd5447992bd9bea1b0a23b0846ba9ba823e10c09d545ffb7650--googletest--1.15.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/blobs/sha256:c099292776556392724ea5b8b0feebf0f98c7832cd7d2696132dd583d1b77824"
+  checksum: [
+    "sha256=c099292776556392724ea5b8b0feebf0f98c7832cd7d2696132dd583d1b77824"
+  ]
+}
+extra-source "ddd542511c6f48b4f152c05b53fd9f8784a03b8aa1d2e38c00311e37a2ddf95d--googletest--1.15.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/blobs/sha256:a6d8ab0b37f041319aaf99101b2db99fee3e4ec43d760f21c41537395465c228"
+  checksum: [
+    "sha256=a6d8ab0b37f041319aaf99101b2db99fee3e4ec43d760f21c41537395465c228"
+  ]
+}
+extra-source "ae73a7037570b6d3b40c3d279f2f6bb3b43582a80a23af6a0897e7e965b34134--googletest--1.15.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/blobs/sha256:28d274beb73e1784554ea5a427e34e89adebcf0aed36ae2767dd6bc9cb0d99d1"
+  checksum: [
+    "sha256=28d274beb73e1784554ea5a427e34e89adebcf0aed36ae2767dd6bc9cb0d99d1"
+  ]
+}
+extra-source "a593a92c47b2e72f424d8c4b4ee909f7a6eab6d4ea7d8d9f6eb286e79e75a558--googletest--1.15.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/blobs/sha256:0d3ff95b092a34fffe8bf2b181c16e3fd0697607e8cbee65a9f6ced56039ac4b"
+  checksum: [
+    "sha256=0d3ff95b092a34fffe8bf2b181c16e3fd0697607e8cbee65a9f6ced56039ac4b"
+  ]
+}
+extra-source "918237db97d8ca07d9d98dbdf2eb655a7f46e4edf7bbb29cbef9c5599e2612e1--googletest--1.15.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/googletest/blobs/sha256:353bdf4af061388cf88bcdd3181704400bf6fc07b3fc16530669e09cec72c5cb"
+  checksum: [
+    "sha256=353bdf4af061388cf88bcdd3181704400bf6fc07b3fc16530669e09cec72c5cb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8849ed9230807920f740dd01200da884d4c7a89273481fca7ef223d5bbfe549c--googletest-1.15.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "43da2458d75ebf764f3ae0b6bf737b5327d25ac52e62b8de13792c20eef9f1b8--googletest--1.15.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ecaf337e5908d88b1b7ed539f88e18e8f6f74fc4290265545ee05c86e4e4ae2a--googletest--1.15.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "12796f5c464842681f9393f75d1bcb9f39cff4410481efde2784a9f0dfce2939--googletest--1.15.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "41e8d5fe76f93dd5447992bd9bea1b0a23b0846ba9ba823e10c09d545ffb7650--googletest--1.15.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ddd542511c6f48b4f152c05b53fd9f8784a03b8aa1d2e38c00311e37a2ddf95d--googletest--1.15.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ae73a7037570b6d3b40c3d279f2f6bb3b43582a80a23af6a0897e7e965b34134--googletest--1.15.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a593a92c47b2e72f424d8c4b4ee909f7a6eab6d4ea7d8d9f6eb286e79e75a558--googletest--1.15.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "918237db97d8ca07d9d98dbdf2eb655a7f46e4edf7bbb29cbef9c5599e2612e1--googletest--1.15.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "googletest" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "googletest" ]
+]

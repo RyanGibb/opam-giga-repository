@@ -1,0 +1,116 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Text processor and publishing toolchain for AsciiDoc"
+description: """
+Text processor and publishing toolchain for AsciiDoc"""
+extra-source "61bd8cca59894631e740a9d0d4d980fbd60977e7825295b51fe5fdf70a9a5940--asciidoctor--2.0.23.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:0e22867759dbac0647abe6e8a89fbc85ff2abdfc8feca72b04a354e43ec82dd8"
+  checksum: [
+    "sha256=0e22867759dbac0647abe6e8a89fbc85ff2abdfc8feca72b04a354e43ec82dd8"
+  ]
+}
+extra-source "3d8661fd4c24d6d388439a5c4b42c7e33dd3902a84baf347329cb9f23a6a3517--asciidoctor-2.0.23.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/manifests/2.0.23"
+}
+extra-source "947e744bb358814af3f61edfdd54ccc1ae004b6c9aab7a5b6502bf83bfc0d76b--asciidoctor--2.0.23.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:522247415d5dca5d39056e6a6c2598c15f16d2e9a5c17cf6dd5bf807f9d971ae"
+  checksum: [
+    "sha256=522247415d5dca5d39056e6a6c2598c15f16d2e9a5c17cf6dd5bf807f9d971ae"
+  ]
+}
+extra-source "05e070d2ab2d6645ecdcc366b43dd6bb083b6c6ca4487e90034dcbce05cd4cb3--asciidoctor--2.0.23.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:98d673578b71fc61fcfbae82914b8836d7cb8cf00943c453d1734412e76522ae"
+  checksum: [
+    "sha256=98d673578b71fc61fcfbae82914b8836d7cb8cf00943c453d1734412e76522ae"
+  ]
+}
+extra-source "f242b0b8943dd7d61bae8cd90e99e75ec5ef077c79a5f3cc8b87fd5d7377867d--asciidoctor--2.0.23.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:153aa583433922871932d0a9546f98f2ae71933e46dc0eaf120fb7c664c157d6"
+  checksum: [
+    "sha256=153aa583433922871932d0a9546f98f2ae71933e46dc0eaf120fb7c664c157d6"
+  ]
+}
+extra-source "ccbd7d822536833aedca53c299bf2101f22a658013bf736d34b9158de8f49d5e--asciidoctor--2.0.23.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:b633e081e4ac8c4f30ac1166c7ab756307724c788209b7b7981e0ebc4d2cf54a"
+  checksum: [
+    "sha256=b633e081e4ac8c4f30ac1166c7ab756307724c788209b7b7981e0ebc4d2cf54a"
+  ]
+}
+extra-source "46850fe769cc140c487e7a99e155d2258e549263b1ce62fb4e49f8fffdce56d2--asciidoctor--2.0.23.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:aa9fef3b8866426e0aac8f523dc488b90eee4d6ef6fefa9a49eac92c224dfb5f"
+  checksum: [
+    "sha256=aa9fef3b8866426e0aac8f523dc488b90eee4d6ef6fefa9a49eac92c224dfb5f"
+  ]
+}
+extra-source "274326d6dc2220d9ccb8ae907956344786fe6dd23a3f95b3b123328cb1f18af3--asciidoctor--2.0.23.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:4f1cd991e0e82b564540e53b37037c666e066ddeed28d32d7b178ee04ba59c41"
+  checksum: [
+    "sha256=4f1cd991e0e82b564540e53b37037c666e066ddeed28d32d7b178ee04ba59c41"
+  ]
+}
+extra-source "5ea15502874f03fb3bcb60db70bea1f304315d2a47f01f5e46f4dbcfb31daaa2--asciidoctor--2.0.23.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:f3b2cc8dd6df0643b5fffbec0c01a69cc80a249b6ee62677169d51c3e1df7697"
+  checksum: [
+    "sha256=f3b2cc8dd6df0643b5fffbec0c01a69cc80a249b6ee62677169d51c3e1df7697"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3d8661fd4c24d6d388439a5c4b42c7e33dd3902a84baf347329cb9f23a6a3517--asciidoctor-2.0.23.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "61bd8cca59894631e740a9d0d4d980fbd60977e7825295b51fe5fdf70a9a5940--asciidoctor--2.0.23.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "947e744bb358814af3f61edfdd54ccc1ae004b6c9aab7a5b6502bf83bfc0d76b--asciidoctor--2.0.23.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "05e070d2ab2d6645ecdcc366b43dd6bb083b6c6ca4487e90034dcbce05cd4cb3--asciidoctor--2.0.23.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f242b0b8943dd7d61bae8cd90e99e75ec5ef077c79a5f3cc8b87fd5d7377867d--asciidoctor--2.0.23.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ccbd7d822536833aedca53c299bf2101f22a658013bf736d34b9158de8f49d5e--asciidoctor--2.0.23.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "46850fe769cc140c487e7a99e155d2258e549263b1ce62fb4e49f8fffdce56d2--asciidoctor--2.0.23.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "274326d6dc2220d9ccb8ae907956344786fe6dd23a3f95b3b123328cb1f18af3--asciidoctor--2.0.23.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5ea15502874f03fb3bcb60db70bea1f304315d2a47f01f5e46f4dbcfb31daaa2--asciidoctor--2.0.23.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "asciidoctor" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "asciidoctor" ]
+]

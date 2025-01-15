@@ -1,0 +1,101 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Object-relational database system"
+description: """
+Object-relational database system"""
+extra-source "39039d90722f869ca1b02e8fbcf924d8b1b3130959ba5440588a217a0d3d2b34--postgresql@15--15.8.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/blobs/sha256:df021a4e3cbe85490ae3b101858eec3a3021bf233d660993c55a678f63aa5c50"
+  checksum: [
+    "sha256=df021a4e3cbe85490ae3b101858eec3a3021bf233d660993c55a678f63aa5c50"
+  ]
+}
+extra-source "0877d1046d1202cf662a52ff1a87e481f430c666b7f6d2f514ec7817959e929b--postgresql@15-15.8.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/manifests/15.8"
+}
+extra-source "d1f4e4bd99a0b1c7b7d916390ee255f3f1367dada52ee642204a32760f3b7ba0--postgresql@15--15.8.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/blobs/sha256:7f84bf6248857b6e0c87f7c2b429a815c8e8f6d86f2e81acbe0b3fece72ebb5d"
+  checksum: [
+    "sha256=7f84bf6248857b6e0c87f7c2b429a815c8e8f6d86f2e81acbe0b3fece72ebb5d"
+  ]
+}
+extra-source "0ee13a820151d470d7cb50ba2ef96af48f59375e045b0844f2dfbeb47c9dc718--postgresql@15--15.8.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/blobs/sha256:36ba5e5ef042b45c89d84052445a2a13e19dfbcb8e50dfc86acaab614c50e843"
+  checksum: [
+    "sha256=36ba5e5ef042b45c89d84052445a2a13e19dfbcb8e50dfc86acaab614c50e843"
+  ]
+}
+extra-source "87d3fe2ea183a7226f97dd815d8d4c098b922ce70a3a4a36a1c408e697783604--postgresql@15--15.8.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/blobs/sha256:200d30ee9c824ba78fa7258be4f916ac7af6ad5c8e4d1d3628fca79c30eff90d"
+  checksum: [
+    "sha256=200d30ee9c824ba78fa7258be4f916ac7af6ad5c8e4d1d3628fca79c30eff90d"
+  ]
+}
+extra-source "fb13127f2b3b6ba3a439b2b1ba39104d85691a33b009846d403d11202939bdd4--postgresql@15--15.8.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/blobs/sha256:76756e3609146a20e413312e3ac1e8cdf824eaed37ee72a52c4e8fe5b757e1b0"
+  checksum: [
+    "sha256=76756e3609146a20e413312e3ac1e8cdf824eaed37ee72a52c4e8fe5b757e1b0"
+  ]
+}
+extra-source "16bb8f7500862a4363ea217b14e6c7691f777525a1ca795c48155850d70b4e12--postgresql@15--15.8.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/blobs/sha256:401d4759b87e7a1640bca297e951bee7ddf98383ebed2257278ed633a99867b2"
+  checksum: [
+    "sha256=401d4759b87e7a1640bca297e951bee7ddf98383ebed2257278ed633a99867b2"
+  ]
+}
+extra-source "d60b4214ed2952162545f68ea0948972f5ea07ee8be3294c2f8ea123f86a294d--postgresql@15--15.8.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/blobs/sha256:002341794de10ec8cebad3abc1e71b30d86ccdfef18d0299a69a62a5b4615e4c"
+  checksum: [
+    "sha256=002341794de10ec8cebad3abc1e71b30d86ccdfef18d0299a69a62a5b4615e4c"
+  ]
+}
+extra-source "ed9432ea06e5a196e80dd4703d8842fc3b874030fbd8a9e4581a8c22759672b8--postgresql@15--15.8.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/postgresql/15/blobs/sha256:780ef5fb6b44b598d8e855c51c4f671c7fd153d03bbd6cceba0f33abd2ed1f49"
+  checksum: [
+    "sha256=780ef5fb6b44b598d8e855c51c4f671c7fd153d03bbd6cceba0f33abd2ed1f49"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+  "brew-icu4c" {= "74.2"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-krb5" {= "1.21.3"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0877d1046d1202cf662a52ff1a87e481f430c666b7f6d2f514ec7817959e929b--postgresql@15-15.8.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "39039d90722f869ca1b02e8fbcf924d8b1b3130959ba5440588a217a0d3d2b34--postgresql@15--15.8.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d1f4e4bd99a0b1c7b7d916390ee255f3f1367dada52ee642204a32760f3b7ba0--postgresql@15--15.8.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0ee13a820151d470d7cb50ba2ef96af48f59375e045b0844f2dfbeb47c9dc718--postgresql@15--15.8.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "87d3fe2ea183a7226f97dd815d8d4c098b922ce70a3a4a36a1c408e697783604--postgresql@15--15.8.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fb13127f2b3b6ba3a439b2b1ba39104d85691a33b009846d403d11202939bdd4--postgresql@15--15.8.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "16bb8f7500862a4363ea217b14e6c7691f777525a1ca795c48155850d70b4e12--postgresql@15--15.8.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d60b4214ed2952162545f68ea0948972f5ea07ee8be3294c2f8ea123f86a294d--postgresql@15--15.8.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ed9432ea06e5a196e80dd4703d8842fc3b874030fbd8a9e4581a8c22759672b8--postgresql@15--15.8.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "postgresql" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "postgresql" ]
+]

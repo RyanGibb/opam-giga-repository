@@ -1,0 +1,117 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Icons for the GNOME project"
+description: """
+Icons for the GNOME project"""
+extra-source "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/adwaita-icon-theme/blobs/sha256:02a59c3c9335a81374805e6959a572255f6def77b599ee378ad39a1fe6ff61e7"
+  checksum: [
+    "sha256=02a59c3c9335a81374805e6959a572255f6def77b599ee378ad39a1fe6ff61e7"
+  ]
+}
+extra-source "78376151cb8bd6c0a15e90cfc0d8f4a21ece7bedc8f5c0a4f78538823c7791f6--adwaita-icon-theme-47.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/adwaita-icon-theme/manifests/47.0"
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-docutils" {= "0.21.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-gdk-pixbuf" {= "2.42.12"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-pango" {= "1.54.0"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-librsvg" {= "2.58.4"}
+  "brew-graphene" {= "1.10.8"}
+  "brew-hicolor-icon-theme" {= "0.18"}
+  "brew-libepoxy" {= "1.5.10"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libsass" {= "3.6.6"}
+  "brew-sassc" {= "3.6.2"}
+  "brew-gtk4" {= "4.16.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "78376151cb8bd6c0a15e90cfc0d8f4a21ece7bedc8f5c0a4f78538823c7791f6--adwaita-icon-theme-47.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e7210bbf59bee3ded3842524d629dc0ade74c719d64171884d444df6b41134c--adwaita-icon-theme--47.0.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "adwaita-icon-theme" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "adwaita-icon-theme" ]
+]

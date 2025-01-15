@@ -1,0 +1,159 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "PDF rendering library (based on the xpdf-3.0 code base)"
+description: """
+PDF rendering library (based on the xpdf-3.0 code base)"""
+extra-source "33c882d192ff02c53fcd3e859c723edffe21383e12597f91e450191eeede92fe--poppler--24.04.0_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/blobs/sha256:5d74f29c70add1be6fb3c7c3a9abbec589a6ca2f6df7e7676bb7fcee3ffdd50f"
+  checksum: [
+    "sha256=5d74f29c70add1be6fb3c7c3a9abbec589a6ca2f6df7e7676bb7fcee3ffdd50f"
+  ]
+}
+extra-source "29876d8ccd42e0e734630d43c90a8c95fc6aee3184ed78973fcf84893cc1f51d--poppler-24.04.0_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/manifests/24.04.0_1"
+}
+extra-source "5cb2c7a9023455aea6e36cf7d661c762e6c461566f85d1c4c42e2ac77101d01b--poppler--24.04.0_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/blobs/sha256:9bb5a73485ce08ad41882c384b403b041e69aa18cda57ad9cc0557c724e2d3c4"
+  checksum: [
+    "sha256=9bb5a73485ce08ad41882c384b403b041e69aa18cda57ad9cc0557c724e2d3c4"
+  ]
+}
+extra-source "3d9b303d81661ead98d64c6512549ef0e9b1f69b5d8970c77a5ff247b2850e0b--poppler--24.04.0_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/blobs/sha256:8b487935981de358c8be92fbf3325279d37f4ea15f5e00a1c061e7b534dbda12"
+  checksum: [
+    "sha256=8b487935981de358c8be92fbf3325279d37f4ea15f5e00a1c061e7b534dbda12"
+  ]
+}
+extra-source "21f42ef9bf064a6bcee17270e56a8c65eab4a03928918ffbc8b9f9431e69f0a3--poppler--24.04.0_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/blobs/sha256:d3aa8c09cd2a5848ee99ff138814553f3d6206a0c96ad216fb55e6968918422c"
+  checksum: [
+    "sha256=d3aa8c09cd2a5848ee99ff138814553f3d6206a0c96ad216fb55e6968918422c"
+  ]
+}
+extra-source "2c1040ae9bd8ec5cff008a4e0fb2baddc8340922e763d0be845e94f2381cbc92--poppler--24.04.0_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/blobs/sha256:dad153bde1d968931cdce8acf850519bfb124053e14b7320a7bcfb71e42122e4"
+  checksum: [
+    "sha256=dad153bde1d968931cdce8acf850519bfb124053e14b7320a7bcfb71e42122e4"
+  ]
+}
+extra-source "8b51d40c74140124b303bbcd00ef18c34368b5a2b1f0594f931c53e19310ac74--poppler--24.04.0_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/blobs/sha256:c5e2890d19c2c3d42b951ea067fc5186d348f6c8c1862ba4e6f120fe96a4312d"
+  checksum: [
+    "sha256=c5e2890d19c2c3d42b951ea067fc5186d348f6c8c1862ba4e6f120fe96a4312d"
+  ]
+}
+extra-source "42751158dfbc1c693179f8fe26f8460fd8a1a95bed937be35adf926287fcc836--poppler--24.04.0_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/blobs/sha256:aa50112c89e22500caf026bbc4a6dfd4bf4073cd21e6ec1d8fcda3f3d3fc175d"
+  checksum: [
+    "sha256=aa50112c89e22500caf026bbc4a6dfd4bf4073cd21e6ec1d8fcda3f3d3fc175d"
+  ]
+}
+extra-source "fe4df91f0949316df77b6bf6325a46a1a2af1f855a7d936648bac5fe4cf72f04--poppler--24.04.0_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/poppler/blobs/sha256:7b73544fa9db0d4264fb2a3c2816f50eac61c33a7a1a060ff92dfcbc7fd4783d"
+  checksum: [
+    "sha256=7b73544fa9db0d4264fb2a3c2816f50eac61c33a7a1a060ff92dfcbc7fd4783d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libunistring" {= "1.2"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+  "brew-libgpg-error" {= "1.50"}
+  "brew-libassuan" {= "3.0.1"}
+  "brew-libgcrypt" {= "1.10.3"}
+  "brew-libksba" {= "1.6.7"}
+  "brew-libusb" {= "1.0.27"}
+  "brew-npth" {= "1.7"}
+  "brew-pinentry" {= "1.3.1"}
+  "brew-gnupg" {= "2.4.5"}
+  "brew-swig" {= "4.2.1"}
+  "brew-gpgme" {= "1.23.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-nspr" {= "4.35"}
+  "brew-nss" {= "3.104"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "29876d8ccd42e0e734630d43c90a8c95fc6aee3184ed78973fcf84893cc1f51d--poppler-24.04.0_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "33c882d192ff02c53fcd3e859c723edffe21383e12597f91e450191eeede92fe--poppler--24.04.0_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5cb2c7a9023455aea6e36cf7d661c762e6c461566f85d1c4c42e2ac77101d01b--poppler--24.04.0_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3d9b303d81661ead98d64c6512549ef0e9b1f69b5d8970c77a5ff247b2850e0b--poppler--24.04.0_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "21f42ef9bf064a6bcee17270e56a8c65eab4a03928918ffbc8b9f9431e69f0a3--poppler--24.04.0_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2c1040ae9bd8ec5cff008a4e0fb2baddc8340922e763d0be845e94f2381cbc92--poppler--24.04.0_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8b51d40c74140124b303bbcd00ef18c34368b5a2b1f0594f931c53e19310ac74--poppler--24.04.0_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "42751158dfbc1c693179f8fe26f8460fd8a1a95bed937be35adf926287fcc836--poppler--24.04.0_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fe4df91f0949316df77b6bf6325a46a1a2af1f855a7d936648bac5fe4cf72f04--poppler--24.04.0_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "poppler" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "poppler" ]
+]

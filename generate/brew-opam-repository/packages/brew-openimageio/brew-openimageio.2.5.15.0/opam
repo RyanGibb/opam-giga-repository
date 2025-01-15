@@ -1,0 +1,254 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for reading, processing and writing images"
+description: """
+Library for reading, processing and writing images"""
+extra-source "dd5ddb25f42e7cdc4b10a8eafa9f93cfd74965e3b4a7fa4c453f4c763a90c343--openimageio--2.5.15.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/blobs/sha256:e293b398f1d7761f4ff968988ce083c913faec6ceea85b45a3962f063dc76733"
+  checksum: [
+    "sha256=e293b398f1d7761f4ff968988ce083c913faec6ceea85b45a3962f063dc76733"
+  ]
+}
+extra-source "4824510b3d9e13654b29add693a2e8eaa689c7a0f3e0147026cf2591cc3cb603--openimageio-2.5.15.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/manifests/2.5.15.0"
+}
+extra-source "aee3d5d511a04430376d22f2a6cf4df967e86c92712068ede255650c5ebcc000--openimageio--2.5.15.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/blobs/sha256:d8c9d3f62a572311fde2e700feba9ba14a38df143c41b2517cebd3d2fab416cd"
+  checksum: [
+    "sha256=d8c9d3f62a572311fde2e700feba9ba14a38df143c41b2517cebd3d2fab416cd"
+  ]
+}
+extra-source "e68211f8972f3b414cdf6f3fdc47a50f7a304994b34b486583fd66a01cefe26e--openimageio--2.5.15.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/blobs/sha256:e6dbe73cd667dfbc5ff87b04bce6463bc2d9c1633374892569c613db5e908db0"
+  checksum: [
+    "sha256=e6dbe73cd667dfbc5ff87b04bce6463bc2d9c1633374892569c613db5e908db0"
+  ]
+}
+extra-source "5ad8c55d14433e0cd4c38becd8f40533b3916d7eb4516b85e838868d2e7d7198--openimageio--2.5.15.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/blobs/sha256:d49cdd4d3af3349dae3ac94cff880d128101fac36883ba05fba93d4a1b97215e"
+  checksum: [
+    "sha256=d49cdd4d3af3349dae3ac94cff880d128101fac36883ba05fba93d4a1b97215e"
+  ]
+}
+extra-source "03c0ce3814d84545f7208ab384e53e1745aaa5637ad0c96ae361fa8cff37ea92--openimageio--2.5.15.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/blobs/sha256:cc1317d985be9f07fac2fb9dd296c4eefe57fe3f6494bb26559be204653a5045"
+  checksum: [
+    "sha256=cc1317d985be9f07fac2fb9dd296c4eefe57fe3f6494bb26559be204653a5045"
+  ]
+}
+extra-source "e5e1ddf73683f2f75ab3f7c36164130956c8d2625c0279cab9118e1ac66f52be--openimageio--2.5.15.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/blobs/sha256:752642c7bf7b0abeaf41eab8cedd87e4aa45f033c92f5151006e2ec08e774128"
+  checksum: [
+    "sha256=752642c7bf7b0abeaf41eab8cedd87e4aa45f033c92f5151006e2ec08e774128"
+  ]
+}
+extra-source "5d4bceb7fd1a7a779168e2be2892b18cc4a736f2cf99bb511b1bba104825a9ad--openimageio--2.5.15.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/blobs/sha256:a9101552d8996f967154a54bf3e5b590679aa00de2649a2668848039489d459d"
+  checksum: [
+    "sha256=a9101552d8996f967154a54bf3e5b590679aa00de2649a2668848039489d459d"
+  ]
+}
+extra-source "400b931d92ee466e7f981ef61e7b0a9023f36e33f970a17ce5975321fd534ad2--openimageio--2.5.15.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openimageio/blobs/sha256:1d7e10634178f728050119a3a68cf838b19e718303db5759cd9b4992c165116a"
+  checksum: [
+    "sha256=1d7e10634178f728050119a3a68cf838b19e718303db5759cd9b4992c165116a"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-icu4c" {= "74.2"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-boost" {= "1.86.0"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+  "brew-openblas" {= "0.3.28"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-numpy" {= "2.1.1"}
+  "brew-boost-python3" {= "1.86.0"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+  "brew-aom" {= "3.10.0"}
+  "brew-aribb24" {= "1.0.4"}
+  "brew-dav1d" {= "1.4.3"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-frei0r" {= "2.3.3"}
+  "brew-libunistring" {= "1.2"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-lame" {= "3.100"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-libunibreak" {= "6.1"}
+  "brew-libass" {= "0.17.3"}
+  "brew-libbluray" {= "1.3.4"}
+  "brew-cjson" {= "1.7.18"}
+  "brew-libmicrohttpd" {= "1.0.1"}
+  "brew-mbedtls" {= "3.6.1"}
+  "brew-librist" {= "0.2.10"}
+  "brew-libsoxr" {= "0.1.3"}
+  "brew-libssh" {= "0.11.1"}
+  "brew-libvidstab" {= "1.1.1"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-libvpx" {= "1.13.1"}
+  "brew-opencore-amr" {= "0.1.6"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-opus" {= "1.5.2"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-cargo-c" {= "0.10.4"}
+  "brew-rav1e" {= "0.7.1"}
+  "brew-libsamplerate" {= "0.2.2"}
+  "brew-flac" {= "1.4.3"}
+  "brew-mpg123" {= "1.32.7"}
+  "brew-libsndfile" {= "1.2.2"}
+  "brew-rubberband" {= "3.3.0"}
+  "brew-sdl2" {= "2.30.7"}
+  "brew-snappy" {= "1.2.1"}
+  "brew-speex" {= "1.2.1"}
+  "brew-srt" {= "1.5.3"}
+  "brew-svt-av1" {= "2.2.1"}
+  "brew-leptonica" {= "1.84.1"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-libarchive" {= "3.7.5"}
+  "brew-pango" {= "1.54.0"}
+  "brew-tesseract" {= "5.4.1"}
+  "brew-theora" {= "1.1.1"}
+  "brew-x264" {= "r3108"}
+  "brew-x265" {= "3.6"}
+  "brew-xvid" {= "1.3.7"}
+  "brew-libsodium" {= "1.0.20"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-zeromq" {= "4.3.5"}
+  "brew-zimg" {= "3.0.5"}
+  "brew-ffmpeg" {= "7.0.2"}
+  "brew-fmt" {= "11.0.2"}
+  "brew-libde265" {= "1.0.15"}
+  "brew-libxml2" {= "2.13.4"}
+  "brew-itstool" {= "2.0.7"}
+  "brew-shared-mime-info" {= "2.4"}
+  "brew-libheif" {= "1.18.2"}
+  "brew-jasper" {= "4.2.4"}
+  "brew-lit" {= "18.1.8"}
+  "brew-libomp" {= "19.1.0"}
+  "brew-libraw" {= "0.21.3"}
+  "brew-minizip-ng" {= "4.0.7"}
+  "brew-pystring" {= "1.1.4"}
+  "brew-yaml-cpp" {= "0.8.0"}
+  "brew-pybind11" {= "2.13.6"}
+  "brew-opencolorio" {= "2.3.2"}
+  "brew-pugixml" {= "1.14"}
+  "brew-hwloc" {= "2.11.1"}
+  "brew-tbb" {= "2021.13.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "4824510b3d9e13654b29add693a2e8eaa689c7a0f3e0147026cf2591cc3cb603--openimageio-2.5.15.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "dd5ddb25f42e7cdc4b10a8eafa9f93cfd74965e3b4a7fa4c453f4c763a90c343--openimageio--2.5.15.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "aee3d5d511a04430376d22f2a6cf4df967e86c92712068ede255650c5ebcc000--openimageio--2.5.15.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e68211f8972f3b414cdf6f3fdc47a50f7a304994b34b486583fd66a01cefe26e--openimageio--2.5.15.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5ad8c55d14433e0cd4c38becd8f40533b3916d7eb4516b85e838868d2e7d7198--openimageio--2.5.15.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "03c0ce3814d84545f7208ab384e53e1745aaa5637ad0c96ae361fa8cff37ea92--openimageio--2.5.15.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e5e1ddf73683f2f75ab3f7c36164130956c8d2625c0279cab9118e1ac66f52be--openimageio--2.5.15.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5d4bceb7fd1a7a779168e2be2892b18cc4a736f2cf99bb511b1bba104825a9ad--openimageio--2.5.15.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "400b931d92ee466e7f981ef61e7b0a9023f36e33f970a17ce5975321fd534ad2--openimageio--2.5.15.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "openimageio" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "openimageio" ]
+]

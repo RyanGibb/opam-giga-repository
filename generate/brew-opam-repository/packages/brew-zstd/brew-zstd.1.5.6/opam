@@ -1,0 +1,101 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Zstandard is a real-time compression algorithm"
+description: """
+Zstandard is a real-time compression algorithm"""
+extra-source "cfe5bb2be2cd7efede01a64939cc6b8359ee7eb0ade23b8d1be05f461fcf3d4c--zstd--1.5.6.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:eb32988fe6b57b6a5f46ed6de10f0e7c74177c8971f4ae1f9c6e7cd4af539a77"
+  checksum: [
+    "sha256=eb32988fe6b57b6a5f46ed6de10f0e7c74177c8971f4ae1f9c6e7cd4af539a77"
+  ]
+}
+extra-source "29403e0df5404d8aeca0e750ac135ec9ef44fc5eeb6df69170ed602acabf0ffb--zstd-1.5.6.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/manifests/1.5.6"
+}
+extra-source "bcdf6b56ea7b8b23105f1518ddd0830ac5a56c333b0274959c10084ea3a31346--zstd--1.5.6.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:487f35700f563b07036cfd429e4e7a4e37f13e22578e688cbfee2fa9484aaf9d"
+  checksum: [
+    "sha256=487f35700f563b07036cfd429e4e7a4e37f13e22578e688cbfee2fa9484aaf9d"
+  ]
+}
+extra-source "506615027bab6259ad3b903339790b62d9b547ab08a5eac6707dc96c24da0c38--zstd--1.5.6.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:09953f22fd56bc85e0d7ceac8de7e35ed622f3affe78dd782154e5e21623037b"
+  checksum: [
+    "sha256=09953f22fd56bc85e0d7ceac8de7e35ed622f3affe78dd782154e5e21623037b"
+  ]
+}
+extra-source "af6fd07ad9cd935975dd761af51c9baba7eb782dda7630d4abd399fa98e53578--zstd--1.5.6.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:2028141683f55bffcd0693b9e49eef1e3dabc1e184214cacb173ca9bd54dabc0"
+  checksum: [
+    "sha256=2028141683f55bffcd0693b9e49eef1e3dabc1e184214cacb173ca9bd54dabc0"
+  ]
+}
+extra-source "18f93d36d969a66db42878b450a6e090f71b2f8db93ceedef4c3e2fdc3ca57d3--zstd--1.5.6.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:78fd5d1b6afaef60879445e3de8227257e79ec6fca6af1e1324896bc93cf2a75"
+  checksum: [
+    "sha256=78fd5d1b6afaef60879445e3de8227257e79ec6fca6af1e1324896bc93cf2a75"
+  ]
+}
+extra-source "cccdc1b7d9087da4ec7b0250e9afad811c0b13f95072f9b98e0053e7f84ff080--zstd--1.5.6.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:035cbadb205abbe00107f0c7746f3715e3841c007e4b3a309398e65d50c43cf5"
+  checksum: [
+    "sha256=035cbadb205abbe00107f0c7746f3715e3841c007e4b3a309398e65d50c43cf5"
+  ]
+}
+extra-source "2bbe5d739288042a6111f16c6fba3c0d9a61db50e7b03d93c2a608d1064d53ec--zstd--1.5.6.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:b5099f7c339af2fff89af3a844a004b35aba400787ef71e1db6e856889f56557"
+  checksum: [
+    "sha256=b5099f7c339af2fff89af3a844a004b35aba400787ef71e1db6e856889f56557"
+  ]
+}
+extra-source "38eb3a83cc61e35d992fb6ab77690327f003bb1520497560dc2d5e25c85987b3--zstd--1.5.6.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:7f12fa16033d6576099c481f93a7423a526a7b3252a0ea0921ea0016c18f49f8"
+  checksum: [
+    "sha256=7f12fa16033d6576099c481f93a7423a526a7b3252a0ea0921ea0016c18f49f8"
+  ]
+}
+extra-source "a17b9c387a5a4a00f023582e2c5d8253de1683294ab6cb49439f0c6b62eac37c--zstd--1.5.6.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:0e6ddbd4c969bb84261f12b759fb78a828d6f734c9e515793c6ac2c3a846b01e"
+  checksum: [
+    "sha256=0e6ddbd4c969bb84261f12b759fb78a828d6f734c9e515793c6ac2c3a846b01e"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "29403e0df5404d8aeca0e750ac135ec9ef44fc5eeb6df69170ed602acabf0ffb--zstd-1.5.6.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "cfe5bb2be2cd7efede01a64939cc6b8359ee7eb0ade23b8d1be05f461fcf3d4c--zstd--1.5.6.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bcdf6b56ea7b8b23105f1518ddd0830ac5a56c333b0274959c10084ea3a31346--zstd--1.5.6.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "506615027bab6259ad3b903339790b62d9b547ab08a5eac6707dc96c24da0c38--zstd--1.5.6.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "af6fd07ad9cd935975dd761af51c9baba7eb782dda7630d4abd399fa98e53578--zstd--1.5.6.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "18f93d36d969a66db42878b450a6e090f71b2f8db93ceedef4c3e2fdc3ca57d3--zstd--1.5.6.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cccdc1b7d9087da4ec7b0250e9afad811c0b13f95072f9b98e0053e7f84ff080--zstd--1.5.6.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2bbe5d739288042a6111f16c6fba3c0d9a61db50e7b03d93c2a608d1064d53ec--zstd--1.5.6.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "38eb3a83cc61e35d992fb6ab77690327f003bb1520497560dc2d5e25c85987b3--zstd--1.5.6.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a17b9c387a5a4a00f023582e2c5d8253de1683294ab6cb49439f0c6b62eac37c--zstd--1.5.6.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "zstd" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "zstd" ]
+]

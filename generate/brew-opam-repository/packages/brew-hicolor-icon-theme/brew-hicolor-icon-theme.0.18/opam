@@ -1,0 +1,59 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Fallback theme for FreeDesktop.org icon themes"
+description: """
+Fallback theme for FreeDesktop.org icon themes"""
+extra-source "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:76779247990b538d304e98b042fde85677491e428d0381a59383264ce8ef199f"
+  checksum: [
+    "sha256=76779247990b538d304e98b042fde85677491e428d0381a59383264ce8ef199f"
+  ]
+}
+extra-source "70835c74d449476f69c535127dcf54e7bc83475b0e28f15db78ccf6c2dfe3e7a--hicolor-icon-theme-0.18.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/manifests/0.18"
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "70835c74d449476f69c535127dcf54e7bc83475b0e28f15db78ccf6c2dfe3e7a--hicolor-icon-theme-0.18.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "hicolor-icon-theme" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "hicolor-icon-theme" ]
+]

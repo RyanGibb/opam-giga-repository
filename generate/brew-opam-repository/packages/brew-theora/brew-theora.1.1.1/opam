@@ -1,0 +1,138 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Open video compression format"
+description: """
+Open video compression format"""
+extra-source "7dcd2039b5cfc6d396f2cfb58cc7df088b9bfa5dbe51673aa5ebc10353115003--theora--1.1.1.arm64_sequoia.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:19801e6ceb5c12db4621afff8746a3ef77581226559ec728c6c07a49659b23d3"
+  checksum: [
+    "sha256=19801e6ceb5c12db4621afff8746a3ef77581226559ec728c6c07a49659b23d3"
+  ]
+}
+extra-source "dbefdb4ba8626ac7d284e0da23aaeb705c37e0bfbe0c3c22f05fe5fbcadf10e4--theora-1.1.1-4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/manifests/1.1.1-4"
+}
+extra-source "e435254cd4b9ddcf64381155b5e654a6d10fcb00d434f42b3fc36237c1d73f03--theora--1.1.1.sonoma.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:53cce2c2f66137baf358f0a625a5095fa1eab222cda32ecbe8fe202153375cf8"
+  checksum: [
+    "sha256=53cce2c2f66137baf358f0a625a5095fa1eab222cda32ecbe8fe202153375cf8"
+  ]
+}
+extra-source "be465ece126ea65f8c456e5d4be082674673fee83f01040b031e0a67ecd4afd2--theora--1.1.1.arm64_sonoma.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:7f57dbcd0a12b47f7f886f9474d2ffa04df1ff62fc9c6a330c4f828386d94301"
+  checksum: [
+    "sha256=7f57dbcd0a12b47f7f886f9474d2ffa04df1ff62fc9c6a330c4f828386d94301"
+  ]
+}
+extra-source "d4a098fbcc2dfbddb034ed79199aeeb77a2ae388a3d83dce4a3c3b7e56ae1143--theora--1.1.1.ventura.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:cab83d4adc91a223bdc43ca9e26f3a15d37ffcda352be74de313ffe2c1160189"
+  checksum: [
+    "sha256=cab83d4adc91a223bdc43ca9e26f3a15d37ffcda352be74de313ffe2c1160189"
+  ]
+}
+extra-source "d2b2627fb3a937c8b9375927a6db569f1c2bb4787a35abc1d983a43a2d25f6d6--theora--1.1.1.arm64_ventura.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:b4b1fe0a53ce538d88ca098fce885c20cca62175c2d2141ad96454e7163674a6"
+  checksum: [
+    "sha256=b4b1fe0a53ce538d88ca098fce885c20cca62175c2d2141ad96454e7163674a6"
+  ]
+}
+extra-source "58740265c648ae3e60e689f6ac33320e1fc42bcc8f120dd734c659449ee0cf4c--theora--1.1.1.monterey.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:0bdb8acd2fafffff1e172c94aa6f67ce20ea67760d5296ac108ca1ec7e9e4c22"
+  checksum: [
+    "sha256=0bdb8acd2fafffff1e172c94aa6f67ce20ea67760d5296ac108ca1ec7e9e4c22"
+  ]
+}
+extra-source "94bd4e636c50b247adf8f0e25ef880b6e5b3c2dd53342b7025d27d3d2ced0343--theora--1.1.1.arm64_monterey.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:56008e9450fcf3f712f34ec79407b8e738953d5fc50feaf72a6434dd28fc1101"
+  checksum: [
+    "sha256=56008e9450fcf3f712f34ec79407b8e738953d5fc50feaf72a6434dd28fc1101"
+  ]
+}
+extra-source "9dabcebbbe1627f5905632884fb311bdf90bc815e8f7e9ba0fb9f4be70b2f6db--theora--1.1.1.big_sur.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:7ba57255df2c2f4563767031c6b9ead9a93883217644e9e64b5523e26d7b1088"
+  checksum: [
+    "sha256=7ba57255df2c2f4563767031c6b9ead9a93883217644e9e64b5523e26d7b1088"
+  ]
+}
+extra-source "66442e8ff31abeb1f85d7c793960351f15f2e76635d3f520efb0ce3110ffb118--theora--1.1.1.arm64_big_sur.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:1e5271cb88e3dad8eb5f06460e7f3f2cec0129679c7f7fb4f84db1d09664b827"
+  checksum: [
+    "sha256=1e5271cb88e3dad8eb5f06460e7f3f2cec0129679c7f7fb4f84db1d09664b827"
+  ]
+}
+extra-source "3cbc9ae79d8d65f5fb50fba3f3b0aa37fb08dad19044b5cfcb6e48bc85d6b41f--theora--1.1.1.catalina.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:1fcbd50039f580bd85554af2d831c28f83613b5d26969f577f7fe87b3c55db67"
+  checksum: [
+    "sha256=1fcbd50039f580bd85554af2d831c28f83613b5d26969f577f7fe87b3c55db67"
+  ]
+}
+extra-source "4d2bd59ff06fa4393b80c5b48e21144d84d29cbad21f867a08b31b6ac5cf75af--theora--1.1.1.mojave.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:6fdb09d75fc6e64b266a185e711c2964e803d8f10c0d40ccb8d572c536c24d3a"
+  checksum: [
+    "sha256=6fdb09d75fc6e64b266a185e711c2964e803d8f10c0d40ccb8d572c536c24d3a"
+  ]
+}
+extra-source "c78abc68799c9fb09b2589a61518d7974a2d07d9ba388981d628488664e2f0d8--theora--1.1.1.x86_64_linux.bottle.4.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:4ac10b8e87b29874cd0e6d61de22b1123cbc7757f0eae7e5c195dd8c1ab70ef8"
+  checksum: [
+    "sha256=4ac10b8e87b29874cd0e6d61de22b1123cbc7757f0eae7e5c195dd8c1ab70ef8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-m4" {= "1.4.19"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "dbefdb4ba8626ac7d284e0da23aaeb705c37e0bfbe0c3c22f05fe5fbcadf10e4--theora-1.1.1-4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7dcd2039b5cfc6d396f2cfb58cc7df088b9bfa5dbe51673aa5ebc10353115003--theora--1.1.1.arm64_sequoia.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e435254cd4b9ddcf64381155b5e654a6d10fcb00d434f42b3fc36237c1d73f03--theora--1.1.1.sonoma.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "be465ece126ea65f8c456e5d4be082674673fee83f01040b031e0a67ecd4afd2--theora--1.1.1.arm64_sonoma.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d4a098fbcc2dfbddb034ed79199aeeb77a2ae388a3d83dce4a3c3b7e56ae1143--theora--1.1.1.ventura.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d2b2627fb3a937c8b9375927a6db569f1c2bb4787a35abc1d983a43a2d25f6d6--theora--1.1.1.arm64_ventura.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "58740265c648ae3e60e689f6ac33320e1fc42bcc8f120dd734c659449ee0cf4c--theora--1.1.1.monterey.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "94bd4e636c50b247adf8f0e25ef880b6e5b3c2dd53342b7025d27d3d2ced0343--theora--1.1.1.arm64_monterey.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9dabcebbbe1627f5905632884fb311bdf90bc815e8f7e9ba0fb9f4be70b2f6db--theora--1.1.1.big_sur.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "66442e8ff31abeb1f85d7c793960351f15f2e76635d3f520efb0ce3110ffb118--theora--1.1.1.arm64_big_sur.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3cbc9ae79d8d65f5fb50fba3f3b0aa37fb08dad19044b5cfcb6e48bc85d6b41f--theora--1.1.1.catalina.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4d2bd59ff06fa4393b80c5b48e21144d84d29cbad21f867a08b31b6ac5cf75af--theora--1.1.1.mojave.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c78abc68799c9fb09b2589a61518d7974a2d07d9ba388981d628488664e2f0d8--theora--1.1.1.x86_64_linux.bottle.4.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "theora" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "theora" ]
+]

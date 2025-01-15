@@ -1,0 +1,116 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Package for scientific computing with Python"
+description: """
+Package for scientific computing with Python"""
+extra-source "bdbd30c687b5324492a979a63aef190d5c543d3450b7c95e60a06589ed5e4220--numpy--2.1.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:836b7ea9a3d9f2846c912544adcda0ef6bab7fdaa72ef4061dd8f52dda7e5c5e"
+  checksum: [
+    "sha256=836b7ea9a3d9f2846c912544adcda0ef6bab7fdaa72ef4061dd8f52dda7e5c5e"
+  ]
+}
+extra-source "46a0198383f7fca31685d3bee47336b5cae11b935ac0eb559f99e61e683f493e--numpy-2.1.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/manifests/2.1.1"
+}
+extra-source "6a1d335be7555c203e48252754446945a0f8b652ac3ff57845dcd3ca9f2c5f7c--numpy--2.1.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:fa860a99fcc55b4a2da17e44d0de97097f9084d04f926273a4f20c517280c318"
+  checksum: [
+    "sha256=fa860a99fcc55b4a2da17e44d0de97097f9084d04f926273a4f20c517280c318"
+  ]
+}
+extra-source "5e0e38ff50391dd17ad6dadefba36afd078cf08cd28b0ca901e246277220b660--numpy--2.1.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:924c40ddf282d5c12b4376f33271b7850a51422cb275d5e4d6a088efaba20d33"
+  checksum: [
+    "sha256=924c40ddf282d5c12b4376f33271b7850a51422cb275d5e4d6a088efaba20d33"
+  ]
+}
+extra-source "2640d54ad602f9d59985baa99a53bc368f1876603fcdc187be763e33a3f47edf--numpy--2.1.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:462ace65c75c44be7c79a05c5a9a4bb041b1e6f811cf706c8622b27555c6a2c6"
+  checksum: [
+    "sha256=462ace65c75c44be7c79a05c5a9a4bb041b1e6f811cf706c8622b27555c6a2c6"
+  ]
+}
+extra-source "abd4fe7a5e47d043f869aa7bb35e0f733d892029957bd1ac28ceaa644763ba5d--numpy--2.1.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:a59680ff0599eaaedffc08d39e43886b7f30bfd4329834a80037938f52a14cce"
+  checksum: [
+    "sha256=a59680ff0599eaaedffc08d39e43886b7f30bfd4329834a80037938f52a14cce"
+  ]
+}
+extra-source "74a4e6427dd404c590c383bf554788d5e0c38671cd0348fdded07b499f5a6c49--numpy--2.1.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:cc238b3c89f76848d5e2a1c995b28367fa880b841a02d9ee8f04f7670afc87a3"
+  checksum: [
+    "sha256=cc238b3c89f76848d5e2a1c995b28367fa880b841a02d9ee8f04f7670afc87a3"
+  ]
+}
+extra-source "20a5696923da82353cb0ab309b1223b536dc7220e34ac5fea2f7fe3d500f4d3a--numpy--2.1.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:4c66cadb1690ea8f562ab3e6cdfe7850a7d87d434edbad84134313bda4e61e03"
+  checksum: [
+    "sha256=4c66cadb1690ea8f562ab3e6cdfe7850a7d87d434edbad84134313bda4e61e03"
+  ]
+}
+extra-source "3dc1488c1b65617aa7ff86c9265538dafd8c0bda93a5835944f836988ab785ed--numpy--2.1.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:24ef8697b15867bc22a393c6b7ead92bea61964c4b63fb5020021329ee499f96"
+  checksum: [
+    "sha256=24ef8697b15867bc22a393c6b7ead92bea61964c4b63fb5020021329ee499f96"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+  "brew-openblas" {= "0.3.28"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python" {= "3.11.10"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "46a0198383f7fca31685d3bee47336b5cae11b935ac0eb559f99e61e683f493e--numpy-2.1.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "bdbd30c687b5324492a979a63aef190d5c543d3450b7c95e60a06589ed5e4220--numpy--2.1.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6a1d335be7555c203e48252754446945a0f8b652ac3ff57845dcd3ca9f2c5f7c--numpy--2.1.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5e0e38ff50391dd17ad6dadefba36afd078cf08cd28b0ca901e246277220b660--numpy--2.1.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2640d54ad602f9d59985baa99a53bc368f1876603fcdc187be763e33a3f47edf--numpy--2.1.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "abd4fe7a5e47d043f869aa7bb35e0f733d892029957bd1ac28ceaa644763ba5d--numpy--2.1.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "74a4e6427dd404c590c383bf554788d5e0c38671cd0348fdded07b499f5a6c49--numpy--2.1.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "20a5696923da82353cb0ab309b1223b536dc7220e34ac5fea2f7fe3d500f4d3a--numpy--2.1.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3dc1488c1b65617aa7ff86c9265538dafd8c0bda93a5835944f836988ab785ed--numpy--2.1.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "numpy" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "numpy" ]
+]

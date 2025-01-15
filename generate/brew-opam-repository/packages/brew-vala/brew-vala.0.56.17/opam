@@ -1,0 +1,180 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Compiler for the GObject type system"
+description: """
+Compiler for the GObject type system"""
+extra-source "e6ce4882295158154f8d1fe43a727a5fba24e50eeb7dc3a71d0283da865c9a89--vala--0.56.17.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/blobs/sha256:b4ea278ff3850ebc6d26343740b2bdd80fa68c9922c02b7bbb650f1d5afc884c"
+  checksum: [
+    "sha256=b4ea278ff3850ebc6d26343740b2bdd80fa68c9922c02b7bbb650f1d5afc884c"
+  ]
+}
+extra-source "0a16dfc12a73f26a4f93db122cec6a1c179bcb3f9b847760df8eb6a9de096efe--vala-0.56.17.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/manifests/0.56.17"
+}
+extra-source "8a9a034ee74361d06abed6d56de9d5a4fc6386dc60ff659c092640ae0b85d82f--vala--0.56.17.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/blobs/sha256:ba82671da132ae4ea92c29778f8c13e8d92770bfb8d28a282f257d808ad33c8c"
+  checksum: [
+    "sha256=ba82671da132ae4ea92c29778f8c13e8d92770bfb8d28a282f257d808ad33c8c"
+  ]
+}
+extra-source "76cd9c5be8b9a4e56477ddd3b17eab13e3aa2257ada0fce4c36688ef66626480--vala--0.56.17.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/blobs/sha256:08ca53b37c7464bc3990246568ca344ddfa7ee9e38b8cffdea01a5fe9c183a17"
+  checksum: [
+    "sha256=08ca53b37c7464bc3990246568ca344ddfa7ee9e38b8cffdea01a5fe9c183a17"
+  ]
+}
+extra-source "3da2b15803f874e5e3fba1a91bec1bda01824f04f92d539af4f458e887e03989--vala--0.56.17.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/blobs/sha256:f0845abb3bcd9b8a091b5f44aa98f6cbc2d49391dcc9f893df93692f4b1cbd8b"
+  checksum: [
+    "sha256=f0845abb3bcd9b8a091b5f44aa98f6cbc2d49391dcc9f893df93692f4b1cbd8b"
+  ]
+}
+extra-source "3d4f27e60a9c3608cc9749b3814b404ed174fb3af73236000263fb7b39382f62--vala--0.56.17.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/blobs/sha256:867b615ee4cb52de204837b74acb80d203c62cef97efe1b68117744390a4512b"
+  checksum: [
+    "sha256=867b615ee4cb52de204837b74acb80d203c62cef97efe1b68117744390a4512b"
+  ]
+}
+extra-source "34c2cfb2ae0abe080d0ce27f41aafa57dfdca23eb802ae09463dcfe7619f52c0--vala--0.56.17.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/blobs/sha256:90bbb65556e3c267dc893f2380fd7d9cb7f54544da3f0434e378d353984a0743"
+  checksum: [
+    "sha256=90bbb65556e3c267dc893f2380fd7d9cb7f54544da3f0434e378d353984a0743"
+  ]
+}
+extra-source "f2f3a9ebf308986b32c116542541bc19ba024f300b5ec88335ccbaf0c3e69df2--vala--0.56.17.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/blobs/sha256:7a23986c89b3f2ee3583cf8119932b624f436c923f489d9e8bdbf79f74fa014d"
+  checksum: [
+    "sha256=7a23986c89b3f2ee3583cf8119932b624f436c923f489d9e8bdbf79f74fa014d"
+  ]
+}
+extra-source "3ff3076bd3f16094d1fdb8da579de48bb59f758e0c1f88846a9ee43ae897007c--vala--0.56.17.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vala/blobs/sha256:7a61d8199a2837ca08d9a400f9a4eb9c72559e5962c62b53b4fbcaa80bf3fe08"
+  checksum: [
+    "sha256=7a61d8199a2837ca08d9a400f9a4eb9c72559e5962c62b53b4fbcaa80bf3fe08"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-icu4c" {= "74.2"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+  "brew-aom" {= "3.10.0"}
+  "brew-libavif" {= "1.1.1"}
+  "brew-gd" {= "2.3.3"}
+  "brew-apr" {= "1.7.5"}
+  "brew-apr-util" {= "1.6.3"}
+  "brew-utf8proc" {= "2.9.0"}
+  "brew-scons" {= "4.8.1"}
+  "brew-swig" {= "4.2.1"}
+  "brew-subversion" {= "1.14.3"}
+  "brew-jasper" {= "4.2.4"}
+  "brew-netpbm" {= "11.02.10"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gts" {= "0.7.6"}
+  "brew-docutils" {= "0.21.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-gdk-pixbuf" {= "2.42.12"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-pango" {= "1.54.0"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-librsvg" {= "2.58.4"}
+  "brew-graphviz" {= "12.1.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0a16dfc12a73f26a4f93db122cec6a1c179bcb3f9b847760df8eb6a9de096efe--vala-0.56.17.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e6ce4882295158154f8d1fe43a727a5fba24e50eeb7dc3a71d0283da865c9a89--vala--0.56.17.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8a9a034ee74361d06abed6d56de9d5a4fc6386dc60ff659c092640ae0b85d82f--vala--0.56.17.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "76cd9c5be8b9a4e56477ddd3b17eab13e3aa2257ada0fce4c36688ef66626480--vala--0.56.17.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3da2b15803f874e5e3fba1a91bec1bda01824f04f92d539af4f458e887e03989--vala--0.56.17.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3d4f27e60a9c3608cc9749b3814b404ed174fb3af73236000263fb7b39382f62--vala--0.56.17.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "34c2cfb2ae0abe080d0ce27f41aafa57dfdca23eb802ae09463dcfe7619f52c0--vala--0.56.17.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f2f3a9ebf308986b32c116542541bc19ba024f300b5ec88335ccbaf0c3e69df2--vala--0.56.17.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3ff3076bd3f16094d1fdb8da579de48bb59f758e0c1f88846a9ee43ae897007c--vala--0.56.17.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "vala" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "vala" ]
+]

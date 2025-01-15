@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for processing command-line flags"
+description: """
+Library for processing command-line flags"""
+extra-source "04b7ae1b0de96a5f113d9113f2a40db0c012f9c2ad8835e9c5662950c9332fa0--gflags--2.2.2.arm64_sequoia.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:5a17163fb7c8fb712f7bee2776e6304e54bb4e7116fe3abb6d2689b1042f8a60"
+  checksum: [
+    "sha256=5a17163fb7c8fb712f7bee2776e6304e54bb4e7116fe3abb6d2689b1042f8a60"
+  ]
+}
+extra-source "9683aeddd51c2c61698e3e3e9942ac77c776893acd679bcd1690fdd98fe8a2e2--gflags-2.2.2-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/manifests/2.2.2-2"
+}
+extra-source "fd239275cb65f230f3aba3328c3bf8aad06e36468f93027cba04369d0f37423f--gflags--2.2.2.sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:321726b70ab6bd017807ce202a11cf5d356c85c68412ed409edf03019db922f8"
+  checksum: [
+    "sha256=321726b70ab6bd017807ce202a11cf5d356c85c68412ed409edf03019db922f8"
+  ]
+}
+extra-source "3c78cc0eaf4a07ec142eefa08cd2a0c48238494ea9dfdd82fd2adbce92ac8fec--gflags--2.2.2.arm64_sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:1b14d0fd5ab4d2d04ff229bf7cace191208d62a3dc67029151ce1140ecf81258"
+  checksum: [
+    "sha256=1b14d0fd5ab4d2d04ff229bf7cace191208d62a3dc67029151ce1140ecf81258"
+  ]
+}
+extra-source "1f37d6b3a149a4ced7311a7f8d4786601bd718b0f1f184c79adcb5a48da48a9d--gflags--2.2.2.ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:6b24b7f057edb2c37d9f423d29ead9a1ebf14e07217f43e0fb7bbf8393b0821c"
+  checksum: [
+    "sha256=6b24b7f057edb2c37d9f423d29ead9a1ebf14e07217f43e0fb7bbf8393b0821c"
+  ]
+}
+extra-source "2da40a98133b23a5b901dce9563a51fb1e8ba3f3f986965f05a309a9a80635d0--gflags--2.2.2.arm64_ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:9ff5d9da1a4c1d22229f1fb75293a2e115bb431b498dac7c4a42f52378353c50"
+  checksum: [
+    "sha256=9ff5d9da1a4c1d22229f1fb75293a2e115bb431b498dac7c4a42f52378353c50"
+  ]
+}
+extra-source "bca494e1fdf15fee59d915dbf1f8c66750799108143440c6cb1e8906b090701f--gflags--2.2.2.monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:0436095f47bef8a2165b1829eb8ee6e77c8aa14553ef982bd3c6ecf5c7e9d47b"
+  checksum: [
+    "sha256=0436095f47bef8a2165b1829eb8ee6e77c8aa14553ef982bd3c6ecf5c7e9d47b"
+  ]
+}
+extra-source "d870c43f21f5a5016579d5452c12accab209f4ed55af42afc8c694d831ef1840--gflags--2.2.2.arm64_monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:09ec6001e46f675b1e2bf64ed3ffd6ee8072d36facf38791d1ceeed0c2472daf"
+  checksum: [
+    "sha256=09ec6001e46f675b1e2bf64ed3ffd6ee8072d36facf38791d1ceeed0c2472daf"
+  ]
+}
+extra-source "4c047b71aebcaff21fc88f9e2794a7754979df1bbaa0e4769f3bbb42c89ba61d--gflags--2.2.2.big_sur.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:4702020c64f73c2e3e23997055a49711600a1af7834652be3923a1edb43a750c"
+  checksum: [
+    "sha256=4702020c64f73c2e3e23997055a49711600a1af7834652be3923a1edb43a750c"
+  ]
+}
+extra-source "118a2e5b9ddb2a207c88fb903df09ed362957c40b06f752b28daa09043bb9828--gflags--2.2.2.arm64_big_sur.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:e1d58af2280acd284f60e87ba07a66ad190188c0a5356ac2a8045799e390c435"
+  checksum: [
+    "sha256=e1d58af2280acd284f60e87ba07a66ad190188c0a5356ac2a8045799e390c435"
+  ]
+}
+extra-source "b45d77a00415fc6807e3eab3627d9f6f6d1d40472eb3ceacd8f7a7da6444c643--gflags--2.2.2.x86_64_linux.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:f11fa1aff8e21d32012f8fbb78a2f954241f4e026b8518a6c874e2d537201629"
+  checksum: [
+    "sha256=f11fa1aff8e21d32012f8fbb78a2f954241f4e026b8518a6c874e2d537201629"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "9683aeddd51c2c61698e3e3e9942ac77c776893acd679bcd1690fdd98fe8a2e2--gflags-2.2.2-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "04b7ae1b0de96a5f113d9113f2a40db0c012f9c2ad8835e9c5662950c9332fa0--gflags--2.2.2.arm64_sequoia.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fd239275cb65f230f3aba3328c3bf8aad06e36468f93027cba04369d0f37423f--gflags--2.2.2.sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3c78cc0eaf4a07ec142eefa08cd2a0c48238494ea9dfdd82fd2adbce92ac8fec--gflags--2.2.2.arm64_sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1f37d6b3a149a4ced7311a7f8d4786601bd718b0f1f184c79adcb5a48da48a9d--gflags--2.2.2.ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2da40a98133b23a5b901dce9563a51fb1e8ba3f3f986965f05a309a9a80635d0--gflags--2.2.2.arm64_ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bca494e1fdf15fee59d915dbf1f8c66750799108143440c6cb1e8906b090701f--gflags--2.2.2.monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d870c43f21f5a5016579d5452c12accab209f4ed55af42afc8c694d831ef1840--gflags--2.2.2.arm64_monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4c047b71aebcaff21fc88f9e2794a7754979df1bbaa0e4769f3bbb42c89ba61d--gflags--2.2.2.big_sur.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "118a2e5b9ddb2a207c88fb903df09ed362957c40b06f752b28daa09043bb9828--gflags--2.2.2.arm64_big_sur.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b45d77a00415fc6807e3eab3627d9f6f6d1d40472eb3ceacd8f7a7da6444c643--gflags--2.2.2.x86_64_linux.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gflags" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gflags" ]
+]

@@ -1,0 +1,94 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Regular expressions library"
+description: """
+Regular expressions library"""
+extra-source "2e8f112e16a5b10d99e9dafb276f54475f6db6b49e47c65d1cb14da098457cb3--oniguruma--6.9.9.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:378cec2d71c33ca25809db43e9fdd46957b3459fcd5b337c519fc74cc2cfdc20"
+  checksum: [
+    "sha256=378cec2d71c33ca25809db43e9fdd46957b3459fcd5b337c519fc74cc2cfdc20"
+  ]
+}
+extra-source "35140c4d3995b75388bed026ef6d0acbb4d6076047cdcd895bfd996c0c8d6487--oniguruma-6.9.9.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/manifests/6.9.9"
+}
+extra-source "07c355d4ffdfcb22bf9c561bf5ba24502e7b64e9104eac10967ef8ec68310b3e--oniguruma--6.9.9.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:75f2ef5b5593401d265669503cff50cda1fc10dbe2750fc54c87cbe578211b58"
+  checksum: [
+    "sha256=75f2ef5b5593401d265669503cff50cda1fc10dbe2750fc54c87cbe578211b58"
+  ]
+}
+extra-source "59e8579a8e70269e5c928e7cbbf3edbfab17680f24b808139760eaf6131ff56a--oniguruma--6.9.9.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:53913ccbdad8ce504d0266fc20a867f2fc306d7331d066f2895f48d167102a24"
+  checksum: [
+    "sha256=53913ccbdad8ce504d0266fc20a867f2fc306d7331d066f2895f48d167102a24"
+  ]
+}
+extra-source "d4845f6cb51ab7bb45c119a568a6ec9cb9431c1a2949208314d241de042e8d92--oniguruma--6.9.9.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:5c4c16da729f311a12bd7863648b1c692fe502a0a3127eeb7460a47098c7a9a4"
+  checksum: [
+    "sha256=5c4c16da729f311a12bd7863648b1c692fe502a0a3127eeb7460a47098c7a9a4"
+  ]
+}
+extra-source "7b62e7aa350d1238bcaf7a50488caf49fd39f7d1e69182017ee3b8534e897c92--oniguruma--6.9.9.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:def0fa2c032e85b817ed3408867af987da1cafe3f2aa6aee2fb3c29df2d202d6"
+  checksum: [
+    "sha256=def0fa2c032e85b817ed3408867af987da1cafe3f2aa6aee2fb3c29df2d202d6"
+  ]
+}
+extra-source "c20095c5d154bc2d087bad0fda6bd167fb974f5a80a0c4223068f453894dde5f--oniguruma--6.9.9.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:86b7b52451edba60d365586a975d1eb40f7823992565dde5c88abb97fde483d4"
+  checksum: [
+    "sha256=86b7b52451edba60d365586a975d1eb40f7823992565dde5c88abb97fde483d4"
+  ]
+}
+extra-source "e06d7aeaf84cece6caa9b5ffc54f11349e6e5584cfb86775a57c503ac42af7bd--oniguruma--6.9.9.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:d0e0811b41b34a4fbbe65c9206b9969f8c469fca8cfe619caa7e5c74036921c3"
+  checksum: [
+    "sha256=d0e0811b41b34a4fbbe65c9206b9969f8c469fca8cfe619caa7e5c74036921c3"
+  ]
+}
+extra-source "18b2f3d05c68f5556cb5915841c3466dd74309703d87d4170663ea9f340d4b07--oniguruma--6.9.9.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:18f0e52bb660582698f390023d5db08208ed468d2f01758018b9ee8c69aeba4f"
+  checksum: [
+    "sha256=18f0e52bb660582698f390023d5db08208ed468d2f01758018b9ee8c69aeba4f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "35140c4d3995b75388bed026ef6d0acbb4d6076047cdcd895bfd996c0c8d6487--oniguruma-6.9.9.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2e8f112e16a5b10d99e9dafb276f54475f6db6b49e47c65d1cb14da098457cb3--oniguruma--6.9.9.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "07c355d4ffdfcb22bf9c561bf5ba24502e7b64e9104eac10967ef8ec68310b3e--oniguruma--6.9.9.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "59e8579a8e70269e5c928e7cbbf3edbfab17680f24b808139760eaf6131ff56a--oniguruma--6.9.9.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d4845f6cb51ab7bb45c119a568a6ec9cb9431c1a2949208314d241de042e8d92--oniguruma--6.9.9.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7b62e7aa350d1238bcaf7a50488caf49fd39f7d1e69182017ee3b8534e897c92--oniguruma--6.9.9.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c20095c5d154bc2d087bad0fda6bd167fb974f5a80a0c4223068f453894dde5f--oniguruma--6.9.9.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e06d7aeaf84cece6caa9b5ffc54f11349e6e5584cfb86775a57c503ac42af7bd--oniguruma--6.9.9.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "18b2f3d05c68f5556cb5915841c3466dd74309703d87d4170663ea9f340d4b07--oniguruma--6.9.9.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "oniguruma" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "oniguruma" ]
+]

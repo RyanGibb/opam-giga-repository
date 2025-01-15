@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Swiss-army knife of markup format conversion"
+description: """
+Swiss-army knife of markup format conversion"""
+extra-source "9aeaf0708b659797c3e9ff7b641da6ef7d61d24dafbff0ee0b3baef763a31974--pandoc--3.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pandoc/blobs/sha256:5361742fd224e74bcc8f81212f37c16d73d811356bca34b610a909cbe552416d"
+  checksum: [
+    "sha256=5361742fd224e74bcc8f81212f37c16d73d811356bca34b610a909cbe552416d"
+  ]
+}
+extra-source "4ed980335daa2c17ceb26268c5cb5d47347674443dc897a3e4d48c15b20babda--pandoc-3.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pandoc/manifests/3.4"
+}
+extra-source "d2e922a9e342977131842055030c743af755afae55ae1bf850a58e69ad37e7ae--pandoc--3.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pandoc/blobs/sha256:ce1bb15b949afe09f4171fa7e189d16d2350da4779f7c41433b81b6d072b9c37"
+  checksum: [
+    "sha256=ce1bb15b949afe09f4171fa7e189d16d2350da4779f7c41433b81b6d072b9c37"
+  ]
+}
+extra-source "1f391833e47fc473cafda3e12bb360a6205af767202c768011bd9e68d22ae345--pandoc--3.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pandoc/blobs/sha256:1957e9d0e51a39c1acc24ec1fc77e08c08726e7e1d789a5622e9f16087cc9821"
+  checksum: [
+    "sha256=1957e9d0e51a39c1acc24ec1fc77e08c08726e7e1d789a5622e9f16087cc9821"
+  ]
+}
+extra-source "feae4c0bf5c72e9f794d6ad2c68462681f8a6653fa867d07a2b0e3505a54423e--pandoc--3.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pandoc/blobs/sha256:962132fce258830c9f3ad4c19d51b00a87e2d558ec965e35013ade28a368dad8"
+  checksum: [
+    "sha256=962132fce258830c9f3ad4c19d51b00a87e2d558ec965e35013ade28a368dad8"
+  ]
+}
+extra-source "2c65097e2fd2378d3df7bbecfcb06d23862af92cc44f344c1e80b0429337fb75--pandoc--3.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pandoc/blobs/sha256:faf838fa85317ea95542455926ceb5abce456d916994793ac9b211ef30959c25"
+  checksum: [
+    "sha256=faf838fa85317ea95542455926ceb5abce456d916994793ac9b211ef30959c25"
+  ]
+}
+extra-source "042c7a6b020722d1f8245a82c33970ce938a8f5bf0d4af6c4545bdd71bde7511--pandoc--3.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pandoc/blobs/sha256:3046105edd77d06ae0215ce9cc36d2576547cdc299ae820a869ca5d343d85224"
+  checksum: [
+    "sha256=3046105edd77d06ae0215ce9cc36d2576547cdc299ae820a869ca5d343d85224"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-ghc" {= "9.10.1"}
+  "brew-cabal-install" {= "3.12.1.0"}
+  "brew-ghc" {= "9.8.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "4ed980335daa2c17ceb26268c5cb5d47347674443dc897a3e4d48c15b20babda--pandoc-3.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9aeaf0708b659797c3e9ff7b641da6ef7d61d24dafbff0ee0b3baef763a31974--pandoc--3.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d2e922a9e342977131842055030c743af755afae55ae1bf850a58e69ad37e7ae--pandoc--3.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1f391833e47fc473cafda3e12bb360a6205af767202c768011bd9e68d22ae345--pandoc--3.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "feae4c0bf5c72e9f794d6ad2c68462681f8a6653fa867d07a2b0e3505a54423e--pandoc--3.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2c65097e2fd2378d3df7bbecfcb06d23862af92cc44f344c1e80b0429337fb75--pandoc--3.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "042c7a6b020722d1f8245a82c33970ce938a8f5bf0d4af6c4545bdd71bde7511--pandoc--3.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pandoc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pandoc" ]
+]

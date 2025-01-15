@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Just-In-Time Compiler (JIT) for the Lua programming language"
+description: """
+Just-In-Time Compiler (JIT) for the Lua programming language"""
+extra-source "077dd430056a09cace00ffa8c6edc7674f79b5c6984a6fcf8580c9d020afb9f1--luajit--2.1.1725453128.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/blobs/sha256:4fdf6899482eef4e8103d971cf6a73ac55869d6c12e31da1395fa97e21b68434"
+  checksum: [
+    "sha256=4fdf6899482eef4e8103d971cf6a73ac55869d6c12e31da1395fa97e21b68434"
+  ]
+}
+extra-source "5e7d5f6fe3b05638d547771c5ed0c332c24cc517ea4e5959b86b32e40dff56b3--luajit-2.1.1725453128.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/manifests/2.1.1725453128"
+}
+extra-source "a235b70f8d5c5e1592607dae252d965e806e7e48f797b7460759d1f25a31afc5--luajit--2.1.1725453128.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/blobs/sha256:4e8b5b8da2e809262771cc8a816d852651402f56f2dfee16bf5ca9e52cd27d3a"
+  checksum: [
+    "sha256=4e8b5b8da2e809262771cc8a816d852651402f56f2dfee16bf5ca9e52cd27d3a"
+  ]
+}
+extra-source "6acf6d839ec4de4a15eeec0d5434c74a7ad284afbf7232ff3485beb9d0d57785--luajit--2.1.1725453128.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/blobs/sha256:7e6e09419408c38e2649c572cf5d52b39bc43933ef64b7076f0142f12952c57c"
+  checksum: [
+    "sha256=7e6e09419408c38e2649c572cf5d52b39bc43933ef64b7076f0142f12952c57c"
+  ]
+}
+extra-source "85acb330e376401f340c9ec8c5d058ab82a207ea40b72009ff251c0ff3337619--luajit--2.1.1725453128.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/blobs/sha256:47115894a5bce0bbd7d8360dca3922dfb60d16c7252b96a1b91ce66c4dacabd1"
+  checksum: [
+    "sha256=47115894a5bce0bbd7d8360dca3922dfb60d16c7252b96a1b91ce66c4dacabd1"
+  ]
+}
+extra-source "3eeb4a650057b416901d7171ed39b0a85ee3aae634a36a8668b0c2ea6629caf8--luajit--2.1.1725453128.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/blobs/sha256:24db7be30f4aee5744ddbb421a505af97127da7374222b14e1f473cb25ae8b5f"
+  checksum: [
+    "sha256=24db7be30f4aee5744ddbb421a505af97127da7374222b14e1f473cb25ae8b5f"
+  ]
+}
+extra-source "27300a5517feca6be6df3330c679a5297358e023fe0d8d68fde8e077f301cc98--luajit--2.1.1725453128.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/blobs/sha256:4533acc90fd99917ff527e4973cb1eb578e9308c08ce99eefbe73d049ef6b336"
+  checksum: [
+    "sha256=4533acc90fd99917ff527e4973cb1eb578e9308c08ce99eefbe73d049ef6b336"
+  ]
+}
+extra-source "fc4fe3d0949ee7a88e239f49da2c87a10e823a5769b89df78a48959830c5efbc--luajit--2.1.1725453128.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/blobs/sha256:4a6ba45979a7914a5b9a556d753c0bdac55c318d08d3fc736f19aa663d31dfaa"
+  checksum: [
+    "sha256=4a6ba45979a7914a5b9a556d753c0bdac55c318d08d3fc736f19aa663d31dfaa"
+  ]
+}
+extra-source "7ebe99be9524cf3920fa0aa5b80c74425b14d5268a0c17378e9c14b95445d7cc--luajit--2.1.1725453128.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/luajit/blobs/sha256:8ae8c7ad7d769c0bac47ff41ed2192cffa1e36e11fe99584a785b6d32b4b9c8d"
+  checksum: [
+    "sha256=8ae8c7ad7d769c0bac47ff41ed2192cffa1e36e11fe99584a785b6d32b4b9c8d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "5e7d5f6fe3b05638d547771c5ed0c332c24cc517ea4e5959b86b32e40dff56b3--luajit-2.1.1725453128.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "077dd430056a09cace00ffa8c6edc7674f79b5c6984a6fcf8580c9d020afb9f1--luajit--2.1.1725453128.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a235b70f8d5c5e1592607dae252d965e806e7e48f797b7460759d1f25a31afc5--luajit--2.1.1725453128.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6acf6d839ec4de4a15eeec0d5434c74a7ad284afbf7232ff3485beb9d0d57785--luajit--2.1.1725453128.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "85acb330e376401f340c9ec8c5d058ab82a207ea40b72009ff251c0ff3337619--luajit--2.1.1725453128.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3eeb4a650057b416901d7171ed39b0a85ee3aae634a36a8668b0c2ea6629caf8--luajit--2.1.1725453128.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "27300a5517feca6be6df3330c679a5297358e023fe0d8d68fde8e077f301cc98--luajit--2.1.1725453128.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fc4fe3d0949ee7a88e239f49da2c87a10e823a5769b89df78a48959830c5efbc--luajit--2.1.1725453128.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7ebe99be9524cf3920fa0aa5b80c74425b14d5268a0c17378e9c14b95445d7cc--luajit--2.1.1725453128.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "luajit" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "luajit" ]
+]

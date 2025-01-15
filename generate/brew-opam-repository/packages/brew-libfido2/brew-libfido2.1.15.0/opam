@@ -1,0 +1,96 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Provides library functionality for FIDO U2F & FIDO 2.0, including USB"
+description: """
+Provides library functionality for FIDO U2F & FIDO 2.0, including USB"""
+extra-source "c4bcfe3fdf6199f2121406fcbc25e7f46ed96fad92354a59ccfaeb2ba8401274--libfido2--1.15.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:b07f0c07f5b2bc30b51b11ab15bb6424bc6f12c2d777af1c88f5fc51eabd0456"
+  checksum: [
+    "sha256=b07f0c07f5b2bc30b51b11ab15bb6424bc6f12c2d777af1c88f5fc51eabd0456"
+  ]
+}
+extra-source "292955ce6f66d4d7d827690a78eeac2946aab6468af64c128d6083ee8658337d--libfido2-1.15.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/manifests/1.15.0"
+}
+extra-source "74cfaab57ac0d200c419e0c6a6869781bfdac667fe43a067a3a3eb757e9181f5--libfido2--1.15.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:c25ffe40fef70db5d37372fcbe4d3e34eb50ba9c5c0e3714d3cbb09d07c9a73d"
+  checksum: [
+    "sha256=c25ffe40fef70db5d37372fcbe4d3e34eb50ba9c5c0e3714d3cbb09d07c9a73d"
+  ]
+}
+extra-source "b8f7890daa97b3df293bfa87921cde1d19fd614f617e20e709c064b950cf23f0--libfido2--1.15.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:af63db962f5466784b450d1052475668fdb7fd8588f6f0f52c952e4445739fda"
+  checksum: [
+    "sha256=af63db962f5466784b450d1052475668fdb7fd8588f6f0f52c952e4445739fda"
+  ]
+}
+extra-source "64fa3c98e1acb98e54057bda140594f6217ee250e982e1760cbb72661b117422--libfido2--1.15.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:2592f9c608fddf4d40e6dc9eb0d64e56fe3e960dbd51ef8abfe928c40ac1e27c"
+  checksum: [
+    "sha256=2592f9c608fddf4d40e6dc9eb0d64e56fe3e960dbd51ef8abfe928c40ac1e27c"
+  ]
+}
+extra-source "8ad525c5e563d93ac3f5e26539135812c42262934584bc9321b39f0dfb5d4dbd--libfido2--1.15.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:33c05cce853e59f211ae4dd2bac144b57d27a94537a79ffbee97c5efa34cbd4a"
+  checksum: [
+    "sha256=33c05cce853e59f211ae4dd2bac144b57d27a94537a79ffbee97c5efa34cbd4a"
+  ]
+}
+extra-source "8bc45e934b5546363828229a3f4afd0eee30bb37e08a2874c3170fc3476c2f28--libfido2--1.15.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:139818589401f84797b5e581312b3a0208d0ce308eb0b7ae55e9546cd5bf674a"
+  checksum: [
+    "sha256=139818589401f84797b5e581312b3a0208d0ce308eb0b7ae55e9546cd5bf674a"
+  ]
+}
+extra-source "3a46af58bc7c4c022730dd006995be3985abd9c295a214b853fd15dec76b62ca--libfido2--1.15.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:451806f5a0f08d301a6789d705614f2cf1c7dceeaa88005c584280f907924447"
+  checksum: [
+    "sha256=451806f5a0f08d301a6789d705614f2cf1c7dceeaa88005c584280f907924447"
+  ]
+}
+extra-source "c8518edaef99ff0040b117dea2867b4af8332123b5113e71524a2b93c890abd3--libfido2--1.15.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:c7ebead53de6c6dd99885d4b3fb94cf0c753995a280824cb06b63b26e0bd1d40"
+  checksum: [
+    "sha256=c7ebead53de6c6dd99885d4b3fb94cf0c753995a280824cb06b63b26e0bd1d40"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-libcbor" {= "0.11.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-mandoc" {= "1.14.6"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "292955ce6f66d4d7d827690a78eeac2946aab6468af64c128d6083ee8658337d--libfido2-1.15.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c4bcfe3fdf6199f2121406fcbc25e7f46ed96fad92354a59ccfaeb2ba8401274--libfido2--1.15.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "74cfaab57ac0d200c419e0c6a6869781bfdac667fe43a067a3a3eb757e9181f5--libfido2--1.15.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b8f7890daa97b3df293bfa87921cde1d19fd614f617e20e709c064b950cf23f0--libfido2--1.15.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "64fa3c98e1acb98e54057bda140594f6217ee250e982e1760cbb72661b117422--libfido2--1.15.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8ad525c5e563d93ac3f5e26539135812c42262934584bc9321b39f0dfb5d4dbd--libfido2--1.15.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8bc45e934b5546363828229a3f4afd0eee30bb37e08a2874c3170fc3476c2f28--libfido2--1.15.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3a46af58bc7c4c022730dd006995be3985abd9c295a214b853fd15dec76b62ca--libfido2--1.15.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c8518edaef99ff0040b117dea2867b4af8332123b5113e71524a2b93c890abd3--libfido2--1.15.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libfido2" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libfido2" ]
+]

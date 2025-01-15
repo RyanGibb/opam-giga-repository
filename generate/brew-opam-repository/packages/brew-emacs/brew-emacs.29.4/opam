@@ -1,0 +1,137 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GNU Emacs text editor"
+description: """
+GNU Emacs text editor"""
+extra-source "2fefce958f8dfff24472e9bdfed9d40bc88a7cbf703ad783c1d4ebfe36884ac0--emacs--29.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:84ac311b2af10a54d054df729006650bf9473539e9d09095f9ca17ce34a0bca6"
+  checksum: [
+    "sha256=84ac311b2af10a54d054df729006650bf9473539e9d09095f9ca17ce34a0bca6"
+  ]
+}
+extra-source "12f1ece7477bdeddf1b1e39be45892879fefb6ac2b930e4e7cb875b0012d1ad5--emacs-29.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/manifests/29.4"
+}
+extra-source "1667460b8f89162a21f399c91758fa620c61a14179ebc78263c269fa38512d5b--emacs--29.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:5b900dc9417f61ce1cc348df7e6d5c3fcfb3fa82254473379b3883f097633b29"
+  checksum: [
+    "sha256=5b900dc9417f61ce1cc348df7e6d5c3fcfb3fa82254473379b3883f097633b29"
+  ]
+}
+extra-source "21f1ee1b11b3c452b4f6ef3867ae573e79c89230918372545a456a60d73f541f--emacs--29.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:20e7866b16eaa06b26353cafaf9711eb1666617c22fc4b49ed04e3049e6d569b"
+  checksum: [
+    "sha256=20e7866b16eaa06b26353cafaf9711eb1666617c22fc4b49ed04e3049e6d569b"
+  ]
+}
+extra-source "300b57123efaf561e1eba11df2a0048c13a1257fdc77371918f7ade0d57e7ffa--emacs--29.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:88d3bf3ff1d9d7b10bf2c19bd4dda3143f9b886887f5e22a867725a5d000f276"
+  checksum: [
+    "sha256=88d3bf3ff1d9d7b10bf2c19bd4dda3143f9b886887f5e22a867725a5d000f276"
+  ]
+}
+extra-source "a92ee56f93cded16616e623824422ce14a99b9d5607c5514b84f62485ffdbdc7--emacs--29.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:8f8df523a30e54eb217adc577d6618c9c2d1da1718a15050b6921d9076fa7ca8"
+  checksum: [
+    "sha256=8f8df523a30e54eb217adc577d6618c9c2d1da1718a15050b6921d9076fa7ca8"
+  ]
+}
+extra-source "363aef0f5c20864586e53f259f2dbf55683fd67695fe8be763d596a07b6bb5e2--emacs--29.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:a5be71f542b675dd3eb4d7aee4ea94d42446c984813284c04ad7f70bc7059d2d"
+  checksum: [
+    "sha256=a5be71f542b675dd3eb4d7aee4ea94d42446c984813284c04ad7f70bc7059d2d"
+  ]
+}
+extra-source "48bfe8b0ec26ce809a44267ab2aa426ed0ff4a1b97c8314841b757073527c1f0--emacs--29.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:894efa66a9caa6f2e20de12cea7d67f1709d94d702485ae7bbf472e25243cd32"
+  checksum: [
+    "sha256=894efa66a9caa6f2e20de12cea7d67f1709d94d702485ae7bbf472e25243cd32"
+  ]
+}
+extra-source "c93729009753e04a1e310a34f3752eb041ed1e9dd891bae34c093f73db53a582--emacs--29.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:75407dd7ca74edf2fab75546fd7a387c6477a360fb5ffb7ba63ef38b53ff0a71"
+  checksum: [
+    "sha256=75407dd7ca74edf2fab75546fd7a387c6477a360fb5ffb7ba63ef38b53ff0a71"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-libunistring" {= "1.2"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+  "brew-jansson" {= "2.14"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-c-ares" {= "1.33.1"}
+  "brew-icu4c" {= "74.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-libuv" {= "1.48.0"}
+  "brew-node" {= "22.9.0"}
+  "brew-tree-sitter" {= "0.23.0"}
+  "brew-texinfo" {= "7.1.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "12f1ece7477bdeddf1b1e39be45892879fefb6ac2b930e4e7cb875b0012d1ad5--emacs-29.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2fefce958f8dfff24472e9bdfed9d40bc88a7cbf703ad783c1d4ebfe36884ac0--emacs--29.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1667460b8f89162a21f399c91758fa620c61a14179ebc78263c269fa38512d5b--emacs--29.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "21f1ee1b11b3c452b4f6ef3867ae573e79c89230918372545a456a60d73f541f--emacs--29.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "300b57123efaf561e1eba11df2a0048c13a1257fdc77371918f7ade0d57e7ffa--emacs--29.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a92ee56f93cded16616e623824422ce14a99b9d5607c5514b84f62485ffdbdc7--emacs--29.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "363aef0f5c20864586e53f259f2dbf55683fd67695fe8be763d596a07b6bb5e2--emacs--29.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "48bfe8b0ec26ce809a44267ab2aa426ed0ff4a1b97c8314841b757073527c1f0--emacs--29.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c93729009753e04a1e310a34f3752eb041ed1e9dd891bae34c093f73db53a582--emacs--29.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "emacs" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "emacs" ]
+]

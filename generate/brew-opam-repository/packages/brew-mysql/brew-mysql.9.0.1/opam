@@ -1,0 +1,87 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Open source relational database management system"
+description: """
+Open source relational database management system"""
+extra-source "afd3d4683e3a788ab3784d8e56804099a47fffb6094912fd5089da62a8e7fc44--mysql--9.0.1_2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mysql/blobs/sha256:b16a44a6df2d40ba18ba1e6432aa7cd2e44090321eb0cdd519ee4771ec271e7e"
+  checksum: [
+    "sha256=b16a44a6df2d40ba18ba1e6432aa7cd2e44090321eb0cdd519ee4771ec271e7e"
+  ]
+}
+extra-source "4e935845eaaeacafc6197e46af42cf49ec70c57fdfbe5d16a8e2db3c77559738--mysql-9.0.1_2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mysql/manifests/9.0.1_2"
+}
+extra-source "33973690a3acb0221250abade10d851772352c4a817bc08c655feac36b45e021--mysql--9.0.1_2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mysql/blobs/sha256:cc17a02f2b501fd0aa5bd36a86348163e5e5d120e9ca95ce8403fa34cce67e05"
+  checksum: [
+    "sha256=cc17a02f2b501fd0aa5bd36a86348163e5e5d120e9ca95ce8403fa34cce67e05"
+  ]
+}
+extra-source "7c1311a8c0e5d64af896461dda766b80811ab56496a20ea8833f523c0bdeb747--mysql--9.0.1_2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mysql/blobs/sha256:198abc9dd970a6107fbc86befc9d794c9b361a6aa61e3c4c92426490f0a21f64"
+  checksum: [
+    "sha256=198abc9dd970a6107fbc86befc9d794c9b361a6aa61e3c4c92426490f0a21f64"
+  ]
+}
+extra-source "00ca0c0d645925e05fbcff0fb13c97b16b30180c7c85e28d14f1906625c505c9--mysql--9.0.1_2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mysql/blobs/sha256:e364d1c409fd659ce9f22f6fe224585b7f0a5ba42e29b733fb0ebfc2f7eea1d6"
+  checksum: [
+    "sha256=e364d1c409fd659ce9f22f6fe224585b7f0a5ba42e29b733fb0ebfc2f7eea1d6"
+  ]
+}
+extra-source "714eec9aa785252247c45354a415240ef07ebe4918e115b1895702979726b138--mysql--9.0.1_2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mysql/blobs/sha256:4639cc2c8340e04567c24f211c8c82028f4420575c8062a0316d54e08a430a3e"
+  checksum: [
+    "sha256=4639cc2c8340e04567c24f211c8c82028f4420575c8062a0316d54e08a430a3e"
+  ]
+}
+extra-source "31d678a1e8d90279ba5439cdcba235bfc274e7fed60dd47fe03c810e0c642cd8--mysql--9.0.1_2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mysql/blobs/sha256:660eb5a759e16993218ada0bdc4755ef94c6291e82785648f880a3c474d9601b"
+  checksum: [
+    "sha256=660eb5a759e16993218ada0bdc4755ef94c6291e82785648f880a3c474d9601b"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-googletest" {= "1.15.2"}
+  "brew-abseil" {= "20240722.0"}
+  "brew-icu4c" {= "74.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-protobuf" {= "28.1"}
+  "brew-zlib" {= "1.3.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-bison" {= "3.8.2"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "4e935845eaaeacafc6197e46af42cf49ec70c57fdfbe5d16a8e2db3c77559738--mysql-9.0.1_2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "afd3d4683e3a788ab3784d8e56804099a47fffb6094912fd5089da62a8e7fc44--mysql--9.0.1_2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "33973690a3acb0221250abade10d851772352c4a817bc08c655feac36b45e021--mysql--9.0.1_2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7c1311a8c0e5d64af896461dda766b80811ab56496a20ea8833f523c0bdeb747--mysql--9.0.1_2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "00ca0c0d645925e05fbcff0fb13c97b16b30180c7c85e28d14f1906625c505c9--mysql--9.0.1_2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "714eec9aa785252247c45354a415240ef07ebe4918e115b1895702979726b138--mysql--9.0.1_2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "31d678a1e8d90279ba5439cdcba235bfc274e7fed60dd47fe03c810e0c642cd8--mysql--9.0.1_2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "mysql" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "mysql" ]
+]

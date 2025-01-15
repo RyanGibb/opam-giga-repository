@@ -1,0 +1,136 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C routines to compute the Discrete Fourier Transform"
+description: """
+C routines to compute the Discrete Fourier Transform"""
+extra-source "728d7a6c60e1c23883067cccce1e1e4c4a8dc7d0860fce6bfbce98c36e7e9257--fftw--3.3.10_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:d506a2d2ca1b49fdfe64bf2ffca4fca70f7e86d4e1006979dabcde37fc359c9b"
+  checksum: [
+    "sha256=d506a2d2ca1b49fdfe64bf2ffca4fca70f7e86d4e1006979dabcde37fc359c9b"
+  ]
+}
+extra-source "1c094d8bc8e9264d05d867c36b37d94744fd3772353657a34168160f1a109ea7--fftw-3.3.10_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/manifests/3.3.10_1"
+}
+extra-source "097ca4b784649b97e22ef909e76b90b54a8156521bb34887f80a92043fa01bf9--fftw--3.3.10_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:3a0edb94f8ab04e42f953dc408ff0e7dcee211771091dcb6db93f9cfca79ae0a"
+  checksum: [
+    "sha256=3a0edb94f8ab04e42f953dc408ff0e7dcee211771091dcb6db93f9cfca79ae0a"
+  ]
+}
+extra-source "e82aac37f2db36150d01d184c9ef65dcd3f494714dab85f887df94a88aff3236--fftw--3.3.10_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:0bb0537238a59cc4677738091ec67b65e7bd12fafe3072e091e20a1143232322"
+  checksum: [
+    "sha256=0bb0537238a59cc4677738091ec67b65e7bd12fafe3072e091e20a1143232322"
+  ]
+}
+extra-source "2552a5c2407d507d7d503f645a8150edf2cdee938b7c8b1f1b3ad2bf6121f89e--fftw--3.3.10_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:31e8c75b13d33a17164163f3c5f5bb6605e26b2328a617696b0fae5aa08e8ad4"
+  checksum: [
+    "sha256=31e8c75b13d33a17164163f3c5f5bb6605e26b2328a617696b0fae5aa08e8ad4"
+  ]
+}
+extra-source "e992b22265153052174c90f3cb139070b5a04eb1b5ad7ddf0e162229f755b8ab--fftw--3.3.10_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:f118b9b10a302aaa0a937b9c3004a1610a522f365022ab12e90e7ee929823ff4"
+  checksum: [
+    "sha256=f118b9b10a302aaa0a937b9c3004a1610a522f365022ab12e90e7ee929823ff4"
+  ]
+}
+extra-source "44fbf249da86688ef9f41163825f106b10445f77764d3d3cca633e1297d0b8a2--fftw--3.3.10_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:dc7a704928be8c4724db42be3161aebf3f0d3b8e0f79e893bc1b294aed4ca770"
+  checksum: [
+    "sha256=dc7a704928be8c4724db42be3161aebf3f0d3b8e0f79e893bc1b294aed4ca770"
+  ]
+}
+extra-source "6e19ee08ca4837e31b9b7ecbe75ab4f06989b740d01e4b1ffe19d86cdeb8ff81--fftw--3.3.10_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:ac39928c08c6cec08f61b31c37ea69be21f6020c5c50bbdc66751fc1907ee600"
+  checksum: [
+    "sha256=ac39928c08c6cec08f61b31c37ea69be21f6020c5c50bbdc66751fc1907ee600"
+  ]
+}
+extra-source "18d79fe37aa8d9194049586298b274425d87c89c400212c077fc46b4389b5abe--fftw--3.3.10_1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:bd3ae1b553913b3b627bd1af592d84da4c6a93e45dde5af4df7c393564b0f174"
+  checksum: [
+    "sha256=bd3ae1b553913b3b627bd1af592d84da4c6a93e45dde5af4df7c393564b0f174"
+  ]
+}
+extra-source "ea73dec38280ab576cf04e478aee27d5baa03bbaa62d63c163dfe71f522be8f4--fftw--3.3.10_1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:de50d4cd3e5de39ccbc168a8eb8555f9e36609198c9e4f91c1d1da122674d066"
+  checksum: [
+    "sha256=de50d4cd3e5de39ccbc168a8eb8555f9e36609198c9e4f91c1d1da122674d066"
+  ]
+}
+extra-source "84f5a311659e2ee0b8261b2268ac26c1a341145bd8c617cd9d52831425c251d5--fftw--3.3.10_1.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:f2b0548dfd646545af732cb6ee7f1d58c1950067e4f7fd558655fb388e464897"
+  checksum: [
+    "sha256=f2b0548dfd646545af732cb6ee7f1d58c1950067e4f7fd558655fb388e464897"
+  ]
+}
+extra-source "511f534c26a272262d1027508b744f5ec7c6ea08906b25644fce4f8b8e2e24e2--fftw--3.3.10_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fftw/blobs/sha256:c2b552eb0c8d31f577713c2e39ed6a22bd430d30d430d242767f253057839dca"
+  checksum: [
+    "sha256=c2b552eb0c8d31f577713c2e39ed6a22bd430d30d430d242767f253057839dca"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-hwloc" {= "2.11.1"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-pmix" {= "5.0.3"}
+  "brew-open-mpi" {= "5.0.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1c094d8bc8e9264d05d867c36b37d94744fd3772353657a34168160f1a109ea7--fftw-3.3.10_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "728d7a6c60e1c23883067cccce1e1e4c4a8dc7d0860fce6bfbce98c36e7e9257--fftw--3.3.10_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "097ca4b784649b97e22ef909e76b90b54a8156521bb34887f80a92043fa01bf9--fftw--3.3.10_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e82aac37f2db36150d01d184c9ef65dcd3f494714dab85f887df94a88aff3236--fftw--3.3.10_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2552a5c2407d507d7d503f645a8150edf2cdee938b7c8b1f1b3ad2bf6121f89e--fftw--3.3.10_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e992b22265153052174c90f3cb139070b5a04eb1b5ad7ddf0e162229f755b8ab--fftw--3.3.10_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "44fbf249da86688ef9f41163825f106b10445f77764d3d3cca633e1297d0b8a2--fftw--3.3.10_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6e19ee08ca4837e31b9b7ecbe75ab4f06989b740d01e4b1ffe19d86cdeb8ff81--fftw--3.3.10_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "18d79fe37aa8d9194049586298b274425d87c89c400212c077fc46b4389b5abe--fftw--3.3.10_1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ea73dec38280ab576cf04e478aee27d5baa03bbaa62d63c163dfe71f522be8f4--fftw--3.3.10_1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "84f5a311659e2ee0b8261b2268ac26c1a341145bd8c617cd9d52831425c251d5--fftw--3.3.10_1.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "511f534c26a272262d1027508b744f5ec7c6ea08906b25644fce4f8b8e2e24e2--fftw--3.3.10_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "fftw" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "fftw" ]
+]

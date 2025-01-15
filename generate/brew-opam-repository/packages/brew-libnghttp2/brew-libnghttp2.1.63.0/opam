@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "HTTP/2 C Library"
+description: """
+HTTP/2 C Library"""
+extra-source "4b07aefeeef1b2253dcf2a078bcf79d93992397aed56bdd4e15f7ae719780152--libnghttp2--1.63.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:3995cd6d0430dae1b3701080548b2b71a32fb6a2ccf32ecaa835f36eee7cbb38"
+  checksum: [
+    "sha256=3995cd6d0430dae1b3701080548b2b71a32fb6a2ccf32ecaa835f36eee7cbb38"
+  ]
+}
+extra-source "e63c5bc0f458327f00ee55e74895b72e64faad010393790efba6fc3e26689285--libnghttp2-1.63.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/manifests/1.63.0"
+}
+extra-source "fbc2bcc32b851aeaea7fcecbd7629e2ef8a02a2bffa359f1faebcdeaff7f733f--libnghttp2--1.63.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:6abd774863aed37534c322e3d87c6676970478384b80fe04b1587b4e4ea29ba3"
+  checksum: [
+    "sha256=6abd774863aed37534c322e3d87c6676970478384b80fe04b1587b4e4ea29ba3"
+  ]
+}
+extra-source "f863e042d9fa7cfb9bf18c87552447c78f5d38d47350a3d037dcba0ae264657f--libnghttp2--1.63.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:8d8295aef078f83d3a316d20cb8feae89bb8cd84bbb53b3c3b66dd178aa92101"
+  checksum: [
+    "sha256=8d8295aef078f83d3a316d20cb8feae89bb8cd84bbb53b3c3b66dd178aa92101"
+  ]
+}
+extra-source "49a138a36e8b00e3966a0cb166c922bd95fa5a15e2d069d22270170c6cebb7fe--libnghttp2--1.63.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:f29d667c9dc0f9898bcd889c29c8b1b1384128cc4640a8a657d622570b8aaa1d"
+  checksum: [
+    "sha256=f29d667c9dc0f9898bcd889c29c8b1b1384128cc4640a8a657d622570b8aaa1d"
+  ]
+}
+extra-source "8e6aea1ba727b06d736e8076a1c07bf3ebe569c9d2c3892657fec596ae99d7ed--libnghttp2--1.63.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:565d7dbdb9108d0bcf0ce8aa47bee5d508107cc8c369db77091450aebdcc449a"
+  checksum: [
+    "sha256=565d7dbdb9108d0bcf0ce8aa47bee5d508107cc8c369db77091450aebdcc449a"
+  ]
+}
+extra-source "137151b980aab7a35430fc0de73b0fe259ba7600d0f1c99cceece5ed59b41e87--libnghttp2--1.63.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:7cd2fd7fe202c679aadf5a2318e97d464bef03c23dbc24fc2f9d5cb6b1628d7f"
+  checksum: [
+    "sha256=7cd2fd7fe202c679aadf5a2318e97d464bef03c23dbc24fc2f9d5cb6b1628d7f"
+  ]
+}
+extra-source "1006be96b88ba136f557b349c50a821ae7876259975c9b62cdb95be70062a7b1--libnghttp2--1.63.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:8464820d193c65e2ebf18751cee6dda918ec6a2d8323560248cc8b1984b3a66f"
+  checksum: [
+    "sha256=8464820d193c65e2ebf18751cee6dda918ec6a2d8323560248cc8b1984b3a66f"
+  ]
+}
+extra-source "4728316150aa23b0f2448e648eeb392fd9da602679d1151347870af3d33cb5e3--libnghttp2--1.63.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:b72e73226c370de2ba1680f11e0ac5f69bd64235756c5bea5a7dbaffc48a6ea2"
+  checksum: [
+    "sha256=b72e73226c370de2ba1680f11e0ac5f69bd64235756c5bea5a7dbaffc48a6ea2"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "e63c5bc0f458327f00ee55e74895b72e64faad010393790efba6fc3e26689285--libnghttp2-1.63.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "4b07aefeeef1b2253dcf2a078bcf79d93992397aed56bdd4e15f7ae719780152--libnghttp2--1.63.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fbc2bcc32b851aeaea7fcecbd7629e2ef8a02a2bffa359f1faebcdeaff7f733f--libnghttp2--1.63.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f863e042d9fa7cfb9bf18c87552447c78f5d38d47350a3d037dcba0ae264657f--libnghttp2--1.63.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "49a138a36e8b00e3966a0cb166c922bd95fa5a15e2d069d22270170c6cebb7fe--libnghttp2--1.63.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8e6aea1ba727b06d736e8076a1c07bf3ebe569c9d2c3892657fec596ae99d7ed--libnghttp2--1.63.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "137151b980aab7a35430fc0de73b0fe259ba7600d0f1c99cceece5ed59b41e87--libnghttp2--1.63.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1006be96b88ba136f557b349c50a821ae7876259975c9b62cdb95be70062a7b1--libnghttp2--1.63.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4728316150aa23b0f2448e648eeb392fd9da602679d1151347870af3d33cb5e3--libnghttp2--1.63.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libnghttp2" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libnghttp2" ]
+]

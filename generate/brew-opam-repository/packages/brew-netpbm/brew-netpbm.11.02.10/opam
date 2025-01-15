@@ -1,0 +1,115 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Image manipulation"
+description: """
+Image manipulation"""
+extra-source "7d3e99cb465c2e4726f4ee5238c1597a4cae1c12139646f9fdc7284917e7af49--netpbm--11.02.10.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:8ad9dc86e227cef0f08635144c51d1fda687c6babc0119ce75c5383fbc66a5bf"
+  checksum: [
+    "sha256=8ad9dc86e227cef0f08635144c51d1fda687c6babc0119ce75c5383fbc66a5bf"
+  ]
+}
+extra-source "ac2a71fb1390bf3a1701f6365b363a825d8cd516773ea3fb7843d1cea4175f28--netpbm-11.02.10.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/manifests/11.02.10"
+}
+extra-source "3d5d3717880144eeb56ae3ae47243125df1b4669dc72fee060d50921324efc0d--netpbm--11.02.10.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:7773b36df6747ad52e2c517ddf740f0e04d1459d56f71f1773b6466968b0eeaa"
+  checksum: [
+    "sha256=7773b36df6747ad52e2c517ddf740f0e04d1459d56f71f1773b6466968b0eeaa"
+  ]
+}
+extra-source "a6c73773dad9965d12c70010b8b36a7ecfd26355a91fb438909de72e58427e61--netpbm--11.02.10.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:735197099e6093d8580e2488905838ebd80c7a7b85f44c4e7403eabafebac491"
+  checksum: [
+    "sha256=735197099e6093d8580e2488905838ebd80c7a7b85f44c4e7403eabafebac491"
+  ]
+}
+extra-source "64fce6de60763b2f10cf84ca40b01502075c39ff8b84318e43c1e02a6e683e9b--netpbm--11.02.10.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:5bd34c284d2fb5380205f68926447bb0d7fe89dfdd3182dfee8e02b57c615420"
+  checksum: [
+    "sha256=5bd34c284d2fb5380205f68926447bb0d7fe89dfdd3182dfee8e02b57c615420"
+  ]
+}
+extra-source "3655748711325b0338ba53c878f266e99548fa97697261189c67b6a969f25d85--netpbm--11.02.10.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:1d5aef35a465aaec583593bde144260e8e6920369216b5bcb668b3d60310f7f4"
+  checksum: [
+    "sha256=1d5aef35a465aaec583593bde144260e8e6920369216b5bcb668b3d60310f7f4"
+  ]
+}
+extra-source "f8a1aab57a746491d96e2c887fafeab7f414415ef4fd58ef8fef4e7643d6c841--netpbm--11.02.10.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:9cf01bfbe158b8f19626610989657fd25a2107c54b68665fedbc9e1a488700f8"
+  checksum: [
+    "sha256=9cf01bfbe158b8f19626610989657fd25a2107c54b68665fedbc9e1a488700f8"
+  ]
+}
+extra-source "b0bf6169e6807c228b03b4cda1e8085a0381337565dcf095fe56cfbcae8a8aaa--netpbm--11.02.10.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:854f6df1d0953cc57c4974ede16c7351dba6008b8536e1bd991a9f6a1a0e7f37"
+  checksum: [
+    "sha256=854f6df1d0953cc57c4974ede16c7351dba6008b8536e1bd991a9f6a1a0e7f37"
+  ]
+}
+extra-source "b4b725c58fc29866c4e1da2e1f6e6b21786718244dbf0cb1b1aaa27ad878d5e5--netpbm--11.02.10.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:92673154f4d60a0dfb84e10f0e4f9ca44560ab745e5d111368e1cf60a3d4f092"
+  checksum: [
+    "sha256=92673154f4d60a0dfb84e10f0e4f9ca44560ab745e5d111368e1cf60a3d4f092"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-apr" {= "1.7.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-apr-util" {= "1.6.3"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-utf8proc" {= "2.9.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-scons" {= "4.8.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-swig" {= "4.2.1"}
+  "brew-subversion" {= "1.14.3"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-jasper" {= "4.2.4"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ac2a71fb1390bf3a1701f6365b363a825d8cd516773ea3fb7843d1cea4175f28--netpbm-11.02.10.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7d3e99cb465c2e4726f4ee5238c1597a4cae1c12139646f9fdc7284917e7af49--netpbm--11.02.10.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3d5d3717880144eeb56ae3ae47243125df1b4669dc72fee060d50921324efc0d--netpbm--11.02.10.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a6c73773dad9965d12c70010b8b36a7ecfd26355a91fb438909de72e58427e61--netpbm--11.02.10.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "64fce6de60763b2f10cf84ca40b01502075c39ff8b84318e43c1e02a6e683e9b--netpbm--11.02.10.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3655748711325b0338ba53c878f266e99548fa97697261189c67b6a969f25d85--netpbm--11.02.10.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f8a1aab57a746491d96e2c887fafeab7f414415ef4fd58ef8fef4e7643d6c841--netpbm--11.02.10.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b0bf6169e6807c228b03b4cda1e8085a0381337565dcf095fe56cfbcae8a8aaa--netpbm--11.02.10.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b4b725c58fc29866c4e1da2e1f6e6b21786718244dbf0cb1b1aaa27ad878d5e5--netpbm--11.02.10.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "netpbm" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "netpbm" ]
+]

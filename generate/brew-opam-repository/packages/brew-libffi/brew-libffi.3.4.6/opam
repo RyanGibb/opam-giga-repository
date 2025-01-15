@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Portable Foreign Function Interface library"
+description: """
+Portable Foreign Function Interface library"""
+extra-source "801694bba7f61c15e96432171d8a764c364a34e13317b5b844ec476c8a791996--libffi--3.4.6.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:3c98bcb95fbcf46bdc04e0bdc87c5253a8f965edc8da1f1fe1213a9e438abc7e"
+  checksum: [
+    "sha256=3c98bcb95fbcf46bdc04e0bdc87c5253a8f965edc8da1f1fe1213a9e438abc7e"
+  ]
+}
+extra-source "2d373c9b8d06ce1d9634d08a4be79711fd482169e98bc830509aa28f3f07926d--libffi-3.4.6.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/manifests/3.4.6"
+}
+extra-source "e4c89327085265f05a95670431bfb2c129c040bbf2921e8ef1c8113172352f1d--libffi--3.4.6.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:d783974753df1f7347d8cef16403e157f0625302848e8267626064c4f79a97d8"
+  checksum: [
+    "sha256=d783974753df1f7347d8cef16403e157f0625302848e8267626064c4f79a97d8"
+  ]
+}
+extra-source "1b45849a311d8c9fa4e3d7358ef25bb3f61b16e2807d1b95a8b88b81afa8a86f--libffi--3.4.6.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:e81237234a3e21d5222c1c8baf4017bc2f2ad7e444fbf58ad6b635fc0ace5078"
+  checksum: [
+    "sha256=e81237234a3e21d5222c1c8baf4017bc2f2ad7e444fbf58ad6b635fc0ace5078"
+  ]
+}
+extra-source "dd3f9a07ff9037067aa0e948730d4181f18628118f36aa26b364b3fe2173ae37--libffi--3.4.6.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:e5adecfb6ddd1a18ccb492c051adfd693eb091c4b24a58ad7b1cecb6afb0a575"
+  checksum: [
+    "sha256=e5adecfb6ddd1a18ccb492c051adfd693eb091c4b24a58ad7b1cecb6afb0a575"
+  ]
+}
+extra-source "00953eb16967f58ad19e586f744372808283e3c228487225920648fefc7c57a2--libffi--3.4.6.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:7a6a1d1dffe41d4e9bf117440190be51c432a2a192945ed8e2e10c4bb1f95ad0"
+  checksum: [
+    "sha256=7a6a1d1dffe41d4e9bf117440190be51c432a2a192945ed8e2e10c4bb1f95ad0"
+  ]
+}
+extra-source "e009ddc9fcb612c2d89dcdfe470ec7f30acd8b8a7e0f7be33c12b3d22493e47c--libffi--3.4.6.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:8b3cb29277a584f1684661823c8232659b04234873430164bc80ba484c8aa8da"
+  checksum: [
+    "sha256=8b3cb29277a584f1684661823c8232659b04234873430164bc80ba484c8aa8da"
+  ]
+}
+extra-source "c8103e3954ddd7feb3bd4dcf3ddd6fbff4975d8e463505d8d26c5ce68478c923--libffi--3.4.6.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:eacdfea3b29d48dc8c3fb7578a9a59dbeb9048eca6493b8cd95605c86652e6de"
+  checksum: [
+    "sha256=eacdfea3b29d48dc8c3fb7578a9a59dbeb9048eca6493b8cd95605c86652e6de"
+  ]
+}
+extra-source "d0ecd775937260789238ece42d04f05f6464962519757794c813472bb9b7e45a--libffi--3.4.6.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:798c3983a917698d5dd0c60063e7b8c1e5b4fc377d9e11d7cba010725eca1bfb"
+  checksum: [
+    "sha256=798c3983a917698d5dd0c60063e7b8c1e5b4fc377d9e11d7cba010725eca1bfb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2d373c9b8d06ce1d9634d08a4be79711fd482169e98bc830509aa28f3f07926d--libffi-3.4.6.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "801694bba7f61c15e96432171d8a764c364a34e13317b5b844ec476c8a791996--libffi--3.4.6.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e4c89327085265f05a95670431bfb2c129c040bbf2921e8ef1c8113172352f1d--libffi--3.4.6.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1b45849a311d8c9fa4e3d7358ef25bb3f61b16e2807d1b95a8b88b81afa8a86f--libffi--3.4.6.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dd3f9a07ff9037067aa0e948730d4181f18628118f36aa26b364b3fe2173ae37--libffi--3.4.6.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "00953eb16967f58ad19e586f744372808283e3c228487225920648fefc7c57a2--libffi--3.4.6.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e009ddc9fcb612c2d89dcdfe470ec7f30acd8b8a7e0f7be33c12b3d22493e47c--libffi--3.4.6.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c8103e3954ddd7feb3bd4dcf3ddd6fbff4975d8e463505d8d26c5ce68478c923--libffi--3.4.6.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d0ecd775937260789238ece42d04f05f6464962519757794c813472bb9b7e45a--libffi--3.4.6.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libffi" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libffi" ]
+]

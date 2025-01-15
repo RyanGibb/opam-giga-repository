@@ -1,0 +1,102 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for reading RAW files from digital photo cameras"
+description: """
+Library for reading RAW files from digital photo cameras"""
+extra-source "ccd138bebbfa463b179e958657d2a3aabb67f95bc04ecc63b17cc34c493f8da7--libraw--0.21.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libraw/blobs/sha256:ba55dd6e2ef79dd0209e014e8daeb551bc570d9e7ac2487d21e3c46560833197"
+  checksum: [
+    "sha256=ba55dd6e2ef79dd0209e014e8daeb551bc570d9e7ac2487d21e3c46560833197"
+  ]
+}
+extra-source "c3f2d55bb029b267a1ff362e85d1e8fa2377ff34c6480c1c97a9011dcc7a301f--libraw-0.21.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libraw/manifests/0.21.3"
+}
+extra-source "48d75ab856552e0cf38dc0dfb3e32fcbcf5f6fcb5b3c56c37aad5a5d6220946c--libraw--0.21.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libraw/blobs/sha256:90c5c097b1a8434966ebd16fe499dbd8450497eb6f6a387f19dd1481f7d071b9"
+  checksum: [
+    "sha256=90c5c097b1a8434966ebd16fe499dbd8450497eb6f6a387f19dd1481f7d071b9"
+  ]
+}
+extra-source "cab31f83c7d7c7fbfa27c577e0c5c31f2ee9662aaf4dbd8885c910a4b3520694--libraw--0.21.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libraw/blobs/sha256:31667768485f1282524aabb8d87d67a5a5486474f46ebf39032332d100951270"
+  checksum: [
+    "sha256=31667768485f1282524aabb8d87d67a5a5486474f46ebf39032332d100951270"
+  ]
+}
+extra-source "990b426436258b05242859cf261e43da04004490ae4444e523b4d375a359ff95--libraw--0.21.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libraw/blobs/sha256:64318f3bc3cec56cb5ff4e2669fcba4e5fd5a5e49f2c4bb392f3000f8d625cb6"
+  checksum: [
+    "sha256=64318f3bc3cec56cb5ff4e2669fcba4e5fd5a5e49f2c4bb392f3000f8d625cb6"
+  ]
+}
+extra-source "de424cc77835796d98e0e7f7d67fbc6a5ef403d5b03a7d253925cfcc894f0770--libraw--0.21.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libraw/blobs/sha256:a838c01a9bbcec7c03e07aef69d05ce9a03c7e9baae6a6548fed400bf50f448d"
+  checksum: [
+    "sha256=a838c01a9bbcec7c03e07aef69d05ce9a03c7e9baae6a6548fed400bf50f448d"
+  ]
+}
+extra-source "2548b2e9032397ce59d1d4ed6c02be9582aeaae9b51674aef8505707af83db60--libraw--0.21.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libraw/blobs/sha256:3d1ddb246412946860765bb57fa3ebb3cfd6d4d1a13be9a1524decb3404e7ff5"
+  checksum: [
+    "sha256=3d1ddb246412946860765bb57fa3ebb3cfd6d4d1a13be9a1524decb3404e7ff5"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-jasper" {= "4.2.4"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-lit" {= "18.1.8"}
+  "brew-libomp" {= "19.1.0"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c3f2d55bb029b267a1ff362e85d1e8fa2377ff34c6480c1c97a9011dcc7a301f--libraw-0.21.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ccd138bebbfa463b179e958657d2a3aabb67f95bc04ecc63b17cc34c493f8da7--libraw--0.21.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "48d75ab856552e0cf38dc0dfb3e32fcbcf5f6fcb5b3c56c37aad5a5d6220946c--libraw--0.21.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cab31f83c7d7c7fbfa27c577e0c5c31f2ee9662aaf4dbd8885c910a4b3520694--libraw--0.21.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "990b426436258b05242859cf261e43da04004490ae4444e523b4d375a359ff95--libraw--0.21.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "de424cc77835796d98e0e7f7d67fbc6a5ef403d5b03a7d253925cfcc894f0770--libraw--0.21.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2548b2e9032397ce59d1d4ed6c02be9582aeaae9b51674aef8505707af83db60--libraw--0.21.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libraw" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libraw" ]
+]

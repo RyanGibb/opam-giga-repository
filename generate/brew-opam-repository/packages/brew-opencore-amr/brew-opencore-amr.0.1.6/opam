@@ -1,0 +1,114 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Audio codecs extracted from Android open source project"
+description: """
+Audio codecs extracted from Android open source project"""
+extra-source "4da7285310d53ef3f5a4f58748dfa58571955ec593d85ed6d9881451dcf05bed--opencore-amr--0.1.6.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:48a7944b5baf1d23777ff16d0f1b44ba3fb1872728e578e245993019895b0075"
+  checksum: [
+    "sha256=48a7944b5baf1d23777ff16d0f1b44ba3fb1872728e578e245993019895b0075"
+  ]
+}
+extra-source "e2036ba279d7fa8546fb4e263e4b1276b5a68551a70e99aca9863561b1039962--opencore-amr-0.1.6.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/manifests/0.1.6"
+}
+extra-source "add15da47a382a416544d98e13b77c88e34be7eca9680eef717774d40d29a9a6--opencore-amr--0.1.6.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:9c8eb887fac92ec6077aff4031f73c6cf493c0e41f1f54e3850e356ee911309d"
+  checksum: [
+    "sha256=9c8eb887fac92ec6077aff4031f73c6cf493c0e41f1f54e3850e356ee911309d"
+  ]
+}
+extra-source "998adff249abebcadb70c96288bc5f59a22c7e3bfdfde24b8fff3b714dabd72e--opencore-amr--0.1.6.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:b9598108fb81e647206266d1ebfd43872454df8d9eb8292e09b550fb190e5c4f"
+  checksum: [
+    "sha256=b9598108fb81e647206266d1ebfd43872454df8d9eb8292e09b550fb190e5c4f"
+  ]
+}
+extra-source "71d7ef899152ae2e95550503f442ae6cf7641ed32160216b79927f8256171667--opencore-amr--0.1.6.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:b9aa683edb4806619271a8f462c455cf2982124660fb03219b5858c22d2eb721"
+  checksum: [
+    "sha256=b9aa683edb4806619271a8f462c455cf2982124660fb03219b5858c22d2eb721"
+  ]
+}
+extra-source "22ff7c36c68b00240bcc5bc14a379856e75fc8a6c92d99f6fed60431621823ea--opencore-amr--0.1.6.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:673be457f0de7494de04b1d079de9074e79e03a74f1fe520227f75d7c7953265"
+  checksum: [
+    "sha256=673be457f0de7494de04b1d079de9074e79e03a74f1fe520227f75d7c7953265"
+  ]
+}
+extra-source "b3fba90a09596d06e44d76360f95bef9cb2f51f32016c3893fe5836b15f78be7--opencore-amr--0.1.6.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:cc0a074376ddcb0b30ab94027b603f8228fa951e35fda58b7bd274ae2efb4206"
+  checksum: [
+    "sha256=cc0a074376ddcb0b30ab94027b603f8228fa951e35fda58b7bd274ae2efb4206"
+  ]
+}
+extra-source "b8086fbe92e2178099af789bc5e49d5942ef638d1fd6148def814546aa17f048--opencore-amr--0.1.6.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:9641b13b82cf4d325e2fc5a0b2576a9ffb6d8d3bead8c6637e4b22a35ed24776"
+  checksum: [
+    "sha256=9641b13b82cf4d325e2fc5a0b2576a9ffb6d8d3bead8c6637e4b22a35ed24776"
+  ]
+}
+extra-source "1a921084782becfefbae7a2c9e075fc62c6ce3f9d7094ba8cc20eccb0b6e6b23--opencore-amr--0.1.6.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:f235307e30e1ff626c14009955d924826d86cf92518ea36707c5e63469d29a8c"
+  checksum: [
+    "sha256=f235307e30e1ff626c14009955d924826d86cf92518ea36707c5e63469d29a8c"
+  ]
+}
+extra-source "9cf84af479de75c4c153853182370517cb1c6375c9a43b46185eb66151e23582--opencore-amr--0.1.6.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:6dea7b138a3e3399d4295b70cd1dd9311ecec98bf6eedb24617b91d2020404f4"
+  checksum: [
+    "sha256=6dea7b138a3e3399d4295b70cd1dd9311ecec98bf6eedb24617b91d2020404f4"
+  ]
+}
+extra-source "921ebd012a9c8fe36f7876a139da08687ab80d5ecdd9e3087bb809dcd8fe666a--opencore-amr--0.1.6.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:afe967f68360acc0d6c3aa40853170f228499bf6917d13257ab3b90a341d1968"
+  checksum: [
+    "sha256=afe967f68360acc0d6c3aa40853170f228499bf6917d13257ab3b90a341d1968"
+  ]
+}
+extra-source "dd6888b6f40f28d878961a548b4ad996d870c19981d166e4decf0fcdf66a7e4b--opencore-amr--0.1.6.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencore-amr/blobs/sha256:63626c6d52b176f1289a792a8dea8845104f85e86538054e88efadbf920a9835"
+  checksum: [
+    "sha256=63626c6d52b176f1289a792a8dea8845104f85e86538054e88efadbf920a9835"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "e2036ba279d7fa8546fb4e263e4b1276b5a68551a70e99aca9863561b1039962--opencore-amr-0.1.6.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "4da7285310d53ef3f5a4f58748dfa58571955ec593d85ed6d9881451dcf05bed--opencore-amr--0.1.6.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "add15da47a382a416544d98e13b77c88e34be7eca9680eef717774d40d29a9a6--opencore-amr--0.1.6.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "998adff249abebcadb70c96288bc5f59a22c7e3bfdfde24b8fff3b714dabd72e--opencore-amr--0.1.6.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "71d7ef899152ae2e95550503f442ae6cf7641ed32160216b79927f8256171667--opencore-amr--0.1.6.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "22ff7c36c68b00240bcc5bc14a379856e75fc8a6c92d99f6fed60431621823ea--opencore-amr--0.1.6.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b3fba90a09596d06e44d76360f95bef9cb2f51f32016c3893fe5836b15f78be7--opencore-amr--0.1.6.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b8086fbe92e2178099af789bc5e49d5942ef638d1fd6148def814546aa17f048--opencore-amr--0.1.6.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1a921084782becfefbae7a2c9e075fc62c6ce3f9d7094ba8cc20eccb0b6e6b23--opencore-amr--0.1.6.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9cf84af479de75c4c153853182370517cb1c6375c9a43b46185eb66151e23582--opencore-amr--0.1.6.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "921ebd012a9c8fe36f7876a139da08687ab80d5ecdd9e3087bb809dcd8fe666a--opencore-amr--0.1.6.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dd6888b6f40f28d878961a548b4ad996d870c19981d166e4decf0fcdf66a7e4b--opencore-amr--0.1.6.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "opencore-amr" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "opencore-amr" ]
+]

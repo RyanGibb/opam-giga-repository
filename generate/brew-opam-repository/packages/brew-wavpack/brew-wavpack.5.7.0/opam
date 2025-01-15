@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Hybrid lossless audio compression"
+description: """
+Hybrid lossless audio compression"""
+extra-source "05c748e20303df0ab5327384e0b3f5f08f5d21b05adb6e81976b881622233f27--wavpack--5.7.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/blobs/sha256:34fa8bce44dec654eccbaf58d97fe7e9ae4824f5aaaf3ed3ac8ea8acf5e04f86"
+  checksum: [
+    "sha256=34fa8bce44dec654eccbaf58d97fe7e9ae4824f5aaaf3ed3ac8ea8acf5e04f86"
+  ]
+}
+extra-source "74f0735433816201dca7d7e02655802510383b398c3a8cce90951f3b15ae51fa--wavpack-5.7.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/manifests/5.7.0"
+}
+extra-source "95a929abc7ef20ea1ae024456958f35869d545d79c2219eb9c15d1d5e7c3c7f5--wavpack--5.7.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/blobs/sha256:8595bdb5181479ab687368280cf55758afde4017d67a15b93923a6dff487734c"
+  checksum: [
+    "sha256=8595bdb5181479ab687368280cf55758afde4017d67a15b93923a6dff487734c"
+  ]
+}
+extra-source "eb15040a074f5802089796bc9224df6dd0bb737f607e6ae26420a0260d46000c--wavpack--5.7.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/blobs/sha256:a52595d292c101c9976c2ef02756e0d90b985a10e58a7305d9a4a31279eecf57"
+  checksum: [
+    "sha256=a52595d292c101c9976c2ef02756e0d90b985a10e58a7305d9a4a31279eecf57"
+  ]
+}
+extra-source "4879b9e1a90a3db80ddbcd6f57564005c3c210b18f5debbf346201ec2800a636--wavpack--5.7.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/blobs/sha256:139b76fb2ed0c471294576ea6ba387fbed526c3c228bee05a2bfced748f6788f"
+  checksum: [
+    "sha256=139b76fb2ed0c471294576ea6ba387fbed526c3c228bee05a2bfced748f6788f"
+  ]
+}
+extra-source "c0964bfdd5ea6e7e68e51c79cd552f9841e4a923f6b33d58cf7465645d30f926--wavpack--5.7.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/blobs/sha256:18dc138bdded56a9eeb9b246b5a1c2b809ab27be62b55fbd19f3a04f96517dc5"
+  checksum: [
+    "sha256=18dc138bdded56a9eeb9b246b5a1c2b809ab27be62b55fbd19f3a04f96517dc5"
+  ]
+}
+extra-source "58cd5ae4aee334298a8d7e4a6afdecca8b451c8fa261206ccb72b8b94c19b6b1--wavpack--5.7.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/blobs/sha256:e0d0a48bca189c2a28edd80c406f3c09693d1f6d351ff21b6bf74b7210bc72e3"
+  checksum: [
+    "sha256=e0d0a48bca189c2a28edd80c406f3c09693d1f6d351ff21b6bf74b7210bc72e3"
+  ]
+}
+extra-source "3b5cf06b3d1c5bc13b8959236236f269c1a6dd57059cbe50e0f1acbed621d9b2--wavpack--5.7.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/blobs/sha256:d920574d1f4493faf11e8d772ed39821159349c22c6de11be99f8058bfbea686"
+  checksum: [
+    "sha256=d920574d1f4493faf11e8d772ed39821159349c22c6de11be99f8058bfbea686"
+  ]
+}
+extra-source "d72162b3dc2e74ecdfb596a035e174a9dde131cb636d72cc466e7d372726e80d--wavpack--5.7.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/wavpack/blobs/sha256:fb9564559131803d0e34f4d72c42ea6d20046197ea49b5fc58250cba812cfb66"
+  checksum: [
+    "sha256=fb9564559131803d0e34f4d72c42ea6d20046197ea49b5fc58250cba812cfb66"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "74f0735433816201dca7d7e02655802510383b398c3a8cce90951f3b15ae51fa--wavpack-5.7.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "05c748e20303df0ab5327384e0b3f5f08f5d21b05adb6e81976b881622233f27--wavpack--5.7.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "95a929abc7ef20ea1ae024456958f35869d545d79c2219eb9c15d1d5e7c3c7f5--wavpack--5.7.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "eb15040a074f5802089796bc9224df6dd0bb737f607e6ae26420a0260d46000c--wavpack--5.7.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4879b9e1a90a3db80ddbcd6f57564005c3c210b18f5debbf346201ec2800a636--wavpack--5.7.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c0964bfdd5ea6e7e68e51c79cd552f9841e4a923f6b33d58cf7465645d30f926--wavpack--5.7.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "58cd5ae4aee334298a8d7e4a6afdecca8b451c8fa261206ccb72b8b94c19b6b1--wavpack--5.7.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3b5cf06b3d1c5bc13b8959236236f269c1a6dd57059cbe50e0f1acbed621d9b2--wavpack--5.7.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d72162b3dc2e74ecdfb596a035e174a9dde131cb636d72cc466e7d372726e80d--wavpack--5.7.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "wavpack" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "wavpack" ]
+]

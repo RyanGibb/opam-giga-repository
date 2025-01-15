@@ -1,0 +1,131 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "High quality, one-dimensional sample-rate conversion library"
+description: """
+High quality, one-dimensional sample-rate conversion library"""
+extra-source "9833180b5a8ac028bd6380c485343590425f4e49487c3a86a5b477324947171d--libsoxr--0.1.3.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:164c5e70f213a0cdd5b9a764da773e79bc35753efc54d46e0710aee172de3640"
+  checksum: [
+    "sha256=164c5e70f213a0cdd5b9a764da773e79bc35753efc54d46e0710aee172de3640"
+  ]
+}
+extra-source "f10988e95845131f890c95b52caea83e46332718a0787ff7b473f71e9ca6e536--libsoxr-0.1.3-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/manifests/0.1.3-1"
+}
+extra-source "3c522630830dba31a3770e07cffa795705a9ad1cc0344e3073213f22f809695c--libsoxr--0.1.3.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:00d2a5318828b9120aaa460510b5d23edee43f1e5db04cf74ba12a3908642d3c"
+  checksum: [
+    "sha256=00d2a5318828b9120aaa460510b5d23edee43f1e5db04cf74ba12a3908642d3c"
+  ]
+}
+extra-source "ea3e1b5a041c69ecbfb2832f5ebbd6d4b024a1aec27145660b0fc97e4655f568--libsoxr--0.1.3.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:baddfdda71b784b3d94f84e9f7a1b8bcfec59762baddf9e3ccc67c19fb41cee0"
+  checksum: [
+    "sha256=baddfdda71b784b3d94f84e9f7a1b8bcfec59762baddf9e3ccc67c19fb41cee0"
+  ]
+}
+extra-source "4fa61f2ff8b329d11d51288bf28b795ac388913b10197b0dcf56f3d2c7f880a9--libsoxr--0.1.3.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:530b083606fb1bd4801d7364ba55607304c5c89696d82dcc8a7a5482d73f192c"
+  checksum: [
+    "sha256=530b083606fb1bd4801d7364ba55607304c5c89696d82dcc8a7a5482d73f192c"
+  ]
+}
+extra-source "3921677559ff5e6ce45563b3665abe4328d553e7a17538e47ff49167459a603b--libsoxr--0.1.3.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:458c15f8d4dbe92d51959fd62662b275475c36f379581385681975fbba90c8f1"
+  checksum: [
+    "sha256=458c15f8d4dbe92d51959fd62662b275475c36f379581385681975fbba90c8f1"
+  ]
+}
+extra-source "6d4160764cf1debe00e14c2565a2bbb36f32918f1b9198a1b8df27aec9a8c48f--libsoxr--0.1.3.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:f1a61556ee8195d611cdf735cad6f36a841cf8ef66fe5e49030b8932cd73033d"
+  checksum: [
+    "sha256=f1a61556ee8195d611cdf735cad6f36a841cf8ef66fe5e49030b8932cd73033d"
+  ]
+}
+extra-source "ac9967883624d1b27919563386046955aa185f1bba2d655884e9abe523b9403e--libsoxr--0.1.3.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:dd14558c84be8ea6b19408a9e3c59cb273b19334fb59220e8681315507d867ed"
+  checksum: [
+    "sha256=dd14558c84be8ea6b19408a9e3c59cb273b19334fb59220e8681315507d867ed"
+  ]
+}
+extra-source "dac420c8d57f13f6753c99ee427381327b6481d238b596d437c27789e26d535b--libsoxr--0.1.3.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:616e7ec0eac9aa1322b9c32a1e2ba71ce18c36ee9cbfc854b43c77153006c142"
+  checksum: [
+    "sha256=616e7ec0eac9aa1322b9c32a1e2ba71ce18c36ee9cbfc854b43c77153006c142"
+  ]
+}
+extra-source "0ebb8cf0fad16fc5c4539c0bf581b7c1c2d54fcb6cfc64d1a027857329ee7c97--libsoxr--0.1.3.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:cf7ef980c9553756fa4b267b52e940566dc07b9aecbfea49180dbb2ebdeb433a"
+  checksum: [
+    "sha256=cf7ef980c9553756fa4b267b52e940566dc07b9aecbfea49180dbb2ebdeb433a"
+  ]
+}
+extra-source "fce31bee5fe86671b04f96b05f4c783c890eaa0148d39b2f6c5c6243edfd8a61--libsoxr--0.1.3.catalina.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:6fc775411464312fe93dff80cf50497d7b412b36c8115eaa91fe65c321da755e"
+  checksum: [
+    "sha256=6fc775411464312fe93dff80cf50497d7b412b36c8115eaa91fe65c321da755e"
+  ]
+}
+extra-source "c49be7b2d3161521acdcb1bd4d2d8f5a387b2859932d2bc003e4e6e29b92642e--libsoxr--0.1.3.mojave.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:ddd19b9146079827cd9065afe6853961e8b0d0857f5a06888efc500a25f087e6"
+  checksum: [
+    "sha256=ddd19b9146079827cd9065afe6853961e8b0d0857f5a06888efc500a25f087e6"
+  ]
+}
+extra-source "6b7fe99951625f3e6035d25927f48c3894e733b9f0cb3e489e46726c4815bcdc--libsoxr--0.1.3.high_sierra.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:808ad13bdf13729d2f7e881c34b267bcd6598838d4f47d0dcf5ca5e38ba5db9c"
+  checksum: [
+    "sha256=808ad13bdf13729d2f7e881c34b267bcd6598838d4f47d0dcf5ca5e38ba5db9c"
+  ]
+}
+extra-source "fcb06a1174c1f5ef72ffd7caae65fe242da30cdd463b7435e1304d7162857a2f--libsoxr--0.1.3.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libsoxr/blobs/sha256:1753c0562a6494e1437dc79db88d4672bb4b2e2a2b9134ac85952b555baf8559"
+  checksum: [
+    "sha256=1753c0562a6494e1437dc79db88d4672bb4b2e2a2b9134ac85952b555baf8559"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f10988e95845131f890c95b52caea83e46332718a0787ff7b473f71e9ca6e536--libsoxr-0.1.3-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9833180b5a8ac028bd6380c485343590425f4e49487c3a86a5b477324947171d--libsoxr--0.1.3.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3c522630830dba31a3770e07cffa795705a9ad1cc0344e3073213f22f809695c--libsoxr--0.1.3.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ea3e1b5a041c69ecbfb2832f5ebbd6d4b024a1aec27145660b0fc97e4655f568--libsoxr--0.1.3.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4fa61f2ff8b329d11d51288bf28b795ac388913b10197b0dcf56f3d2c7f880a9--libsoxr--0.1.3.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3921677559ff5e6ce45563b3665abe4328d553e7a17538e47ff49167459a603b--libsoxr--0.1.3.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6d4160764cf1debe00e14c2565a2bbb36f32918f1b9198a1b8df27aec9a8c48f--libsoxr--0.1.3.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ac9967883624d1b27919563386046955aa185f1bba2d655884e9abe523b9403e--libsoxr--0.1.3.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dac420c8d57f13f6753c99ee427381327b6481d238b596d437c27789e26d535b--libsoxr--0.1.3.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0ebb8cf0fad16fc5c4539c0bf581b7c1c2d54fcb6cfc64d1a027857329ee7c97--libsoxr--0.1.3.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fce31bee5fe86671b04f96b05f4c783c890eaa0148d39b2f6c5c6243edfd8a61--libsoxr--0.1.3.catalina.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c49be7b2d3161521acdcb1bd4d2d8f5a387b2859932d2bc003e4e6e29b92642e--libsoxr--0.1.3.mojave.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6b7fe99951625f3e6035d25927f48c3894e733b9f0cb3e489e46726c4815bcdc--libsoxr--0.1.3.high_sierra.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fcb06a1174c1f5ef72ffd7caae65fe242da30cdd463b7435e1304d7162857a2f--libsoxr--0.1.3.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libsoxr" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libsoxr" ]
+]

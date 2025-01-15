@@ -1,0 +1,98 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for decimal floating point arithmetic"
+description: """
+Library for decimal floating point arithmetic"""
+extra-source "889c69e5eb7efe80906efec57ecda7ff74a7c240ee3103625558e728dc7ca2c3--mpdecimal--4.0.0.sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:3d6f4fb042ca6910f8926a094363ccfa1ec8ced0816dc75c6c52f066490d2dc0"
+  checksum: [
+    "sha256=3d6f4fb042ca6910f8926a094363ccfa1ec8ced0816dc75c6c52f066490d2dc0"
+  ]
+}
+extra-source "7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1"
+}
+extra-source "64020ed2cdec62642aca0836141a0f282e3dc472a8ca5a0610a6780c663076a3--mpdecimal--4.0.0.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:0f5f269bed0e6be2de3edfc4b52867e656f993e5bcff40717f26ee94dd0d2211"
+  checksum: [
+    "sha256=0f5f269bed0e6be2de3edfc4b52867e656f993e5bcff40717f26ee94dd0d2211"
+  ]
+}
+extra-source "a9dadc90cf8070e93fdea98523c5750106ae071d268c12827376dc68b3413fe7--mpdecimal--4.0.0.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:377dc5e30dd1292ac1666dd43a447b861ad283024f70a3e914c7e11572ae869e"
+  checksum: [
+    "sha256=377dc5e30dd1292ac1666dd43a447b861ad283024f70a3e914c7e11572ae869e"
+  ]
+}
+extra-source "f7a1a899d1404f0c9c837f61028928d0704d1cdd79728461141555850e51091c--mpdecimal--4.0.0.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:2965eec8a30f462b3bd6a8cc2756c1645e75f4399471594e434e36e886239e2e"
+  checksum: [
+    "sha256=2965eec8a30f462b3bd6a8cc2756c1645e75f4399471594e434e36e886239e2e"
+  ]
+}
+extra-source "15ebf2c436368db4fbc542330f17312813473ea8da422b416b40e5702c39d5da--mpdecimal--4.0.0.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:bb1729bd410275aab1bd276f99fb22678b6ad53de2c9c474fdda854ed0ebaebd"
+  checksum: [
+    "sha256=bb1729bd410275aab1bd276f99fb22678b6ad53de2c9c474fdda854ed0ebaebd"
+  ]
+}
+extra-source "8581ec76bcece8b96a6a36685bdb5ebb9360a0165fc8f1b96191039bc21c21e0--mpdecimal--4.0.0.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:1fd72d5f4b35a3d4735efd7d934154ec8b3666267571f96d64244ad35b3ee814"
+  checksum: [
+    "sha256=1fd72d5f4b35a3d4735efd7d934154ec8b3666267571f96d64244ad35b3ee814"
+  ]
+}
+extra-source "baee7eae7d4f57c065a4bb4da48fb7f2b852a4d975518daeb47671f507aaf337--mpdecimal--4.0.0.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:266a3f517227bb9f3806b18313c3b8a33688f9659e5001751e15f1f38538dacc"
+  checksum: [
+    "sha256=266a3f517227bb9f3806b18313c3b8a33688f9659e5001751e15f1f38538dacc"
+  ]
+}
+extra-source "a1c1856e02623b58adafbdb9d4ea005931a4d38cd091266e7e5995a411b49d4e--mpdecimal--4.0.0.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:57311ecd036fae8d74c541ab5a30944a5a5cfea7abaa6b8c936b7376821edafd"
+  checksum: [
+    "sha256=57311ecd036fae8d74c541ab5a30944a5a5cfea7abaa6b8c936b7376821edafd"
+  ]
+}
+extra-source "552459f21a529f9fd24fb3839a5816bc8359ba8418c89150b63261a3c44a57a4--mpdecimal--4.0.0.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:ca79318fa094531bd57b3f07d5b8574cd9986bac4c876043336ea4176e8c294f"
+  checksum: [
+    "sha256=ca79318fa094531bd57b3f07d5b8574cd9986bac4c876043336ea4176e8c294f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "889c69e5eb7efe80906efec57ecda7ff74a7c240ee3103625558e728dc7ca2c3--mpdecimal--4.0.0.sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "64020ed2cdec62642aca0836141a0f282e3dc472a8ca5a0610a6780c663076a3--mpdecimal--4.0.0.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a9dadc90cf8070e93fdea98523c5750106ae071d268c12827376dc68b3413fe7--mpdecimal--4.0.0.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f7a1a899d1404f0c9c837f61028928d0704d1cdd79728461141555850e51091c--mpdecimal--4.0.0.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "15ebf2c436368db4fbc542330f17312813473ea8da422b416b40e5702c39d5da--mpdecimal--4.0.0.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8581ec76bcece8b96a6a36685bdb5ebb9360a0165fc8f1b96191039bc21c21e0--mpdecimal--4.0.0.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "baee7eae7d4f57c065a4bb4da48fb7f2b852a4d975518daeb47671f507aaf337--mpdecimal--4.0.0.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a1c1856e02623b58adafbdb9d4ea005931a4d38cd091266e7e5995a411b49d4e--mpdecimal--4.0.0.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "552459f21a529f9fd24fb3839a5816bc8359ba8418c89150b63261a3c44a57a4--mpdecimal--4.0.0.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "mpdecimal" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "mpdecimal" ]
+]

@@ -1,0 +1,174 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Tools and libraries to manipulate images in many formats"
+description: """
+Tools and libraries to manipulate images in many formats"""
+extra-source "c705f6c19f81e286db23cd2c05628968fd29895c76b4b04a7f61d98a58254fe4--imagemagick--7.1.1-38_2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:c2cb0b528e9d2265cd80df802438f8c42826c0f394c4862720082a4655061ead"
+  checksum: [
+    "sha256=c2cb0b528e9d2265cd80df802438f8c42826c0f394c4862720082a4655061ead"
+  ]
+}
+extra-source "26fd0258437045c44f6c7d6136541cdeed52318c8225248e8cb7a756d732669d--imagemagick-7.1.1-38_2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imagemagick/manifests/7.1.1-38_2"
+}
+extra-source "6eb34ba4ac399c47c9680e0d18b6c83cd917fe20bc767282d56a9b79028abf3e--imagemagick--7.1.1-38_2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:0131b887acc0b5e150d56154284defec76d80ff059a11ca9f4f14bea290949a8"
+  checksum: [
+    "sha256=0131b887acc0b5e150d56154284defec76d80ff059a11ca9f4f14bea290949a8"
+  ]
+}
+extra-source "0c50c6e537871fa426947b966d75ff6906e6faab6f930e4d00b9beaf1972a0c4--imagemagick--7.1.1-38_2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:0f83ef549c139885ac25385a001d9a9d6de78a49ac00c6b0d554857fede02159"
+  checksum: [
+    "sha256=0f83ef549c139885ac25385a001d9a9d6de78a49ac00c6b0d554857fede02159"
+  ]
+}
+extra-source "98dc6b54e47ba98288a79fffe8a7567472af3421214c9fc4a48fb76b840d5b72--imagemagick--7.1.1-38_2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:d5cf70826f720760a7baf9f53b4b505196fa2c63d150be8925aae0d873f363af"
+  checksum: [
+    "sha256=d5cf70826f720760a7baf9f53b4b505196fa2c63d150be8925aae0d873f363af"
+  ]
+}
+extra-source "6b6560abd03f97e1e399b549d89bf99f0d90ae4f49d74d9741610aecd2252be5--imagemagick--7.1.1-38_2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:0fb63cab295985d97f12b4244149a268f11c9fc73fa7ffd03595c7f7133a03f1"
+  checksum: [
+    "sha256=0fb63cab295985d97f12b4244149a268f11c9fc73fa7ffd03595c7f7133a03f1"
+  ]
+}
+extra-source "121eccca12fc71aa7e15dd1ab31e7486b722de319c2e2ad19f5432650dda531b--imagemagick--7.1.1-38_2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:76d2634d9692e27eb767449178d06999f6863d43e385317f5b3ee37f9c9852f4"
+  checksum: [
+    "sha256=76d2634d9692e27eb767449178d06999f6863d43e385317f5b3ee37f9c9852f4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-jbig2dec" {= "0.20"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-webp" {= "1.4.0"}
+  "brew-leptonica" {= "1.84.1"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-libarchive" {= "3.7.5"}
+  "brew-libidn" {= "1.42"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-pango" {= "1.54.0"}
+  "brew-tesseract" {= "5.4.1"}
+  "brew-ghostscript" {= "10.04.0"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-docbook" {= "5.1"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+  "brew-aom" {= "3.10.0"}
+  "brew-libde265" {= "1.0.15"}
+  "brew-libxml2" {= "2.13.4"}
+  "brew-itstool" {= "2.0.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-shared-mime-info" {= "2.4"}
+  "brew-x265" {= "3.6"}
+  "brew-libheif" {= "1.18.2"}
+  "brew-liblqr" {= "0.4.3"}
+  "brew-jasper" {= "4.2.4"}
+  "brew-lit" {= "18.1.8"}
+  "brew-libomp" {= "19.1.0"}
+  "brew-libraw" {= "0.21.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "26fd0258437045c44f6c7d6136541cdeed52318c8225248e8cb7a756d732669d--imagemagick-7.1.1-38_2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c705f6c19f81e286db23cd2c05628968fd29895c76b4b04a7f61d98a58254fe4--imagemagick--7.1.1-38_2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6eb34ba4ac399c47c9680e0d18b6c83cd917fe20bc767282d56a9b79028abf3e--imagemagick--7.1.1-38_2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0c50c6e537871fa426947b966d75ff6906e6faab6f930e4d00b9beaf1972a0c4--imagemagick--7.1.1-38_2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "98dc6b54e47ba98288a79fffe8a7567472af3421214c9fc4a48fb76b840d5b72--imagemagick--7.1.1-38_2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6b6560abd03f97e1e399b549d89bf99f0d90ae4f49d74d9741610aecd2252be5--imagemagick--7.1.1-38_2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "121eccca12fc71aa7e15dd1ab31e7486b722de319c2e2ad19f5432650dda531b--imagemagick--7.1.1-38_2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "imagemagick" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "imagemagick" ]
+]

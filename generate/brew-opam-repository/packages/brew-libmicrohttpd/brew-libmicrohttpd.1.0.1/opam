@@ -1,0 +1,115 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Light HTTP/1.1 server library"
+description: """
+Light HTTP/1.1 server library"""
+extra-source "d04e6b96854d3195a43e789bf2bf65e9bbe42773ac427c606c7b281af5bd7113--libmicrohttpd--1.0.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:b6b9e3f50d99182aab32438b580f83182cacfa2baa839268ddd83272b6aae0bf"
+  checksum: [
+    "sha256=b6b9e3f50d99182aab32438b580f83182cacfa2baa839268ddd83272b6aae0bf"
+  ]
+}
+extra-source "01cc839b4ae42fa110aac833bd4c4ea38e803b45edd8f86da3d92d2f48922661--libmicrohttpd-1.0.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/manifests/1.0.1"
+}
+extra-source "3f9314631f25ec14de3d6b512af9df310350d3519fa54c0a006d1fff2e113a14--libmicrohttpd--1.0.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:3fda597aeaf2624c37ac9786286acf2eefdb9e4178986da41cea3f6ee039f083"
+  checksum: [
+    "sha256=3fda597aeaf2624c37ac9786286acf2eefdb9e4178986da41cea3f6ee039f083"
+  ]
+}
+extra-source "3f1f7385aa64691b4ed98013332cf413d42c688ad245dbee82b1eca2d080d2ae--libmicrohttpd--1.0.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:a78702c9353f012d0a5a90d5f2d547f3a9e86a8ce14958d73d195d207065e285"
+  checksum: [
+    "sha256=a78702c9353f012d0a5a90d5f2d547f3a9e86a8ce14958d73d195d207065e285"
+  ]
+}
+extra-source "1aac8423ef6320c488dae5f9c16b819069fac714e13c90d08d7a46faa544b986--libmicrohttpd--1.0.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:ef0dceb639806d7098eb56adc2b6dce9025686ba9a1873dae74288761fabafda"
+  checksum: [
+    "sha256=ef0dceb639806d7098eb56adc2b6dce9025686ba9a1873dae74288761fabafda"
+  ]
+}
+extra-source "a4656711029c8bad8b93b5daa0d48e56df1b0281a346f1560550b3ba1e12c9c3--libmicrohttpd--1.0.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:a99ea7af39d9da744e0cbbea017044f1c2c902776e391cafa567030ecdc11526"
+  checksum: [
+    "sha256=a99ea7af39d9da744e0cbbea017044f1c2c902776e391cafa567030ecdc11526"
+  ]
+}
+extra-source "eba5d905f03b573e5384c7d556ca7bdc20b86ead24ae991cb6e03732c7fe058f--libmicrohttpd--1.0.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:70acab5386e2689227706740afee9a6afe4ec50ec4267b9386d974177e97b423"
+  checksum: [
+    "sha256=70acab5386e2689227706740afee9a6afe4ec50ec4267b9386d974177e97b423"
+  ]
+}
+extra-source "173644e2c0b5c5c4f3e6ec9b3e37d5bd1b69e1bd48bc470d0cb2e3fb50adb72c--libmicrohttpd--1.0.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:c1be769ed563cebdb5d757aea93effa91d5ad0925dabcbad0adde31a82edbce0"
+  checksum: [
+    "sha256=c1be769ed563cebdb5d757aea93effa91d5ad0925dabcbad0adde31a82edbce0"
+  ]
+}
+extra-source "890d0833e371c82a85b5f8b5178ef7c3c5f9fcaff49ff2566df3cfd20d9ae02b--libmicrohttpd--1.0.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:4a3501d408795303c34902781102f7665197d97b1c1f33ed1c4da2a87c42b8fd"
+  checksum: [
+    "sha256=4a3501d408795303c34902781102f7665197d97b1c1f33ed1c4da2a87c42b8fd"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libunistring" {= "1.2"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "01cc839b4ae42fa110aac833bd4c4ea38e803b45edd8f86da3d92d2f48922661--libmicrohttpd-1.0.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d04e6b96854d3195a43e789bf2bf65e9bbe42773ac427c606c7b281af5bd7113--libmicrohttpd--1.0.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3f9314631f25ec14de3d6b512af9df310350d3519fa54c0a006d1fff2e113a14--libmicrohttpd--1.0.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3f1f7385aa64691b4ed98013332cf413d42c688ad245dbee82b1eca2d080d2ae--libmicrohttpd--1.0.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1aac8423ef6320c488dae5f9c16b819069fac714e13c90d08d7a46faa544b986--libmicrohttpd--1.0.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a4656711029c8bad8b93b5daa0d48e56df1b0281a346f1560550b3ba1e12c9c3--libmicrohttpd--1.0.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "eba5d905f03b573e5384c7d556ca7bdc20b86ead24ae991cb6e03732c7fe058f--libmicrohttpd--1.0.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "173644e2c0b5c5c4f3e6ec9b3e37d5bd1b69e1bd48bc470d0cb2e3fb50adb72c--libmicrohttpd--1.0.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "890d0833e371c82a85b5f8b5178ef7c3c5f9fcaff49ff2566df3cfd20d9ae02b--libmicrohttpd--1.0.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libmicrohttpd" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libmicrohttpd" ]
+]

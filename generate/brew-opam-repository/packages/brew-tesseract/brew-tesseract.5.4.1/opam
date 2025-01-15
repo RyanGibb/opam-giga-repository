@@ -1,0 +1,149 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "OCR (Optical Character Recognition) engine"
+description: """
+OCR (Optical Character Recognition) engine"""
+extra-source "2b25b519fe6d7a16e7c4284d15861d7afbaa219fbf5daa597e751cfc62373bc3--tesseract--5.4.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/blobs/sha256:1aa1e95a7c392b42a06b10dc07ca4e3d068d4acb7d350fc8afa345187d7c0c6f"
+  checksum: [
+    "sha256=1aa1e95a7c392b42a06b10dc07ca4e3d068d4acb7d350fc8afa345187d7c0c6f"
+  ]
+}
+extra-source "90a14ece96dee96d869e7eb9be23351b2da94395dbf347f386a130f23cfe1ac8--tesseract-5.4.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/manifests/5.4.1"
+}
+extra-source "6f53ec2218d70d34236dc55c1e89b95b1410876dc6f150c7f32f85175297fd82--tesseract--5.4.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/blobs/sha256:43ad1eb8de45a461536c0d117767e46e50fb92a0d8a940f7022e9c55fef1da93"
+  checksum: [
+    "sha256=43ad1eb8de45a461536c0d117767e46e50fb92a0d8a940f7022e9c55fef1da93"
+  ]
+}
+extra-source "253884c99fb6de00e50b5d6e48e23e3545556f09d9e2f05eea46a090164375c8--tesseract--5.4.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/blobs/sha256:41f0427bedd959c89b6c0aeb4eca98801f229745d50e4aa39dfc05c31785e289"
+  checksum: [
+    "sha256=41f0427bedd959c89b6c0aeb4eca98801f229745d50e4aa39dfc05c31785e289"
+  ]
+}
+extra-source "6d0cc9f887d008c9fba1120d3c746e11b050c0382f2307b33a7e25c67405f727--tesseract--5.4.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/blobs/sha256:0bdf6471b1818008bead07bc19f73128cd915421cbd56e4d8e5a2b78456c97ed"
+  checksum: [
+    "sha256=0bdf6471b1818008bead07bc19f73128cd915421cbd56e4d8e5a2b78456c97ed"
+  ]
+}
+extra-source "a4f928426ae03c1874f32c70a00c20dfec38cdb26653e68ce08409ec528ad61d--tesseract--5.4.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/blobs/sha256:ac7861b3d6ceb629f9618e0e5d73706196738cbb01f90bcc48418d25508b5d68"
+  checksum: [
+    "sha256=ac7861b3d6ceb629f9618e0e5d73706196738cbb01f90bcc48418d25508b5d68"
+  ]
+}
+extra-source "9cb66f7984c2ee57f177aadcca816d11c28efba4be8d8307ca859131eaffaf12--tesseract--5.4.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/blobs/sha256:d063d7ceb42dc5b4b921c5e5268f8f39f1dd710d313416be6e9fb8f2653736ea"
+  checksum: [
+    "sha256=d063d7ceb42dc5b4b921c5e5268f8f39f1dd710d313416be6e9fb8f2653736ea"
+  ]
+}
+extra-source "e4112bb46c35284efacf989de241d3625ef92736ffe1afc5dc3053648df2c6ac--tesseract--5.4.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/blobs/sha256:ac2c5c4c3d242f88fe1eb198e1f0d83c1d714e6db0da42f11752efa084e1e682"
+  checksum: [
+    "sha256=ac2c5c4c3d242f88fe1eb198e1f0d83c1d714e6db0da42f11752efa084e1e682"
+  ]
+}
+extra-source "4bc442f2fb21b4f75d8b6f3aeb9fdbf5629c143233de88d5aa1c6aa9eaa6028a--tesseract--5.4.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tesseract/blobs/sha256:99be97155dc76f21c1ff4522c39a63ed6630c061b7f55c6ed1a8a99abb83ba4b"
+  checksum: [
+    "sha256=99be97155dc76f21c1ff4522c39a63ed6630c061b7f55c6ed1a8a99abb83ba4b"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-webp" {= "1.4.0"}
+  "brew-leptonica" {= "1.84.1"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-libarchive" {= "3.7.5"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-pango" {= "1.54.0"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "90a14ece96dee96d869e7eb9be23351b2da94395dbf347f386a130f23cfe1ac8--tesseract-5.4.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2b25b519fe6d7a16e7c4284d15861d7afbaa219fbf5daa597e751cfc62373bc3--tesseract--5.4.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6f53ec2218d70d34236dc55c1e89b95b1410876dc6f150c7f32f85175297fd82--tesseract--5.4.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "253884c99fb6de00e50b5d6e48e23e3545556f09d9e2f05eea46a090164375c8--tesseract--5.4.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6d0cc9f887d008c9fba1120d3c746e11b050c0382f2307b33a7e25c67405f727--tesseract--5.4.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a4f928426ae03c1874f32c70a00c20dfec38cdb26653e68ce08409ec528ad61d--tesseract--5.4.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9cb66f7984c2ee57f177aadcca816d11c28efba4be8d8307ca859131eaffaf12--tesseract--5.4.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e4112bb46c35284efacf989de241d3625ef92736ffe1afc5dc3053648df2c6ac--tesseract--5.4.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4bc442f2fb21b4f75d8b6f3aeb9fdbf5629c143233de88d5aa1c6aa9eaa6028a--tesseract--5.4.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "tesseract" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "tesseract" ]
+]

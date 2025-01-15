@@ -1,0 +1,137 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Small library for rendering Postscript documents"
+description: """
+Small library for rendering Postscript documents"""
+extra-source "1533f3a68a2635d03bd252d5c162f69ed31af130d19bf35c059efd435977a684--libspectre--0.2.12_2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libspectre/blobs/sha256:d9e00969398b5ccd244aed543e3a6468f56e07dbc1939d7bde6b4b9d19701001"
+  checksum: [
+    "sha256=d9e00969398b5ccd244aed543e3a6468f56e07dbc1939d7bde6b4b9d19701001"
+  ]
+}
+extra-source "0619043e982adeafa6b4d5ba4b9940f09a9cc3179a110f93efa9dc278b9d77ee--libspectre-0.2.12_2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libspectre/manifests/0.2.12_2"
+}
+extra-source "3f0844cd5cc6fe15ab9700e6db782675df160c1ae06d2578441260450996e6b7--libspectre--0.2.12_2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libspectre/blobs/sha256:ef295c014933eb73252356d5f6ef9fcbadacf864fb02335c232f3f109d9c1733"
+  checksum: [
+    "sha256=ef295c014933eb73252356d5f6ef9fcbadacf864fb02335c232f3f109d9c1733"
+  ]
+}
+extra-source "67adb816e201bbc84658f2eb27b4ab620c28aa876a39f357f8dd10bd33439512--libspectre--0.2.12_2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libspectre/blobs/sha256:c7ff644160fb7011b2eeba6c07102db37b587c1f80631f4f2abdd81dbe476dcf"
+  checksum: [
+    "sha256=c7ff644160fb7011b2eeba6c07102db37b587c1f80631f4f2abdd81dbe476dcf"
+  ]
+}
+extra-source "79738db914408e2a337ddb921c2de3e7a3f904afe2e6c33fa3c69b85fbf9eb46--libspectre--0.2.12_2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libspectre/blobs/sha256:5c11e5bf8c575510008c9d7f3cb0cd540d35897521a70d81fb30eb0099bbf658"
+  checksum: [
+    "sha256=5c11e5bf8c575510008c9d7f3cb0cd540d35897521a70d81fb30eb0099bbf658"
+  ]
+}
+extra-source "bfa120cd696b81be92435794250c0c96e481641cbf626e5b774b0e756acb7b50--libspectre--0.2.12_2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libspectre/blobs/sha256:aac4fe3f1a81468053f6652fd67dec5416b759b86060a5e62cb804f5ed4bb6a2"
+  checksum: [
+    "sha256=aac4fe3f1a81468053f6652fd67dec5416b759b86060a5e62cb804f5ed4bb6a2"
+  ]
+}
+extra-source "18ce01c3d9b464acedcf65a09c45378e07a096f3a9ea5b3b50624c9aac806663--libspectre--0.2.12_2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libspectre/blobs/sha256:749030918fe30fbba3b0332ad978765f638c0ce4b1a79b26cf8a632c10631cb4"
+  checksum: [
+    "sha256=749030918fe30fbba3b0332ad978765f638c0ce4b1a79b26cf8a632c10631cb4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-jbig2dec" {= "0.20"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-webp" {= "1.4.0"}
+  "brew-leptonica" {= "1.84.1"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-libarchive" {= "3.7.5"}
+  "brew-libidn" {= "1.42"}
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-pango" {= "1.54.0"}
+  "brew-tesseract" {= "5.4.1"}
+  "brew-ghostscript" {= "10.04.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0619043e982adeafa6b4d5ba4b9940f09a9cc3179a110f93efa9dc278b9d77ee--libspectre-0.2.12_2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "1533f3a68a2635d03bd252d5c162f69ed31af130d19bf35c059efd435977a684--libspectre--0.2.12_2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3f0844cd5cc6fe15ab9700e6db782675df160c1ae06d2578441260450996e6b7--libspectre--0.2.12_2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "67adb816e201bbc84658f2eb27b4ab620c28aa876a39f357f8dd10bd33439512--libspectre--0.2.12_2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "79738db914408e2a337ddb921c2de3e7a3f904afe2e6c33fa3c69b85fbf9eb46--libspectre--0.2.12_2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bfa120cd696b81be92435794250c0c96e481641cbf626e5b774b0e756acb7b50--libspectre--0.2.12_2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "18ce01c3d9b464acedcf65a09c45378e07a096f3a9ea5b3b50624c9aac806663--libspectre--0.2.12_2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libspectre" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libspectre" ]
+]

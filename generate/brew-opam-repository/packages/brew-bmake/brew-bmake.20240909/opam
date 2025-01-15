@@ -1,0 +1,74 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Portable version of NetBSD make(1)"
+description: """
+Portable version of NetBSD make(1)"""
+extra-source "a769fb7b786a1910b08e7f11a75d63f14ab144aa0f83c2918b5d1c562bc5bd46--bmake--20240909.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bmake/blobs/sha256:b32e6100aeabc654941712b475dbd946a219ac92cf4de0dc0b0eb698a8ae884e"
+  checksum: [
+    "sha256=b32e6100aeabc654941712b475dbd946a219ac92cf4de0dc0b0eb698a8ae884e"
+  ]
+}
+extra-source "796593cf8ab5307bba5e6c365bf1a9f38ad53ae16b7cb6d51fe872eade20467b--bmake-20240909.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bmake/manifests/20240909"
+}
+extra-source "3405ebbf4a0453a32e41596df2e3a02f35b007d010c2b334436fdbdc901bbb1f--bmake--20240909.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bmake/blobs/sha256:5b0f1a3acaa654739765d87c9d29a68eaa12ac1d0b8be5e17eb66dbb9f6b8ad0"
+  checksum: [
+    "sha256=5b0f1a3acaa654739765d87c9d29a68eaa12ac1d0b8be5e17eb66dbb9f6b8ad0"
+  ]
+}
+extra-source "bdc18d38437dc02fcf13d74b30553b6b4ac0283103690530aad82d797c7323b0--bmake--20240909.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bmake/blobs/sha256:d48188692fb0fbca7494cf286d201719961951968aeb6fa607b9870c0b16e503"
+  checksum: [
+    "sha256=d48188692fb0fbca7494cf286d201719961951968aeb6fa607b9870c0b16e503"
+  ]
+}
+extra-source "9c4ccd2fa2607f8de290dbaa8b5d2b4fb198540a830fdb13f4595470a05c738d--bmake--20240909.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bmake/blobs/sha256:6a2180e8d58096a845967a153659a4f15f2b6c948e975636d6da6e591bcdacca"
+  checksum: [
+    "sha256=6a2180e8d58096a845967a153659a4f15f2b6c948e975636d6da6e591bcdacca"
+  ]
+}
+extra-source "ec13dc8a9ca8fe32c4202001c1b7b219d973b95f2ce0c1028042fed843cf15ff--bmake--20240909.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bmake/blobs/sha256:6e667b4063d2801fb3d557dc724328331f8640faa53bc5f7f260615a99a904e0"
+  checksum: [
+    "sha256=6e667b4063d2801fb3d557dc724328331f8640faa53bc5f7f260615a99a904e0"
+  ]
+}
+extra-source "ff85d91a33697d0aa7f84524be4a62905449ec64374d6f99518aa272ed73b427--bmake--20240909.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/bmake/blobs/sha256:83403deef7acb0e26e364017440954f556e6e52f0fa3f593a20f9552394fa1b6"
+  checksum: [
+    "sha256=83403deef7acb0e26e364017440954f556e6e52f0fa3f593a20f9552394fa1b6"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "796593cf8ab5307bba5e6c365bf1a9f38ad53ae16b7cb6d51fe872eade20467b--bmake-20240909.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "a769fb7b786a1910b08e7f11a75d63f14ab144aa0f83c2918b5d1c562bc5bd46--bmake--20240909.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3405ebbf4a0453a32e41596df2e3a02f35b007d010c2b334436fdbdc901bbb1f--bmake--20240909.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bdc18d38437dc02fcf13d74b30553b6b4ac0283103690530aad82d797c7323b0--bmake--20240909.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9c4ccd2fa2607f8de290dbaa8b5d2b4fb198540a830fdb13f4595470a05c738d--bmake--20240909.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ec13dc8a9ca8fe32c4202001c1b7b219d973b95f2ce0c1028042fed843cf15ff--bmake--20240909.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ff85d91a33697d0aa7f84524be4a62905449ec64374d6f99518aa272ed73b427--bmake--20240909.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "bmake" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "bmake" ]
+]

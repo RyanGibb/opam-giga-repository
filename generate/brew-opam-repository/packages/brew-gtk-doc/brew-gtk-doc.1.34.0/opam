@@ -1,0 +1,102 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GTK+ documentation tool"
+description: """
+GTK+ documentation tool"""
+extra-source "848c62c57c948134cad7c47282a13814186bbec38222286e2cfca736afac3c3f--gtk-doc--1.34.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/blobs/sha256:5bf40e0e038b25ac0243ed560836896c32503014b3ebe15cc21186525d140756"
+  checksum: [
+    "sha256=5bf40e0e038b25ac0243ed560836896c32503014b3ebe15cc21186525d140756"
+  ]
+}
+extra-source "d257cd9278f8ed438d8c5b7040c6dd1fa11427f8da8106f2738decb5f4e4833a--gtk-doc-1.34.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/manifests/1.34.0"
+}
+extra-source "a1d7bcdb4df08cc043c198105e28f3eac86827d3d2158033a55ddf34f910816e--gtk-doc--1.34.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/blobs/sha256:9192bfcdbd1e2276e324da55f4e7445fe284a6a4f74d3fb0691ef1bac76ebc9a"
+  checksum: [
+    "sha256=9192bfcdbd1e2276e324da55f4e7445fe284a6a4f74d3fb0691ef1bac76ebc9a"
+  ]
+}
+extra-source "cc9f5117c4a57e2413bfd75a14c54b0dfad44a0d1531f4437e5ad4e9620a03cc--gtk-doc--1.34.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/blobs/sha256:493c4822ad0d01b5a4933eedb58ae0860f276286b1e1eaf147d0e875c86b8794"
+  checksum: [
+    "sha256=493c4822ad0d01b5a4933eedb58ae0860f276286b1e1eaf147d0e875c86b8794"
+  ]
+}
+extra-source "0a874f8358d4192c2a1a3b411bf0d302161ee604312053839437442d01084356--gtk-doc--1.34.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/blobs/sha256:544528ea2038bbe7d93aa2e64f7284c4d686d9d368176699dfe2c945b90d5238"
+  checksum: [
+    "sha256=544528ea2038bbe7d93aa2e64f7284c4d686d9d368176699dfe2c945b90d5238"
+  ]
+}
+extra-source "8298200264e8672a46610825979c5963b605f23775038324192bfa55a90e6f68--gtk-doc--1.34.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/blobs/sha256:fced52679062761343b1a541773a946c4b27c9586b86e7b279eb2385388948ab"
+  checksum: [
+    "sha256=fced52679062761343b1a541773a946c4b27c9586b86e7b279eb2385388948ab"
+  ]
+}
+extra-source "62eeb38178b7da537d59446df0938a187fe5431b6d7ac5167aca822fea10073e--gtk-doc--1.34.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/blobs/sha256:b617d540052f7a929a74b954e58c5c3ed1e884d8c7257ce03d0cd687026b2dc0"
+  checksum: [
+    "sha256=b617d540052f7a929a74b954e58c5c3ed1e884d8c7257ce03d0cd687026b2dc0"
+  ]
+}
+extra-source "6645f64619ae095d7e1b84cfb91622546e251bef940c9ba8a9db0643f03f1634--gtk-doc--1.34.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/blobs/sha256:a8cffe2b387f08da0853b204105d71b90c818237c7d0888fdb31b7882a9896f3"
+  checksum: [
+    "sha256=a8cffe2b387f08da0853b204105d71b90c818237c7d0888fdb31b7882a9896f3"
+  ]
+}
+extra-source "45c215223acfa2869cd787d60c2d3872c1fd66c1813570548c1999cf11b27c79--gtk-doc--1.34.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gtk-doc/blobs/sha256:2e2945b68205eeb97c8413fa0a04dcc847742f34b7933f14df5537c61aa8afcc"
+  checksum: [
+    "sha256=2e2945b68205eeb97c8413fa0a04dcc847742f34b7933f14df5537c61aa8afcc"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d257cd9278f8ed438d8c5b7040c6dd1fa11427f8da8106f2738decb5f4e4833a--gtk-doc-1.34.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "848c62c57c948134cad7c47282a13814186bbec38222286e2cfca736afac3c3f--gtk-doc--1.34.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a1d7bcdb4df08cc043c198105e28f3eac86827d3d2158033a55ddf34f910816e--gtk-doc--1.34.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cc9f5117c4a57e2413bfd75a14c54b0dfad44a0d1531f4437e5ad4e9620a03cc--gtk-doc--1.34.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0a874f8358d4192c2a1a3b411bf0d302161ee604312053839437442d01084356--gtk-doc--1.34.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8298200264e8672a46610825979c5963b605f23775038324192bfa55a90e6f68--gtk-doc--1.34.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "62eeb38178b7da537d59446df0938a187fe5431b6d7ac5167aca822fea10073e--gtk-doc--1.34.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6645f64619ae095d7e1b84cfb91622546e251bef940c9ba8a9db0643f03f1634--gtk-doc--1.34.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "45c215223acfa2869cd787d60c2d3872c1fd66c1813570548c1999cf11b27c79--gtk-doc--1.34.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gtk-doc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gtk-doc" ]
+]

@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "CBOR protocol implementation for C and others"
+description: """
+CBOR protocol implementation for C and others"""
+extra-source "fc7a5bcca782578f5cd6d46b589af245bb30d0836d59242f44e94acb20e628bc--libcbor--0.11.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:1316d2dd79be63a69f00cf06f50dc76fd24ad9e08552cff8afcfac0ef405e858"
+  checksum: [
+    "sha256=1316d2dd79be63a69f00cf06f50dc76fd24ad9e08552cff8afcfac0ef405e858"
+  ]
+}
+extra-source "547a8f3a73e95b1a6ae76032004f514d926b4dbe82bab530cb3dd011c85c23ed--libcbor-0.11.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/manifests/0.11.0"
+}
+extra-source "429abdd774568e6392a85768a31081b86d3f19aa4dd484d9c559d6c1096fc3fe--libcbor--0.11.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:d7862b97499968a3bdf6ca866c806bbc81664b465c4703788ff4501e7d77269f"
+  checksum: [
+    "sha256=d7862b97499968a3bdf6ca866c806bbc81664b465c4703788ff4501e7d77269f"
+  ]
+}
+extra-source "a648c68b60bb61cea080f742c86b815e851e43ee61e414e09013cccf3befe786--libcbor--0.11.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:173091f8ffca1b73c4c17bbe5a7a6034da4e561b9e13d6e78ca536f56e364015"
+  checksum: [
+    "sha256=173091f8ffca1b73c4c17bbe5a7a6034da4e561b9e13d6e78ca536f56e364015"
+  ]
+}
+extra-source "cef260120d6f0f624ccf12e3d8f29e2bf00afee7f69f7cf4a87c44941da5c84c--libcbor--0.11.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:cb26f56b5ff9f67eeefcde7767e6a83263ba3736cdfcb3ed632aa2f4acb71197"
+  checksum: [
+    "sha256=cb26f56b5ff9f67eeefcde7767e6a83263ba3736cdfcb3ed632aa2f4acb71197"
+  ]
+}
+extra-source "8a82696b8074dd7f1c91d46c170082aa488a2ec582bff6e6892b3280d0a3f083--libcbor--0.11.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:2adc8eddfa152c381152c94e3514cbabcc1594b56db0f89ac0d63a1461254f15"
+  checksum: [
+    "sha256=2adc8eddfa152c381152c94e3514cbabcc1594b56db0f89ac0d63a1461254f15"
+  ]
+}
+extra-source "42ca71a72078348510ffd33c574189fc8221780ab00b62b828ca4659d97fa5f6--libcbor--0.11.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:edb0c54d2580c8ddff49ffc2cea205af83cbbddbb6baf9f9443ffdf5496b06be"
+  checksum: [
+    "sha256=edb0c54d2580c8ddff49ffc2cea205af83cbbddbb6baf9f9443ffdf5496b06be"
+  ]
+}
+extra-source "7080190df89a0018b7e895fd8f3e50ed7ac63c99137db56c6be8ff045f0c1e32--libcbor--0.11.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:a50c96cf0fd55aff2d31a5b2115f9464b65d7f405339bbbde736413a29d67a59"
+  checksum: [
+    "sha256=a50c96cf0fd55aff2d31a5b2115f9464b65d7f405339bbbde736413a29d67a59"
+  ]
+}
+extra-source "0c3156d899e465ed24de9b69814f288689c6e204e56dd9ba748a33f8c114c177--libcbor--0.11.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:f26df577970defa0194f44b476b2f91d606bce7798c15b5d98cf80038db2f67a"
+  checksum: [
+    "sha256=f26df577970defa0194f44b476b2f91d606bce7798c15b5d98cf80038db2f67a"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "547a8f3a73e95b1a6ae76032004f514d926b4dbe82bab530cb3dd011c85c23ed--libcbor-0.11.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "fc7a5bcca782578f5cd6d46b589af245bb30d0836d59242f44e94acb20e628bc--libcbor--0.11.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "429abdd774568e6392a85768a31081b86d3f19aa4dd484d9c559d6c1096fc3fe--libcbor--0.11.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a648c68b60bb61cea080f742c86b815e851e43ee61e414e09013cccf3befe786--libcbor--0.11.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cef260120d6f0f624ccf12e3d8f29e2bf00afee7f69f7cf4a87c44941da5c84c--libcbor--0.11.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8a82696b8074dd7f1c91d46c170082aa488a2ec582bff6e6892b3280d0a3f083--libcbor--0.11.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "42ca71a72078348510ffd33c574189fc8221780ab00b62b828ca4659d97fa5f6--libcbor--0.11.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7080190df89a0018b7e895fd8f3e50ed7ac63c99137db56c6be8ff045f0c1e32--libcbor--0.11.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0c3156d899e465ed24de9b69814f288689c6e204e56dd9ba748a33f8c114c177--libcbor--0.11.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libcbor" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libcbor" ]
+]

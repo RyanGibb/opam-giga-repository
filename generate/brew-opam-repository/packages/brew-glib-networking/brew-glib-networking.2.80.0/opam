@@ -1,0 +1,139 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Network related modules for glib"
+description: """
+Network related modules for glib"""
+extra-source "e8412c08f00358ab8ad5abcb2d887a35ed6160d0c12aede4fc06a2246ae4db54--glib-networking--2.80.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/blobs/sha256:3d424d6b858a6c4f66d44e51822d375a177c6e3f0b3c42a183c20037abd195ea"
+  checksum: [
+    "sha256=3d424d6b858a6c4f66d44e51822d375a177c6e3f0b3c42a183c20037abd195ea"
+  ]
+}
+extra-source "2d30f8028dc1cea3cd87a33f7164becef7e8aa6aa72b3edf99b28759294bdb26--glib-networking-2.80.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/manifests/2.80.0"
+}
+extra-source "2486dc1d984e51cdb9d7de2e63e57b753a0b20b69d85dfc14d0964b180eec5e9--glib-networking--2.80.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/blobs/sha256:c317dcff3c617af81233d1d14402f37142d2e30977349d700ba2b8246b4f2b91"
+  checksum: [
+    "sha256=c317dcff3c617af81233d1d14402f37142d2e30977349d700ba2b8246b4f2b91"
+  ]
+}
+extra-source "7b32d207e539be111c7923b5c7f9b9788e498035e299c9bdacb09815e87c5c25--glib-networking--2.80.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/blobs/sha256:30b0bc73d7307c7c10eefefdab0d4e5cbada6062d3af70e87eda5cae0d384078"
+  checksum: [
+    "sha256=30b0bc73d7307c7c10eefefdab0d4e5cbada6062d3af70e87eda5cae0d384078"
+  ]
+}
+extra-source "44ffb802ef7504804f0970489548466737589ef403a61a9fc30494e8f0b79e78--glib-networking--2.80.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/blobs/sha256:e4f6a66cbd7b69a095ac7bdc13ebd23cfac4553ccbe954629d0c935c28164f6d"
+  checksum: [
+    "sha256=e4f6a66cbd7b69a095ac7bdc13ebd23cfac4553ccbe954629d0c935c28164f6d"
+  ]
+}
+extra-source "0028f0773b8972501ae156452f4b7940652bc8f68f4f8d870f1824694efc883e--glib-networking--2.80.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/blobs/sha256:77eaced4c03965b9708daa421f20d056f12e7bbf86b29d48aa5b942fe429d557"
+  checksum: [
+    "sha256=77eaced4c03965b9708daa421f20d056f12e7bbf86b29d48aa5b942fe429d557"
+  ]
+}
+extra-source "c427a3aaa1584ff524e1115ae8477766945ced194a923074a915edbfbecc4ea2--glib-networking--2.80.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/blobs/sha256:5f7a104feb68e3b2177090774108af661129297f194f84a3381e90a007d793c0"
+  checksum: [
+    "sha256=5f7a104feb68e3b2177090774108af661129297f194f84a3381e90a007d793c0"
+  ]
+}
+extra-source "fc9289e3f8dd9ed5ae938cb0d00e8ec9fc3ef11638346314a012694e67739413--glib-networking--2.80.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/blobs/sha256:afda408dd3bcd96460597c803669eff4e9c9bf435c2e5201f5b7f20e0295d8c4"
+  checksum: [
+    "sha256=afda408dd3bcd96460597c803669eff4e9c9bf435c2e5201f5b7f20e0295d8c4"
+  ]
+}
+extra-source "1cb162a4c53ddc9d0ee852bf26bac485e42ba56db23634ed2784d35cee6907e7--glib-networking--2.80.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib-networking/blobs/sha256:b50d23dcdaa8cf997507be5876edc09b0f5afc0639a75051a4c738e1995f40ff"
+  checksum: [
+    "sha256=b50d23dcdaa8cf997507be5876edc09b0f5afc0639a75051a4c738e1995f40ff"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libunistring" {= "1.2"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-gsettings-desktop-schemas" {= "47.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2d30f8028dc1cea3cd87a33f7164becef7e8aa6aa72b3edf99b28759294bdb26--glib-networking-2.80.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e8412c08f00358ab8ad5abcb2d887a35ed6160d0c12aede4fc06a2246ae4db54--glib-networking--2.80.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2486dc1d984e51cdb9d7de2e63e57b753a0b20b69d85dfc14d0964b180eec5e9--glib-networking--2.80.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7b32d207e539be111c7923b5c7f9b9788e498035e299c9bdacb09815e87c5c25--glib-networking--2.80.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "44ffb802ef7504804f0970489548466737589ef403a61a9fc30494e8f0b79e78--glib-networking--2.80.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0028f0773b8972501ae156452f4b7940652bc8f68f4f8d870f1824694efc883e--glib-networking--2.80.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c427a3aaa1584ff524e1115ae8477766945ced194a923074a915edbfbecc4ea2--glib-networking--2.80.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fc9289e3f8dd9ed5ae938cb0d00e8ec9fc3ef11638346314a012694e67739413--glib-networking--2.80.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1cb162a4c53ddc9d0ee852bf26bac485e42ba56db23634ed2784d35cee6907e7--glib-networking--2.80.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "glib-networking" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "glib-networking" ]
+]

@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C library implementing the SSH2 protocol"
+description: """
+C library implementing the SSH2 protocol"""
+extra-source "efffee0503091d0936b9523f1fa6ed890e5f9264f64030ad4a95c9ddbb016d99--libssh2--1.11.0_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:5b145cc573590f04158f837d8205b5f3a349a1d473f4f1fd088c6c382febb60d"
+  checksum: [
+    "sha256=5b145cc573590f04158f837d8205b5f3a349a1d473f4f1fd088c6c382febb60d"
+  ]
+}
+extra-source "48ca0c7785b21630a4817c59b72205609ccb0575e7abc64d64af2e61a60b5b0a--libssh2-1.11.0_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/manifests/1.11.0_1"
+}
+extra-source "6addbdc378f43f17567a4a13355e0112b7af9bf23e8d654f5f30cfa3af00fe34--libssh2--1.11.0_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:9a9673e1440a7e82fac8a2cac1c202c8fba66851bb9a16eb70c82de7e23329ec"
+  checksum: [
+    "sha256=9a9673e1440a7e82fac8a2cac1c202c8fba66851bb9a16eb70c82de7e23329ec"
+  ]
+}
+extra-source "a70a2917adfe875f9751c7e6991318d8e941194eda0897f96cec4d067a47c44a--libssh2--1.11.0_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:ec12598827b91ddee213c24b17a2bba833e5e1cbcfaf25b0d514dfd3fe03f527"
+  checksum: [
+    "sha256=ec12598827b91ddee213c24b17a2bba833e5e1cbcfaf25b0d514dfd3fe03f527"
+  ]
+}
+extra-source "b256deb83396937725aaae39af68bab9c9eb6c5e6af35b40dc2c9b6b0512b0f9--libssh2--1.11.0_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:71b9199fd292ab344d388051629500329315e37c20e7329b5c1c6772beed42be"
+  checksum: [
+    "sha256=71b9199fd292ab344d388051629500329315e37c20e7329b5c1c6772beed42be"
+  ]
+}
+extra-source "8a6b5a2ffb67dc3aa728433a780f2e737244304b87ac1ce3f7fa82196c1d5255--libssh2--1.11.0_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:41e860bcf96b8e86bb5f2c321fb1ca14b620adce510cec881eeac2f432e00e5e"
+  checksum: [
+    "sha256=41e860bcf96b8e86bb5f2c321fb1ca14b620adce510cec881eeac2f432e00e5e"
+  ]
+}
+extra-source "f702fd141891a5b75153ed11ef3d75ff9d85a13f9a096f6734d103a1307a7a5b--libssh2--1.11.0_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:9a4b09c1a5b50b847b0104a0976c8d6359de9f567928f57c1a4eae84e6f7134a"
+  checksum: [
+    "sha256=9a4b09c1a5b50b847b0104a0976c8d6359de9f567928f57c1a4eae84e6f7134a"
+  ]
+}
+extra-source "7446b462fb7aa91b1e9cbf11eb226d6bcd7cf5b71466fbf459221b81172a0e5e--libssh2--1.11.0_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:cc09eb9988f274f2f923aa1d047a6df28fc5fe5d5301f9bde8e0df44167dbb29"
+  checksum: [
+    "sha256=cc09eb9988f274f2f923aa1d047a6df28fc5fe5d5301f9bde8e0df44167dbb29"
+  ]
+}
+extra-source "7b7b1648ee5ff9e4adb4239fdd20ad9377b4335a2382146391c5609c06ab0a72--libssh2--1.11.0_1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:41dbed0ea860e38eb76d1a5fb0b68c06d86035a386e138bb50df03dd61803794"
+  checksum: [
+    "sha256=41dbed0ea860e38eb76d1a5fb0b68c06d86035a386e138bb50df03dd61803794"
+  ]
+}
+extra-source "80391434db215a397629ec8a0dc6be1b4c44d512e9878be6a0ed05d5a511b9a8--libssh2--1.11.0_1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:80ec45fff392d1ea106aaceaf6f35fb96847a59ad378ae9e83aecc9470a384a9"
+  checksum: [
+    "sha256=80ec45fff392d1ea106aaceaf6f35fb96847a59ad378ae9e83aecc9470a384a9"
+  ]
+}
+extra-source "dd2e47d97bc9571f46d4876b2ae13568f5ceff7cfb9b99d955fa8d4d262afd3a--libssh2--1.11.0_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:57746d26d6d96b0ba3a7b7021b8f13a466685e8a2172fa49bf4cb44d91d24429"
+  checksum: [
+    "sha256=57746d26d6d96b0ba3a7b7021b8f13a466685e8a2172fa49bf4cb44d91d24429"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "48ca0c7785b21630a4817c59b72205609ccb0575e7abc64d64af2e61a60b5b0a--libssh2-1.11.0_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "efffee0503091d0936b9523f1fa6ed890e5f9264f64030ad4a95c9ddbb016d99--libssh2--1.11.0_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6addbdc378f43f17567a4a13355e0112b7af9bf23e8d654f5f30cfa3af00fe34--libssh2--1.11.0_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a70a2917adfe875f9751c7e6991318d8e941194eda0897f96cec4d067a47c44a--libssh2--1.11.0_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b256deb83396937725aaae39af68bab9c9eb6c5e6af35b40dc2c9b6b0512b0f9--libssh2--1.11.0_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8a6b5a2ffb67dc3aa728433a780f2e737244304b87ac1ce3f7fa82196c1d5255--libssh2--1.11.0_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f702fd141891a5b75153ed11ef3d75ff9d85a13f9a096f6734d103a1307a7a5b--libssh2--1.11.0_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7446b462fb7aa91b1e9cbf11eb226d6bcd7cf5b71466fbf459221b81172a0e5e--libssh2--1.11.0_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b7b1648ee5ff9e4adb4239fdd20ad9377b4335a2382146391c5609c06ab0a72--libssh2--1.11.0_1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "80391434db215a397629ec8a0dc6be1b4c44d512e9878be6a0ed05d5a511b9a8--libssh2--1.11.0_1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dd2e47d97bc9571f46d4876b2ae13568f5ceff7cfb9b99d955fa8d4d262afd3a--libssh2--1.11.0_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libssh2" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libssh2" ]
+]

@@ -1,0 +1,126 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "High-performance, asynchronous messaging library"
+description: """
+High-performance, asynchronous messaging library"""
+extra-source "b0cdb5bf1215268ea9df0a50a39ec96cb18db1529f7dbf9c8f9b889faf959333--zeromq--4.3.5_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:8898ce6776591ad282627fd7215f02ade8f5c5ec3d4dd457ce25aba12c3c1c18"
+  checksum: [
+    "sha256=8898ce6776591ad282627fd7215f02ade8f5c5ec3d4dd457ce25aba12c3c1c18"
+  ]
+}
+extra-source "27b053a576863f2b2aa214070e5737e3a0ce0a073760d26c39902468274880b1--zeromq-4.3.5_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/manifests/4.3.5_1"
+}
+extra-source "8e831d4fde9e6beab2cdd85be3a55a875f6fb50aafd99944a62e09173d8caa5a--zeromq--4.3.5_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:986910eab9519ca92f167b545cde5992124a963b56d1346f2f917368e9a7eb43"
+  checksum: [
+    "sha256=986910eab9519ca92f167b545cde5992124a963b56d1346f2f917368e9a7eb43"
+  ]
+}
+extra-source "f868daa29766f030945da3f574160cea04e95bd8c51a5b5108d561e15b5d6ef2--zeromq--4.3.5_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:3bf8942ece99f0457125006cf729f24823e09a3f6bd2257e8be9873e5783a0a1"
+  checksum: [
+    "sha256=3bf8942ece99f0457125006cf729f24823e09a3f6bd2257e8be9873e5783a0a1"
+  ]
+}
+extra-source "edfe66b0324bb62f248bb551036eff248510819ab9d790bae467825590d780cd--zeromq--4.3.5_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:25344444cf8c0583f65b1f36fdf11edc40ce2fe637fa04e34fe28c730573dadc"
+  checksum: [
+    "sha256=25344444cf8c0583f65b1f36fdf11edc40ce2fe637fa04e34fe28c730573dadc"
+  ]
+}
+extra-source "04691bfb6e8c5175ac3a5a6a5fa23960014e833d7870a5942cc2f6c99c41799a--zeromq--4.3.5_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:0f670cd22b752c640a01f1f3353f8cdf7a6bf31beefad511c17baf315ad848f4"
+  checksum: [
+    "sha256=0f670cd22b752c640a01f1f3353f8cdf7a6bf31beefad511c17baf315ad848f4"
+  ]
+}
+extra-source "37b8ef65be694e242f0d63a36ed5c9541af544ec7ba4144f1552ff83aa4ef31a--zeromq--4.3.5_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:c8c1cafdffdc020cf504bc59888d61a016df6cdfc12650d89a43a846edb77ef2"
+  checksum: [
+    "sha256=c8c1cafdffdc020cf504bc59888d61a016df6cdfc12650d89a43a846edb77ef2"
+  ]
+}
+extra-source "3442e9bcfc6f08c5e1b4dbc744e6e9189fcf79c125a43621292a07530b1ca53f--zeromq--4.3.5_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:3a8bc264cb466f765f65f73b0db3c202899656efa11b2df37bd961a224589e20"
+  checksum: [
+    "sha256=3a8bc264cb466f765f65f73b0db3c202899656efa11b2df37bd961a224589e20"
+  ]
+}
+extra-source "f77f077d84ee44882ac77a70f83456a8c34e18c57d69bf8e7f19f8c494d05fe1--zeromq--4.3.5_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:904b3146ea9aab3b4fdb584c74be1fa762145d3435eef653becc38ce0600c1bc"
+  checksum: [
+    "sha256=904b3146ea9aab3b4fdb584c74be1fa762145d3435eef653becc38ce0600c1bc"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libsodium" {= "1.0.20"}
+  "brew-docbook" {= "5.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-icu4c" {= "74.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "27b053a576863f2b2aa214070e5737e3a0ce0a073760d26c39902468274880b1--zeromq-4.3.5_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "b0cdb5bf1215268ea9df0a50a39ec96cb18db1529f7dbf9c8f9b889faf959333--zeromq--4.3.5_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8e831d4fde9e6beab2cdd85be3a55a875f6fb50aafd99944a62e09173d8caa5a--zeromq--4.3.5_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f868daa29766f030945da3f574160cea04e95bd8c51a5b5108d561e15b5d6ef2--zeromq--4.3.5_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "edfe66b0324bb62f248bb551036eff248510819ab9d790bae467825590d780cd--zeromq--4.3.5_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "04691bfb6e8c5175ac3a5a6a5fa23960014e833d7870a5942cc2f6c99c41799a--zeromq--4.3.5_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "37b8ef65be694e242f0d63a36ed5c9541af544ec7ba4144f1552ff83aa4ef31a--zeromq--4.3.5_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3442e9bcfc6f08c5e1b4dbc744e6e9189fcf79c125a43621292a07530b1ca53f--zeromq--4.3.5_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f77f077d84ee44882ac77a70f83456a8c34e18c57d69bf8e7f19f8c494d05fe1--zeromq--4.3.5_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "zeromq" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "zeromq" ]
+]

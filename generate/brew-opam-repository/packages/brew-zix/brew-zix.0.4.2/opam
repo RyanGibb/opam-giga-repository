@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C99 portability and data structure library"
+description: """
+C99 portability and data structure library"""
+extra-source "ffecd8e292dde4dcffa2b0d07c48fc7db9ff46c20a0763a44ee58d859a79802f--zix--0.4.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/blobs/sha256:eb620be166a0f863628ac51435c6831cc815c2177759ddecaf35d91bf44dfaaf"
+  checksum: [
+    "sha256=eb620be166a0f863628ac51435c6831cc815c2177759ddecaf35d91bf44dfaaf"
+  ]
+}
+extra-source "2d1947bedf50219851c151d7612668855d8ab45a0d67ff1559c1db4a596b4624--zix-0.4.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/manifests/0.4.2"
+}
+extra-source "954f3d2785fc75ca005a5f1597efefacd0d452cb4fe6b96d9c2b72c1185801c0--zix--0.4.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/blobs/sha256:d8435c8e9e3a5753ed713366ae736b135257f29952049c4b233fa7f08e0ec27c"
+  checksum: [
+    "sha256=d8435c8e9e3a5753ed713366ae736b135257f29952049c4b233fa7f08e0ec27c"
+  ]
+}
+extra-source "6023b36712ebbbd59c1345e27cae11784cb60ef74a71e0ae99da7b1ca62888df--zix--0.4.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/blobs/sha256:de2695c9a13e9503c8d1ac8a9214f78ce3a0aa4780a61de4680cf551ff33d086"
+  checksum: [
+    "sha256=de2695c9a13e9503c8d1ac8a9214f78ce3a0aa4780a61de4680cf551ff33d086"
+  ]
+}
+extra-source "ef6f7bf3c1a2db453b12891e42b3c28c0e700aa347a870742073f6d3b546bab4--zix--0.4.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/blobs/sha256:1add27a68635d9b065694cf46e26fb0069e7782748c7272b0c57cf67dd45259a"
+  checksum: [
+    "sha256=1add27a68635d9b065694cf46e26fb0069e7782748c7272b0c57cf67dd45259a"
+  ]
+}
+extra-source "f69ad4bca9167fa5a781ef5cc0d743b23f259c1798a163cbb6e65917b38bd489--zix--0.4.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/blobs/sha256:33009c89adb75856bdfa543b31ddc1696358e3f39b9fb92e0b55bae7a4db9e28"
+  checksum: [
+    "sha256=33009c89adb75856bdfa543b31ddc1696358e3f39b9fb92e0b55bae7a4db9e28"
+  ]
+}
+extra-source "2ef7f51e4b5b9320f8b014765f0a4ab5cf0f22004a0f614d54c569010802682b--zix--0.4.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/blobs/sha256:ec944e9f9fd697dc6341c69419f7a922f949e44b3e3598794c1d1683c7034a06"
+  checksum: [
+    "sha256=ec944e9f9fd697dc6341c69419f7a922f949e44b3e3598794c1d1683c7034a06"
+  ]
+}
+extra-source "a1e6ffa6f57de41c0f2bbb9d039d2ec490875bc654890b38bc3b38066619465f--zix--0.4.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/blobs/sha256:1aa17041299618bf01269c414131d7b2ff0dc74732e825b41a7b66c251447847"
+  checksum: [
+    "sha256=1aa17041299618bf01269c414131d7b2ff0dc74732e825b41a7b66c251447847"
+  ]
+}
+extra-source "2c4e3d59388b779691486136808e83244860c861d906538df38c030f580e268c--zix--0.4.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zix/blobs/sha256:667583fc8f16b2297f949407233524d146ad1bf7ec1f87f625aa70f7b8728879"
+  checksum: [
+    "sha256=667583fc8f16b2297f949407233524d146ad1bf7ec1f87f625aa70f7b8728879"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2d1947bedf50219851c151d7612668855d8ab45a0d67ff1559c1db4a596b4624--zix-0.4.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ffecd8e292dde4dcffa2b0d07c48fc7db9ff46c20a0763a44ee58d859a79802f--zix--0.4.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "954f3d2785fc75ca005a5f1597efefacd0d452cb4fe6b96d9c2b72c1185801c0--zix--0.4.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6023b36712ebbbd59c1345e27cae11784cb60ef74a71e0ae99da7b1ca62888df--zix--0.4.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ef6f7bf3c1a2db453b12891e42b3c28c0e700aa347a870742073f6d3b546bab4--zix--0.4.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f69ad4bca9167fa5a781ef5cc0d743b23f259c1798a163cbb6e65917b38bd489--zix--0.4.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2ef7f51e4b5b9320f8b014765f0a4ab5cf0f22004a0f614d54c569010802682b--zix--0.4.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a1e6ffa6f57de41c0f2bbb9d039d2ec490875bc654890b38bc3b38066619465f--zix--0.4.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2c4e3d59388b779691486136808e83244860c861d906538df38c030f580e268c--zix--0.4.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "zix" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "zix" ]
+]

@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Spell checker and morphological analyzer"
+description: """
+Spell checker and morphological analyzer"""
+extra-source "f5405de92d936d20d1cf11b47bd4d4192e23c535674c637ee3493379bc2ddbeb--hunspell--1.7.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:98c354c4b2d30399b17d20622cddfbbbc27a2a33fbde6c53a9445375ab4d6c61"
+  checksum: [
+    "sha256=98c354c4b2d30399b17d20622cddfbbbc27a2a33fbde6c53a9445375ab4d6c61"
+  ]
+}
+extra-source "4d645bbbc0d533556a1e9cb6d9c5f6aaeb087a44fe0f7454ceba4878104fecd2--hunspell-1.7.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/manifests/1.7.2"
+}
+extra-source "429f4cca51a2cd42e303e37fc9ed04ed206c825ceca008ab6321a102fbb91c99--hunspell--1.7.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:824cc2f1c917cc1a43872bbf9b36fba99072458de10b41631097dcf62e0d82f2"
+  checksum: [
+    "sha256=824cc2f1c917cc1a43872bbf9b36fba99072458de10b41631097dcf62e0d82f2"
+  ]
+}
+extra-source "1e9cd48ba26a405f749b6d412c3f36ff23383ff193e05e8a1201460cd438e157--hunspell--1.7.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:7c5fef61ba38c643c6e29cdb3e835875011411edf1f421a7f0329e1723c6e397"
+  checksum: [
+    "sha256=7c5fef61ba38c643c6e29cdb3e835875011411edf1f421a7f0329e1723c6e397"
+  ]
+}
+extra-source "3a725a30ea6e2dcff4e817ed2c01a8675ebac0b82293aa1c6936ea6073e3c6a6--hunspell--1.7.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:c0770e77b09220da99d9dc5f169a5a815b08b77350a7396ef1017d131fc2a800"
+  checksum: [
+    "sha256=c0770e77b09220da99d9dc5f169a5a815b08b77350a7396ef1017d131fc2a800"
+  ]
+}
+extra-source "35bc13f1837649796c42cfc0878fb254de92091a1c9b16af631e4ee99bc1de54--hunspell--1.7.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:97e8e1bbf7cbad6fa97efd96711e0ff25d46cd98bd19c75dab4d1160c00b591d"
+  checksum: [
+    "sha256=97e8e1bbf7cbad6fa97efd96711e0ff25d46cd98bd19c75dab4d1160c00b591d"
+  ]
+}
+extra-source "32e2bdd838419e391a0212d31054ad352dad21efc28a62e5fdb05c019d610756--hunspell--1.7.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:a4f7164470263a3d9b5511136680475f91c5f4498b6d58097f18a8ee496cc3da"
+  checksum: [
+    "sha256=a4f7164470263a3d9b5511136680475f91c5f4498b6d58097f18a8ee496cc3da"
+  ]
+}
+extra-source "a7ce75728221657ede8f15ee35ff83ce4110ffe4fc0e1df19225e84218b927fb--hunspell--1.7.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:0077d77fd9cc1a47eb3b0e78818c91735899879fab8373acbc41bccf74cbd2cc"
+  checksum: [
+    "sha256=0077d77fd9cc1a47eb3b0e78818c91735899879fab8373acbc41bccf74cbd2cc"
+  ]
+}
+extra-source "697dc377d84630cfb847ea25ef78012cde966f4ab0e42ba859ed391c7625756f--hunspell--1.7.2.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:9d58f7687ab71647524ada2ab980193d7083357072b15510d756e6f90a769830"
+  checksum: [
+    "sha256=9d58f7687ab71647524ada2ab980193d7083357072b15510d756e6f90a769830"
+  ]
+}
+extra-source "6d77313d6836c71df62b19ede117b817fab4e1fee342a0922bcac43b7c8b78f5--hunspell--1.7.2.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:1f0389abc127deb93d7230497181af1d2cbc18a354127b98f7aa1a7a47e56279"
+  checksum: [
+    "sha256=1f0389abc127deb93d7230497181af1d2cbc18a354127b98f7aa1a7a47e56279"
+  ]
+}
+extra-source "7108c5197f2e1b38d7f29038ea695f12966406b5c3e61bc9b7d95f5997c5fa4f--hunspell--1.7.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:09ba93523c0b255617dd5c9771da092b73a9e9f40f0e7f5c727b7b181f6c8248"
+  checksum: [
+    "sha256=09ba93523c0b255617dd5c9771da092b73a9e9f40f0e7f5c727b7b181f6c8248"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-readline" {= "8.2.13"}
+  "brew-gettext" {= "0.22.5"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "4d645bbbc0d533556a1e9cb6d9c5f6aaeb087a44fe0f7454ceba4878104fecd2--hunspell-1.7.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f5405de92d936d20d1cf11b47bd4d4192e23c535674c637ee3493379bc2ddbeb--hunspell--1.7.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "429f4cca51a2cd42e303e37fc9ed04ed206c825ceca008ab6321a102fbb91c99--hunspell--1.7.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1e9cd48ba26a405f749b6d412c3f36ff23383ff193e05e8a1201460cd438e157--hunspell--1.7.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3a725a30ea6e2dcff4e817ed2c01a8675ebac0b82293aa1c6936ea6073e3c6a6--hunspell--1.7.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "35bc13f1837649796c42cfc0878fb254de92091a1c9b16af631e4ee99bc1de54--hunspell--1.7.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "32e2bdd838419e391a0212d31054ad352dad21efc28a62e5fdb05c019d610756--hunspell--1.7.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a7ce75728221657ede8f15ee35ff83ce4110ffe4fc0e1df19225e84218b927fb--hunspell--1.7.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "697dc377d84630cfb847ea25ef78012cde966f4ab0e42ba859ed391c7625756f--hunspell--1.7.2.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6d77313d6836c71df62b19ede117b817fab4e1fee342a0922bcac43b7c8b78f5--hunspell--1.7.2.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7108c5197f2e1b38d7f29038ea695f12966406b5c3e61bc9b7d95f5997c5fa4f--hunspell--1.7.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "hunspell" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "hunspell" ]
+]

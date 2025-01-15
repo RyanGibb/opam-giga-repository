@@ -1,0 +1,305 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Enlightenment Foundation Libraries"
+description: """
+Enlightenment Foundation Libraries"""
+extra-source "f2d46778d977c4a70f7553a23844b9a200ad226cbb8ca58c3595fdf0ad948cea--efl--1.27.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/blobs/sha256:aeac256a77af8f1445ac750fffbc05ec0248ed81a4cdff7c98baba1a54d7ff95"
+  checksum: [
+    "sha256=aeac256a77af8f1445ac750fffbc05ec0248ed81a4cdff7c98baba1a54d7ff95"
+  ]
+}
+extra-source "055588afa45ebb52383238152347bbd3e63964e31889059d87edfa6c0fe377a4--efl-1.27.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/manifests/1.27.0"
+}
+extra-source "9e399ec5a3711c52d9a0052e245e0ea5b43a472af199f2d8539ff5bd3a0b47ef--efl--1.27.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/blobs/sha256:904885617ad5f8629101266eb5ceb70634192e3933d4577f7126fc2c2dd14df9"
+  checksum: [
+    "sha256=904885617ad5f8629101266eb5ceb70634192e3933d4577f7126fc2c2dd14df9"
+  ]
+}
+extra-source "73c8e9e22fbdd516df32639f977a73ee4f4421d86e390f22def34cb4b3aa7ec9--efl--1.27.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/blobs/sha256:6d15f7f09291ed56ba192bd80c7fda195154865485893579db152e113999bf4e"
+  checksum: [
+    "sha256=6d15f7f09291ed56ba192bd80c7fda195154865485893579db152e113999bf4e"
+  ]
+}
+extra-source "3f3d125bdc4b3a5ac9fd05f3f1180ed6efcdc026d0b33f2e5c1dfba11510e057--efl--1.27.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/blobs/sha256:32d3ab7c6f32f5291c394022051146fc8fb980afaa1226a2602436d3e2df5c78"
+  checksum: [
+    "sha256=32d3ab7c6f32f5291c394022051146fc8fb980afaa1226a2602436d3e2df5c78"
+  ]
+}
+extra-source "585d443654097ff00d706cf8bcc4db4277ec0feb22159ac491528082df82c769--efl--1.27.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/blobs/sha256:6bc9494f01ea7397644b6c77085e634dc48c5f557ef82d3fb598671cd66a9984"
+  checksum: [
+    "sha256=6bc9494f01ea7397644b6c77085e634dc48c5f557ef82d3fb598671cd66a9984"
+  ]
+}
+extra-source "bcf3a6a61752c2eb68c66c66c37e552713458112e332716b3d8233eb5c304b88--efl--1.27.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/blobs/sha256:b48ff5fc791cad44d0276a5910d10a216daaa7e2d5db286517000f1e3b6801e4"
+  checksum: [
+    "sha256=b48ff5fc791cad44d0276a5910d10a216daaa7e2d5db286517000f1e3b6801e4"
+  ]
+}
+extra-source "60ec609e03d4626fa8df6c2ab5eb330d39b0f4f341e363b3f7ea8db78592e3e0--efl--1.27.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/blobs/sha256:7c5a8ca44000ef1f51c60d165baaaee3d12ffe75fc6eb317e8f7be590a46e5a7"
+  checksum: [
+    "sha256=7c5a8ca44000ef1f51c60d165baaaee3d12ffe75fc6eb317e8f7be590a46e5a7"
+  ]
+}
+extra-source "ab62c4b726e3e2c9617f8d8ae9e1f1685d892f6867fab5b9eb807dd40ee6db47--efl--1.27.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/efl/blobs/sha256:1d265348e67f8f8691f74219ba1b7b03a6ad1fcc8b99663225cca5a49b3d5ecc"
+  checksum: [
+    "sha256=1d265348e67f8f8691f74219ba1b7b03a6ad1fcc8b99663225cca5a49b3d5ecc"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+  "brew-openblas" {= "0.3.28"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-numpy" {= "2.1.1"}
+  "brew-bullet" {= "3.25"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-z3" {= "4.13.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-dbus" {= "1.14.10"}
+  "brew-fribidi" {= "1.0.15"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-icu4c" {= "74.2"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+  "brew-aom" {= "3.10.0"}
+  "brew-dav1d" {= "1.4.3"}
+  "brew-faac" {= "1.30"}
+  "brew-faad2" {= "2.11.1"}
+  "brew-fdk-aac" {= "2.0.3"}
+  "brew-aribb24" {= "1.0.4"}
+  "brew-frei0r" {= "2.3.3"}
+  "brew-libunistring" {= "1.2"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-lame" {= "3.100"}
+  "brew-libunibreak" {= "6.1"}
+  "brew-libass" {= "0.17.3"}
+  "brew-libbluray" {= "1.3.4"}
+  "brew-cjson" {= "1.7.18"}
+  "brew-libmicrohttpd" {= "1.0.1"}
+  "brew-mbedtls" {= "3.6.1"}
+  "brew-librist" {= "0.2.10"}
+  "brew-libsoxr" {= "0.1.3"}
+  "brew-libssh" {= "0.11.1"}
+  "brew-libvidstab" {= "1.1.1"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-libvpx" {= "1.13.1"}
+  "brew-opencore-amr" {= "0.1.6"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-opus" {= "1.5.2"}
+  "brew-cargo-c" {= "0.10.4"}
+  "brew-rav1e" {= "0.7.1"}
+  "brew-libsamplerate" {= "0.2.2"}
+  "brew-flac" {= "1.4.3"}
+  "brew-mpg123" {= "1.32.7"}
+  "brew-libsndfile" {= "1.2.2"}
+  "brew-rubberband" {= "3.3.0"}
+  "brew-sdl2" {= "2.30.7"}
+  "brew-snappy" {= "1.2.1"}
+  "brew-speex" {= "1.2.1"}
+  "brew-srt" {= "1.5.3"}
+  "brew-svt-av1" {= "2.2.1"}
+  "brew-leptonica" {= "1.84.1"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-libarchive" {= "3.7.5"}
+  "brew-pango" {= "1.54.0"}
+  "brew-tesseract" {= "5.4.1"}
+  "brew-theora" {= "1.1.1"}
+  "brew-x264" {= "r3108"}
+  "brew-x265" {= "3.6"}
+  "brew-xvid" {= "1.3.7"}
+  "brew-libsodium" {= "1.0.20"}
+  "brew-zeromq" {= "4.3.5"}
+  "brew-zimg" {= "3.0.5"}
+  "brew-ffmpeg" {= "7.0.2"}
+  "brew-docutils" {= "0.21.2"}
+  "brew-gdk-pixbuf" {= "2.42.12"}
+  "brew-graphene" {= "1.10.8"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libxi" {= "1.8.2"}
+  "brew-libxtst" {= "1.2.5"}
+  "brew-at-spi2-core" {= "2.54.0"}
+  "brew-gsettings-desktop-schemas" {= "47.1"}
+  "brew-hicolor-icon-theme" {= "0.18"}
+  "brew-libepoxy" {= "1.5.10"}
+  "brew-gtk+3" {= "3.24.43"}
+  "brew-libsass" {= "3.6.6"}
+  "brew-sassc" {= "3.6.2"}
+  "brew-gtk4" {= "4.16.1"}
+  "brew-json-glib" {= "1.10.0"}
+  "brew-libshout" {= "2.4.6"}
+  "brew-glib-networking" {= "2.80.0"}
+  "brew-libpsl" {= "0.21.5"}
+  "brew-libavif" {= "1.1.1"}
+  "brew-gd" {= "2.3.3"}
+  "brew-apr" {= "1.7.5"}
+  "brew-apr-util" {= "1.6.3"}
+  "brew-utf8proc" {= "2.9.0"}
+  "brew-scons" {= "4.8.1"}
+  "brew-subversion" {= "1.14.3"}
+  "brew-jasper" {= "4.2.4"}
+  "brew-netpbm" {= "11.02.10"}
+  "brew-gts" {= "0.7.6"}
+  "brew-librsvg" {= "2.58.4"}
+  "brew-graphviz" {= "12.1.1"}
+  "brew-vala" {= "0.56.17"}
+  "brew-libsoup" {= "3.6.0"}
+  "brew-libusrsctp" {= "0.9.5.0"}
+  "brew-orc" {= "0.4.40"}
+  "brew-srtp" {= "2.6.0"}
+  "brew-taglib" {= "1.13.1"}
+  "brew-libcuefile" {= "r475"}
+  "brew-libreplaygain" {= "r475"}
+  "brew-musepack" {= "r475"}
+  "brew-gstreamer" {= "1.24.7"}
+  "brew-lit" {= "18.1.8"}
+  "brew-libomp" {= "19.1.0"}
+  "brew-libraw" {= "0.21.3"}
+  "brew-jbig2dec" {= "0.20"}
+  "brew-libidn" {= "1.42"}
+  "brew-ghostscript" {= "10.04.0"}
+  "brew-libspectre" {= "0.2.12"}
+  "brew-luajit" {= "2.1.1725453128"}
+  "brew-libgpg-error" {= "1.50"}
+  "brew-libassuan" {= "3.0.1"}
+  "brew-libgcrypt" {= "1.10.3"}
+  "brew-libksba" {= "1.6.7"}
+  "brew-libusb" {= "1.0.27"}
+  "brew-npth" {= "1.7"}
+  "brew-pinentry" {= "1.3.1"}
+  "brew-gnupg" {= "2.4.5"}
+  "brew-gpgme" {= "1.23.2"}
+  "brew-nspr" {= "4.35"}
+  "brew-nss" {= "3.104"}
+  "brew-poppler" {= "24.04.0"}
+  "brew-speexdsp" {= "1.2.1"}
+  "brew-pulseaudio" {= "17.0"}
+  "brew-libxml2" {= "2.13.4"}
+  "brew-itstool" {= "2.0.7"}
+  "brew-shared-mime-info" {= "2.4"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "055588afa45ebb52383238152347bbd3e63964e31889059d87edfa6c0fe377a4--efl-1.27.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f2d46778d977c4a70f7553a23844b9a200ad226cbb8ca58c3595fdf0ad948cea--efl--1.27.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9e399ec5a3711c52d9a0052e245e0ea5b43a472af199f2d8539ff5bd3a0b47ef--efl--1.27.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "73c8e9e22fbdd516df32639f977a73ee4f4421d86e390f22def34cb4b3aa7ec9--efl--1.27.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3f3d125bdc4b3a5ac9fd05f3f1180ed6efcdc026d0b33f2e5c1dfba11510e057--efl--1.27.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "585d443654097ff00d706cf8bcc4db4277ec0feb22159ac491528082df82c769--efl--1.27.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bcf3a6a61752c2eb68c66c66c37e552713458112e332716b3d8233eb5c304b88--efl--1.27.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "60ec609e03d4626fa8df6c2ab5eb330d39b0f4f341e363b3f7ea8db78592e3e0--efl--1.27.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ab62c4b726e3e2c9617f8d8ae9e1f1685d892f6867fab5b9eb807dd40ee6db47--efl--1.27.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "efl" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "efl" ]
+]

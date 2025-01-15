@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "International domain name library"
+description: """
+International domain name library"""
+extra-source "3a0ad7e8e30a3190667dd2ca0d828dd7703a9c89a2e83e8658340fcdf304c7e3--libidn--1.42.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:3f7b0c8c74b68fcdcf253050770060ea3cd6bd2d7fd18f9c16f076d3dbffbd86"
+  checksum: [
+    "sha256=3f7b0c8c74b68fcdcf253050770060ea3cd6bd2d7fd18f9c16f076d3dbffbd86"
+  ]
+}
+extra-source "786bf942d09cb90f8745be7db019bfd8ba760f0bf109f78bb1b787d5ab7490db--libidn-1.42.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/manifests/1.42"
+}
+extra-source "dc69cdfa304ce8b93f499fa6944ed2715d240c8477c7864c10ece866af838b32--libidn--1.42.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:93f6802767b31f0f6b8baeafc8cbc07df4312879cf2416711bc22d66cda14690"
+  checksum: [
+    "sha256=93f6802767b31f0f6b8baeafc8cbc07df4312879cf2416711bc22d66cda14690"
+  ]
+}
+extra-source "bd22563b6f9ef28dcca2e2b5bbf8f7b9838bee0d722d46c2d1c9be45d9dea6d5--libidn--1.42.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:d342445da0046d7c00011f2ae04869066359318d77d24a9eeca8117436c0436c"
+  checksum: [
+    "sha256=d342445da0046d7c00011f2ae04869066359318d77d24a9eeca8117436c0436c"
+  ]
+}
+extra-source "610dcdd047baed68ab57b7026a6d6cd210c2f069fba18cb9e11c8d90124caf7a--libidn--1.42.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:367c1d3e45212508a0a28291d4d750c6abdf6544ca9bd551c9f8367f176c0029"
+  checksum: [
+    "sha256=367c1d3e45212508a0a28291d4d750c6abdf6544ca9bd551c9f8367f176c0029"
+  ]
+}
+extra-source "fe182c5d27d95e43439407514ec023404878d61e73842a6edec42f58cd657b1a--libidn--1.42.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:028793a845059cb3db2abe7de82e257c080df9d3be18457a1b765bd70e0918d3"
+  checksum: [
+    "sha256=028793a845059cb3db2abe7de82e257c080df9d3be18457a1b765bd70e0918d3"
+  ]
+}
+extra-source "daf5e1756328958f87775e113a769aef8f87442af3ac4c041902008c8ce1a551--libidn--1.42.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:f8600f13a5956e11500c5bb96435b2e41ac9ac0870839b630f42b6425a6c58e3"
+  checksum: [
+    "sha256=f8600f13a5956e11500c5bb96435b2e41ac9ac0870839b630f42b6425a6c58e3"
+  ]
+}
+extra-source "f79f1f3aea911346f5ede44cc172da617fc538230bd3892887718ff00e742246--libidn--1.42.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:0653633442ed419791ec797ba4856f4f11c1d56253332325624a7457f137d1fb"
+  checksum: [
+    "sha256=0653633442ed419791ec797ba4856f4f11c1d56253332325624a7457f137d1fb"
+  ]
+}
+extra-source "b15bbd2a2f3ad6371b60071378e76232c33fe7fa7fc03d61054f51e69e1af338--libidn--1.42.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:3cc66b8450c436a5047d8075a004be087d3f21b5322834ef741165487fad262b"
+  checksum: [
+    "sha256=3cc66b8450c436a5047d8075a004be087d3f21b5322834ef741165487fad262b"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "786bf942d09cb90f8745be7db019bfd8ba760f0bf109f78bb1b787d5ab7490db--libidn-1.42.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "3a0ad7e8e30a3190667dd2ca0d828dd7703a9c89a2e83e8658340fcdf304c7e3--libidn--1.42.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dc69cdfa304ce8b93f499fa6944ed2715d240c8477c7864c10ece866af838b32--libidn--1.42.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bd22563b6f9ef28dcca2e2b5bbf8f7b9838bee0d722d46c2d1c9be45d9dea6d5--libidn--1.42.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "610dcdd047baed68ab57b7026a6d6cd210c2f069fba18cb9e11c8d90124caf7a--libidn--1.42.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fe182c5d27d95e43439407514ec023404878d61e73842a6edec42f58cd657b1a--libidn--1.42.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "daf5e1756328958f87775e113a769aef8f87442af3ac4c041902008c8ce1a551--libidn--1.42.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f79f1f3aea911346f5ede44cc172da617fc538230bd3892887718ff00e742246--libidn--1.42.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b15bbd2a2f3ad6371b60071378e76232c33fe7fa7fc03d61054f51e69e1af338--libidn--1.42.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libidn" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libidn" ]
+]

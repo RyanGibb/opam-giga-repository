@@ -1,0 +1,132 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Audio time stretcher tool and library"
+description: """
+Audio time stretcher tool and library"""
+extra-source "18fcab742001f3e00ecfbb966ee15b90db459486a487a13efeca990304f62698--rubberband--3.3.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:0dbc4dfca618f3b7772772a96a267cf39e8a81f2da4e369d11faa47d2892a857"
+  checksum: [
+    "sha256=0dbc4dfca618f3b7772772a96a267cf39e8a81f2da4e369d11faa47d2892a857"
+  ]
+}
+extra-source "d7b37a08cef72d7b9431b19abc4aaa4649642b6610ad91f39146347d2aaeb60a--rubberband-3.3.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/manifests/3.3.0"
+}
+extra-source "fc092ba11ae854eaa7d0f658876bd2fb1555350bd6c74a82001ff155c3cc8c2d--rubberband--3.3.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:6b10db46321e2be0e9925e568ea4d6877aa160b14ca1c3d57bedb0a75c417ee3"
+  checksum: [
+    "sha256=6b10db46321e2be0e9925e568ea4d6877aa160b14ca1c3d57bedb0a75c417ee3"
+  ]
+}
+extra-source "5a210706f3d8ab1e9849b97d628e25625a2e77dc938fa98875f57f4379f22b2c--rubberband--3.3.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:83e5b2a1828926769eb43c37b1ed95fc6acb52b7b80717c628248ba06dcc4b59"
+  checksum: [
+    "sha256=83e5b2a1828926769eb43c37b1ed95fc6acb52b7b80717c628248ba06dcc4b59"
+  ]
+}
+extra-source "6f60da8302612eead6e17a474906967575d73fce5d535a276da3c1533eb4fb44--rubberband--3.3.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:b4650ed709c4c90115f039c4b0d7ad0261a68894a509607d09f1eea066f97884"
+  checksum: [
+    "sha256=b4650ed709c4c90115f039c4b0d7ad0261a68894a509607d09f1eea066f97884"
+  ]
+}
+extra-source "f11d7e9db46f1d92071355c866ff0e6b7e56cd875f55f9395e15fd77f963e151--rubberband--3.3.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:206c609c7172b67789074a7cf6d7f488754c36385c8fa192be5b7d79250baa9f"
+  checksum: [
+    "sha256=206c609c7172b67789074a7cf6d7f488754c36385c8fa192be5b7d79250baa9f"
+  ]
+}
+extra-source "9ea7a43d85dd0423e3ca0bef4a25ed1cf692dcd092e79fb59e1a730a726dbdae--rubberband--3.3.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:97ea0bae9d8ff2f4b0fd8ca64f7f1a12497f1b4c24929b39f02d5e5081da3980"
+  checksum: [
+    "sha256=97ea0bae9d8ff2f4b0fd8ca64f7f1a12497f1b4c24929b39f02d5e5081da3980"
+  ]
+}
+extra-source "6fefa34481f49af2365d0615399528ffbcabb6964dd3fe198251004f3630f4f3--rubberband--3.3.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:b5f0bd10292d5ae466dbd52a08675add720790e38844439fae7539fd90ac8ab3"
+  checksum: [
+    "sha256=b5f0bd10292d5ae466dbd52a08675add720790e38844439fae7539fd90ac8ab3"
+  ]
+}
+extra-source "31e9c9273a9416b80a178e6041ead3b281357e4e97293e29d5c6860f14595f6c--rubberband--3.3.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:7092e475181f31763ba9c7b86d00cde1913357543eb2ed3759b696e7add68650"
+  checksum: [
+    "sha256=7092e475181f31763ba9c7b86d00cde1913357543eb2ed3759b696e7add68650"
+  ]
+}
+extra-source "00bcecd7464a0b18511bb5d832e18ea7faa97d1ce8352f020122ad3396df9cd0--rubberband--3.3.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:bb6f008e5ae2b65ddc195607d321fd533fcf99a0a0e3e4438dc1f960fbf9a11f"
+  checksum: [
+    "sha256=bb6f008e5ae2b65ddc195607d321fd533fcf99a0a0e3e4438dc1f960fbf9a11f"
+  ]
+}
+extra-source "7e2b76d341c4a127bbfb0b41b1ac5cbcd091b1c99ed9c01e289d86752bc2bc9d--rubberband--3.3.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rubberband/blobs/sha256:be989026114a7f007ae1d5dba0ba2f98bb47da7b3023ff60f4d873f1d45a1bc5"
+  checksum: [
+    "sha256=be989026114a7f007ae1d5dba0ba2f98bb47da7b3023ff60f4d873f1d45a1bc5"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libsamplerate" {= "0.2.2"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-flac" {= "1.4.3"}
+  "brew-lame" {= "3.100"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-mpg123" {= "1.32.7"}
+  "brew-opus" {= "1.5.2"}
+  "brew-libsndfile" {= "1.2.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d7b37a08cef72d7b9431b19abc4aaa4649642b6610ad91f39146347d2aaeb60a--rubberband-3.3.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "18fcab742001f3e00ecfbb966ee15b90db459486a487a13efeca990304f62698--rubberband--3.3.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fc092ba11ae854eaa7d0f658876bd2fb1555350bd6c74a82001ff155c3cc8c2d--rubberband--3.3.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5a210706f3d8ab1e9849b97d628e25625a2e77dc938fa98875f57f4379f22b2c--rubberband--3.3.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6f60da8302612eead6e17a474906967575d73fce5d535a276da3c1533eb4fb44--rubberband--3.3.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f11d7e9db46f1d92071355c866ff0e6b7e56cd875f55f9395e15fd77f963e151--rubberband--3.3.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9ea7a43d85dd0423e3ca0bef4a25ed1cf692dcd092e79fb59e1a730a726dbdae--rubberband--3.3.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6fefa34481f49af2365d0615399528ffbcabb6964dd3fe198251004f3630f4f3--rubberband--3.3.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "31e9c9273a9416b80a178e6041ead3b281357e4e97293e29d5c6860f14595f6c--rubberband--3.3.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "00bcecd7464a0b18511bb5d832e18ea7faa97d1ce8352f020122ad3396df9cd0--rubberband--3.3.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e2b76d341c4a127bbfb0b41b1ac5cbcd091b1c99ed9c01e289d86752bc2bc9d--rubberband--3.3.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "rubberband" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "rubberband" ]
+]

@@ -1,0 +1,74 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for manipulating PNG images"
+description: """
+Library for manipulating PNG images"""
+extra-source "fdfa00c0d630e264d413c5cbd17dfd0aa3199098771bbe854a2fae21224137cb--libpng--1.6.44.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:97e7780fa459489f57043430f53660e81c4bab4c0bd30b3c021ff8e1d1ae27ea"
+  checksum: [
+    "sha256=97e7780fa459489f57043430f53660e81c4bab4c0bd30b3c021ff8e1d1ae27ea"
+  ]
+}
+extra-source "0e089cec124a817e140dfc78aba6887ae650dd4fefe1d55d5b516a872f8007b5--libpng-1.6.44.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libpng/manifests/1.6.44"
+}
+extra-source "9cc6d0bd645e9922362826897c14cfbb8a22a9a629ff75897132a1ec776b99f9--libpng--1.6.44.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:3867ac12f43852e8e4b028b7cfbae1c7bbc2a4e3c36e7d7a7b1690c40392fd6d"
+  checksum: [
+    "sha256=3867ac12f43852e8e4b028b7cfbae1c7bbc2a4e3c36e7d7a7b1690c40392fd6d"
+  ]
+}
+extra-source "6089d33253e3eee4a35ddf434bbb321ebd9c255f73fa36128d554e24a883bf54--libpng--1.6.44.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:04c7ef0bb97718b8388e93e0e0f6a3e361da422b7f63f2a1f2bbb8ddb92da119"
+  checksum: [
+    "sha256=04c7ef0bb97718b8388e93e0e0f6a3e361da422b7f63f2a1f2bbb8ddb92da119"
+  ]
+}
+extra-source "b07a8c42653608fdd5aab868ff1ab152b647a7570b2691479933e5c8f916b55b--libpng--1.6.44.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:68f13a9e3ee84c0c50cb7d6d9d06a65287b3dcbc3baeb42ee7d2bcc1884a73d9"
+  checksum: [
+    "sha256=68f13a9e3ee84c0c50cb7d6d9d06a65287b3dcbc3baeb42ee7d2bcc1884a73d9"
+  ]
+}
+extra-source "ce4b75863812828c068b35e7ca80c02a5234e8b09f551d7c5c8652cd63a38c54--libpng--1.6.44.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:f17614f1c903db5ce208c3f78c3181377f121801fbeec50a53920591f0de4d34"
+  checksum: [
+    "sha256=f17614f1c903db5ce208c3f78c3181377f121801fbeec50a53920591f0de4d34"
+  ]
+}
+extra-source "87ac3d102b625372ade08781f04ab6a5a4fe89bb3b5db8e3dc56b4d2a0e6e02c--libpng--1.6.44.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:cf958f9647a35c402c463e78273a1bcd6e0dac715c1e949b03e876f2224d51e4"
+  checksum: [
+    "sha256=cf958f9647a35c402c463e78273a1bcd6e0dac715c1e949b03e876f2224d51e4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0e089cec124a817e140dfc78aba6887ae650dd4fefe1d55d5b516a872f8007b5--libpng-1.6.44.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "fdfa00c0d630e264d413c5cbd17dfd0aa3199098771bbe854a2fae21224137cb--libpng--1.6.44.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9cc6d0bd645e9922362826897c14cfbb8a22a9a629ff75897132a1ec776b99f9--libpng--1.6.44.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6089d33253e3eee4a35ddf434bbb321ebd9c255f73fa36128d554e24a883bf54--libpng--1.6.44.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b07a8c42653608fdd5aab868ff1ab152b647a7570b2691479933e5c8f916b55b--libpng--1.6.44.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ce4b75863812828c068b35e7ca80c02a5234e8b09f551d7c5c8652cd63a38c54--libpng--1.6.44.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "87ac3d102b625372ade08781f04ab6a5a4fe89bb3b5db8e3dc56b4d2a0e6e02c--libpng--1.6.44.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libpng" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libpng" ]
+]

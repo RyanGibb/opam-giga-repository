@@ -1,0 +1,50 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "XML vocabulary to create presentation-neutral documents"
+description: """
+XML vocabulary to create presentation-neutral documents"""
+extra-source "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/docbook-xsl/blobs/sha256:201ddedf7dcf5ac0d6eb0a2554ff329ee9856ce5f79d95db9c5d6db7703d9b84"
+  checksum: [
+    "sha256=201ddedf7dcf5ac0d6eb0a2554ff329ee9856ce5f79d95db9c5d6db7703d9b84"
+  ]
+}
+extra-source "2f34c7ff1e3d895d6093da0a1bdf9cb968e1cbdbfbb683871b5958c12ea877c8--docbook-xsl-1.79.2_1-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/docbook-xsl/manifests/1.79.2_1-1"
+}
+depends : [
+  "brew-opam-vars"
+  "brew-docbook" {= "5.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2f34c7ff1e3d895d6093da0a1bdf9cb968e1cbdbfbb683871b5958c12ea877c8--docbook-xsl-1.79.2_1-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3950a8a8e1cf78bfa07e3dd3c297d3da30ac4730fc6dfd7e1fd5d023c3ad9e5f--docbook-xsl--1.79.2_1.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "docbook-xsl" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "docbook-xsl" ]
+]

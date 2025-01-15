@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "LLVM's OpenMP runtime library"
+description: """
+LLVM's OpenMP runtime library"""
+extra-source "563ac625ff8f4472bac0dc1af973d8d96d094a857d48c3c84d3d5a942e14a7eb--libomp--19.1.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libomp/blobs/sha256:10fff6a51536b7ae65426186c2fc14032bd39ed3ff0677d98a6c0cdabb5d805c"
+  checksum: [
+    "sha256=10fff6a51536b7ae65426186c2fc14032bd39ed3ff0677d98a6c0cdabb5d805c"
+  ]
+}
+extra-source "9922ad6522f937c029f3a8bdcc60b4ba08a5ec62f8d30da4efb0dbdf8b788e9b--libomp-19.1.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libomp/manifests/19.1.0"
+}
+extra-source "f7c879d7ba975b2df7add6a068fb6591fddbd5a17b5f027ccd9ae5aa55c330e4--libomp--19.1.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libomp/blobs/sha256:7cb7f285e2a2742fba639781bfa876a0bd157d16afd0867f37db1b0db71abaa7"
+  checksum: [
+    "sha256=7cb7f285e2a2742fba639781bfa876a0bd157d16afd0867f37db1b0db71abaa7"
+  ]
+}
+extra-source "32ea0cba2a2113231d636f8ca6041ecf9503d288b9efe384bd7ace63298faa34--libomp--19.1.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libomp/blobs/sha256:e1af2969f3d0449130024e67d95219be0778a4b4260f84e06629bdd89181e129"
+  checksum: [
+    "sha256=e1af2969f3d0449130024e67d95219be0778a4b4260f84e06629bdd89181e129"
+  ]
+}
+extra-source "8b94d77d8245901aecfaab544b73ce4951b352d39e8cdf41285c66710eec6220--libomp--19.1.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libomp/blobs/sha256:3f7f4cd61dc591795dcc41a9eab15bf7c3d1c5c2af8ce051b128b75cbde1d70a"
+  checksum: [
+    "sha256=3f7f4cd61dc591795dcc41a9eab15bf7c3d1c5c2af8ce051b128b75cbde1d70a"
+  ]
+}
+extra-source "6303dd2927b9219d7c4e2f8c91267b44de3e97d6c649a2046b3cb60bcfab1ba8--libomp--19.1.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libomp/blobs/sha256:0bec68ab533c34535d46af20943a11e160bf1b12ae7705388478cad0ee9d74a9"
+  checksum: [
+    "sha256=0bec68ab533c34535d46af20943a11e160bf1b12ae7705388478cad0ee9d74a9"
+  ]
+}
+extra-source "f32d873e0f4db76cc34b2525950215cbfebafbfd7c99af8e0914664ff2f3cb60--libomp--19.1.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libomp/blobs/sha256:8b77c0dd9707c2ed6e9bb4a4199e23fcefda29c2dc9c4e4ec5bf244f3add21b2"
+  checksum: [
+    "sha256=8b77c0dd9707c2ed6e9bb4a4199e23fcefda29c2dc9c4e4ec5bf244f3add21b2"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-lit" {= "18.1.8"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "9922ad6522f937c029f3a8bdcc60b4ba08a5ec62f8d30da4efb0dbdf8b788e9b--libomp-19.1.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "563ac625ff8f4472bac0dc1af973d8d96d094a857d48c3c84d3d5a942e14a7eb--libomp--19.1.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f7c879d7ba975b2df7add6a068fb6591fddbd5a17b5f027ccd9ae5aa55c330e4--libomp--19.1.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "32ea0cba2a2113231d636f8ca6041ecf9503d288b9efe384bd7ace63298faa34--libomp--19.1.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8b94d77d8245901aecfaab544b73ce4951b352d39e8cdf41285c66710eec6220--libomp--19.1.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6303dd2927b9219d7c4e2f8c91267b44de3e97d6c649a2046b3cb60bcfab1ba8--libomp--19.1.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f32d873e0f4db76cc34b2525950215cbfebafbfd7c99af8e0914664ff2f3cb60--libomp--19.1.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libomp" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libomp" ]
+]

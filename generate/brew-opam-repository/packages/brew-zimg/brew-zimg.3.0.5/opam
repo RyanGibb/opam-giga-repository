@@ -1,0 +1,110 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Scaling, colorspace conversion, and dithering library"
+description: """
+Scaling, colorspace conversion, and dithering library"""
+extra-source "4f66d436a89a22256c86cccd6b914721a5a2443aee33bc7d9582071f5fd62b58--zimg--3.0.5.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:16b38c35a093542456e5c026cb464df27ebe509eb857696cbfbb6146708e5cd1"
+  checksum: [
+    "sha256=16b38c35a093542456e5c026cb464df27ebe509eb857696cbfbb6146708e5cd1"
+  ]
+}
+extra-source "f94d5d93fe440d14fe866ceb3ada13593ef4b17f58985ebb17ea4320168b65cd--zimg-3.0.5.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/manifests/3.0.5"
+}
+extra-source "dcccbb9534c8ef31b6d40f01f75ad7e57d9711905c16265f7d7ec614a11053d2--zimg--3.0.5.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:a52f302fda0d8447d6972db9649504ffafe1d06e5de4c23b1ca6315c4b6d17fd"
+  checksum: [
+    "sha256=a52f302fda0d8447d6972db9649504ffafe1d06e5de4c23b1ca6315c4b6d17fd"
+  ]
+}
+extra-source "4e06317d82ffdf3934afa650586b978badd41c55c5d4268335819ea36ff2584d--zimg--3.0.5.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:1a08f06a0a7fc2a23266a03e8afd63759f99f3a0041d1503fafc5ce9410df8dc"
+  checksum: [
+    "sha256=1a08f06a0a7fc2a23266a03e8afd63759f99f3a0041d1503fafc5ce9410df8dc"
+  ]
+}
+extra-source "1d3deaab8755b49708af03c4cb0cee6a848e51ab84134a3e0ead56f32f8c24ba--zimg--3.0.5.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:31d345c4d6927d6a5f5e1d04b8d78a53db597309c24d301bd0963afcc0702c35"
+  checksum: [
+    "sha256=31d345c4d6927d6a5f5e1d04b8d78a53db597309c24d301bd0963afcc0702c35"
+  ]
+}
+extra-source "497eca4854b82584de0c450483561aec0e0b026ccae80033f375f37b174c14ee--zimg--3.0.5.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:cc82dc203d39c81808f2afacf64b5b5048859de941fff9e8caea599b8db83a3f"
+  checksum: [
+    "sha256=cc82dc203d39c81808f2afacf64b5b5048859de941fff9e8caea599b8db83a3f"
+  ]
+}
+extra-source "e4fccfedd2d90e860b453f3bcc71f9ff860c7e87d0cadb9a670896f5dd5e602a--zimg--3.0.5.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:5a8049c1c8fa6e09f79dda6e18ec22909da4b4b567e7f52d4e6338f7ac6dfa64"
+  checksum: [
+    "sha256=5a8049c1c8fa6e09f79dda6e18ec22909da4b4b567e7f52d4e6338f7ac6dfa64"
+  ]
+}
+extra-source "7c5445d404902d194bb1efd9e70aa7abaca3c6a18736b8693637cf2c7fa002c7--zimg--3.0.5.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:2bbd044c345af191083c75e1e67b48f31ded8bc4869e19de25d6bd19d3a214ed"
+  checksum: [
+    "sha256=2bbd044c345af191083c75e1e67b48f31ded8bc4869e19de25d6bd19d3a214ed"
+  ]
+}
+extra-source "0de9e14eedb66b4e47836331bc9395a54548d7e6105d0614e29e5b7ed9d0b114--zimg--3.0.5.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:5cabd4f2485ba7bb49feecac4584afaa7f05e097cb3935d7e9ea8a06336b4bcf"
+  checksum: [
+    "sha256=5cabd4f2485ba7bb49feecac4584afaa7f05e097cb3935d7e9ea8a06336b4bcf"
+  ]
+}
+extra-source "a840948846a4c84d73b3fdcdcd6c94ec4b5575df3b420abe220200b2e0334fa5--zimg--3.0.5.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:10507ec0d32970c00e04b4e76714ea452d22f315fdd116af5d56c3d81a7e1f39"
+  checksum: [
+    "sha256=10507ec0d32970c00e04b4e76714ea452d22f315fdd116af5d56c3d81a7e1f39"
+  ]
+}
+extra-source "78f6cb6556cbd3b60cea6b59008968d158a907525e74ff341321caac8aff67c6--zimg--3.0.5.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:a33e194d2d9132c9c35d9cb9affc078e77e26a6c8c11fd5b015c6f28914c52fe"
+  checksum: [
+    "sha256=a33e194d2d9132c9c35d9cb9affc078e77e26a6c8c11fd5b015c6f28914c52fe"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f94d5d93fe440d14fe866ceb3ada13593ef4b17f58985ebb17ea4320168b65cd--zimg-3.0.5.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "4f66d436a89a22256c86cccd6b914721a5a2443aee33bc7d9582071f5fd62b58--zimg--3.0.5.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dcccbb9534c8ef31b6d40f01f75ad7e57d9711905c16265f7d7ec614a11053d2--zimg--3.0.5.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4e06317d82ffdf3934afa650586b978badd41c55c5d4268335819ea36ff2584d--zimg--3.0.5.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1d3deaab8755b49708af03c4cb0cee6a848e51ab84134a3e0ead56f32f8c24ba--zimg--3.0.5.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "497eca4854b82584de0c450483561aec0e0b026ccae80033f375f37b174c14ee--zimg--3.0.5.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e4fccfedd2d90e860b453f3bcc71f9ff860c7e87d0cadb9a670896f5dd5e602a--zimg--3.0.5.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7c5445d404902d194bb1efd9e70aa7abaca3c6a18736b8693637cf2c7fa002c7--zimg--3.0.5.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0de9e14eedb66b4e47836331bc9395a54548d7e6105d0614e29e5b7ed9d0b114--zimg--3.0.5.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a840948846a4c84d73b3fdcdcd6c94ec4b5575df3b420abe220200b2e0334fa5--zimg--3.0.5.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "78f6cb6556cbd3b60cea6b59008968d158a907525e74ff341321caac8aff67c6--zimg--3.0.5.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "zimg" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "zimg" ]
+]

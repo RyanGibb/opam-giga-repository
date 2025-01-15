@@ -1,0 +1,131 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Videogame music file emulator collection"
+description: """
+Videogame music file emulator collection"""
+extra-source "bec2d278c8e73c85c35d6177c64e6115db403388d8c5beb53af8a16fb3969eac--game-music-emu--0.6.3_2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:5ef428a2f2cfa529a20d3a11be7e92ac70f0a7c88cfa76c57d1fb9be14ea7ec2"
+  checksum: [
+    "sha256=5ef428a2f2cfa529a20d3a11be7e92ac70f0a7c88cfa76c57d1fb9be14ea7ec2"
+  ]
+}
+extra-source "a1fc8d91b1d4580475a81ce9cdbdc6db6b4455edf69a0593eb7190e3f586081c--game-music-emu-0.6.3_2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/manifests/0.6.3_2"
+}
+extra-source "89e5b0b1f5c8121ea8e388a55c188dc1827a9657e43e1f7389de009cea38d756--game-music-emu--0.6.3_2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:455b9e0b0d15d199a355fa22f242f4887bb67557f145c7ddc17ba7f0659bc7a2"
+  checksum: [
+    "sha256=455b9e0b0d15d199a355fa22f242f4887bb67557f145c7ddc17ba7f0659bc7a2"
+  ]
+}
+extra-source "e2d4cb7cfc96bec6358e026204fb0775c7a0d727611280dca85b2a349505c84b--game-music-emu--0.6.3_2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:70bb1a2c61c5cfe9db5cea20d195b0a667584a462bd034eef4063b03948c883d"
+  checksum: [
+    "sha256=70bb1a2c61c5cfe9db5cea20d195b0a667584a462bd034eef4063b03948c883d"
+  ]
+}
+extra-source "ec7e8c0cc9013969c08ad87689010a6faca966b5b24956f9c676f8eed8aa9711--game-music-emu--0.6.3_2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:7b686c42bec0fd89a976842ca616e41b8c40883d461faf49da21409e96585cb6"
+  checksum: [
+    "sha256=7b686c42bec0fd89a976842ca616e41b8c40883d461faf49da21409e96585cb6"
+  ]
+}
+extra-source "3db7bc09302950138bb7312d74b437f22fc51de4aabba77369442180e2883285--game-music-emu--0.6.3_2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:c33d21ce67a78b16cfe0e2e68372c62df99bec7d7c73ee20e9acece876ae2e0b"
+  checksum: [
+    "sha256=c33d21ce67a78b16cfe0e2e68372c62df99bec7d7c73ee20e9acece876ae2e0b"
+  ]
+}
+extra-source "de492955f3b41f74ad496f4fc8769ab245775def5c0c60b14782e388392cc5a2--game-music-emu--0.6.3_2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:7b1e5a6934c8ff16fff726c1963e465abd11458f5773f26b38ce8771da3289a1"
+  checksum: [
+    "sha256=7b1e5a6934c8ff16fff726c1963e465abd11458f5773f26b38ce8771da3289a1"
+  ]
+}
+extra-source "fd0d969408ff67eec6a25e4ad109971c7da336ec3327b4b67e0a6ca97e9debd0--game-music-emu--0.6.3_2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:1346614b5a9561f7eaace297b5493eeb99ec4c3e561acc65669ca6dbb0cd6793"
+  checksum: [
+    "sha256=1346614b5a9561f7eaace297b5493eeb99ec4c3e561acc65669ca6dbb0cd6793"
+  ]
+}
+extra-source "801ba2498fd065d77b689f3450687979eb0d722433dbce0fcdec8777107c5138--game-music-emu--0.6.3_2.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:a0abdc4c5ae05ea22ad3627a1a717ed8a1a137065188b995858c0f301dfda640"
+  checksum: [
+    "sha256=a0abdc4c5ae05ea22ad3627a1a717ed8a1a137065188b995858c0f301dfda640"
+  ]
+}
+extra-source "ea370332a5a5e66e186decaccd4cbcd43df920e638670f935cd9535def7a7eff--game-music-emu--0.6.3_2.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:e83fbee26086cc93f7d2eed7d3b93f00a0a0c9eb9d59abf3aba91216fe89d3d8"
+  checksum: [
+    "sha256=e83fbee26086cc93f7d2eed7d3b93f00a0a0c9eb9d59abf3aba91216fe89d3d8"
+  ]
+}
+extra-source "bd9897da9d2967ebad886243d46a216656314440757da7122b9877d43474df67--game-music-emu--0.6.3_2.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:ee658e16c3d9d0061b0b930ca387a1cb2fa6b6b50d23c9f6f4ae7799ddb6f46d"
+  checksum: [
+    "sha256=ee658e16c3d9d0061b0b930ca387a1cb2fa6b6b50d23c9f6f4ae7799ddb6f46d"
+  ]
+}
+extra-source "1ea8cbb13c95326fb2c2d8b11871e5ad11e9da7be85e7890b6d2ce7807d6c9a6--game-music-emu--0.6.3_2.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:754ab0c8bc0a6de76adcb56a59913c930196e8e44154958081c093fb7763edad"
+  checksum: [
+    "sha256=754ab0c8bc0a6de76adcb56a59913c930196e8e44154958081c093fb7763edad"
+  ]
+}
+extra-source "1e53642cb2117f6a3cff1a278295345d8132e27ac3b91bae6d35963601b230e2--game-music-emu--0.6.3_2.high_sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:596497823bb1ebb30f20fa01c8656bb15544c12fad5d67c4de165f9ef3122e68"
+  checksum: [
+    "sha256=596497823bb1ebb30f20fa01c8656bb15544c12fad5d67c4de165f9ef3122e68"
+  ]
+}
+extra-source "c3c8ec597969a74a47c10fc59f3a7178ac908c161141dbb09fbbc5e016305e7d--game-music-emu--0.6.3_2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/game-music-emu/blobs/sha256:08b3b37367e9fada0881a14a96a8970eecb79426a378d02dc7ed8881923096f3"
+  checksum: [
+    "sha256=08b3b37367e9fada0881a14a96a8970eecb79426a378d02dc7ed8881923096f3"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "a1fc8d91b1d4580475a81ce9cdbdc6db6b4455edf69a0593eb7190e3f586081c--game-music-emu-0.6.3_2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "bec2d278c8e73c85c35d6177c64e6115db403388d8c5beb53af8a16fb3969eac--game-music-emu--0.6.3_2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "89e5b0b1f5c8121ea8e388a55c188dc1827a9657e43e1f7389de009cea38d756--game-music-emu--0.6.3_2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e2d4cb7cfc96bec6358e026204fb0775c7a0d727611280dca85b2a349505c84b--game-music-emu--0.6.3_2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ec7e8c0cc9013969c08ad87689010a6faca966b5b24956f9c676f8eed8aa9711--game-music-emu--0.6.3_2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3db7bc09302950138bb7312d74b437f22fc51de4aabba77369442180e2883285--game-music-emu--0.6.3_2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "de492955f3b41f74ad496f4fc8769ab245775def5c0c60b14782e388392cc5a2--game-music-emu--0.6.3_2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fd0d969408ff67eec6a25e4ad109971c7da336ec3327b4b67e0a6ca97e9debd0--game-music-emu--0.6.3_2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "801ba2498fd065d77b689f3450687979eb0d722433dbce0fcdec8777107c5138--game-music-emu--0.6.3_2.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ea370332a5a5e66e186decaccd4cbcd43df920e638670f935cd9535def7a7eff--game-music-emu--0.6.3_2.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bd9897da9d2967ebad886243d46a216656314440757da7122b9877d43474df67--game-music-emu--0.6.3_2.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1ea8cbb13c95326fb2c2d8b11871e5ad11e9da7be85e7890b6d2ce7807d6c9a6--game-music-emu--0.6.3_2.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1e53642cb2117f6a3cff1a278295345d8132e27ac3b91bae6d35963601b230e2--game-music-emu--0.6.3_2.high_sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c3c8ec597969a74a47c10fc59f3a7178ac908c161141dbb09fbbc5e016305e7d--game-music-emu--0.6.3_2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "game-music-emu" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "game-music-emu" ]
+]

@@ -1,0 +1,114 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GNU Transport Layer Security (TLS) Library"
+description: """
+GNU Transport Layer Security (TLS) Library"""
+extra-source "ddbf1af8b60768d57eaef8f21604ad9843ff7da6aa7ab95c84c478f11a68e965--gnutls--3.8.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:e927eab61e775a8b65079c2163fb29b9f03c90caf68cc13788dfea249ed6201e"
+  checksum: [
+    "sha256=e927eab61e775a8b65079c2163fb29b9f03c90caf68cc13788dfea249ed6201e"
+  ]
+}
+extra-source "73c18cc76ca68c25efa04b897881358a5ad032ae8e54f9c5fe81b70875128236--gnutls-3.8.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/manifests/3.8.4"
+}
+extra-source "dcc7ec87b3648c3c462787f433de475ba4a4c2dc3d12dca25ef57a4f5c8b74fa--gnutls--3.8.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:7136ceb68e1bf94ad28db2990cc10da909b742390be65963b78e8b115f97b51d"
+  checksum: [
+    "sha256=7136ceb68e1bf94ad28db2990cc10da909b742390be65963b78e8b115f97b51d"
+  ]
+}
+extra-source "3128ba041a22a64214678ee08b039b213feb1e962be2687ff1b2eef4f59553f6--gnutls--3.8.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:46373a7206cc70289bfef2081508c62cc74a2589060b21ce26c44c4c86fbda41"
+  checksum: [
+    "sha256=46373a7206cc70289bfef2081508c62cc74a2589060b21ce26c44c4c86fbda41"
+  ]
+}
+extra-source "437a19b28a87632f6a49ac93c153f2bc820ce5e651c51539ee6576c069a8b893--gnutls--3.8.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:08b8fc7ded2a17510ab505965c754bccf3cf21ae690d76af744f96d800223de2"
+  checksum: [
+    "sha256=08b8fc7ded2a17510ab505965c754bccf3cf21ae690d76af744f96d800223de2"
+  ]
+}
+extra-source "15611bc2d0e0ae9ecbd99b934f7b1875d89cc4aba8f8dd78f8e9d1ca139d24e5--gnutls--3.8.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:7b18d9403f8cc6a5e2e3fd427a07e32ccb1d7969715fbf5b72cfb4b5a01d8a3c"
+  checksum: [
+    "sha256=7b18d9403f8cc6a5e2e3fd427a07e32ccb1d7969715fbf5b72cfb4b5a01d8a3c"
+  ]
+}
+extra-source "f17011595d85b33db6580916a7feaf20f724c5ea31e61e9a69cb5d70fc7189f3--gnutls--3.8.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:80f7875ba4d2409f85851a3c61bf8c178415e863528357bc587578e8d0536c10"
+  checksum: [
+    "sha256=80f7875ba4d2409f85851a3c61bf8c178415e863528357bc587578e8d0536c10"
+  ]
+}
+extra-source "3f92566354064c476e455734faa195ab22b6d4c994a136e91625ae1deff8882b--gnutls--3.8.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:2a6bb19c341be5dcc2e351e68380b05f246407bd57b2dc7e94743d14e473cde8"
+  checksum: [
+    "sha256=2a6bb19c341be5dcc2e351e68380b05f246407bd57b2dc7e94743d14e473cde8"
+  ]
+}
+extra-source "ed1cdbc83b17de656ec85413ba50231325fab92af50d81b0e484040fcc7ab88f--gnutls--3.8.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:9bedb5b302e02e32c64bf75c488216dd644bc205d9e99d2b26edfdf7f3d81b93"
+  checksum: [
+    "sha256=9bedb5b302e02e32c64bf75c488216dd644bc205d9e99d2b26edfdf7f3d81b93"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libunistring" {= "1.2"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "73c18cc76ca68c25efa04b897881358a5ad032ae8e54f9c5fe81b70875128236--gnutls-3.8.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ddbf1af8b60768d57eaef8f21604ad9843ff7da6aa7ab95c84c478f11a68e965--gnutls--3.8.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dcc7ec87b3648c3c462787f433de475ba4a4c2dc3d12dca25ef57a4f5c8b74fa--gnutls--3.8.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3128ba041a22a64214678ee08b039b213feb1e962be2687ff1b2eef4f59553f6--gnutls--3.8.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "437a19b28a87632f6a49ac93c153f2bc820ce5e651c51539ee6576c069a8b893--gnutls--3.8.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "15611bc2d0e0ae9ecbd99b934f7b1875d89cc4aba8f8dd78f8e9d1ca139d24e5--gnutls--3.8.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f17011595d85b33db6580916a7feaf20f724c5ea31e61e9a69cb5d70fc7189f3--gnutls--3.8.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3f92566354064c476e455734faa195ab22b6d4c994a136e91625ae1deff8882b--gnutls--3.8.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ed1cdbc83b17de656ec85413ba50231325fab92af50d81b0e484040fcc7ab88f--gnutls--3.8.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gnutls" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gnutls" ]
+]

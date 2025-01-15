@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Utility for directing compilation"
+description: """
+Utility for directing compilation"""
+extra-source "b93eb35ebb0fa7681e4793fb45ae76e3002abcf6fd0ce7f5edc090aaa63191df--make--4.4.1.sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:cd86f41f2d02a827e15380a13a055606ba2f61819ad5100e4feba0400ef685a7"
+  checksum: [
+    "sha256=cd86f41f2d02a827e15380a13a055606ba2f61819ad5100e4feba0400ef685a7"
+  ]
+}
+extra-source "6d80a49585dfd17106c8ea4aaeed2dab30677c00519e06a3547e0bb391cbf704--make-4.4.1-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/manifests/4.4.1-1"
+}
+extra-source "83f1deb0293b80ab17e1bc04da79f171f8b0b381b8c38cd56fff63cd32466483--make--4.4.1.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:f361639a5ec1a9355e12f985c511dd6631b6790452a52057032a3a07a690ca4e"
+  checksum: [
+    "sha256=f361639a5ec1a9355e12f985c511dd6631b6790452a52057032a3a07a690ca4e"
+  ]
+}
+extra-source "2df6a1f329cccd22c8de4da3733e1e240bfe4ec5d215ddc0f659130e900f1011--make--4.4.1.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:3cc4a3aa1a3fe8ef30b2c7089708c5bdb04be3ae47ebc620f2cfd270941e96f2"
+  checksum: [
+    "sha256=3cc4a3aa1a3fe8ef30b2c7089708c5bdb04be3ae47ebc620f2cfd270941e96f2"
+  ]
+}
+extra-source "f3edff14da37e6a27c25d17f381653363ecb781abb2363b53c8fce3df90a71e2--make--4.4.1.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:94377dc5a364da305c75fd7aa923a42897993de9edd1eb074428e13c3f2aaf93"
+  checksum: [
+    "sha256=94377dc5a364da305c75fd7aa923a42897993de9edd1eb074428e13c3f2aaf93"
+  ]
+}
+extra-source "cd5ea8b6bd4386666edf11c4422e946afdaa95a21ca0964d6a432a553ae22164--make--4.4.1.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:e5b435315db19e1634289e888fcbd4282ed985a85591a7bec9661595a091d56f"
+  checksum: [
+    "sha256=e5b435315db19e1634289e888fcbd4282ed985a85591a7bec9661595a091d56f"
+  ]
+}
+extra-source "844c18ba8e8344ee7e323750f8aac1258173be2755da53941882e7a550a88ab3--make--4.4.1.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:389fd41ada645cde1c43c97f16fc829c80b2312db9c43f358ce774f19d0130d7"
+  checksum: [
+    "sha256=389fd41ada645cde1c43c97f16fc829c80b2312db9c43f358ce774f19d0130d7"
+  ]
+}
+extra-source "7ae74b71bb5e91b06299f5ef38a51346271bff5a0ec17611045bfca07031cf83--make--4.4.1.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:d6d6e4b66e31ed8499dd7d1fecdc4d33b11af9073d0d884aedf9248bcbe6ac3e"
+  checksum: [
+    "sha256=d6d6e4b66e31ed8499dd7d1fecdc4d33b11af9073d0d884aedf9248bcbe6ac3e"
+  ]
+}
+extra-source "ac0f22e0e630e04f2d96020d6478349aab349dcaef5271d67618e2ac59fad531--make--4.4.1.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:49fa5e3e19d0793bdc32cc453a3c209697553ec1fd92964cfbdaf67c6a72a03f"
+  checksum: [
+    "sha256=49fa5e3e19d0793bdc32cc453a3c209697553ec1fd92964cfbdaf67c6a72a03f"
+  ]
+}
+extra-source "459202780263cad8c7073c7c48ca5086927aaa75706531b4242bca078adbe361--make--4.4.1.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/make/blobs/sha256:b9fc9f80dd7f93b1b5eb9545044d6f7b016a372e7b2beb03f3e1a045e701410f"
+  checksum: [
+    "sha256=b9fc9f80dd7f93b1b5eb9545044d6f7b016a372e7b2beb03f3e1a045e701410f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-lzip" {= "1.24.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "6d80a49585dfd17106c8ea4aaeed2dab30677c00519e06a3547e0bb391cbf704--make-4.4.1-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "b93eb35ebb0fa7681e4793fb45ae76e3002abcf6fd0ce7f5edc090aaa63191df--make--4.4.1.sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "83f1deb0293b80ab17e1bc04da79f171f8b0b381b8c38cd56fff63cd32466483--make--4.4.1.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2df6a1f329cccd22c8de4da3733e1e240bfe4ec5d215ddc0f659130e900f1011--make--4.4.1.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f3edff14da37e6a27c25d17f381653363ecb781abb2363b53c8fce3df90a71e2--make--4.4.1.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cd5ea8b6bd4386666edf11c4422e946afdaa95a21ca0964d6a432a553ae22164--make--4.4.1.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "844c18ba8e8344ee7e323750f8aac1258173be2755da53941882e7a550a88ab3--make--4.4.1.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7ae74b71bb5e91b06299f5ef38a51346271bff5a0ec17611045bfca07031cf83--make--4.4.1.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ac0f22e0e630e04f2d96020d6478349aab349dcaef5271d67618e2ac59fad531--make--4.4.1.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "459202780263cad8c7073c7c48ca5086927aaa75706531b4242bca078adbe361--make--4.4.1.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "make" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "make" ]
+]

@@ -1,0 +1,76 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "JPEG image codec that aids compression and decompression"
+description: """
+JPEG image codec that aids compression and decompression"""
+extra-source "32ef6246e43f5896f2a2f3c8848886d51ae3e9a16783891e5e52c8c8f31bf10c--jpeg-turbo--3.0.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:f85cd191b0fce773ae3d3502395ee2d56eec5be7607a95834a13d63d22181d78"
+  checksum: [
+    "sha256=f85cd191b0fce773ae3d3502395ee2d56eec5be7607a95834a13d63d22181d78"
+  ]
+}
+extra-source "2a3630ffd65db74be2c3c6104929548e1a0e8f2c82583e0732016f49b52b2c13--jpeg-turbo-3.0.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-turbo/manifests/3.0.4"
+}
+extra-source "e06663aa20f3f485bd89168ec4474145b8a2858be9438be59f36f9ca3879b4be--jpeg-turbo--3.0.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:54fe1e9ac8988d4461fcca02ac0f85b3d534acc0b9b42f6115a0ce423732d877"
+  checksum: [
+    "sha256=54fe1e9ac8988d4461fcca02ac0f85b3d534acc0b9b42f6115a0ce423732d877"
+  ]
+}
+extra-source "0303c10155414d0d6ba271dcf62a3e7cf03716f02079e1ae948a9db6698c2b8e--jpeg-turbo--3.0.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:e936777455b6cb66819a7db9f4396dfd4d0b8c7b0d700ea28213780b16c2dac1"
+  checksum: [
+    "sha256=e936777455b6cb66819a7db9f4396dfd4d0b8c7b0d700ea28213780b16c2dac1"
+  ]
+}
+extra-source "b8cfd7d7174e0a2597240e27c0f6914dbe8ecccde9542ad98709e609eff3e156--jpeg-turbo--3.0.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:0e7ef21719a1106c59fab1f82cbbd20144898fa29c0e74407b9d55ed14feb951"
+  checksum: [
+    "sha256=0e7ef21719a1106c59fab1f82cbbd20144898fa29c0e74407b9d55ed14feb951"
+  ]
+}
+extra-source "90120116c149ead9578f0babd6b448cb656a23e54b33ccdc810eaecfb8f012fb--jpeg-turbo--3.0.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:95a0c93dc8f316a7235471cf16203aa1efb595c4568294ef854510d3c0050699"
+  checksum: [
+    "sha256=95a0c93dc8f316a7235471cf16203aa1efb595c4568294ef854510d3c0050699"
+  ]
+}
+extra-source "48f29bdecbdeccd4039dd7caf517883171ccbb5c2095e3518e4ad2880abf2bd3--jpeg-turbo--3.0.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:7eb799fd7e23195d2cb8ef8bf5282518a26f06864cc2d5a9d134a520916291e2"
+  checksum: [
+    "sha256=7eb799fd7e23195d2cb8ef8bf5282518a26f06864cc2d5a9d134a520916291e2"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2a3630ffd65db74be2c3c6104929548e1a0e8f2c82583e0732016f49b52b2c13--jpeg-turbo-3.0.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "32ef6246e43f5896f2a2f3c8848886d51ae3e9a16783891e5e52c8c8f31bf10c--jpeg-turbo--3.0.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e06663aa20f3f485bd89168ec4474145b8a2858be9438be59f36f9ca3879b4be--jpeg-turbo--3.0.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0303c10155414d0d6ba271dcf62a3e7cf03716f02079e1ae948a9db6698c2b8e--jpeg-turbo--3.0.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b8cfd7d7174e0a2597240e27c0f6914dbe8ecccde9542ad98709e609eff3e156--jpeg-turbo--3.0.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "90120116c149ead9578f0babd6b448cb656a23e54b33ccdc810eaecfb8f012fb--jpeg-turbo--3.0.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "48f29bdecbdeccd4039dd7caf517883171ccbb5c2095e3518e4ad2880abf2bd3--jpeg-turbo--3.0.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "jpeg-turbo" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "jpeg-turbo" ]
+]

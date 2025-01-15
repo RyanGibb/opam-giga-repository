@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Lightweight Open Sound Control implementation"
+description: """
+Lightweight Open Sound Control implementation"""
+extra-source "68aa805721ffb87273b5247c8443e7ee1dafc43fca02b59122386c554676f056--liblo--0.32.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:8373256cd53294a3a06252d55c8cc93d6c6a6f8c3b235084cab456931e67e1b3"
+  checksum: [
+    "sha256=8373256cd53294a3a06252d55c8cc93d6c6a6f8c3b235084cab456931e67e1b3"
+  ]
+}
+extra-source "007db50491d06b6f19d9f59f76c8b83e22248298bdbc0a106582669cafd19aa9--liblo-0.32.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/manifests/0.32"
+}
+extra-source "7a192e1760dec0983527cec616397a07d535015ef9c4d2b0f1346b34102c336e--liblo--0.32.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:79de8fe2295a65736c7a7de5a2a24e6b62bc8745dd692a330c208e4b717b65e6"
+  checksum: [
+    "sha256=79de8fe2295a65736c7a7de5a2a24e6b62bc8745dd692a330c208e4b717b65e6"
+  ]
+}
+extra-source "035a54809e407209e255656af6033e922aa7422ee3729a4520fb0156af267b49--liblo--0.32.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:c379d421a02f1afa3c6105e527dc71b5271450f2964f31b6f6117fd826c8f783"
+  checksum: [
+    "sha256=c379d421a02f1afa3c6105e527dc71b5271450f2964f31b6f6117fd826c8f783"
+  ]
+}
+extra-source "7f73a3e74d8afc92475832d4784d44ecfd3350556728b7da633a00db7d6f6881--liblo--0.32.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:98ec4c770688b3f59d46c99eda7c052eee63ff6c8ab4b874bc56db2942dad96f"
+  checksum: [
+    "sha256=98ec4c770688b3f59d46c99eda7c052eee63ff6c8ab4b874bc56db2942dad96f"
+  ]
+}
+extra-source "44604271f278a045e210507c581956d585708525d6d850e6a398a5b19bf1eb2e--liblo--0.32.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:1395a951f82712482f5f90cd4a4803d88044154029cd3cd1d2fb2fbaf0f357c1"
+  checksum: [
+    "sha256=1395a951f82712482f5f90cd4a4803d88044154029cd3cd1d2fb2fbaf0f357c1"
+  ]
+}
+extra-source "9ec61d472fdaa34c739e98926c235c2c178bf2283111036ca06d3711bc6a9f55--liblo--0.32.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:8f4e3f2fd6ce732d7d170f1db5193f9b53b233fcb08b876cc66114b252f465cd"
+  checksum: [
+    "sha256=8f4e3f2fd6ce732d7d170f1db5193f9b53b233fcb08b876cc66114b252f465cd"
+  ]
+}
+extra-source "72d697d387daa1eb34223309e687a5fb5bf7eaeaea53017d5b06a1a04d879ee4--liblo--0.32.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:e79362d970b3c7a741336f9e02e3d738f43169bc5fddd6972dfae327d4dfe8ee"
+  checksum: [
+    "sha256=e79362d970b3c7a741336f9e02e3d738f43169bc5fddd6972dfae327d4dfe8ee"
+  ]
+}
+extra-source "2a95529f14912266b0ac7189176729149e8dcc6eef3f838b3536a491b55f1174--liblo--0.32.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:62fbd9950f4178a2ec7eeb280aac525b10d483953417f750aca24b420089b157"
+  checksum: [
+    "sha256=62fbd9950f4178a2ec7eeb280aac525b10d483953417f750aca24b420089b157"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "007db50491d06b6f19d9f59f76c8b83e22248298bdbc0a106582669cafd19aa9--liblo-0.32.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "68aa805721ffb87273b5247c8443e7ee1dafc43fca02b59122386c554676f056--liblo--0.32.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7a192e1760dec0983527cec616397a07d535015ef9c4d2b0f1346b34102c336e--liblo--0.32.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "035a54809e407209e255656af6033e922aa7422ee3729a4520fb0156af267b49--liblo--0.32.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7f73a3e74d8afc92475832d4784d44ecfd3350556728b7da633a00db7d6f6881--liblo--0.32.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "44604271f278a045e210507c581956d585708525d6d850e6a398a5b19bf1eb2e--liblo--0.32.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9ec61d472fdaa34c739e98926c235c2c178bf2283111036ca06d3711bc6a9f55--liblo--0.32.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "72d697d387daa1eb34223309e687a5fb5bf7eaeaea53017d5b06a1a04d879ee4--liblo--0.32.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2a95529f14912266b0ac7189176729149e8dcc6eef3f838b3536a491b55f1174--liblo--0.32.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "liblo" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "liblo" ]
+]

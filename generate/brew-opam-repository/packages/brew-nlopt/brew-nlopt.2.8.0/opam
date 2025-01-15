@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Free/open-source library for nonlinear optimization"
+description: """
+Free/open-source library for nonlinear optimization"""
+extra-source "ef70364193367463af068b6bc1284f505eaceea6138803177e105c98efb55967--nlopt--2.8.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/blobs/sha256:6cc504a8ae9faaa179ccdc53f2c60e798d094171bfaf8cccd6b2b21daaeb29f5"
+  checksum: [
+    "sha256=6cc504a8ae9faaa179ccdc53f2c60e798d094171bfaf8cccd6b2b21daaeb29f5"
+  ]
+}
+extra-source "84512a5e412851b82964217127c0304d900551faf5f678b344213cdedca8517f--nlopt-2.8.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/manifests/2.8.0"
+}
+extra-source "387254e55695695c5bcd8878203675ae9fa6714ece87d9c087938915c0a16f04--nlopt--2.8.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/blobs/sha256:79efb55e1183b61a70e6ae3a976fadb8c2f63da6af7ed84bc4e88ad43ced3b4c"
+  checksum: [
+    "sha256=79efb55e1183b61a70e6ae3a976fadb8c2f63da6af7ed84bc4e88ad43ced3b4c"
+  ]
+}
+extra-source "4e20c0246a7440a3850322658c0a3ab96f299af41d2007d754601057e6523699--nlopt--2.8.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/blobs/sha256:20f0cac5105fa0ddc82842091aeb29a1efa7ad3f3a6ef6141f6fb733d0a51175"
+  checksum: [
+    "sha256=20f0cac5105fa0ddc82842091aeb29a1efa7ad3f3a6ef6141f6fb733d0a51175"
+  ]
+}
+extra-source "6ce34a8c7d97b76df4b928c45982ea3a8e907a8d96869ecb8e895fe4c4ff45fb--nlopt--2.8.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/blobs/sha256:1cacc860d735502e1557cbfce2822acf99b2c54f256717801bb87af4bb2c87d9"
+  checksum: [
+    "sha256=1cacc860d735502e1557cbfce2822acf99b2c54f256717801bb87af4bb2c87d9"
+  ]
+}
+extra-source "4761320c3def2f114933151a394c4367c14e37d7977c3135233b848d1ecabcea--nlopt--2.8.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/blobs/sha256:c1d084e9e02aeea9590837a4f589c5366809bb0b2a8ffa89db52a547fb587b81"
+  checksum: [
+    "sha256=c1d084e9e02aeea9590837a4f589c5366809bb0b2a8ffa89db52a547fb587b81"
+  ]
+}
+extra-source "79ebcbdb97b1caa69561f33f889c58fb6c6020a647195f023aaff414972a0b6f--nlopt--2.8.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/blobs/sha256:748a39a74580c9985953d94b6fccfaf79f7070a27835cc8225c848987dd79576"
+  checksum: [
+    "sha256=748a39a74580c9985953d94b6fccfaf79f7070a27835cc8225c848987dd79576"
+  ]
+}
+extra-source "4d4e9f4ffcba85025b9c88b74abc5d3faa1822200d1e90cc1d36218fb64019ab--nlopt--2.8.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/blobs/sha256:bc0304fa0a34d1331a3114d06cbeae705625ca482f3412bd89880b7d7ca4a061"
+  checksum: [
+    "sha256=bc0304fa0a34d1331a3114d06cbeae705625ca482f3412bd89880b7d7ca4a061"
+  ]
+}
+extra-source "3238d629cbca26723b9cf56d0a010ad018c35bb532cf46fb72fa48bf5d934051--nlopt--2.8.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/nlopt/blobs/sha256:3f51af4ef62578c001a8967c868d2206e54e35f0226d2296c2aa13a86fee4d82"
+  checksum: [
+    "sha256=3f51af4ef62578c001a8967c868d2206e54e35f0226d2296c2aa13a86fee4d82"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "84512a5e412851b82964217127c0304d900551faf5f678b344213cdedca8517f--nlopt-2.8.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ef70364193367463af068b6bc1284f505eaceea6138803177e105c98efb55967--nlopt--2.8.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "387254e55695695c5bcd8878203675ae9fa6714ece87d9c087938915c0a16f04--nlopt--2.8.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4e20c0246a7440a3850322658c0a3ab96f299af41d2007d754601057e6523699--nlopt--2.8.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6ce34a8c7d97b76df4b928c45982ea3a8e907a8d96869ecb8e895fe4c4ff45fb--nlopt--2.8.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4761320c3def2f114933151a394c4367c14e37d7977c3135233b848d1ecabcea--nlopt--2.8.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "79ebcbdb97b1caa69561f33f889c58fb6c6020a647195f023aaff414972a0b6f--nlopt--2.8.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4d4e9f4ffcba85025b9c88b74abc5d3faa1822200d1e90cc1d36218fb64019ab--nlopt--2.8.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3238d629cbca26723b9cf56d0a010ad018c35bb532cf46fb72fa48bf5d934051--nlopt--2.8.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "nlopt" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "nlopt" ]
+]

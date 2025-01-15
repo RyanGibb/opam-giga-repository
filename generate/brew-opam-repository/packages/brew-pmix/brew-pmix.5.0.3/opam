@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Process Management Interface for HPC environments"
+description: """
+Process Management Interface for HPC environments"""
+extra-source "70e3b4bd5a598b70911e37d2c00807f9848afa215daeb0993bee20b88f27856b--pmix--5.0.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/blobs/sha256:33cec8bbbc0471911bb5a771e4e06dbbbc8c0bd891d4fb8dca8fa8783966fdcf"
+  checksum: [
+    "sha256=33cec8bbbc0471911bb5a771e4e06dbbbc8c0bd891d4fb8dca8fa8783966fdcf"
+  ]
+}
+extra-source "a821dcc34648e656fa394577efc241b0ea93bcc6121d498d5e7e7bf81838d27d--pmix-5.0.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/manifests/5.0.3"
+}
+extra-source "ffaadc7a75428d705f4b4be6628b32d015f9d24afb8d942c16565b8bcc2762e3--pmix--5.0.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/blobs/sha256:22ea4e40253d3f2cf622ae00a807ac7b51a4a88e88ed733b91a3b8bda7634de3"
+  checksum: [
+    "sha256=22ea4e40253d3f2cf622ae00a807ac7b51a4a88e88ed733b91a3b8bda7634de3"
+  ]
+}
+extra-source "89e51e79b2d2945aca6042b0a10da3838123e69552ce53785637858f30f373fa--pmix--5.0.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/blobs/sha256:1bb946832094eaf4ecd78549b1181a43951eb0c2ebf4c23af834263f3a39ff07"
+  checksum: [
+    "sha256=1bb946832094eaf4ecd78549b1181a43951eb0c2ebf4c23af834263f3a39ff07"
+  ]
+}
+extra-source "69eae04e14225326b3595553fa3840a3a4d1a2f70d3fdc6a9efc50f52e6d4b85--pmix--5.0.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/blobs/sha256:1a86b55384410e3e6c5ff8475c2a914edf129353703b3f57bb688585671a99e1"
+  checksum: [
+    "sha256=1a86b55384410e3e6c5ff8475c2a914edf129353703b3f57bb688585671a99e1"
+  ]
+}
+extra-source "faf50b33c53adca22e40233a4f1e37897a5915ab81a585b24130a0430c31e416--pmix--5.0.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/blobs/sha256:b82da6ad74dcc27768c9d113e0999eade722e537ca917bfc6861bc68cc301c6e"
+  checksum: [
+    "sha256=b82da6ad74dcc27768c9d113e0999eade722e537ca917bfc6861bc68cc301c6e"
+  ]
+}
+extra-source "564e251070c71326f6a801fa9c6fcb33ffb28668fa6599ef264dd77dc059bcde--pmix--5.0.3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/blobs/sha256:0a674c9dd2072fe0ffdef3d8ae69eaa82bd7b06df49924080d8ed41f41cae5a8"
+  checksum: [
+    "sha256=0a674c9dd2072fe0ffdef3d8ae69eaa82bd7b06df49924080d8ed41f41cae5a8"
+  ]
+}
+extra-source "02b93116800875d2eac4bd3658c3dca3b312494d2d08579875950d0efb0d5784--pmix--5.0.3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/blobs/sha256:5dd890f4c203eb25ed381d774e9a2f545ceffe931d8079a5a6b0315ac23123a0"
+  checksum: [
+    "sha256=5dd890f4c203eb25ed381d774e9a2f545ceffe931d8079a5a6b0315ac23123a0"
+  ]
+}
+extra-source "e11c7a93417e7e0795f09ac764f8bb9d2461c718f668f525fdf7b6127a60efc1--pmix--5.0.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pmix/blobs/sha256:25efde60eb0f20026a88f62786eccb14b14260449fa5405922a3160cc83d3d96"
+  checksum: [
+    "sha256=25efde60eb0f20026a88f62786eccb14b14260449fa5405922a3160cc83d3d96"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-hwloc" {= "2.11.1"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libevent" {= "2.1.12"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "a821dcc34648e656fa394577efc241b0ea93bcc6121d498d5e7e7bf81838d27d--pmix-5.0.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "70e3b4bd5a598b70911e37d2c00807f9848afa215daeb0993bee20b88f27856b--pmix--5.0.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ffaadc7a75428d705f4b4be6628b32d015f9d24afb8d942c16565b8bcc2762e3--pmix--5.0.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "89e51e79b2d2945aca6042b0a10da3838123e69552ce53785637858f30f373fa--pmix--5.0.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "69eae04e14225326b3595553fa3840a3a4d1a2f70d3fdc6a9efc50f52e6d4b85--pmix--5.0.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "faf50b33c53adca22e40233a4f1e37897a5915ab81a585b24130a0430c31e416--pmix--5.0.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "564e251070c71326f6a801fa9c6fcb33ffb28668fa6599ef264dd77dc059bcde--pmix--5.0.3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "02b93116800875d2eac4bd3658c3dca3b312494d2d08579875950d0efb0d5784--pmix--5.0.3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e11c7a93417e7e0795f09ac764f8bb9d2461c718f668f525fdf7b6127a60efc1--pmix--5.0.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pmix" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pmix" ]
+]

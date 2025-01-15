@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library of 2D and 3D vector, matrix, and math operations"
+description: """
+Library of 2D and 3D vector, matrix, and math operations"""
+extra-source "a92ea0b513d9fda7aea7a90986aa812df34a619b46cbca1b93de1987cdd226b9--imath--3.1.12.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:946c5c0541452ef3285cc49eb495c476b083203d3c0edab493045cb2e665fd31"
+  checksum: [
+    "sha256=946c5c0541452ef3285cc49eb495c476b083203d3c0edab493045cb2e665fd31"
+  ]
+}
+extra-source "6afdf93c912565e828ad2386867db9e96b58441f29b901492560bcde9e8a22ad--imath-3.1.12.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/manifests/3.1.12"
+}
+extra-source "9cf4f77c2e6c90504d23762e5d6f3f943a7f7673bf29c1dd06192f511e7a3e09--imath--3.1.12.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:6f6d2633c7443723f64753ceac0bd2d69c5954f615fb9d843944f03fc6a9cf32"
+  checksum: [
+    "sha256=6f6d2633c7443723f64753ceac0bd2d69c5954f615fb9d843944f03fc6a9cf32"
+  ]
+}
+extra-source "02b9f670ba55e7649ad9408a092a4565478072ba0fac8093c621c8d84e2d8c48--imath--3.1.12.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:787f2525c5b53bb1153e265774555f2a39c350bf927ce32fdb675987db179776"
+  checksum: [
+    "sha256=787f2525c5b53bb1153e265774555f2a39c350bf927ce32fdb675987db179776"
+  ]
+}
+extra-source "7997eed32273e4bae47cb2e29a9dc01c4d171766f97d67e9c10012a3fa7d212e--imath--3.1.12.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:93b1c78e9e628d1c6897d738ec717e50b1451f84ef5a97d3109d7ba26dc42bc9"
+  checksum: [
+    "sha256=93b1c78e9e628d1c6897d738ec717e50b1451f84ef5a97d3109d7ba26dc42bc9"
+  ]
+}
+extra-source "f34b00d386cba6fb5733bf2ed68054d743c6eaddadffc1ee3562d9a2e571fb25--imath--3.1.12.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:b8fb4298477012d3e5b2572264a10220370e2849214df677519f92c93a522e42"
+  checksum: [
+    "sha256=b8fb4298477012d3e5b2572264a10220370e2849214df677519f92c93a522e42"
+  ]
+}
+extra-source "73d371191a03ae5d99e09e6e988fe746b1db23b7077494c4a8c955158741b745--imath--3.1.12.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:b83b7496444abd2a7d69c208f77aa788ce65326cb9b34561a1cd467083104e32"
+  checksum: [
+    "sha256=b83b7496444abd2a7d69c208f77aa788ce65326cb9b34561a1cd467083104e32"
+  ]
+}
+extra-source "5ac49097aaa4ba7e90b9e08eccf0435755e4b1f7d53c8b50f174c3ddfbada982--imath--3.1.12.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:c20229d09bc63f5f7c83ba3cfa9b591993d5b08aa5a82ee1e715cffd169d42c1"
+  checksum: [
+    "sha256=c20229d09bc63f5f7c83ba3cfa9b591993d5b08aa5a82ee1e715cffd169d42c1"
+  ]
+}
+extra-source "31ac9c228d1e660b2391f5655847c3bba033ae7f1b1602a6ce26ab05209da2d4--imath--3.1.12.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:4bd454621cf393aee0d5448b8ac4e6e1d6cd3fd0ee88b4596be0fec333d11130"
+  checksum: [
+    "sha256=4bd454621cf393aee0d5448b8ac4e6e1d6cd3fd0ee88b4596be0fec333d11130"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "6afdf93c912565e828ad2386867db9e96b58441f29b901492560bcde9e8a22ad--imath-3.1.12.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "a92ea0b513d9fda7aea7a90986aa812df34a619b46cbca1b93de1987cdd226b9--imath--3.1.12.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9cf4f77c2e6c90504d23762e5d6f3f943a7f7673bf29c1dd06192f511e7a3e09--imath--3.1.12.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "02b9f670ba55e7649ad9408a092a4565478072ba0fac8093c621c8d84e2d8c48--imath--3.1.12.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7997eed32273e4bae47cb2e29a9dc01c4d171766f97d67e9c10012a3fa7d212e--imath--3.1.12.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f34b00d386cba6fb5733bf2ed68054d743c6eaddadffc1ee3562d9a2e571fb25--imath--3.1.12.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "73d371191a03ae5d99e09e6e988fe746b1db23b7077494c4a8c955158741b745--imath--3.1.12.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5ac49097aaa4ba7e90b9e08eccf0435755e4b1f7d53c8b50f174c3ddfbada982--imath--3.1.12.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "31ac9c228d1e660b2391f5655847c3bba033ae7f1b1602a6ce26ab05209da2d4--imath--3.1.12.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "imath" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "imath" ]
+]

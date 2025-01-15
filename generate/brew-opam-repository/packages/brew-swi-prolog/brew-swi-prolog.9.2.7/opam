@@ -1,0 +1,110 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "ISO/Edinburgh-style Prolog interpreter"
+description: """
+ISO/Edinburgh-style Prolog interpreter"""
+extra-source "e9f54270788e80694064cccd7a4dfece099725e5061a1ed11401883ada063e8c--swi-prolog--9.2.7.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/blobs/sha256:0256218f3dc51378aecb9c831103aef1d49bdef503556485b0e5e63a03949541"
+  checksum: [
+    "sha256=0256218f3dc51378aecb9c831103aef1d49bdef503556485b0e5e63a03949541"
+  ]
+}
+extra-source "feed868d21d3d978b0614bdfaa87fd6fc9bc932810bb83e3555c872bcfdfeead--swi-prolog-9.2.7.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/manifests/9.2.7"
+}
+extra-source "ff098a31ce655cb52ed6f48b106f362c57ff825b897ccf6fc34cf4f4dcc17b2b--swi-prolog--9.2.7.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/blobs/sha256:0a49327bf13f589c5bb9148c6cc526c7967bd332ee499fc0aba78e22e892dcd5"
+  checksum: [
+    "sha256=0a49327bf13f589c5bb9148c6cc526c7967bd332ee499fc0aba78e22e892dcd5"
+  ]
+}
+extra-source "2eb81ca6233a47dc9341dbdda37f6676f3ac6c23464887d639f589c9907c39f4--swi-prolog--9.2.7.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/blobs/sha256:82389e702458b8a7f324b1d4e390ee292501e7c9e5e3b7d50f2ad09656061998"
+  checksum: [
+    "sha256=82389e702458b8a7f324b1d4e390ee292501e7c9e5e3b7d50f2ad09656061998"
+  ]
+}
+extra-source "7a26047e97184dcd2365f0a1dca5c8aa46d991aa92844ee4abe222767cdb87d2--swi-prolog--9.2.7.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/blobs/sha256:de02dd3ba44d512c9b0633c34a7cae6ac8296c587ce75c0ec76bf7051b0265f9"
+  checksum: [
+    "sha256=de02dd3ba44d512c9b0633c34a7cae6ac8296c587ce75c0ec76bf7051b0265f9"
+  ]
+}
+extra-source "da6f351c3be177cf7aea2efc2d388285433bf92bc5c9beb55bb7d810a6c1b3cf--swi-prolog--9.2.7.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/blobs/sha256:1289209e2994b1c842d8d7b3e83255f803023742883998a25c79f884627debb2"
+  checksum: [
+    "sha256=1289209e2994b1c842d8d7b3e83255f803023742883998a25c79f884627debb2"
+  ]
+}
+extra-source "be6d2e9d86c9f93ebb37e5b2a6405e7131744e3325969ed6f0c7998240e7cfd6--swi-prolog--9.2.7.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/blobs/sha256:3102c2046092c844dd7001ff8efff41e80cdd605109a208e654cc804b1d3a4fa"
+  checksum: [
+    "sha256=3102c2046092c844dd7001ff8efff41e80cdd605109a208e654cc804b1d3a4fa"
+  ]
+}
+extra-source "5889ef6f8317b55fc6199a402264a9371fa91235bda35ccb311a392e864e5f6b--swi-prolog--9.2.7.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/blobs/sha256:15609488c0cd29f1b538504d48638e6af1231afd5e30f18d8b928c4d2a945079"
+  checksum: [
+    "sha256=15609488c0cd29f1b538504d48638e6af1231afd5e30f18d8b928c4d2a945079"
+  ]
+}
+extra-source "77931d00f8995d1405db8c480a4c1e00ebac38eee8d544ca74182322c80d78f5--swi-prolog--9.2.7.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/swi-prolog/blobs/sha256:0ef620824a06927b9e03069db15f1ec7975e42b1ba4f8a1e0347fc8188a531ae"
+  checksum: [
+    "sha256=0ef620824a06927b9e03069db15f1ec7975e42b1ba4f8a1e0347fc8188a531ae"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-berkeley-db" {= "5.3.28"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libarchive" {= "3.7.5"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-pcre2" {= "10.44"}
+  "brew-readline" {= "8.2.13"}
+  "brew-unixodbc" {= "2.3.12"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "feed868d21d3d978b0614bdfaa87fd6fc9bc932810bb83e3555c872bcfdfeead--swi-prolog-9.2.7.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e9f54270788e80694064cccd7a4dfece099725e5061a1ed11401883ada063e8c--swi-prolog--9.2.7.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ff098a31ce655cb52ed6f48b106f362c57ff825b897ccf6fc34cf4f4dcc17b2b--swi-prolog--9.2.7.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2eb81ca6233a47dc9341dbdda37f6676f3ac6c23464887d639f589c9907c39f4--swi-prolog--9.2.7.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7a26047e97184dcd2365f0a1dca5c8aa46d991aa92844ee4abe222767cdb87d2--swi-prolog--9.2.7.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "da6f351c3be177cf7aea2efc2d388285433bf92bc5c9beb55bb7d810a6c1b3cf--swi-prolog--9.2.7.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "be6d2e9d86c9f93ebb37e5b2a6405e7131744e3325969ed6f0c7998240e7cfd6--swi-prolog--9.2.7.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5889ef6f8317b55fc6199a402264a9371fa91235bda35ccb311a392e864e5f6b--swi-prolog--9.2.7.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "77931d00f8995d1405db8c480a4c1e00ebac38eee8d544ca74182322c80d78f5--swi-prolog--9.2.7.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "swi-prolog" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "swi-prolog" ]
+]

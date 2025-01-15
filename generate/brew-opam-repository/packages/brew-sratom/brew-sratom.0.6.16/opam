@@ -1,0 +1,111 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for serializing LV2 atoms to/from RDF"
+description: """
+Library for serializing LV2 atoms to/from RDF"""
+extra-source "13f2f7e71de901ce5226dadf6a78763be9cefca7cd820c73f1032069bdd7860f--sratom--0.6.16.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:3f9500429d1915d9fcfc47e023f383b0b9cdf4acf973a982400be49c44e6da63"
+  checksum: [
+    "sha256=3f9500429d1915d9fcfc47e023f383b0b9cdf4acf973a982400be49c44e6da63"
+  ]
+}
+extra-source "d7d52b72cb5417600adaa1788e13c276e97086b529bf853b954b1c0cb245c033--sratom-0.6.16.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/manifests/0.6.16"
+}
+extra-source "d06e057489471f1ae66576257e9291b1c78b13a8717fe0f8b96d07c6d83787c2--sratom--0.6.16.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:920202525fe2153f008e5dacf59d6fda97ae33b127e4fa363735c1a7cd4d1598"
+  checksum: [
+    "sha256=920202525fe2153f008e5dacf59d6fda97ae33b127e4fa363735c1a7cd4d1598"
+  ]
+}
+extra-source "3aa9cbd2714a5b3511e6b260b7e6d697429c88e77f9e45ededa3698c8212cc4e--sratom--0.6.16.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:e83b77c4790cd4fbb8a1f37fdb33a78c20298d89b3345559e5990f632d06f533"
+  checksum: [
+    "sha256=e83b77c4790cd4fbb8a1f37fdb33a78c20298d89b3345559e5990f632d06f533"
+  ]
+}
+extra-source "05e322aca3d50c6b76b80147e23d0a836e4239c9095a5610d9e22bfcc3fcb172--sratom--0.6.16.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:67e160e20bbf18673f2a1a91697a405478310cadf43413989dcb35a7a06ac4cf"
+  checksum: [
+    "sha256=67e160e20bbf18673f2a1a91697a405478310cadf43413989dcb35a7a06ac4cf"
+  ]
+}
+extra-source "7ac6f4841762a35116c50074147c65d36d501a1cc7c0c2c81cb720923a50a752--sratom--0.6.16.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:c8ae52b2eea3191e28ec3fb96bce4b067715c0daca5e37681b368fc44350c43e"
+  checksum: [
+    "sha256=c8ae52b2eea3191e28ec3fb96bce4b067715c0daca5e37681b368fc44350c43e"
+  ]
+}
+extra-source "9e716e8ea41a5509d0cc6739364722d67fc1af6a43becb267c3f0f1f2073ca8f--sratom--0.6.16.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:8d55f793f9a463ac0d7ce4a2e6537f10303b37bc1b8192ff3906bb07987cc670"
+  checksum: [
+    "sha256=8d55f793f9a463ac0d7ce4a2e6537f10303b37bc1b8192ff3906bb07987cc670"
+  ]
+}
+extra-source "b346b64295a8c0867368bb677eaef32605df3bc3968cd6a4367014b36f7e35e4--sratom--0.6.16.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:e9d9c40f47a753b41d128e9d061ff61f39b84483df9f67c6b7d5ca04318b55f3"
+  checksum: [
+    "sha256=e9d9c40f47a753b41d128e9d061ff61f39b84483df9f67c6b7d5ca04318b55f3"
+  ]
+}
+extra-source "bb82e09dc557b304aeb3ea5221694f6cac886904f5d89494b0a911d87659aff0--sratom--0.6.16.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:e108a73b3a47181df80686a66bcdfb8fdbbcbb9682aeefc7a5b058699356b395"
+  checksum: [
+    "sha256=e108a73b3a47181df80686a66bcdfb8fdbbcbb9682aeefc7a5b058699356b395"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-lv2" {= "1.18.10"}
+  "brew-serd" {= "0.32.2"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python" {= "3.11.10"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-zix" {= "0.4.2"}
+  "brew-sord" {= "0.16.16"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d7d52b72cb5417600adaa1788e13c276e97086b529bf853b954b1c0cb245c033--sratom-0.6.16.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "13f2f7e71de901ce5226dadf6a78763be9cefca7cd820c73f1032069bdd7860f--sratom--0.6.16.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d06e057489471f1ae66576257e9291b1c78b13a8717fe0f8b96d07c6d83787c2--sratom--0.6.16.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3aa9cbd2714a5b3511e6b260b7e6d697429c88e77f9e45ededa3698c8212cc4e--sratom--0.6.16.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "05e322aca3d50c6b76b80147e23d0a836e4239c9095a5610d9e22bfcc3fcb172--sratom--0.6.16.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7ac6f4841762a35116c50074147c65d36d501a1cc7c0c2c81cb720923a50a752--sratom--0.6.16.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9e716e8ea41a5509d0cc6739364722d67fc1af6a43becb267c3f0f1f2073ca8f--sratom--0.6.16.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b346b64295a8c0867368bb677eaef32605df3bc3968cd6a4367014b36f7e35e4--sratom--0.6.16.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bb82e09dc557b304aeb3ea5221694f6cac886904f5d89494b0a911d87659aff0--sratom--0.6.16.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sratom" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sratom" ]
+]

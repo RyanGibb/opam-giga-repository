@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Implementation of the Unicode line- and word-breaking algorithms"
+description: """
+Implementation of the Unicode line- and word-breaking algorithms"""
+extra-source "19e3660ad0c0e463c506b271e8c1da2c4ecdd346ec8d61d87dbbfe97876ccaaa--libunibreak--6.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/blobs/sha256:0bed33fbc272073291fa047e1f72422aff56e83276de789d02a0f3f82f117b45"
+  checksum: [
+    "sha256=0bed33fbc272073291fa047e1f72422aff56e83276de789d02a0f3f82f117b45"
+  ]
+}
+extra-source "0ce1b2ced7836a56fa520c73ee31abcb81d0433729fe597e94ef03dd9d8a89f8--libunibreak-6.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/manifests/6.1"
+}
+extra-source "5b7c20a0e25e7e9b21121e7c7616650259f8a1c108bcdf1ebeae6bcf97b21fc1--libunibreak--6.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/blobs/sha256:e567abc03dc6d7df4bb3f5e6347dd58b8738d1b79cb03e151b44fce2ea9b6ce1"
+  checksum: [
+    "sha256=e567abc03dc6d7df4bb3f5e6347dd58b8738d1b79cb03e151b44fce2ea9b6ce1"
+  ]
+}
+extra-source "248e7ecebfd2fef3527df405794214aa7ea64cd051c56ca2dbdb6403f1e3c4b0--libunibreak--6.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/blobs/sha256:687db532bdd75f70882b9b40e0f5b14fdac91ce6c81a94067757e46cc6f84566"
+  checksum: [
+    "sha256=687db532bdd75f70882b9b40e0f5b14fdac91ce6c81a94067757e46cc6f84566"
+  ]
+}
+extra-source "49419f58a0dea91144bb3ad3c09bc80056eefd14526c6ccad8d8826a65ec085c--libunibreak--6.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/blobs/sha256:60c6227dc928dca0478e06214ecb17f1e8103cfb42c7109509d4ed565acfde91"
+  checksum: [
+    "sha256=60c6227dc928dca0478e06214ecb17f1e8103cfb42c7109509d4ed565acfde91"
+  ]
+}
+extra-source "f20480e2a33c67087595e601e9a1811d45ebbe2d0651b068a822fe175f000941--libunibreak--6.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/blobs/sha256:66f1874dbc3a0761b53cf03a7a72d2ca161b129c251a922a4109f93be947086e"
+  checksum: [
+    "sha256=66f1874dbc3a0761b53cf03a7a72d2ca161b129c251a922a4109f93be947086e"
+  ]
+}
+extra-source "bedc5e3677050fa274d8f40821bb849fef635ec70bc252ed90792a12daf4192e--libunibreak--6.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/blobs/sha256:871afc806ba2cae52184f857040c6b74f354025f502edebef37a443355994902"
+  checksum: [
+    "sha256=871afc806ba2cae52184f857040c6b74f354025f502edebef37a443355994902"
+  ]
+}
+extra-source "7068443d083376532b44be2dce9e1d5aae6021fb4b29c1ea1e4aeb44eaaac6bc--libunibreak--6.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/blobs/sha256:f14809e82b501d33b043d4943c9dcf5b8667adeddcefff7356d41c993575de35"
+  checksum: [
+    "sha256=f14809e82b501d33b043d4943c9dcf5b8667adeddcefff7356d41c993575de35"
+  ]
+}
+extra-source "4e35c1aeaa97b290717335c0fd5223f6ef509a357b3e118937a8ff19c228e52e--libunibreak--6.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunibreak/blobs/sha256:a2662de1e1149d0aa2ed06f7bed26ab1ad27f7fc1bc5aa1689a9a320179b124a"
+  checksum: [
+    "sha256=a2662de1e1149d0aa2ed06f7bed26ab1ad27f7fc1bc5aa1689a9a320179b124a"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "0ce1b2ced7836a56fa520c73ee31abcb81d0433729fe597e94ef03dd9d8a89f8--libunibreak-6.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "19e3660ad0c0e463c506b271e8c1da2c4ecdd346ec8d61d87dbbfe97876ccaaa--libunibreak--6.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5b7c20a0e25e7e9b21121e7c7616650259f8a1c108bcdf1ebeae6bcf97b21fc1--libunibreak--6.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "248e7ecebfd2fef3527df405794214aa7ea64cd051c56ca2dbdb6403f1e3c4b0--libunibreak--6.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "49419f58a0dea91144bb3ad3c09bc80056eefd14526c6ccad8d8826a65ec085c--libunibreak--6.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f20480e2a33c67087595e601e9a1811d45ebbe2d0651b068a822fe175f000941--libunibreak--6.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bedc5e3677050fa274d8f40821bb849fef635ec70bc252ed90792a12daf4192e--libunibreak--6.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7068443d083376532b44be2dce9e1d5aae6021fb4b29c1ea1e4aeb44eaaac6bc--libunibreak--6.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4e35c1aeaa97b290717335c0fd5223f6ef509a357b3e118937a8ff19c228e52e--libunibreak--6.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libunibreak" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libunibreak" ]
+]

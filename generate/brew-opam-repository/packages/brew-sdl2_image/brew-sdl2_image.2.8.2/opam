@@ -1,0 +1,115 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for loading images as SDL surfaces and textures"
+description: """
+Library for loading images as SDL surfaces and textures"""
+extra-source "179e96749845444152ccc42079712e1d855bef9b750a1396ba5955ea6abd254a--sdl2_image--2.8.2_2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_image/blobs/sha256:ea6594c3fe00a6b0a1169f68e78ef17c0d9cc35dab208d88e2b448cf96703547"
+  checksum: [
+    "sha256=ea6594c3fe00a6b0a1169f68e78ef17c0d9cc35dab208d88e2b448cf96703547"
+  ]
+}
+extra-source "8751d0982f49f8d7a8cb564bc9ac9eaf65b93a7ee37ca58dc1d535ffdfee5b14--sdl2_image-2.8.2_2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_image/manifests/2.8.2_2"
+}
+extra-source "93090d57ee95683a2a51d9bc898f7adcada118c8bf2443fd2d9871e86c9720c2--sdl2_image--2.8.2_2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_image/blobs/sha256:b77136bb7cac65db0092fba3c4f06ac8af0d3eb273dc98e4a0dc36773f341fc9"
+  checksum: [
+    "sha256=b77136bb7cac65db0092fba3c4f06ac8af0d3eb273dc98e4a0dc36773f341fc9"
+  ]
+}
+extra-source "ed6513d5fd7fbe22f0610e5e5f3faac2da5f1f238febede2e0d7068131effdce--sdl2_image--2.8.2_2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_image/blobs/sha256:4520a781a18de69c48f4e45cdf0136facce70322d326200eac0568ea06d9b0de"
+  checksum: [
+    "sha256=4520a781a18de69c48f4e45cdf0136facce70322d326200eac0568ea06d9b0de"
+  ]
+}
+extra-source "bc9c0dc4774d6a0eb283c9daba48bce954a43ebbd63ecd2ead0c01690f6a0e68--sdl2_image--2.8.2_2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_image/blobs/sha256:6c47414b1e8b5c656e8aa1dd07529e6510df854f0ddb0d630a8e25b557244e48"
+  checksum: [
+    "sha256=6c47414b1e8b5c656e8aa1dd07529e6510df854f0ddb0d630a8e25b557244e48"
+  ]
+}
+extra-source "78d89e51fa7f8f06aebfc06c07088bf9abda86b19c628ec822e9cf2d9add24cb--sdl2_image--2.8.2_2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_image/blobs/sha256:d6ba44f75c244195f45458679b1ffcbde7ba4041b0ac314608b1ca66719ce5c5"
+  checksum: [
+    "sha256=d6ba44f75c244195f45458679b1ffcbde7ba4041b0ac314608b1ca66719ce5c5"
+  ]
+}
+extra-source "f6265ad2ac694b1fa03ea270d9e7bf75164029a913402ebc7fe7696f1bc77b3d--sdl2_image--2.8.2_2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sdl2_image/blobs/sha256:627c063738ce664e38f5eaec55821203a6388ce4559f4b3427468aaf9bed4a97"
+  checksum: [
+    "sha256=627c063738ce664e38f5eaec55821203a6388ce4559f4b3427468aaf9bed4a97"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-icu4c" {= "74.2"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+  "brew-aom" {= "3.10.0"}
+  "brew-libavif" {= "1.1.1"}
+  "brew-sdl2" {= "2.30.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8751d0982f49f8d7a8cb564bc9ac9eaf65b93a7ee37ca58dc1d535ffdfee5b14--sdl2_image-2.8.2_2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "179e96749845444152ccc42079712e1d855bef9b750a1396ba5955ea6abd254a--sdl2_image--2.8.2_2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "93090d57ee95683a2a51d9bc898f7adcada118c8bf2443fd2d9871e86c9720c2--sdl2_image--2.8.2_2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ed6513d5fd7fbe22f0610e5e5f3faac2da5f1f238febede2e0d7068131effdce--sdl2_image--2.8.2_2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bc9c0dc4774d6a0eb283c9daba48bce954a43ebbd63ecd2ead0c01690f6a0e68--sdl2_image--2.8.2_2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "78d89e51fa7f8f06aebfc06c07088bf9abda86b19c628ec822e9cf2d9add24cb--sdl2_image--2.8.2_2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f6265ad2ac694b1fa03ea270d9e7bf75164029a913402ebc7fe7696f1bc77b3d--sdl2_image--2.8.2_2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sdl2_image" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sdl2_image" ]
+]

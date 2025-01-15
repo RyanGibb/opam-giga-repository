@@ -1,0 +1,146 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Portable sound library"
+description: """
+Portable sound library"""
+extra-source "7b05a6b456f58e125323b89cbc6e579774546903d280944e8922d6fc9dde8297--libmikmod--3.3.11.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:e992d9202fbda5e658ade602460071b3b3b8eace5d3afb00bab1b5e39ec51216"
+  checksum: [
+    "sha256=e992d9202fbda5e658ade602460071b3b3b8eace5d3afb00bab1b5e39ec51216"
+  ]
+}
+extra-source "c2a9161096350366b92a3162484b912349f409654b36689bd694dcb353c2bbc0--libmikmod-3.3.11.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/manifests/3.3.11.1"
+}
+extra-source "92662d26b280a4a4afdf7baf675223189445925ca77323455cb91eb2dc2c94cc--libmikmod--3.3.11.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:536d3de16e5b7fb7a8133b14682c96af81c4ed8396185336b540abb33a29821e"
+  checksum: [
+    "sha256=536d3de16e5b7fb7a8133b14682c96af81c4ed8396185336b540abb33a29821e"
+  ]
+}
+extra-source "ccd0762a37a461027aa2d66508c89c39c00da6bf109ce8421cab3ce4a29ebb84--libmikmod--3.3.11.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:2d395a79c20373d140f5786ee97d73bf8111cc19ec8e4515049e1c2fb14fa1b3"
+  checksum: [
+    "sha256=2d395a79c20373d140f5786ee97d73bf8111cc19ec8e4515049e1c2fb14fa1b3"
+  ]
+}
+extra-source "9134f0e4aabb3d97585ec7b0a41e8b2f02c64d6bad41ba33fd053a63e44ab87c--libmikmod--3.3.11.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:68d7a41cc8f1900202fd7bcd650f9dca0ec85cbc13777069b237fc2cbe94ca41"
+  checksum: [
+    "sha256=68d7a41cc8f1900202fd7bcd650f9dca0ec85cbc13777069b237fc2cbe94ca41"
+  ]
+}
+extra-source "235b5dd23b739ea5aeab4481379986c2bfd364cd7cfe2b956bfaaeaaadd29cf5--libmikmod--3.3.11.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:e8683d4aede6aeb630bbfe23dc57c246d4c54d853fd170e4658be9a11b8b7132"
+  checksum: [
+    "sha256=e8683d4aede6aeb630bbfe23dc57c246d4c54d853fd170e4658be9a11b8b7132"
+  ]
+}
+extra-source "79e38782880044f7404cc1e7fc2f442a0a944d0503ebee5b224a9fa0fbf93d09--libmikmod--3.3.11.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:f427b1ed15b6298b45e7d18564899b9cdb2ca57d2d01b7de4aed03c4a3be32c5"
+  checksum: [
+    "sha256=f427b1ed15b6298b45e7d18564899b9cdb2ca57d2d01b7de4aed03c4a3be32c5"
+  ]
+}
+extra-source "92c04269de5b6a50fb0d779e6c400e6efad6fd8673720b4b21d3c079d2d48af3--libmikmod--3.3.11.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:74a5601641751f0e90dd3a5a274a257161c26b86443e77f2d605b3be9ff67115"
+  checksum: [
+    "sha256=74a5601641751f0e90dd3a5a274a257161c26b86443e77f2d605b3be9ff67115"
+  ]
+}
+extra-source "bfb5fbe33e14a6e6e72404afbdc74398dcd38e0c324c29ec27491dd2e10f9984--libmikmod--3.3.11.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:7f99f24d853fa01e073fe73cecabf1a8ec8f871f354e21da5b5003bc2de85ad2"
+  checksum: [
+    "sha256=7f99f24d853fa01e073fe73cecabf1a8ec8f871f354e21da5b5003bc2de85ad2"
+  ]
+}
+extra-source "a6496a06903e7c4561493122da62e545ab2d9efb7cb1d762d06d5d62393aa1f8--libmikmod--3.3.11.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:59bf02931bcc7553745595b3859277cbb471ef5cf6f644a9251ddde4fc8a9513"
+  checksum: [
+    "sha256=59bf02931bcc7553745595b3859277cbb471ef5cf6f644a9251ddde4fc8a9513"
+  ]
+}
+extra-source "b5ca93e9c800ae243531af0bf43734205a20544afdb3ad7802cc2bfb17f72d5d--libmikmod--3.3.11.1.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:2151c9e70ca92a911af8cf769c18541c5d107df349b44987f716909c67216c59"
+  checksum: [
+    "sha256=2151c9e70ca92a911af8cf769c18541c5d107df349b44987f716909c67216c59"
+  ]
+}
+extra-source "a4063d445dc1162b93dfda9cb95346da6d654e131a9df60d4068a757931684bb--libmikmod--3.3.11.1.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:c69fe0dbab9fb93187e1388d4e388c00c73930dfb3bdd668a0a60228cd8d681b"
+  checksum: [
+    "sha256=c69fe0dbab9fb93187e1388d4e388c00c73930dfb3bdd668a0a60228cd8d681b"
+  ]
+}
+extra-source "17533c7373d1eacf7a2d3158c6eefb0690eae116f98c98d812c22bc5ebd84fb3--libmikmod--3.3.11.1.high_sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:062f1a9e2c4d5ebc6cfb08e70abbdf4ebd85b06519345ed8bde301e62d0cd860"
+  checksum: [
+    "sha256=062f1a9e2c4d5ebc6cfb08e70abbdf4ebd85b06519345ed8bde301e62d0cd860"
+  ]
+}
+extra-source "36af23be49a1f93cbb13ad5883ba09776c3914a8241b2b25f5e5a1dc84577945--libmikmod--3.3.11.1.sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:f7785b9a4f95ff28d55ffd022780ed1cd9bde139b3482cc4f52b862cd9abf247"
+  checksum: [
+    "sha256=f7785b9a4f95ff28d55ffd022780ed1cd9bde139b3482cc4f52b862cd9abf247"
+  ]
+}
+extra-source "258dedd8ddcadb5fe8eb64bd82460c5e98b55a9e3ce58cabd0626d781f9000e7--libmikmod--3.3.11.1.el_capitan.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:202b59906b8113d694f9c1e81df7a5f00f8afbc9e66a2b1188674058a64ae206"
+  checksum: [
+    "sha256=202b59906b8113d694f9c1e81df7a5f00f8afbc9e66a2b1188674058a64ae206"
+  ]
+}
+extra-source "28561d066c5e1e3d4483c702fe6cd8205f0db748b5ccafa6edb6ac141bbbd727--libmikmod--3.3.11.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmikmod/blobs/sha256:389de6e5bc42ac2a6813b283c4ddbc2312d915beafe93305d8b2bd474deca2a9"
+  checksum: [
+    "sha256=389de6e5bc42ac2a6813b283c4ddbc2312d915beafe93305d8b2bd474deca2a9"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c2a9161096350366b92a3162484b912349f409654b36689bd694dcb353c2bbc0--libmikmod-3.3.11.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7b05a6b456f58e125323b89cbc6e579774546903d280944e8922d6fc9dde8297--libmikmod--3.3.11.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "92662d26b280a4a4afdf7baf675223189445925ca77323455cb91eb2dc2c94cc--libmikmod--3.3.11.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ccd0762a37a461027aa2d66508c89c39c00da6bf109ce8421cab3ce4a29ebb84--libmikmod--3.3.11.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9134f0e4aabb3d97585ec7b0a41e8b2f02c64d6bad41ba33fd053a63e44ab87c--libmikmod--3.3.11.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "235b5dd23b739ea5aeab4481379986c2bfd364cd7cfe2b956bfaaeaaadd29cf5--libmikmod--3.3.11.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "79e38782880044f7404cc1e7fc2f442a0a944d0503ebee5b224a9fa0fbf93d09--libmikmod--3.3.11.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "92c04269de5b6a50fb0d779e6c400e6efad6fd8673720b4b21d3c079d2d48af3--libmikmod--3.3.11.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bfb5fbe33e14a6e6e72404afbdc74398dcd38e0c324c29ec27491dd2e10f9984--libmikmod--3.3.11.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a6496a06903e7c4561493122da62e545ab2d9efb7cb1d762d06d5d62393aa1f8--libmikmod--3.3.11.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b5ca93e9c800ae243531af0bf43734205a20544afdb3ad7802cc2bfb17f72d5d--libmikmod--3.3.11.1.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a4063d445dc1162b93dfda9cb95346da6d654e131a9df60d4068a757931684bb--libmikmod--3.3.11.1.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "17533c7373d1eacf7a2d3158c6eefb0690eae116f98c98d812c22bc5ebd84fb3--libmikmod--3.3.11.1.high_sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "36af23be49a1f93cbb13ad5883ba09776c3914a8241b2b25f5e5a1dc84577945--libmikmod--3.3.11.1.sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "258dedd8ddcadb5fe8eb64bd82460c5e98b55a9e3ce58cabd0626d781f9000e7--libmikmod--3.3.11.1.el_capitan.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "28561d066c5e1e3d4483c702fe6cd8205f0db748b5ccafa6edb6ac141bbbd727--libmikmod--3.3.11.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libmikmod" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libmikmod" ]
+]

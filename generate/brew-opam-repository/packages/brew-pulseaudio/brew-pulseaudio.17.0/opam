@@ -1,0 +1,129 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Sound system for POSIX OSes"
+description: """
+Sound system for POSIX OSes"""
+extra-source "025f583783d5be30483b1769037061365466053795cfa1cec211447517ced744--pulseaudio--17.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:ceb92ec9cc890a989907d2b0fe1de997e619cde589fbcc5a31eda87f8adccedb"
+  checksum: [
+    "sha256=ceb92ec9cc890a989907d2b0fe1de997e619cde589fbcc5a31eda87f8adccedb"
+  ]
+}
+extra-source "2beabbd49bc39d1b8f15198e6eb515860e2d502c033fe6e4487679f4b6cbd99f--pulseaudio-17.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/manifests/17.0"
+}
+extra-source "43f4264072b97e92a7f55dea55ff15aafca4b5f919051db8cac0d47ca862b3e7--pulseaudio--17.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:57c4f8e47c04145f0851d231d0c92bd43f57e59bf3416689e25b8e619a7913a3"
+  checksum: [
+    "sha256=57c4f8e47c04145f0851d231d0c92bd43f57e59bf3416689e25b8e619a7913a3"
+  ]
+}
+extra-source "6e120799b4ba3d28b515895a89fabcc6d3ef7331a448013018c114bcf9b08b20--pulseaudio--17.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:aea71892ba21ebdc3e619819ddc6f641a59d87d0688b671b82352af062cf860b"
+  checksum: [
+    "sha256=aea71892ba21ebdc3e619819ddc6f641a59d87d0688b671b82352af062cf860b"
+  ]
+}
+extra-source "a2a25d83276e0107d1259e480da1e77f59648dc4acc92174b787aa623d7bffae--pulseaudio--17.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:fd0835395b77a321e3b5a4542496c02dd0dbdd8134e700bacbfb80c46d6e14cc"
+  checksum: [
+    "sha256=fd0835395b77a321e3b5a4542496c02dd0dbdd8134e700bacbfb80c46d6e14cc"
+  ]
+}
+extra-source "7123f7b7a9527e438273c212e5341266df676790ed38007987f45f1808567e9a--pulseaudio--17.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:63b0ba13d5187af0e2f9bd56f638bf2f1060c60327bb78f97f094cde6756a07c"
+  checksum: [
+    "sha256=63b0ba13d5187af0e2f9bd56f638bf2f1060c60327bb78f97f094cde6756a07c"
+  ]
+}
+extra-source "1e0f92a3e18268025149e0da18c009cd4e8b74177b0cf0cb5f2a696eae7983f2--pulseaudio--17.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:e28e0f3a10c94b089acb2a6f82fd31d19c3cd8cbd7ad180d50a794f473b9adaa"
+  checksum: [
+    "sha256=e28e0f3a10c94b089acb2a6f82fd31d19c3cd8cbd7ad180d50a794f473b9adaa"
+  ]
+}
+extra-source "f4a5096300f97e8b8ea7c505f0eb7d0c4bcddaf85364354840af61b51a4b0a4d--pulseaudio--17.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:25d41b1a184588db2fdb9f39367ff6d20f6c7542f9de2e6b67b73bc4f7bd5e09"
+  checksum: [
+    "sha256=25d41b1a184588db2fdb9f39367ff6d20f6c7542f9de2e6b67b73bc4f7bd5e09"
+  ]
+}
+extra-source "6aca4bad4d1d76ac40e970b7a50d1e3651128c53c57b527e388c2971299b611a--pulseaudio--17.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:504035dfda3bffabae42f352d0e7c0a90c6b8c1f6b925fe7e17502124d5d6529"
+  checksum: [
+    "sha256=504035dfda3bffabae42f352d0e7c0a90c6b8c1f6b925fe7e17502124d5d6529"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-flac" {= "1.4.3"}
+  "brew-lame" {= "3.100"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-mpg123" {= "1.32.7"}
+  "brew-opus" {= "1.5.2"}
+  "brew-libsndfile" {= "1.2.2"}
+  "brew-libsoxr" {= "0.1.3"}
+  "brew-m4" {= "1.4.19"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-orc" {= "0.4.40"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-speexdsp" {= "1.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2beabbd49bc39d1b8f15198e6eb515860e2d502c033fe6e4487679f4b6cbd99f--pulseaudio-17.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "025f583783d5be30483b1769037061365466053795cfa1cec211447517ced744--pulseaudio--17.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "43f4264072b97e92a7f55dea55ff15aafca4b5f919051db8cac0d47ca862b3e7--pulseaudio--17.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6e120799b4ba3d28b515895a89fabcc6d3ef7331a448013018c114bcf9b08b20--pulseaudio--17.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a2a25d83276e0107d1259e480da1e77f59648dc4acc92174b787aa623d7bffae--pulseaudio--17.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7123f7b7a9527e438273c212e5341266df676790ed38007987f45f1808567e9a--pulseaudio--17.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1e0f92a3e18268025149e0da18c009cd4e8b74177b0cf0cb5f2a696eae7983f2--pulseaudio--17.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f4a5096300f97e8b8ea7c505f0eb7d0c4bcddaf85364354840af61b51a4b0a4d--pulseaudio--17.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6aca4bad4d1d76ac40e970b7a50d1e3651128c53c57b527e388c2971299b611a--pulseaudio--17.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pulseaudio" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pulseaudio" ]
+]

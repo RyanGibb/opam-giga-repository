@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Generic library support script"
+description: """
+Generic library support script"""
+extra-source "913ce1f5934fc3614b86d1bbd2fa3b445946e7db77d214d166708c8f328b6380--libtool--2.4.7.sequoia.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:35d0895086c9f57bbaf09b55028081ec9ba3c20b6d4e4646b3a927e30978b928"
+  checksum: [
+    "sha256=35d0895086c9f57bbaf09b55028081ec9ba3c20b6d4e4646b3a927e30978b928"
+  ]
+}
+extra-source "48c4a1b052d8f1dbc015c4fe4097701fc3f6371f5448acc82386fb7ee0eb9db4--libtool-2.4.7-3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/manifests/2.4.7-3"
+}
+extra-source "db5d0420f10d437b719e0c898816f50a74ea9fb4dc4fb079f8b804c15258e898--libtool--2.4.7.arm64_sequoia.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:a4c270c88d58da31c9747afc4d4c79274439df0569a7e09c31476d7e61c5cf5b"
+  checksum: [
+    "sha256=a4c270c88d58da31c9747afc4d4c79274439df0569a7e09c31476d7e61c5cf5b"
+  ]
+}
+extra-source "10fe127a70696d71d885c91c04b4966056d1c788535ccf772790f09098a67927--libtool--2.4.7.sonoma.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:774349ad71c3a2d6c2e0680939b995833d0c936fbb7dcf711a7b4503f986f0e6"
+  checksum: [
+    "sha256=774349ad71c3a2d6c2e0680939b995833d0c936fbb7dcf711a7b4503f986f0e6"
+  ]
+}
+extra-source "f51fdba372996f99a71884611dd1db3154d883087655bfadd1f041c4d4ff6e2c--libtool--2.4.7.arm64_sonoma.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:53032e6f9f95662e8d7e5776c13d99e526f27aa91046b379537e6c9926328532"
+  checksum: [
+    "sha256=53032e6f9f95662e8d7e5776c13d99e526f27aa91046b379537e6c9926328532"
+  ]
+}
+extra-source "1d22e0d36f6cea6a9d9561c98e4fd1d56bd1b4975a7c057f245f786cecaf246f--libtool--2.4.7.ventura.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:abebe5e185ad6d66e8798be461ccbb2bf2ef58e5da78376713f760d0929098ee"
+  checksum: [
+    "sha256=abebe5e185ad6d66e8798be461ccbb2bf2ef58e5da78376713f760d0929098ee"
+  ]
+}
+extra-source "06a6bbd0533c23f5cdf0fedb3fee7740cd6d8391cf5796185e10a6d7c6cc4d01--libtool--2.4.7.arm64_ventura.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:ddc4cbe56b2858f9e653d6c675e2e0a5a283748d1e21192963f9d5d828d9b4c8"
+  checksum: [
+    "sha256=ddc4cbe56b2858f9e653d6c675e2e0a5a283748d1e21192963f9d5d828d9b4c8"
+  ]
+}
+extra-source "582792ce603c319af3019ada72aceb90db2eb91d1fbdda9db3aa4819a7ed0f9c--libtool--2.4.7.monterey.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:eee91ce66c36b14328492b85f7fb4dd4bbe25c84fe48cda37352ca071faf4d03"
+  checksum: [
+    "sha256=eee91ce66c36b14328492b85f7fb4dd4bbe25c84fe48cda37352ca071faf4d03"
+  ]
+}
+extra-source "ac38494e14a5a032c2a037e6094fe848bf21a1a43eda72b730ec7ec62b2d3ba1--libtool--2.4.7.arm64_monterey.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:c075f2068699ea5ad408b952a58d9b0721072905014490d3adcc42c5636b9491"
+  checksum: [
+    "sha256=c075f2068699ea5ad408b952a58d9b0721072905014490d3adcc42c5636b9491"
+  ]
+}
+extra-source "0692b765671b8a1a3da1f4f0e847680ad19ce0a017cf1f163f02ae13bcf08efd--libtool--2.4.7.x86_64_linux.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:8b4b093e7110026279c01fe6604308e0cc0e2ce4e341852f5cea87d944a59be1"
+  checksum: [
+    "sha256=8b4b093e7110026279c01fe6604308e0cc0e2ce4e341852f5cea87d944a59be1"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "48c4a1b052d8f1dbc015c4fe4097701fc3f6371f5448acc82386fb7ee0eb9db4--libtool-2.4.7-3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "913ce1f5934fc3614b86d1bbd2fa3b445946e7db77d214d166708c8f328b6380--libtool--2.4.7.sequoia.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "db5d0420f10d437b719e0c898816f50a74ea9fb4dc4fb079f8b804c15258e898--libtool--2.4.7.arm64_sequoia.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "10fe127a70696d71d885c91c04b4966056d1c788535ccf772790f09098a67927--libtool--2.4.7.sonoma.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f51fdba372996f99a71884611dd1db3154d883087655bfadd1f041c4d4ff6e2c--libtool--2.4.7.arm64_sonoma.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1d22e0d36f6cea6a9d9561c98e4fd1d56bd1b4975a7c057f245f786cecaf246f--libtool--2.4.7.ventura.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "06a6bbd0533c23f5cdf0fedb3fee7740cd6d8391cf5796185e10a6d7c6cc4d01--libtool--2.4.7.arm64_ventura.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "582792ce603c319af3019ada72aceb90db2eb91d1fbdda9db3aa4819a7ed0f9c--libtool--2.4.7.monterey.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ac38494e14a5a032c2a037e6094fe848bf21a1a43eda72b730ec7ec62b2d3ba1--libtool--2.4.7.arm64_monterey.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0692b765671b8a1a3da1f4f0e847680ad19ce0a017cf1f163f02ae13bcf08efd--libtool--2.4.7.x86_64_linux.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libtool" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libtool" ]
+]

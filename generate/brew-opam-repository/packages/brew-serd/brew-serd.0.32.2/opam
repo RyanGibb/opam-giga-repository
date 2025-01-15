@@ -1,0 +1,100 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C library for RDF syntax"
+description: """
+C library for RDF syntax"""
+extra-source "bc527896942f19887e3210c26cc488066f38e9035e28477bbff8744b458a065d--serd--0.32.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/blobs/sha256:6da3bc12299d08bdd94b31b39eb398895133440589a08307fd59f27a41f1deb8"
+  checksum: [
+    "sha256=6da3bc12299d08bdd94b31b39eb398895133440589a08307fd59f27a41f1deb8"
+  ]
+}
+extra-source "efe76f3bd6279b28f0211764495d96a245b8d7c7777af37109f70aeedfb021da--serd-0.32.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/manifests/0.32.2"
+}
+extra-source "64692dd8ad71aae8ff7bf14e6340b25a6896c818b2e322d4a4516fed76c57244--serd--0.32.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/blobs/sha256:fc6f974050534d696af8dadbe2540b184cca110684125c5d16b7b8757b414389"
+  checksum: [
+    "sha256=fc6f974050534d696af8dadbe2540b184cca110684125c5d16b7b8757b414389"
+  ]
+}
+extra-source "5f1337874a36866256de5e5f03d519216e9e49209b1fd5af9f2a45fa79b2f5a6--serd--0.32.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/blobs/sha256:64998f0f202c9dc4d9db24962d225b8575691230c9529e9caf5f51ea1cfe6a51"
+  checksum: [
+    "sha256=64998f0f202c9dc4d9db24962d225b8575691230c9529e9caf5f51ea1cfe6a51"
+  ]
+}
+extra-source "0d23c6c5a337daebaa2d2444fe299389e36687dc9008c2d4b910dd5d388d112b--serd--0.32.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/blobs/sha256:07c535671ae8df56222c86f3033dcac69f998195f048d32c36d3c030bfd7c7b3"
+  checksum: [
+    "sha256=07c535671ae8df56222c86f3033dcac69f998195f048d32c36d3c030bfd7c7b3"
+  ]
+}
+extra-source "90de85227aecbd1422ce991dd346e318c24ddcec9b2a4c43b2fac2b8146a087e--serd--0.32.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/blobs/sha256:a90f4099dc15980f2d3434153cbb09b5cb4da1e359514f0ec5b7503fa3236d0f"
+  checksum: [
+    "sha256=a90f4099dc15980f2d3434153cbb09b5cb4da1e359514f0ec5b7503fa3236d0f"
+  ]
+}
+extra-source "e14b409106c9b5b6aff9697d601ed2d34a4d5335d8b21c0a672a747df6643d9e--serd--0.32.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/blobs/sha256:c94b0036ca6c651de4fc692640b055ec09149c13eebcb3ab321f2cf06a86c05f"
+  checksum: [
+    "sha256=c94b0036ca6c651de4fc692640b055ec09149c13eebcb3ab321f2cf06a86c05f"
+  ]
+}
+extra-source "ff4d175e54d94ff46fe096b8ce5917079c79fa5f2794ef495cfa37014dd65e97--serd--0.32.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/blobs/sha256:1b92544391c0b1a50707d923824e5d6762ce7348b4078d108d122a950854f782"
+  checksum: [
+    "sha256=1b92544391c0b1a50707d923824e5d6762ce7348b4078d108d122a950854f782"
+  ]
+}
+extra-source "08cc6dc74b3861d6df12357c9ac643ac621f978fa3d8d774dbb90141d5b3c032--serd--0.32.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/serd/blobs/sha256:af54bbd35eed60339757f56f0a603f4d27ba1b44b8c7b60d18bf8b67438eaa21"
+  checksum: [
+    "sha256=af54bbd35eed60339757f56f0a603f4d27ba1b44b8c7b60d18bf8b67438eaa21"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "efe76f3bd6279b28f0211764495d96a245b8d7c7777af37109f70aeedfb021da--serd-0.32.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "bc527896942f19887e3210c26cc488066f38e9035e28477bbff8744b458a065d--serd--0.32.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "64692dd8ad71aae8ff7bf14e6340b25a6896c818b2e322d4a4516fed76c57244--serd--0.32.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5f1337874a36866256de5e5f03d519216e9e49209b1fd5af9f2a45fa79b2f5a6--serd--0.32.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0d23c6c5a337daebaa2d2444fe299389e36687dc9008c2d4b910dd5d388d112b--serd--0.32.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "90de85227aecbd1422ce991dd346e318c24ddcec9b2a4c43b2fac2b8146a087e--serd--0.32.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e14b409106c9b5b6aff9697d601ed2d34a4d5335d8b21c0a672a747df6643d9e--serd--0.32.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ff4d175e54d94ff46fe096b8ce5917079c79fa5f2794ef495cfa37014dd65e97--serd--0.32.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "08cc6dc74b3861d6df12357c9ac643ac621f978fa3d8d774dbb90141d5b3c032--serd--0.32.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "serd" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "serd" ]
+]

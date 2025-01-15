@@ -1,0 +1,146 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Apply a diff file to an original"
+description: """
+Apply a diff file to an original"""
+extra-source "63e371eb31543bff2f1adf6924139572bac8a6a1a2458ec5512927b13c918918--gpatch--2.7.6.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:a1dce9002b5a1f9cacd52892ab02c04fbeb1bc9b192ef7d9a55bdadf7d4f6633"
+  checksum: [
+    "sha256=a1dce9002b5a1f9cacd52892ab02c04fbeb1bc9b192ef7d9a55bdadf7d4f6633"
+  ]
+}
+extra-source "5097c729faa36058430246f623f3e95b3e5cd1ece564aa991a40037f06db1750--gpatch-2.7.6.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/manifests/2.7.6"
+}
+extra-source "8249f3e5e6200d04cca717df6ae6eefb25ba068cf1bfef51c266eda48d38d815--gpatch--2.7.6.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:bf91dc2fd09780ff8f6de38d6735170800511d43e43978f2f23cd24dae680ec1"
+  checksum: [
+    "sha256=bf91dc2fd09780ff8f6de38d6735170800511d43e43978f2f23cd24dae680ec1"
+  ]
+}
+extra-source "5a25278786e452b127acf5a2401267faa8c3e7bd377ecf42eff1331f2dcaa216--gpatch--2.7.6.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:91ebe426132b79d3a67bfbec130f267b2e709cda4fdd705c94eb9ff7536e5783"
+  checksum: [
+    "sha256=91ebe426132b79d3a67bfbec130f267b2e709cda4fdd705c94eb9ff7536e5783"
+  ]
+}
+extra-source "1e296d845930fa70b04b80029c48507219df9439d987c7eaf2453a16b75dcfe7--gpatch--2.7.6.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:4578068decc9e78f130aff8e714d99a45a7154a51ce5a0e0ec4e40c31dd686bc"
+  checksum: [
+    "sha256=4578068decc9e78f130aff8e714d99a45a7154a51ce5a0e0ec4e40c31dd686bc"
+  ]
+}
+extra-source "86a885389b7d78ffd52f395ba42db178047dcbe914153d3c7686ee5f8c1b65cc--gpatch--2.7.6.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:51ff39d1b008d1f03d8dfc9d42ed483d64fea632b31f4ccf3dc15ddb2de09794"
+  checksum: [
+    "sha256=51ff39d1b008d1f03d8dfc9d42ed483d64fea632b31f4ccf3dc15ddb2de09794"
+  ]
+}
+extra-source "16ce1f67f9dee589fd7db1e5c2c25948ebbf1fb790f4ba51adb97a8f937a8c7c--gpatch--2.7.6.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:1a3e9eb276bb35ecb33bcdc50b689f1f7cebe1d014566754c5faa85e72251789"
+  checksum: [
+    "sha256=1a3e9eb276bb35ecb33bcdc50b689f1f7cebe1d014566754c5faa85e72251789"
+  ]
+}
+extra-source "7d80ba95429e79aec37e760695e0e439c0d61beec101fdd1f1dac29ff682f777--gpatch--2.7.6.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:0958a773e875dfbab2e70e80cd10a0406eed6f92352ae432b44f4bf74dcce35e"
+  checksum: [
+    "sha256=0958a773e875dfbab2e70e80cd10a0406eed6f92352ae432b44f4bf74dcce35e"
+  ]
+}
+extra-source "cab9328085dc66380b9ad7517cf5810c7d4f97bd6324ba6aaf2f235a7df2a814--gpatch--2.7.6.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:4c18141474072f9fac171680e75c77fa22af016d1cda998a052792980d9ce4f9"
+  checksum: [
+    "sha256=4c18141474072f9fac171680e75c77fa22af016d1cda998a052792980d9ce4f9"
+  ]
+}
+extra-source "4328804404d70613b0f9315e72b4408a232ea3cb03b7bd65748a0568f90c38f4--gpatch--2.7.6.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:c90e7baee17d21e0cb594db676912e108f7df68b71509e15d37edfadcd6b12e9"
+  checksum: [
+    "sha256=c90e7baee17d21e0cb594db676912e108f7df68b71509e15d37edfadcd6b12e9"
+  ]
+}
+extra-source "0442fdecc89a2fa865fb0a17201604b3609728c735c37d3a446618214b68bb0f--gpatch--2.7.6.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:f539f83039bc989b16aac11becfaa933c6dc8088f6fa060a8e01e84ed0a61d77"
+  checksum: [
+    "sha256=f539f83039bc989b16aac11becfaa933c6dc8088f6fa060a8e01e84ed0a61d77"
+  ]
+}
+extra-source "2bfea626406f2263bc1b1e41a81c93e68b032bcc406b19a0a5f90c41b81e9afd--gpatch--2.7.6.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:c25bf27bae741a7ec1a16d19d449d28b4b4a2f225190f55badf86b64b0266f4d"
+  checksum: [
+    "sha256=c25bf27bae741a7ec1a16d19d449d28b4b4a2f225190f55badf86b64b0266f4d"
+  ]
+}
+extra-source "6fc39c99ef752a83e156b3feefe802fe69e58c6c0415e3a8c6dd6f6463bd8335--gpatch--2.7.6.high_sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:418d7ea9c3948a5d70bdca202bd56e5554eef7f105fc25449f041331db7f4f96"
+  checksum: [
+    "sha256=418d7ea9c3948a5d70bdca202bd56e5554eef7f105fc25449f041331db7f4f96"
+  ]
+}
+extra-source "61f955fb7a059182e336a04a06b419382560eb72186166d678c17836b8f4cddf--gpatch--2.7.6.sierra.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:81e0fb63928b01d60b9d7a1f0bdbf262679888556bd055fd02f4f57a70cb87ad"
+  checksum: [
+    "sha256=81e0fb63928b01d60b9d7a1f0bdbf262679888556bd055fd02f4f57a70cb87ad"
+  ]
+}
+extra-source "cd7c38d2c6f3afd81b2d3db33c8f467e9438da5c14358a531b88a364df0e5241--gpatch--2.7.6.el_capitan.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:bd67af8b9c24fa785a2da2a1d3475305593dbc183331aed657313e4066de3259"
+  checksum: [
+    "sha256=bd67af8b9c24fa785a2da2a1d3475305593dbc183331aed657313e4066de3259"
+  ]
+}
+extra-source "08c67e8a69593ce6afc4fcfe420afd0b416e280081af478b2d9f7007c9ac4118--gpatch--2.7.6.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gpatch/blobs/sha256:f49b09a0cf8b312de84a07f7dee7029a0965277baa080f5e4eb57c1457539325"
+  checksum: [
+    "sha256=f49b09a0cf8b312de84a07f7dee7029a0965277baa080f5e4eb57c1457539325"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "5097c729faa36058430246f623f3e95b3e5cd1ece564aa991a40037f06db1750--gpatch-2.7.6.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "63e371eb31543bff2f1adf6924139572bac8a6a1a2458ec5512927b13c918918--gpatch--2.7.6.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8249f3e5e6200d04cca717df6ae6eefb25ba068cf1bfef51c266eda48d38d815--gpatch--2.7.6.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5a25278786e452b127acf5a2401267faa8c3e7bd377ecf42eff1331f2dcaa216--gpatch--2.7.6.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1e296d845930fa70b04b80029c48507219df9439d987c7eaf2453a16b75dcfe7--gpatch--2.7.6.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "86a885389b7d78ffd52f395ba42db178047dcbe914153d3c7686ee5f8c1b65cc--gpatch--2.7.6.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "16ce1f67f9dee589fd7db1e5c2c25948ebbf1fb790f4ba51adb97a8f937a8c7c--gpatch--2.7.6.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7d80ba95429e79aec37e760695e0e439c0d61beec101fdd1f1dac29ff682f777--gpatch--2.7.6.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cab9328085dc66380b9ad7517cf5810c7d4f97bd6324ba6aaf2f235a7df2a814--gpatch--2.7.6.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4328804404d70613b0f9315e72b4408a232ea3cb03b7bd65748a0568f90c38f4--gpatch--2.7.6.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0442fdecc89a2fa865fb0a17201604b3609728c735c37d3a446618214b68bb0f--gpatch--2.7.6.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2bfea626406f2263bc1b1e41a81c93e68b032bcc406b19a0a5f90c41b81e9afd--gpatch--2.7.6.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6fc39c99ef752a83e156b3feefe802fe69e58c6c0415e3a8c6dd6f6463bd8335--gpatch--2.7.6.high_sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "61f955fb7a059182e336a04a06b419382560eb72186166d678c17836b8f4cddf--gpatch--2.7.6.sierra.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cd7c38d2c6f3afd81b2d3db33c8f467e9438da5c14358a531b88a364df0e5241--gpatch--2.7.6.el_capitan.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "08c67e8a69593ce6afc4fcfe420afd0b416e280081af478b2d9f7007c9ac4118--gpatch--2.7.6.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gpatch" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gpatch" ]
+]

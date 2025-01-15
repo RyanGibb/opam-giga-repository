@@ -1,0 +1,123 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Real-time software synthesizer based on the SoundFont 2 specs"
+description: """
+Real-time software synthesizer based on the SoundFont 2 specs"""
+extra-source "cd8e7128d1ece1ee5aaa0257ee23f4e65ce4f6deabcbc22f3146f2296af51f85--fluid-synth--2.3.6.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/blobs/sha256:a15f3dbb5d67e6269105878009fa47ed86c8b66d3912c83080ea635545c22ca1"
+  checksum: [
+    "sha256=a15f3dbb5d67e6269105878009fa47ed86c8b66d3912c83080ea635545c22ca1"
+  ]
+}
+extra-source "f81592d6cd8f289ca62b5aed00f6f2aec89ee649ea905d72db4b173c4d8ad481--fluid-synth-2.3.6.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/manifests/2.3.6"
+}
+extra-source "6b5c49605d26b256f449670ae51bae87094491b40a004c8efdc15486cfc5187d--fluid-synth--2.3.6.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/blobs/sha256:8821d94c5317df25fdbc01186eb076b27d0d266ecd2178749b2a872adc74fcab"
+  checksum: [
+    "sha256=8821d94c5317df25fdbc01186eb076b27d0d266ecd2178749b2a872adc74fcab"
+  ]
+}
+extra-source "a2c060b57bad4cde57eae29f6abd931dc03c421c6340d3856953e06f8df7b800--fluid-synth--2.3.6.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/blobs/sha256:8df2c2ec0acb05d03fc8b5e2abb2d1a5d1613ccf632de3928a24f0ef88cb7abc"
+  checksum: [
+    "sha256=8df2c2ec0acb05d03fc8b5e2abb2d1a5d1613ccf632de3928a24f0ef88cb7abc"
+  ]
+}
+extra-source "8f6197040aedcc55adcec8418b722c83abddb24d68fbd5c324e33e9b1a2b5843--fluid-synth--2.3.6.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/blobs/sha256:7da83508e3fe26ebe0cbf6c4c4893d3e4f25de13a9cbfeb6385dbe45d71d6c59"
+  checksum: [
+    "sha256=7da83508e3fe26ebe0cbf6c4c4893d3e4f25de13a9cbfeb6385dbe45d71d6c59"
+  ]
+}
+extra-source "c1c818a4243bed81601e19cdd3adc501a4275eeab183b4065036bb82ac4a44f2--fluid-synth--2.3.6.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/blobs/sha256:4764cbb6fa6ab23bcedf5e2e93041c1868cbc8e5ae51ea7df33c660d75490bbb"
+  checksum: [
+    "sha256=4764cbb6fa6ab23bcedf5e2e93041c1868cbc8e5ae51ea7df33c660d75490bbb"
+  ]
+}
+extra-source "1b9a5e396e2584588062ddd786707019710d82853cda1cef6c09a1be6f3c3fbe--fluid-synth--2.3.6.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/blobs/sha256:85308fb8e2e6b859570ccd9896a71580febf918b118d7296c211efac1df0ed99"
+  checksum: [
+    "sha256=85308fb8e2e6b859570ccd9896a71580febf918b118d7296c211efac1df0ed99"
+  ]
+}
+extra-source "192ef16651ee26846fdab899bf489b203c0e60ae93a04d1089493f0b1c107f65--fluid-synth--2.3.6.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/blobs/sha256:2ce96a15edff1143f7fb074901acbe574d3538dd2a62d94af37b679a506fb71d"
+  checksum: [
+    "sha256=2ce96a15edff1143f7fb074901acbe574d3538dd2a62d94af37b679a506fb71d"
+  ]
+}
+extra-source "596b07ada960d704f6ed1bad79463d934c8f636a9d0f623742c65ee9fd704a15--fluid-synth--2.3.6.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/fluid-synth/blobs/sha256:97aae8459de63e3a11aa348d5bbc3758bf6e346f9a6ecde6edb041f834865c97"
+  checksum: [
+    "sha256=97aae8459de63e3a11aa348d5bbc3758bf6e346f9a6ecde6edb041f834865c97"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-flac" {= "1.4.3"}
+  "brew-lame" {= "3.100"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-mpg123" {= "1.32.7"}
+  "brew-opus" {= "1.5.2"}
+  "brew-libsndfile" {= "1.2.2"}
+  "brew-portaudio" {= "19.7.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "f81592d6cd8f289ca62b5aed00f6f2aec89ee649ea905d72db4b173c4d8ad481--fluid-synth-2.3.6.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "cd8e7128d1ece1ee5aaa0257ee23f4e65ce4f6deabcbc22f3146f2296af51f85--fluid-synth--2.3.6.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6b5c49605d26b256f449670ae51bae87094491b40a004c8efdc15486cfc5187d--fluid-synth--2.3.6.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a2c060b57bad4cde57eae29f6abd931dc03c421c6340d3856953e06f8df7b800--fluid-synth--2.3.6.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8f6197040aedcc55adcec8418b722c83abddb24d68fbd5c324e33e9b1a2b5843--fluid-synth--2.3.6.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c1c818a4243bed81601e19cdd3adc501a4275eeab183b4065036bb82ac4a44f2--fluid-synth--2.3.6.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1b9a5e396e2584588062ddd786707019710d82853cda1cef6c09a1be6f3c3fbe--fluid-synth--2.3.6.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "192ef16651ee26846fdab899bf489b203c0e60ae93a04d1089493f0b1c107f65--fluid-synth--2.3.6.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "596b07ada960d704f6ed1bad79463d934c8f636a9d0f623742c65ee9fd704a15--fluid-synth--2.3.6.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "fluid-synth" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "fluid-synth" ]
+]

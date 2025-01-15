@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Version control system designed to be a better CVS"
+description: """
+Version control system designed to be a better CVS"""
+extra-source "336d9c011dc717587b0f50affdd37176c8d46b46d32fa92561b63b67f4d8c5e2--subversion--1.14.3_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:babcf99d6491d32ac8df655f5d4c5ba4cc994a68708e8729e8985d2822ba4bb8"
+  checksum: [
+    "sha256=babcf99d6491d32ac8df655f5d4c5ba4cc994a68708e8729e8985d2822ba4bb8"
+  ]
+}
+extra-source "15bf3729dafb64dc1fa24b4ead80ade4a3718d5441d2c6c59e059e2b62fa7290--subversion-1.14.3_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/manifests/1.14.3_1"
+}
+extra-source "7b0b150e286cec0d23321a7a04521429b3e733bbf8e5ec8cbabf48c4ee790aba--subversion--1.14.3_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:8ee0ca47c591f62de107314fa3b283f6ba2547763d99f0b6f7bbeea6219450b5"
+  checksum: [
+    "sha256=8ee0ca47c591f62de107314fa3b283f6ba2547763d99f0b6f7bbeea6219450b5"
+  ]
+}
+extra-source "dfbfd5990d5a20337b0fa4b5147212365ff4486813d815d9c477e38b4338a73c--subversion--1.14.3_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:559c4a78e3be6fb5dc1edd5198c5e8a6bfdcd3755392cef75c007b77e86a5d5b"
+  checksum: [
+    "sha256=559c4a78e3be6fb5dc1edd5198c5e8a6bfdcd3755392cef75c007b77e86a5d5b"
+  ]
+}
+extra-source "9cd6c257a655bb07457ae486bc28e6ef69ae5f3122392d39b232ba8a6724faa2--subversion--1.14.3_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:773e23c8908efbf6aa61c3501ec04a286fa27518b94237fb67113b29bab0336c"
+  checksum: [
+    "sha256=773e23c8908efbf6aa61c3501ec04a286fa27518b94237fb67113b29bab0336c"
+  ]
+}
+extra-source "8c0aeedd5f0518cc157e89cfc1e17c444681994eed9c8e2f4eac33db260a9a09--subversion--1.14.3_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:ff31811eda0a1c661ecac4645c7e41a425206bff94394db1b59e199e85da6089"
+  checksum: [
+    "sha256=ff31811eda0a1c661ecac4645c7e41a425206bff94394db1b59e199e85da6089"
+  ]
+}
+extra-source "314c608bf46fa24b2ed657c9cfb55b0bad4b7d12fb72d1f9255353c9d1eac4f2--subversion--1.14.3_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:02802ae1c865b6599b9ee54367d6ad9fdab4f59d209bdb285fbf9bee59ee6bc3"
+  checksum: [
+    "sha256=02802ae1c865b6599b9ee54367d6ad9fdab4f59d209bdb285fbf9bee59ee6bc3"
+  ]
+}
+extra-source "2c07d8db72332969c5618a75702b19b495fcecccccb9c8973c2e34c9ee6268eb--subversion--1.14.3_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:f98360a8fdf96edfd3f41266114b074837b2e7dfcb8a5c842e3f23a82aa2796b"
+  checksum: [
+    "sha256=f98360a8fdf96edfd3f41266114b074837b2e7dfcb8a5c842e3f23a82aa2796b"
+  ]
+}
+extra-source "07c33ec840a641ba3fc01c22fcdd7557cabb01d308745e912044362776e52476--subversion--1.14.3_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:178d0721f3dfbb4cff77d69dfbae34457d8900343b11a5751fdf35a37ad60cf4"
+  checksum: [
+    "sha256=178d0721f3dfbb4cff77d69dfbae34457d8900343b11a5751fdf35a37ad60cf4"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-apr" {= "1.7.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-apr-util" {= "1.6.3"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-utf8proc" {= "2.9.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-scons" {= "4.8.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-swig" {= "4.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "15bf3729dafb64dc1fa24b4ead80ade4a3718d5441d2c6c59e059e2b62fa7290--subversion-1.14.3_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "336d9c011dc717587b0f50affdd37176c8d46b46d32fa92561b63b67f4d8c5e2--subversion--1.14.3_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b0b150e286cec0d23321a7a04521429b3e733bbf8e5ec8cbabf48c4ee790aba--subversion--1.14.3_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dfbfd5990d5a20337b0fa4b5147212365ff4486813d815d9c477e38b4338a73c--subversion--1.14.3_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9cd6c257a655bb07457ae486bc28e6ef69ae5f3122392d39b232ba8a6724faa2--subversion--1.14.3_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8c0aeedd5f0518cc157e89cfc1e17c444681994eed9c8e2f4eac33db260a9a09--subversion--1.14.3_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "314c608bf46fa24b2ed657c9cfb55b0bad4b7d12fb72d1f9255353c9d1eac4f2--subversion--1.14.3_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2c07d8db72332969c5618a75702b19b495fcecccccb9c8973c2e34c9ee6268eb--subversion--1.14.3_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "07c33ec840a641ba3fc01c22fcdd7557cabb01d308745e912044362776e52476--subversion--1.14.3_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "subversion" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "subversion" ]
+]

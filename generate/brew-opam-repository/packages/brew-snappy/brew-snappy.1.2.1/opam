@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Compression/decompression library aiming for high speed"
+description: """
+Compression/decompression library aiming for high speed"""
+extra-source "632130602400d84aa97296620b9fd418c8ff5cd5e147735a707216b9598b51c8--snappy--1.2.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:45275e26a466be03a8a2b81ef27afc862038b220cdf7d8cd63f6ff9f47f18e56"
+  checksum: [
+    "sha256=45275e26a466be03a8a2b81ef27afc862038b220cdf7d8cd63f6ff9f47f18e56"
+  ]
+}
+extra-source "b2e6bfcdbddf1d451a8dbbb6fc3c44a267b753ac1a889dbb0b9159bf31dacdd5--snappy-1.2.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/manifests/1.2.1"
+}
+extra-source "99c43d9c05c6ccd39e4fa56a39db2620946aade0da381bdda0f142ca3fabf415--snappy--1.2.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:4a39b310e4c5a726de262265e14cb0ee219f89c0da0afd19328007d965dba7f8"
+  checksum: [
+    "sha256=4a39b310e4c5a726de262265e14cb0ee219f89c0da0afd19328007d965dba7f8"
+  ]
+}
+extra-source "8ecae236d8ccd11e6db324e614f4dcdd1924d9cf9152c4551bd5c16fbb9bb71f--snappy--1.2.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:2b905dfed7d6c0b44de9c89a79a6aa69824758c2727dcffe95bc6ebef465cf3f"
+  checksum: [
+    "sha256=2b905dfed7d6c0b44de9c89a79a6aa69824758c2727dcffe95bc6ebef465cf3f"
+  ]
+}
+extra-source "72291bf4eaf8b3682ba038e0b93cfecfe8102289f27d345a28211a4573d39e82--snappy--1.2.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:80fa828013ffa932262d110a351fc4f28f44524cc783d23c15b61328182170ac"
+  checksum: [
+    "sha256=80fa828013ffa932262d110a351fc4f28f44524cc783d23c15b61328182170ac"
+  ]
+}
+extra-source "683d2d82d0e6145f55a9c69636da861cae5581284bcc5b3ff9030da1d5188b93--snappy--1.2.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:ca5b33ef7fd245020808bcb339f5b7799a4d4441b50c430c9bdd4eeca6a7d785"
+  checksum: [
+    "sha256=ca5b33ef7fd245020808bcb339f5b7799a4d4441b50c430c9bdd4eeca6a7d785"
+  ]
+}
+extra-source "3a5bab1a11de30577cafacfe73c5f7d762d3c365a0510859cf2c0e342caa8336--snappy--1.2.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:e31f618776a2346ae18b6aa8bc035e0edc3c1dbf421498ef13f8b5a1e75fd1be"
+  checksum: [
+    "sha256=e31f618776a2346ae18b6aa8bc035e0edc3c1dbf421498ef13f8b5a1e75fd1be"
+  ]
+}
+extra-source "6bd57460df800d6c86e1b80fd6666cd090a335f3d70015347ac2eb5f05eaa3d7--snappy--1.2.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:a3ad18bfdb378542375074f5f3423bb4972147595ee7b3ec38acd04469bff5db"
+  checksum: [
+    "sha256=a3ad18bfdb378542375074f5f3423bb4972147595ee7b3ec38acd04469bff5db"
+  ]
+}
+extra-source "10dc9847b4117b3ba9da87b41fea799439496cf509f50b6f21a4cb41a41de2ae--snappy--1.2.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:0c33db20cdc5d828f5f90eb3996f6729a02ebf697bf0a67d28f59feeb24bed42"
+  checksum: [
+    "sha256=0c33db20cdc5d828f5f90eb3996f6729a02ebf697bf0a67d28f59feeb24bed42"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b2e6bfcdbddf1d451a8dbbb6fc3c44a267b753ac1a889dbb0b9159bf31dacdd5--snappy-1.2.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "632130602400d84aa97296620b9fd418c8ff5cd5e147735a707216b9598b51c8--snappy--1.2.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "99c43d9c05c6ccd39e4fa56a39db2620946aade0da381bdda0f142ca3fabf415--snappy--1.2.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8ecae236d8ccd11e6db324e614f4dcdd1924d9cf9152c4551bd5c16fbb9bb71f--snappy--1.2.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "72291bf4eaf8b3682ba038e0b93cfecfe8102289f27d345a28211a4573d39e82--snappy--1.2.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "683d2d82d0e6145f55a9c69636da861cae5581284bcc5b3ff9030da1d5188b93--snappy--1.2.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3a5bab1a11de30577cafacfe73c5f7d762d3c365a0510859cf2c0e342caa8336--snappy--1.2.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6bd57460df800d6c86e1b80fd6666cd090a335f3d70015347ac2eb5f05eaa3d7--snappy--1.2.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "10dc9847b4117b3ba9da87b41fea799439496cf509f50b6f21a4cb41a41de2ae--snappy--1.2.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "snappy" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "snappy" ]
+]

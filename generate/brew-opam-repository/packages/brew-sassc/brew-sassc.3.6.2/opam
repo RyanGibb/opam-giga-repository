@@ -1,0 +1,128 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Wrapper around libsass that helps to create command-line apps"
+description: """
+Wrapper around libsass that helps to create command-line apps"""
+extra-source "132aac3ac8296a41f4faa3b7909c0133406535dc018c3ee297420f4328071542--sassc--3.6.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:76372bcf1accae3510d1f2cd03f6a10f9a9016221e541e3b356021eaa5af18be"
+  checksum: [
+    "sha256=76372bcf1accae3510d1f2cd03f6a10f9a9016221e541e3b356021eaa5af18be"
+  ]
+}
+extra-source "b7c9dceba74e63f1eee1455e2f36225548fb093302692d7cc844257eb22ce21d--sassc-3.6.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/manifests/3.6.2"
+}
+extra-source "9c902323d2c89308a2a3a857703171cbbe003af8775e6faca64685e032cff337--sassc--3.6.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:4e667e662081a4741edb5ce0ae92cb909143ca3d3ef817925babe73af3821039"
+  checksum: [
+    "sha256=4e667e662081a4741edb5ce0ae92cb909143ca3d3ef817925babe73af3821039"
+  ]
+}
+extra-source "368aac81f5c0d6d86bd5174ac533ca4f3b34660224ffb25d25393c4b9360e611--sassc--3.6.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:5f840fc12c44dabbade2ec934710c03adbcfa33f1b62903542dd03f169171f52"
+  checksum: [
+    "sha256=5f840fc12c44dabbade2ec934710c03adbcfa33f1b62903542dd03f169171f52"
+  ]
+}
+extra-source "4e96fa88606a4c639536ddd9eaf26230d6bbc96cf0cee69b19d75266c149361f--sassc--3.6.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:1bd79d455cd4dac5f3e335088f760b4971297834d7a5c733c77de5cf747dea5c"
+  checksum: [
+    "sha256=1bd79d455cd4dac5f3e335088f760b4971297834d7a5c733c77de5cf747dea5c"
+  ]
+}
+extra-source "70253819aae5c9e822309132c415373a1e597fd2262d72c1cdf2fa1d560555fa--sassc--3.6.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:9302f8cb296175ea2f685b1b688753f4a0e66243c53f2249586ede9576bf86b6"
+  checksum: [
+    "sha256=9302f8cb296175ea2f685b1b688753f4a0e66243c53f2249586ede9576bf86b6"
+  ]
+}
+extra-source "94eb15b48ae28372772c7ff2e377c26d265e30aaa66ea5b66abc9ea4b9b113f9--sassc--3.6.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:1dc3c04d8527c5b13983c6e5fa405f6e0af6315bd72e06047e53c6a2c7f1c32c"
+  checksum: [
+    "sha256=1dc3c04d8527c5b13983c6e5fa405f6e0af6315bd72e06047e53c6a2c7f1c32c"
+  ]
+}
+extra-source "1a6560836b947c1db51448e902884cab71c0f8d07c2935e4bca7f15994470d1d--sassc--3.6.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:f1814e87c905c18e7a39512e02a10ed93b68c81493f5d23e61884d0b3262d529"
+  checksum: [
+    "sha256=f1814e87c905c18e7a39512e02a10ed93b68c81493f5d23e61884d0b3262d529"
+  ]
+}
+extra-source "3eae996b1a78e386cffdfd06b68012768f75fa51ec2acf2626f0b4492e75bb22--sassc--3.6.2.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:fe3a719ec1b2b01385924b8cb3bbb758d006ff3dbd75b1c3691ce09a43d1ebcd"
+  checksum: [
+    "sha256=fe3a719ec1b2b01385924b8cb3bbb758d006ff3dbd75b1c3691ce09a43d1ebcd"
+  ]
+}
+extra-source "0bc1f2005889d0f1faf188cbbed5b0fff5332a56ef1729d44584c199798fcbab--sassc--3.6.2.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:ae86a3868be7edf32aadf47abd949d3806789f5edf319c4d86120a05fee9053d"
+  checksum: [
+    "sha256=ae86a3868be7edf32aadf47abd949d3806789f5edf319c4d86120a05fee9053d"
+  ]
+}
+extra-source "dadcd6c79ea8de022776415e237a50eb8430ff5984fc63d8a8140a007aed248c--sassc--3.6.2.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:0826a1c50657da448806febb03694bce523e60ac56e7dd0de7362fe4b41f2277"
+  checksum: [
+    "sha256=0826a1c50657da448806febb03694bce523e60ac56e7dd0de7362fe4b41f2277"
+  ]
+}
+extra-source "05eba6c63436526ddd1c22b6808932b7944c817bae6984e6e0207fdd89d0f5b4--sassc--3.6.2.mojave.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:6aa4de7c6d9b1b64beda27f0c06a6d8c9224616b74ae48ea8e706f166b374ce9"
+  checksum: [
+    "sha256=6aa4de7c6d9b1b64beda27f0c06a6d8c9224616b74ae48ea8e706f166b374ce9"
+  ]
+}
+extra-source "a81ccfaaf25070efbf3a34e4218ce1398b66ad97efc644d0ca7fb64c1a2d5125--sassc--3.6.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:4575b459543c822d40a074f73591b1865790aa8977e7dc12148c10c858d55203"
+  checksum: [
+    "sha256=4575b459543c822d40a074f73591b1865790aa8977e7dc12148c10c858d55203"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libsass" {= "3.6.6"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b7c9dceba74e63f1eee1455e2f36225548fb093302692d7cc844257eb22ce21d--sassc-3.6.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "132aac3ac8296a41f4faa3b7909c0133406535dc018c3ee297420f4328071542--sassc--3.6.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9c902323d2c89308a2a3a857703171cbbe003af8775e6faca64685e032cff337--sassc--3.6.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "368aac81f5c0d6d86bd5174ac533ca4f3b34660224ffb25d25393c4b9360e611--sassc--3.6.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4e96fa88606a4c639536ddd9eaf26230d6bbc96cf0cee69b19d75266c149361f--sassc--3.6.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "70253819aae5c9e822309132c415373a1e597fd2262d72c1cdf2fa1d560555fa--sassc--3.6.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "94eb15b48ae28372772c7ff2e377c26d265e30aaa66ea5b66abc9ea4b9b113f9--sassc--3.6.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1a6560836b947c1db51448e902884cab71c0f8d07c2935e4bca7f15994470d1d--sassc--3.6.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3eae996b1a78e386cffdfd06b68012768f75fa51ec2acf2626f0b4492e75bb22--sassc--3.6.2.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0bc1f2005889d0f1faf188cbbed5b0fff5332a56ef1729d44584c199798fcbab--sassc--3.6.2.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dadcd6c79ea8de022776415e237a50eb8430ff5984fc63d8a8140a007aed248c--sassc--3.6.2.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "05eba6c63436526ddd1c22b6808932b7944c817bae6984e6e0207fdd89d0f5b4--sassc--3.6.2.mojave.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a81ccfaaf25070efbf3a34e4218ce1398b66ad97efc644d0ca7fb64c1a2d5125--sassc--3.6.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sassc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sassc" ]
+]

@@ -1,0 +1,120 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Graphics Library"
+description: """
+Graphics Library"""
+extra-source "24b59f725820cd02aa6c3537bfa5787210ba776a335b25da5ea8ef57488eb909--mesa--24.2.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/blobs/sha256:e19df43117b858e2a65935066adec7381234fcbbb5477bebaa7e3e30d8cf299d"
+  checksum: [
+    "sha256=e19df43117b858e2a65935066adec7381234fcbbb5477bebaa7e3e30d8cf299d"
+  ]
+}
+extra-source "07df8d69d8e4fb44c388edd9d67e2a4d2c128c3b3607315f09d9fe6e2833d33d--mesa-24.2.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/manifests/24.2.2"
+}
+extra-source "d0f0001bd8b44fea843ac43ee48768d025d38a1a6db09e1b13506c8cd2873fe1--mesa--24.2.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/blobs/sha256:115ddb20c6001b009a0d8df2764fa60e69245cf0011a417237bdf8ae1b3bffe8"
+  checksum: [
+    "sha256=115ddb20c6001b009a0d8df2764fa60e69245cf0011a417237bdf8ae1b3bffe8"
+  ]
+}
+extra-source "1b0af5479affaa04d8a700edd5c3fd8c2ed0a6e36e1e07dc326fa4f0b91ab00b--mesa--24.2.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/blobs/sha256:ef83b8e4fecdeae04ff9b04879c00a7e53477a3e484c57aa504c7069acfbb685"
+  checksum: [
+    "sha256=ef83b8e4fecdeae04ff9b04879c00a7e53477a3e484c57aa504c7069acfbb685"
+  ]
+}
+extra-source "12b9f8d4df6bbcd9bfee7c4dbf6f62fe53bb58eae72248ca2dc71ed946df62ea--mesa--24.2.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/blobs/sha256:fc5cbc7e515fd41774e1d969977794fa4cbc2fea54a418ae22319d3b6b957e5c"
+  checksum: [
+    "sha256=fc5cbc7e515fd41774e1d969977794fa4cbc2fea54a418ae22319d3b6b957e5c"
+  ]
+}
+extra-source "b93f0de9d8ff6c5771ed76a99f8a6521c6e54f8d49bb78432ce651e1d6284609--mesa--24.2.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/blobs/sha256:81966d69090662e0ed4775a5948d945c1308942f0029bad91e5d1d79a254d57a"
+  checksum: [
+    "sha256=81966d69090662e0ed4775a5948d945c1308942f0029bad91e5d1d79a254d57a"
+  ]
+}
+extra-source "850d7406da0778c284897577280060b649a6900e564592a43236eb660277d788--mesa--24.2.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/blobs/sha256:c38947888449d19b8822c90439d7b4be693483f6c9a3dc9053461afd4576c791"
+  checksum: [
+    "sha256=c38947888449d19b8822c90439d7b4be693483f6c9a3dc9053461afd4576c791"
+  ]
+}
+extra-source "744f95cea9db2b98b66360d58003721d3181c0e64b1fbf4571ace9054ff00962--mesa--24.2.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/blobs/sha256:c2cbe117066a30c2b4412b70bd868f3a2cb36317af136bbfbc927b82f75bb828"
+  checksum: [
+    "sha256=c2cbe117066a30c2b4412b70bd868f3a2cb36317af136bbfbc927b82f75bb828"
+  ]
+}
+extra-source "44b42be1eb0096eb16dd62759d2713c77199f4f7718cf6b2c101b44d93e48aa5--mesa--24.2.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mesa/blobs/sha256:53e4a61bec12e8199e7c002f82e20fdfbc1253e156092c0fe92bef1738338ccd"
+  checksum: [
+    "sha256=53e4a61bec12e8199e7c002f82e20fdfbc1253e156092c0fe92bef1738338ccd"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-lzip" {= "1.24.1"}
+  "brew-expat" {= "2.6.3"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-libxrandr" {= "1.5.4"}
+  "brew-bison" {= "3.8.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "07df8d69d8e4fb44c388edd9d67e2a4d2c128c3b3607315f09d9fe6e2833d33d--mesa-24.2.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "24b59f725820cd02aa6c3537bfa5787210ba776a335b25da5ea8ef57488eb909--mesa--24.2.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d0f0001bd8b44fea843ac43ee48768d025d38a1a6db09e1b13506c8cd2873fe1--mesa--24.2.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1b0af5479affaa04d8a700edd5c3fd8c2ed0a6e36e1e07dc326fa4f0b91ab00b--mesa--24.2.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "12b9f8d4df6bbcd9bfee7c4dbf6f62fe53bb58eae72248ca2dc71ed946df62ea--mesa--24.2.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b93f0de9d8ff6c5771ed76a99f8a6521c6e54f8d49bb78432ce651e1d6284609--mesa--24.2.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "850d7406da0778c284897577280060b649a6900e564592a43236eb660277d788--mesa--24.2.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "744f95cea9db2b98b66360d58003721d3181c0e64b1fbf4571ace9054ff00962--mesa--24.2.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "44b42be1eb0096eb16dd62759d2713c77199f4f7718cf6b2c101b44d93e48aa5--mesa--24.2.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "mesa" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "mesa" ]
+]

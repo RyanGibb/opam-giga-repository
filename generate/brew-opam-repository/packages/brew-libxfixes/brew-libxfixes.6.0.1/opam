@@ -1,0 +1,122 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Header files for the XFIXES extension"
+description: """
+X.Org: Header files for the XFIXES extension"""
+extra-source "547dcb754883bea9d850752263768af531a9c885e7c7cb6a3bff7422474fbc2b--libxfixes--6.0.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:d8cf5f8d0134815b458eeaf44dd0e18357322bfeba750b4a79c7619ce24568a8"
+  checksum: [
+    "sha256=d8cf5f8d0134815b458eeaf44dd0e18357322bfeba750b4a79c7619ce24568a8"
+  ]
+}
+extra-source "b78eeb464b4c153eb6e75a04ba240b4972cdc642e77e9c5085e186630c2c4862--libxfixes-6.0.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/manifests/6.0.1"
+}
+extra-source "dcf23b2c52d2af9a961539e47cd9309b75f26639aa395b869661bf79a91dfc1d--libxfixes--6.0.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:883bed610e677c56484e31d6a1f79f06693927f004f94e01cc24a83b49df41be"
+  checksum: [
+    "sha256=883bed610e677c56484e31d6a1f79f06693927f004f94e01cc24a83b49df41be"
+  ]
+}
+extra-source "38d9e3e2294721b41704f30564d15b51ebecc67f53371c6837866d4e2d9c4fbb--libxfixes--6.0.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:50d2927a1b3705cccad6057873681f1605786646c2dbd8af9bac2dcfbd1b49d6"
+  checksum: [
+    "sha256=50d2927a1b3705cccad6057873681f1605786646c2dbd8af9bac2dcfbd1b49d6"
+  ]
+}
+extra-source "9c05e05722956c1e8f6f4c7cedae9e43747ad9fbdccc5380232983bdb6ab152e--libxfixes--6.0.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:ade02ac4b73db0272d8bdb95bd05f8c8c11683daa944c66a10f1e72740bac364"
+  checksum: [
+    "sha256=ade02ac4b73db0272d8bdb95bd05f8c8c11683daa944c66a10f1e72740bac364"
+  ]
+}
+extra-source "2f58cf27f672bbb6dc358cff7c6ea651ac5a595ce666a6687f1be4080f68200d--libxfixes--6.0.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:b087b60e125d6e348292f14f9d692693a0dca7894975002fa29f754c25395bbc"
+  checksum: [
+    "sha256=b087b60e125d6e348292f14f9d692693a0dca7894975002fa29f754c25395bbc"
+  ]
+}
+extra-source "157f1eda2cb174c2dc9e0caf395e53b0ec6323c2b804090b187eaddd2585ea2e--libxfixes--6.0.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:bae672517d9d8a3af7481ecb71dc13d835231b51917b6848d069550a725a09f9"
+  checksum: [
+    "sha256=bae672517d9d8a3af7481ecb71dc13d835231b51917b6848d069550a725a09f9"
+  ]
+}
+extra-source "56483e84106ad40322f3a3a3fc5571f8486e6d2824757e9e53254e4f1ab2e163--libxfixes--6.0.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:515bbc38f06c142ff7cdb65b9f1401fe187241b64186b0670f4809787e288c2a"
+  checksum: [
+    "sha256=515bbc38f06c142ff7cdb65b9f1401fe187241b64186b0670f4809787e288c2a"
+  ]
+}
+extra-source "88af4de03e61d5f169878c2ab7b2e91acb35012445f7bfcdf05b1168d886ed44--libxfixes--6.0.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:5fb3942149518881721a07646cb045b3dd0478e6333617409d3cf25a8254740e"
+  checksum: [
+    "sha256=5fb3942149518881721a07646cb045b3dd0478e6333617409d3cf25a8254740e"
+  ]
+}
+extra-source "1f94d258ac911788e78572988b8ecd7627c8ca80425fec2d0d3933e66008a8cf--libxfixes--6.0.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:5f5221e3a5687ea308dd4e0200617cbba63289476df92e6addc3928597033c3b"
+  checksum: [
+    "sha256=5f5221e3a5687ea308dd4e0200617cbba63289476df92e6addc3928597033c3b"
+  ]
+}
+extra-source "b26729a1ef25dede3f234daa128738a8568e69981398aa1a94f7dd30c97c1f56--libxfixes--6.0.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxfixes/blobs/sha256:dd98561e1f625057b34be07c81541d7759f29756d5d7272b59bd9e86af0d7d22"
+  checksum: [
+    "sha256=dd98561e1f625057b34be07c81541d7759f29756d5d7272b59bd9e86af0d7d22"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b78eeb464b4c153eb6e75a04ba240b4972cdc642e77e9c5085e186630c2c4862--libxfixes-6.0.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "547dcb754883bea9d850752263768af531a9c885e7c7cb6a3bff7422474fbc2b--libxfixes--6.0.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dcf23b2c52d2af9a961539e47cd9309b75f26639aa395b869661bf79a91dfc1d--libxfixes--6.0.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "38d9e3e2294721b41704f30564d15b51ebecc67f53371c6837866d4e2d9c4fbb--libxfixes--6.0.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9c05e05722956c1e8f6f4c7cedae9e43747ad9fbdccc5380232983bdb6ab152e--libxfixes--6.0.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2f58cf27f672bbb6dc358cff7c6ea651ac5a595ce666a6687f1be4080f68200d--libxfixes--6.0.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "157f1eda2cb174c2dc9e0caf395e53b0ec6323c2b804090b187eaddd2585ea2e--libxfixes--6.0.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "56483e84106ad40322f3a3a3fc5571f8486e6d2824757e9e53254e4f1ab2e163--libxfixes--6.0.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "88af4de03e61d5f169878c2ab7b2e91acb35012445f7bfcdf05b1168d886ed44--libxfixes--6.0.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1f94d258ac911788e78572988b8ecd7627c8ca80425fec2d0d3933e66008a8cf--libxfixes--6.0.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b26729a1ef25dede3f234daa128738a8568e69981398aa1a94f7dd30c97c1f56--libxfixes--6.0.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxfixes" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxfixes" ]
+]

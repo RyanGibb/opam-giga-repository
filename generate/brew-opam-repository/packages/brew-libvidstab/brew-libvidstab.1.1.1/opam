@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Transcode video stabilization plugin"
+description: """
+Transcode video stabilization plugin"""
+extra-source "83e5145975773d07e9f0aa8a1fb43d8c7450ea6d782c7514147050acf88aa196--libvidstab--1.1.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:f76b62fb9580b75861cc5a6d639500d095823d32bef7aa6f636fee2d87b724e9"
+  checksum: [
+    "sha256=f76b62fb9580b75861cc5a6d639500d095823d32bef7aa6f636fee2d87b724e9"
+  ]
+}
+extra-source "cd6a6b0bc36ba382104f583fa6d59418959b6719401628d655a236dfc580cd85--libvidstab-1.1.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/manifests/1.1.1"
+}
+extra-source "857809b15e82c6f7880dad350ca68852cdc0ed765f99731da391de813db7dd03--libvidstab--1.1.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:4263aef306ed5a576474d9101d8a75afc7c8e39f68a783940a81ae9fb772fe67"
+  checksum: [
+    "sha256=4263aef306ed5a576474d9101d8a75afc7c8e39f68a783940a81ae9fb772fe67"
+  ]
+}
+extra-source "9311b0604c248c513f6452402d07eef81bf7c5f532b0555159bf1b24507dedc9--libvidstab--1.1.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:f006d60e59a43562474571f2a7e2be72273cc9bd7b2df04d0c21da861ebfcab8"
+  checksum: [
+    "sha256=f006d60e59a43562474571f2a7e2be72273cc9bd7b2df04d0c21da861ebfcab8"
+  ]
+}
+extra-source "4a4e67e03fa227a9ff93ecd715bf39413433334e4cd9ff6df5e167d05f41de70--libvidstab--1.1.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:40cc585d8dfe08ddb7938667997fac65cd96261f9699c4d7a1705e30267cdb61"
+  checksum: [
+    "sha256=40cc585d8dfe08ddb7938667997fac65cd96261f9699c4d7a1705e30267cdb61"
+  ]
+}
+extra-source "a9d6c557b482ae54ca41d74018fb47083188882a15bb9fe4604578d15e0134f2--libvidstab--1.1.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:25efabe3bf9a85b25065758c1ea62ef096bf2e334ce073450ef4478f7e469b38"
+  checksum: [
+    "sha256=25efabe3bf9a85b25065758c1ea62ef096bf2e334ce073450ef4478f7e469b38"
+  ]
+}
+extra-source "6111d889590e9e735f45d6a2e827a1877e5c11ffcb273bf99a1ed30389ea141b--libvidstab--1.1.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:8caa0dce4af772a443f814f51960227e769428025f734a9a82085fc8ee499ef9"
+  checksum: [
+    "sha256=8caa0dce4af772a443f814f51960227e769428025f734a9a82085fc8ee499ef9"
+  ]
+}
+extra-source "09a586bfdf83a8bb5bb2457ef5399dae8f80aef66e1653e9976c877940a47c6b--libvidstab--1.1.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:0bff0aa6aba039cc22d6a65fbfd46f67c35ecc6db3baca439b9b1e45c3710002"
+  checksum: [
+    "sha256=0bff0aa6aba039cc22d6a65fbfd46f67c35ecc6db3baca439b9b1e45c3710002"
+  ]
+}
+extra-source "0e3681b4a6658d21c448141819ed0b7fa70b5c894f64d4c2515d87d5786f4504--libvidstab--1.1.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:2b7d9891009c53a925e971b600bad2a43e5bcca062119b9080e1c5b59e2e25b0"
+  checksum: [
+    "sha256=2b7d9891009c53a925e971b600bad2a43e5bcca062119b9080e1c5b59e2e25b0"
+  ]
+}
+extra-source "36b56e126e1c3c0ed5de2ff211156fa53e8dbf6fe3fe1af414bc61c932ccb8d9--libvidstab--1.1.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:bca6a787bd17369819451093009d298fc8a4104be1d9bd25bd9606263d097784"
+  checksum: [
+    "sha256=bca6a787bd17369819451093009d298fc8a4104be1d9bd25bd9606263d097784"
+  ]
+}
+extra-source "848dd2b98b481851f9ab6a1158878e1e8e8582b7213838cecaf801735a1ece7a--libvidstab--1.1.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvidstab/blobs/sha256:d87451266aa81a807919bb25dec5cb85e2e79eca8fa768dba8c7b74f06e11be9"
+  checksum: [
+    "sha256=d87451266aa81a807919bb25dec5cb85e2e79eca8fa768dba8c7b74f06e11be9"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "cd6a6b0bc36ba382104f583fa6d59418959b6719401628d655a236dfc580cd85--libvidstab-1.1.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "83e5145975773d07e9f0aa8a1fb43d8c7450ea6d782c7514147050acf88aa196--libvidstab--1.1.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "857809b15e82c6f7880dad350ca68852cdc0ed765f99731da391de813db7dd03--libvidstab--1.1.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9311b0604c248c513f6452402d07eef81bf7c5f532b0555159bf1b24507dedc9--libvidstab--1.1.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4a4e67e03fa227a9ff93ecd715bf39413433334e4cd9ff6df5e167d05f41de70--libvidstab--1.1.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a9d6c557b482ae54ca41d74018fb47083188882a15bb9fe4604578d15e0134f2--libvidstab--1.1.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6111d889590e9e735f45d6a2e827a1877e5c11ffcb273bf99a1ed30389ea141b--libvidstab--1.1.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "09a586bfdf83a8bb5bb2457ef5399dae8f80aef66e1653e9976c877940a47c6b--libvidstab--1.1.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0e3681b4a6658d21c448141819ed0b7fa70b5c894f64d4c2515d87d5786f4504--libvidstab--1.1.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "36b56e126e1c3c0ed5de2ff211156fa53e8dbf6fe3fe1af414bc61c932ccb8d9--libvidstab--1.1.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "848dd2b98b481851f9ab6a1158878e1e8e8582b7213838cecaf801735a1ece7a--libvidstab--1.1.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libvidstab" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libvidstab" ]
+]

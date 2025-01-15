@@ -1,0 +1,16 @@
+opam-version: "2.0"
+maintainer: "jon@recoil.org"
+authors: "Jon Ludlam"
+synopsis: "Brew opam vars"
+homepage: "https://github.com/jonludlam/brew-opam-vars"
+bug-reports: "https://github.com/jonludlam/brew-opam-vars/issues"
+license: "ISC"
+dev-repo: "git+https://github.com/jonludlam/brew-opam-vars.git"
+description: """
+Brew opam vars"""
+url {
+  src:
+    "https://github.com/jonludlam/brew-opam-vars/archive/refs/tags/0.2.tar.gz"
+}
+build: [ [ "sh" "script.sh" name ] ]
+available: os = "macos" & os-distribution = "homebrew"

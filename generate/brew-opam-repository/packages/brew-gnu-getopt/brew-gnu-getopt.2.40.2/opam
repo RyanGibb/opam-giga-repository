@@ -1,0 +1,117 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Command-line option parsing utility"
+description: """
+Command-line option parsing utility"""
+extra-source "e394b651673077c758563f3a31ef1b540bc2f3b93d4faf4fe894b207f99c478a--gnu-getopt--2.40.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/blobs/sha256:8025c5fff22016f9d616a7f7f94de79ece01db73f6e2ef3032a038621e894abb"
+  checksum: [
+    "sha256=8025c5fff22016f9d616a7f7f94de79ece01db73f6e2ef3032a038621e894abb"
+  ]
+}
+extra-source "139d5323e77adc2f4179823d4dc595fc17be49f62973c09b4d3adee771ddf21b--gnu-getopt-2.40.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/manifests/2.40.2"
+}
+extra-source "4869a72fc5421814f3575939b6d152cca69b6182b7ce7e9daf73a1e31f70f844--gnu-getopt--2.40.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/blobs/sha256:116ef535edda1d42f67f7eb1411cddeea237e835ae69c2171d9fa6b2df843f37"
+  checksum: [
+    "sha256=116ef535edda1d42f67f7eb1411cddeea237e835ae69c2171d9fa6b2df843f37"
+  ]
+}
+extra-source "000e93d8ed3a3e20178a956a6a0297d97d4d7adb9f7cb35a684ac93f98fdb23e--gnu-getopt--2.40.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/blobs/sha256:ab9985a8189d89d997042764ca3a413380798f7faddb032c77613c392724daae"
+  checksum: [
+    "sha256=ab9985a8189d89d997042764ca3a413380798f7faddb032c77613c392724daae"
+  ]
+}
+extra-source "fb46879568f7c2d3e900db5af4bc4875c47d929eab29ded23c9bf2c3e4209867--gnu-getopt--2.40.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/blobs/sha256:97cedb6c84bf6bb1d3a9335800992efe37b5aebd56daf0f99f3b752bff1a3c3e"
+  checksum: [
+    "sha256=97cedb6c84bf6bb1d3a9335800992efe37b5aebd56daf0f99f3b752bff1a3c3e"
+  ]
+}
+extra-source "7d3d5ff9fa7f4727f9583afe99eea34c3bb70a5dd9765eecda2604d104e6f874--gnu-getopt--2.40.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/blobs/sha256:d15c97983241a60691b09b15684351304f1d00933c46a103ef9521b985a34e52"
+  checksum: [
+    "sha256=d15c97983241a60691b09b15684351304f1d00933c46a103ef9521b985a34e52"
+  ]
+}
+extra-source "5ebdf07029ff04f130ade7b25da5f1dcf3f5bd89c9ade42db20760ac12b703ff--gnu-getopt--2.40.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/blobs/sha256:c70effa81195e0495de1ae6538c0efcf35397aedeb756ef7294376e3bbe2f0c1"
+  checksum: [
+    "sha256=c70effa81195e0495de1ae6538c0efcf35397aedeb756ef7294376e3bbe2f0c1"
+  ]
+}
+extra-source "34e16b94100002a6b7d9183759189437eb16b28823f73ef0d902e04b0dc84783--gnu-getopt--2.40.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/blobs/sha256:63ab4b156e1fcc16b6e014f5a92fac3087c7c371004c134d12276e3f4f469d46"
+  checksum: [
+    "sha256=63ab4b156e1fcc16b6e014f5a92fac3087c7c371004c134d12276e3f4f469d46"
+  ]
+}
+extra-source "b914998c61822ffef030587c148b0bbf4fb7ec0d656065ce746273b197f661db--gnu-getopt--2.40.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gnu-getopt/blobs/sha256:c0accfa7f1ff3844f5976a87e794812ffc3598251542dbb370cf0f4e43623f37"
+  checksum: [
+    "sha256=c0accfa7f1ff3844f5976a87e794812ffc3598251542dbb370cf0f4e43623f37"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "139d5323e77adc2f4179823d4dc595fc17be49f62973c09b4d3adee771ddf21b--gnu-getopt-2.40.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e394b651673077c758563f3a31ef1b540bc2f3b93d4faf4fe894b207f99c478a--gnu-getopt--2.40.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4869a72fc5421814f3575939b6d152cca69b6182b7ce7e9daf73a1e31f70f844--gnu-getopt--2.40.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "000e93d8ed3a3e20178a956a6a0297d97d4d7adb9f7cb35a684ac93f98fdb23e--gnu-getopt--2.40.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fb46879568f7c2d3e900db5af4bc4875c47d929eab29ded23c9bf2c3e4209867--gnu-getopt--2.40.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7d3d5ff9fa7f4727f9583afe99eea34c3bb70a5dd9765eecda2604d104e6f874--gnu-getopt--2.40.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5ebdf07029ff04f130ade7b25da5f1dcf3f5bd89c9ade42db20760ac12b703ff--gnu-getopt--2.40.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "34e16b94100002a6b7d9183759189437eb16b28823f73ef0d902e04b0dc84783--gnu-getopt--2.40.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b914998c61822ffef030587c148b0bbf4fb7ec0d656065ce746273b197f661db--gnu-getopt--2.40.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gnu-getopt" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gnu-getopt" ]
+]

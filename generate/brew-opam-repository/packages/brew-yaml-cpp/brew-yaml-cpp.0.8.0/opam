@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C++ YAML parser and emitter for YAML 1.2 spec"
+description: """
+C++ YAML parser and emitter for YAML 1.2 spec"""
+extra-source "412fed69d43fa72e9c0cdb613b09ea1b276eaa7af3d65495dd55a322e32003f9--yaml-cpp--0.8.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:b453cb98bf2c4dc253c3523f587a0af606e5a682bcd7b7bd0f69013e95cfe418"
+  checksum: [
+    "sha256=b453cb98bf2c4dc253c3523f587a0af606e5a682bcd7b7bd0f69013e95cfe418"
+  ]
+}
+extra-source "3ce8abd0fc2c06277716c4529c69487b82c035e99bac84af95db0f8171646232--yaml-cpp-0.8.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/manifests/0.8.0"
+}
+extra-source "c99ef63203bd50e48465681defb983fda42c988c147c88ab942a99fe6a595349--yaml-cpp--0.8.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:2c0cc13d8e696a316db54c6d4ad4093c30c839c6677782968bcc59912207e1fd"
+  checksum: [
+    "sha256=2c0cc13d8e696a316db54c6d4ad4093c30c839c6677782968bcc59912207e1fd"
+  ]
+}
+extra-source "1772f33a32ede5ce52210692d1083792966341cfa3a70f744f06fca4d34c822b--yaml-cpp--0.8.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:778720c980df7e2e5ed7a971eea721ecd6a21069f927279809496164c3248f69"
+  checksum: [
+    "sha256=778720c980df7e2e5ed7a971eea721ecd6a21069f927279809496164c3248f69"
+  ]
+}
+extra-source "ddc5b9ce6a38d5c3d9cb35622e968719ee56a753ddf9375e3dcf006e2f4d5370--yaml-cpp--0.8.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:6df59a455c4312b58a636ea26c0f7b07a98e2718b7702f9c9a6603a3d18db540"
+  checksum: [
+    "sha256=6df59a455c4312b58a636ea26c0f7b07a98e2718b7702f9c9a6603a3d18db540"
+  ]
+}
+extra-source "4694de49bb6b4438279ae79aaa81eb76a3bdeb1dcab3bfdbd5bcba35e275ec76--yaml-cpp--0.8.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:a257981f293174574400a08830c9edb3fef18a1d27d9c7a8f2a8ec0a6450a15f"
+  checksum: [
+    "sha256=a257981f293174574400a08830c9edb3fef18a1d27d9c7a8f2a8ec0a6450a15f"
+  ]
+}
+extra-source "475d1ef18019bfeaafc1b52cc973d8f15389690ea20922d4c1b3ba35838c3aa8--yaml-cpp--0.8.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:ed2271a45db27da472a35762a95ec0e36ee8be8a193593637b289eaa40d34e68"
+  checksum: [
+    "sha256=ed2271a45db27da472a35762a95ec0e36ee8be8a193593637b289eaa40d34e68"
+  ]
+}
+extra-source "3c341a72da43abfff44a06844e9b106bc07e2fce0bed24b66c181b2a85fe6197--yaml-cpp--0.8.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:5590ca844620d1eec096d947cd88d77acd0cec2094ea6558c56802f2960f3a80"
+  checksum: [
+    "sha256=5590ca844620d1eec096d947cd88d77acd0cec2094ea6558c56802f2960f3a80"
+  ]
+}
+extra-source "70dacf610befdf4f75ca3de510b92a4fa683d512e0fdb64fabc7fd07fba432ca--yaml-cpp--0.8.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:34e2ea6e7e4c5db76bdbe1eb799025c0143c3cda82ad561bf6354ba79e014427"
+  checksum: [
+    "sha256=34e2ea6e7e4c5db76bdbe1eb799025c0143c3cda82ad561bf6354ba79e014427"
+  ]
+}
+extra-source "a6ab173e1f7abf729d11530540465f4499272925a74cfafc0f521b5af7993c89--yaml-cpp--0.8.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:2106ac96acedc1d4ee2d8e086b5408a8fc3cd67cea199234f91dcef2f1980fa3"
+  checksum: [
+    "sha256=2106ac96acedc1d4ee2d8e086b5408a8fc3cd67cea199234f91dcef2f1980fa3"
+  ]
+}
+extra-source "c61483b283e290b04c626682d74749495fab7733d8dfd467663356e7e6eed20d--yaml-cpp--0.8.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/yaml-cpp/blobs/sha256:eea8c23888c9026a8994e5b7b3b62e65b89da4d08db764c340900ecbe190f36d"
+  checksum: [
+    "sha256=eea8c23888c9026a8994e5b7b3b62e65b89da4d08db764c340900ecbe190f36d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3ce8abd0fc2c06277716c4529c69487b82c035e99bac84af95db0f8171646232--yaml-cpp-0.8.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "412fed69d43fa72e9c0cdb613b09ea1b276eaa7af3d65495dd55a322e32003f9--yaml-cpp--0.8.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c99ef63203bd50e48465681defb983fda42c988c147c88ab942a99fe6a595349--yaml-cpp--0.8.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1772f33a32ede5ce52210692d1083792966341cfa3a70f744f06fca4d34c822b--yaml-cpp--0.8.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ddc5b9ce6a38d5c3d9cb35622e968719ee56a753ddf9375e3dcf006e2f4d5370--yaml-cpp--0.8.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4694de49bb6b4438279ae79aaa81eb76a3bdeb1dcab3bfdbd5bcba35e275ec76--yaml-cpp--0.8.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "475d1ef18019bfeaafc1b52cc973d8f15389690ea20922d4c1b3ba35838c3aa8--yaml-cpp--0.8.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3c341a72da43abfff44a06844e9b106bc07e2fce0bed24b66c181b2a85fe6197--yaml-cpp--0.8.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "70dacf610befdf4f75ca3de510b92a4fa683d512e0fdb64fabc7fd07fba432ca--yaml-cpp--0.8.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a6ab173e1f7abf729d11530540465f4499272925a74cfafc0f521b5af7993c89--yaml-cpp--0.8.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c61483b283e290b04c626682d74749495fab7733d8dfd467663356e7e6eed20d--yaml-cpp--0.8.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "yaml-cpp" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "yaml-cpp" ]
+]

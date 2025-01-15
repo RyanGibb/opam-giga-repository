@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Protocol Headers"
+description: """
+X.Org: Protocol Headers"""
+extra-source "7aac4cd73925119193aefeb19be333cbde134cfa599e99c82542d5179c1c156f--xorgproto--2024.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:91066363512e4a3b01644398886815eb370bc8f62611f7ee20c23c7350b4422e"
+  checksum: [
+    "sha256=91066363512e4a3b01644398886815eb370bc8f62611f7ee20c23c7350b4422e"
+  ]
+}
+extra-source "d89d69340366d1d015e7214520f64081e2d82d7955fb28c6ea5f6539dcb610b2--xorgproto-2024.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/manifests/2024.1"
+}
+extra-source "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  checksum: [
+    "sha256=3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  ]
+}
+extra-source "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  checksum: [
+    "sha256=3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  ]
+}
+extra-source "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  checksum: [
+    "sha256=3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  ]
+}
+extra-source "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  checksum: [
+    "sha256=3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  ]
+}
+extra-source "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  checksum: [
+    "sha256=3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  ]
+}
+extra-source "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  checksum: [
+    "sha256=3307601f0a03f6c51b640fb11064ef2c2264cc9c20de0604a255370edee3f7f4"
+  ]
+}
+extra-source "843f180db593d67f823c205d712bc2aee68ed1e6d2e84de8633b2d861c36f289--xorgproto--2024.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:fc1ef8db0fe244a7a47541fe8494131a281814a4110d3af41d76226274601df7"
+  checksum: [
+    "sha256=fc1ef8db0fe244a7a47541fe8494131a281814a4110d3af41d76226274601df7"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d89d69340366d1d015e7214520f64081e2d82d7955fb28c6ea5f6539dcb610b2--xorgproto-2024.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7aac4cd73925119193aefeb19be333cbde134cfa599e99c82542d5179c1c156f--xorgproto--2024.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4c1f6f68a1f0f8735608642fe9278104d2031d0cfcbd737c0ea5d69b85f6841f--xorgproto--2024.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "843f180db593d67f823c205d712bc2aee68ed1e6d2e84de8633b2d861c36f289--xorgproto--2024.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "xorgproto" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "xorgproto" ]
+]

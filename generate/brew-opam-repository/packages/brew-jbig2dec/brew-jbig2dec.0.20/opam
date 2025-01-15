@@ -1,0 +1,110 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "JBIG2 decoder and library (for monochrome documents)"
+description: """
+JBIG2 decoder and library (for monochrome documents)"""
+extra-source "ca8977a3ad104afaf16d373aaf58255620423cefe7a1b4338bbe0de4376f35ee--jbig2dec--0.20.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:f581562914f78e334b62715f38a94884e133a0f5fd9f865bd51a6404250a650b"
+  checksum: [
+    "sha256=f581562914f78e334b62715f38a94884e133a0f5fd9f865bd51a6404250a650b"
+  ]
+}
+extra-source "8d21a0eddc94902acc1bb126cf78e775c7b2381f25532e02a7f9e2974a817577--jbig2dec-0.20.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/manifests/0.20"
+}
+extra-source "65220aa1736806df65e741c34cc19736552a6f556ae9501468aaaa0bf6b2fcaf--jbig2dec--0.20.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:8017bcda4a2d530aad05946e2196907a8fd52992aa3043001764adea0e2cf58b"
+  checksum: [
+    "sha256=8017bcda4a2d530aad05946e2196907a8fd52992aa3043001764adea0e2cf58b"
+  ]
+}
+extra-source "2ed6fc0f1c7d3b1b189fbcffeaf1277f9440893a2481a3e7d15f6333aabf853b--jbig2dec--0.20.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:30f0053c48d777cdbf482bcffeb449fe173e3471e344c97bc129b8fe2f883629"
+  checksum: [
+    "sha256=30f0053c48d777cdbf482bcffeb449fe173e3471e344c97bc129b8fe2f883629"
+  ]
+}
+extra-source "15765f9375f3c527647e8f1e6a1ee4ad791f5684fcbc4769e290d47b37addc29--jbig2dec--0.20.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:daab35fae8429496d00b301717837f656c4e166a3f384d8ccc0a2e1ae69f6c30"
+  checksum: [
+    "sha256=daab35fae8429496d00b301717837f656c4e166a3f384d8ccc0a2e1ae69f6c30"
+  ]
+}
+extra-source "d602f9ea8f7636f6418f8f7b9e0186d4a3a5bb582314f01ec05b3210d87b37de--jbig2dec--0.20.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:973a40cc673a331249be09ddef83537889f45f8934925c36e9b17e73cb852c40"
+  checksum: [
+    "sha256=973a40cc673a331249be09ddef83537889f45f8934925c36e9b17e73cb852c40"
+  ]
+}
+extra-source "a7d94d8b77cc73f03bd370947a41505646c0672b70be52041caa8659d4460bbb--jbig2dec--0.20.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:907cf171d3bf5816be1036330bd09b93df351fde2ea414f99c388668e2637222"
+  checksum: [
+    "sha256=907cf171d3bf5816be1036330bd09b93df351fde2ea414f99c388668e2637222"
+  ]
+}
+extra-source "88041e60b17679bfe5a2e1f1634853595336e99d184eeafd745bd796b4e77a5a--jbig2dec--0.20.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:7e52f5520ff0970c61fea2293db287b162b4de29c69f5032ae17a2cdab8fed22"
+  checksum: [
+    "sha256=7e52f5520ff0970c61fea2293db287b162b4de29c69f5032ae17a2cdab8fed22"
+  ]
+}
+extra-source "25aef3f56fd41454b756ba6491caaadc0eee07251d22736a073977bf10ffb7f4--jbig2dec--0.20.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:e2a6dc6113dda3fb85111dcc72c6f89fbac0800260cf4110956b3c984f74530e"
+  checksum: [
+    "sha256=e2a6dc6113dda3fb85111dcc72c6f89fbac0800260cf4110956b3c984f74530e"
+  ]
+}
+extra-source "f1721fffef3afe4b795162d909ebd4ee2e5b3fb7134c16d72626aef20ff2220e--jbig2dec--0.20.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:8830470637ded079e4de807b63d8970b2e1020451b781f42a5dc0a6da7742479"
+  checksum: [
+    "sha256=8830470637ded079e4de807b63d8970b2e1020451b781f42a5dc0a6da7742479"
+  ]
+}
+extra-source "7b18d864788bf38179c961fb32390ebf3a9f4350464e7a5228187914a19301b9--jbig2dec--0.20.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:fb3732eb4744293f9354ab856ea2f9b350897fa5408ae9c07330ba454f3ec95c"
+  checksum: [
+    "sha256=fb3732eb4744293f9354ab856ea2f9b350897fa5408ae9c07330ba454f3ec95c"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8d21a0eddc94902acc1bb126cf78e775c7b2381f25532e02a7f9e2974a817577--jbig2dec-0.20.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "ca8977a3ad104afaf16d373aaf58255620423cefe7a1b4338bbe0de4376f35ee--jbig2dec--0.20.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "65220aa1736806df65e741c34cc19736552a6f556ae9501468aaaa0bf6b2fcaf--jbig2dec--0.20.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2ed6fc0f1c7d3b1b189fbcffeaf1277f9440893a2481a3e7d15f6333aabf853b--jbig2dec--0.20.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "15765f9375f3c527647e8f1e6a1ee4ad791f5684fcbc4769e290d47b37addc29--jbig2dec--0.20.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d602f9ea8f7636f6418f8f7b9e0186d4a3a5bb582314f01ec05b3210d87b37de--jbig2dec--0.20.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a7d94d8b77cc73f03bd370947a41505646c0672b70be52041caa8659d4460bbb--jbig2dec--0.20.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "88041e60b17679bfe5a2e1f1634853595336e99d184eeafd745bd796b4e77a5a--jbig2dec--0.20.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "25aef3f56fd41454b756ba6491caaadc0eee07251d22736a073977bf10ffb7f4--jbig2dec--0.20.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f1721fffef3afe4b795162d909ebd4ee2e5b3fb7134c16d72626aef20ff2220e--jbig2dec--0.20.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b18d864788bf38179c961fb32390ebf3a9f4350464e7a5228187914a19301b9--jbig2dec--0.20.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "jbig2dec" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "jbig2dec" ]
+]

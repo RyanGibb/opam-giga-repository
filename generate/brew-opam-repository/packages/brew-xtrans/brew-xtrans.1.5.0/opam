@@ -1,0 +1,52 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: X Network Transport layer shared code"
+description: """
+X.Org: X Network Transport layer shared code"""
+extra-source "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xtrans/blobs/sha256:2d33b76ea54a22e668851b4d3abc1ad2e964fbe2f01b9e566cca9bbe96a61065"
+  checksum: [
+    "sha256=2d33b76ea54a22e668851b4d3abc1ad2e964fbe2f01b9e566cca9bbe96a61065"
+  ]
+}
+extra-source "397d69130d148cee708ebeddd5a131c28ab182c9514876ee41966b68e66a12d2--xtrans-1.5.0-3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xtrans/manifests/1.5.0-3"
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "397d69130d148cee708ebeddd5a131c28ab182c9514876ee41966b68e66a12d2--xtrans-1.5.0-3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4e653aab939bbe7d9d8f40a71008337983cfb0a0538badf4462a7204c1f261d--xtrans--1.5.0.all.bottle.3.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "xtrans" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "xtrans" ]
+]

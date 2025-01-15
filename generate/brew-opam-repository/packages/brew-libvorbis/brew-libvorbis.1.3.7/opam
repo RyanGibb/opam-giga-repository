@@ -1,0 +1,119 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Vorbis General Audio Compression Codec"
+description: """
+Vorbis General Audio Compression Codec"""
+extra-source "cfbf090a1100c38fd007bfef754ea9f8a536856d42eefb78fb82c6cc8317b708--libvorbis--1.3.7.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:c28d1e0b461a4cf6f5aee72e664ac6f5f6f3efaab44f15b91924f08474cfafe1"
+  checksum: [
+    "sha256=c28d1e0b461a4cf6f5aee72e664ac6f5f6f3efaab44f15b91924f08474cfafe1"
+  ]
+}
+extra-source "68d211b8805a2fab148645c2ac8e43495e576876d6f50f0c4af5ea890730b7ea--libvorbis-1.3.7-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/manifests/1.3.7-1"
+}
+extra-source "25b6806d2795fae90bca3012c1aa36f9736746551923c0b1487239b51f8fe7d6--libvorbis--1.3.7.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:94aafb164cf8490d1d7c1cbe32695995c592c63a8cafe8621e793819079d7f46"
+  checksum: [
+    "sha256=94aafb164cf8490d1d7c1cbe32695995c592c63a8cafe8621e793819079d7f46"
+  ]
+}
+extra-source "55bd1f1f45c985483d9eafe19cda79b8aa3f403099625bc3cf371241619c412e--libvorbis--1.3.7.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:f71115c28f65e1a87ae0dbe695421ecacfcddcaa6f91a3e0a23493da73560de5"
+  checksum: [
+    "sha256=f71115c28f65e1a87ae0dbe695421ecacfcddcaa6f91a3e0a23493da73560de5"
+  ]
+}
+extra-source "7e9d6d77b1b2f45e90b03ffd8b89bdbdf7854cdc44cbd424493e807fd98be4f0--libvorbis--1.3.7.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:4e1a3b6ba6e8f790974930a7ceda16a3fb0b50d544021f6e39d1b38392e98512"
+  checksum: [
+    "sha256=4e1a3b6ba6e8f790974930a7ceda16a3fb0b50d544021f6e39d1b38392e98512"
+  ]
+}
+extra-source "d2c67fe1b255e43867cfcd0cf1bb1572104b250f6029b3abb6431c9b32671c55--libvorbis--1.3.7.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:941871c7cfee1e15b60191e1c70296554871bc36e4fc8104ffc8919bb767f555"
+  checksum: [
+    "sha256=941871c7cfee1e15b60191e1c70296554871bc36e4fc8104ffc8919bb767f555"
+  ]
+}
+extra-source "44c3833fcc4a2e481ef646510078cd3d21c13fdb4d78eb492a029fc7578257d8--libvorbis--1.3.7.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:bd3125f7734f888f4ae9065f0b41a2baa281064686068f6c4189044d2408d0a8"
+  checksum: [
+    "sha256=bd3125f7734f888f4ae9065f0b41a2baa281064686068f6c4189044d2408d0a8"
+  ]
+}
+extra-source "07f0d9a7d53d742e3f1a27a88fc3f569f18ea2971980e64641948e63a1d1497f--libvorbis--1.3.7.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:08fc2566eda5d6fc2204c822bac51383a59c4536bae539b77cfe8c7f247f7517"
+  checksum: [
+    "sha256=08fc2566eda5d6fc2204c822bac51383a59c4536bae539b77cfe8c7f247f7517"
+  ]
+}
+extra-source "7e722ea0456aefebd8f85bb5a8d393ac0b0c871e63298501e83d5ad555435161--libvorbis--1.3.7.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:6401378d08490ed76f4894b7e0812ef5cfbade699331dc07b7e88ad5438f7a78"
+  checksum: [
+    "sha256=6401378d08490ed76f4894b7e0812ef5cfbade699331dc07b7e88ad5438f7a78"
+  ]
+}
+extra-source "35b1ce68fe77dcafb4144836c66042e397fff760b67034f52c9710e396087d90--libvorbis--1.3.7.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:37bcbe572118f7cc87daa488ef3d67c5cbd38e9e12e2e2b408df286f9b2fdc37"
+  checksum: [
+    "sha256=37bcbe572118f7cc87daa488ef3d67c5cbd38e9e12e2e2b408df286f9b2fdc37"
+  ]
+}
+extra-source "8758e0826c5bdf727830032ad9c0589a7bf24638d8a81df0d4f9cb707c994590--libvorbis--1.3.7.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libvorbis/blobs/sha256:41daf79ce53910061acbe1f63ca95f53b4149d3ebb2b97c2bb4d31845820f219"
+  checksum: [
+    "sha256=41daf79ce53910061acbe1f63ca95f53b4149d3ebb2b97c2bb4d31845820f219"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "68d211b8805a2fab148645c2ac8e43495e576876d6f50f0c4af5ea890730b7ea--libvorbis-1.3.7-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "cfbf090a1100c38fd007bfef754ea9f8a536856d42eefb78fb82c6cc8317b708--libvorbis--1.3.7.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "25b6806d2795fae90bca3012c1aa36f9736746551923c0b1487239b51f8fe7d6--libvorbis--1.3.7.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "55bd1f1f45c985483d9eafe19cda79b8aa3f403099625bc3cf371241619c412e--libvorbis--1.3.7.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e9d6d77b1b2f45e90b03ffd8b89bdbdf7854cdc44cbd424493e807fd98be4f0--libvorbis--1.3.7.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d2c67fe1b255e43867cfcd0cf1bb1572104b250f6029b3abb6431c9b32671c55--libvorbis--1.3.7.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "44c3833fcc4a2e481ef646510078cd3d21c13fdb4d78eb492a029fc7578257d8--libvorbis--1.3.7.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "07f0d9a7d53d742e3f1a27a88fc3f569f18ea2971980e64641948e63a1d1497f--libvorbis--1.3.7.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e722ea0456aefebd8f85bb5a8d393ac0b0c871e63298501e83d5ad555435161--libvorbis--1.3.7.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "35b1ce68fe77dcafb4144836c66042e397fff760b67034f52c9710e396087d90--libvorbis--1.3.7.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8758e0826c5bdf727830032ad9c0589a7bf24638d8a81df0d4f9cb707c994590--libvorbis--1.3.7.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libvorbis" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libvorbis" ]
+]

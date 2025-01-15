@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Collection of C++ functions for the interface of Python's string class methods"
+description: """
+Collection of C++ functions for the interface of Python's string class methods"""
+extra-source "d81f3d5e4c7bee242ff3048f2d6bfa2fedaf392ecc7358c212b9a10e83ea4eeb--pystring--1.1.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:9e8695ee4b99ef0ec12667a9dee997d4f0f06509b7c262a4a5c74aa1ec7002c4"
+  checksum: [
+    "sha256=9e8695ee4b99ef0ec12667a9dee997d4f0f06509b7c262a4a5c74aa1ec7002c4"
+  ]
+}
+extra-source "1e5558349cdc74af4489ae9f2313b85cff19ddd9703501937e067c0b4281df33--pystring-1.1.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/manifests/1.1.4"
+}
+extra-source "c580276f2fe0ccb5220180f98926927d04c404380d2867a76cdc97fb618e7386--pystring--1.1.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:743ac4c3b6deb23ba26d6d35fb38e7fac4ad7fa7f8daf99913810b42a5c64793"
+  checksum: [
+    "sha256=743ac4c3b6deb23ba26d6d35fb38e7fac4ad7fa7f8daf99913810b42a5c64793"
+  ]
+}
+extra-source "fac5c64baa296fa86f21a96416b7f39eeab508dd63ee9843df59eeff40a310cc--pystring--1.1.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:c26e8b819cc438eca6d9cbc63695d5de3946e8593e2a6ae7a80dad9f00755291"
+  checksum: [
+    "sha256=c26e8b819cc438eca6d9cbc63695d5de3946e8593e2a6ae7a80dad9f00755291"
+  ]
+}
+extra-source "95d82e9da6651255d3ba8ebbd79888af58c2c4ea636fc74c424b3324c8a50173--pystring--1.1.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:02c48d989fc55ecf9e197d512c4f256a5338327427492bac35e84d5f89a2de8f"
+  checksum: [
+    "sha256=02c48d989fc55ecf9e197d512c4f256a5338327427492bac35e84d5f89a2de8f"
+  ]
+}
+extra-source "14cdefb5ca0eeeb308e1628276369b9643e55a42b810f7d6ff70fe9201da8ed2--pystring--1.1.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:7691c2829ccd208b1805929cff0802595a93e1603710279064eae8d05eb4d56f"
+  checksum: [
+    "sha256=7691c2829ccd208b1805929cff0802595a93e1603710279064eae8d05eb4d56f"
+  ]
+}
+extra-source "7abefb56814d01a4dfaa73fd0666d2b84af852a9128f1f7a606e1a902e296ded--pystring--1.1.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:99038ecff46d9ea2ba35f6a3e976d92a2206082c7299447f331914da9477b75a"
+  checksum: [
+    "sha256=99038ecff46d9ea2ba35f6a3e976d92a2206082c7299447f331914da9477b75a"
+  ]
+}
+extra-source "47bf03df19e69b33beb2af703620796b260860d3becee44d8385261eb79f01bb--pystring--1.1.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:1890973661e9420d561fbff94d3679ac9cb60e3b224753b9c91313606e26beda"
+  checksum: [
+    "sha256=1890973661e9420d561fbff94d3679ac9cb60e3b224753b9c91313606e26beda"
+  ]
+}
+extra-source "af3c2d794144bdab2fda2048ed5c4bb1661e144bff26d10cada4beedd31de7ab--pystring--1.1.4.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:e9e60b007a95bba54ef74fdae69c817b3888a8ae05bca19e4f01371a12fc90bc"
+  checksum: [
+    "sha256=e9e60b007a95bba54ef74fdae69c817b3888a8ae05bca19e4f01371a12fc90bc"
+  ]
+}
+extra-source "da952c618242d69739cf472038bdae271d7b673c7f853cdeeae95cfea7d8db16--pystring--1.1.4.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:d9c0e8a46ac482f4e5e55484cb629263244cd7ab4bc90f9cd25bcac2e28b2755"
+  checksum: [
+    "sha256=d9c0e8a46ac482f4e5e55484cb629263244cd7ab4bc90f9cd25bcac2e28b2755"
+  ]
+}
+extra-source "2536903f67d3239a80f2f5de86c227a99dcdf0d72fff4c53a88fd38f0c055dba--pystring--1.1.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pystring/blobs/sha256:07f1dc79610a20ac5cc9376dbb992f7a568554b484f318e24dd621b5c7bae6f0"
+  checksum: [
+    "sha256=07f1dc79610a20ac5cc9376dbb992f7a568554b484f318e24dd621b5c7bae6f0"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1e5558349cdc74af4489ae9f2313b85cff19ddd9703501937e067c0b4281df33--pystring-1.1.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d81f3d5e4c7bee242ff3048f2d6bfa2fedaf392ecc7358c212b9a10e83ea4eeb--pystring--1.1.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c580276f2fe0ccb5220180f98926927d04c404380d2867a76cdc97fb618e7386--pystring--1.1.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fac5c64baa296fa86f21a96416b7f39eeab508dd63ee9843df59eeff40a310cc--pystring--1.1.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "95d82e9da6651255d3ba8ebbd79888af58c2c4ea636fc74c424b3324c8a50173--pystring--1.1.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "14cdefb5ca0eeeb308e1628276369b9643e55a42b810f7d6ff70fe9201da8ed2--pystring--1.1.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7abefb56814d01a4dfaa73fd0666d2b84af852a9128f1f7a606e1a902e296ded--pystring--1.1.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "47bf03df19e69b33beb2af703620796b260860d3becee44d8385261eb79f01bb--pystring--1.1.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "af3c2d794144bdab2fda2048ed5c4bb1661e144bff26d10cada4beedd31de7ab--pystring--1.1.4.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "da952c618242d69739cf472038bdae271d7b673c7f853cdeeae95cfea7d8db16--pystring--1.1.4.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2536903f67d3239a80f2f5de86c227a99dcdf0d72fff4c53a88fd38f0c055dba--pystring--1.1.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pystring" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pystring" ]
+]

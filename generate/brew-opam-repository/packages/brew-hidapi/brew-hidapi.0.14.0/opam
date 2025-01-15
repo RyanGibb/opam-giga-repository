@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Library for communicating with USB and Bluetooth HID devices"
+description: """
+Library for communicating with USB and Bluetooth HID devices"""
+extra-source "2f4764c926bbc58a56c09bfc8b2fd69017b473edba39d4be7cfec048d313307c--hidapi--0.14.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:ed4edcb94c18b6f2dfe35b9642a92bfb9198258e7c195d5100b1f84d7e9c0f41"
+  checksum: [
+    "sha256=ed4edcb94c18b6f2dfe35b9642a92bfb9198258e7c195d5100b1f84d7e9c0f41"
+  ]
+}
+extra-source "d00d80ed5ede151052950cfc71c9753be2c7da912f93257ba4873800fa9fc0b5--hidapi-0.14.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/manifests/0.14.0"
+}
+extra-source "5fd58c0002f6cd61ff7e90700622999a157b1da47e83cd489681efdfff5f6278--hidapi--0.14.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:3250f61ca23b7654de19d272869f70b15b9227dcdf449610b44af13286d32dc6"
+  checksum: [
+    "sha256=3250f61ca23b7654de19d272869f70b15b9227dcdf449610b44af13286d32dc6"
+  ]
+}
+extra-source "347d168ae34a5218876b71929dfd74763e6d4e12431816fb1cc95b4b0b3c9212--hidapi--0.14.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:8f665c92f1b3012852243abfc40b427cba3d4e581070cd4f2d8fa5dd185dd4d5"
+  checksum: [
+    "sha256=8f665c92f1b3012852243abfc40b427cba3d4e581070cd4f2d8fa5dd185dd4d5"
+  ]
+}
+extra-source "39f0b14008dfef6b42fb3a559e4b61fb6e47d03822ee8b53903d1767c8dbdc26--hidapi--0.14.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:7198e6d7a9946aa995eee2dcb7595dddb362aa5ed3ed5bcc7b3eeb08fb5cb9e4"
+  checksum: [
+    "sha256=7198e6d7a9946aa995eee2dcb7595dddb362aa5ed3ed5bcc7b3eeb08fb5cb9e4"
+  ]
+}
+extra-source "1c358c5cb0460873f1ff50fce27f2386bad3102364dd2c64307bb43b9e4e431c--hidapi--0.14.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:a51ee174536f9f73d398c2b6a998df28c812a5baac14e4f07e8bb17c846d53cf"
+  checksum: [
+    "sha256=a51ee174536f9f73d398c2b6a998df28c812a5baac14e4f07e8bb17c846d53cf"
+  ]
+}
+extra-source "b543a3007d2b952cbf308e66bde857c046005b890b635066ab60e0e9280cbb9f--hidapi--0.14.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:94a5ead30ea58235a8e1cfe884f55c10756efdd580954e1b0565f2298f9f0376"
+  checksum: [
+    "sha256=94a5ead30ea58235a8e1cfe884f55c10756efdd580954e1b0565f2298f9f0376"
+  ]
+}
+extra-source "4a4ecdc461d542adfdedad125b3fed5b175efaa38613e4467e2d7d59f7a40873--hidapi--0.14.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:4330e0a273dcb943f27e2be002fad07c385737bd308478b73bf24be2898c9bf5"
+  checksum: [
+    "sha256=4330e0a273dcb943f27e2be002fad07c385737bd308478b73bf24be2898c9bf5"
+  ]
+}
+extra-source "4ef106fe1aae9fb61ce14f35d9eab7a6d59339926e158e399bb088a2bb96a851--hidapi--0.14.0.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:7c131edf18d63b5cc8844cda43f8347808a5fd4668739b577c2d1a72f779df4f"
+  checksum: [
+    "sha256=7c131edf18d63b5cc8844cda43f8347808a5fd4668739b577c2d1a72f779df4f"
+  ]
+}
+extra-source "27de6198870653c5a60975ee0c0fe0b1c74c83ac60075b970da3fcd0ae4c3b3b--hidapi--0.14.0.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:18184e80f9d6ce6e702068b67d4e887dbb28d3fb753c379b6e97c6fbed3cdf97"
+  checksum: [
+    "sha256=18184e80f9d6ce6e702068b67d4e887dbb28d3fb753c379b6e97c6fbed3cdf97"
+  ]
+}
+extra-source "7b02e04b8a11fdeb4863674208f35a9fc5234b62ca00ec4a5f70ab413c108456--hidapi--0.14.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:b8c0fe481208e93135393bb11e970917dd10438ccfdbc180bc5efb97aec7ce52"
+  checksum: [
+    "sha256=b8c0fe481208e93135393bb11e970917dd10438ccfdbc180bc5efb97aec7ce52"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d00d80ed5ede151052950cfc71c9753be2c7da912f93257ba4873800fa9fc0b5--hidapi-0.14.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2f4764c926bbc58a56c09bfc8b2fd69017b473edba39d4be7cfec048d313307c--hidapi--0.14.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5fd58c0002f6cd61ff7e90700622999a157b1da47e83cd489681efdfff5f6278--hidapi--0.14.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "347d168ae34a5218876b71929dfd74763e6d4e12431816fb1cc95b4b0b3c9212--hidapi--0.14.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "39f0b14008dfef6b42fb3a559e4b61fb6e47d03822ee8b53903d1767c8dbdc26--hidapi--0.14.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1c358c5cb0460873f1ff50fce27f2386bad3102364dd2c64307bb43b9e4e431c--hidapi--0.14.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b543a3007d2b952cbf308e66bde857c046005b890b635066ab60e0e9280cbb9f--hidapi--0.14.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4a4ecdc461d542adfdedad125b3fed5b175efaa38613e4467e2d7d59f7a40873--hidapi--0.14.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4ef106fe1aae9fb61ce14f35d9eab7a6d59339926e158e399bb088a2bb96a851--hidapi--0.14.0.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "27de6198870653c5a60975ee0c0fe0b1c74c83ac60075b970da3fcd0ae4c3b3b--hidapi--0.14.0.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b02e04b8a11fdeb4863674208f35a9fc5234b62ca00ec4a5f70ab413c108456--hidapi--0.14.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "hidapi" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "hidapi" ]
+]

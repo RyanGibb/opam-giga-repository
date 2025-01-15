@@ -1,0 +1,60 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Keyboard configuration database for the X Window System"
+description: """
+Keyboard configuration database for the X Window System"""
+extra-source "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xkeyboardconfig/blobs/sha256:b11a43e9842d1c854a9f01295b888c47d0c7d7e9c2b2ff1b88f6f84c97aa9f7b"
+  checksum: [
+    "sha256=b11a43e9842d1c854a9f01295b888c47d0c7d7e9c2b2ff1b88f6f84c97aa9f7b"
+  ]
+}
+extra-source "bf84d560d9db0d192af1d94dceb5bc4a9503a85ee7525ae13659dcd93d7fe09e--xkeyboardconfig-2.42.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xkeyboardconfig/manifests/2.42"
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "bf84d560d9db0d192af1d94dceb5bc4a9503a85ee7525ae13659dcd93d7fe09e--xkeyboardconfig-2.42.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fa58d6d2de07c7e8ddc0d3146f28a99b84c9d194811f078ec830f00b960d0b37--xkeyboardconfig--2.42.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "xkeyboardconfig" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "xkeyboardconfig" ]
+]

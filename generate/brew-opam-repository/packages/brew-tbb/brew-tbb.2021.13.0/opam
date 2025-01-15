@@ -1,0 +1,103 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Rich and complete approach to parallelism in C++"
+description: """
+Rich and complete approach to parallelism in C++"""
+extra-source "069ed7cd5f0ae9ded740429dc6c4e91c5e526ed93c196e1c57edac6919fed474--tbb--2021.13.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:a48d6e0d893bff7968187a07a7e953017f1bcda0741550ad6f6162083f01cb11"
+  checksum: [
+    "sha256=a48d6e0d893bff7968187a07a7e953017f1bcda0741550ad6f6162083f01cb11"
+  ]
+}
+extra-source "d5ed34357f1582bde230d910f62e17521787c84d50e52052fc14d8498e2a27f1--tbb-2021.13.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/manifests/2021.13.0"
+}
+extra-source "f54149f14e4055f0f9b0f52e5a5fd0dfc892f0b8a5c685c2cafeba27eb3db059--tbb--2021.13.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:1c368b6566070dc6c527d82484d2f18a1fee5dd296ae05c67888bf7a080dc14e"
+  checksum: [
+    "sha256=1c368b6566070dc6c527d82484d2f18a1fee5dd296ae05c67888bf7a080dc14e"
+  ]
+}
+extra-source "88922304331bbb579e8e5a34bf07e31b9c1843577093072de139f2b15e037930--tbb--2021.13.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:8e9ed982a18c3dac9d8db3d64fd2a8c0b157adb846103c0a9315d1f67eef25cd"
+  checksum: [
+    "sha256=8e9ed982a18c3dac9d8db3d64fd2a8c0b157adb846103c0a9315d1f67eef25cd"
+  ]
+}
+extra-source "6f456695cd1d80473f770527329ec34991de450fda6de6d194fb0d011b2dec41--tbb--2021.13.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:992efbcc88b69ab097794e969439994a90c5fd39af45023b2953dc53f7d05699"
+  checksum: [
+    "sha256=992efbcc88b69ab097794e969439994a90c5fd39af45023b2953dc53f7d05699"
+  ]
+}
+extra-source "53530c18012c486ff87a634abd6cf0355bf6fb47c428a9b317458df68a81c3d1--tbb--2021.13.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:fcae42945dc2c556b9dabcc9645646fcb36a7ceb48c07dd0029e840d3bcb1b48"
+  checksum: [
+    "sha256=fcae42945dc2c556b9dabcc9645646fcb36a7ceb48c07dd0029e840d3bcb1b48"
+  ]
+}
+extra-source "316e1693e0dc03336d7eed9a4d98bf6bbae08ee67b6a037411993c646aee396c--tbb--2021.13.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:ed6b5b509b170c2a0003a63fae7c9d364195963bcb0f3a9788448d3ebc834622"
+  checksum: [
+    "sha256=ed6b5b509b170c2a0003a63fae7c9d364195963bcb0f3a9788448d3ebc834622"
+  ]
+}
+extra-source "66e8dc35c47ec0781d7c915fb1bea1c50633213bede89a248378297bfbd6b93a--tbb--2021.13.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:b5837d8c9c05831661606c47e210dfb2889a72e26b5d88b51ef081694410c76f"
+  checksum: [
+    "sha256=b5837d8c9c05831661606c47e210dfb2889a72e26b5d88b51ef081694410c76f"
+  ]
+}
+extra-source "b1536e1a2fde1afd515488628a847443f2d128cc52bbdcc26993de5f06507348--tbb--2021.13.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:5798f4862bf605ae914e0116e8cd9baaf65102279a553c9f588e32004cae2bb1"
+  checksum: [
+    "sha256=5798f4862bf605ae914e0116e8cd9baaf65102279a553c9f588e32004cae2bb1"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-hwloc" {= "2.11.1"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-pcre2" {= "10.44"}
+  "brew-swig" {= "4.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "d5ed34357f1582bde230d910f62e17521787c84d50e52052fc14d8498e2a27f1--tbb-2021.13.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "069ed7cd5f0ae9ded740429dc6c4e91c5e526ed93c196e1c57edac6919fed474--tbb--2021.13.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f54149f14e4055f0f9b0f52e5a5fd0dfc892f0b8a5c685c2cafeba27eb3db059--tbb--2021.13.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "88922304331bbb579e8e5a34bf07e31b9c1843577093072de139f2b15e037930--tbb--2021.13.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6f456695cd1d80473f770527329ec34991de450fda6de6d194fb0d011b2dec41--tbb--2021.13.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "53530c18012c486ff87a634abd6cf0355bf6fb47c428a9b317458df68a81c3d1--tbb--2021.13.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "316e1693e0dc03336d7eed9a4d98bf6bbae08ee67b6a037411993c646aee396c--tbb--2021.13.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "66e8dc35c47ec0781d7c915fb1bea1c50633213bede89a248378297bfbd6b93a--tbb--2021.13.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "b1536e1a2fde1afd515488628a847443f2d128cc52bbdcc26993de5f06507348--tbb--2021.13.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "tbb" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "tbb" ]
+]

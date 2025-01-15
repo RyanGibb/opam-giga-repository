@@ -1,0 +1,94 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Passphrase entry dialog utilizing the Assuan protocol"
+description: """
+Passphrase entry dialog utilizing the Assuan protocol"""
+extra-source "2e565a165dc61fa3acd263fd4d7044aa542f355709e41e694fc36c3afa8669bc--pinentry--1.3.1_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/blobs/sha256:1d5fc3eb19d7e41caa4a8b61530e7040d0f3fbffb812ca24e116d6b247a0dadc"
+  checksum: [
+    "sha256=1d5fc3eb19d7e41caa4a8b61530e7040d0f3fbffb812ca24e116d6b247a0dadc"
+  ]
+}
+extra-source "617908cf1b83df85f8782c945baac7ee7d9941c93a1e3a09d34ba82bacd91460--pinentry-1.3.1_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/manifests/1.3.1_1"
+}
+extra-source "4262f047c528c05a69a3bf032fd6b0722c5a2e0bf7ccc25d7d26b0a7d7896a16--pinentry--1.3.1_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/blobs/sha256:6eb6f95ae8513f179cb658043457e39dbed3b95bbf1a7bb8aece3158d2fd4299"
+  checksum: [
+    "sha256=6eb6f95ae8513f179cb658043457e39dbed3b95bbf1a7bb8aece3158d2fd4299"
+  ]
+}
+extra-source "2ada7e6328a5251387d71cb3e301aba1aae83400673aa04479233ebeb25bb53c--pinentry--1.3.1_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/blobs/sha256:d657fb607715d8f374bb50e79be0a1bb129bf1f0cfb0f706dc0688d10058ee89"
+  checksum: [
+    "sha256=d657fb607715d8f374bb50e79be0a1bb129bf1f0cfb0f706dc0688d10058ee89"
+  ]
+}
+extra-source "ed6523b9a95a3ed06d2446d5fa364511a3f97faa0cdcdd75eeddb463c254bdda--pinentry--1.3.1_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/blobs/sha256:1a750d73932b1c874887b38e186ad2017a36f230f3306983575bfa8b35c25e0d"
+  checksum: [
+    "sha256=1a750d73932b1c874887b38e186ad2017a36f230f3306983575bfa8b35c25e0d"
+  ]
+}
+extra-source "d0c87bfe59197b154587e0493bbe7d449e82f8f78e4b51bb23e1cfac0f530f15--pinentry--1.3.1_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/blobs/sha256:5dc139b14332cfb907a8179e28d36a501266686699ce387f48452b060a21ebb3"
+  checksum: [
+    "sha256=5dc139b14332cfb907a8179e28d36a501266686699ce387f48452b060a21ebb3"
+  ]
+}
+extra-source "d75a9501f912485459dd89cb3cbd042dd73e88564bbded9f519d21eccd0de706--pinentry--1.3.1_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/blobs/sha256:4bed735f12804f39955128939408210a31a8d0fd0b7d61f309779daa66053692"
+  checksum: [
+    "sha256=4bed735f12804f39955128939408210a31a8d0fd0b7d61f309779daa66053692"
+  ]
+}
+extra-source "a99423be77a28cac73f72adf64b1941b9e616fffea73d561f128de9c02c92935--pinentry--1.3.1_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/blobs/sha256:829c5388c7fc1c40eaeba29199ae97ebd727bc2df2f143f1a6818f07b79dff12"
+  checksum: [
+    "sha256=829c5388c7fc1c40eaeba29199ae97ebd727bc2df2f143f1a6818f07b79dff12"
+  ]
+}
+extra-source "73b387a83d33ea964fee3728ca5b4ab2fe6f7f493725e13e08d38f7a5bd4e02c--pinentry--1.3.1_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pinentry/blobs/sha256:d3e303a0b8099dedac66bbc95a0fdc3cfda679e594e60972d99eb3025c6f79fb"
+  checksum: [
+    "sha256=d3e303a0b8099dedac66bbc95a0fdc3cfda679e594e60972d99eb3025c6f79fb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-gettext" {= "0.22.5"}
+  "brew-libgpg-error" {= "1.50"}
+  "brew-libassuan" {= "3.0.1"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "617908cf1b83df85f8782c945baac7ee7d9941c93a1e3a09d34ba82bacd91460--pinentry-1.3.1_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2e565a165dc61fa3acd263fd4d7044aa542f355709e41e694fc36c3afa8669bc--pinentry--1.3.1_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4262f047c528c05a69a3bf032fd6b0722c5a2e0bf7ccc25d7d26b0a7d7896a16--pinentry--1.3.1_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2ada7e6328a5251387d71cb3e301aba1aae83400673aa04479233ebeb25bb53c--pinentry--1.3.1_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ed6523b9a95a3ed06d2446d5fa364511a3f97faa0cdcdd75eeddb463c254bdda--pinentry--1.3.1_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d0c87bfe59197b154587e0493bbe7d449e82f8f78e4b51bb23e1cfac0f530f15--pinentry--1.3.1_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d75a9501f912485459dd89cb3cbd042dd73e88564bbded9f519d21eccd0de706--pinentry--1.3.1_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a99423be77a28cac73f72adf64b1941b9e616fffea73d561f128de9c02c92935--pinentry--1.3.1_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "73b387a83d33ea964fee3728ca5b4ab2fe6f7f493725e13e08d38f7a5bd4e02c--pinentry--1.3.1_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pinentry" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pinentry" ]
+]

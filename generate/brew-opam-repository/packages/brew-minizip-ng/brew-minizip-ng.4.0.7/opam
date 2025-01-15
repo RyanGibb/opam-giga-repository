@@ -1,0 +1,95 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Zip file manipulation library with minizip 1.x compatibility layer"
+description: """
+Zip file manipulation library with minizip 1.x compatibility layer"""
+extra-source "e86bae8ff9aa3718dfdfdf089d6a9e9d37a7f9cc3f83a7c87e64a19d2a40b03c--minizip-ng--4.0.7.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/blobs/sha256:d622ccfef83d7e940f3741faa660ea65a86b0b88607ad342c9cbf61b7d121908"
+  checksum: [
+    "sha256=d622ccfef83d7e940f3741faa660ea65a86b0b88607ad342c9cbf61b7d121908"
+  ]
+}
+extra-source "2acfefe8f6f79bc078afc749c71f9f6741189000bbe525fc96125539d7d40730--minizip-ng-4.0.7.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/manifests/4.0.7"
+}
+extra-source "6ad09e6c3a7336a792af540d6f21b4cb40a5525bbca74e0b04b55c96bbfb61fb--minizip-ng--4.0.7.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/blobs/sha256:32999c125bdfb8e3e6f20a892f8c802ccddc192ed4b9e64f0cabfdbfe1d65f97"
+  checksum: [
+    "sha256=32999c125bdfb8e3e6f20a892f8c802ccddc192ed4b9e64f0cabfdbfe1d65f97"
+  ]
+}
+extra-source "f4c3b80088a49ae6b512f68778b36ef1bcceb70f57001cd54b7cae3e168cd6eb--minizip-ng--4.0.7.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/blobs/sha256:34b1969b53e8f3432499789af0defac42027c440e32ba1df2a3e31d6a8fd87c5"
+  checksum: [
+    "sha256=34b1969b53e8f3432499789af0defac42027c440e32ba1df2a3e31d6a8fd87c5"
+  ]
+}
+extra-source "8bdeaee60ee37414c5801951310a00e3f1f17cb2cd68e676c4bf1c9401d67a99--minizip-ng--4.0.7.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/blobs/sha256:d9ebd676a4d2ad996b0f8d9de8a30ca045552edb4fa381698b37da3c8d7d5295"
+  checksum: [
+    "sha256=d9ebd676a4d2ad996b0f8d9de8a30ca045552edb4fa381698b37da3c8d7d5295"
+  ]
+}
+extra-source "3ee7e29f519244e6c5fac9500d3f56a8b2eafb55c127449cd1990dee3d9681f9--minizip-ng--4.0.7.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/blobs/sha256:e03beb8fdeabfec130141c86e607020713357766aa2034a26eb373f82044c2bc"
+  checksum: [
+    "sha256=e03beb8fdeabfec130141c86e607020713357766aa2034a26eb373f82044c2bc"
+  ]
+}
+extra-source "4601ca7edca6994ae0bb1cdea05c82ddda0937b80bf7b0c5ed0e3c4d4b14ec31--minizip-ng--4.0.7.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/blobs/sha256:7e5f18ef56fe482184ace1a7686ea5d2d1e5423e92558c5b8c58566f53ee72d0"
+  checksum: [
+    "sha256=7e5f18ef56fe482184ace1a7686ea5d2d1e5423e92558c5b8c58566f53ee72d0"
+  ]
+}
+extra-source "bd23048c2d966e70390c926cf09b93943801da3430b87bd3a2735a2fa026b968--minizip-ng--4.0.7.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/blobs/sha256:0a74f9330b6f34afc554840df5214649e920b0669c2f4b70235cdb1423bb4e9e"
+  checksum: [
+    "sha256=0a74f9330b6f34afc554840df5214649e920b0669c2f4b70235cdb1423bb4e9e"
+  ]
+}
+extra-source "536293b2eba636f2d9c97a9bf274850160e07f0adbc17eb31a349ed1e4e482ba--minizip-ng--4.0.7.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/minizip-ng/blobs/sha256:a2ed7856d5ac6319e6e9c09b86aded5d1361c2064296d0dda76c28be0f64692a"
+  checksum: [
+    "sha256=a2ed7856d5ac6319e6e9c09b86aded5d1361c2064296d0dda76c28be0f64692a"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "2acfefe8f6f79bc078afc749c71f9f6741189000bbe525fc96125539d7d40730--minizip-ng-4.0.7.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e86bae8ff9aa3718dfdfdf089d6a9e9d37a7f9cc3f83a7c87e64a19d2a40b03c--minizip-ng--4.0.7.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6ad09e6c3a7336a792af540d6f21b4cb40a5525bbca74e0b04b55c96bbfb61fb--minizip-ng--4.0.7.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f4c3b80088a49ae6b512f68778b36ef1bcceb70f57001cd54b7cae3e168cd6eb--minizip-ng--4.0.7.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8bdeaee60ee37414c5801951310a00e3f1f17cb2cd68e676c4bf1c9401d67a99--minizip-ng--4.0.7.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3ee7e29f519244e6c5fac9500d3f56a8b2eafb55c127449cd1990dee3d9681f9--minizip-ng--4.0.7.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4601ca7edca6994ae0bb1cdea05c82ddda0937b80bf7b0c5ed0e3c4d4b14ec31--minizip-ng--4.0.7.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bd23048c2d966e70390c926cf09b93943801da3430b87bd3a2735a2fa026b968--minizip-ng--4.0.7.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "536293b2eba636f2d9c97a9bf274850160e07f0adbc17eb31a349ed1e4e482ba--minizip-ng--4.0.7.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "minizip-ng" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "minizip-ng" ]
+]

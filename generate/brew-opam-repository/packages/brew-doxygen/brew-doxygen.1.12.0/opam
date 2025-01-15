@@ -1,0 +1,92 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Generate documentation for several programming languages"
+description: """
+Generate documentation for several programming languages"""
+extra-source "cc3724a365d719d6c7ec7b3bc1c2d905d85652ecd99de34c0cc0d6192a463459--doxygen--1.12.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:358a28534368ec74031160dc4a91f66400740594c6f81ae1ccfd720fc77b26e6"
+  checksum: [
+    "sha256=358a28534368ec74031160dc4a91f66400740594c6f81ae1ccfd720fc77b26e6"
+  ]
+}
+extra-source "dee316ae1d233f4491b87ae6bdc5230d4d526131c94746f47b2a058221f5bbeb--doxygen-1.12.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/manifests/1.12.0"
+}
+extra-source "6c61aae996730f08cee1169764bc4ac6e94f232ee2a9f9e7aa3c749ec342171f--doxygen--1.12.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:c051c47ee4982ad11f2c23a7aa8fbb664874d799685852f350ef08eaf2c7bb2a"
+  checksum: [
+    "sha256=c051c47ee4982ad11f2c23a7aa8fbb664874d799685852f350ef08eaf2c7bb2a"
+  ]
+}
+extra-source "e1511d1d3f8040431c61b0705845ba783c3a40a662bfd218cb26a76452ac1c29--doxygen--1.12.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:056c2729260fb3189ec107c5e1186f7634f4fea1bc28f69a14467dc1af549c38"
+  checksum: [
+    "sha256=056c2729260fb3189ec107c5e1186f7634f4fea1bc28f69a14467dc1af549c38"
+  ]
+}
+extra-source "6266364fc469ed6b1fb4aeea46aa3437e67bcda29ce8e5061a69b74136088802--doxygen--1.12.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:dd2dfbfacff168cf29f003af6b29fa1b51ca8bad4a5630e8224098695fb82b78"
+  checksum: [
+    "sha256=dd2dfbfacff168cf29f003af6b29fa1b51ca8bad4a5630e8224098695fb82b78"
+  ]
+}
+extra-source "24c14f5ea8618ac2e8198d79fdf58c095aecef0955e1cfec52a854900c54deef--doxygen--1.12.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:cff27865073a17e2264711120fd13561c26773a6db4cff17336b8930980e1c27"
+  checksum: [
+    "sha256=cff27865073a17e2264711120fd13561c26773a6db4cff17336b8930980e1c27"
+  ]
+}
+extra-source "bba90b66ca5141d53b7e782cf4fd470b60977d7a64d5cdc47de984f0e8997726--doxygen--1.12.0.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:51940f39a1836b55266901fa4ae03eb941cc3ffff635cb0da0a041d1c9e746fe"
+  checksum: [
+    "sha256=51940f39a1836b55266901fa4ae03eb941cc3ffff635cb0da0a041d1c9e746fe"
+  ]
+}
+extra-source "35d692b7238c2b38d14e86de800674ca411d172baad36e1d4028d9684d5c8113--doxygen--1.12.0.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:63c7b68e43b7f03a7c9c5f95aca5244baf5794b590762004518659e54c1d9a1c"
+  checksum: [
+    "sha256=63c7b68e43b7f03a7c9c5f95aca5244baf5794b590762004518659e54c1d9a1c"
+  ]
+}
+extra-source "ccb37cb4264af72c3fbe4b44c7425ad81392f2f4e1dd109e781c0a2146a7dca4--doxygen--1.12.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:42e0f9dbdaaa5bfdf811cc4e349773ae6f712a5bb5be0887d436fa21775bea86"
+  checksum: [
+    "sha256=42e0f9dbdaaa5bfdf811cc4e349773ae6f712a5bb5be0887d436fa21775bea86"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-bison" {= "3.8.2"}
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "dee316ae1d233f4491b87ae6bdc5230d4d526131c94746f47b2a058221f5bbeb--doxygen-1.12.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "cc3724a365d719d6c7ec7b3bc1c2d905d85652ecd99de34c0cc0d6192a463459--doxygen--1.12.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6c61aae996730f08cee1169764bc4ac6e94f232ee2a9f9e7aa3c749ec342171f--doxygen--1.12.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e1511d1d3f8040431c61b0705845ba783c3a40a662bfd218cb26a76452ac1c29--doxygen--1.12.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6266364fc469ed6b1fb4aeea46aa3437e67bcda29ce8e5061a69b74136088802--doxygen--1.12.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "24c14f5ea8618ac2e8198d79fdf58c095aecef0955e1cfec52a854900c54deef--doxygen--1.12.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bba90b66ca5141d53b7e782cf4fd470b60977d7a64d5cdc47de984f0e8997726--doxygen--1.12.0.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "35d692b7238c2b38d14e86de800674ca411d172baad36e1d4028d9684d5c8113--doxygen--1.12.0.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ccb37cb4264af72c3fbe4b44c7425ad81392f2f4e1dd109e781c0a2146a7dca4--doxygen--1.12.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "doxygen" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "doxygen" ]
+]

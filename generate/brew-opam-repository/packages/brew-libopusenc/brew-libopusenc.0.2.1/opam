@@ -1,0 +1,143 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Convenience library for creating .opus files"
+description: """
+Convenience library for creating .opus files"""
+extra-source "81b62bbe1e8204eb8eb2c1019851b03014b0f5f3e078db3f287997f8bed33bbe--libopusenc--0.2.1.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:9c857d079a3c385ac89d89869fa2ed74d6115a3b86d87149bd9d4d5796da3141"
+  checksum: [
+    "sha256=9c857d079a3c385ac89d89869fa2ed74d6115a3b86d87149bd9d4d5796da3141"
+  ]
+}
+extra-source "198a3fb864dd59e1d7f67bae7230a800871051f7955dc71901594641878d0737--libopusenc-0.2.1-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/manifests/0.2.1-1"
+}
+extra-source "08aa063adcc2e5d41d2f008a4016ef8b95aaab3914dcacbb4ba8211fb1adaf40--libopusenc--0.2.1.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:340d398550ddcfdf633eb19d78a9f044e810ca5bcf0789fe66caec6a1c546269"
+  checksum: [
+    "sha256=340d398550ddcfdf633eb19d78a9f044e810ca5bcf0789fe66caec6a1c546269"
+  ]
+}
+extra-source "a01830cd08cc3a72d34b53cd682805c610b679aee706d3976e5eb5f28eefa141--libopusenc--0.2.1.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:c96d078c67fa9ad9ae0398e4c7979c6506c4438ed426d224c8480a5cddd1d919"
+  checksum: [
+    "sha256=c96d078c67fa9ad9ae0398e4c7979c6506c4438ed426d224c8480a5cddd1d919"
+  ]
+}
+extra-source "59ef5b9676d07cea81fb211f11af9830f4da466830485bf6b76b94d79ec1af52--libopusenc--0.2.1.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:5b2a64d3c64ec7e14f7a9f2adbe46dddf4f3ad51876dea2c28010e6f4e4e55f1"
+  checksum: [
+    "sha256=5b2a64d3c64ec7e14f7a9f2adbe46dddf4f3ad51876dea2c28010e6f4e4e55f1"
+  ]
+}
+extra-source "c8cbdc20618a6a82ec1a119f2737aa19cd7db00926817fefdf2a20586345a8c9--libopusenc--0.2.1.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:2d9e6657c2d76d193da5cd687e5c95e4c13702cd9f5c08945b7a316b63786112"
+  checksum: [
+    "sha256=2d9e6657c2d76d193da5cd687e5c95e4c13702cd9f5c08945b7a316b63786112"
+  ]
+}
+extra-source "7722e9e43c315be91294158ec30e61a83a2e8f6d17410e89085cc28116fd789e--libopusenc--0.2.1.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:636d36637bb7e7cc098dfe6ba078fb4fb1fbc5fce4bd93ea6a7c08ad4c49d2f4"
+  checksum: [
+    "sha256=636d36637bb7e7cc098dfe6ba078fb4fb1fbc5fce4bd93ea6a7c08ad4c49d2f4"
+  ]
+}
+extra-source "95281f1c7ad0c9e552011d54f6261eedfd5ab7638c73ff27bc34b82ec42b73d3--libopusenc--0.2.1.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:5b28442f84fbd88cfd6cacf35ad6df119cc1dcfb89851c7b81bd77f07402a70c"
+  checksum: [
+    "sha256=5b28442f84fbd88cfd6cacf35ad6df119cc1dcfb89851c7b81bd77f07402a70c"
+  ]
+}
+extra-source "32037f22ecfef325787b49eca425754b6f06162558b3ae450fb2ff469ee7714c--libopusenc--0.2.1.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:48157970f8bebbd7ad54d099531397cb3d81797e7715ed5523865d7d1b19df8b"
+  checksum: [
+    "sha256=48157970f8bebbd7ad54d099531397cb3d81797e7715ed5523865d7d1b19df8b"
+  ]
+}
+extra-source "da44f3eb3c3eb4712fb8f5e8d0ca91adedfa7555715f8ee9354f05c0fcad5dfb--libopusenc--0.2.1.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:f8d28846ea6d21358ef7768f94241a0f94327d4edcdd5223be2da96c2f0d6841"
+  checksum: [
+    "sha256=f8d28846ea6d21358ef7768f94241a0f94327d4edcdd5223be2da96c2f0d6841"
+  ]
+}
+extra-source "038be0d8d8686c723fe0476bac5bcf7dc6afbfa22aea850053558a0a4ee75de1--libopusenc--0.2.1.catalina.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:593106e48c86436fd1908c79f1ef54f206bb37f0983ccb3901190cebe6e78cea"
+  checksum: [
+    "sha256=593106e48c86436fd1908c79f1ef54f206bb37f0983ccb3901190cebe6e78cea"
+  ]
+}
+extra-source "79d5a46331abf954429f11f33aa4278a1382a9e0c247f8efeb07a791e47dd78b--libopusenc--0.2.1.mojave.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:96a05dd8d0071fb38ed14f4f5b64af576baee3719a16fc8fc331ddfa1a4d65ec"
+  checksum: [
+    "sha256=96a05dd8d0071fb38ed14f4f5b64af576baee3719a16fc8fc331ddfa1a4d65ec"
+  ]
+}
+extra-source "81bed0e9a897e0ef6df53a40a8f99bb745087a3e4613a19657a4680bcea6d131--libopusenc--0.2.1.high_sierra.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:e5cfb0433abe565b11351f9d6ec3fb44852a8aeb99ef8f6710ee9d899eb97ab3"
+  checksum: [
+    "sha256=e5cfb0433abe565b11351f9d6ec3fb44852a8aeb99ef8f6710ee9d899eb97ab3"
+  ]
+}
+extra-source "deba0d3a0cae24046f89ebfe10dad7a367697aa165c5e53b722fb578ce09e98c--libopusenc--0.2.1.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libopusenc/blobs/sha256:2545d8277065ed72d4a382d804569d27c55e9d8eb6ffc9511140bda90721edb3"
+  checksum: [
+    "sha256=2545d8277065ed72d4a382d804569d27c55e9d8eb6ffc9511140bda90721edb3"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-opus" {= "1.5.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "198a3fb864dd59e1d7f67bae7230a800871051f7955dc71901594641878d0737--libopusenc-0.2.1-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "81b62bbe1e8204eb8eb2c1019851b03014b0f5f3e078db3f287997f8bed33bbe--libopusenc--0.2.1.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "08aa063adcc2e5d41d2f008a4016ef8b95aaab3914dcacbb4ba8211fb1adaf40--libopusenc--0.2.1.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a01830cd08cc3a72d34b53cd682805c610b679aee706d3976e5eb5f28eefa141--libopusenc--0.2.1.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "59ef5b9676d07cea81fb211f11af9830f4da466830485bf6b76b94d79ec1af52--libopusenc--0.2.1.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c8cbdc20618a6a82ec1a119f2737aa19cd7db00926817fefdf2a20586345a8c9--libopusenc--0.2.1.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7722e9e43c315be91294158ec30e61a83a2e8f6d17410e89085cc28116fd789e--libopusenc--0.2.1.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "95281f1c7ad0c9e552011d54f6261eedfd5ab7638c73ff27bc34b82ec42b73d3--libopusenc--0.2.1.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "32037f22ecfef325787b49eca425754b6f06162558b3ae450fb2ff469ee7714c--libopusenc--0.2.1.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "da44f3eb3c3eb4712fb8f5e8d0ca91adedfa7555715f8ee9354f05c0fcad5dfb--libopusenc--0.2.1.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "038be0d8d8686c723fe0476bac5bcf7dc6afbfa22aea850053558a0a4ee75de1--libopusenc--0.2.1.catalina.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "79d5a46331abf954429f11f33aa4278a1382a9e0c247f8efeb07a791e47dd78b--libopusenc--0.2.1.mojave.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "81bed0e9a897e0ef6df53a40a8f99bb745087a3e4613a19657a4680bcea6d131--libopusenc--0.2.1.high_sierra.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "deba0d3a0cae24046f89ebfe10dad7a367697aa165c5e53b722fb578ce09e98c--libopusenc--0.2.1.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libopusenc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libopusenc" ]
+]

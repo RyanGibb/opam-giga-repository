@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Generic-purpose lossless compression algorithm by Google"
+description: """
+Generic-purpose lossless compression algorithm by Google"""
+extra-source "a088b820264bcdd97147ccd69654ed46f59e39fdad9fc43c4a7a99dc3f6bc473--brotli--1.1.0.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:b6e6ff18746910c7d7bf229595c622d04672ed0b5ac015c87e806ae026e10eb8"
+  checksum: [
+    "sha256=b6e6ff18746910c7d7bf229595c622d04672ed0b5ac015c87e806ae026e10eb8"
+  ]
+}
+extra-source "565098509cdfa90593ec9a41b41239f073843f88caed60ddaa3e6194ac4defda--brotli-1.1.0-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/manifests/1.1.0-1"
+}
+extra-source "62a8d847937aa62bb62ddde49b6546c742425fd47a11dcf8ee65a4221e4eb8ae--brotli--1.1.0.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:deb010485b7e58ffb00f45db61fa9b1ab0690c6b558d36755740fd4e62cd9400"
+  checksum: [
+    "sha256=deb010485b7e58ffb00f45db61fa9b1ab0690c6b558d36755740fd4e62cd9400"
+  ]
+}
+extra-source "b3852b9f89602b27a98dbdfbcb74ccadfe3ee37647a8643e70d9b71de1e2d621--brotli--1.1.0.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:2a95140d61198e3153ff27d8847b76dd34162f6e6e39f3e0f34d2b3a3e4f15dd"
+  checksum: [
+    "sha256=2a95140d61198e3153ff27d8847b76dd34162f6e6e39f3e0f34d2b3a3e4f15dd"
+  ]
+}
+extra-source "2465c7df0b406b9b3b26f8b182f665a4b62c73aa9584c3433827824c75b44b6b--brotli--1.1.0.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:8102401653fe365896171eac88f20eefa5295ec699555af7275efe144f5e877d"
+  checksum: [
+    "sha256=8102401653fe365896171eac88f20eefa5295ec699555af7275efe144f5e877d"
+  ]
+}
+extra-source "784f6ce1c9212ab1acb859b2b1900ce46010c258b0c33be68c5e2f784fc7a1dc--brotli--1.1.0.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:8065a97a2022d24617de5ae2a0e3588187878999b0ece3aad79e3bb7c8735772"
+  checksum: [
+    "sha256=8065a97a2022d24617de5ae2a0e3588187878999b0ece3aad79e3bb7c8735772"
+  ]
+}
+extra-source "3e7cde9e51cca9f1aee1688fc9a7f08aa7e28a83043d1d3ee8cf1cde2132801c--brotli--1.1.0.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:befb6d59eb07e6efac5d321e3fd70e9763baa1e89028a56b504685974c5c9d8e"
+  checksum: [
+    "sha256=befb6d59eb07e6efac5d321e3fd70e9763baa1e89028a56b504685974c5c9d8e"
+  ]
+}
+extra-source "f8208944958d5f70d0e7edb66e752052b672d0a03970bfde4c86224b1f162907--brotli--1.1.0.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:b692b610d85f31b272548c0f0e26d1af9f7e98cd9223d6e14e64b8585ef6dcda"
+  checksum: [
+    "sha256=b692b610d85f31b272548c0f0e26d1af9f7e98cd9223d6e14e64b8585ef6dcda"
+  ]
+}
+extra-source "ef5ed600439456a3a1f7d0d067b4ac90680557d903f78fdcab37d47e58aea4f9--brotli--1.1.0.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:b848f83229a3242e0d629a243d275d0c6a03f1b6816a28d83d96990bfdc4604c"
+  checksum: [
+    "sha256=b848f83229a3242e0d629a243d275d0c6a03f1b6816a28d83d96990bfdc4604c"
+  ]
+}
+extra-source "db8d4b5ee73770be2b12f437c128194d0b0d494c5b4d7e1b0fd29be2648a4da8--brotli--1.1.0.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:a9356d6162ffd085ed43eee73a5176d330e21c087409ec44cd562e2225f6eda9"
+  checksum: [
+    "sha256=a9356d6162ffd085ed43eee73a5176d330e21c087409ec44cd562e2225f6eda9"
+  ]
+}
+extra-source "410bfc27d179794eadd0fa0e911d51df753591d3afd1c2aa30ad721353b9daf5--brotli--1.1.0.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:5a2e1cc12312a092b38e79952fd2232f564f2c64cda0f69e97a55c65df9b29ab"
+  checksum: [
+    "sha256=5a2e1cc12312a092b38e79952fd2232f564f2c64cda0f69e97a55c65df9b29ab"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "565098509cdfa90593ec9a41b41239f073843f88caed60ddaa3e6194ac4defda--brotli-1.1.0-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "a088b820264bcdd97147ccd69654ed46f59e39fdad9fc43c4a7a99dc3f6bc473--brotli--1.1.0.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "62a8d847937aa62bb62ddde49b6546c742425fd47a11dcf8ee65a4221e4eb8ae--brotli--1.1.0.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b3852b9f89602b27a98dbdfbcb74ccadfe3ee37647a8643e70d9b71de1e2d621--brotli--1.1.0.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2465c7df0b406b9b3b26f8b182f665a4b62c73aa9584c3433827824c75b44b6b--brotli--1.1.0.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "784f6ce1c9212ab1acb859b2b1900ce46010c258b0c33be68c5e2f784fc7a1dc--brotli--1.1.0.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3e7cde9e51cca9f1aee1688fc9a7f08aa7e28a83043d1d3ee8cf1cde2132801c--brotli--1.1.0.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f8208944958d5f70d0e7edb66e752052b672d0a03970bfde4c86224b1f162907--brotli--1.1.0.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ef5ed600439456a3a1f7d0d067b4ac90680557d903f78fdcab37d47e58aea4f9--brotli--1.1.0.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "db8d4b5ee73770be2b12f437c128194d0b0d494c5b4d7e1b0fd29be2648a4da8--brotli--1.1.0.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "410bfc27d179794eadd0fa0e911d51df753591d3afd1c2aa30ad721353b9daf5--brotli--1.1.0.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "brotli" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "brotli" ]
+]

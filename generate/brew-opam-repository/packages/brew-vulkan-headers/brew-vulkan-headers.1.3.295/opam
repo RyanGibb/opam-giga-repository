@@ -1,0 +1,50 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Vulkan Header files and API registry"
+description: """
+Vulkan Header files and API registry"""
+extra-source "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-headers/blobs/sha256:86744d89727cee0390ec38fcdf41d3a7994b06ab23fb32fd9989b4046519ad13"
+  checksum: [
+    "sha256=86744d89727cee0390ec38fcdf41d3a7994b06ab23fb32fd9989b4046519ad13"
+  ]
+}
+extra-source "a3fee93d477c2dec71bfe020b475ffa7330ab7f219bcf9467a277237fd82cb21--vulkan-headers-1.3.295.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/vulkan-headers/manifests/1.3.295"
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "a3fee93d477c2dec71bfe020b475ffa7330ab7f219bcf9467a277237fd82cb21--vulkan-headers-1.3.295.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c010c70c116dd3e0369aa5b4f27b43937ec4b8d2fd88c216956bb7906d3822da--vulkan-headers--1.3.295.all.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "vulkan-headers" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "vulkan-headers" ]
+]

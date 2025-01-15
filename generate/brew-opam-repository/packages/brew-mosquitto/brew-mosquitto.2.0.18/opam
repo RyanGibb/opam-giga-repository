@@ -1,0 +1,110 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Message broker implementing the MQTT protocol"
+description: """
+Message broker implementing the MQTT protocol"""
+extra-source "226a919018009b88a37efba06acd960e80d92f0661cf89229a97a940c4400ac5--mosquitto--2.0.18.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/blobs/sha256:049b824619543666afb4162d0498a37c2d47698a07ce58f72b92f7590e73feeb"
+  checksum: [
+    "sha256=049b824619543666afb4162d0498a37c2d47698a07ce58f72b92f7590e73feeb"
+  ]
+}
+extra-source "76a3f5e4777e1578e5067245dd4dcf06af14aa607bf1b1519be431418c0268bd--mosquitto-2.0.18.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/manifests/2.0.18"
+}
+extra-source "1c91b0cb8c67f1e60d47ebbe93cce4fadedca7eca42d0c3ab0fd0fa00dd6fadc--mosquitto--2.0.18.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/blobs/sha256:30e0c34d24332a35286dcf4737a9715370a3d62ff501fb47412ef755f72ec3a8"
+  checksum: [
+    "sha256=30e0c34d24332a35286dcf4737a9715370a3d62ff501fb47412ef755f72ec3a8"
+  ]
+}
+extra-source "c6ec78834742553ea1c4563c5ef46eee69d52a473ccf6a64f1eb3300371fe008--mosquitto--2.0.18.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/blobs/sha256:ed6fa66f74bb88539a0ed66d32ebf20d58d099ab6fc2131703d2cb6c26f053e1"
+  checksum: [
+    "sha256=ed6fa66f74bb88539a0ed66d32ebf20d58d099ab6fc2131703d2cb6c26f053e1"
+  ]
+}
+extra-source "6f34d13a7d63b65a4b0cd847a370ec7910c89b4c4397d673cc8186bfed8881d9--mosquitto--2.0.18.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/blobs/sha256:be22defe47ce61833d400523b75ca6a4d8a67ccc3c56bae5114f8f3290df3f90"
+  checksum: [
+    "sha256=be22defe47ce61833d400523b75ca6a4d8a67ccc3c56bae5114f8f3290df3f90"
+  ]
+}
+extra-source "42c06b3d3d184cc4ef76e87d0d531cd500657405d7e55bddd7a60ed1e8942ae6--mosquitto--2.0.18.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/blobs/sha256:f7946b65c41657ea97975c9ce2a2d1e2c63f6dd2f55a5ad048fe9afdbff00d29"
+  checksum: [
+    "sha256=f7946b65c41657ea97975c9ce2a2d1e2c63f6dd2f55a5ad048fe9afdbff00d29"
+  ]
+}
+extra-source "dfd1617584f8ba30c42252ccfe6a22ad179291befcdade7ef5f877228fd0660b--mosquitto--2.0.18.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/blobs/sha256:4702e5a0ca4da921a85b8970f0dd9e6ed64788522f483b66fd025cd281d2ceea"
+  checksum: [
+    "sha256=4702e5a0ca4da921a85b8970f0dd9e6ed64788522f483b66fd025cd281d2ceea"
+  ]
+}
+extra-source "4c3377b3329145a4be4c5254ac5d23082a79f532fa1dc0c3fa95b753de925854--mosquitto--2.0.18.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/blobs/sha256:96990068f0968e20dbef5b553804855046bc332e66a144f792e0a668a383ce38"
+  checksum: [
+    "sha256=96990068f0968e20dbef5b553804855046bc332e66a144f792e0a668a383ce38"
+  ]
+}
+extra-source "86a9ea55cdbec1b4de536fe75453c749ac01c2a2010180e182aa19f0f0f0a85c--mosquitto--2.0.18.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/mosquitto/blobs/sha256:d699f5436ec14373d7c83e6ec811c2ac5ffef9595db2c48df8bbb20f1e975ae2"
+  checksum: [
+    "sha256=d699f5436ec14373d7c83e6ec811c2ac5ffef9595db2c48df8bbb20f1e975ae2"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-cjson" {= "1.7.18"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-libuv" {= "1.48.0"}
+  "brew-libwebsockets" {= "4.3.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "76a3f5e4777e1578e5067245dd4dcf06af14aa607bf1b1519be431418c0268bd--mosquitto-2.0.18.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "226a919018009b88a37efba06acd960e80d92f0661cf89229a97a940c4400ac5--mosquitto--2.0.18.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1c91b0cb8c67f1e60d47ebbe93cce4fadedca7eca42d0c3ab0fd0fa00dd6fadc--mosquitto--2.0.18.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c6ec78834742553ea1c4563c5ef46eee69d52a473ccf6a64f1eb3300371fe008--mosquitto--2.0.18.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6f34d13a7d63b65a4b0cd847a370ec7910c89b4c4397d673cc8186bfed8881d9--mosquitto--2.0.18.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "42c06b3d3d184cc4ef76e87d0d531cd500657405d7e55bddd7a60ed1e8942ae6--mosquitto--2.0.18.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dfd1617584f8ba30c42252ccfe6a22ad179291befcdade7ef5f877228fd0660b--mosquitto--2.0.18.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4c3377b3329145a4be4c5254ac5d23082a79f532fa1dc0c3fa95b753de925854--mosquitto--2.0.18.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "86a9ea55cdbec1b4de536fe75453c749ac01c2a2010180e182aa19f0f0f0a85c--mosquitto--2.0.18.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "mosquitto" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "mosquitto" ]
+]

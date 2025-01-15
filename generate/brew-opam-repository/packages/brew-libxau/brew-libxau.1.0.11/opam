@@ -1,0 +1,109 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: A Sample Authorization Protocol for X"
+description: """
+X.Org: A Sample Authorization Protocol for X"""
+extra-source "95b4506ff109f531a42da94511ffba9169e108bc3141ec92dbd7b2b597ddd140--libxau--1.0.11.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:49cc37e73988074d48d1942e5d0d865a10a67692aa4752b5ac30c91a89ef4d79"
+  checksum: [
+    "sha256=49cc37e73988074d48d1942e5d0d865a10a67692aa4752b5ac30c91a89ef4d79"
+  ]
+}
+extra-source "7faff26297b2e07682655beaa529cff7b3de0ad1abc013863ca3d03602b79ee7--libxau-1.0.11.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/manifests/1.0.11"
+}
+extra-source "396285d153ceb834188461fd0a380416b7a30cb9d1af770a3f0ceb84fad26cec--libxau--1.0.11.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:10a5ba27ae98aad4e5f236a550a483a36a9ff13d3c3de388056fcfcf0b743614"
+  checksum: [
+    "sha256=10a5ba27ae98aad4e5f236a550a483a36a9ff13d3c3de388056fcfcf0b743614"
+  ]
+}
+extra-source "8b1a51ab931d2eadede6265e87aba9566af28b51969c5d64e768a57b05614714--libxau--1.0.11.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:5af5678065c243a7d199b76facc8be615dd6aa6de65d03778e9b403e8b2827d6"
+  checksum: [
+    "sha256=5af5678065c243a7d199b76facc8be615dd6aa6de65d03778e9b403e8b2827d6"
+  ]
+}
+extra-source "5399247ebd66d2e156d54d948c886358369827c4c7714a2e0b66883b6e248683--libxau--1.0.11.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:7da43230a047e78a346707b6673d9f8a4077af03f1676121df279f7f5f1dc6c2"
+  checksum: [
+    "sha256=7da43230a047e78a346707b6673d9f8a4077af03f1676121df279f7f5f1dc6c2"
+  ]
+}
+extra-source "a1f8411236b667139ee1ecc1a4802559f26ff128c1b693516ca2ac8f9d2a3413--libxau--1.0.11.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:d8cc440c5804ecf424d96d3cd4e92e88c83d43e7f927126c768caee2dffe36a8"
+  checksum: [
+    "sha256=d8cc440c5804ecf424d96d3cd4e92e88c83d43e7f927126c768caee2dffe36a8"
+  ]
+}
+extra-source "c57fdec9da1dfb80853b20d0536c22cec96363aae3241fbe65e71b710ff25136--libxau--1.0.11.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:3b8790c3aaf98e0ce10fd088f66b2591e6b5fb8b6b95df8ec254f389e15f81cf"
+  checksum: [
+    "sha256=3b8790c3aaf98e0ce10fd088f66b2591e6b5fb8b6b95df8ec254f389e15f81cf"
+  ]
+}
+extra-source "3648b5c43b1151d6e2dfb32b215a46b6dfe61c3f8507f06226363ca92e838d3b--libxau--1.0.11.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:8f7c0378757601370d13539c5f1a11f560326464d9ba1f9fb9f5e2631163d559"
+  checksum: [
+    "sha256=8f7c0378757601370d13539c5f1a11f560326464d9ba1f9fb9f5e2631163d559"
+  ]
+}
+extra-source "1f0419b82ce2e6acde8372b773aa1b7d545f67d937b62b90b4b6e83cff0d766f--libxau--1.0.11.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:306524aec65e6ea22e5d18fbf5b09f1a544fce2a9bc37349b3bc5d98a14d7984"
+  checksum: [
+    "sha256=306524aec65e6ea22e5d18fbf5b09f1a544fce2a9bc37349b3bc5d98a14d7984"
+  ]
+}
+extra-source "cd4a7b86ce2aff4d2e2333eb8404ff862525d66b007c5491de2e4349893a70e4--libxau--1.0.11.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:1bd9a72f005e6d7e746a95baf003b561756076623a074d7ea9d6fd0207d15eff"
+  checksum: [
+    "sha256=1bd9a72f005e6d7e746a95baf003b561756076623a074d7ea9d6fd0207d15eff"
+  ]
+}
+extra-source "86af17cdfcfbad0e0b04b8f0fc722ecbea02fe44c6034db9bbc3f44e760f091f--libxau--1.0.11.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:ba968fc488e6fa7d6d1f734ff79b85f0b4ed2ffa8dd7d19b0e61e48ec7f2cd44"
+  checksum: [
+    "sha256=ba968fc488e6fa7d6d1f734ff79b85f0b4ed2ffa8dd7d19b0e61e48ec7f2cd44"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "7faff26297b2e07682655beaa529cff7b3de0ad1abc013863ca3d03602b79ee7--libxau-1.0.11.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "95b4506ff109f531a42da94511ffba9169e108bc3141ec92dbd7b2b597ddd140--libxau--1.0.11.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "396285d153ceb834188461fd0a380416b7a30cb9d1af770a3f0ceb84fad26cec--libxau--1.0.11.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8b1a51ab931d2eadede6265e87aba9566af28b51969c5d64e768a57b05614714--libxau--1.0.11.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5399247ebd66d2e156d54d948c886358369827c4c7714a2e0b66883b6e248683--libxau--1.0.11.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a1f8411236b667139ee1ecc1a4802559f26ff128c1b693516ca2ac8f9d2a3413--libxau--1.0.11.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c57fdec9da1dfb80853b20d0536c22cec96363aae3241fbe65e71b710ff25136--libxau--1.0.11.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3648b5c43b1151d6e2dfb32b215a46b6dfe61c3f8507f06226363ca92e838d3b--libxau--1.0.11.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1f0419b82ce2e6acde8372b773aa1b7d545f67d937b62b90b4b6e83cff0d766f--libxau--1.0.11.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "cd4a7b86ce2aff4d2e2333eb8404ff862525d66b007c5491de2e4349893a70e4--libxau--1.0.11.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "86af17cdfcfbad0e0b04b8f0fc722ecbea02fe44c6034db9bbc3f44e760f091f--libxau--1.0.11.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxau" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxau" ]
+]

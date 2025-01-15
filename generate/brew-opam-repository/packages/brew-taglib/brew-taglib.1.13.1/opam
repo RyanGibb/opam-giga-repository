@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Audio metadata library"
+description: """
+Audio metadata library"""
+extra-source "229b91a365883ae0e8d3de8a8f7dd25210b01e9e7c534f7d209159853c25eab9--taglib--1.13.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:394ab63cec3e1288117fe9076afce0952b31a549db29de41c4a5f5cc8905aead"
+  checksum: [
+    "sha256=394ab63cec3e1288117fe9076afce0952b31a549db29de41c4a5f5cc8905aead"
+  ]
+}
+extra-source "227cd090b0b2e8fe83e3fbd6213bdd0d656357959c8aabd40fa6b79ee7d20e97--taglib-1.13.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/manifests/1.13.1"
+}
+extra-source "03bbdf78d23de0576f2a0ee98e51e1e66a9bac22abf454dd74ecd3ae0e15aff9--taglib--1.13.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:87427348eee256dd9d02bcfe85d909fedba634ce9325a7c0800a4a40a202b28d"
+  checksum: [
+    "sha256=87427348eee256dd9d02bcfe85d909fedba634ce9325a7c0800a4a40a202b28d"
+  ]
+}
+extra-source "1f2cfff435da43c1115431a5719c20e6143b9d11e732ad662305e8c5a0dcda77--taglib--1.13.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:5b79928275529b55ab078a708cbfb98e174f7e5b7d668bf86bccb0634f443f0f"
+  checksum: [
+    "sha256=5b79928275529b55ab078a708cbfb98e174f7e5b7d668bf86bccb0634f443f0f"
+  ]
+}
+extra-source "03ef1c234d9da1b96576eba8d7f431b7a3978c30868f79f36f885cf6f81593b1--taglib--1.13.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:a0e1acf193f45734d34409416134a0181ef2a70a23db77564b2f6d1e3dfb2f9b"
+  checksum: [
+    "sha256=a0e1acf193f45734d34409416134a0181ef2a70a23db77564b2f6d1e3dfb2f9b"
+  ]
+}
+extra-source "b5d9d7d3430f315ee68e1fa32cb897dffaf8c9b032f43458b8be7b8e30f7598b--taglib--1.13.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:c921c460750f74d8c025ed12189704bba122e1883c1e034b2cc86d451e81dfbe"
+  checksum: [
+    "sha256=c921c460750f74d8c025ed12189704bba122e1883c1e034b2cc86d451e81dfbe"
+  ]
+}
+extra-source "e583b7093fb56eeb8b330db5e0cac94729d7b7c619bc6504cb1eade591d7f415--taglib--1.13.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:585afe1f5b71dd705e40075c5fdc898d5aa137a278a64c141ee5e249dcb5a27b"
+  checksum: [
+    "sha256=585afe1f5b71dd705e40075c5fdc898d5aa137a278a64c141ee5e249dcb5a27b"
+  ]
+}
+extra-source "d77c40b3ea311dd5b742185b33ab7d9f28d0334eb21c2c8c14b4e226bdf33fb0--taglib--1.13.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:5d012c93d5f25fded733a3b8cb3d834ab25ff121e32265d5bfcf38634b1171e5"
+  checksum: [
+    "sha256=5d012c93d5f25fded733a3b8cb3d834ab25ff121e32265d5bfcf38634b1171e5"
+  ]
+}
+extra-source "25d98d02dcadd3b7623f4af70943faed8f187f40dd05a6df892baeecbaccf0c8--taglib--1.13.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:ce0540a13cf0cd98e968f40c46e154a3947a0c2d682f5023cd14830ae9b1f0b5"
+  checksum: [
+    "sha256=ce0540a13cf0cd98e968f40c46e154a3947a0c2d682f5023cd14830ae9b1f0b5"
+  ]
+}
+extra-source "0296e8d36904b9056d926f51719f872c31e67cbfcdb9776e17568e434554996c--taglib--1.13.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:f1b3bc322c1588095ffaa5bb957af0e3b53651d022e3b3ec0616c58cb4c6e6cd"
+  checksum: [
+    "sha256=f1b3bc322c1588095ffaa5bb957af0e3b53651d022e3b3ec0616c58cb4c6e6cd"
+  ]
+}
+extra-source "9724762eade9e6cf51674353df86bc657147828f0fc5f022f6d9a54c06cc2d1f--taglib--1.13.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/taglib/blobs/sha256:1762030a268fcab40eb571d7ac9a6065db25f7b6c1898ce142f49d5f3f7bf80e"
+  checksum: [
+    "sha256=1762030a268fcab40eb571d7ac9a6065db25f7b6c1898ce142f49d5f3f7bf80e"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "227cd090b0b2e8fe83e3fbd6213bdd0d656357959c8aabd40fa6b79ee7d20e97--taglib-1.13.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "229b91a365883ae0e8d3de8a8f7dd25210b01e9e7c534f7d209159853c25eab9--taglib--1.13.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "03bbdf78d23de0576f2a0ee98e51e1e66a9bac22abf454dd74ecd3ae0e15aff9--taglib--1.13.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1f2cfff435da43c1115431a5719c20e6143b9d11e732ad662305e8c5a0dcda77--taglib--1.13.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "03ef1c234d9da1b96576eba8d7f431b7a3978c30868f79f36f885cf6f81593b1--taglib--1.13.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b5d9d7d3430f315ee68e1fa32cb897dffaf8c9b032f43458b8be7b8e30f7598b--taglib--1.13.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e583b7093fb56eeb8b330db5e0cac94729d7b7c619bc6504cb1eade591d7f415--taglib--1.13.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d77c40b3ea311dd5b742185b33ab7d9f28d0334eb21c2c8c14b4e226bdf33fb0--taglib--1.13.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "25d98d02dcadd3b7623f4af70943faed8f187f40dd05a6df892baeecbaccf0c8--taglib--1.13.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0296e8d36904b9056d926f51719f872c31e67cbfcdb9776e17568e434554996c--taglib--1.13.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9724762eade9e6cf51674353df86bc657147828f0fc5f022f6d9a54c06cc2d1f--taglib--1.13.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "taglib" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "taglib" ]
+]

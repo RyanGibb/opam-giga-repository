@@ -1,0 +1,113 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Color management solution geared towards motion picture production"
+description: """
+Color management solution geared towards motion picture production"""
+extra-source "514bf78ff5b33a0779ba95631e069daa6f434b0654ddc35dd179c438dc6550f2--opencolorio--2.3.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/blobs/sha256:13514c5bcca6944b8aa2200ddcaeee33df2e762d25cc7d6dd208ff6eeba1cf0d"
+  checksum: [
+    "sha256=13514c5bcca6944b8aa2200ddcaeee33df2e762d25cc7d6dd208ff6eeba1cf0d"
+  ]
+}
+extra-source "54f72df5fc54e961d1ff3bf6f9f8bbd4076fc885cc4bc6b7ba17356d3fd9baa2--opencolorio-2.3.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/manifests/2.3.2"
+}
+extra-source "179bc40dd8ea73a85bb28e45a78dc46ae5c521c15fc6e17736aac1ea073e36a6--opencolorio--2.3.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/blobs/sha256:583e1b16d1981250865d052511160b254ce71485b82107da6896e4642c254d76"
+  checksum: [
+    "sha256=583e1b16d1981250865d052511160b254ce71485b82107da6896e4642c254d76"
+  ]
+}
+extra-source "7e0ee9535b87a121ac3cc28666a9b6573cae713e9cb677c59039c6991c5b0510--opencolorio--2.3.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/blobs/sha256:0db0e5ebd3e423f988a351de2677cde0a027ab10212dd6535263e16900530f69"
+  checksum: [
+    "sha256=0db0e5ebd3e423f988a351de2677cde0a027ab10212dd6535263e16900530f69"
+  ]
+}
+extra-source "da273e4872c5e3cd4a463a0973463bfaac11f3a2a97088ac21e9657d308f48c4--opencolorio--2.3.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/blobs/sha256:1841a51311fce945dff91344b05fad32c1ca2e2e96a094ebc6b60b5cc74d0d2a"
+  checksum: [
+    "sha256=1841a51311fce945dff91344b05fad32c1ca2e2e96a094ebc6b60b5cc74d0d2a"
+  ]
+}
+extra-source "73391b57a5c9c9dfe1a9398ffb18f665300196660a3649e46c63cc7f901b3a1b--opencolorio--2.3.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/blobs/sha256:0a35033f31e6aa593f141238895b3fe383527f662592e106a76e175d919d0815"
+  checksum: [
+    "sha256=0a35033f31e6aa593f141238895b3fe383527f662592e106a76e175d919d0815"
+  ]
+}
+extra-source "85987a09b5d9d9b8d490cd76322bad331b389fb65698e57a7f974e8f440493ee--opencolorio--2.3.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/blobs/sha256:3f97660a1b3dff405779ed4480475da7c5389c345f35c4d5837f08fe53c4a725"
+  checksum: [
+    "sha256=3f97660a1b3dff405779ed4480475da7c5389c345f35c4d5837f08fe53c4a725"
+  ]
+}
+extra-source "5d8c57e7d41a741db4507b26e19834011256822a9a78c227e0e2e0548311a7f6--opencolorio--2.3.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/blobs/sha256:68193cb0f8b28037f26bfcf1ade5e1ffcc757da8dd9d4782a47307e2f5183e5f"
+  checksum: [
+    "sha256=68193cb0f8b28037f26bfcf1ade5e1ffcc757da8dd9d4782a47307e2f5183e5f"
+  ]
+}
+extra-source "1121a372ff1be072a96f47090b31597734fd664b6382f6b6db4810d01554e6d8--opencolorio--2.3.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencolorio/blobs/sha256:fd944816b1ccf312cd3471d87f0cee4fe2d85712a661d1bf13fa10be77d6a3b8"
+  checksum: [
+    "sha256=fd944816b1ccf312cd3471d87f0cee4fe2d85712a661d1bf13fa10be77d6a3b8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-imath" {= "3.1.12"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-minizip-ng" {= "4.0.7"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-pystring" {= "1.1.4"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-yaml-cpp" {= "0.8.0"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-python" {= "3.11.10"}
+  "brew-pybind11" {= "2.13.6"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "54f72df5fc54e961d1ff3bf6f9f8bbd4076fc885cc4bc6b7ba17356d3fd9baa2--opencolorio-2.3.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "514bf78ff5b33a0779ba95631e069daa6f434b0654ddc35dd179c438dc6550f2--opencolorio--2.3.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "179bc40dd8ea73a85bb28e45a78dc46ae5c521c15fc6e17736aac1ea073e36a6--opencolorio--2.3.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7e0ee9535b87a121ac3cc28666a9b6573cae713e9cb677c59039c6991c5b0510--opencolorio--2.3.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "da273e4872c5e3cd4a463a0973463bfaac11f3a2a97088ac21e9657d308f48c4--opencolorio--2.3.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "73391b57a5c9c9dfe1a9398ffb18f665300196660a3649e46c63cc7f901b3a1b--opencolorio--2.3.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "85987a09b5d9d9b8d490cd76322bad331b389fb65698e57a7f974e8f440493ee--opencolorio--2.3.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5d8c57e7d41a741db4507b26e19834011256822a9a78c227e0e2e0548311a7f6--opencolorio--2.3.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1121a372ff1be072a96f47090b31597734fd664b6382f6b6db4810d01554e6d8--opencolorio--2.3.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "opencolorio" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "opencolorio" ]
+]

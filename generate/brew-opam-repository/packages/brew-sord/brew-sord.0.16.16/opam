@@ -1,0 +1,109 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C library for storing RDF data in memory"
+description: """
+C library for storing RDF data in memory"""
+extra-source "037f36bd0dfea5c205a588dd4557765a95b88cc74065dea8e38b534f3d0a4f8d--sord--0.16.16.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/blobs/sha256:9534a78d2099f3cc7938d5c25b23e17d270e977dafd203bd3c5e3d5f292ee915"
+  checksum: [
+    "sha256=9534a78d2099f3cc7938d5c25b23e17d270e977dafd203bd3c5e3d5f292ee915"
+  ]
+}
+extra-source "9fe49dbc47461f8b50b1ae75708fc926c2dc7179e0bcc20902fe809e57f1c486--sord-0.16.16-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/manifests/0.16.16-1"
+}
+extra-source "880b1e03c4f7336f56c78e7e4ce10994daf59ba78ea55160dd88b7f58109b471--sord--0.16.16.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/blobs/sha256:4da2463d79cd7dcbd974b6b241d502c11e4e3b98bbd3d99d44bc40ba81021c8d"
+  checksum: [
+    "sha256=4da2463d79cd7dcbd974b6b241d502c11e4e3b98bbd3d99d44bc40ba81021c8d"
+  ]
+}
+extra-source "a448608888f3dd90619448fd39fa8acfaffb0ee9d3a3b64a96ded060a315c9a2--sord--0.16.16.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/blobs/sha256:ccb2cea1a9eb0a3872148c76b00d4010c871b5c6d08b33a7cf558f44abbccdf6"
+  checksum: [
+    "sha256=ccb2cea1a9eb0a3872148c76b00d4010c871b5c6d08b33a7cf558f44abbccdf6"
+  ]
+}
+extra-source "a3f4620d279a2fa49dfede9b16091c05ee31b4d9ee2dad08ec2227842d608e07--sord--0.16.16.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/blobs/sha256:68a1b2a740872fd9c03d81531507bc9cbfcc1eba056c6b54db6026767fc6b6a0"
+  checksum: [
+    "sha256=68a1b2a740872fd9c03d81531507bc9cbfcc1eba056c6b54db6026767fc6b6a0"
+  ]
+}
+extra-source "8dfe311bb97bb017f8fc04db744d2737a27577af5fb464ac3eceacff8d302f08--sord--0.16.16.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/blobs/sha256:1f98b5a02176c345ebdfdde01c85ec692674f6e1915f7c78ed4121ff0d593bf3"
+  checksum: [
+    "sha256=1f98b5a02176c345ebdfdde01c85ec692674f6e1915f7c78ed4121ff0d593bf3"
+  ]
+}
+extra-source "53cf44212fe1dc06468304e9de9f3358a57649d10aa3192ffcda5e20555b3da7--sord--0.16.16.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/blobs/sha256:a3ea28a4fd497a0b142a2c115a4b0eccfee2735740a98f1b6a1c7e0fe9f5f55a"
+  checksum: [
+    "sha256=a3ea28a4fd497a0b142a2c115a4b0eccfee2735740a98f1b6a1c7e0fe9f5f55a"
+  ]
+}
+extra-source "4331a7c1326c6e5992f012df8c4735498fca0a3c72382ac9adc41bbd7a3386f1--sord--0.16.16.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/blobs/sha256:0c86de68f0c8c679798fb812879a10bf1186c08df7d811f31b6ecaa36fbc42fc"
+  checksum: [
+    "sha256=0c86de68f0c8c679798fb812879a10bf1186c08df7d811f31b6ecaa36fbc42fc"
+  ]
+}
+extra-source "c1b44a615451830c9d90569e18a5ebd54a503727977541bf8ce16af7c20be8a5--sord--0.16.16.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sord/blobs/sha256:56d3b1402f22c80f6c11ce31151a40bf136f2f1c6dd3b42a7db303206cea91d8"
+  checksum: [
+    "sha256=56d3b1402f22c80f6c11ce31151a40bf136f2f1c6dd3b42a7db303206cea91d8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-serd" {= "0.32.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-glib" {= "2.82.1"}
+  "brew-zix" {= "0.4.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "9fe49dbc47461f8b50b1ae75708fc926c2dc7179e0bcc20902fe809e57f1c486--sord-0.16.16-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "037f36bd0dfea5c205a588dd4557765a95b88cc74065dea8e38b534f3d0a4f8d--sord--0.16.16.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "880b1e03c4f7336f56c78e7e4ce10994daf59ba78ea55160dd88b7f58109b471--sord--0.16.16.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a448608888f3dd90619448fd39fa8acfaffb0ee9d3a3b64a96ded060a315c9a2--sord--0.16.16.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a3f4620d279a2fa49dfede9b16091c05ee31b4d9ee2dad08ec2227842d608e07--sord--0.16.16.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8dfe311bb97bb017f8fc04db744d2737a27577af5fb464ac3eceacff8d302f08--sord--0.16.16.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "53cf44212fe1dc06468304e9de9f3358a57649d10aa3192ffcda5e20555b3da7--sord--0.16.16.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4331a7c1326c6e5992f012df8c4735498fca0a3c72382ac9adc41bbd7a3386f1--sord--0.16.16.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c1b44a615451830c9d90569e18a5ebd54a503727977541bf8ce16af7c20be8a5--sord--0.16.16.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sord" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sord" ]
+]

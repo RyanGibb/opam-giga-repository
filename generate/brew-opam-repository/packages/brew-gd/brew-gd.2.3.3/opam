@@ -1,0 +1,148 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Graphics library to dynamically manipulate images"
+description: """
+Graphics library to dynamically manipulate images"""
+extra-source "12e8785e1ac77cf9419905847cbe7a2f217e3fafd49e20e242313b8b994bf429--gd--2.3.3_6.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:c4e22a92d28f3b8a49c10e29cf04f5a9b4b4932691ec4326021bc149ac0dae4c"
+  checksum: [
+    "sha256=c4e22a92d28f3b8a49c10e29cf04f5a9b4b4932691ec4326021bc149ac0dae4c"
+  ]
+}
+extra-source "1f63d9efd8c74faa4477bd8b8a3970abd38e51230ed052918bb6f3715aab8b61--gd-2.3.3_6.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/manifests/2.3.3_6"
+}
+extra-source "49f8593e8081a273afa6d6c9677b6ecb1aefbbcaf2d62e730166fd548672293c--gd--2.3.3_6.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:7bc1099e53432209a4c5da106c8105e0f8e95728a6cc77438e2761c8b6fcf05b"
+  checksum: [
+    "sha256=7bc1099e53432209a4c5da106c8105e0f8e95728a6cc77438e2761c8b6fcf05b"
+  ]
+}
+extra-source "88ca65879b60859cad419826b27ee4ce0a511ebe3483c79bf4ff4dbbe9b86bb9--gd--2.3.3_6.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:e278f6f79e6ac00c5f0f14bc8980197c89426eab2ba90d8fc1e82da777fb8378"
+  checksum: [
+    "sha256=e278f6f79e6ac00c5f0f14bc8980197c89426eab2ba90d8fc1e82da777fb8378"
+  ]
+}
+extra-source "bcfc1718dd1d5f14351b9f03b4a06218ecd9d52880b8ab403fb31b9f70f0bd8d--gd--2.3.3_6.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:4a75b4a92fbe6e26a47104496b6bfbaeffa73ac76d4290e68e81603de5b0f41f"
+  checksum: [
+    "sha256=4a75b4a92fbe6e26a47104496b6bfbaeffa73ac76d4290e68e81603de5b0f41f"
+  ]
+}
+extra-source "295eb724336c9ce36d5bbe2c8b60ff02d5516c8913b9368d0521a4999ae523ae--gd--2.3.3_6.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:3f868f36cc47f91ea2a896c4b6ea62fab9b3ef94d7765f34234b277ee46788af"
+  checksum: [
+    "sha256=3f868f36cc47f91ea2a896c4b6ea62fab9b3ef94d7765f34234b277ee46788af"
+  ]
+}
+extra-source "35bf5923bd2a3297311254f27c3e163175668dc4572bb88b19656eed62848217--gd--2.3.3_6.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:4921f275ca5a840aaa215939f80dbb4adef8a13b2bcd43608428518d4730cad4"
+  checksum: [
+    "sha256=4921f275ca5a840aaa215939f80dbb4adef8a13b2bcd43608428518d4730cad4"
+  ]
+}
+extra-source "6598544de8af35e25fdc920843af47cad72345146396a2e853b98f2263f811f1--gd--2.3.3_6.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:98906db0b5efdd3a46296035df0ec9a99ebfbf5d6c6d76d7af5e2862152a6c97"
+  checksum: [
+    "sha256=98906db0b5efdd3a46296035df0ec9a99ebfbf5d6c6d76d7af5e2862152a6c97"
+  ]
+}
+extra-source "4f2570241769b97751cd472ed09bb3cea0bfe4aee5e34767ea1da90c0007de6c--gd--2.3.3_6.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:f398c94388423665c26840a86d073ba43da0b519ea3b114c58d14e50edbdd47d"
+  checksum: [
+    "sha256=f398c94388423665c26840a86d073ba43da0b519ea3b114c58d14e50edbdd47d"
+  ]
+}
+extra-source "2e7819d7a27a875e736417c2eb683f733a307a9eb4b1780da5ea594d44f7a84c--gd--2.3.3_6.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:1751a4ef467688acf597319f376dc0e69074c96d613ba22c381157dfeec85073"
+  checksum: [
+    "sha256=1751a4ef467688acf597319f376dc0e69074c96d613ba22c381157dfeec85073"
+  ]
+}
+extra-source "a3974895f108a01c6ec8ead33d47c3563ab9299b5dae151bffa0d00a7dd84dea--gd--2.3.3_6.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:da124ea2c614748107f9683ed08afa140d98a5d429332137f4f6ce17460360ec"
+  checksum: [
+    "sha256=da124ea2c614748107f9683ed08afa140d98a5d429332137f4f6ce17460360ec"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-libpng" {= "1.6.44"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-highway" {= "1.2.0"}
+  "brew-imath" {= "3.1.12"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-openexr" {= "3.2.4"}
+  "brew-webp" {= "1.4.0"}
+  "brew-docbook" {= "5.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-icu4c" {= "74.2"}
+  "brew-boost" {= "1.86.0"}
+  "brew-source-highlight" {= "3.1.9"}
+  "brew-asciidoc" {= "10.2.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-jpeg-xl" {= "0.11.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-libvmaf" {= "3.0.0"}
+  "brew-yasm" {= "1.3.0"}
+  "brew-aom" {= "3.10.0"}
+  "brew-libavif" {= "1.1.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1f63d9efd8c74faa4477bd8b8a3970abd38e51230ed052918bb6f3715aab8b61--gd-2.3.3_6.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "12e8785e1ac77cf9419905847cbe7a2f217e3fafd49e20e242313b8b994bf429--gd--2.3.3_6.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "49f8593e8081a273afa6d6c9677b6ecb1aefbbcaf2d62e730166fd548672293c--gd--2.3.3_6.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "88ca65879b60859cad419826b27ee4ce0a511ebe3483c79bf4ff4dbbe9b86bb9--gd--2.3.3_6.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bcfc1718dd1d5f14351b9f03b4a06218ecd9d52880b8ab403fb31b9f70f0bd8d--gd--2.3.3_6.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "295eb724336c9ce36d5bbe2c8b60ff02d5516c8913b9368d0521a4999ae523ae--gd--2.3.3_6.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "35bf5923bd2a3297311254f27c3e163175668dc4572bb88b19656eed62848217--gd--2.3.3_6.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6598544de8af35e25fdc920843af47cad72345146396a2e853b98f2263f811f1--gd--2.3.3_6.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4f2570241769b97751cd472ed09bb3cea0bfe4aee5e34767ea1da90c0007de6c--gd--2.3.3_6.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2e7819d7a27a875e736417c2eb683f733a307a9eb4b1780da5ea594d44f7a84c--gd--2.3.3_6.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a3974895f108a01c6ec8ead33d47c3563ab9299b5dae151bffa0d00a7dd84dea--gd--2.3.3_6.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "gd" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "gd" ]
+]

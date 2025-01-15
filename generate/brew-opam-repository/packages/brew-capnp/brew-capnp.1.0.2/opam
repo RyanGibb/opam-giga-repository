@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Data interchange format and capability-based RPC system"
+description: """
+Data interchange format and capability-based RPC system"""
+extra-source "e66d385d590482d7d973150d75aff82f3b04570d146f0d5bc1355e1c052b921f--capnp--1.0.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/blobs/sha256:86158801e5d5a2131d80c2526855da900d3f333080b19f8ed77ec4489b258721"
+  checksum: [
+    "sha256=86158801e5d5a2131d80c2526855da900d3f333080b19f8ed77ec4489b258721"
+  ]
+}
+extra-source "b3adafca251389670546b2b992820b5046223b8e0874e224b420d91a44098e06--capnp-1.0.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/manifests/1.0.2"
+}
+extra-source "87ba3fcdc3774ea895d43f9ccc40c2feaca4529283b435d7f8d31ce6cf02648d--capnp--1.0.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/blobs/sha256:5b90bfe71f8f407f71c0d0f3404a02607eb3d1fcc903067cce628653dd5c00ed"
+  checksum: [
+    "sha256=5b90bfe71f8f407f71c0d0f3404a02607eb3d1fcc903067cce628653dd5c00ed"
+  ]
+}
+extra-source "b1f42e103af59159e9e91a2d89b9982f1d74d0ece3a280467472b64afddb444b--capnp--1.0.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/blobs/sha256:19bd2ac85d9b982d0f5bb2cbf728823aeb1ceed838096c55459f1b973f6d9733"
+  checksum: [
+    "sha256=19bd2ac85d9b982d0f5bb2cbf728823aeb1ceed838096c55459f1b973f6d9733"
+  ]
+}
+extra-source "314cf685d7d601fb5219bcb8a918e75d89cdebbfd7cec1ff309d8eaf03222254--capnp--1.0.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/blobs/sha256:37ba767871207bc87d5869e343738a4db44e8357366d7f6165618ddf211bd968"
+  checksum: [
+    "sha256=37ba767871207bc87d5869e343738a4db44e8357366d7f6165618ddf211bd968"
+  ]
+}
+extra-source "388fd13e8e1a6515d2494cb0aa9bedd81e0e09261f14c1398b08e73617c43965--capnp--1.0.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/blobs/sha256:f9f10d39ccda6aac9d9e4dee159dd2e882ba5cd027a8b19216f498fd1c39ae72"
+  checksum: [
+    "sha256=f9f10d39ccda6aac9d9e4dee159dd2e882ba5cd027a8b19216f498fd1c39ae72"
+  ]
+}
+extra-source "5428b3762c0eb7072d5bc991394b7449fd35a8637437d0b3752d31cc7ff5c200--capnp--1.0.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/blobs/sha256:ddd4e35539498174d233ed6fec3fce40c3ee7b2d61b93f5114e6b6eba5784e83"
+  checksum: [
+    "sha256=ddd4e35539498174d233ed6fec3fce40c3ee7b2d61b93f5114e6b6eba5784e83"
+  ]
+}
+extra-source "c21a17499dccba364dfba698b1f3a58abe5d97a39d921973f16843d588a76092--capnp--1.0.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/blobs/sha256:d4db0fb57022ca7980f402cdde520987d37ee66caaaa61b78037136b4476225f"
+  checksum: [
+    "sha256=d4db0fb57022ca7980f402cdde520987d37ee66caaaa61b78037136b4476225f"
+  ]
+}
+extra-source "1ca1836f1f7ec9df4a628a83b882738d5915b5fb8c6ddb049fe3c630871a8eba--capnp--1.0.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/capnp/blobs/sha256:28f2ac2e3b0ab17b31bcf092c2e3e6d810d5601e0a17e09c2a12872a4ec57348"
+  checksum: [
+    "sha256=28f2ac2e3b0ab17b31bcf092c2e3e6d810d5601e0a17e09c2a12872a4ec57348"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b3adafca251389670546b2b992820b5046223b8e0874e224b420d91a44098e06--capnp-1.0.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e66d385d590482d7d973150d75aff82f3b04570d146f0d5bc1355e1c052b921f--capnp--1.0.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "87ba3fcdc3774ea895d43f9ccc40c2feaca4529283b435d7f8d31ce6cf02648d--capnp--1.0.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b1f42e103af59159e9e91a2d89b9982f1d74d0ece3a280467472b64afddb444b--capnp--1.0.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "314cf685d7d601fb5219bcb8a918e75d89cdebbfd7cec1ff309d8eaf03222254--capnp--1.0.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "388fd13e8e1a6515d2494cb0aa9bedd81e0e09261f14c1398b08e73617c43965--capnp--1.0.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5428b3762c0eb7072d5bc991394b7449fd35a8637437d0b3752d31cc7ff5c200--capnp--1.0.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c21a17499dccba364dfba698b1f3a58abe5d97a39d921973f16843d588a76092--capnp--1.0.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1ca1836f1f7ec9df4a628a83b882738d5915b5fb8c6ddb049fe3c630871a8eba--capnp--1.0.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "capnp" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "capnp" ]
+]

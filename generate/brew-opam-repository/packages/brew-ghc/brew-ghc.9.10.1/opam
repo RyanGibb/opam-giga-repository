@@ -1,0 +1,104 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Glorious Glasgow Haskell Compilation System"
+description: """
+Glorious Glasgow Haskell Compilation System"""
+extra-source "33a6c3726b799daee35faa330013d0c01dc77fbf07872a348593ffdfd0a243c8--ghc--9.10.1.arm64_sequoia.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/blobs/sha256:c66497c1502eca61fadd32c472008252b16e98ced0356cc976b6d608bb1f84a6"
+  checksum: [
+    "sha256=c66497c1502eca61fadd32c472008252b16e98ced0356cc976b6d608bb1f84a6"
+  ]
+}
+extra-source "37b27232a2095b029af63b80aab60c864928d7c7277e899e715d6b35a19f218d--ghc-9.10.1-2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/manifests/9.10.1-2"
+}
+extra-source "631a4881604d2cc490faf02cc4444b272fbe36db072c8ea219bebae0b54018a5--ghc--9.10.1.sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/blobs/sha256:29a5fedd616190f976ac522b8d177b91c5232a0a724c14a3ec42fd89598ad047"
+  checksum: [
+    "sha256=29a5fedd616190f976ac522b8d177b91c5232a0a724c14a3ec42fd89598ad047"
+  ]
+}
+extra-source "f5538cbf5f6017589305e24d36a87de0a109ec565c43240bfaa33f3657d4e7ee--ghc--9.10.1.arm64_sonoma.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/blobs/sha256:b19571cdba5c506d91746371da935f9119ba0b430152ab13171500310aeccfd1"
+  checksum: [
+    "sha256=b19571cdba5c506d91746371da935f9119ba0b430152ab13171500310aeccfd1"
+  ]
+}
+extra-source "e00928a3bdd8234d612b50c258826cf389b66551724a5a32d0ab5027cd070e07--ghc--9.10.1.ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/blobs/sha256:476e2488366161a4c26bce29d7e1882021bb0067fe9d23f9a0d63a594623e7f7"
+  checksum: [
+    "sha256=476e2488366161a4c26bce29d7e1882021bb0067fe9d23f9a0d63a594623e7f7"
+  ]
+}
+extra-source "fdd9e639659a3f93abb9302e42a66426c8f53643a1941866ac0a78ee0814f288--ghc--9.10.1.arm64_ventura.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/blobs/sha256:a4ef8db08ae1add452fe6a3a4fa78741f44e0af47b0bacb736233d257d93dac3"
+  checksum: [
+    "sha256=a4ef8db08ae1add452fe6a3a4fa78741f44e0af47b0bacb736233d257d93dac3"
+  ]
+}
+extra-source "7b341efc968a386ba7dd2f331562c7ffd1badab1366cbc391e6f85e84b42733f--ghc--9.10.1.monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/blobs/sha256:6fd86a7600ebfa95c764803bab46752dab8dfce0408b4f682c210c76dde83234"
+  checksum: [
+    "sha256=6fd86a7600ebfa95c764803bab46752dab8dfce0408b4f682c210c76dde83234"
+  ]
+}
+extra-source "7aaf0907001e1b495e5249c1ab6ef3fac7089b7957253bbbf5082e88ee9480cb--ghc--9.10.1.arm64_monterey.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/blobs/sha256:ff5d7b284fd740b563f58194ec6b04bcccded9ac9129f49c1879a21f9a88e1e6"
+  checksum: [
+    "sha256=ff5d7b284fd740b563f58194ec6b04bcccded9ac9129f49c1879a21f9a88e1e6"
+  ]
+}
+extra-source "79d4080ca7fdb3c276c7eae423290ab92c9f476836f2e9276afc32a9764f5ba3--ghc--9.10.1.x86_64_linux.bottle.2.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ghc/blobs/sha256:b153bea1e7d233e3dc154bdaa4117e4eff7b29ae8fca606a429311d9bc322696"
+  checksum: [
+    "sha256=b153bea1e7d233e3dc154bdaa4117e4eff7b29ae8fca606a429311d9bc322696"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-python" {= "3.11.10"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "37b27232a2095b029af63b80aab60c864928d7c7277e899e715d6b35a19f218d--ghc-9.10.1-2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "33a6c3726b799daee35faa330013d0c01dc77fbf07872a348593ffdfd0a243c8--ghc--9.10.1.arm64_sequoia.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "631a4881604d2cc490faf02cc4444b272fbe36db072c8ea219bebae0b54018a5--ghc--9.10.1.sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f5538cbf5f6017589305e24d36a87de0a109ec565c43240bfaa33f3657d4e7ee--ghc--9.10.1.arm64_sonoma.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e00928a3bdd8234d612b50c258826cf389b66551724a5a32d0ab5027cd070e07--ghc--9.10.1.ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fdd9e639659a3f93abb9302e42a66426c8f53643a1941866ac0a78ee0814f288--ghc--9.10.1.arm64_ventura.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7b341efc968a386ba7dd2f331562c7ffd1badab1366cbc391e6f85e84b42733f--ghc--9.10.1.monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "7aaf0907001e1b495e5249c1ab6ef3fac7089b7957253bbbf5082e88ee9480cb--ghc--9.10.1.arm64_monterey.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "79d4080ca7fdb3c276c7eae423290ab92c9f476836f2e9276afc32a9764f5ba3--ghc--9.10.1.x86_64_linux.bottle.2.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "ghc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "ghc" ]
+]

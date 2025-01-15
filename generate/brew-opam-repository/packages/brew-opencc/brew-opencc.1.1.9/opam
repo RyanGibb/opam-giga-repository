@@ -1,0 +1,91 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Simplified-traditional Chinese conversion tool"
+description: """
+Simplified-traditional Chinese conversion tool"""
+extra-source "1fd031f35c0e5a91aacf66cded8d50a1580b41601ef05c712cc679bfbb5ac65f--opencc--1.1.9.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/blobs/sha256:a27e13aa2de9e5c4775f1618842f8a94ba0399462295427f1c01ecb0bad59e45"
+  checksum: [
+    "sha256=a27e13aa2de9e5c4775f1618842f8a94ba0399462295427f1c01ecb0bad59e45"
+  ]
+}
+extra-source "1e3fc9e77569e0db7417292ec9f5c316aff87de7525e5239c6bd9d5bc1cde155--opencc-1.1.9.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/manifests/1.1.9"
+}
+extra-source "5a43d820b6d73c6124296451485aeeaedd2b4cf95cc33d0169c5953ef25df054--opencc--1.1.9.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/blobs/sha256:125d0aa542c79a1c64ff50d6bb65f37b8a1df08842d2aadea4de148ad4fd7834"
+  checksum: [
+    "sha256=125d0aa542c79a1c64ff50d6bb65f37b8a1df08842d2aadea4de148ad4fd7834"
+  ]
+}
+extra-source "878fec55b1b930c3aa83d856a1c219a6dbdca52e03d704d3f9d1688077afb31a--opencc--1.1.9.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/blobs/sha256:40bbcc0ea4cceadf579f5bcefded29585f45a18e42bba6ee2a0f0f8b9093f30c"
+  checksum: [
+    "sha256=40bbcc0ea4cceadf579f5bcefded29585f45a18e42bba6ee2a0f0f8b9093f30c"
+  ]
+}
+extra-source "403bb39cfc61d8b537253d2424689ca7d53a671a014dea37e44cfa56e1ab69e2--opencc--1.1.9.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/blobs/sha256:a6da927e23614ddef3ff4199a162a5ddb81ad3d0414e3943adc1622d5a0eebed"
+  checksum: [
+    "sha256=a6da927e23614ddef3ff4199a162a5ddb81ad3d0414e3943adc1622d5a0eebed"
+  ]
+}
+extra-source "33493b92abdb4fdae0e0a8b3d6109e8f15c8991ef39546ebef664680c1771a26--opencc--1.1.9.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/blobs/sha256:517a8dfe20b621aad9d4f8fd9118794b53318f07007ee1ec1fb7081065921184"
+  checksum: [
+    "sha256=517a8dfe20b621aad9d4f8fd9118794b53318f07007ee1ec1fb7081065921184"
+  ]
+}
+extra-source "cedd7b308c78a437369546705f4dc5a0e151fdb795df9abd5d328377c7a4530e--opencc--1.1.9.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/blobs/sha256:86fab72d30ba153353798d51f6f1e0ef3136b9edd23d69497fb3b8303cebfb72"
+  checksum: [
+    "sha256=86fab72d30ba153353798d51f6f1e0ef3136b9edd23d69497fb3b8303cebfb72"
+  ]
+}
+extra-source "0ea6d2aca8fcf4cac7619e8a285e6e8798494a44eec8f7c86f40cf9754ab045c--opencc--1.1.9.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/blobs/sha256:addb0ef3712437c10de21dfe670291144d1fa36d6c2661016cfbdba0d6a0e9f1"
+  checksum: [
+    "sha256=addb0ef3712437c10de21dfe670291144d1fa36d6c2661016cfbdba0d6a0e9f1"
+  ]
+}
+extra-source "6a96c5ff5ea76920776701ea3305f64ad53989c92e58c784f507af1dae63505a--opencc--1.1.9.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/opencc/blobs/sha256:127925772f41d4145e6f4ee5f74f08cea701fdce389b743174b960dc1e80629d"
+  checksum: [
+    "sha256=127925772f41d4145e6f4ee5f74f08cea701fdce389b743174b960dc1e80629d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1e3fc9e77569e0db7417292ec9f5c316aff87de7525e5239c6bd9d5bc1cde155--opencc-1.1.9.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "1fd031f35c0e5a91aacf66cded8d50a1580b41601ef05c712cc679bfbb5ac65f--opencc--1.1.9.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5a43d820b6d73c6124296451485aeeaedd2b4cf95cc33d0169c5953ef25df054--opencc--1.1.9.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "878fec55b1b930c3aa83d856a1c219a6dbdca52e03d704d3f9d1688077afb31a--opencc--1.1.9.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "403bb39cfc61d8b537253d2424689ca7d53a671a014dea37e44cfa56e1ab69e2--opencc--1.1.9.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "33493b92abdb4fdae0e0a8b3d6109e8f15c8991ef39546ebef664680c1771a26--opencc--1.1.9.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cedd7b308c78a437369546705f4dc5a0e151fdb795df9abd5d328377c7a4530e--opencc--1.1.9.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0ea6d2aca8fcf4cac7619e8a285e6e8798494a44eec8f7c86f40cf9754ab045c--opencc--1.1.9.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6a96c5ff5ea76920776701ea3305f64ad53989c92e58c784f507af1dae63505a--opencc--1.1.9.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "opencc" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "opencc" ]
+]

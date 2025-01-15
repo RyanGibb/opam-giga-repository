@@ -1,0 +1,111 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org Applications: xauth"
+description: """
+X.Org Applications: xauth"""
+extra-source "290894124f00efabb0bbf98a846464123a8d04d08766e93b29ab111244dc642a--xauth--1.1.3.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/blobs/sha256:d18d0f0f1e63dde3fc2c20836df3fcab78f1b877ffceaac0093fd1cab3484221"
+  checksum: [
+    "sha256=d18d0f0f1e63dde3fc2c20836df3fcab78f1b877ffceaac0093fd1cab3484221"
+  ]
+}
+extra-source "3c913c835e5c7f36834a3dcb2c82640aa7f0722b8b5062b4e649b03a6d1f4668--xauth-1.1.3.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/manifests/1.1.3"
+}
+extra-source "f8239ec857c249c8588460e1e1d4db8a495e4e16f5bddd1f7df3c386fb76c508--xauth--1.1.3.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/blobs/sha256:d8b232b84fd17bd7be5ffd8bec34dc8ece296c2b3d83a7ce57baaaa5717d5fb7"
+  checksum: [
+    "sha256=d8b232b84fd17bd7be5ffd8bec34dc8ece296c2b3d83a7ce57baaaa5717d5fb7"
+  ]
+}
+extra-source "88ab48d27fb19600427cf0087f763b72ca072b5d2b8365c80d4d4ad2aed3ef84--xauth--1.1.3.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/blobs/sha256:9a7b83983740064b18141730a40ffd71feb3d08388a091370f6a82eebbbb78b2"
+  checksum: [
+    "sha256=9a7b83983740064b18141730a40ffd71feb3d08388a091370f6a82eebbbb78b2"
+  ]
+}
+extra-source "7453d6ce326dba3fca772702a252952b49627612c7b3cddaf5ebac64ff08d8bf--xauth--1.1.3.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/blobs/sha256:d539b3fc84b80a1ffe86cca5f4c3d4244ffdf786a05928ffa8dbc74887f6aa6e"
+  checksum: [
+    "sha256=d539b3fc84b80a1ffe86cca5f4c3d4244ffdf786a05928ffa8dbc74887f6aa6e"
+  ]
+}
+extra-source "a893e5f0f8b85a2f928f60cf703d683d4240cc781a7035ef83e0720d8460e536--xauth--1.1.3.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/blobs/sha256:57ccb291fc8506937db119ac70270ba101733e50425a719a0857ed31abbf3f72"
+  checksum: [
+    "sha256=57ccb291fc8506937db119ac70270ba101733e50425a719a0857ed31abbf3f72"
+  ]
+}
+extra-source "c0c1ddc20704a95a449201bd831addc2c3e5e2a2fb7c7f42cb583635ccdd9863--xauth--1.1.3.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/blobs/sha256:f01f0204c18abd135ab9d1ace74fe55c56988945f68900444439e31d47f63a50"
+  checksum: [
+    "sha256=f01f0204c18abd135ab9d1ace74fe55c56988945f68900444439e31d47f63a50"
+  ]
+}
+extra-source "85432ceec43ca0b21e7e4c6a8303b7c73e1882786c466902db98233f7d7d7371--xauth--1.1.3.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/blobs/sha256:b6f3debf7f9b937e5096c7f8c6996daccfea756ef5186ff90c0c811d37a916f3"
+  checksum: [
+    "sha256=b6f3debf7f9b937e5096c7f8c6996daccfea756ef5186ff90c0c811d37a916f3"
+  ]
+}
+extra-source "2678606f656383468365ebb378759b24f277df01ee2f474a6cda18edcbc65263--xauth--1.1.3.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xauth/blobs/sha256:79c33da732dc8f9d89082193869d83fcd79d695ea8cc8f26f1f5e2c743da6633"
+  checksum: [
+    "sha256=79c33da732dc8f9d89082193869d83fcd79d695ea8cc8f26f1f5e2c743da6633"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libice" {= "1.1.1"}
+  "brew-libsm" {= "1.2.4"}
+  "brew-libxt" {= "1.3.0"}
+  "brew-libxmu" {= "1.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "3c913c835e5c7f36834a3dcb2c82640aa7f0722b8b5062b4e649b03a6d1f4668--xauth-1.1.3.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "290894124f00efabb0bbf98a846464123a8d04d08766e93b29ab111244dc642a--xauth--1.1.3.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f8239ec857c249c8588460e1e1d4db8a495e4e16f5bddd1f7df3c386fb76c508--xauth--1.1.3.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "88ab48d27fb19600427cf0087f763b72ca072b5d2b8365c80d4d4ad2aed3ef84--xauth--1.1.3.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7453d6ce326dba3fca772702a252952b49627612c7b3cddaf5ebac64ff08d8bf--xauth--1.1.3.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a893e5f0f8b85a2f928f60cf703d683d4240cc781a7035ef83e0720d8460e536--xauth--1.1.3.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c0c1ddc20704a95a449201bd831addc2c3e5e2a2fb7c7f42cb583635ccdd9863--xauth--1.1.3.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "85432ceec43ca0b21e7e4c6a8303b7c73e1882786c466902db98233f7d7d7371--xauth--1.1.3.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2678606f656383468365ebb378759b24f277df01ee2f474a6cda18edcbc65263--xauth--1.1.3.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "xauth" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "xauth" ]
+]

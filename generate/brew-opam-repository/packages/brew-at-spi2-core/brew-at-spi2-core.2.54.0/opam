@@ -1,0 +1,132 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Protocol definitions and daemon for D-Bus at-spi"
+description: """
+Protocol definitions and daemon for D-Bus at-spi"""
+extra-source "0bdb07afc47a1ad1daad11fff19093d9e8b3741243b1dd4c894902dea6d58518--at-spi2-core--2.54.0.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/at-spi2-core/blobs/sha256:e593b674b0e959eef42b4072451cf34a56082a4a00d58a27a187f5cb893118c0"
+  checksum: [
+    "sha256=e593b674b0e959eef42b4072451cf34a56082a4a00d58a27a187f5cb893118c0"
+  ]
+}
+extra-source "ab109162476d806c71b37b1c5c46e96d5c620d4cd05715ba4c9872c9ce9b3013--at-spi2-core-2.54.0.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/at-spi2-core/manifests/2.54.0"
+}
+extra-source "0c993cb70ee39285f6a53b32d335a0ebf05e3fa22db02860c5a6259d471d85d8--at-spi2-core--2.54.0.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/at-spi2-core/blobs/sha256:36aa898dd88a1334f346684f4a09a6535774c43ee568b8f035a24c38cf226378"
+  checksum: [
+    "sha256=36aa898dd88a1334f346684f4a09a6535774c43ee568b8f035a24c38cf226378"
+  ]
+}
+extra-source "88283080ee472d2e99d84a197a26762ce01d073d5b201314dfef1adb1c3487be--at-spi2-core--2.54.0.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/at-spi2-core/blobs/sha256:13ddf331202d2f26478c0d2874b7c29d02fa7adda274e33bdb49d8b5115e3a43"
+  checksum: [
+    "sha256=13ddf331202d2f26478c0d2874b7c29d02fa7adda274e33bdb49d8b5115e3a43"
+  ]
+}
+extra-source "a5212fb2838624b4deb9d3725a35ccc7a9bf5035ef97c47d3d56b32d5375838f--at-spi2-core--2.54.0.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/at-spi2-core/blobs/sha256:8591d35b85eee65936789b8bcfd15734fb5d7da01652219704db8456788fd52d"
+  checksum: [
+    "sha256=8591d35b85eee65936789b8bcfd15734fb5d7da01652219704db8456788fd52d"
+  ]
+}
+extra-source "585089e822e60b2d309987981278549cd151c9c836d4ecf5bbfda08ce046a107--at-spi2-core--2.54.0.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/at-spi2-core/blobs/sha256:8aa34bba472670a471e0d105875a8cdc08ef53d852224caa0588dfbf805a7b5a"
+  checksum: [
+    "sha256=8aa34bba472670a471e0d105875a8cdc08ef53d852224caa0588dfbf805a7b5a"
+  ]
+}
+extra-source "97c9573fb4168b436deb49a2e24eb1a0365427e1983f261525b205f2d25f7b06--at-spi2-core--2.54.0.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/at-spi2-core/blobs/sha256:202197a5e6cd0df0a4b43a3feb3f55f3ed8eef4443e635525a74df46c2d372ac"
+  checksum: [
+    "sha256=202197a5e6cd0df0a4b43a3feb3f55f3ed8eef4443e635525a74df46c2d372ac"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-dbus" {= "1.14.10"}
+  "brew-python" {= "3.11.10"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-meson" {= "1.5.2"}
+  "brew-glib" {= "2.82.1"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libxi" {= "1.8.2"}
+  "brew-libxtst" {= "1.2.5"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ab109162476d806c71b37b1c5c46e96d5c620d4cd05715ba4c9872c9ce9b3013--at-spi2-core-2.54.0.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "0bdb07afc47a1ad1daad11fff19093d9e8b3741243b1dd4c894902dea6d58518--at-spi2-core--2.54.0.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0c993cb70ee39285f6a53b32d335a0ebf05e3fa22db02860c5a6259d471d85d8--at-spi2-core--2.54.0.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "88283080ee472d2e99d84a197a26762ce01d073d5b201314dfef1adb1c3487be--at-spi2-core--2.54.0.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a5212fb2838624b4deb9d3725a35ccc7a9bf5035ef97c47d3d56b32d5375838f--at-spi2-core--2.54.0.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "585089e822e60b2d309987981278549cd151c9c836d4ecf5bbfda08ce046a107--at-spi2-core--2.54.0.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "97c9573fb4168b436deb49a2e24eb1a0365427e1983f261525b205f2d25f7b06--at-spi2-core--2.54.0.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "at-spi2-core" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "at-spi2-core" ]
+]

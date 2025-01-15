@@ -1,0 +1,105 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Image processing and image analysis library"
+description: """
+Image processing and image analysis library"""
+extra-source "d44bcf881e2a89a19359acf4858f4f5ed8ba7856460a6c53f4a7dde193032523--leptonica--1.84.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:d409e5b337a61e1e19fdcfcafa40db50513e78823e77b8d7c03012674bd158e4"
+  checksum: [
+    "sha256=d409e5b337a61e1e19fdcfcafa40db50513e78823e77b8d7c03012674bd158e4"
+  ]
+}
+extra-source "dc88f036b102e560c7103a72d25bc9ac6cc15c37284c0a81cd30f4fc0281eaa9--leptonica-1.84.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/manifests/1.84.1"
+}
+extra-source "908295c8ce292d3bbd4423feb291f9bed3f1559506113ffee9e7a888c1b59d6f--leptonica--1.84.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:532d63772dc6bf06389ba4eb7f970741144edc9f2933294c7aaa6a371c8ced3e"
+  checksum: [
+    "sha256=532d63772dc6bf06389ba4eb7f970741144edc9f2933294c7aaa6a371c8ced3e"
+  ]
+}
+extra-source "c64d79e027aa90378d2301f03069ddbfcce6e82346b4e3f17777a41d228cc7e3--leptonica--1.84.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:67fe34fb9fbd1191142dc8415dc1c3bacc7a8cb427dc3d769f6c5d8b1351cbe7"
+  checksum: [
+    "sha256=67fe34fb9fbd1191142dc8415dc1c3bacc7a8cb427dc3d769f6c5d8b1351cbe7"
+  ]
+}
+extra-source "28bcb3eb3724ae472709b5415dd4e9cf7cf234544671d5efe4e6c9e8a0286ea3--leptonica--1.84.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:de79973f211c5c6734ccb43e9d9f1e83bdf6040d3d9311a6483e8668b76e2314"
+  checksum: [
+    "sha256=de79973f211c5c6734ccb43e9d9f1e83bdf6040d3d9311a6483e8668b76e2314"
+  ]
+}
+extra-source "1a1d6dab431ec871f2cd569d34e47b689d4ab36a93431c8b85de5f8326747ae8--leptonica--1.84.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:a508e5748000d9138113716f804876ea02a0ff09edb1b3f440805318abb3892f"
+  checksum: [
+    "sha256=a508e5748000d9138113716f804876ea02a0ff09edb1b3f440805318abb3892f"
+  ]
+}
+extra-source "5a3eb607876db2fe6128e8f99b28a8e41e1201c7ab733884abc57614e1be855d--leptonica--1.84.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:367222ae46ffb4758c4561d59c73ccf8f6f50fdfaf8ceb57fc44d7f9d80ce18c"
+  checksum: [
+    "sha256=367222ae46ffb4758c4561d59c73ccf8f6f50fdfaf8ceb57fc44d7f9d80ce18c"
+  ]
+}
+extra-source "c4f74663a5f13fe984cda7a28d8da2ab5bf1b533d0952c37b75942c006eb3a40--leptonica--1.84.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:1b2eeef988742aeb3b35faba109d737a8358000d16c0127ade00a72f74bdf708"
+  checksum: [
+    "sha256=1b2eeef988742aeb3b35faba109d737a8358000d16c0127ade00a72f74bdf708"
+  ]
+}
+extra-source "25543fa7c9545599289b0d1eb289c20a76dc5968a79c15141129e3a033b2b263--leptonica--1.84.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:2d192aba393509e4fad013b13143cd5fc426256ca72636fe69940aa2efa290f8"
+  checksum: [
+    "sha256=2d192aba393509e4fad013b13143cd5fc426256ca72636fe69940aa2efa290f8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-giflib" {= "5.2.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-bison" {= "3.8.2"}
+  "brew-doxygen" {= "1.12.0"}
+  "brew-openjpeg" {= "2.5.2"}
+  "brew-webp" {= "1.4.0"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "dc88f036b102e560c7103a72d25bc9ac6cc15c37284c0a81cd30f4fc0281eaa9--leptonica-1.84.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d44bcf881e2a89a19359acf4858f4f5ed8ba7856460a6c53f4a7dde193032523--leptonica--1.84.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "908295c8ce292d3bbd4423feb291f9bed3f1559506113ffee9e7a888c1b59d6f--leptonica--1.84.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c64d79e027aa90378d2301f03069ddbfcce6e82346b4e3f17777a41d228cc7e3--leptonica--1.84.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "28bcb3eb3724ae472709b5415dd4e9cf7cf234544671d5efe4e6c9e8a0286ea3--leptonica--1.84.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1a1d6dab431ec871f2cd569d34e47b689d4ab36a93431c8b85de5f8326747ae8--leptonica--1.84.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5a3eb607876db2fe6128e8f99b28a8e41e1201c7ab733884abc57614e1be855d--leptonica--1.84.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c4f74663a5f13fe984cda7a28d8da2ab5bf1b533d0952c37b75942c006eb3a40--leptonica--1.84.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "25543fa7c9545599289b0d1eb289c20a76dc5968a79c15141129e3a033b2b263--leptonica--1.84.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "leptonica" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "leptonica" ]
+]

@@ -54,6 +54,10 @@ pacman:
 	# requires pacman to be built
 	cd generate/pacman; dune exec ./main.exe ../../cached/pacman/ ../../packages
 
+brew:
+	@echo "Copying brew files..."
+	cp -R generate/brew-opam-repository/packages .
+
 repo:
 	@echo "Generating repo file"
 	echo 'opam-version: "2.0"' > repo

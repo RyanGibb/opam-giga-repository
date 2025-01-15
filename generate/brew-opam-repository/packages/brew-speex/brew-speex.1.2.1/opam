@@ -1,0 +1,127 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Audio codec designed for speech"
+description: """
+Audio codec designed for speech"""
+extra-source "beaaef4c74515826c9140d521522fadf0f74b6b209dd91d3169f26ca6135630c--speex--1.2.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:885ccb79dee4ad080d2c5ee20ab55569b0dfee064535a537568dd78adff88dcb"
+  checksum: [
+    "sha256=885ccb79dee4ad080d2c5ee20ab55569b0dfee064535a537568dd78adff88dcb"
+  ]
+}
+extra-source "483f702af62f72259facb50d3d47cd0bb25c8f0fb887029d30051a8cef860be5--speex-1.2.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/manifests/1.2.1"
+}
+extra-source "cdbd657909bf1d035e1c7b1756afac271564cdc21ef68f14ce02f4f80e32587e--speex--1.2.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:7dec70341e9b992efda633567a11bd75ce9bc9a21ab3490a2a37800cf0a0fc55"
+  checksum: [
+    "sha256=7dec70341e9b992efda633567a11bd75ce9bc9a21ab3490a2a37800cf0a0fc55"
+  ]
+}
+extra-source "ed7e83e65e842ee9c90b2d403b3a0c37136baa4cc8cded4c8e9a438ebdd0d774--speex--1.2.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:8dcf1981467ac7b19763ef294c2ef1cbb5fdbe98100043c95f4617a89a930a22"
+  checksum: [
+    "sha256=8dcf1981467ac7b19763ef294c2ef1cbb5fdbe98100043c95f4617a89a930a22"
+  ]
+}
+extra-source "c081821274db894d7431b8f8b2e9e48d68cb483a920fe86d4e677d53e213a3d7--speex--1.2.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:ec27dfb9443b9de3ca68ca3239ab655aa33078f7345bd33a07aa1ba05987538c"
+  checksum: [
+    "sha256=ec27dfb9443b9de3ca68ca3239ab655aa33078f7345bd33a07aa1ba05987538c"
+  ]
+}
+extra-source "6dbd3aefde60a527532536c5a8b01a13acdfda44c35c221e91306027a106eecf--speex--1.2.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:e8e8cbefa65f7819b2feb27b9067248d97f2e5607253c0a5c8a49a495d7fc824"
+  checksum: [
+    "sha256=e8e8cbefa65f7819b2feb27b9067248d97f2e5607253c0a5c8a49a495d7fc824"
+  ]
+}
+extra-source "2d234b735bb9b2beb5390dd780f3eaa853aed7a46f63188d538e330b3c50983d--speex--1.2.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:46d02ec9d80e46fbf260fe650abaa3f4620743ca34a59d53d55d382894231a41"
+  checksum: [
+    "sha256=46d02ec9d80e46fbf260fe650abaa3f4620743ca34a59d53d55d382894231a41"
+  ]
+}
+extra-source "302ab742a9c3274b1910142ec6cbe3b374d1440db454193e2f89be64c5924912--speex--1.2.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:b0cba69db1b66944a019f312fa128d6c6460f971fdd5cfddc0725051b76a4dd0"
+  checksum: [
+    "sha256=b0cba69db1b66944a019f312fa128d6c6460f971fdd5cfddc0725051b76a4dd0"
+  ]
+}
+extra-source "60e8f2af415b4032a05f1fb3678fd4e999ad8d820ada951e159e8908034c1dea--speex--1.2.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:45e58f000c17211a9624b247cf58d85ea6a191f8c5bfe0efaf6ba72b49a63fc1"
+  checksum: [
+    "sha256=45e58f000c17211a9624b247cf58d85ea6a191f8c5bfe0efaf6ba72b49a63fc1"
+  ]
+}
+extra-source "f609515ff8982d87e83576ef776653156941380122336251ecdc53e3bcba6c58--speex--1.2.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:3cb6ffa6920e1ea4e904bb0e2a8d6e62c329c39c6f7d80d8c66f691b5ad1f427"
+  checksum: [
+    "sha256=3cb6ffa6920e1ea4e904bb0e2a8d6e62c329c39c6f7d80d8c66f691b5ad1f427"
+  ]
+}
+extra-source "4a25aea83fb145b52e96e99a7d4995e34c2937c7c1153e86eeaf887fb49a5777--speex--1.2.1.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:21a5518f517dabbb9eb1d80d14e0e7716fd36f7db01e779b875b733db4c5fa14"
+  checksum: [
+    "sha256=21a5518f517dabbb9eb1d80d14e0e7716fd36f7db01e779b875b733db4c5fa14"
+  ]
+}
+extra-source "fb21642d78fb35bb36ea23b6fc23a2fb7754d5ec828e756712bab4a765dcb328--speex--1.2.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/speex/blobs/sha256:3ea2ee48a402525421cb3ef8b83173d4bc57741c10e84fe6fae66691905293ec"
+  checksum: [
+    "sha256=3ea2ee48a402525421cb3ef8b83173d4bc57741c10e84fe6fae66691905293ec"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "483f702af62f72259facb50d3d47cd0bb25c8f0fb887029d30051a8cef860be5--speex-1.2.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "beaaef4c74515826c9140d521522fadf0f74b6b209dd91d3169f26ca6135630c--speex--1.2.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cdbd657909bf1d035e1c7b1756afac271564cdc21ef68f14ce02f4f80e32587e--speex--1.2.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ed7e83e65e842ee9c90b2d403b3a0c37136baa4cc8cded4c8e9a438ebdd0d774--speex--1.2.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c081821274db894d7431b8f8b2e9e48d68cb483a920fe86d4e677d53e213a3d7--speex--1.2.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6dbd3aefde60a527532536c5a8b01a13acdfda44c35c221e91306027a106eecf--speex--1.2.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2d234b735bb9b2beb5390dd780f3eaa853aed7a46f63188d538e330b3c50983d--speex--1.2.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "302ab742a9c3274b1910142ec6cbe3b374d1440db454193e2f89be64c5924912--speex--1.2.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "60e8f2af415b4032a05f1fb3678fd4e999ad8d820ada951e159e8908034c1dea--speex--1.2.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f609515ff8982d87e83576ef776653156941380122336251ecdc53e3bcba6c58--speex--1.2.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4a25aea83fb145b52e96e99a7d4995e34c2937c7c1153e86eeaf887fb49a5777--speex--1.2.1.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "fb21642d78fb35bb36ea23b6fc23a2fb7754d5ec828e756712bab4a765dcb328--speex--1.2.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "speex" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "speex" ]
+]

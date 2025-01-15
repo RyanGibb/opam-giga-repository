@@ -1,0 +1,115 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Powerful, clean, object-oriented scripting language"
+description: """
+Powerful, clean, object-oriented scripting language"""
+extra-source "7d9874fa1966ef81f57e81fe8f00db0cd65c5ad67417b3dbb7b61e15b7b669c9--ruby--3.3.5.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:f473d3e051374e3fa2835015b4c3660f8bbb5c61fd9e45e73746563adee17102"
+  checksum: [
+    "sha256=f473d3e051374e3fa2835015b4c3660f8bbb5c61fd9e45e73746563adee17102"
+  ]
+}
+extra-source "26a0236242fad217f21ca6c730ba2bc313c6b132ff7d868134fdb602096bfe59--ruby-3.3.5.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/manifests/3.3.5"
+}
+extra-source "6b3bad3ed4dcdd582dbaec31c8060a45357a01f14d3764e0508ef66777b86ff3--ruby--3.3.5.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:8ef5d62b67a3e0f98a9e18c9991322b33bed02d3ab738a820d426974394707c6"
+  checksum: [
+    "sha256=8ef5d62b67a3e0f98a9e18c9991322b33bed02d3ab738a820d426974394707c6"
+  ]
+}
+extra-source "175bbf53859c9c952df17c10e0f53c25769a86dfc26301395bdbeb023e1f4ad8--ruby--3.3.5.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:85786236ec92ca2e0cd40a7223345d3c7bf61f45e69da7b3433e0ef1019690e7"
+  checksum: [
+    "sha256=85786236ec92ca2e0cd40a7223345d3c7bf61f45e69da7b3433e0ef1019690e7"
+  ]
+}
+extra-source "46e18a5bb07bc2a7cc58d642cbec7e75d44d89a79d0b7f9cef9ed0c0da6bea67--ruby--3.3.5.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:0f458a5c869f216f7f72122112363060667ac9c57df20a15bc74f1a78073d7a3"
+  checksum: [
+    "sha256=0f458a5c869f216f7f72122112363060667ac9c57df20a15bc74f1a78073d7a3"
+  ]
+}
+extra-source "757e9c5b7369a94bdb67479b61b01a993d5930da35fb0c32a87b896f10284fba--ruby--3.3.5.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:4bb00f47a4a6395c739d0624eb89957d1b9f708e332486822a72f450e077e80f"
+  checksum: [
+    "sha256=4bb00f47a4a6395c739d0624eb89957d1b9f708e332486822a72f450e077e80f"
+  ]
+}
+extra-source "10bc466ef5ef199b7e594b09eb0bf2b9ff284c6f7a12543ad4553a8ee7018bb6--ruby--3.3.5.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:90800e40f73c5322054cad77de5cd4a5977f70cd34b610f0e3c4e96e1dde2af3"
+  checksum: [
+    "sha256=90800e40f73c5322054cad77de5cd4a5977f70cd34b610f0e3c4e96e1dde2af3"
+  ]
+}
+extra-source "8f8b2b5a6a35b0a9a418acc17ecafedb0741f1e8126ba1418529c2faa7150a5f--ruby--3.3.5.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:91712cbb11cf8f2719579f983fd04d3414f6f59fc013b63d9b68f4867d64e7f1"
+  checksum: [
+    "sha256=91712cbb11cf8f2719579f983fd04d3414f6f59fc013b63d9b68f4867d64e7f1"
+  ]
+}
+extra-source "eb05f883c2b853352120144e1dead2b9c13315ea74412a5281848aa26f4c26b6--ruby--3.3.5.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:04add281c620f5ed78c8641d43f064280dfddcce67f7fde435a16e793f30b637"
+  checksum: [
+    "sha256=04add281c620f5ed78c8641d43f064280dfddcce67f7fde435a16e793f30b637"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "26a0236242fad217f21ca6c730ba2bc313c6b132ff7d868134fdb602096bfe59--ruby-3.3.5.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "7d9874fa1966ef81f57e81fe8f00db0cd65c5ad67417b3dbb7b61e15b7b669c9--ruby--3.3.5.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6b3bad3ed4dcdd582dbaec31c8060a45357a01f14d3764e0508ef66777b86ff3--ruby--3.3.5.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "175bbf53859c9c952df17c10e0f53c25769a86dfc26301395bdbeb023e1f4ad8--ruby--3.3.5.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "46e18a5bb07bc2a7cc58d642cbec7e75d44d89a79d0b7f9cef9ed0c0da6bea67--ruby--3.3.5.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "757e9c5b7369a94bdb67479b61b01a993d5930da35fb0c32a87b896f10284fba--ruby--3.3.5.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "10bc466ef5ef199b7e594b09eb0bf2b9ff284c6f7a12543ad4553a8ee7018bb6--ruby--3.3.5.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8f8b2b5a6a35b0a9a418acc17ecafedb0741f1e8126ba1418529c2faa7150a5f--ruby--3.3.5.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "eb05f883c2b853352120144e1dead2b9c13315ea74412a5281848aa26f4c26b6--ruby--3.3.5.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "ruby" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "ruby" ]
+]

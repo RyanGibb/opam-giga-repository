@@ -1,0 +1,100 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Tool for generating GNU Standards-compliant Makefiles"
+description: """
+Tool for generating GNU Standards-compliant Makefiles"""
+extra-source "b36487a7372c3601973ccdab875ce24f5e6ebe1b1801c8bb0df9adb90e23a9ce--automake--1.17.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:3b8ba6298652b182425648330075f40f7fa6e55296a7463accc47884ecd26c67"
+  checksum: [
+    "sha256=3b8ba6298652b182425648330075f40f7fa6e55296a7463accc47884ecd26c67"
+  ]
+}
+extra-source "82d9fde65d8d7b9a9a5d18a172cd00f1431472b99237173f4ce154eeb48ab07e--automake-1.17.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/manifests/1.17"
+}
+extra-source "98458d0894af73de0eea2a65d765fe297bf970b2e7f9ea146258318f3d47afe1--automake--1.17.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:7e4b29a71b7f3b192f6dcc3bcf5b794a4548786c66df2f2ef71cf097099c6825"
+  checksum: [
+    "sha256=7e4b29a71b7f3b192f6dcc3bcf5b794a4548786c66df2f2ef71cf097099c6825"
+  ]
+}
+extra-source "d08a05c715f1af7951861d4a6fe1234a911e42e02e70f645b26d3203f10c9c9c--automake--1.17.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:5548bc61f131a45a0aad86b38f044530a51b10243a95188101438e42842f10d9"
+  checksum: [
+    "sha256=5548bc61f131a45a0aad86b38f044530a51b10243a95188101438e42842f10d9"
+  ]
+}
+extra-source "80e74586c1056b7683562c8d77002a82d4803b078ddb6277b48237d9bea2366c--automake--1.17.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:aaf3cb57d50c48af4886c0cd24340aa6ca5628feac4a566254a878f378aaa2e5"
+  checksum: [
+    "sha256=aaf3cb57d50c48af4886c0cd24340aa6ca5628feac4a566254a878f378aaa2e5"
+  ]
+}
+extra-source "d08a05c715f1af7951861d4a6fe1234a911e42e02e70f645b26d3203f10c9c9c--automake--1.17.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:5548bc61f131a45a0aad86b38f044530a51b10243a95188101438e42842f10d9"
+  checksum: [
+    "sha256=5548bc61f131a45a0aad86b38f044530a51b10243a95188101438e42842f10d9"
+  ]
+}
+extra-source "80e74586c1056b7683562c8d77002a82d4803b078ddb6277b48237d9bea2366c--automake--1.17.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:aaf3cb57d50c48af4886c0cd24340aa6ca5628feac4a566254a878f378aaa2e5"
+  checksum: [
+    "sha256=aaf3cb57d50c48af4886c0cd24340aa6ca5628feac4a566254a878f378aaa2e5"
+  ]
+}
+extra-source "d08a05c715f1af7951861d4a6fe1234a911e42e02e70f645b26d3203f10c9c9c--automake--1.17.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:5548bc61f131a45a0aad86b38f044530a51b10243a95188101438e42842f10d9"
+  checksum: [
+    "sha256=5548bc61f131a45a0aad86b38f044530a51b10243a95188101438e42842f10d9"
+  ]
+}
+extra-source "80e74586c1056b7683562c8d77002a82d4803b078ddb6277b48237d9bea2366c--automake--1.17.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:aaf3cb57d50c48af4886c0cd24340aa6ca5628feac4a566254a878f378aaa2e5"
+  checksum: [
+    "sha256=aaf3cb57d50c48af4886c0cd24340aa6ca5628feac4a566254a878f378aaa2e5"
+  ]
+}
+extra-source "3c17bb6acd2dcf8a6bea958ee1a5fb959c42fa3e068827019d7bab66be03f093--automake--1.17.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:ca591433edbdc896db26cea86f61dfbacea15e794828e7280482de2126d89e3e"
+  checksum: [
+    "sha256=ca591433edbdc896db26cea86f61dfbacea15e794828e7280482de2126d89e3e"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "82d9fde65d8d7b9a9a5d18a172cd00f1431472b99237173f4ce154eeb48ab07e--automake-1.17.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "b36487a7372c3601973ccdab875ce24f5e6ebe1b1801c8bb0df9adb90e23a9ce--automake--1.17.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "98458d0894af73de0eea2a65d765fe297bf970b2e7f9ea146258318f3d47afe1--automake--1.17.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d08a05c715f1af7951861d4a6fe1234a911e42e02e70f645b26d3203f10c9c9c--automake--1.17.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "80e74586c1056b7683562c8d77002a82d4803b078ddb6277b48237d9bea2366c--automake--1.17.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d08a05c715f1af7951861d4a6fe1234a911e42e02e70f645b26d3203f10c9c9c--automake--1.17.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "80e74586c1056b7683562c8d77002a82d4803b078ddb6277b48237d9bea2366c--automake--1.17.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d08a05c715f1af7951861d4a6fe1234a911e42e02e70f645b26d3203f10c9c9c--automake--1.17.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "80e74586c1056b7683562c8d77002a82d4803b078ddb6277b48237d9bea2366c--automake--1.17.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3c17bb6acd2dcf8a6bea958ee1a5fb959c42fa3e068827019d7bab66be03f093--automake--1.17.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "automake" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "automake" ]
+]

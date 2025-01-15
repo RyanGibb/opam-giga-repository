@@ -1,0 +1,116 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Fastest and safest AV1 video encoder"
+description: """
+Fastest and safest AV1 video encoder"""
+extra-source "34d987c8439b8619fc909c96ec7365248835b1436a6fb6d4e7e2aa6a8e21543f--rav1e--0.7.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:fa713f47f3e544d96dc62d374567bbc917d6f8bd5009779454468961c593d43a"
+  checksum: [
+    "sha256=fa713f47f3e544d96dc62d374567bbc917d6f8bd5009779454468961c593d43a"
+  ]
+}
+extra-source "ccafd526f73546dc53bb2cd7d3c8d0e392229423fbc6962740a67633d8b06443--rav1e-0.7.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/manifests/0.7.1"
+}
+extra-source "7c44d53c60d183eeca1707fa73b1da28a465c39ba9e23cbf80f53e38fa5919aa--rav1e--0.7.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:824a1de49472fc953a0676070611304e00ec69b4292a7d448a8dc94db0519415"
+  checksum: [
+    "sha256=824a1de49472fc953a0676070611304e00ec69b4292a7d448a8dc94db0519415"
+  ]
+}
+extra-source "06b67131c7265788c23c129cefd48cf2699b8c9c20d6e51131a997e82d1bf279--rav1e--0.7.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:03c3c20f83de1fca64b0e0c67e8eb583a334f30769c047304a6627fcec76c765"
+  checksum: [
+    "sha256=03c3c20f83de1fca64b0e0c67e8eb583a334f30769c047304a6627fcec76c765"
+  ]
+}
+extra-source "12e9e2ccff1791bfb24b8210c6e427ec98db8c38f301b95a540fbcd70ba5f0ca--rav1e--0.7.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:1b42472f766a82b42d4b345034cb242a7939ddac1c29dcc761326fe002a87833"
+  checksum: [
+    "sha256=1b42472f766a82b42d4b345034cb242a7939ddac1c29dcc761326fe002a87833"
+  ]
+}
+extra-source "14dc951abb84cb5a5740ce3f4c360ebb93419d36e1a270a91e3b45d038693cb2--rav1e--0.7.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:ebbacd899e780c0eaa27cd2adb2d3eba5f1d60d1ea38097601e1ea8991c95c30"
+  checksum: [
+    "sha256=ebbacd899e780c0eaa27cd2adb2d3eba5f1d60d1ea38097601e1ea8991c95c30"
+  ]
+}
+extra-source "0741e078784dfce435978d5047517db8109dd63aa7123b1bb976ebd381ca3083--rav1e--0.7.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:851887583386e346690659f508b7785936417d94da7429e0f08e11b876d1aceb"
+  checksum: [
+    "sha256=851887583386e346690659f508b7785936417d94da7429e0f08e11b876d1aceb"
+  ]
+}
+extra-source "de022ce4d5424fca148d98af9ceb3f4fef846cfa32e96aa86385e9743d87f9ae--rav1e--0.7.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:5a95ecb310417a49fcd0a488a7f69bddede2ab766345e7a90f28235430c27109"
+  checksum: [
+    "sha256=5a95ecb310417a49fcd0a488a7f69bddede2ab766345e7a90f28235430c27109"
+  ]
+}
+extra-source "804ea1799602758df155cad02c47facd60d8fc9386fe700a5c52872f4cf7f5df--rav1e--0.7.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:8e4cc6efb6c1c457be8202cc6d09604a79d158d321a4782a2042b5faa34406d1"
+  checksum: [
+    "sha256=8e4cc6efb6c1c457be8202cc6d09604a79d158d321a4782a2042b5faa34406d1"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-cargo-c" {= "0.10.4"}
+  "brew-nasm" {= "2.16.03"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "ccafd526f73546dc53bb2cd7d3c8d0e392229423fbc6962740a67633d8b06443--rav1e-0.7.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "34d987c8439b8619fc909c96ec7365248835b1436a6fb6d4e7e2aa6a8e21543f--rav1e--0.7.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7c44d53c60d183eeca1707fa73b1da28a465c39ba9e23cbf80f53e38fa5919aa--rav1e--0.7.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "06b67131c7265788c23c129cefd48cf2699b8c9c20d6e51131a997e82d1bf279--rav1e--0.7.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "12e9e2ccff1791bfb24b8210c6e427ec98db8c38f301b95a540fbcd70ba5f0ca--rav1e--0.7.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "14dc951abb84cb5a5740ce3f4c360ebb93419d36e1a270a91e3b45d038693cb2--rav1e--0.7.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0741e078784dfce435978d5047517db8109dd63aa7123b1bb976ebd381ca3083--rav1e--0.7.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "de022ce4d5424fca148d98af9ceb3f4fef846cfa32e96aa86385e9743d87f9ae--rav1e--0.7.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "804ea1799602758df155cad02c47facd60d8fc9386fe700a5c52872f4cf7f5df--rav1e--0.7.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "rav1e" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "rav1e" ]
+]

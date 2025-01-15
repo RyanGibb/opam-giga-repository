@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Core application library for C"
+description: """
+Core application library for C"""
+extra-source "d3e833c4a71530eb8df80958aa2e0e08be6ab0ef82ca9bbc6effcb43ac0a9371--glib--2.82.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:922c92018e72eb1b0aa972a39f9b04227dd50c2600434943584727f3d78fd672"
+  checksum: [
+    "sha256=922c92018e72eb1b0aa972a39f9b04227dd50c2600434943584727f3d78fd672"
+  ]
+}
+extra-source "8eae14bd8879d82f7909b1248fb30efc8327066a3c0dc33f2909c11e49182732--glib-2.82.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib/manifests/2.82.1"
+}
+extra-source "4093d52b639e92f47e20830c4d20bd8efac06ae8c30692a0d384ce5fbf8d93ea--glib--2.82.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:d84c34b9572aca1b723f915debdbcc676e1ce3528b0c6ced48c92adbe0ecb917"
+  checksum: [
+    "sha256=d84c34b9572aca1b723f915debdbcc676e1ce3528b0c6ced48c92adbe0ecb917"
+  ]
+}
+extra-source "ec601ea1877c09327cde956e8a413025652d76c80c288c3b8535482f4fba3f24--glib--2.82.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:be85658ed18ee50aa6f9c9ca016bdc97bd665129f1de350a2c0ae45bd5cea1a8"
+  checksum: [
+    "sha256=be85658ed18ee50aa6f9c9ca016bdc97bd665129f1de350a2c0ae45bd5cea1a8"
+  ]
+}
+extra-source "28fddf1081f989964565ba101b21bdac345459c6d73c3f3e5decae6853b34be5--glib--2.82.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:319c0b60fad79996858ca4b440f58798b2ed45f0971881ff6b0b164a75de1619"
+  checksum: [
+    "sha256=319c0b60fad79996858ca4b440f58798b2ed45f0971881ff6b0b164a75de1619"
+  ]
+}
+extra-source "e155f95c835722e5f0b88048dd73cc31cf14d1dca14ea32fd8a26a81978f0789--glib--2.82.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:ddfe7b3569d9e0ef8c279ad311910a0f5f238a97425f4aecc9c568430c6fc5f9"
+  checksum: [
+    "sha256=ddfe7b3569d9e0ef8c279ad311910a0f5f238a97425f4aecc9c568430c6fc5f9"
+  ]
+}
+extra-source "52acd19d044b28c85ef29741d8c328d0961a1bf92489b1b04a2e277068c8f0e2--glib--2.82.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:67d479d1efa505b1c6af6ed6e4fb75cc8d51c0275f50fc44ef954c73e94eecb9"
+  checksum: [
+    "sha256=67d479d1efa505b1c6af6ed6e4fb75cc8d51c0275f50fc44ef954c73e94eecb9"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pcre2" {= "10.44"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.11.10"}
+  "brew-python" {= "3.12.6"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-meson" {= "1.5.2"}
+  "brew-python-setuptools" {= "75.1.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8eae14bd8879d82f7909b1248fb30efc8327066a3c0dc33f2909c11e49182732--glib-2.82.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "d3e833c4a71530eb8df80958aa2e0e08be6ab0ef82ca9bbc6effcb43ac0a9371--glib--2.82.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4093d52b639e92f47e20830c4d20bd8efac06ae8c30692a0d384ce5fbf8d93ea--glib--2.82.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ec601ea1877c09327cde956e8a413025652d76c80c288c3b8535482f4fba3f24--glib--2.82.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "28fddf1081f989964565ba101b21bdac345459c6d73c3f3e5decae6853b34be5--glib--2.82.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e155f95c835722e5f0b88048dd73cc31cf14d1dca14ea32fd8a26a81978f0789--glib--2.82.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "52acd19d044b28c85ef29741d8c328d0961a1bf92489b1b04a2e277068c8f0e2--glib--2.82.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "glib" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "glib" ]
+]

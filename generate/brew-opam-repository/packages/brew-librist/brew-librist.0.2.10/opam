@@ -1,0 +1,119 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Reliable Internet Stream Transport (RIST)"
+description: """
+Reliable Internet Stream Transport (RIST)"""
+extra-source "743e951527b6b4fd9dd109e3804992b1d7be1891e026db4bd7fa0010ed19bb7a--librist--0.2.10_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/blobs/sha256:9cfc0d6d15b04984a38c13a4fb4c1e8991858b0d41da5f8bef16b6c5a5fc46cf"
+  checksum: [
+    "sha256=9cfc0d6d15b04984a38c13a4fb4c1e8991858b0d41da5f8bef16b6c5a5fc46cf"
+  ]
+}
+extra-source "c454114652985f2071c8c39a89669e3ded2ea81fee99e041ba5536c975f2d06f--librist-0.2.10_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/manifests/0.2.10_1"
+}
+extra-source "3c0be7191933d3cad80250b5944e032cf67eda011e1551d9f84568f55ce19874--librist--0.2.10_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/blobs/sha256:323c1b0e5a44a85657052208a0ed481a0a7aba20ab8e2d06c7e3fb5593c4cc4e"
+  checksum: [
+    "sha256=323c1b0e5a44a85657052208a0ed481a0a7aba20ab8e2d06c7e3fb5593c4cc4e"
+  ]
+}
+extra-source "3728709d1d2c3dc7990b1d486a3de1ea5f39e4e2909ad66f0986f7cad4709c40--librist--0.2.10_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/blobs/sha256:a008dc6bced0ba4ac31a79da417afa539d4ab0d25b9d22769ea396a17b355c8c"
+  checksum: [
+    "sha256=a008dc6bced0ba4ac31a79da417afa539d4ab0d25b9d22769ea396a17b355c8c"
+  ]
+}
+extra-source "4261ecc034f2396ad004d106cb282e336fcbdcd3dd07df148884096111338ea5--librist--0.2.10_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/blobs/sha256:cb36444b6c786bcfbbe40af9579f68a88e153e5d8192b8f55a8a8d6f0d5b4c4f"
+  checksum: [
+    "sha256=cb36444b6c786bcfbbe40af9579f68a88e153e5d8192b8f55a8a8d6f0d5b4c4f"
+  ]
+}
+extra-source "444d62993852308aef182552ac20432961f5deebc281b0361ea8cf5689df6593--librist--0.2.10_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/blobs/sha256:0033aff814342a0a4900ea6914411e7a9b506c938038017aa49f197c33283bd2"
+  checksum: [
+    "sha256=0033aff814342a0a4900ea6914411e7a9b506c938038017aa49f197c33283bd2"
+  ]
+}
+extra-source "9909af5079ae182c37c76156fe12dc77b994a43efc76fa4c2cb9f0b1e529b93b--librist--0.2.10_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/blobs/sha256:c89029f1a47bae2ef37f7488942a86da57e2d49048f385df1442ee666f90a24e"
+  checksum: [
+    "sha256=c89029f1a47bae2ef37f7488942a86da57e2d49048f385df1442ee666f90a24e"
+  ]
+}
+extra-source "b3f92623f915e2b8b121debab20f1a783911502aae3c21849017cc5e03cd5f08--librist--0.2.10_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/blobs/sha256:2604a28b6b7cec24badaf0ea472cae1b3524fcf1a082098394279867e5ad30ee"
+  checksum: [
+    "sha256=2604a28b6b7cec24badaf0ea472cae1b3524fcf1a082098394279867e5ad30ee"
+  ]
+}
+extra-source "ff456e464e0824c07a7b353e309e3f2bf855171d0eea59d8e5301845a1ae6e0a--librist--0.2.10_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/librist/blobs/sha256:d94498117f55c482ad621f50696c9592e8d7226ed92ef8d3028faf0afd3a69fc"
+  checksum: [
+    "sha256=d94498117f55c482ad621f50696c9592e8d7226ed92ef8d3028faf0afd3a69fc"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-cjson" {= "1.7.18"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libunistring" {= "1.2"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libidn2" {= "2.3.7"}
+  "brew-libtasn1" {= "4.19.0"}
+  "brew-nettle" {= "3.10"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-meson" {= "1.5.2"}
+  "brew-p11-kit" {= "0.25.5"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-unbound" {= "1.21.0"}
+  "brew-gnutls" {= "3.8.4"}
+  "brew-libmicrohttpd" {= "1.0.1"}
+  "brew-mbedtls" {= "3.6.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "c454114652985f2071c8c39a89669e3ded2ea81fee99e041ba5536c975f2d06f--librist-0.2.10_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "743e951527b6b4fd9dd109e3804992b1d7be1891e026db4bd7fa0010ed19bb7a--librist--0.2.10_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3c0be7191933d3cad80250b5944e032cf67eda011e1551d9f84568f55ce19874--librist--0.2.10_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3728709d1d2c3dc7990b1d486a3de1ea5f39e4e2909ad66f0986f7cad4709c40--librist--0.2.10_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4261ecc034f2396ad004d106cb282e336fcbdcd3dd07df148884096111338ea5--librist--0.2.10_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "444d62993852308aef182552ac20432961f5deebc281b0361ea8cf5689df6593--librist--0.2.10_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9909af5079ae182c37c76156fe12dc77b994a43efc76fa4c2cb9f0b1e529b93b--librist--0.2.10_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b3f92623f915e2b8b121debab20f1a783911502aae3c21849017cc5e03cd5f08--librist--0.2.10_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ff456e464e0824c07a7b353e309e3f2bf855171d0eea59d8e5301845a1ae6e0a--librist--0.2.10_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "librist" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "librist" ]
+]

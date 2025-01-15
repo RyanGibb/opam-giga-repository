@@ -1,0 +1,98 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Substitute for classic 'make' tool with autoconf/automake functionality"
+description: """
+Substitute for classic 'make' tool with autoconf/automake functionality"""
+extra-source "8786bbff54db7758c2057fe3714ab227870c256a3e37d0046a5a17664f1634b4--scons--4.8.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/blobs/sha256:a328faf40ed543b4d70c679a181ab9aca15cf3c69cd4fd49f404a4f57c675825"
+  checksum: [
+    "sha256=a328faf40ed543b4d70c679a181ab9aca15cf3c69cd4fd49f404a4f57c675825"
+  ]
+}
+extra-source "04185c2866c7795d548dc9befe263cc3753f1f03bace14675e32261686a5f82c--scons-4.8.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/manifests/4.8.1"
+}
+extra-source "51b1e9628f9cfd34a30a18aaf09543999235d72436895773c1cbc31d126ec858--scons--4.8.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/blobs/sha256:3a6fd9a6e51f29a80a45e60a7f85c750424fdf2e1f00627d2f3b416e8cd4b8a6"
+  checksum: [
+    "sha256=3a6fd9a6e51f29a80a45e60a7f85c750424fdf2e1f00627d2f3b416e8cd4b8a6"
+  ]
+}
+extra-source "9dbf59cb81faf513e20c760633cf20048c657a4129d09a24a1482ac90077c9aa--scons--4.8.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/blobs/sha256:633b90cf71e96dd4958f27ec2dc6d38fea979e317edacf5d7423717957cc506a"
+  checksum: [
+    "sha256=633b90cf71e96dd4958f27ec2dc6d38fea979e317edacf5d7423717957cc506a"
+  ]
+}
+extra-source "51b1e9628f9cfd34a30a18aaf09543999235d72436895773c1cbc31d126ec858--scons--4.8.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/blobs/sha256:3a6fd9a6e51f29a80a45e60a7f85c750424fdf2e1f00627d2f3b416e8cd4b8a6"
+  checksum: [
+    "sha256=3a6fd9a6e51f29a80a45e60a7f85c750424fdf2e1f00627d2f3b416e8cd4b8a6"
+  ]
+}
+extra-source "9dbf59cb81faf513e20c760633cf20048c657a4129d09a24a1482ac90077c9aa--scons--4.8.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/blobs/sha256:633b90cf71e96dd4958f27ec2dc6d38fea979e317edacf5d7423717957cc506a"
+  checksum: [
+    "sha256=633b90cf71e96dd4958f27ec2dc6d38fea979e317edacf5d7423717957cc506a"
+  ]
+}
+extra-source "51b1e9628f9cfd34a30a18aaf09543999235d72436895773c1cbc31d126ec858--scons--4.8.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/blobs/sha256:3a6fd9a6e51f29a80a45e60a7f85c750424fdf2e1f00627d2f3b416e8cd4b8a6"
+  checksum: [
+    "sha256=3a6fd9a6e51f29a80a45e60a7f85c750424fdf2e1f00627d2f3b416e8cd4b8a6"
+  ]
+}
+extra-source "9dbf59cb81faf513e20c760633cf20048c657a4129d09a24a1482ac90077c9aa--scons--4.8.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/blobs/sha256:633b90cf71e96dd4958f27ec2dc6d38fea979e317edacf5d7423717957cc506a"
+  checksum: [
+    "sha256=633b90cf71e96dd4958f27ec2dc6d38fea979e317edacf5d7423717957cc506a"
+  ]
+}
+extra-source "9dbf59cb81faf513e20c760633cf20048c657a4129d09a24a1482ac90077c9aa--scons--4.8.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/scons/blobs/sha256:633b90cf71e96dd4958f27ec2dc6d38fea979e317edacf5d7423717957cc506a"
+  checksum: [
+    "sha256=633b90cf71e96dd4958f27ec2dc6d38fea979e317edacf5d7423717957cc506a"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "04185c2866c7795d548dc9befe263cc3753f1f03bace14675e32261686a5f82c--scons-4.8.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "8786bbff54db7758c2057fe3714ab227870c256a3e37d0046a5a17664f1634b4--scons--4.8.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "51b1e9628f9cfd34a30a18aaf09543999235d72436895773c1cbc31d126ec858--scons--4.8.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9dbf59cb81faf513e20c760633cf20048c657a4129d09a24a1482ac90077c9aa--scons--4.8.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "51b1e9628f9cfd34a30a18aaf09543999235d72436895773c1cbc31d126ec858--scons--4.8.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9dbf59cb81faf513e20c760633cf20048c657a4129d09a24a1482ac90077c9aa--scons--4.8.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "51b1e9628f9cfd34a30a18aaf09543999235d72436895773c1cbc31d126ec858--scons--4.8.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9dbf59cb81faf513e20c760633cf20048c657a4129d09a24a1482ac90077c9aa--scons--4.8.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9dbf59cb81faf513e20c760633cf20048c657a4129d09a24a1482ac90077c9aa--scons--4.8.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "scons" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "scons" ]
+]

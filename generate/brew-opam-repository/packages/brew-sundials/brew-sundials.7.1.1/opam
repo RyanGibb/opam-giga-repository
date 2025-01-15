@@ -1,0 +1,127 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Nonlinear and differential/algebraic equations solver"
+description: """
+Nonlinear and differential/algebraic equations solver"""
+extra-source "66d3593eca98ee212c23c93a6bb2eddde079963520772a0b933d87a0612257b6--sundials--7.1.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/blobs/sha256:1706f37becde249faa65de4f19a429f7e0573700b0f5e32e3595c7fbf67c4809"
+  checksum: [
+    "sha256=1706f37becde249faa65de4f19a429f7e0573700b0f5e32e3595c7fbf67c4809"
+  ]
+}
+extra-source "dae646b6dcc6bba00d62185568793f246775373ad76ba55bf05f3f684d7a7e9a--sundials-7.1.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/manifests/7.1.1"
+}
+extra-source "bf65d9d045e2d6d88dc00cddefca76a2ea58a043d0d644dbbe547f23bb3ea891--sundials--7.1.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/blobs/sha256:0314d17b913594c3f838fbf0e312344d1872f704e2c2f69bacdc3c6cbe67299f"
+  checksum: [
+    "sha256=0314d17b913594c3f838fbf0e312344d1872f704e2c2f69bacdc3c6cbe67299f"
+  ]
+}
+extra-source "2d0cd3510e8d0c91e1df27347a99a00dd6fb764d360fc0151f836043fd209162--sundials--7.1.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/blobs/sha256:217cb17084cd6eaf86ffa794f810b1b439681817ccefce2d588af33bfd49b2e1"
+  checksum: [
+    "sha256=217cb17084cd6eaf86ffa794f810b1b439681817ccefce2d588af33bfd49b2e1"
+  ]
+}
+extra-source "6c89b7f82e0a691fcc2fdaedcdc59831c55bf50c375a2ab7a8d47f9fe49dffea--sundials--7.1.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/blobs/sha256:d4d9520a6e99ee7fd1ff6ef1d9eba83427fc3af9401f08235606743f937a018a"
+  checksum: [
+    "sha256=d4d9520a6e99ee7fd1ff6ef1d9eba83427fc3af9401f08235606743f937a018a"
+  ]
+}
+extra-source "52e4d0b57fc2efdeb21456fa24da7632b97da7c0c83d201c630ad4007d305702--sundials--7.1.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/blobs/sha256:da7af9deea670031566961b0f33b27305a21131dbe44e13b175b29bc70e31a61"
+  checksum: [
+    "sha256=da7af9deea670031566961b0f33b27305a21131dbe44e13b175b29bc70e31a61"
+  ]
+}
+extra-source "2e6430b94c5fbd7622ced7f271c02465f13f0b733d0b7e0bc6b281f4e021d52c--sundials--7.1.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/blobs/sha256:df5b9cfa1cbbf56bc28139dc63afadc808fa4b7b2cab8f3c82652b428d3d5806"
+  checksum: [
+    "sha256=df5b9cfa1cbbf56bc28139dc63afadc808fa4b7b2cab8f3c82652b428d3d5806"
+  ]
+}
+extra-source "b7b9605c9b8339882b13bfc1476d46637dc71d6bed992ff2d93b052c6fa8476b--sundials--7.1.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/blobs/sha256:06ddfa44368b61e59c3cc82fd157b1f9ac24bb7e66f476f72e645bbc9064c645"
+  checksum: [
+    "sha256=06ddfa44368b61e59c3cc82fd157b1f9ac24bb7e66f476f72e645bbc9064c645"
+  ]
+}
+extra-source "f4057498cd672ad16b31a81c14f499a9ea902abbe181d49de4b34a32261fe270--sundials--7.1.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/sundials/blobs/sha256:1c04f68df6b0d3f24eabc75bc5cccda2ee43e12dcd7b345ec838d81410132fc8"
+  checksum: [
+    "sha256=1c04f68df6b0d3f24eabc75bc5cccda2ee43e12dcd7b345ec838d81410132fc8"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-isl" {= "0.27"}
+  "brew-mpfr" {= "4.2.1"}
+  "brew-libmpc" {= "1.3.1"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-lzip" {= "1.24.1"}
+  "brew-make" {= "4.4.1"}
+  "brew-gcc" {= "14.2.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-hwloc" {= "2.11.1"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libevent" {= "2.1.12"}
+  "brew-pmix" {= "5.0.3"}
+  "brew-open-mpi" {= "5.0.3"}
+  "brew-openblas" {= "0.3.28"}
+  "brew-metis" {= "5.1.0"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-lit" {= "18.1.8"}
+  "brew-libomp" {= "19.1.0"}
+  "brew-suite-sparse" {= "7.8.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "dae646b6dcc6bba00d62185568793f246775373ad76ba55bf05f3f684d7a7e9a--sundials-7.1.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "66d3593eca98ee212c23c93a6bb2eddde079963520772a0b933d87a0612257b6--sundials--7.1.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "bf65d9d045e2d6d88dc00cddefca76a2ea58a043d0d644dbbe547f23bb3ea891--sundials--7.1.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "2d0cd3510e8d0c91e1df27347a99a00dd6fb764d360fc0151f836043fd209162--sundials--7.1.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6c89b7f82e0a691fcc2fdaedcdc59831c55bf50c375a2ab7a8d47f9fe49dffea--sundials--7.1.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "52e4d0b57fc2efdeb21456fa24da7632b97da7c0c83d201c630ad4007d305702--sundials--7.1.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2e6430b94c5fbd7622ced7f271c02465f13f0b733d0b7e0bc6b281f4e021d52c--sundials--7.1.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b7b9605c9b8339882b13bfc1476d46637dc71d6bed992ff2d93b052c6fa8476b--sundials--7.1.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f4057498cd672ad16b31a81c14f499a9ea902abbe181d49de4b34a32261fe270--sundials--7.1.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "sundials" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "sundials" ]
+]

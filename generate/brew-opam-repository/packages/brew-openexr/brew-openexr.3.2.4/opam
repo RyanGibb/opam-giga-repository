@@ -1,0 +1,93 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "High dynamic-range image file format"
+description: """
+High dynamic-range image file format"""
+extra-source "1fd368c922641897d3220a69b9ee38c8abe8f62dbd342fb0412ce6f2f3a29601--openexr--3.2.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:c728f040633260155ac1d368eb7eea0a773f7b4c0ec1335e10c4a3e542724a62"
+  checksum: [
+    "sha256=c728f040633260155ac1d368eb7eea0a773f7b4c0ec1335e10c4a3e542724a62"
+  ]
+}
+extra-source "64b203875dbfc58a68a1ab1bee0b9dcfa77a93c55c283a295b618ea0434c8060--openexr-3.2.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/manifests/3.2.4"
+}
+extra-source "2b92ae71710bf51147bc8ea814c4c947429f875e68d3b29b9644a4c3385b24b3--openexr--3.2.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:e2d68cb84ae057f4323e7f52214ddb1c3db955a02db865acddcc8d41828ef445"
+  checksum: [
+    "sha256=e2d68cb84ae057f4323e7f52214ddb1c3db955a02db865acddcc8d41828ef445"
+  ]
+}
+extra-source "e01642a98b71dc08f3aceecd6c4d96d8c3c17264eee0cdb2d96fbba57aeed4cf--openexr--3.2.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:49b4acf727abd6a736d9d7cf8b38fe96ef3f89979523186ce4eb947d5478b772"
+  checksum: [
+    "sha256=49b4acf727abd6a736d9d7cf8b38fe96ef3f89979523186ce4eb947d5478b772"
+  ]
+}
+extra-source "5486f8186ea8b134fac5d9784e7b49e44cff0d5a744596ce401620cd808803b2--openexr--3.2.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:893b120aee538446c12c39d819f2a56a54d4493558d6c6e339ef3f0f2a382607"
+  checksum: [
+    "sha256=893b120aee538446c12c39d819f2a56a54d4493558d6c6e339ef3f0f2a382607"
+  ]
+}
+extra-source "1056003387053625ec36c635749cb8b04bd739e8384dc362cfb8bc93864d1dfd--openexr--3.2.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:690f103efb1ab0a421cc8c7aa4c0eb0c1715f3e35e26b05f54820bc7896c16ef"
+  checksum: [
+    "sha256=690f103efb1ab0a421cc8c7aa4c0eb0c1715f3e35e26b05f54820bc7896c16ef"
+  ]
+}
+extra-source "3cca5e9c6644fbe11b36795ff75d22cfa304fe5a20d66c94712dea3f66586fe4--openexr--3.2.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:bc8c4411b513c76de4c416642341c8f72b29a4fff10f0bcfc2c13c17ef899261"
+  checksum: [
+    "sha256=bc8c4411b513c76de4c416642341c8f72b29a4fff10f0bcfc2c13c17ef899261"
+  ]
+}
+extra-source "6d9f84bbcf5ace37194915a55646ae060d336f7272071072533be3fe6fe46a77--openexr--3.2.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:eafdc1854757f9215568e38005d69884c3da63b23d62cc6496e95430d2713796"
+  checksum: [
+    "sha256=eafdc1854757f9215568e38005d69884c3da63b23d62cc6496e95430d2713796"
+  ]
+}
+extra-source "552e97aed85573d113912203af63e477e80a6a6073a4d62b4e54316fd02ce2f7--openexr--3.2.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:d7c839fd2991b3cc8a66a5e5fa6aa4d86e3d9621280d56b24219900c81ed7d1e"
+  checksum: [
+    "sha256=d7c839fd2991b3cc8a66a5e5fa6aa4d86e3d9621280d56b24219900c81ed7d1e"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-imath" {= "3.1.12"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "64b203875dbfc58a68a1ab1bee0b9dcfa77a93c55c283a295b618ea0434c8060--openexr-3.2.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "1fd368c922641897d3220a69b9ee38c8abe8f62dbd342fb0412ce6f2f3a29601--openexr--3.2.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2b92ae71710bf51147bc8ea814c4c947429f875e68d3b29b9644a4c3385b24b3--openexr--3.2.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e01642a98b71dc08f3aceecd6c4d96d8c3c17264eee0cdb2d96fbba57aeed4cf--openexr--3.2.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5486f8186ea8b134fac5d9784e7b49e44cff0d5a744596ce401620cd808803b2--openexr--3.2.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1056003387053625ec36c635749cb8b04bd739e8384dc362cfb8bc93864d1dfd--openexr--3.2.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "3cca5e9c6644fbe11b36795ff75d22cfa304fe5a20d66c94712dea3f66586fe4--openexr--3.2.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "6d9f84bbcf5ace37194915a55646ae060d336f7272071072533be3fe6fe46a77--openexr--3.2.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "552e97aed85573d113912203af63e477e80a6a6073a4d62b4e54316fd02ce2f7--openexr--3.2.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "openexr" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "openexr" ]
+]

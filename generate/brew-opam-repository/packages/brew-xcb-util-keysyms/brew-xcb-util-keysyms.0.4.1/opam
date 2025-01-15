@@ -1,0 +1,128 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Standard X constants and conversion to/from keycodes"
+description: """
+Standard X constants and conversion to/from keycodes"""
+extra-source "9e792afa439e6129b79a8121dc61c96effbddd260bf713b6ed9e0c42518eb4fa--xcb-util-keysyms--0.4.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:bf1324e90b7abdb41f7a6dfa41ce477627ad5d069a09dcfeb51491c5a559b274"
+  checksum: [
+    "sha256=bf1324e90b7abdb41f7a6dfa41ce477627ad5d069a09dcfeb51491c5a559b274"
+  ]
+}
+extra-source "dd17089ce37f3fb7fcd34474de00243635a8f728bf4288422ab5d032b8500baa--xcb-util-keysyms-0.4.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/manifests/0.4.1"
+}
+extra-source "f0862ef51a095a377de481a583b9835cf556ec23013e0fe20fa9ddadfa95b119--xcb-util-keysyms--0.4.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:bbbd83881b3b35058415b32a952b4124e11dcfc48e6a6680920efef22c07fd36"
+  checksum: [
+    "sha256=bbbd83881b3b35058415b32a952b4124e11dcfc48e6a6680920efef22c07fd36"
+  ]
+}
+extra-source "a109d094162879fd971cd8fd2e60add3d0e2b30f2e7a63fd05de9e88608abe64--xcb-util-keysyms--0.4.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:71f2367c5777c07deb7cf6edda8a7b7a0d9bf162a467b8ae930c2ad0cdb6c450"
+  checksum: [
+    "sha256=71f2367c5777c07deb7cf6edda8a7b7a0d9bf162a467b8ae930c2ad0cdb6c450"
+  ]
+}
+extra-source "c31a650e4b82390d1369bdb045ec797d3854b0d813359e54b02f8304348ebce3--xcb-util-keysyms--0.4.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:1d54ce19d60722d3b41fe752c4703876c8a17fa62d1be1d8840c8a943374afd7"
+  checksum: [
+    "sha256=1d54ce19d60722d3b41fe752c4703876c8a17fa62d1be1d8840c8a943374afd7"
+  ]
+}
+extra-source "c8fc2a4146a9182dcbad32aa1189ed1081e37db2f4b42f832fbd21d42f652324--xcb-util-keysyms--0.4.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:4d62cd700f85b3ba39740bd2dd9872d45aef018e603db2907f9bd1c3e6213d88"
+  checksum: [
+    "sha256=4d62cd700f85b3ba39740bd2dd9872d45aef018e603db2907f9bd1c3e6213d88"
+  ]
+}
+extra-source "61b728e03123b14495321df16443933916770bc9293b7111ea209d570970a1ae--xcb-util-keysyms--0.4.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:246f9361f2802f7dac2fdc20c762c2cb50a86c0393b519529b52201e69fff053"
+  checksum: [
+    "sha256=246f9361f2802f7dac2fdc20c762c2cb50a86c0393b519529b52201e69fff053"
+  ]
+}
+extra-source "dfe7e5c1c66f1d341d7563bbe0026e280a655c8982960acb3778a252bad0b4a6--xcb-util-keysyms--0.4.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:8f81bf9c5f646f94ab25dfc84953ae28fc166316263eea913b00cf9e569d455a"
+  checksum: [
+    "sha256=8f81bf9c5f646f94ab25dfc84953ae28fc166316263eea913b00cf9e569d455a"
+  ]
+}
+extra-source "6ead1c10493e8e985e819735fd56a3e109ecc0ee7409d60f2f8e6b7c82a46380--xcb-util-keysyms--0.4.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:0e25691158d5d28c473634d285e0fbb7ae59eeca5ec55305ea814536e03cd069"
+  checksum: [
+    "sha256=0e25691158d5d28c473634d285e0fbb7ae59eeca5ec55305ea814536e03cd069"
+  ]
+}
+extra-source "3b762ff1b02f448eb30903a39980786b8239a4b4ec944772a61d1626348eaa18--xcb-util-keysyms--0.4.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:fab1de02f3c8f6ca3b93921678f2c5c7317f230b05b27790b805d8e2585a1901"
+  checksum: [
+    "sha256=fab1de02f3c8f6ca3b93921678f2c5c7317f230b05b27790b805d8e2585a1901"
+  ]
+}
+extra-source "38cf440e5bc157cf3b1d696dfb474e1a96cfbd35f4a13ded16568d7538988121--xcb-util-keysyms--0.4.1.catalina.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:9b08f8c1ee577cea420903ab5593ed8367eedd92da4cddc0d4c6ef2235dd7c76"
+  checksum: [
+    "sha256=9b08f8c1ee577cea420903ab5593ed8367eedd92da4cddc0d4c6ef2235dd7c76"
+  ]
+}
+extra-source "9be02859158e0d64b50343918c9fa039bc4df90a8a14e51f4c18daf0cb4eb40d--xcb-util-keysyms--0.4.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/xcb-util-keysyms/blobs/sha256:269947922f6128006e0201a6972c1cf622dc93200268c0dfa5801b8899902c35"
+  checksum: [
+    "sha256=269947922f6128006e0201a6972c1cf622dc93200268c0dfa5801b8899902c35"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "dd17089ce37f3fb7fcd34474de00243635a8f728bf4288422ab5d032b8500baa--xcb-util-keysyms-0.4.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9e792afa439e6129b79a8121dc61c96effbddd260bf713b6ed9e0c42518eb4fa--xcb-util-keysyms--0.4.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f0862ef51a095a377de481a583b9835cf556ec23013e0fe20fa9ddadfa95b119--xcb-util-keysyms--0.4.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a109d094162879fd971cd8fd2e60add3d0e2b30f2e7a63fd05de9e88608abe64--xcb-util-keysyms--0.4.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c31a650e4b82390d1369bdb045ec797d3854b0d813359e54b02f8304348ebce3--xcb-util-keysyms--0.4.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c8fc2a4146a9182dcbad32aa1189ed1081e37db2f4b42f832fbd21d42f652324--xcb-util-keysyms--0.4.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "61b728e03123b14495321df16443933916770bc9293b7111ea209d570970a1ae--xcb-util-keysyms--0.4.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dfe7e5c1c66f1d341d7563bbe0026e280a655c8982960acb3778a252bad0b4a6--xcb-util-keysyms--0.4.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6ead1c10493e8e985e819735fd56a3e109ecc0ee7409d60f2f8e6b7c82a46380--xcb-util-keysyms--0.4.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3b762ff1b02f448eb30903a39980786b8239a4b4ec944772a61d1626348eaa18--xcb-util-keysyms--0.4.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "38cf440e5bc157cf3b1d696dfb474e1a96cfbd35f4a13ded16568d7538988121--xcb-util-keysyms--0.4.1.catalina.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9be02859158e0d64b50343918c9fa039bc4df90a8a14e51f4c18daf0cb4eb40d--xcb-util-keysyms--0.4.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "xcb-util-keysyms" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "xcb-util-keysyms" ]
+]

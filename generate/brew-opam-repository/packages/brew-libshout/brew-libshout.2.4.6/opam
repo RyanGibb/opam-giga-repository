@@ -1,0 +1,124 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Data and connectivity library for the icecast server"
+description: """
+Data and connectivity library for the icecast server"""
+extra-source "f106055e41b0ffac4014b314aa0902990e0cd1f6e2167feb93db1abd09c4cf4e--libshout--2.4.6_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:49c3066752128e45a877701bceb70aa87a5206860ced2da703537c50c2c71d6e"
+  checksum: [
+    "sha256=49c3066752128e45a877701bceb70aa87a5206860ced2da703537c50c2c71d6e"
+  ]
+}
+extra-source "6bb6a35d9b7a23b52b0860746a0a10ca5a393f46d1506f563eb13d99235fac67--libshout-2.4.6_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/manifests/2.4.6_1"
+}
+extra-source "79e64f25c1ebc2df78f5e4205b90c9cacaf3c7bc7b965cee23c59614aa69f7e0--libshout--2.4.6_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:e8bd0edee4ddf595bda83e9b8c4b5038dadd560cb6fbee45bf5ebe8ee9fabf80"
+  checksum: [
+    "sha256=e8bd0edee4ddf595bda83e9b8c4b5038dadd560cb6fbee45bf5ebe8ee9fabf80"
+  ]
+}
+extra-source "976c863323a1879d8c60b745ecdb8026fffd621d01a650c36d4905e1f86b163c--libshout--2.4.6_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:d33f7df96360cb44be07c2df6c3149372314fe2a72f56ee7df3042454d5bd1d1"
+  checksum: [
+    "sha256=d33f7df96360cb44be07c2df6c3149372314fe2a72f56ee7df3042454d5bd1d1"
+  ]
+}
+extra-source "a72bf285801d979675de41d2a5d2d37e7806419b9081607938dbe543791b554b--libshout--2.4.6_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:89f4593d901019c32468604a871a46524d30b48a9dbd09a060e00e99e487a99a"
+  checksum: [
+    "sha256=89f4593d901019c32468604a871a46524d30b48a9dbd09a060e00e99e487a99a"
+  ]
+}
+extra-source "1204d870f15b8b2ad37eeb57ebf161a3a2f2763151809396dcd4450f88f15814--libshout--2.4.6_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:9231d4d7890507d132e7a64201b7ead203a22cb47850c9cf7ee099fbc5c8a6cd"
+  checksum: [
+    "sha256=9231d4d7890507d132e7a64201b7ead203a22cb47850c9cf7ee099fbc5c8a6cd"
+  ]
+}
+extra-source "e16a8aada20a3c7c197d2baa047896d670e45e2cf2f09bf2ea65430ab2037fb7--libshout--2.4.6_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:8ab0df70741deb6cec78b95f37fb60ff5504a3f077033c2b4c7ae76745d8987f"
+  checksum: [
+    "sha256=8ab0df70741deb6cec78b95f37fb60ff5504a3f077033c2b4c7ae76745d8987f"
+  ]
+}
+extra-source "151cf126dc01a5262dc3fc682ec57a662f1615698ab3c665af8c5e4ac063fc9c--libshout--2.4.6_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:60b072983a4133b4e504760df1173592f72f20ad4c563eaf4818c3f1de726c04"
+  checksum: [
+    "sha256=60b072983a4133b4e504760df1173592f72f20ad4c563eaf4818c3f1de726c04"
+  ]
+}
+extra-source "6ca729e3eeb8ed9303407ac0d52f4c54eecaa8dc763ab9ee4ac736c57185ddbb--libshout--2.4.6_1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:97acacadd869bf35f1a8ae8fb4c5771a028d531272313b5dbc55348ce197ebd1"
+  checksum: [
+    "sha256=97acacadd869bf35f1a8ae8fb4c5771a028d531272313b5dbc55348ce197ebd1"
+  ]
+}
+extra-source "57b69f793c9729d3f06c3abc5ee2f944a23e9acfa56d810a32e4f0b5b98b3bf7--libshout--2.4.6_1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:5556dc649d2ffc26db4982b4454fa398bbbe984dcdabcc43463c1ef9af7a01f0"
+  checksum: [
+    "sha256=5556dc649d2ffc26db4982b4454fa398bbbe984dcdabcc43463c1ef9af7a01f0"
+  ]
+}
+extra-source "2525c0e2c0ba9701379e5aeeb7ff4ec51b6d33ac5e90c51e4dd9fe97dc86dbca--libshout--2.4.6_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libshout/blobs/sha256:898c7da67e779f3cce1a4b3f7b5cff8af87725d7235b3a138c06396db1b2eeec"
+  checksum: [
+    "sha256=898c7da67e779f3cce1a4b3f7b5cff8af87725d7235b3a138c06396db1b2eeec"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-rtmpdump" {= "2.4-20151223"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-curl" {= "8.10.1"}
+  "brew-libogg" {= "1.3.5"}
+  "brew-libvorbis" {= "1.3.7"}
+  "brew-speex" {= "1.2.1"}
+  "brew-m4" {= "1.4.19"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-theora" {= "1.1.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "6bb6a35d9b7a23b52b0860746a0a10ca5a393f46d1506f563eb13d99235fac67--libshout-2.4.6_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "f106055e41b0ffac4014b314aa0902990e0cd1f6e2167feb93db1abd09c4cf4e--libshout--2.4.6_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "79e64f25c1ebc2df78f5e4205b90c9cacaf3c7bc7b965cee23c59614aa69f7e0--libshout--2.4.6_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "976c863323a1879d8c60b745ecdb8026fffd621d01a650c36d4905e1f86b163c--libshout--2.4.6_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a72bf285801d979675de41d2a5d2d37e7806419b9081607938dbe543791b554b--libshout--2.4.6_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "1204d870f15b8b2ad37eeb57ebf161a3a2f2763151809396dcd4450f88f15814--libshout--2.4.6_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e16a8aada20a3c7c197d2baa047896d670e45e2cf2f09bf2ea65430ab2037fb7--libshout--2.4.6_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "151cf126dc01a5262dc3fc682ec57a662f1615698ab3c665af8c5e4ac063fc9c--libshout--2.4.6_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "6ca729e3eeb8ed9303407ac0d52f4c54eecaa8dc763ab9ee4ac736c57185ddbb--libshout--2.4.6_1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "57b69f793c9729d3f06c3abc5ee2f944a23e9acfa56d810a32e4f0b5b98b3bf7--libshout--2.4.6_1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2525c0e2c0ba9701379e5aeeb7ff4ec51b6d33ac5e90c51e4dd9fe97dc86dbca--libshout--2.4.6_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libshout" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libshout" ]
+]

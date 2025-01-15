@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: Font package creation/installation utilities"
+description: """
+X.Org: Font package creation/installation utilities"""
+extra-source "df8b5c55dffb26978c38d01ef06a3aca06a1e95d54ded8151e00fb03f5ca7734--font-util--1.4.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:debcf269b82d6b7503808ae95aed9f0a39df46ec3a323b272c545c57148f4254"
+  checksum: [
+    "sha256=debcf269b82d6b7503808ae95aed9f0a39df46ec3a323b272c545c57148f4254"
+  ]
+}
+extra-source "715f7cb3dd61d23bda4e7e5e9997fcc876a69b1dfbfcd9bf361b3851490906d3--font-util-1.4.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/manifests/1.4.1"
+}
+extra-source "016adb8f6e5632b0147302bdd66758b506e832044118f36d00fa2d70420ee170--font-util--1.4.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:f0e2b8da17504b136f61aa7d9d0300c4f3d664f8fc7f92f375ad64a717eef2fe"
+  checksum: [
+    "sha256=f0e2b8da17504b136f61aa7d9d0300c4f3d664f8fc7f92f375ad64a717eef2fe"
+  ]
+}
+extra-source "42f3bfbda5eb60289eb2d08db67bfa06f868928c110d85d9fec2af3e18d3668d--font-util--1.4.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:c330ddeddd9f3f0a53c3845c1b3d3bcf1524370135df06eea99a914659185fcd"
+  checksum: [
+    "sha256=c330ddeddd9f3f0a53c3845c1b3d3bcf1524370135df06eea99a914659185fcd"
+  ]
+}
+extra-source "19ff47744df45285293d971bee7d49058270f52359f4d58c0c63cf97fbecb487--font-util--1.4.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:b6a7600ba11c04222874464dc5b7e01976f88f01f1fa4e33336c3bb5aa593aeb"
+  checksum: [
+    "sha256=b6a7600ba11c04222874464dc5b7e01976f88f01f1fa4e33336c3bb5aa593aeb"
+  ]
+}
+extra-source "e7c7192a80bdf2cfccf0f8bc3547171081cec1620789e1fd22d776444a0ee9ba--font-util--1.4.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:f797dc497bc5e95e9e9840bdad4dde1c083f7c7f2bd26d577897f2bc63b27e6c"
+  checksum: [
+    "sha256=f797dc497bc5e95e9e9840bdad4dde1c083f7c7f2bd26d577897f2bc63b27e6c"
+  ]
+}
+extra-source "78ba397451d5e1b5849dd83eac342db1e7d8078d808d858a6258d78be25f6f1b--font-util--1.4.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:7463821e99f23ec109e6ea41d5c4a6bd79d6cbdbd8d52d58e727212c6fc215db"
+  checksum: [
+    "sha256=7463821e99f23ec109e6ea41d5c4a6bd79d6cbdbd8d52d58e727212c6fc215db"
+  ]
+}
+extra-source "ad732d5a33e1e811619b79e053b9cdf9cfec907edd1b206318aa943c7e63329c--font-util--1.4.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:46ba2f844d8b9fcaaf5bd3c40d77e3e6f6d61306e430d87f5e2c6c9bc8238228"
+  checksum: [
+    "sha256=46ba2f844d8b9fcaaf5bd3c40d77e3e6f6d61306e430d87f5e2c6c9bc8238228"
+  ]
+}
+extra-source "09ffc20de6c06d3c9dd4d9404986934ce9c076ba8631a9985b0ad9b8e6410652--font-util--1.4.1.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:48980593c214141ef4ad5c85e70104446df26b82689cf361128c740c1a48b8fc"
+  checksum: [
+    "sha256=48980593c214141ef4ad5c85e70104446df26b82689cf361128c740c1a48b8fc"
+  ]
+}
+extra-source "5eef67abd32e074be382ec84e96eb15de3995e8cd6ec1b55a61ad887e557aefe--font-util--1.4.1.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:aa874f6feb2e9dbec27c1542c122fe4717397f0ee6f808048a5ed105b6870633"
+  checksum: [
+    "sha256=aa874f6feb2e9dbec27c1542c122fe4717397f0ee6f808048a5ed105b6870633"
+  ]
+}
+extra-source "4da9bfc3b60c015327f62cdda013da7f24903a39ffc76559c7346c58164f0329--font-util--1.4.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/font-util/blobs/sha256:deb3137c5cba7ee33ca8733cc79348b69bf8d337cb20037d12de3bf4eff593dd"
+  checksum: [
+    "sha256=deb3137c5cba7ee33ca8733cc79348b69bf8d337cb20037d12de3bf4eff593dd"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "715f7cb3dd61d23bda4e7e5e9997fcc876a69b1dfbfcd9bf361b3851490906d3--font-util-1.4.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "df8b5c55dffb26978c38d01ef06a3aca06a1e95d54ded8151e00fb03f5ca7734--font-util--1.4.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "016adb8f6e5632b0147302bdd66758b506e832044118f36d00fa2d70420ee170--font-util--1.4.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "42f3bfbda5eb60289eb2d08db67bfa06f868928c110d85d9fec2af3e18d3668d--font-util--1.4.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "19ff47744df45285293d971bee7d49058270f52359f4d58c0c63cf97fbecb487--font-util--1.4.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e7c7192a80bdf2cfccf0f8bc3547171081cec1620789e1fd22d776444a0ee9ba--font-util--1.4.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "78ba397451d5e1b5849dd83eac342db1e7d8078d808d858a6258d78be25f6f1b--font-util--1.4.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ad732d5a33e1e811619b79e053b9cdf9cfec907edd1b206318aa943c7e63329c--font-util--1.4.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "09ffc20de6c06d3c9dd4d9404986934ce9c076ba8631a9985b0ad9b8e6410652--font-util--1.4.1.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "5eef67abd32e074be382ec84e96eb15de3995e8cd6ec1b55a61ad887e557aefe--font-util--1.4.1.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4da9bfc3b60c015327f62cdda013da7f24903a39ffc76559c7346c58164f0329--font-util--1.4.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "font-util" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "font-util" ]
+]

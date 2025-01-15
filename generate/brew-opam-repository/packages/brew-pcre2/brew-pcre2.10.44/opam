@@ -1,0 +1,98 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Perl compatible regular expressions library with a new API"
+description: """
+Perl compatible regular expressions library with a new API"""
+extra-source "2907563ed4eb2ca355ebacaaa97830d0531faf0afbdde5b5241089908080d54b--pcre2--10.44.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:5bf0758d81478e59007717b43d854a1e2399818c2859fcbc5cdb2e616e4eb372"
+  checksum: [
+    "sha256=5bf0758d81478e59007717b43d854a1e2399818c2859fcbc5cdb2e616e4eb372"
+  ]
+}
+extra-source "22ed791461c5bf400adde8c3b432c1230866aa1db3c5cb81e06a6ff21cac96ee--pcre2-10.44.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.44"
+}
+extra-source "763eeeefce520ba5f22bb1327c4306636580d8db011304d9ea47d0f4cbaec93b--pcre2--10.44.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:c3f9e7a70ebc0986af6f0b7c69ac1495fdf4c7420ad831d3daa9c86c448b79c2"
+  checksum: [
+    "sha256=c3f9e7a70ebc0986af6f0b7c69ac1495fdf4c7420ad831d3daa9c86c448b79c2"
+  ]
+}
+extra-source "066fad5a6b3ab150a630d15c19bf852ec8c12e0706ef12a5a5501ae3793b0c21--pcre2--10.44.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:c39e89e49f9ab7a8b5ae5efcdd38b27df9003e62a045b336117041da939d3136"
+  checksum: [
+    "sha256=c39e89e49f9ab7a8b5ae5efcdd38b27df9003e62a045b336117041da939d3136"
+  ]
+}
+extra-source "963f297da6f07bfa0a7ced88afef5e00081c9ceade61f60d5e26c308013e64a1--pcre2--10.44.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:78fe8885f70cc1ec83eefd678e1dfc3b341aedf4b44132327da98300c5e04cdf"
+  checksum: [
+    "sha256=78fe8885f70cc1ec83eefd678e1dfc3b341aedf4b44132327da98300c5e04cdf"
+  ]
+}
+extra-source "c2e46f75dc00c1803e419863114b65c5296374d1b383099d2a70e89e8b2104a3--pcre2--10.44.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:22151e6b0e120939ec8240add51c3de8aecf0b716f8c91f97b7c106698ecb40d"
+  checksum: [
+    "sha256=22151e6b0e120939ec8240add51c3de8aecf0b716f8c91f97b7c106698ecb40d"
+  ]
+}
+extra-source "ecfed7b5a3becd575f0030fed888dfa6d1987721bf52493e14686083e746a43b--pcre2--10.44.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:58f5a3b0858236149a5792e1c1238510b3757c632d436e87b17acd8045dbeba2"
+  checksum: [
+    "sha256=58f5a3b0858236149a5792e1c1238510b3757c632d436e87b17acd8045dbeba2"
+  ]
+}
+extra-source "82846873e37326045f25b748c2fb3d613681bdca630b5d91f379dd4589f0e8dd--pcre2--10.44.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:ba8ab5793b9399926030e574ed376c003749ea775ca62c713b732b8d35fc1bfc"
+  checksum: [
+    "sha256=ba8ab5793b9399926030e574ed376c003749ea775ca62c713b732b8d35fc1bfc"
+  ]
+}
+extra-source "ba30568a4eeccac72f3143ed8af51c2239f0fb94f53780df2b8dbb142fafe08a--pcre2--10.44.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:fe61ece0fe110928cbd9d325552064c1bc2b98a3dd6cc9f4039d0d41ead7fa83"
+  checksum: [
+    "sha256=fe61ece0fe110928cbd9d325552064c1bc2b98a3dd6cc9f4039d0d41ead7fa83"
+  ]
+}
+extra-source "cb3846d6ec9794babaee909e11048acb1835eac5501eef2bab993a739c9aaec5--pcre2--10.44.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:cbddfbb9921fa2894640db7f0395ea8a79ce5209ebe5ae6700762d0452a6910f"
+  checksum: [
+    "sha256=cbddfbb9921fa2894640db7f0395ea8a79ce5209ebe5ae6700762d0452a6910f"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "22ed791461c5bf400adde8c3b432c1230866aa1db3c5cb81e06a6ff21cac96ee--pcre2-10.44.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2907563ed4eb2ca355ebacaaa97830d0531faf0afbdde5b5241089908080d54b--pcre2--10.44.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "763eeeefce520ba5f22bb1327c4306636580d8db011304d9ea47d0f4cbaec93b--pcre2--10.44.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "066fad5a6b3ab150a630d15c19bf852ec8c12e0706ef12a5a5501ae3793b0c21--pcre2--10.44.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "963f297da6f07bfa0a7ced88afef5e00081c9ceade61f60d5e26c308013e64a1--pcre2--10.44.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "c2e46f75dc00c1803e419863114b65c5296374d1b383099d2a70e89e8b2104a3--pcre2--10.44.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ecfed7b5a3becd575f0030fed888dfa6d1987721bf52493e14686083e746a43b--pcre2--10.44.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "82846873e37326045f25b748c2fb3d613681bdca630b5d91f379dd4589f0e8dd--pcre2--10.44.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ba30568a4eeccac72f3143ed8af51c2239f0fb94f53780df2b8dbb142fafe08a--pcre2--10.44.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cb3846d6ec9794babaee909e11048acb1835eac5501eef2bab993a739c9aaec5--pcre2--10.44.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "pcre2" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "pcre2" ]
+]

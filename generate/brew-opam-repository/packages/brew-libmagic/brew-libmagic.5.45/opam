@@ -1,0 +1,107 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Implementation of the file(1) command"
+description: """
+Implementation of the file(1) command"""
+extra-source "35bfc7304c9e958361a88af001c1ef402a27b11589d57ccf93f49c7639c855c7--libmagic--5.45.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:163d317bd1b513db98785b0c6b60b451dd4fb09e925ba61013147efd8fbc13a3"
+  checksum: [
+    "sha256=163d317bd1b513db98785b0c6b60b451dd4fb09e925ba61013147efd8fbc13a3"
+  ]
+}
+extra-source "7009258ae720f4578934a2b2ec9ba7c36fb181470926eb7db67f0f49121becfb--libmagic-5.45.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/manifests/5.45"
+}
+extra-source "55b7e19a20662902024980c971b164b4af8ec3f4df6f88da349640f7fc888dd5--libmagic--5.45.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:41360c07f92f0a4ab86a78048f6c1fa74a0d1192b60ad45954d384d7606adada"
+  checksum: [
+    "sha256=41360c07f92f0a4ab86a78048f6c1fa74a0d1192b60ad45954d384d7606adada"
+  ]
+}
+extra-source "81d3e2e453fed09f05a98586898b9953da8bade88f4f15515c75097c5e20bb71--libmagic--5.45.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:4175e9bd00edb289020b1412fe1762554ccea7f5073050134995fc1578062341"
+  checksum: [
+    "sha256=4175e9bd00edb289020b1412fe1762554ccea7f5073050134995fc1578062341"
+  ]
+}
+extra-source "d41ac9dae940397a2d3422e8985afbed0eb37dc3e7ed84972ecc5861fe633a3d--libmagic--5.45.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:81ae0df797e6cf1af040f0a99f446ff1ad2f8a8ca2a70d6b34c847996754a585"
+  checksum: [
+    "sha256=81ae0df797e6cf1af040f0a99f446ff1ad2f8a8ca2a70d6b34c847996754a585"
+  ]
+}
+extra-source "aa236137e96b5d6bc493db37980c122a15fdd9ddf8da49e5d8bdccaaedf9391c--libmagic--5.45.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:ec5c143e70bff4635e77a831ac3a03a059d11fdf0512d37e6ab7de977dca8ad9"
+  checksum: [
+    "sha256=ec5c143e70bff4635e77a831ac3a03a059d11fdf0512d37e6ab7de977dca8ad9"
+  ]
+}
+extra-source "55858b8264c2601ff01a6f229503269ea63deef7ac17efdc262e996b814ae8e5--libmagic--5.45.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:7d6b7e742b260e15df798b70e56f96a978aca56fe16777416bffec271bd077b6"
+  checksum: [
+    "sha256=7d6b7e742b260e15df798b70e56f96a978aca56fe16777416bffec271bd077b6"
+  ]
+}
+extra-source "032c20ed61996fc46fd13ee5c727876c62d04a3f11de1a39970ee301a7d4d636--libmagic--5.45.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:a2e6411d29aaeff36e1e458fa9ac152d5f16a6093f8dd7c724c70da1afbd1f88"
+  checksum: [
+    "sha256=a2e6411d29aaeff36e1e458fa9ac152d5f16a6093f8dd7c724c70da1afbd1f88"
+  ]
+}
+extra-source "62fef38db429b390f3c48dceddb3c397156072ec13b5f991728cf3afb0020220--libmagic--5.45.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:81c93a0805ef1e1a519988bf0c561bbcff058f9a129bec9691c4177505052bff"
+  checksum: [
+    "sha256=81c93a0805ef1e1a519988bf0c561bbcff058f9a129bec9691c4177505052bff"
+  ]
+}
+extra-source "4976c3c16e677423c26f0b510a276cf48e8b6089489dc457a765c95ed5caa107--libmagic--5.45.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:3bbb6a6b220df55a5fcb8df54a170003d1dc4c7a3fbd3bd26a56f17ada8d0025"
+  checksum: [
+    "sha256=3bbb6a6b220df55a5fcb8df54a170003d1dc4c7a3fbd3bd26a56f17ada8d0025"
+  ]
+}
+extra-source "8e831c8c546813ed25007be8d7c554fd602fcb6d9826113a06de2b20934ed6f9--libmagic--5.45.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmagic/blobs/sha256:213f20f87112c4e7a6415baace66d49fdf165d96e8ca96c128e12745a1ea8862"
+  checksum: [
+    "sha256=213f20f87112c4e7a6415baace66d49fdf165d96e8ca96c128e12745a1ea8862"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "7009258ae720f4578934a2b2ec9ba7c36fb181470926eb7db67f0f49121becfb--libmagic-5.45.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "35bfc7304c9e958361a88af001c1ef402a27b11589d57ccf93f49c7639c855c7--libmagic--5.45.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "55b7e19a20662902024980c971b164b4af8ec3f4df6f88da349640f7fc888dd5--libmagic--5.45.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "81d3e2e453fed09f05a98586898b9953da8bade88f4f15515c75097c5e20bb71--libmagic--5.45.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d41ac9dae940397a2d3422e8985afbed0eb37dc3e7ed84972ecc5861fe633a3d--libmagic--5.45.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "aa236137e96b5d6bc493db37980c122a15fdd9ddf8da49e5d8bdccaaedf9391c--libmagic--5.45.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "55858b8264c2601ff01a6f229503269ea63deef7ac17efdc262e996b814ae8e5--libmagic--5.45.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "032c20ed61996fc46fd13ee5c727876c62d04a3f11de1a39970ee301a7d4d636--libmagic--5.45.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "62fef38db429b390f3c48dceddb3c397156072ec13b5f991728cf3afb0020220--libmagic--5.45.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4976c3c16e677423c26f0b510a276cf48e8b6089489dc457a765c95ed5caa107--libmagic--5.45.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "8e831c8c546813ed25007be8d7c554fd602fcb6d9826113a06de2b20934ed6f9--libmagic--5.45.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libmagic" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libmagic" ]
+]

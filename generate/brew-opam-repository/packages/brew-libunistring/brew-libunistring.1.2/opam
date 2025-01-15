@@ -1,0 +1,90 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C string library for manipulating Unicode strings"
+description: """
+C string library for manipulating Unicode strings"""
+extra-source "9dd6bd370e2d753ebe03b8373dd297d101235d185592558e838b6acf61ec6c40--libunistring--1.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:5b70acd6aa97435ecb2abbfdc04f4e31fa3861a37ae7590b0da64704c5c311b5"
+  checksum: [
+    "sha256=5b70acd6aa97435ecb2abbfdc04f4e31fa3861a37ae7590b0da64704c5c311b5"
+  ]
+}
+extra-source "48ac60445a77a63996cf15f6414f68a620d544fb683031b14eb3aea95c3064f6--libunistring-1.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.2"
+}
+extra-source "2b925fbbcb79cf8f76aab5c65be7912266a1fc381e1f7900132c8859345cfcd7--libunistring--1.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:e9a705a5442b3ee55f054a695bfbca741ff8a7f31d856ef08a72ad498bd42d60"
+  checksum: [
+    "sha256=e9a705a5442b3ee55f054a695bfbca741ff8a7f31d856ef08a72ad498bd42d60"
+  ]
+}
+extra-source "67ce9ddd8a7c36c32a278280a253ce067e390d8242545999943a3aa1fe56c4a0--libunistring--1.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:4a1c0f956e528e0fe9a5040da6a2002e221024835916fdc198b5d734e3c2638d"
+  checksum: [
+    "sha256=4a1c0f956e528e0fe9a5040da6a2002e221024835916fdc198b5d734e3c2638d"
+  ]
+}
+extra-source "004e7b1fb1cad06120c34c808bb3be1e55d8ba250c5d126da252596204703ab1--libunistring--1.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:66091a34396e4e17fc78f31410bf5878091ee6887cec79995f3598093ee481ea"
+  checksum: [
+    "sha256=66091a34396e4e17fc78f31410bf5878091ee6887cec79995f3598093ee481ea"
+  ]
+}
+extra-source "b40cb975b7aad33cd91890568610bd3f87d33f944bc750f0aa6d21d43abb3bf7--libunistring--1.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:317dccbd509f4703664238e8d61b1f15c83d298b6d1945578eac33c1e18eab25"
+  checksum: [
+    "sha256=317dccbd509f4703664238e8d61b1f15c83d298b6d1945578eac33c1e18eab25"
+  ]
+}
+extra-source "a88fbf20078cda517c015c78f35edc2a43214cab45bb15e13fa99d4b67646bca--libunistring--1.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:7c53563d2a893c2b204cd667904d7b5ff650a8d153808135f3d6a38cae2b234d"
+  checksum: [
+    "sha256=7c53563d2a893c2b204cd667904d7b5ff650a8d153808135f3d6a38cae2b234d"
+  ]
+}
+extra-source "297686366366ff66df539e34f37dee9cac52205c65432f0e09787b36a9a6054c--libunistring--1.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:4f2cc0abb15a3e11a9b5fe64f874f2b3aff4e763133ba499d91bc65e8745cb21"
+  checksum: [
+    "sha256=4f2cc0abb15a3e11a9b5fe64f874f2b3aff4e763133ba499d91bc65e8745cb21"
+  ]
+}
+extra-source "fa90a3bb007fe8e788a82257a5410104a3a2e4a2114399d8f8b26fba563e8bfe--libunistring--1.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:416da7b6b8d158de4adccc0479df3b8cc6a532f39f71df928dd979b01812da21"
+  checksum: [
+    "sha256=416da7b6b8d158de4adccc0479df3b8cc6a532f39f71df928dd979b01812da21"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "48ac60445a77a63996cf15f6414f68a620d544fb683031b14eb3aea95c3064f6--libunistring-1.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9dd6bd370e2d753ebe03b8373dd297d101235d185592558e838b6acf61ec6c40--libunistring--1.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2b925fbbcb79cf8f76aab5c65be7912266a1fc381e1f7900132c8859345cfcd7--libunistring--1.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "67ce9ddd8a7c36c32a278280a253ce067e390d8242545999943a3aa1fe56c4a0--libunistring--1.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "004e7b1fb1cad06120c34c808bb3be1e55d8ba250c5d126da252596204703ab1--libunistring--1.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b40cb975b7aad33cd91890568610bd3f87d33f944bc750f0aa6d21d43abb3bf7--libunistring--1.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a88fbf20078cda517c015c78f35edc2a43214cab45bb15e13fa99d4b67646bca--libunistring--1.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "297686366366ff66df539e34f37dee9cac52205c65432f0e09787b36a9a6054c--libunistring--1.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fa90a3bb007fe8e788a82257a5410104a3a2e4a2114399d8f8b26fba563e8bfe--libunistring--1.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libunistring" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libunistring" ]
+]

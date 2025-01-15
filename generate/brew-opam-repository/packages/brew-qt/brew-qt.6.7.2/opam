@@ -1,0 +1,149 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Cross-platform application and UI framework"
+description: """
+Cross-platform application and UI framework"""
+extra-source "e389c4d9c008829d80d1e13e2e2d9a96b5131c6941766a8bf2c3b4fb88e0d4d1--qt--6.7.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/qt/blobs/sha256:d6ad879c3f896c504c17622c070b4203676694410f7b3b0a34a2c108250002fe"
+  checksum: [
+    "sha256=d6ad879c3f896c504c17622c070b4203676694410f7b3b0a34a2c108250002fe"
+  ]
+}
+extra-source "1c8ebe548b3e013f396d76e3032e022811c05fd2e3605590032ce23757eab68f--qt-6.7.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/qt/manifests/6.7.2"
+}
+extra-source "0f74c1b8470716782732c1194bb8900f9376ecba38fd0c90023b8c72aad63771--qt--6.7.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/qt/blobs/sha256:ee963ae8db1a9aa4e704a8bd7661af582803a62b98ab01ceff7a30faaf84801d"
+  checksum: [
+    "sha256=ee963ae8db1a9aa4e704a8bd7661af582803a62b98ab01ceff7a30faaf84801d"
+  ]
+}
+extra-source "ce6e2f1d299813ddda1259dcc716bd9105775d35fb3a9c93a2edfd9ba47a939e--qt--6.7.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/qt/blobs/sha256:ef5ef408a3ecb52066f08ec0554f3a771a1fed1efd77da39eb6758532f1892d1"
+  checksum: [
+    "sha256=ef5ef408a3ecb52066f08ec0554f3a771a1fed1efd77da39eb6758532f1892d1"
+  ]
+}
+extra-source "12c7db7ad7985304372218d5c4263306d91cc944641791783cdb08a0773a350f--qt--6.7.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/qt/blobs/sha256:00211c4cdb53dcacceef31a7b86d1c86ce00a3888764fa8478d60eba0b3b2efd"
+  checksum: [
+    "sha256=00211c4cdb53dcacceef31a7b86d1c86ce00a3888764fa8478d60eba0b3b2efd"
+  ]
+}
+extra-source "4face53474852fef80a966e2692211bbc1f91b4346b8d5bca48d64260a5ca633--qt--6.7.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/qt/blobs/sha256:0700ec3390554ab544a421e2aaa68f35634fafb6714369344e8718837dfba5bc"
+  checksum: [
+    "sha256=0700ec3390554ab544a421e2aaa68f35634fafb6714369344e8718837dfba5bc"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-assimp" {= "5.4.3"}
+  "brew-brotli" {= "1.1.0"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-docbook" {= "5.1"}
+  "brew-docbook-xsl" {= "1.79.2"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-libyaml" {= "0.2.5"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-libssh2" {= "1.11.0"}
+  "brew-libgit2" {= "1.8.1"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+  "brew-rust" {= "1.81.0"}
+  "brew-ruby" {= "3.3.5"}
+  "brew-asciidoctor" {= "2.0.23"}
+  "brew-gnu-getopt" {= "2.40.2"}
+  "brew-xmlto" {= "0.0.29"}
+  "brew-dbus" {= "1.14.10"}
+  "brew-double-conversion" {= "3.3.0"}
+  "brew-libpng" {= "1.6.44"}
+  "brew-freetype" {= "2.13.3"}
+  "brew-python" {= "3.11.10"}
+  "brew-python-packaging" {= "24.1"}
+  "brew-gettext" {= "0.22.5"}
+  "brew-bison" {= "3.8.2"}
+  "brew-meson" {= "1.5.2"}
+  "brew-glib" {= "2.82.1"}
+  "brew-fontconfig" {= "2.15.0"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+  "brew-lzo" {= "2.10"}
+  "brew-pixman" {= "0.42.2"}
+  "brew-cairo" {= "1.18.2"}
+  "brew-graphite2" {= "1.3.14"}
+  "brew-icu4c" {= "74.2"}
+  "brew-gobject-introspection" {= "1.82.0"}
+  "brew-py3cairo" {= "1.27.0"}
+  "brew-pygobject3" {= "3.50.0"}
+  "brew-harfbuzz" {= "9.0.0"}
+  "brew-hunspell" {= "1.7.2"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-jasper" {= "4.2.4"}
+  "brew-libb2" {= "0.98.1"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+  "brew-libmng" {= "2.0.3"}
+  "brew-md4c" {= "0.5.2"}
+  "brew-giflib" {= "5.2.2"}
+  "brew-webp" {= "1.4.0"}
+  "brew-c-ares" {= "1.33.1"}
+  "brew-libnghttp2" {= "1.63.0"}
+  "brew-certifi" {= "2024.8.30"}
+  "brew-sphinx-doc" {= "8.0.2"}
+  "brew-libuv" {= "1.48.0"}
+  "brew-node" {= "22.9.0"}
+  "brew-vulkan-headers" {= "1.3.295"}
+  "brew-vulkan-loader" {= "1.3.295"}
+  "brew-molten-vk" {= "1.2.10"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1c8ebe548b3e013f396d76e3032e022811c05fd2e3605590032ce23757eab68f--qt-6.7.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e389c4d9c008829d80d1e13e2e2d9a96b5131c6941766a8bf2c3b4fb88e0d4d1--qt--6.7.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "0f74c1b8470716782732c1194bb8900f9376ecba38fd0c90023b8c72aad63771--qt--6.7.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ce6e2f1d299813ddda1259dcc716bd9105775d35fb3a9c93a2edfd9ba47a939e--qt--6.7.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "12c7db7ad7985304372218d5c4263306d91cc944641791783cdb08a0773a350f--qt--6.7.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "4face53474852fef80a966e2692211bbc1f91b4346b8d5bca48d64260a5ca633--qt--6.7.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "qt" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "qt" ]
+]

@@ -1,0 +1,99 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Cryptography and SSL/TLS Toolkit"
+description: """
+Cryptography and SSL/TLS Toolkit"""
+extra-source "2c4186b0e101e8fe9deb5c5803f3c4c7dc9c18e3d264b8157c8eb9100096f121--openssl@3--3.3.2.sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:32da4055066fca85ebd5057718d0ec5c80eb162f796e5f54badf9fac56189a5b"
+  checksum: [
+    "sha256=32da4055066fca85ebd5057718d0ec5c80eb162f796e5f54badf9fac56189a5b"
+  ]
+}
+extra-source "15a43beab5e5017b1a9fe7584ff44a48195632fd196c23ee0e5e7ecf67e9ef2a--openssl@3-3.3.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.3.2"
+}
+extra-source "f02a899200b9e53dc64f73e1a22f4ebf8c4e68fb625b634807e5735f508c7e96--openssl@3--3.3.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:13cc290ab3a88f06dd43a9fe09c6f00befd30f953e945d9656966d1975b54bd7"
+  checksum: [
+    "sha256=13cc290ab3a88f06dd43a9fe09c6f00befd30f953e945d9656966d1975b54bd7"
+  ]
+}
+extra-source "935f2364bbd2df78aa6e680bd0a80cc4e955ca503dd819b4cc242feeb0c9f82a--openssl@3--3.3.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:39bc60aa67712dcf946d0465c7f9d838deb5623834dd5229c9ce9621214cc21e"
+  checksum: [
+    "sha256=39bc60aa67712dcf946d0465c7f9d838deb5623834dd5229c9ce9621214cc21e"
+  ]
+}
+extra-source "a8b376773d0e2bb72b72a290e10195947ba95b9c523c1c7d7b8e7456fe162f73--openssl@3--3.3.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:df4760f0256178172f6193d8bb6c4cbeffd78ac646926ad345c5170331c5d55c"
+  checksum: [
+    "sha256=df4760f0256178172f6193d8bb6c4cbeffd78ac646926ad345c5170331c5d55c"
+  ]
+}
+extra-source "15cabcedc13d5ffe0a385ab4dac578faae71f6da6ede5db7ba31434c75ad545d--openssl@3--3.3.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:bfacdc5431d2c774ab7e8ed770c32c8da81f7b3524f28a35ddb829fc1806493f"
+  checksum: [
+    "sha256=bfacdc5431d2c774ab7e8ed770c32c8da81f7b3524f28a35ddb829fc1806493f"
+  ]
+}
+extra-source "d965c087cffef5aabb84e0c5a582661b910ee288de68af87397a12d6f683ee88--openssl@3--3.3.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:fbfe31302a2c0fdf0a6691a3106b93d51a89d41d6534e8ce1853cd3b8d94981d"
+  checksum: [
+    "sha256=fbfe31302a2c0fdf0a6691a3106b93d51a89d41d6534e8ce1853cd3b8d94981d"
+  ]
+}
+extra-source "175250e1b1a3e879898a4656e99f7556c735bcacaec5c885ec3396ac6be53ccf--openssl@3--3.3.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:1a08c37e9c8b8458e791f27983f493482996437bbc55db3a5af10964498d2069"
+  checksum: [
+    "sha256=1a08c37e9c8b8458e791f27983f493482996437bbc55db3a5af10964498d2069"
+  ]
+}
+extra-source "173cbc7543ab8fdd558740fe7d12a84aa30513e6eaabd5cb69ae85f01a11e995--openssl@3--3.3.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:4c602286ae85c4395575637afebcada6e9cc13a9a7663389af16b2aca978a041"
+  checksum: [
+    "sha256=4c602286ae85c4395575637afebcada6e9cc13a9a7663389af16b2aca978a041"
+  ]
+}
+extra-source "e851caee4b3fff20a9acd39c63885e9b91c6f5e5f82c7f38208b52db61c66e89--openssl@3--3.3.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:1c54baa903d258fba6b5aef6818c5f282681d371933aaf8ccc71f34f3ac0f673"
+  checksum: [
+    "sha256=1c54baa903d258fba6b5aef6818c5f282681d371933aaf8ccc71f34f3ac0f673"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-ca-certificates" {= "2024-07-02"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "15a43beab5e5017b1a9fe7584ff44a48195632fd196c23ee0e5e7ecf67e9ef2a--openssl@3-3.3.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "2c4186b0e101e8fe9deb5c5803f3c4c7dc9c18e3d264b8157c8eb9100096f121--openssl@3--3.3.2.sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f02a899200b9e53dc64f73e1a22f4ebf8c4e68fb625b634807e5735f508c7e96--openssl@3--3.3.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "935f2364bbd2df78aa6e680bd0a80cc4e955ca503dd819b4cc242feeb0c9f82a--openssl@3--3.3.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "a8b376773d0e2bb72b72a290e10195947ba95b9c523c1c7d7b8e7456fe162f73--openssl@3--3.3.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "15cabcedc13d5ffe0a385ab4dac578faae71f6da6ede5db7ba31434c75ad545d--openssl@3--3.3.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d965c087cffef5aabb84e0c5a582661b910ee288de68af87397a12d6f683ee88--openssl@3--3.3.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "175250e1b1a3e879898a4656e99f7556c735bcacaec5c885ec3396ac6be53ccf--openssl@3--3.3.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "173cbc7543ab8fdd558740fe7d12a84aa30513e6eaabd5cb69ae85f01a11e995--openssl@3--3.3.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e851caee4b3fff20a9acd39c63885e9b91c6f5e5f82c7f38208b52db61c66e89--openssl@3--3.3.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "openssl" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "openssl" ]
+]

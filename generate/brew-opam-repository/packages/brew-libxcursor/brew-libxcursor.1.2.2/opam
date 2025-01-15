@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: X Window System Cursor management library"
+description: """
+X.Org: X Window System Cursor management library"""
+extra-source "86ffe35e8cdecb2a379965f451de8b90fef4612806aa0d1e8bfafddf6712a311--libxcursor--1.2.2.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/blobs/sha256:e9f543907a8a1f887857c96890146464bb3a99e41f3eadb1270e6ee381d02554"
+  checksum: [
+    "sha256=e9f543907a8a1f887857c96890146464bb3a99e41f3eadb1270e6ee381d02554"
+  ]
+}
+extra-source "688dbee071eaa45aee6ae187e344d47534ee59d92347fcdd7a66753f69122af7--libxcursor-1.2.2.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/manifests/1.2.2"
+}
+extra-source "e2235369c9819937b2bc7f7c50248250b9d267aaac3d6f618eb0b52c150b7ae7--libxcursor--1.2.2.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/blobs/sha256:77f69443f9338aea09d339c47e12f5f0f6c13228047835147d92437622508206"
+  checksum: [
+    "sha256=77f69443f9338aea09d339c47e12f5f0f6c13228047835147d92437622508206"
+  ]
+}
+extra-source "b85faebc942b1599d240dc64aa295958c74bbe3480b5711a9af4c01a987a2432--libxcursor--1.2.2.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/blobs/sha256:315d7f2482fc10ff82ce990f9b3bce98a81fbe273e10e0a8d89bfe7cd79afe77"
+  checksum: [
+    "sha256=315d7f2482fc10ff82ce990f9b3bce98a81fbe273e10e0a8d89bfe7cd79afe77"
+  ]
+}
+extra-source "50c1c2b4d38695375888ead7c1f87529ab5b278b9fd68413b502bdd5b9b474b6--libxcursor--1.2.2.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/blobs/sha256:be47ccbdc21395feffc509856adcd19a562bef8bd6f748767f4d0bb8da5a038e"
+  checksum: [
+    "sha256=be47ccbdc21395feffc509856adcd19a562bef8bd6f748767f4d0bb8da5a038e"
+  ]
+}
+extra-source "8f4df6db6e01a7ad6a5a4e0ddd5d3cb6e98d5743d844b69ece590e7b5fa3ac7b--libxcursor--1.2.2.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/blobs/sha256:0716d39d1e8ec92ce9bab7477ccb2cb6caea6cb66d8633f6ccfce8b056b9b3c9"
+  checksum: [
+    "sha256=0716d39d1e8ec92ce9bab7477ccb2cb6caea6cb66d8633f6ccfce8b056b9b3c9"
+  ]
+}
+extra-source "7e9e61b2b334a13b02c6a09eacf495a252770dcd27d0ca30622bfd645565e6c9--libxcursor--1.2.2.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/blobs/sha256:5c9b0de207abaadf9fca789183a53a2c1ec769a1781e143b5e22ce0dbbc62ce3"
+  checksum: [
+    "sha256=5c9b0de207abaadf9fca789183a53a2c1ec769a1781e143b5e22ce0dbbc62ce3"
+  ]
+}
+extra-source "86536325fc50aa2898d4d4d72b3ddca75ff7b96138377516bcab04149f77dea5--libxcursor--1.2.2.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/blobs/sha256:00ac4f325ce5028dcfcf1c6ba9c8126b4b8468b2cf3b86a4dadccc3585843905"
+  checksum: [
+    "sha256=00ac4f325ce5028dcfcf1c6ba9c8126b4b8468b2cf3b86a4dadccc3585843905"
+  ]
+}
+extra-source "1935ed9559a060dbdc60fdf1151644eb3d626c65b834746fef84659728fd465c--libxcursor--1.2.2.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxcursor/blobs/sha256:2641509f3eb5debb4fb842c85b02ef78b67494dd50b8d47955f7cdcfac65c277"
+  checksum: [
+    "sha256=2641509f3eb5debb4fb842c85b02ef78b67494dd50b8d47955f7cdcfac65c277"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxfixes" {= "6.0.1"}
+  "brew-libxrender" {= "0.9.11"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "688dbee071eaa45aee6ae187e344d47534ee59d92347fcdd7a66753f69122af7--libxcursor-1.2.2.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "86ffe35e8cdecb2a379965f451de8b90fef4612806aa0d1e8bfafddf6712a311--libxcursor--1.2.2.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e2235369c9819937b2bc7f7c50248250b9d267aaac3d6f618eb0b52c150b7ae7--libxcursor--1.2.2.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "b85faebc942b1599d240dc64aa295958c74bbe3480b5711a9af4c01a987a2432--libxcursor--1.2.2.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "50c1c2b4d38695375888ead7c1f87529ab5b278b9fd68413b502bdd5b9b474b6--libxcursor--1.2.2.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8f4df6db6e01a7ad6a5a4e0ddd5d3cb6e98d5743d844b69ece590e7b5fa3ac7b--libxcursor--1.2.2.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "7e9e61b2b334a13b02c6a09eacf495a252770dcd27d0ca30622bfd645565e6c9--libxcursor--1.2.2.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "86536325fc50aa2898d4d4d72b3ddca75ff7b96138377516bcab04149f77dea5--libxcursor--1.2.2.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1935ed9559a060dbdc60fdf1151644eb3d626c65b834746fef84659728fd465c--libxcursor--1.2.2.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxcursor" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxcursor" ]
+]

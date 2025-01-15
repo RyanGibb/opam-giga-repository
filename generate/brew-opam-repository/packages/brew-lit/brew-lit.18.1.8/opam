@@ -1,0 +1,66 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "Portable tool for LLVM- and Clang-style test suites"
+description: """
+Portable tool for LLVM- and Clang-style test suites"""
+extra-source "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/lit/blobs/sha256:752703098ad7bf62f5685a9d79a11acc872d83c7c82ebdcbee4a36d654c512ac"
+  checksum: [
+    "sha256=752703098ad7bf62f5685a9d79a11acc872d83c7c82ebdcbee4a36d654c512ac"
+  ]
+}
+extra-source "63e5269db233122b379b336147a5d6a6ce252648778bda98cef99b6d38268a15--lit-18.1.8-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/lit/manifests/18.1.8-1"
+}
+depends : [
+  "brew-opam-vars"
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-z3" {= "4.13.0"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-ninja" {= "1.12.1"}
+  "brew-pcre2" {= "10.44"}
+  "brew-python-setuptools" {= "75.1.0"}
+  "brew-swig" {= "4.2.1"}
+  "brew-llvm" {= "18.1.8"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "63e5269db233122b379b336147a5d6a6ce252648778bda98cef99b6d38268a15--lit-18.1.8-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "catalina" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "mojave" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "high_sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sierra" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "el_capitan" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e6df07e76ea8305994c04a21aef4c3c1b3e3e11b37351ca404877ee0cd87d09f--lit--18.1.8.all.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "lit" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "lit" ]
+]

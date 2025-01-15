@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: X Resize, Rotate and Reflection extension library"
+description: """
+X.Org: X Resize, Rotate and Reflection extension library"""
+extra-source "a67711f20f6dd853664bc12c501d020f7a750e89da3ed29b369e63997124614f--libxrandr--1.5.4.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/blobs/sha256:e29fec5331c2d36188093a2331d0f2f426c9cb18d21e5335931ee0d0e22e5ec9"
+  checksum: [
+    "sha256=e29fec5331c2d36188093a2331d0f2f426c9cb18d21e5335931ee0d0e22e5ec9"
+  ]
+}
+extra-source "1fbb247f2abdbccf5d8f0682109acc180855bab14fd80473fbc15f74ebef0dbc--libxrandr-1.5.4.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/manifests/1.5.4"
+}
+extra-source "f500fdbf01f3b939c276ee2a14be4d829baaf3640ab397d31396159952e33918--libxrandr--1.5.4.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/blobs/sha256:c400393add3a4dab2a9be13192af2cafdf443234c527a57bb9e22ecfa28cb019"
+  checksum: [
+    "sha256=c400393add3a4dab2a9be13192af2cafdf443234c527a57bb9e22ecfa28cb019"
+  ]
+}
+extra-source "aedc8d6e93d0d18b952a9f3d54bd3dafa6496fff699dd3f086e73399ddc0d44a--libxrandr--1.5.4.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/blobs/sha256:7775fef1d482d55d108a57bd2cc32c3177eea7270956a2fb648b3683acd54049"
+  checksum: [
+    "sha256=7775fef1d482d55d108a57bd2cc32c3177eea7270956a2fb648b3683acd54049"
+  ]
+}
+extra-source "34736a85acf0d974632a364931889ff7fac69063338049d38509339347855865--libxrandr--1.5.4.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/blobs/sha256:1cd8ea19e0bdef49383720d3d4aa1c639981a36c9c0a2763c1e9b73afe6a9f06"
+  checksum: [
+    "sha256=1cd8ea19e0bdef49383720d3d4aa1c639981a36c9c0a2763c1e9b73afe6a9f06"
+  ]
+}
+extra-source "748e77f39a8be0e55495ba8dbac9259c22bd6cd6e0a9601f599ba23a0fef9b69--libxrandr--1.5.4.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/blobs/sha256:dbc964894d888cc4147af5ca01528a8bfaacff3c9219981267c405bd37e591de"
+  checksum: [
+    "sha256=dbc964894d888cc4147af5ca01528a8bfaacff3c9219981267c405bd37e591de"
+  ]
+}
+extra-source "22986f6470abc06e1bb0702235fb5664ab37d321e9d4053b2e0c2a554b637b85--libxrandr--1.5.4.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/blobs/sha256:52f7889369a183269ec67a15b65bc4bdc41fb5209bc4d291fb7c91abb5455319"
+  checksum: [
+    "sha256=52f7889369a183269ec67a15b65bc4bdc41fb5209bc4d291fb7c91abb5455319"
+  ]
+}
+extra-source "23d224467446c83e86a70380b7aa780ba598ffcafd47fca2e7412652eec199b4--libxrandr--1.5.4.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/blobs/sha256:e19d7b1164d1aacee9a9a9f2811f5071fdb649913f3b6a388b11ab56ba65c153"
+  checksum: [
+    "sha256=e19d7b1164d1aacee9a9a9f2811f5071fdb649913f3b6a388b11ab56ba65c153"
+  ]
+}
+extra-source "9578c92b41ef412d5c904f8f11092ba784a2a4e54da628b3fc41a5670c697f14--libxrandr--1.5.4.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxrandr/blobs/sha256:c48b622aed3d5e99e225601dca2d129fda08585571d948f8737f3e6a4bcb2a56"
+  checksum: [
+    "sha256=c48b622aed3d5e99e225601dca2d129fda08585571d948f8737f3e6a4bcb2a56"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libxext" {= "1.3.6"}
+  "brew-libxrender" {= "0.9.11"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "1fbb247f2abdbccf5d8f0682109acc180855bab14fd80473fbc15f74ebef0dbc--libxrandr-1.5.4.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "a67711f20f6dd853664bc12c501d020f7a750e89da3ed29b369e63997124614f--libxrandr--1.5.4.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f500fdbf01f3b939c276ee2a14be4d829baaf3640ab397d31396159952e33918--libxrandr--1.5.4.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "aedc8d6e93d0d18b952a9f3d54bd3dafa6496fff699dd3f086e73399ddc0d44a--libxrandr--1.5.4.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "34736a85acf0d974632a364931889ff7fac69063338049d38509339347855865--libxrandr--1.5.4.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "748e77f39a8be0e55495ba8dbac9259c22bd6cd6e0a9601f599ba23a0fef9b69--libxrandr--1.5.4.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "22986f6470abc06e1bb0702235fb5664ab37d321e9d4053b2e0c2a554b637b85--libxrandr--1.5.4.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "23d224467446c83e86a70380b7aa780ba598ffcafd47fca2e7412652eec199b4--libxrandr--1.5.4.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "9578c92b41ef412d5c904f8f11092ba784a2a4e54da628b3fc41a5670c697f14--libxrandr--1.5.4.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxrandr" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxrandr" ]
+]

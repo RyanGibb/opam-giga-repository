@@ -1,0 +1,96 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "C library for number theory"
+description: """
+C library for number theory"""
+extra-source "08c98fb133ffd4d2b65fb4064f04cda65b0c018b969ebdfc1b3fee44e7004fa2--flint--3.1.3-p1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/blobs/sha256:a113c53749915d1b0e588a44db20e403f06d0fd62e6fb8f26bbc68de3c35d8fd"
+  checksum: [
+    "sha256=a113c53749915d1b0e588a44db20e403f06d0fd62e6fb8f26bbc68de3c35d8fd"
+  ]
+}
+extra-source "6a14404feab68206939ed039ef61e1a8232a5488f94cb2f95ada2107f9e86f54--flint-3.1.3-p1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/manifests/3.1.3-p1"
+}
+extra-source "68207d5217aad8cc6b8d0a6758a9c0285267fb4e7d5b8abd54dc309ad6cf9f97--flint--3.1.3-p1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/blobs/sha256:8c60de59b79be3ab9aa996c3b1b65566751956e24bd47122bb14c7f575f87458"
+  checksum: [
+    "sha256=8c60de59b79be3ab9aa996c3b1b65566751956e24bd47122bb14c7f575f87458"
+  ]
+}
+extra-source "05c85408046e22a147453799d2a33662a354e93ca6f1127599dc5e6ad249f0ec--flint--3.1.3-p1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/blobs/sha256:74da020f9e6587c8899bda2034e1d94cf4d8b28dde5344c186dcbc45d4d10dab"
+  checksum: [
+    "sha256=74da020f9e6587c8899bda2034e1d94cf4d8b28dde5344c186dcbc45d4d10dab"
+  ]
+}
+extra-source "ae351011c4a4815b83c79d88c4da51fd4da626ad208f7106be0f049b08a45358--flint--3.1.3-p1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/blobs/sha256:ac40ea9c126354efbd805a2a1d817e38e26c23410abfd9e189790e9c0fc60f11"
+  checksum: [
+    "sha256=ac40ea9c126354efbd805a2a1d817e38e26c23410abfd9e189790e9c0fc60f11"
+  ]
+}
+extra-source "9b000005142ef051468eb35492252edb11a99580b230fc0d6e2d8d73e6897742--flint--3.1.3-p1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/blobs/sha256:ee89cff4b2e4a55c4c1b23b4435a5cb6d3e38bfb7cceaad86cb2d306d92ee86d"
+  checksum: [
+    "sha256=ee89cff4b2e4a55c4c1b23b4435a5cb6d3e38bfb7cceaad86cb2d306d92ee86d"
+  ]
+}
+extra-source "55fb999ab8befedc961d1cd0e669a2a7227b7ca58ae9e894cf021aa6757550ca--flint--3.1.3-p1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/blobs/sha256:daf2a177ea8b8b83cc10bf7d9f8719b60c128b335b74fb48b54ca73dca109f1d"
+  checksum: [
+    "sha256=daf2a177ea8b8b83cc10bf7d9f8719b60c128b335b74fb48b54ca73dca109f1d"
+  ]
+}
+extra-source "9eaaca8dd0552ef359a75bd918abe9e3ca0e23a1f73d09ca04d4e7c6614fb35c--flint--3.1.3-p1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/blobs/sha256:f5efdb8826a3bd80de599455dc0aca0dd478276d4edbcde06e80f985cf9688ff"
+  checksum: [
+    "sha256=f5efdb8826a3bd80de599455dc0aca0dd478276d4edbcde06e80f985cf9688ff"
+  ]
+}
+extra-source "16d0b7322d1f874a550070364289f43d989efbedaa9e6bb4f40b1d30a45ac461--flint--3.1.3-p1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/flint/blobs/sha256:999413efcfa5455b771d5fe28356fb36515c41b243bda6f4206240e2dbb3295d"
+  checksum: [
+    "sha256=999413efcfa5455b771d5fe28356fb36515c41b243bda6f4206240e2dbb3295d"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-mpfr" {= "4.2.1"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "6a14404feab68206939ed039ef61e1a8232a5488f94cb2f95ada2107f9e86f54--flint-3.1.3-p1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "08c98fb133ffd4d2b65fb4064f04cda65b0c018b969ebdfc1b3fee44e7004fa2--flint--3.1.3-p1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "68207d5217aad8cc6b8d0a6758a9c0285267fb4e7d5b8abd54dc309ad6cf9f97--flint--3.1.3-p1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "05c85408046e22a147453799d2a33662a354e93ca6f1127599dc5e6ad249f0ec--flint--3.1.3-p1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "ae351011c4a4815b83c79d88c4da51fd4da626ad208f7106be0f049b08a45358--flint--3.1.3-p1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9b000005142ef051468eb35492252edb11a99580b230fc0d6e2d8d73e6897742--flint--3.1.3-p1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "55fb999ab8befedc961d1cd0e669a2a7227b7ca58ae9e894cf021aa6757550ca--flint--3.1.3-p1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "9eaaca8dd0552ef359a75bd918abe9e3ca0e23a1f73d09ca04d4e7c6614fb35c--flint--3.1.3-p1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "16d0b7322d1f874a550070364289f43d989efbedaa9e6bb4f40b1d30a45ac461--flint--3.1.3-p1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "flint" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "flint" ]
+]

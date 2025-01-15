@@ -1,0 +1,114 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "MNG/JNG reference library"
+description: """
+MNG/JNG reference library"""
+extra-source "9344372e16e6ddbc77340ade59b4e460d263585432a1dfb44f8a58f736d17cbc--libmng--2.0.3_1.arm64_sequoia.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:b689a6894b260bf093409615d0057769421cda51c8f4a7b59f06d692c6000104"
+  checksum: [
+    "sha256=b689a6894b260bf093409615d0057769421cda51c8f4a7b59f06d692c6000104"
+  ]
+}
+extra-source "4f8eabb37dcd8c951fb12065030467aa4a2eac62c1580a2b2af093d169333535--libmng-2.0.3_1-1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/manifests/2.0.3_1-1"
+}
+extra-source "963ad6bd1ddfe49ce09b47e996fd7502b4a058e3e75377b7dfef209e50256a95--libmng--2.0.3_1.sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:17a8b7fffb5d320e5f0d6535aaf5d25ddde6da85bdaf5b4d260f0703a087a2e0"
+  checksum: [
+    "sha256=17a8b7fffb5d320e5f0d6535aaf5d25ddde6da85bdaf5b4d260f0703a087a2e0"
+  ]
+}
+extra-source "ac4eb6d43180e1fff68106753c6fa3f061e4daf93f1d9bffa6ac1d50ecc3ce7e--libmng--2.0.3_1.arm64_sonoma.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:6d30bcfb0460246fd86bd7f59dcf8b52b1e1fb3533ff8ff252a7cb23091ed9a9"
+  checksum: [
+    "sha256=6d30bcfb0460246fd86bd7f59dcf8b52b1e1fb3533ff8ff252a7cb23091ed9a9"
+  ]
+}
+extra-source "909c09ed178690a1d5935b5679557ef1240a8b2b247a8d2f87e323121abd91d9--libmng--2.0.3_1.ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:68e6c1de7f5abe3668f229a99bde8ec9425d9f9136275c8218bf58b6839dff63"
+  checksum: [
+    "sha256=68e6c1de7f5abe3668f229a99bde8ec9425d9f9136275c8218bf58b6839dff63"
+  ]
+}
+extra-source "042b43f4329548ab750c8c68d139bfb92e0ff3834c7b8fa1772a14af2d1603c7--libmng--2.0.3_1.arm64_ventura.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:746b8bbf3aa5373c6545ce90fca5e84af114ecfce0f2b0e35fd7ec4c9853b15a"
+  checksum: [
+    "sha256=746b8bbf3aa5373c6545ce90fca5e84af114ecfce0f2b0e35fd7ec4c9853b15a"
+  ]
+}
+extra-source "f36a67fdb6150cec481a70210a292b76c221cb1f54fc87f94a752babdbbd8742--libmng--2.0.3_1.monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:6646b4ceca926b35750ef1abcfb15744ca286698f86b3c7407f8b5b9dfafa06a"
+  checksum: [
+    "sha256=6646b4ceca926b35750ef1abcfb15744ca286698f86b3c7407f8b5b9dfafa06a"
+  ]
+}
+extra-source "8d7d923413d7caa00a960fa6b6fe3508e4dcca83a66e913c3419c329ea80c685--libmng--2.0.3_1.arm64_monterey.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:554dd35c3a73f040a23f212cbc64c0b9214b4cc4bfb9031341a71b695d64a4ec"
+  checksum: [
+    "sha256=554dd35c3a73f040a23f212cbc64c0b9214b4cc4bfb9031341a71b695d64a4ec"
+  ]
+}
+extra-source "1fd5384547671b1a1f6eaede871348ff2f485d0cee4bc221689ff86a20fb2dd6--libmng--2.0.3_1.big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:a0cf8d4fb509d251ea7a559c1a5814466bd20fef027646c8cf1715ca85d5beea"
+  checksum: [
+    "sha256=a0cf8d4fb509d251ea7a559c1a5814466bd20fef027646c8cf1715ca85d5beea"
+  ]
+}
+extra-source "bf7d294426c14685dfa9bd61b48893c413dcf730b154ac3f7084a0b079a1d161--libmng--2.0.3_1.arm64_big_sur.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:f48583469a9c65f5f9733d43e2bbea2d004228d45ff0b7cdd101b4c44f05dfc5"
+  checksum: [
+    "sha256=f48583469a9c65f5f9733d43e2bbea2d004228d45ff0b7cdd101b4c44f05dfc5"
+  ]
+}
+extra-source "dbc6e8ed9c87f35c8c23ad90e870b9c6449c0d50dc25e7c4a547e4739d479649--libmng--2.0.3_1.x86_64_linux.bottle.1.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libmng/blobs/sha256:10b82f077fcb7b44e8183c31aa73a5b6df139bcbba9becfd44222f8d29e0ceeb"
+  checksum: [
+    "sha256=10b82f077fcb7b44e8183c31aa73a5b6df139bcbba9becfd44222f8d29e0ceeb"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-nasm" {= "2.16.03"}
+  "brew-jpeg-turbo" {= "3.0.4"}
+  "brew-xz" {= "5.6.2"}
+  "brew-lz4" {= "1.10.0"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-libtiff" {= "4.7.0"}
+  "brew-little-cms2" {= "2.16"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "4f8eabb37dcd8c951fb12065030467aa4a2eac62c1580a2b2af093d169333535--libmng-2.0.3_1-1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9344372e16e6ddbc77340ade59b4e460d263585432a1dfb44f8a58f736d17cbc--libmng--2.0.3_1.arm64_sequoia.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "963ad6bd1ddfe49ce09b47e996fd7502b4a058e3e75377b7dfef209e50256a95--libmng--2.0.3_1.sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ac4eb6d43180e1fff68106753c6fa3f061e4daf93f1d9bffa6ac1d50ecc3ce7e--libmng--2.0.3_1.arm64_sonoma.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "909c09ed178690a1d5935b5679557ef1240a8b2b247a8d2f87e323121abd91d9--libmng--2.0.3_1.ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "042b43f4329548ab750c8c68d139bfb92e0ff3834c7b8fa1772a14af2d1603c7--libmng--2.0.3_1.arm64_ventura.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "f36a67fdb6150cec481a70210a292b76c221cb1f54fc87f94a752babdbbd8742--libmng--2.0.3_1.monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "8d7d923413d7caa00a960fa6b6fe3508e4dcca83a66e913c3419c329ea80c685--libmng--2.0.3_1.arm64_monterey.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1fd5384547671b1a1f6eaede871348ff2f485d0cee4bc221689ff86a20fb2dd6--libmng--2.0.3_1.big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "bf7d294426c14685dfa9bd61b48893c413dcf730b154ac3f7084a0b079a1d161--libmng--2.0.3_1.arm64_big_sur.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dbc6e8ed9c87f35c8c23ad90e870b9c6449c0d50dc25e7c4a547e4739d479649--libmng--2.0.3_1.x86_64_linux.bottle.1.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libmng" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libmng" ]
+]

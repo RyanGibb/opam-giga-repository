@@ -1,0 +1,106 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "File comparison utilities"
+description: """
+File comparison utilities"""
+extra-source "b9feac5acaa38519a4dbdaa3624dd99122dcaa08fb2dbf2147755db16e951917--diffutils--3.10.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:8f7c9ed3cb94e3c5fae9f3c047999d3c49ff977cd9f23523e4b81d3abed9477f"
+  checksum: [
+    "sha256=8f7c9ed3cb94e3c5fae9f3c047999d3c49ff977cd9f23523e4b81d3abed9477f"
+  ]
+}
+extra-source "dee2ee349a909c92819d1540bb111ef3f66e1f74dc57cfb854b96bf3d78606ff--diffutils-3.10.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/manifests/3.10"
+}
+extra-source "1a57b411c837bedff2f8f7044660790c24b94220ebb3dd23ef9992c404ae10e6--diffutils--3.10.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:4b81b1d648a0315ae154cac38509369b58b198cf12e9f4fbd4e323193dd2f3b3"
+  checksum: [
+    "sha256=4b81b1d648a0315ae154cac38509369b58b198cf12e9f4fbd4e323193dd2f3b3"
+  ]
+}
+extra-source "e4c414d0667ae789b71cde5b1ef48a65946dda7af8a17b3a582b48aba07ef7c3--diffutils--3.10.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:de3f22324953924f710369b160f3895b43423f91cc54b173abfb7f4566b1ff49"
+  checksum: [
+    "sha256=de3f22324953924f710369b160f3895b43423f91cc54b173abfb7f4566b1ff49"
+  ]
+}
+extra-source "d10c10505313920ee92a28adb823091a4836fb93b41e1634a97f73cf013f3875--diffutils--3.10.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:6cc5295c6eee5471ff65b3686b719823f989f000dfadb56f48a6b11ae11a5f83"
+  checksum: [
+    "sha256=6cc5295c6eee5471ff65b3686b719823f989f000dfadb56f48a6b11ae11a5f83"
+  ]
+}
+extra-source "4883c4913fa1d07aa523190247523f512d86f890e78f929ccf2239725eeed3df--diffutils--3.10.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:c660290591feea403a36b8fc29e77b7844bc1e99a1fb6c7d0110f42992c4e559"
+  checksum: [
+    "sha256=c660290591feea403a36b8fc29e77b7844bc1e99a1fb6c7d0110f42992c4e559"
+  ]
+}
+extra-source "a968fba1990f31b31db0396d2d63866a82c82ab5357120883ea8250d3e2c0dc6--diffutils--3.10.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:e84e0576227bbe9cc7fabc085a37b3d88348d625a10f8d525cf5cea697bae4f4"
+  checksum: [
+    "sha256=e84e0576227bbe9cc7fabc085a37b3d88348d625a10f8d525cf5cea697bae4f4"
+  ]
+}
+extra-source "878d3c4378a7a6cd10553980070de6ce73907deeb42e09fa1cbe2c926cd7799d--diffutils--3.10.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:d6ac63f502b1c6eec4036cae5ed7eb304fae6d64e969a5105593af0205b7a3ec"
+  checksum: [
+    "sha256=d6ac63f502b1c6eec4036cae5ed7eb304fae6d64e969a5105593af0205b7a3ec"
+  ]
+}
+extra-source "28a508e734ebb90ed186cef795480b4f84dc3894def38392f859e891e29252d0--diffutils--3.10.big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:141bbde5bbecc9c0aed743119ec029809001396f1464db9b108fe4e30b8235d9"
+  checksum: [
+    "sha256=141bbde5bbecc9c0aed743119ec029809001396f1464db9b108fe4e30b8235d9"
+  ]
+}
+extra-source "3fb7010c83fe9e65903e244a24a7f9a7b66df69bf4baecf35d1accaae8a4d616--diffutils--3.10.arm64_big_sur.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:f3879ebe76278944ef87a77c3961edc55b5b3b7b51698241f3ffab2f60773812"
+  checksum: [
+    "sha256=f3879ebe76278944ef87a77c3961edc55b5b3b7b51698241f3ffab2f60773812"
+  ]
+}
+extra-source "fea9e163efec60d9d9f3581d2768ce91a3013d52f1edf82f1c6a6fdb7f7c9f27--diffutils--3.10.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/diffutils/blobs/sha256:2df5dd066e6fb3a926aa681e3b93414fc43244b8bc4a5da16ae161ce3966f257"
+  checksum: [
+    "sha256=2df5dd066e6fb3a926aa681e3b93414fc43244b8bc4a5da16ae161ce3966f257"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "dee2ee349a909c92819d1540bb111ef3f66e1f74dc57cfb854b96bf3d78606ff--diffutils-3.10.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "b9feac5acaa38519a4dbdaa3624dd99122dcaa08fb2dbf2147755db16e951917--diffutils--3.10.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "1a57b411c837bedff2f8f7044660790c24b94220ebb3dd23ef9992c404ae10e6--diffutils--3.10.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "e4c414d0667ae789b71cde5b1ef48a65946dda7af8a17b3a582b48aba07ef7c3--diffutils--3.10.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d10c10505313920ee92a28adb823091a4836fb93b41e1634a97f73cf013f3875--diffutils--3.10.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4883c4913fa1d07aa523190247523f512d86f890e78f929ccf2239725eeed3df--diffutils--3.10.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a968fba1990f31b31db0396d2d63866a82c82ab5357120883ea8250d3e2c0dc6--diffutils--3.10.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "878d3c4378a7a6cd10553980070de6ce73907deeb42e09fa1cbe2c926cd7799d--diffutils--3.10.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "28a508e734ebb90ed186cef795480b4f84dc3894def38392f859e891e29252d0--diffutils--3.10.big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "3fb7010c83fe9e65903e244a24a7f9a7b66df69bf4baecf35d1accaae8a4d616--diffutils--3.10.arm64_big_sur.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "big_sur" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "fea9e163efec60d9d9f3581d2768ce91a3013d52f1edf82f1c6a6fdb7f7c9f27--diffutils--3.10.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "diffutils" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "diffutils" ]
+]

@@ -1,0 +1,108 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "X.Org: X Toolkit Intrinsics library"
+description: """
+X.Org: X Toolkit Intrinsics library"""
+extra-source "817dd88a2e6aef6feb1b399e10caa3fc69318de85859e47b1dea3d786507cd12--libxt--1.3.0_1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:9de6f181593f1f0be6a7cec1a999f747dbb0f7f5bab504a9c37aa58efa1b07ab"
+  checksum: [
+    "sha256=9de6f181593f1f0be6a7cec1a999f747dbb0f7f5bab504a9c37aa58efa1b07ab"
+  ]
+}
+extra-source "b48bba9d78eb2daf6ea0e2fe55f7ac6456272456d4ae6934035bf759f92ddfbc--libxt-1.3.0_1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/manifests/1.3.0_1"
+}
+extra-source "2117044fc2a1ad9481327871676cebc4d0c976e4d1788d7639debc4bf1cc2e64--libxt--1.3.0_1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:784abc72bbb694244ba1f7cbfee0f5ecdc084c9d1ef41557c68fe06e6f4a17a4"
+  checksum: [
+    "sha256=784abc72bbb694244ba1f7cbfee0f5ecdc084c9d1ef41557c68fe06e6f4a17a4"
+  ]
+}
+extra-source "ea963d28b21439c7d709e0468e8ccd1c97c9f37137ffe6ac55c9d028864c4789--libxt--1.3.0_1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:08246691bf368897e4bcc80389962df8ffc1c6ec6c194f4731c754cfc275995b"
+  checksum: [
+    "sha256=08246691bf368897e4bcc80389962df8ffc1c6ec6c194f4731c754cfc275995b"
+  ]
+}
+extra-source "cb200e2ccfc17d1abe199e72abfdfd30515d495bedc56f11ee2e5320953b2ee0--libxt--1.3.0_1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:e4a31758e6eba0e10e563977c680fa99a22eb80956a67f438851e7ba4996e3e1"
+  checksum: [
+    "sha256=e4a31758e6eba0e10e563977c680fa99a22eb80956a67f438851e7ba4996e3e1"
+  ]
+}
+extra-source "c140f03d645b46d7bc2151dac04f64f1a784495f2419f066ae9025462f1a325e--libxt--1.3.0_1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:48ca6ecece618b42eb2807955ceefa5f1e9f6f1ca4a3b9eff5962e4d1ae5a123"
+  checksum: [
+    "sha256=48ca6ecece618b42eb2807955ceefa5f1e9f6f1ca4a3b9eff5962e4d1ae5a123"
+  ]
+}
+extra-source "09b4b8acdacc4c7f3843a688c508cba7e71fa629ae36e1cd614f26153158e404--libxt--1.3.0_1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:5b492610e7277b9d9f80e03551db7ed45886cf362a2a399bf67f43344efb00b4"
+  checksum: [
+    "sha256=5b492610e7277b9d9f80e03551db7ed45886cf362a2a399bf67f43344efb00b4"
+  ]
+}
+extra-source "06469f75a72c7eaaf1608b7d98792bf6efc9c6e28b32d771a8736c854b50022c--libxt--1.3.0_1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:eb7206d9e14872a778762922a39a59d06bdd5c8055474d573ad7f9c0976c6547"
+  checksum: [
+    "sha256=eb7206d9e14872a778762922a39a59d06bdd5c8055474d573ad7f9c0976c6547"
+  ]
+}
+extra-source "5d62116be918be912412a01e995a0dbc7af837cef86fd770cc12d9e88b3fd4e7--libxt--1.3.0_1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:505a098f0763f672253f047c75408e739da9956def530758db3476e21184b157"
+  checksum: [
+    "sha256=505a098f0763f672253f047c75408e739da9956def530758db3476e21184b157"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-util-macros" {= "1.20.1"}
+  "brew-xorgproto" {= "2024.1"}
+  "brew-xtrans" {= "1.5.0"}
+  "brew-libxau" {= "1.0.11"}
+  "brew-libxdmcp" {= "1.1.5"}
+  "brew-mpdecimal" {= "4.0.0"}
+  "brew-ca-certificates" {= "2024-07-02"}
+  "brew-openssl" {= "3.3.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-sqlite" {= "3.46.1"}
+  "brew-xz" {= "5.6.2"}
+  "brew-python" {= "3.12.6"}
+  "brew-xcb-proto" {= "1.17.0"}
+  "brew-libxcb" {= "1.17.0"}
+  "brew-libx11" {= "1.8.10"}
+  "brew-libice" {= "1.1.1"}
+  "brew-libsm" {= "1.2.4"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "b48bba9d78eb2daf6ea0e2fe55f7ac6456272456d4ae6934035bf759f92ddfbc--libxt-1.3.0_1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "817dd88a2e6aef6feb1b399e10caa3fc69318de85859e47b1dea3d786507cd12--libxt--1.3.0_1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "2117044fc2a1ad9481327871676cebc4d0c976e4d1788d7639debc4bf1cc2e64--libxt--1.3.0_1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "ea963d28b21439c7d709e0468e8ccd1c97c9f37137ffe6ac55c9d028864c4789--libxt--1.3.0_1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "cb200e2ccfc17d1abe199e72abfdfd30515d495bedc56f11ee2e5320953b2ee0--libxt--1.3.0_1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "c140f03d645b46d7bc2151dac04f64f1a784495f2419f066ae9025462f1a325e--libxt--1.3.0_1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "09b4b8acdacc4c7f3843a688c508cba7e71fa629ae36e1cd614f26153158e404--libxt--1.3.0_1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "06469f75a72c7eaaf1608b7d98792bf6efc9c6e28b32d771a8736c854b50022c--libxt--1.3.0_1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "5d62116be918be912412a01e995a0dbc7af837cef86fd770cc12d9e88b3fd4e7--libxt--1.3.0_1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "libxt" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "libxt" ]
+]

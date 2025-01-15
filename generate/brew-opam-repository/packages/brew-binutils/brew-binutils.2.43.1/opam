@@ -1,0 +1,95 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GNU binary tools for native development"
+description: """
+GNU binary tools for native development"""
+extra-source "9410a358ad72bb10bf19032932da47cd64ac03833778c1429dbadedd90f8a08e--binutils--2.43.1.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/blobs/sha256:c645c3616086c374d30a1f3c1c6001f6f2562198efdf7ffea7d081eb33e36449"
+  checksum: [
+    "sha256=c645c3616086c374d30a1f3c1c6001f6f2562198efdf7ffea7d081eb33e36449"
+  ]
+}
+extra-source "8111b6fd65822d749b89a471ec543eaf84471287fa7b13113cf3075efee5f0b6--binutils-2.43.1.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/manifests/2.43.1"
+}
+extra-source "a1532d13518b248fea3186326f90e4793de6c358991b0b169dbab8fb81a8b088--binutils--2.43.1.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/blobs/sha256:c88cb916d41507aed43ffe00cfbea11069e86ef78eb997db9ca7da1a48312f98"
+  checksum: [
+    "sha256=c88cb916d41507aed43ffe00cfbea11069e86ef78eb997db9ca7da1a48312f98"
+  ]
+}
+extra-source "d41fafae672e52d7705947c6a4d4b3c2c77d698906e0255cdc063a4432c15648--binutils--2.43.1.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/blobs/sha256:88c34d875602f7bce1ad098b0dc61df8018db8febcd8a6d4759971cae74403d7"
+  checksum: [
+    "sha256=88c34d875602f7bce1ad098b0dc61df8018db8febcd8a6d4759971cae74403d7"
+  ]
+}
+extra-source "dfbcff53eca71f366311351550683784897e6be6ea4c4f8dd9dc1355769938e5--binutils--2.43.1.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/blobs/sha256:63bd99b78b6df776b633ed15439abd116afdd1a2b29e392191e37efaa58a3657"
+  checksum: [
+    "sha256=63bd99b78b6df776b633ed15439abd116afdd1a2b29e392191e37efaa58a3657"
+  ]
+}
+extra-source "56378596a30551e4dc8696d14c0829674282029f3dce7c760eab354f10604bdd--binutils--2.43.1.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/blobs/sha256:79dc9dfa4c4af46fe047c8c362c2cbad169d5d4c6c7d21d105e23ed1411ac3cd"
+  checksum: [
+    "sha256=79dc9dfa4c4af46fe047c8c362c2cbad169d5d4c6c7d21d105e23ed1411ac3cd"
+  ]
+}
+extra-source "50c4ece453177d45bea1be73e9472c7184ccfd989467b697b98ce4b5df8a9306--binutils--2.43.1.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/blobs/sha256:809e8a094c8bd8c03fee89af3d50a5837644b1af6184754d732981e628be98a8"
+  checksum: [
+    "sha256=809e8a094c8bd8c03fee89af3d50a5837644b1af6184754d732981e628be98a8"
+  ]
+}
+extra-source "f867a776baf55b0342c54d5483405efb84ddfba538d5d7df0fd533432d11dcb1--binutils--2.43.1.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/blobs/sha256:f46062326982276204aa358adc611d074b5872951678bb06a82fe399b7929b4a"
+  checksum: [
+    "sha256=f46062326982276204aa358adc611d074b5872951678bb06a82fe399b7929b4a"
+  ]
+}
+extra-source "d59e9cadb417cf3802399eb025cea4903c65e3b07fd6c3378ffda14be8cd12ce--binutils--2.43.1.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/binutils/blobs/sha256:ab5913dd80970340737b8450c3d227f2e6ad07874c240a82d1749ff4bba8b863"
+  checksum: [
+    "sha256=ab5913dd80970340737b8450c3d227f2e6ad07874c240a82d1749ff4bba8b863"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-lz4" {= "1.10.0"}
+  "brew-xz" {= "5.6.2"}
+  "brew-cmake" {= "3.30.3"}
+  "brew-zstd" {= "1.5.6"}
+  "brew-pkg-config" {= "0.29.2"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "8111b6fd65822d749b89a471ec543eaf84471287fa7b13113cf3075efee5f0b6--binutils-2.43.1.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "9410a358ad72bb10bf19032932da47cd64ac03833778c1429dbadedd90f8a08e--binutils--2.43.1.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "a1532d13518b248fea3186326f90e4793de6c358991b0b169dbab8fb81a8b088--binutils--2.43.1.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "d41fafae672e52d7705947c6a4d4b3c2c77d698906e0255cdc063a4432c15648--binutils--2.43.1.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "dfbcff53eca71f366311351550683784897e6be6ea4c4f8dd9dc1355769938e5--binutils--2.43.1.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "56378596a30551e4dc8696d14c0829674282029f3dce7c760eab354f10604bdd--binutils--2.43.1.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "50c4ece453177d45bea1be73e9472c7184ccfd989467b697b98ce4b5df8a9306--binutils--2.43.1.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "f867a776baf55b0342c54d5483405efb84ddfba538d5d7df0fd533432d11dcb1--binutils--2.43.1.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d59e9cadb417cf3802399eb025cea4903c65e3b07fd6c3378ffda14be8cd12ce--binutils--2.43.1.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "binutils" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "binutils" ]
+]

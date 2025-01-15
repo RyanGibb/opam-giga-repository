@@ -1,0 +1,101 @@
+opam-version: "2.0"
+maintainer: "unmaintened@nowhere.com"
+authors: "Homebrew"
+synopsis: "GNU Ubiquitous Intelligent Language for Extensions"
+description: """
+GNU Ubiquitous Intelligent Language for Extensions"""
+extra-source "34f33c29f4cdc350e19151f1b98047ab9101fcbeb6a8efc25808550d3d751024--guile--3.0.10.arm64_sequoia.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:bacc4d4dca5374f7a713747ad70fb2111f8c3b443f2a5fb614f05b659be80949"
+  checksum: [
+    "sha256=bacc4d4dca5374f7a713747ad70fb2111f8c3b443f2a5fb614f05b659be80949"
+  ]
+}
+extra-source "021bce50ed36eb6194672cc1b893b558d64c8a1a67833a5df2b413f99acddc24--guile-3.0.10.bottle_manifest.json" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/manifests/3.0.10"
+}
+extra-source "0c71e0ccc1605daa1b90014388a0572b091c426a3759fd7dc1cc20af8ce2ffb8--guile--3.0.10.sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:4b8013bda989e3215cbe659f8e0786408f8e71a56777c1533a882246e986cdf8"
+  checksum: [
+    "sha256=4b8013bda989e3215cbe659f8e0786408f8e71a56777c1533a882246e986cdf8"
+  ]
+}
+extra-source "dc184cca6c5e1a0a88111946247ea805d047097952ade01fd2a9e23582c7f6dc--guile--3.0.10.arm64_sonoma.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:e7f65709dffaf55c7ace2e1c8f6553aebc56a17674b7ab57421c1f22bbf7798a"
+  checksum: [
+    "sha256=e7f65709dffaf55c7ace2e1c8f6553aebc56a17674b7ab57421c1f22bbf7798a"
+  ]
+}
+extra-source "d01bb06619f279417de2be9f174d400a9cc4cd08dc8f872cd35f1d66bc5f9402--guile--3.0.10.ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:48cf5388ba5c114888987ae31a6620d640ed94c72e22076df491c33a88a35deb"
+  checksum: [
+    "sha256=48cf5388ba5c114888987ae31a6620d640ed94c72e22076df491c33a88a35deb"
+  ]
+}
+extra-source "79b13e14c80ead9595e5483d9febd142b1afed31129dd81d1ad4f84cb11d9604--guile--3.0.10.arm64_ventura.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:8e47adc1f7238e67c3af7712ff0e57c1d0b1b79a86950f0e0370944f1a69c960"
+  checksum: [
+    "sha256=8e47adc1f7238e67c3af7712ff0e57c1d0b1b79a86950f0e0370944f1a69c960"
+  ]
+}
+extra-source "44bd87776313c619e2d9faf1423a3002b419a7ac1f8c7fb2071527c40c6c48db--guile--3.0.10.monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:2716185a062154262f1b160358fa955bf31bbdae5d0b08f4d0c38e3bf6ff066c"
+  checksum: [
+    "sha256=2716185a062154262f1b160358fa955bf31bbdae5d0b08f4d0c38e3bf6ff066c"
+  ]
+}
+extra-source "4f98a5eb07a7dda8e72d17402333e53352856b4141e20c1343c8a6874475b648--guile--3.0.10.arm64_monterey.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:d58266c28fa037d004ddcd50f5da744a7232303455139523f61a83a3d36ce5e6"
+  checksum: [
+    "sha256=d58266c28fa037d004ddcd50f5da744a7232303455139523f61a83a3d36ce5e6"
+  ]
+}
+extra-source "faab34812935af8b0bf1e9443e5c9a71413de5af2cb493f1225084e7bdf0f3a1--guile--3.0.10.x86_64_linux.bottle.tar.gz" {
+  src:
+    "https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:fd3f68416f1b61d67641e43ce42a3a4b88ad5a010533b572b42e69fa8e4ef434"
+  checksum: [
+    "sha256=fd3f68416f1b61d67641e43ce42a3a4b88ad5a010533b572b42e69fa8e4ef434"
+  ]
+}
+depends : [
+  "brew-opam-vars"
+  "brew-cmake" {= "3.30.3"}
+  "brew-bdw-gc" {= "8.2.8"}
+  "brew-m4" {= "1.4.19"}
+  "brew-autoconf" {= "2.72"}
+  "brew-automake" {= "1.17"}
+  "brew-libtool" {= "2.4.7"}
+  "brew-gmp" {= "6.3.0"}
+  "brew-libunistring" {= "1.2"}
+  "brew-pkg-config" {= "0.29.2"}
+  "brew-readline" {= "8.2.13"}
+  "brew-gnu-sed" {= "4.9"}
+]
+build-env: [
+  [HOMEBREW_NO_AUTO_UPDATE = "1"]
+  [HOMEBREW_NO_VERIFY_ATTESTATIONS = "1"]
+  [HOMEBREW_NO_INSTALL_FROM_API = "1"]
+]
+build: [
+[ "mv" "021bce50ed36eb6194672cc1b893b558d64c8a1a67833a5df2b413f99acddc24--guile-3.0.10.bottle_manifest.json" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ]
+
+[ "mv" "34f33c29f4cdc350e19151f1b98047ab9101fcbeb6a8efc25808550d3d751024--guile--3.0.10.arm64_sequoia.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sequoia" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "0c71e0ccc1605daa1b90014388a0572b091c426a3759fd7dc1cc20af8ce2ffb8--guile--3.0.10.sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "dc184cca6c5e1a0a88111946247ea805d047097952ade01fd2a9e23582c7f6dc--guile--3.0.10.arm64_sonoma.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "sonoma" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "d01bb06619f279417de2be9f174d400a9cc4cd08dc8f872cd35f1d66bc5f9402--guile--3.0.10.ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "79b13e14c80ead9595e5483d9febd142b1afed31129dd81d1ad4f84cb11d9604--guile--3.0.10.arm64_ventura.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "ventura" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "44bd87776313c619e2d9faf1423a3002b419a7ac1f8c7fb2071527c40c6c48db--guile--3.0.10.monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "mv" "4f98a5eb07a7dda8e72d17402333e53352856b4141e20c1343c8a6874475b648--guile--3.0.10.arm64_monterey.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "monterey" & brew-opam-vars:homebrew-macos-arch = "arm"}
+[ "mv" "faab34812935af8b0bf1e9443e5c9a71413de5af2cb493f1225084e7bdf0f3a1--guile--3.0.10.x86_64_linux.bottle.tar.gz" "%{brew-opam-vars:homebrew-cache-dir}%/downloads" ] { brew-opam-vars:homebrew-macos-name = "linux" & brew-opam-vars:homebrew-macos-arch = "intel"}
+[ "brew" "install" "--force-bottle" "--ignore-dependencies" "-f" "guile" ]
+]
+remove: [
+  [ "brew" "uninstall" "--force" "--ignore-dependencies" "guile" ]
+]
